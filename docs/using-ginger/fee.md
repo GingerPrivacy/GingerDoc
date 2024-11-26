@@ -1,4 +1,4 @@
-# Fee
+# Fees
 
 ## What is mining fee?
 In Bitcoin transactions, a mining fee is a small amount of BTC paid to miners to validate and include the transaction in the blockchain. Fees are measured in satoshis per byte (sats/byte) and depend on the transaction size and network congestion. Higher fees result in faster processing, as miners prioritize transactions with greater rewards.

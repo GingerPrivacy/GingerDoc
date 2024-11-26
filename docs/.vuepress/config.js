@@ -48,27 +48,12 @@ export default defineUserConfig({
           children: [
             '/using-ginger/README.md',
             {
-              text: 'Annonset',
               children: [
                 '/using-ginger/annonset.md',
-              ],
-            },
-            {
-              text: 'Fee',
-              children: [
                 '/using-ginger/fee.md',
-              ],
-            },
-            {
-              text: 'Privacy',
-              children: [
                 '/using-ginger/privacy.md',
-              ],
-            },
-            {
-              text: 'Tor',
-              children: [
                 '/using-ginger/tor.md',
+                '/using-ginger/passphrase.md',
               ],
             },
           ],
