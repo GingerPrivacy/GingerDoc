@@ -49,11 +49,15 @@ export default defineUserConfig({
             '/using-ginger/README.md',
             {
               children: [
+                '/using-ginger/2fa/',
+                '/using-ginger/coinjoin/',
+                '/using-ginger/hardware-wallet/',
                 '/using-ginger/annonset.md',
                 '/using-ginger/fee.md',
                 '/using-ginger/privacy.md',
                 '/using-ginger/tor.md',
                 '/using-ginger/passphrase.md',
+                '/using-ginger/address-reuse.md',
               ],
             },
           ],
