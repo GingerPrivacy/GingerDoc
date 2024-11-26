@@ -1,0 +1,58 @@
+:root {
+	scroll-behavior: smooth;
+	--vp-c-accent-bg: rgba(166, 141, 103, 1);
+	--vp-c-accent: rgba(166, 141, 103, 1);
+	--vp-c-accent-hover: rgba(203, 184, 153, 1);
+	--vp-c-accent-text: #1A1A1A;
+	--font-family: "Mulish", sans-serif;
+	--search-c-bg: var(--vp-c-bg);
+  	--search-c-accent: var(--vp-c-accent);
+  	--search-c-text: var(--vp-c-text);
+  	--search-c-border: var(--vp-c-gutter);
+  	--search-c-item-text: var(--vp-c-text-subtle);
+  	--search-c-item-focus: var(--vp-c-bg-alt);
+  	--search-input-width: 8rem;
+  	--search-result-width: 20rem;
+}
+
+html[data-theme=dark] {
+	--vp-navbar-c-bg: #000;
+}
+
+body {
+	font-size: 1.1rem;
+}
+
+a {
+	font-weight: inherit;
+}
+
+.vp-navbar-items a {
+	font-size: 1rem;
+	font-weight:800;
+}
+.vp-hero-action-button {
+	padding: 0.3rem 1.6rem;
+}
+.vp-hero-action-button.primary {
+	font-weight: bold;
+}
+.vp-site-name {
+	display:none;
+}
+
+.search-box input {
+	border: 1px solid var(--vp-c-border) !important;
+	background-color: var(--vp-c-control) !important;
+	color: var(--vp-c-text) !important;
+	padding: 0 .9rem 0 2rem !important;
+	font-size: 1rem !important;
+	width: 150px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 800;
+}
+h1 {
+	color: var(--vp-c-accent) !important;
+}

@@ -1,0 +1,3 @@
+# Why is important? 
+
+Privacy is essential because it protects individual freedom, dignity, and autonomy. It prevents misuse of personal information, supports trust in relationships, and safeguards against unwanted surveillance. Privacy allows people to control their data, express themselves freely, and participate in society without fear of judgment or manipulation. In a digital world, it ensures security and helps maintain mental well-being by creating safe personal boundaries.
