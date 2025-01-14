@@ -8,7 +8,7 @@ export default defineUserConfig({
 
   title: 'GingerWallet Documentation',
   description: 'Documentation for GingerWallet',
-  base: '/GingerDoc/',
+  base: '/',
 
   head: [['link', { rel: 'icon', href: 'images/favicon.ico' }]],
 
