@@ -35,6 +35,10 @@ jobs:
       - name: Build VuePress site
         run: pnpm docs:build
 
+      # create the CNAME file
+      - name: Generate CNAME file
+        run: echo "docs.gingerwallet.io" > docs/.vuepress/dist/CNAME
+
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
