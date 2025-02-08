@@ -3,7 +3,7 @@
 
 ## How it works
 
-Ginger Wallet users can purchase Bitcoin through Changelly, and the Buy button is available to everyone, including hardware wallet users. The button will be visible even if the wallet is empty.
+Ginger Wallet users can purchase Bitcoin, and the Buy button is available to everyone, including hardware wallet users. The button will be visible even if the wallet is empty.
 
 ### Step 1: Selecting Your Country
 
@@ -45,7 +45,7 @@ If you find an offer that suits you, click Accept to proceed with the purchase.
 
 
 ### How can I purchase Bitcoin through Ginger Wallet?
-Ginger Wallet users can buy Bitcoin via Changelly. The Buy button is accessible to everyone, including hardware wallet users, and is visible even if the wallet is empty.
+Ginger Wallet users can easily buy Bitcoin. The Buy button is accessible to everyone, including hardware wallet users, and is visible even if the wallet is empty.
 
 ###  Do I need to select my country before purchasing Bitcoin?
 Yes, when using the Buy feature for the first time, you must select your country. If you are in Canada, you will also need to specify your state.
