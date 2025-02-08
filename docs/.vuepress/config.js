@@ -58,6 +58,7 @@ export default defineUserConfig({
                 '/using-ginger/tor.md',
                 '/using-ginger/passphrase.md',
                 '/using-ginger/address-reuse.md',
+                '/using-ginger/buy-sell.md',
               ],
             },
           ],
