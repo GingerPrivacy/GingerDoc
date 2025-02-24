@@ -85,3 +85,9 @@ If you've lost your 2FA key, you can still recover your labels and extra options
 5. **Restart the application:** Reopen the wallet application, and your wallet should be fully restored, even without the 2FA key.
 
 This process allows you to recover the labels, extra options, and other settings.
+
+## Why does Ginger Wallet require an 8-digit 2FA code?
+Ginger Wallet requires an 8-digit 2FA code for enhanced security. An 8-digit code is significantly harder to crack compared to shorter codes, providing better protection against unauthorized access.
+
+## What should I do if my authenticator app only provides 6-digit codes?
+If your authenticator app only provides 6-digit codes, you need to switch to an authenticator that supports 8-digit codes, as required by Ginger Wallet for security reasons.
