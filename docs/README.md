@@ -7,4 +7,4 @@ actions:
     link: /getting-started/
     type: primary
 
-footer: Copyright © 2024 GingerWallet
+footer: Copyright © 2026 GingerWallet
