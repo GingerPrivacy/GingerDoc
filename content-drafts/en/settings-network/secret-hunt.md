@@ -4,9 +4,12 @@ title: "Secret Hunt in Ginger Wallet"
 description: "Find Ginger Secret Hunt event results, control wallet participation, and understand the information the event service receives."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "everyday"
 ---
 
 # Secret Hunt in Ginger Wallet
+
+> Reading level: Everyday use. Choose this guide when you need the task it describes.
 
 **Secret Hunt** is a Ginger feature that displays event secrets associated with eligible CoinJoin activity. It is separate from the wallet's privacy score and from the ordinary process of receiving or spending bitcoin. Event availability depends on the service; the presence of the feature does not promise a current event, prize, or reward.
 

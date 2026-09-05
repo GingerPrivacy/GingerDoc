@@ -8,10 +8,10 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 
 ## Read the manuscripts
 
-- [Tor, Synchronization, and Network Privacy](../en/settings-network/tor-sync.md) — `settings-network.tor-sync`
-- [Use Your Own Bitcoin Node and Choose Fee Estimates](../en/settings-network/full-node-fees.md) — `settings-network.full-node-fees`
-- [Appearance, Language, and Everyday Settings](../en/settings-network/preferences.md) — `settings-network.preferences`
-- [Secret Hunt in Ginger Wallet](../en/settings-network/secret-hunt.md) — `settings-network.secret-hunt`
+- [Appearance, Language, and Everyday Settings](../en/settings-network/preferences.md) — everyday; `settings-network.preferences`
+- [Secret Hunt in Ginger Wallet](../en/settings-network/secret-hunt.md) — everyday; `settings-network.secret-hunt`
+- [Tor, Synchronization, and Network Privacy](../en/settings-network/tor-sync.md) — everyday; `settings-network.tor-sync`
+- [Use Your Own Bitcoin Node and Choose Fee Estimates](../en/settings-network/full-node-fees.md) — advanced; `settings-network.full-node-fees`
 
 ## Behavior evidence
 
@@ -78,3 +78,7 @@ Bitcoin Core 31 replaces Knots in this release while some resource keys retain o
 Keep page IDs stable. Convert frontmatter keys to the chosen engine when integrating. The only relative manuscript links point inside this topic, so merging another topic is not a prerequisite. The PR00 page registry lists the intended navigation across topics; add those links after all relevant pages have merged. Keep source notes out of public reader navigation.
 
 Before publication, review the instructions against the installed release and recheck live provider/coordinator terms. No screenshots or framework-specific components are required.
+
+## Reader-level and FAQ revision
+
+Every page now has a visible reading level and `reader_level` metadata. Beginner instructions keep recovery, recipient verification and fees in the ordinary flow; detailed reference is separate. No unrelated wallet-brand mention remains in the public manuscript. Exact code paths and original research names remain truthful editorial provenance.

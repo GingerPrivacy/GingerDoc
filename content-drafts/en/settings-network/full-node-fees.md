@@ -4,15 +4,18 @@ title: "Use Your Own Bitcoin Node and Choose Fee Estimates"
 description: "Configure Ginger block downloads from a node you control, review the optional bundled Bitcoin Core feature, and choose a fee-rate provider."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # Use Your Own Bitcoin Node and Choose Fee Estimates
+
+> Reading level: Advanced guide. First check the ordinary connection and synchronization status.
 
 Using your own Bitcoin node can reduce reliance on public peers for block data. It also adds storage, bandwidth, availability, and maintenance responsibilities. You can use Ginger without enabling the optional full node.
 
 ## Start the bundled node
 
-In **Settings** → **Bitcoin**, the switch is named **(EXPERIMENTAL) Run Bitcoin Core on startup**. Version 2.0.26 bundles Bitcoin Core 31; older Ginger or Wasabi instructions referring to Bitcoin Knots do not describe this release's bundled node.
+In **Settings** → **Bitcoin**, the switch is named **(EXPERIMENTAL) Run Bitcoin Core on startup**. Version 2.0.26 bundles Bitcoin Core 31. Use instructions that match this bundled node and your installed release.
 
 1. Choose a **Bitcoin Core Data Folder** with adequate space and reliable storage. Do not point it at an unrelated folder or allow two node processes to manage the same directory simultaneously.
 2. Enable **(EXPERIMENTAL) Run Bitcoin Core on startup** and restart Ginger when requested.

@@ -4,9 +4,12 @@ title: "Tor, Synchronization, and Network Privacy"
 description: "Understand how Ginger connects, what Tor protects, and how to investigate slow synchronization without exposing wallet activity."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "everyday"
 ---
 
 # Tor, Synchronization, and Network Privacy
+
+> Reading level: Everyday use. Choose this guide when you need the task it describes.
 
 Ginger needs network data to discover your transactions, broadcast payments, and participate in CoinJoin. Tor is included and enabled by default for its ordinary network connections. It helps separate your IP address from the services you contact, but does not hide public Bitcoin amounts and transactions.
 
@@ -41,4 +44,4 @@ Use **Wallet Settings** → **Tools** → **Resync** only when there is a reason
 
 ## Separate network choice from real funds
 
-The released **Settings** → **Bitcoin** network selector offers Main and RegTest. RegTest is for an isolated test environment and has no real bitcoin value; this manual does not cover operating that environment. Do not follow a Wasabi testnet tutorial expecting the same public testnet selector in Ginger. Switching networks does not move funds between them.
+The released **Settings** → **Bitcoin** network selector offers Main and RegTest. RegTest is for an isolated test environment and has no real bitcoin value; this manual does not cover operating that environment. This release does not offer a public testnet selection in that interface. Switching networks does not move funds between them.

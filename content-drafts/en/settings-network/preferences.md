@@ -4,9 +4,12 @@ title: "Appearance, Language, and Everyday Settings"
 description: "Change Ginger language, display formats, background behavior, browser preferences, and discreet mode without confusing them with wallet security."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "everyday"
 ---
 
 # Appearance, Language, and Everyday Settings
+
+> Reading level: Everyday use. Choose this guide when you need the task it describes.
 
 Use **Settings** for application-wide preferences and **Wallet Settings** for the selected wallet's name, CoinJoin configuration, and tools. The application search can find actions such as **Data Folder**, **Wallet Info**, and **Discreet Mode** without relying on an icon's position.
 
