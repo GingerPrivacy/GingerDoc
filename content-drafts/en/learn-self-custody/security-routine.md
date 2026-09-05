@@ -4,9 +4,12 @@ title: "Build a Recoverable Bitcoin Security Routine"
 description: "Build a recoverable Bitcoin security routine and respond appropriately to exposed addresses, xpubs, wallet files, recovery words or devices."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # Build a Recoverable Bitcoin Security Routine
+
+> Reading level: Advanced guide. Keep the basic recovery backup available; use the incident steps that match the information exposed.
 
 A useful security routine protects against unauthorized access while leaving an understandable path for legitimate recovery. Adding secrets without documenting their roles can make accidental loss more likely.
 

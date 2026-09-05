@@ -4,15 +4,18 @@ title: "Bitcoin Self-Custody: Backups, Passphrases, and Hardware Wallets"
 description: "Learn who can spend your bitcoin, what makes a recovery backup complete, and how Ginger software and hardware wallets differ."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "beginner"
 ---
 
 # Bitcoin Self-Custody: Backups, Passphrases, and Hardware Wallets
 
-Self-custody means controlling the keys that authorize spending rather than relying on an account provider to authorize a withdrawal for you. It gives you direct responsibility for backup, device security, and payment verification. A wallet application is one tool in that arrangement, not the only thing you need to preserve.
+> Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
+
+Self-custody means you hold the information needed to spend your bitcoin. You approve a payment without asking an account provider to release the money. In return, you need to protect that information, keep a usable backup and check each payment carefully.
 
 ## Keys, records, and recovery
 
-Bitcoin ownership is enforced through transaction spending conditions on the network. Your wallet holds or accesses the information needed to satisfy them. Installing the same application on a replacement computer does not recreate those secrets.
+The Bitcoin network keeps a public record of transactions. Your wallet uses secret keys to approve spending from the parts you control. Installing the application on a replacement computer does not recreate those secrets; that is why the recovery backup matters.
 
 For a Ginger software wallet, the recovery words and original passphrase recreate the keys. Local wallet files can preserve additional context such as labels and settings. An authenticator, a hardware device PIN, and a file copied from the computer each serve different purposes; none should be assumed to replace the word backup.
 
@@ -42,4 +45,4 @@ Keep more than application files. Downloaded installers can be obtained again; a
 
 Use official releases, verify signatures, and read the limits of the features you intend to use. Open source makes inspection possible; it does not establish that every binary or dependency has been audited. External listings such as [Bitcoin.org's Ginger entry](https://bitcoin.org/en/wallets/desktop/windows/ginger/) and [WalletScrutiny's Ginger page](https://walletscrutiny.com/desktop/gingerwallet/) offer additional context. Check their scope and dates rather than treating a listing as a guarantee about your installed version.
 
-Ginger brings software-wallet recovery, hardware integration, and privacy tools into a desktop workflow. Decide which roles you need, then continue with [Build a recoverable security routine](security-routine.md).
+Ginger brings software-wallet recovery, hardware integration, and privacy tools into a desktop workflow. Optional advanced reading: [build a recoverable security routine](security-routine.md), including responses to exposed addresses, wallet data or keys.
