@@ -8,8 +8,8 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 
 ## Read the manuscripts
 
-- [Buy Bitcoin Through Ginger Wallet](../en/buy-sell/buy.md) — `buy-sell.buy`
-- [Sell Bitcoin and Resolve Provider Orders](../en/buy-sell/sell-and-orders.md) — `buy-sell.sell-and-orders`
+- [Buy Bitcoin Through Ginger Wallet](../en/buy-sell/buy.md) — everyday; `buy-sell.buy`
+- [Sell Bitcoin and Resolve Provider Orders](../en/buy-sell/sell-and-orders.md) — everyday; `buy-sell.sell-and-orders`
 
 ## Behavior evidence
 
@@ -59,3 +59,7 @@ Provider availability, fees, limits, KYC and settlement are live external facts.
 Keep page IDs stable. Convert frontmatter keys to the chosen engine when integrating. The only relative manuscript links point inside this topic, so merging another topic is not a prerequisite. The PR00 page registry lists the intended navigation across topics; add those links after all relevant pages have merged. Keep source notes out of public reader navigation.
 
 Before publication, review the instructions against the installed release and recheck live provider/coordinator terms. No screenshots or framework-specific components are required.
+
+## Reader-level and FAQ revision
+
+Every page now has a visible reading level and `reader_level` metadata. Beginner instructions keep recovery, recipient verification and fees in the ordinary flow; detailed reference is separate. No unrelated wallet-brand mention remains in the public manuscript. Exact code paths and original research names remain truthful editorial provenance.

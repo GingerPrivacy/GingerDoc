@@ -4,9 +4,12 @@ title: "Sell Bitcoin and Resolve Provider Orders"
 description: "Complete a Ginger sell order with the provider exact amount and address, track status, and contact the right support service."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "everyday"
 ---
 
 # Sell Bitcoin and Resolve Provider Orders
+
+> Reading level: Everyday use. Choose this guide when you need the task it describes.
 
 A sale exchanges bitcoin for the payment method offered by a provider. Ginger helps obtain offers and prepare the on-chain payment, but the provider controls the fiat payout and order review. Read the provider's requirements before committing funds.
 

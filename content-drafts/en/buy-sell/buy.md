@@ -4,9 +4,12 @@ title: "Buy Bitcoin Through Ginger Wallet"
 description: "Compare provider offers in Ginger, complete a purchase in the provider browser flow, and track delivery to your wallet."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "everyday"
 ---
 
 # Buy Bitcoin Through Ginger Wallet
+
+> Reading level: Everyday use. Choose this guide when you need the task it describes.
 
 **Buy** connects you to third-party offers for purchasing bitcoin. Ginger supplies the wallet interface and a receiving address; the selected provider handles its payment, eligibility, identity checks, and delivery process. Using a non-custodial wallet does not make a provider purchase anonymous.
 
