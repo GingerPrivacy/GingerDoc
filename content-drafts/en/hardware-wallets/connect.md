@@ -44,6 +44,8 @@ Keep the device connected until the signing step finishes. Then check Ginger's t
 
 A hardware wallet cannot be the source signing wallet for automatic Ginger CoinJoin. A loaded hardware wallet may appear as a CoinJoin output destination for a software wallet; that is a receiving role, and its selection resets on restart. Use only the destination actually offered by Ginger and verify control before relying on it.
 
+The [exchange-to-cold-storage walkthrough](exchange-to-cold-storage.md) compares direct receipt of eligible CoinJoin outputs with a later ordinary transfer. It includes the private-only startup restriction and checks for reconciling the two wallets.
+
 PayJoin sending is rejected for hardware wallets in this release. Message signing depends on device and verifier compatibility. Neither the device nor Ginger can reverse a confirmed payment. For file-based signing, read [Use the PSBT workflow](psbt.md).
 
 ## Connection problems
