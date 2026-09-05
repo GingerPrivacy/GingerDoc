@@ -63,3 +63,9 @@ The release exposes **(EXPERIMENTAL) Improved Coin Selection**. Its configuratio
 | **Use the Old Coin Selector for fallback** | Compares the old and new selection results and chooses between them. |
 
 Keep the initial values unless you understand the tradeoff you are changing. These are selection preferences; they are not an exact total-fee cap or a promise about the number of outputs a round will produce.
+
+## When another round cannot start
+
+In this release, normal CoinJoin startup rejects a wallet whose funds already meet its privacy target, and also rejects an available selection consisting only of private coins. Selecting a different output wallet does not bypass this rule. The player may hide the manual play control when all funds are private. Do not rely on excluding every non-private coin and then forcing a round solely to forward the remaining private coins.
+
+Choose the destination before starting eligible participation, or review an ordinary transfer of already-private funds. Lowering privacy requirements or including unrelated funds just to make a round start can change the privacy result and cost.

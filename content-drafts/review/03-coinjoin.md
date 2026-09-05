@@ -8,9 +8,9 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 
 ## Read the manuscripts
 
-- [Use CoinJoin in Ginger Wallet](../en/coinjoin/use-coinjoin.md) — `coinjoin.use-coinjoin`
-- [Configure CoinJoin and Output Wallets](../en/coinjoin/settings.md) — `coinjoin.settings`
 - [CoinJoin Fees and Privacy Progress](../en/coinjoin/fees-and-progress.md) — `coinjoin.fees-and-progress`
+- [Configure CoinJoin and Output Wallets](../en/coinjoin/settings.md) — `coinjoin.settings`
+- [Use CoinJoin in Ginger Wallet](../en/coinjoin/use-coinjoin.md) — `coinjoin.use-coinjoin`
 
 ## Behavior evidence
 
@@ -19,7 +19,7 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 | Player states and commands | [CoinjoinPlayerViewModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/HomeScreen/CoinjoinPlayer/ViewModel/CoinjoinPlayerViewModel.cs#L1) |
 | Visible settings and output-wallet warning | [WalletCoinJoinSettingsView.axaml](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/HomeScreen/WalletSettings/Views/WalletCoinJoinSettingsView.axaml#L25) |
 | Validation, loaded destinations, selection controls | [WalletCoinJoinSettingsViewModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/HomeScreen/WalletSettings/ViewModels/WalletCoinJoinSettingsViewModel.cs#L91) |
-| Output selection resets | [WalletSettingsModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/Models/Wallets/WalletSettingsModel.cs#L127) |
+| Output selection resets | [WalletSettingsModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/Models/Wallets/WalletSettingsModel.cs#L72) |
 | Source signing eligibility and weighted progress | [Wallet.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Wallets/Wallet.cs#L132) |
 | Experimental controls | [CoinjoinCoinSelectorSettingsView.axaml](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/HomeScreen/WalletSettings/Views/CoinjoinCoinSelectorSettingsView.axaml#L18) |
 | Backend defaults are not live quotes | [WabiSabiConfig.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WabiSabi/Backend/WabiSabiConfig.cs#L143) |
@@ -79,3 +79,19 @@ Website hardware-to/from-CoinJoin statement is too broad for released destinatio
 Keep page IDs stable. Convert frontmatter keys to the chosen engine when integrating. The only relative manuscript links point inside this topic, so merging another topic is not a prerequisite. The PR00 page registry lists the intended navigation across topics; add those links after all relevant pages have merged. Keep source notes out of public reader navigation.
 
 Before publication, review the instructions against the installed release and recheck live provider/coordinator terms. No screenshots or framework-specific components are required.
+
+## Research expansion evidence
+
+Added full-journey cost accounting, a fictional satoshi reconciliation, and a score-versus-private-balance worked example. Formula and arithmetic were checked against released source. The remainder example is illustrative, not a live round quote; published backend code is not proof of current server deployment. Normal private-only startup prevents the proposed extra forwarding round, even with a different destination. The internal pending-payment exception is not presented as a user feature.
+
+| Claim reviewed | Pinned released source |
+| --- | --- |
+| Normal startup checks all-private wallet and candidate selection; output destination does not bypass them | [CoinJoinManager.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WabiSabi/Client/CoinJoin/Manager/CoinJoinManager.cs#L208) |
+| Manual play visibility when the wallet is already private | [CoinjoinPlayerViewModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/HomeScreen/CoinjoinPlayer/ViewModel/CoinjoinPlayerViewModel.cs#L299) |
+| Output wallet is initialized to the current wallet on reopening; this choice is not persisted | [WalletSettingsModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/Models/Wallets/WalletSettingsModel.cs#L72) |
+| Amount-weighted progress and integer truncation; example gives 62% | [Wallet.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Wallets/Wallet.cs#L240) |
+| Colored private balance fraction is separate; example gives 25% | [WalletPrivacyModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/Models/Wallets/WalletPrivacyModel.cs#L22) |
+| Output decomposition permits a bounded remainder; value must not exceed available effective value | [AmountDecomposer.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WabiSabi/Client/CoinJoin/Client/Decomposer/AmountDecomposer.cs#L99) |
+| Published backend fee-output accounting; not evidence of deployed coordinator configuration | [Arena.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WabiSabi/Backend/Rounds/Arena.cs#L644) |
+| Coin-selection loss estimates are algorithm inputs, not a user lifetime-cost guarantee | [CoinJoinCoinSelector.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WabiSabi/Client/CoinJoin/Client/CoinJoinCoinSelector.cs#L75) |
+| Logs distinguish input/output difference and fee attribution; one fee label is not necessarily all cost | [CoinJoinClient.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WabiSabi/Client/CoinJoin/Client/CoinJoinClient.cs#L813) |
