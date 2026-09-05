@@ -9,6 +9,7 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 ## Read the manuscripts
 
 - [What Is CoinJoin? Benefits, Costs, and Limitations](../en/learn-coinjoin/explained.md) — `learn-coinjoin.explained`
+- [What Do You Trust When You CoinJoin?](../en/learn-coinjoin/trust-and-limits.md) — `learn-coinjoin.trust-and-limits`
 - [When Does CoinJoin Make Sense?](../en/learn-coinjoin/when-to-use.md) — `learn-coinjoin.when-to-use`
 
 ## Behavior evidence
@@ -38,3 +39,14 @@ Protocol concepts are adapted to the released client and framed as conditional p
 Keep page IDs stable. Convert frontmatter keys to the chosen engine when integrating. The only relative manuscript links point inside this topic, so merging another topic is not a prerequisite. The PR00 page registry lists the intended navigation across topics; add those links after all relevant pages have merged. Keep source notes out of public reader navigation.
 
 Before publication, review the instructions against the installed release and recheck live provider/coordinator terms. No screenshots or framework-specific components are required.
+
+## Research expansion evidence
+
+Added a user-oriented trust model separating signing authority, privacy, availability and software integrity. WabiSabi assumptions and Sybil concerns are explained without operator setup instructions, a ranking of coordinators, or a claim that current attacks are impossible. Academic and interested-operator sources do not substitute for an audit of the current deployment.
+
+| Claim reviewed | Pinned released source |
+| --- | --- |
+| Normal startup checks all-private wallet and candidate selection; output destination does not bypass them | [CoinJoinManager.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WabiSabi/Client/CoinJoin/Manager/CoinJoinManager.cs#L208) |
+| Input wallet needs a loaded signing path; watch-only hardware source cannot mix | [Wallet.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Wallets/Wallet.cs#L132) |
+| Startup verification exchanges the code and installation ID for the additional file-encryption secret | [TwoFactorAuthenticationService.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Services/TwoFactorAuthenticationService.cs#L78) |
+| Peer, RPC and backend transaction-broadcast paths | [TransactionBroadcaster.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Blockchain/TransactionBroadcasting/TransactionBroadcaster.cs#L143) |
