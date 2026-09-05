@@ -4,9 +4,12 @@ title: "Configure CoinJoin and Output Wallets"
 description: "Understand Ginger CoinJoin privacy and cost settings, excluded coins, and sending CoinJoin outputs to another loaded wallet."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # Configure CoinJoin and Output Wallets
+
+> Reading level: Advanced guide. First understand the ordinary start-and-pause controls and the fact that completed rounds cost fees.
 
 **Coinjoin Settings** applies to the selected wallet. Change one setting at a time and observe its effect. More aggressive settings can increase fees or waiting time without improving the privacy that matters in your situation.
 

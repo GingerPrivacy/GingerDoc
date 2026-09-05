@@ -4,9 +4,12 @@ title: "CoinJoin Fees and Privacy Progress"
 description: "Budget the full cost of CoinJoin, distinguish fee exemptions from free transactions, and interpret Ginger privacy scores with worked examples."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # CoinJoin Fees and Privacy Progress
+
+> Reading level: Advanced guide. First understand the ordinary start-and-pause controls and the fact that completed rounds cost fees.
 
 CoinJoin has a cost and a privacy objective. Review both before starting: a coordinator-fee exemption does not make a round free, and a progress indicator cannot measure everything another person knows about you.
 

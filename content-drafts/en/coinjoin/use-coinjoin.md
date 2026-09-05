@@ -4,22 +4,25 @@ title: "Use CoinJoin in Ginger Wallet"
 description: "Start, pause, and monitor Ginger CoinJoin, understand eligible funds, and avoid interrupting an active round."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "beginner"
 ---
 
 # Use CoinJoin in Ginger Wallet
+
+> Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
 CoinJoin creates a Bitcoin transaction with other participants to make the relationship between its inputs and outputs harder to infer. Ginger signs only for your wallet's inputs; you do not send a deposit to a coordinator-controlled account. Successful rounds still cost fees and do not guarantee anonymity.
 
 ## Before starting
 
-Open a backed-up software wallet and let it synchronize. Have confirmed bitcoin available, keep the computer connected, and review [CoinJoin fees](fees-and-progress.md). A hardware wallet can receive and send ordinary payments, but cannot be the signing source of Ginger's automatic CoinJoin process.
+Open a backed-up software wallet and let it synchronize. Have confirmed bitcoin available, keep the computer connected, and review the expected cost before starting. Successful rounds have mining fees and can also have a coordinator fee; repeated rounds can add costs. The optional [advanced cost reference](fees-and-progress.md) explains the calculation. A hardware wallet can receive and send ordinary payments, but cannot be the signing source of Ginger's automatic CoinJoin process.
 
-There is no fixed waiting time or universal minimum balance that guarantees participation. Eligibility depends on the round's parameters, coin sizes, confirmation status, fees, exclusions, and your wallet settings. A balance can be larger than the minimum input value while still containing no economical eligible coin.
+The wallet needs confirmed, usable funds and suitable round conditions. There is no balance or waiting time that guarantees an immediate start. Read the current status before changing settings.
 
 ## Start and pause
 
 1. Open **Coinjoin Settings** from the CoinJoin player's menu, or find it with Ginger's search while the wallet is open.
-2. Review the stop threshold, privacy target, and fee preferences. Confirm which wallet should receive the CoinJoin outputs.
+2. Review the wallet's cost preferences and leave the output destination set to this wallet for the ordinary workflow. Custom targets and output routing are covered in the optional advanced settings guide.
 3. Enable **Automatically start coinjoin** if you want unattended participation when conditions allow. To start manually, use the player's play control. The stopped player can display **Press Play to start**.
 4. Watch the status below the player. The wallet may wait for confirmations, a suitable round, or cheaper fees before participating.
 5. Use the player's pause control when you want to stop further participation. Allow any critical transaction phase to finish. Disabling automatic start changes future behavior; it does not reverse a transaction that has already been broadcast.
@@ -43,19 +46,6 @@ Do not send bitcoin to an address supplied by someone claiming to “activate”
 
 For rejection, connection, and eligibility messages, preserve the exact error text. Reinstalling Ginger or creating new recovery words is not a normal response to a waiting status.
 
-## What happens during a round
-
-| Phase | What your wallet is waiting for |
-| --- | --- |
-| Input registration | Eligible coins are proposed for the shared transaction. |
-| Connection confirmation | Registered participants confirm that they remain available. |
-| Output registration | Participants arrange the outputs they should receive through the protocol. |
-| Signing | Wallets check the proposal and sign their own inputs. Keep Ginger available through this critical phase. |
-| Blame round, when needed | A retry excludes participants that did not complete required steps. |
-| Broadcast | The completed transaction is submitted to Bitcoin nodes, then awaits confirmation. |
-
-These phases are managed by the application; you do not need to exchange keys or coordinate manually with strangers. The number of accepted inputs and resulting outputs is determined by the round and coin selection. There is no fixed input count or output count that you should expect for every wallet, and a wallet's total balance is not a promise that it can all join one round.
-
 ## Keep the wallet available
 
 The wallet needs the keys available while it participates. A passphrase-protected software wallet must be opened before it can sign. Two-factor authentication protects startup; it does not ask your authenticator to approve every round.
@@ -67,3 +57,7 @@ The window can close while Ginger remains in the background, depending on genera
 ## Spend after CoinJoin
 
 After the resulting coins become usable, you can spend them like other bitcoin. The CoinJoin transaction remains public. Combining unrelated private and non-private coins, reusing an address, or disclosing a transaction to an identified service can create new links. Review the selected coins and change when making a payment; a previous CoinJoin does not make every future action private.
+
+## You do not need to manage the protocol
+
+Ginger handles registration, signing and retries. If the basic status checks do not explain what you see, use the optional advanced references: [round details](round-details.md), [custom settings](settings.md) and [fees and privacy progress](fees-and-progress.md).

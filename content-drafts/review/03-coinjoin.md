@@ -8,9 +8,10 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 
 ## Read the manuscripts
 
-- [CoinJoin Fees and Privacy Progress](../en/coinjoin/fees-and-progress.md) — `coinjoin.fees-and-progress`
-- [Configure CoinJoin and Output Wallets](../en/coinjoin/settings.md) — `coinjoin.settings`
-- [Use CoinJoin in Ginger Wallet](../en/coinjoin/use-coinjoin.md) — `coinjoin.use-coinjoin`
+- [Use CoinJoin in Ginger Wallet](../en/coinjoin/use-coinjoin.md) — beginner; `coinjoin.use-coinjoin`
+- [CoinJoin Fees and Privacy Progress](../en/coinjoin/fees-and-progress.md) — advanced; `coinjoin.fees-and-progress`
+- [CoinJoin Rounds and Input Eligibility](../en/coinjoin/round-details.md) — advanced; `coinjoin.round-details`
+- [Configure CoinJoin and Output Wallets](../en/coinjoin/settings.md) — advanced; `coinjoin.settings`
 
 ## Behavior evidence
 
@@ -95,3 +96,9 @@ Added full-journey cost accounting, a fictional satoshi reconciliation, and a sc
 | Published backend fee-output accounting; not evidence of deployed coordinator configuration | [Arena.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WabiSabi/Backend/Rounds/Arena.cs#L644) |
 | Coin-selection loss estimates are algorithm inputs, not a user lifetime-cost guarantee | [CoinJoinCoinSelector.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WabiSabi/Client/CoinJoin/Client/CoinJoinCoinSelector.cs#L75) |
 | Logs distinguish input/output difference and fee attribution; one fee label is not necessarily all cost | [CoinJoinClient.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WabiSabi/Client/CoinJoin/Client/CoinJoinClient.cs#L813) |
+
+## Reader-level and FAQ revision
+
+Every page now has a visible reading level and `reader_level` metadata. Beginner instructions keep recovery, recipient verification and fees in the ordinary flow; detailed reference is separate. No unrelated wallet-brand mention remains in the public manuscript. Exact code paths and original research names remain truthful editorial provenance.
+
+Technical sections were moved into separate advanced files inside this topic, preserving independent PR review and the existing basic page IDs. The released-source evidence above also applies to those redistributed sections.
