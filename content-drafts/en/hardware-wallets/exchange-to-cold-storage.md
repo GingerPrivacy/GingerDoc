@@ -4,9 +4,12 @@ title: "From an Exchange to Cold Storage with Ginger"
 description: "Withdraw bitcoin, use Ginger CoinJoin, and move funds to a verified hardware wallet while accounting for fees and preserving privacy."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # From an Exchange to Cold Storage with Ginger
+
+> Reading level: Advanced guide. First establish a verified hardware wallet and its independent backup.
 
 Ginger can help you separate future bitcoin activity from an exchange withdrawal before storing funds on a hardware wallet. The exchange retains its withdrawal record. The hardware wallet protects signing keys; the transactions and your later spending still determine what others can infer.
 

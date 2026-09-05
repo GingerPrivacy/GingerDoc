@@ -4,15 +4,18 @@ title: "Use the PSBT Workflow"
 description: "Prepare a Bitcoin transaction in Ginger, sign it with a hardware wallet using a file, and import the result for broadcast."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # Use the PSBT Workflow
+
+> Reading level: Advanced guide. First establish a verified hardware wallet and its independent backup.
 
 A partially signed Bitcoin transaction (PSBT) is a file that carries a transaction and information needed by a signer. It lets you separate preparation on the desktop from signing on a hardware wallet. A PSBT can disclose addresses, amounts, and wallet information, so treat it as private even before it can spend anything.
 
 ## Prepare the wallet connection
 
-You need a compatible hardware-wallet record in Ginger, linked to the keys on the signing device. For a supported Coldcard export, use the device's Wasabi-compatible wallet JSON export and add it with **Import File**. Use the manufacturer's current export instructions for that firmware; a PSBT transaction file is not a wallet-import file.
+You need a compatible hardware-wallet record in Ginger, linked to the keys on the signing device. For a supported Coldcard wallet JSON export, add the file with **Import File**. Use the manufacturer's current export instructions for that firmware; a PSBT transaction file is not a wallet-import file.
 
 The export contains public account information and a device fingerprint, not the recovery words. Verify that Ginger's receiving address matches the device before funding the wallet. An imported account with a different derivation path or passphrase can be a different wallet even when the device is the same.
 

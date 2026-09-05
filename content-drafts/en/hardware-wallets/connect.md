@@ -4,9 +4,12 @@ title: "Connect and Use a Hardware Wallet"
 description: "Connect a supported hardware wallet to Ginger, verify receiving addresses on the device, and approve payments safely."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "everyday"
 ---
 
 # Connect and Use a Hardware Wallet
+
+> Reading level: Everyday use. Choose this guide when you need the task it describes.
 
 A hardware wallet keeps signing keys on a separate device. Ginger can display its balance and prepare transactions, while the device authorizes supported signing operations. The desktop still handles sensitive public information, so hardware storage does not make wallet activity anonymous.
 

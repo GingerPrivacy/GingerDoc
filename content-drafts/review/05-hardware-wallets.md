@@ -8,9 +8,9 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 
 ## Read the manuscripts
 
-- [Connect and Use a Hardware Wallet](../en/hardware-wallets/connect.md) — `hardware-wallets.connect`
-- [From an Exchange to Cold Storage with Ginger](../en/hardware-wallets/exchange-to-cold-storage.md) — `hardware-wallets.exchange-to-cold-storage`
-- [Use the PSBT Workflow](../en/hardware-wallets/psbt.md) — `hardware-wallets.psbt`
+- [Connect and Use a Hardware Wallet](../en/hardware-wallets/connect.md) — everyday; `hardware-wallets.connect`
+- [From an Exchange to Cold Storage with Ginger](../en/hardware-wallets/exchange-to-cold-storage.md) — advanced; `hardware-wallets.exchange-to-cold-storage`
+- [Use the PSBT Workflow](../en/hardware-wallets/psbt.md) — advanced; `hardware-wallets.psbt`
 
 ## Behavior evidence
 
@@ -74,3 +74,7 @@ Added a complete exchange-to-cold-storage walkthrough with two routes, source/de
 | Coinjoin to this wallet | [Resources.resx](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Lang/Resources.resx#L490) (`CoinjoinToThisWallet`) |
 | Exclude Coins | [Resources.resx](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Lang/Resources.resx#L370) (`ExcludedCoinsViewModelTitle`) |
 | Manual Control | [Resources.resx](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Lang/Resources.resx#L343) (`WalletManualControl`) |
+
+## Reader-level and FAQ revision
+
+Every page now has a visible reading level and `reader_level` metadata. Beginner instructions keep recovery, recipient verification and fees in the ordinary flow; detailed reference is separate. No unrelated wallet-brand mention remains in the public manuscript. Exact code paths and original research names remain truthful editorial provenance.
