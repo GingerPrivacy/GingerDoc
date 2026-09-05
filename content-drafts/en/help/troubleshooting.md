@@ -4,9 +4,12 @@ title: "Troubleshoot Ginger Wallet"
 description: "Diagnose missing balances, connection problems, CoinJoin waiting states, 2FA failures, and hardware issues while preserving recovery data."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "everyday"
 ---
 
 # Troubleshoot Ginger Wallet
+
+> Reading level: Everyday use. Choose this guide when you need the task it describes.
 
 Start with the exact error, selected wallet, network, and application version. Preserve recovery information and wallet files before changing data. Reinstalling, deleting folders, or creating new words is rarely the first step for a connection or display problem.
 
@@ -14,7 +17,7 @@ Start with the exact error, selected wallet, network, and application version. P
 
 | Symptom | Check first | Next step |
 | --- | --- | --- |
-| Recovered wallet is empty | Original words, exact passphrase, network, scan progress | Compare known addresses or history after synchronization; investigate gap limit or account compatibility only with a reason |
+| Recovered wallet is empty | Original words, exact passphrase, network, scan progress | Compare known addresses or history after synchronization; use advanced recovery checks only if these ordinary checks do not explain it |
 | Incoming payment is missing | Correct address, sender's transaction ID, selected wallet | Check broadcast and confirmation, then local synchronization |
 | Receive or Send is missing | Is recovery still active? Is the wallet watch-only? | Wait for recovery, or use the required signing device |
 | An old address vanished from the receive list | Was it paid or hidden? | Check history; list visibility does not invalidate keys |
@@ -56,7 +59,7 @@ Use **Speed Up Transaction** or **Cancel Transaction** only when Ginger offers i
 
 ## 2FA and hardware
 
-For a rejected authenticator code, check phone time, the selected entry, eight-digit/SHA256 compatibility, and Tor/service connectivity. Preserve `2fa_info.gws` and wallet files. If normal startup cannot be restored, recovery words plus the original passphrase are the independent key backup; reinstalling over the same data does not recreate a lost authenticator.
+For a rejected authenticator code, check phone time, the selected entry, the authenticator's compatibility with Ginger, and Tor/service connectivity. Preserve the existing wallet and 2FA files. If normal startup cannot be restored, recovery words plus the original passphrase are the independent key backup; reinstalling over the same data does not recreate a lost authenticator. The [advanced FAQ](advanced-faq.md#does-the-2fa-file-recover-the-wallet-without-the-service) explains the file dependency.
 
 For device detection, use one unlocked hardware wallet, a data cable, and a direct USB port, with competing device applications closed. Complete the required device-side Bitcoin-app, PIN, or passphrase steps. On Linux, check manufacturer USB permissions. Keep the device seed off the computer.
 

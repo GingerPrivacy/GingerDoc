@@ -4,9 +4,12 @@ title: "Bitcoin and Ginger Wallet Glossary"
 description: "Understand the terms used in Ginger: UTXO, change, passphrase, CoinJoin, anonymity score, Tor, PSBT, and more."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "everyday"
 ---
 
 # Bitcoin and Ginger Wallet Glossary
+
+> Reading level: Everyday use. Choose this guide when you need the task it describes.
 
 ## Amounts and transactions
 
