@@ -43,3 +43,5 @@ Describe the version, operating system, error, and non-secret reproduction steps
 ## Choose a sustainable routine
 
 For an occasional payment, fresh addresses, careful previews, protected backups, and Tor may be the first improvements to establish. If you need stronger transaction-link privacy, assess CoinJoin's fees, service conditions, and post-CoinJoin spending behavior. A complicated routine you cannot recover or consistently follow can create different risks from the ones you hoped to reduce.
+
+Work through [spending after CoinJoin](spending-after-coinjoin.md) for transaction examples, [wallet migration](wallet-migration.md) before changing applications, and [repeated payments](repeated-payments.md) when publishing donation details or receiving installments. [Where wallet information goes](information-sharing.md) helps identify the services and people involved in each choice.
