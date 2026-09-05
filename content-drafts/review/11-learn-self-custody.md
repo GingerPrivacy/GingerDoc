@@ -38,3 +38,12 @@ Educational self-custody guidance complements the operational recovery chapter. 
 Keep page IDs stable. Convert frontmatter keys to the chosen engine when integrating. The only relative manuscript links point inside this topic, so merging another topic is not a prerequisite. The PR00 page registry lists the intended navigation across topics; add those links after all relevant pages have merged. Keep source notes out of public reader navigation.
 
 Before publication, review the instructions against the installed release and recheck live provider/coordinator terms. No screenshots or framework-specific components are required.
+
+## Research expansion evidence
+
+Expanded the security routine with a disclosure decision table and separate responses to privacy-only and signing-key exposure. Recovery words, passphrase, xpub scope and application files are distinguished. Fresh keys are required to leave compromised keys behind; changing 2FA or an application password is not revocation. This is a practical fund-control response, not individualized legal, incident-response or investment advice.
+
+| Claim reviewed | Pinned released source |
+| --- | --- |
+| Startup verification exchanges the code and installation ID for the additional file-encryption secret | [TwoFactorAuthenticationService.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Services/TwoFactorAuthenticationService.cs#L78) |
+| Local wallet attributes include labels, provider and Secret Hunt information | [WalletAttributes.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Blockchain/Keys/WalletAttributes.cs#L12) |
