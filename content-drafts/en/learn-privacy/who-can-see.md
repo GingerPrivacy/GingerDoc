@@ -4,9 +4,12 @@ title: "Who Can See My Bitcoin Transactions?"
 description: "Learn what a Bitcoin address reveals, how identity and transaction links combine, and where Ginger privacy tools can help."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "beginner"
 ---
 
 # Who Can See My Bitcoin Transactions?
+
+> Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
 Bitcoin transactions are public, but a wallet owner's name is not automatically written beside every address. The practical question is who can connect an address or transaction to you, and what else they can infer from that connection.
 

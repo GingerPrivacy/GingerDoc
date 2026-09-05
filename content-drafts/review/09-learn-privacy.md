@@ -8,12 +8,12 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 
 ## Read the manuscripts
 
-- [Bitcoin Privacy Habits Before and After a Payment](../en/learn-privacy/habits.md) — `learn-privacy.habits`
-- [Where Your Wallet Information Goes](../en/learn-privacy/information-sharing.md) — `learn-privacy.information-sharing`
-- [Receiving Donations and Repeated Payments](../en/learn-privacy/repeated-payments.md) — `learn-privacy.repeated-payments`
-- [Spending After CoinJoin: Worked Examples](../en/learn-privacy/spending-after-coinjoin.md) — `learn-privacy.spending-after-coinjoin`
-- [Moving to Ginger Without Exposing More Wallet History](../en/learn-privacy/wallet-migration.md) — `learn-privacy.wallet-migration`
-- [Who Can See My Bitcoin Transactions?](../en/learn-privacy/who-can-see.md) — `learn-privacy.who-can-see`
+- [Bitcoin Privacy Habits Before and After a Payment](../en/learn-privacy/habits.md) — beginner; `learn-privacy.habits`
+- [Who Can See My Bitcoin Transactions?](../en/learn-privacy/who-can-see.md) — beginner; `learn-privacy.who-can-see`
+- [Receiving Donations and Repeated Payments](../en/learn-privacy/repeated-payments.md) — everyday; `learn-privacy.repeated-payments`
+- [Where Your Wallet Information Goes](../en/learn-privacy/information-sharing.md) — advanced; `learn-privacy.information-sharing`
+- [Spending After CoinJoin: Worked Examples](../en/learn-privacy/spending-after-coinjoin.md) — advanced; `learn-privacy.spending-after-coinjoin`
+- [Moving to Ginger Without Exposing More Wallet History](../en/learn-privacy/wallet-migration.md) — advanced; `learn-privacy.wallet-migration`
 
 ## Behavior evidence
 
@@ -81,3 +81,7 @@ Added four complete pages: post-CoinJoin spending examples, wallet migration, in
 | Wallet Coins | [Resources.resx](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Lang/Resources.resx#L358) (`WalletCoinsViewModelTitle`) |
 
 The literal fee-provider label and choices are in [BitcoinTabSettingsView.axaml](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/Settings/Views/BitcoinTabSettingsView.axaml#L21).
+
+## Reader-level and FAQ revision
+
+Every page now has a visible reading level and `reader_level` metadata. Beginner instructions keep recovery, recipient verification and fees in the ordinary flow; detailed reference is separate. No unrelated wallet-brand mention remains in the public manuscript. Exact code paths and original research names remain truthful editorial provenance.

@@ -4,9 +4,12 @@ title: "Moving to Ginger Without Exposing More Wallet History"
 description: "Compare restoring the same Bitcoin keys, connecting hardware to another wallet app, and moving funds to new keys without assuming past disclosures disappear."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # Moving to Ginger Without Exposing More Wallet History
+
+> Reading level: Advanced guide. First understand fresh receiving addresses and ordinary payment review.
 
 Changing wallet software changes which application you use. It does not necessarily change the Bitcoin keys, addresses or information that a previous service already knows. Decide whether you are recovering access, changing software for convenience, or creating a new separation for future activity.
 

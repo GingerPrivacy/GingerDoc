@@ -4,9 +4,12 @@ title: "Receiving Donations and Repeated Payments"
 description: "Receive Bitcoin donations and recurring payments with fresh addresses, useful labels, careful refunds, and deliberate handling of the resulting coins."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "everyday"
 ---
 
 # Receiving Donations and Repeated Payments
+
+> Reading level: Everyday use. Choose this guide when you need the task it describes.
 
 Receiving bitcoin publicly does not require publishing every address in your wallet. It does require deciding what each payer or website visitor will see, then keeping unrelated receipts separate where useful. Ginger supports ordinary on-chain receiving and local labels; it is not an invoicing server or an automatic website address-rotation service.
 

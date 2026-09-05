@@ -4,9 +4,12 @@ title: "Spending After CoinJoin: Worked Examples"
 description: "Use practical Bitcoin payment examples to understand coin selection, change, consolidation, and what can become visible after CoinJoin."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # Spending After CoinJoin: Worked Examples
+
+> Reading level: Advanced guide. First understand fresh receiving addresses and ordinary payment review.
 
 CoinJoin changes the uncertainty around links between inputs and outputs. The next transaction can add new information. Before paying, decide which coins the recipient or another observer could already associate with you and what the proposed payment would reveal.
 

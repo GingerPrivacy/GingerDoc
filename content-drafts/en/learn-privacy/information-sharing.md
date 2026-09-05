@@ -4,9 +4,12 @@ title: "Where Your Wallet Information Goes"
 description: "Understand what Ginger synchronization, CoinJoin, providers, explorers, 2FA, Secret Hunt, and other wallet apps can reveal and what Tor changes."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # Where Your Wallet Information Goes
+
+> Reading level: Advanced guide. First understand fresh receiving addresses and ordinary payment review.
 
 Different wallet actions disclose different information. Checking public block filters, submitting a CoinJoin input and opening a purchase page are not the same privacy event. Use this reference before sharing something you cannot take back.
 

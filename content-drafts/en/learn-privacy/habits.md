@@ -4,9 +4,12 @@ title: "Bitcoin Privacy Habits Before and After a Payment"
 description: "Apply practical habits around receiving addresses, labels, coin selection, browsers, and support requests when using Ginger Wallet."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "beginner"
 ---
 
 # Bitcoin Privacy Habits Before and After a Payment
+
+> Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
 Privacy improvements are easiest to keep when they fit the way you actually use bitcoin. Before changing a setting, identify the information you want to disclose less widely and the person or service that could see it.
 
@@ -44,4 +47,4 @@ Describe the version, operating system, error, and non-secret reproduction steps
 
 For an occasional payment, fresh addresses, careful previews, protected backups, and Tor may be the first improvements to establish. If you need stronger transaction-link privacy, assess CoinJoin's fees, service conditions, and post-CoinJoin spending behavior. A complicated routine you cannot recover or consistently follow can create different risks from the ones you hoped to reduce.
 
-Work through [spending after CoinJoin](spending-after-coinjoin.md) for transaction examples, [wallet migration](wallet-migration.md) before changing applications, and [repeated payments](repeated-payments.md) when publishing donation details or receiving installments. [Where wallet information goes](information-sharing.md) helps identify the services and people involved in each choice.
+For donations or installments, see the everyday guide to [repeated payments](repeated-payments.md). Optional advanced guides cover [spending after CoinJoin](spending-after-coinjoin.md), [wallet migration](wallet-migration.md) and [where wallet information goes](information-sharing.md). Choose one when you need that specific decision; they are not required steps for your first payment.
