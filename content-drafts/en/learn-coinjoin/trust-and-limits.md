@@ -4,9 +4,12 @@ title: "What Do You Trust When You CoinJoin?"
 description: "Distinguish control of Bitcoin keys, CoinJoin privacy assumptions, coordinator availability, participant independence, and software verification."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # What Do You Trust When You CoinJoin?
+
+> Reading level: Advanced guide. First read the simple CoinJoin explanation.
 
 With Ginger, you retain Bitcoin signing authority instead of depositing funds into a mixer-controlled balance. That answers an important question about custody. Privacy, availability and software integrity involve additional questions.
 

@@ -4,9 +4,12 @@ title: "When Does CoinJoin Make Sense?"
 description: "Evaluate whether CoinJoin addresses your Bitcoin privacy concern, what it costs, and how to plan spending afterward."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "everyday"
 ---
 
 # When Does CoinJoin Make Sense?
+
+> Reading level: Everyday use. Choose this guide when you need the task it describes.
 
 CoinJoin is useful when reducing transaction-link information addresses a concern you actually have. It is less useful when the main problem is a stolen recovery phrase, a compromised computer, or information you are about to disclose directly to a provider.
 

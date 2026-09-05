@@ -8,9 +8,9 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 
 ## Read the manuscripts
 
-- [What Is CoinJoin? Benefits, Costs, and Limitations](../en/learn-coinjoin/explained.md) — `learn-coinjoin.explained`
-- [What Do You Trust When You CoinJoin?](../en/learn-coinjoin/trust-and-limits.md) — `learn-coinjoin.trust-and-limits`
-- [When Does CoinJoin Make Sense?](../en/learn-coinjoin/when-to-use.md) — `learn-coinjoin.when-to-use`
+- [What Is CoinJoin? A Simple Explanation](../en/learn-coinjoin/explained.md) — beginner; `learn-coinjoin.explained`
+- [When Does CoinJoin Make Sense?](../en/learn-coinjoin/when-to-use.md) — everyday; `learn-coinjoin.when-to-use`
+- [What Do You Trust When You CoinJoin?](../en/learn-coinjoin/trust-and-limits.md) — advanced; `learn-coinjoin.trust-and-limits`
 
 ## Behavior evidence
 
@@ -50,3 +50,7 @@ Added a user-oriented trust model separating signing authority, privacy, availab
 | Input wallet needs a loaded signing path; watch-only hardware source cannot mix | [Wallet.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Wallets/Wallet.cs#L132) |
 | Startup verification exchanges the code and installation ID for the additional file-encryption secret | [TwoFactorAuthenticationService.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Services/TwoFactorAuthenticationService.cs#L78) |
 | Peer, RPC and backend transaction-broadcast paths | [TransactionBroadcaster.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Blockchain/TransactionBroadcasting/TransactionBroadcaster.cs#L143) |
+
+## Reader-level and FAQ revision
+
+Every page now has a visible reading level and `reader_level` metadata. Beginner instructions keep recovery, recipient verification and fees in the ordinary flow; detailed reference is separate. No unrelated wallet-brand mention remains in the public manuscript. Exact code paths and original research names remain truthful editorial provenance.

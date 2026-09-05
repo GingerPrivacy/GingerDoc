@@ -1,45 +1,40 @@
 ---
 doc_id: "learn-coinjoin.explained"
-title: "What Is CoinJoin? Benefits, Costs, and Limitations"
-description: "Understand collaborative Bitcoin transactions, what CoinJoin can improve, and why fees, timing, and later spending still matter."
+title: "What Is CoinJoin? A Simple Explanation"
+description: "Learn in plain language how a shared Bitcoin transaction can help privacy, what it costs and what it cannot hide."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "beginner"
 ---
 
-# What Is CoinJoin? Benefits, Costs, and Limitations
+# What Is CoinJoin? A Simple Explanation
 
-CoinJoin lets several participants contribute to one Bitcoin transaction. Instead of every input obviously belonging to one payer, the transaction contains several people's spending and receiving activity. This can make it harder to infer which new outputs correspond to a particular participant's inputs.
+> Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
-It is still a public Bitcoin transaction. CoinJoin does not encrypt the blockchain, hide all amounts, or turn bitcoin into another asset. Its benefit is uncertainty about ownership links, whose strength depends on the transaction, protocol, participants, and information held by the observer.
+CoinJoin puts several people's Bitcoin activity into one shared transaction. This can make it harder for someone reading the public transaction history to tell which resulting coins belong to which person.
 
-## A simple example
+Think of several people paying into a shared transaction and receiving new pieces of bitcoin back. The public can see the amounts moving. What may be less clear is which person's money became which piece. This is only an illustration: real rounds have different amounts and more complicated details.
 
-Imagine three people each contributing funds to a shared transaction, which creates several similar-looking outputs. An outside reader can see those inputs and outputs but may have more than one plausible way to associate them. An ordinary payment's assumption that one sender owns every input no longer describes the transaction accurately.
+## Do I hand my bitcoin to someone else?
 
-Real rounds can be more complex. Ginger uses WabiSabi-based coordination, which supports flexibility in input and output amounts rather than requiring every participant to receive one identical fixed-size coin. Similar-looking outputs help only when the surrounding information leaves plausible alternatives. The [WabiSabi protocol source](https://github.com/WalletWasabi/WabiSabi/blob/master/protocol.md) is available for readers wanting the underlying specification.
+Ginger's wallet keeps the information used to approve spending and checks the proposed transaction before signing. You do not first deposit into a balance controlled by a mixing service.
 
-## Who holds the money?
+You still need a trustworthy installation, a protected computer and a recovery backup. The service organizing a round also needs to be available. Keeping control of keys does not mean every other problem disappears.
 
-In Ginger's normal CoinJoin flow, your wallet retains its keys and verifies a proposed transaction before signing its own inputs. You do not first deposit bitcoin into a coordinator's custodial account. Other participants need to complete their signing steps for the shared transaction to succeed.
+## Why might I use it?
 
-The coordinator still organizes the round and influences availability and eligibility. A service can be offline, reject an input, or fail to complete a round. Non-custodial construction limits one class of trust; it does not remove implementation bugs, endpoint observations, malicious participants, or the need for backups.
+You might want a person you pay to learn less about your other payments. Or you might want future spending to be less directly connected to an address you previously published.
 
-## Benefits and limits
+CoinJoin can help with those links. It cannot delete an exchange's withdrawal record or make a merchant forget who placed an order. The blockchain remains public, and a later payment can reveal a new connection.
 
-| CoinJoin can help with | CoinJoin does not guarantee |
-| --- | --- |
-| Weakening simple input-to-output ownership guesses | That no analyst can make a useful inference |
-| Making future spending less directly associated with a known receipt | Erasure of the original exchange, invoice, or withdrawal record |
-| Increasing plausible interpretations of a transaction | A verified number of independent people behind a wallet score |
-| Providing privacy without handing a coordinator the spending keys | Freedom from software, device, or service failures |
-| Combining privacy work into a collaborative transaction | Acceptance of the resulting funds by every provider |
+## What will it cost?
 
-An observer who controls other participants or has additional off-chain information may have fewer uncertainties than the public. The number of outputs is therefore not an automatic count of independent anonymity partners. Later combining coins can reveal associations that the CoinJoin alone left ambiguous.
+A successful round pays Bitcoin mining fees and may also charge a coordinator fee. An exemption from the coordinator fee does not remove mining costs. Several rounds can mean several costs.
 
-## Costs and waiting
+There is no fixed completion time. Ginger may wait for confirmations, acceptable fees or other participants. Read the status and review the result before leaving repeated participation unattended.
 
-A successful round pays Bitcoin mining fees and may charge a coordinator fee. Remixes or small-input exemptions can remove the coordinator component under the offered policy while leaving mining costs. Multiple rounds can mean multiple costs.
+## Do I need it before my first payment?
 
-The wallet waits for suitable rounds, confirmations, fee conditions, and other participants. There is no fixed completion time that applies to every balance. Privacy settings can extend that wait. A failed attempt before broadcast is different from a completed transaction that has already incurred on-chain fees.
+No. Receiving, sending and CoinJoin are separate actions. You can learn ordinary payments first, then decide what privacy problem you want to address.
 
-In Ginger, review **Coinjoin Settings**, the output destination, and the player's status before enabling unattended participation. Then monitor the resulting history and costs. Continue with [Decide whether CoinJoin fits your use](when-to-use.md) to connect the mechanism with an actual spending plan.
+For that decision, read [when CoinJoin is useful](when-to-use.md). Optional advanced reading: [trust and limitations](trust-and-limits.md), including what different observers can learn. You do not need to study the protocol to use the ordinary start-and-pause controls.
