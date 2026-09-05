@@ -1,7 +1,7 @@
 ---
 doc_id: "payments.payjoin-message-signing"
 title: "PayJoin and Message Signing"
-description: "Use Ginger payment-request PayJoin support and sign an address-ownership message, with the released limitations clearly explained."
+description: "Send a PayJoin payment request, understand recipient knowledge, wallet fingerprints and fallback, and sign a narrowly scoped address-ownership message."
 lang: "en-US"
 verified_release: "v2.0.26"
 ---
@@ -24,6 +24,22 @@ The released implementation can fall back to its ordinary payment transaction if
 Use a compatible HTTPS endpoint for mainnet. In v2.0.26 the endpoint checks reject onion endpoints while Tor is enabled; an onion-only request should not be treated as a supported path. Keep Tor enabled and ask the recipient for a compatible alternative rather than disabling network privacy to force the request through.
 
 This guide covers sending a recipient-provided request. Ginger's ordinary **Receive** flow does not operate a PayJoin receiving server, and this release does not provide a user setup flow for one.
+
+## What the recipient and an observer learn
+
+The recipient already knows the payment request, its receiving address and the intended amount. If the request is attached to an identified order, PayJoin does not erase that identity. During negotiation, the receiving service also sees the proposed payment transaction, including the sender's proposed inputs. It should not be treated as someone from whom the payment itself is hidden.
+
+An outside observer sees the transaction eventually published on Bitcoin. A successful PayJoin can make the usual “all inputs belong to the sender” assumption unreliable. That benefit depends on the transaction and what other information the observer has; it does not guarantee that the transaction is indistinguishable from every ordinary payment.
+
+Keep these audiences separate. A recipient may learn details through the order or negotiation even if an unrelated observer cannot confidently assign the transaction's inputs. A public transaction explorer can create another disclosure if you look up the payment through an identified browser session.
+
+## Wallet fingerprints and the ordinary-payment fallback
+
+Wallets make choices about input address types, transaction structure and signing. Combinations of these choices can leave recognizable patterns. A transaction can therefore lose some ambiguity even when its PayJoin protocol messages are valid. Published [PayJoin fingerprinting examples](https://payjoin.org/blog/2026/03/25/wallet-fingerprints-payjoin-privacy/) illustrate this problem in particular wallet combinations; they do not establish that Ginger has the same issues or quantify Ginger's privacy.
+
+As a user, choose an updated, compatible receiving service, verify the payment request and review the proposed fee and amount. Do not change unfamiliar transaction options simply to imitate another wallet: a plausible-looking transaction is not proof of a good privacy result.
+
+If you require a collaborative payment, agree on a compatible method with the recipient before authorizing Ginger's sending flow. Its ordinary-payment fallback means that a failed negotiation may still result in a valid payment. After broadcast, do not send again just because the result is unclear; first check the transaction and the recipient's payment status. A failed PayJoin negotiation and a failed Bitcoin payment are different situations.
 
 ## Sign a message for an address
 

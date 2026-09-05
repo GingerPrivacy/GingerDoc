@@ -8,10 +8,10 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 
 ## Read the manuscripts
 
-- [Receive Bitcoin and Manage Addresses](../en/payments/receive.md) — `payments.receive`
-- [Send Bitcoin and Review Fees](../en/payments/send.md) — `payments.send`
 - [Coin Control, History, and Stuck Transactions](../en/payments/coin-control-history.md) — `payments.coin-control-history`
 - [PayJoin and Message Signing](../en/payments/payjoin-message-signing.md) — `payments.payjoin-message-signing`
+- [Receive Bitcoin and Manage Addresses](../en/payments/receive.md) — `payments.receive`
+- [Send Bitcoin and Review Fees](../en/payments/send.md) — `payments.send`
 
 ## Behavior evidence
 
@@ -61,3 +61,13 @@ Released SendViewModel checks Tor != Disabled before rejecting onion endpoints, 
 Keep page IDs stable. Convert frontmatter keys to the chosen engine when integrating. The only relative manuscript links point inside this topic, so merging another topic is not a prerequisite. The PR00 page registry lists the intended navigation across topics; add those links after all relevant pages have merged. Keep source notes out of public reader navigation.
 
 Before publication, review the instructions against the installed release and recheck live provider/coordinator terms. No screenshots or framework-specific components are required.
+
+## Research expansion evidence
+
+Expanded the distinction between recipient knowledge and public-chain observers, transaction fingerprints, and the ordinary-payment fallback. The Payjoin Foundation examples concern other wallet combinations; no Ginger fingerprint vulnerability or current privacy percentage is inferred. No PayJoin receiving server, v2 flow, hardware sending support, or successful endpoint test is claimed.
+
+| Claim reviewed | Pinned released source |
+| --- | --- |
+| Recipient receives a finalized proposed transaction after extra metadata is cleared | [PayjoinClient.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WebClients/PayJoin/PayjoinClient.cs#L77) |
+| PayJoin construction and ordinary-transaction fallback | [TransactionPreviewViewModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/HomeScreen/Send/ViewModels/TransactionPreviewViewModel.cs#L522) |
+| Released request checks for hardware and endpoint compatibility | [SendViewModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/HomeScreen/Send/ViewModels/SendViewModel.cs#L266) |
