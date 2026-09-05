@@ -8,10 +8,11 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 
 ## Read the manuscripts
 
-- [Coin Control, History, and Stuck Transactions](../en/payments/coin-control-history.md) — `payments.coin-control-history`
-- [PayJoin and Message Signing](../en/payments/payjoin-message-signing.md) — `payments.payjoin-message-signing`
-- [Receive Bitcoin and Manage Addresses](../en/payments/receive.md) — `payments.receive`
-- [Send Bitcoin and Review Fees](../en/payments/send.md) — `payments.send`
+- [Receive Bitcoin and Manage Addresses](../en/payments/receive.md) — beginner; `payments.receive`
+- [Send Bitcoin and Review Fees](../en/payments/send.md) — beginner; `payments.send`
+- [Coin Control, History, and Stuck Transactions](../en/payments/coin-control-history.md) — advanced; `payments.coin-control-history`
+- [Transaction Fees, Custom Rates and Change](../en/payments/fees-and-change.md) — advanced; `payments.fees-and-change`
+- [PayJoin and Message Signing](../en/payments/payjoin-message-signing.md) — advanced; `payments.payjoin-message-signing`
 
 ## Behavior evidence
 
@@ -71,3 +72,9 @@ Expanded the distinction between recipient knowledge and public-chain observers,
 | Recipient receives a finalized proposed transaction after extra metadata is cleared | [PayjoinClient.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/WebClients/PayJoin/PayjoinClient.cs#L77) |
 | PayJoin construction and ordinary-transaction fallback | [TransactionPreviewViewModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/HomeScreen/Send/ViewModels/TransactionPreviewViewModel.cs#L522) |
 | Released request checks for hardware and endpoint compatibility | [SendViewModel.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/HomeScreen/Send/ViewModels/SendViewModel.cs#L266) |
+
+## Reader-level and FAQ revision
+
+Every page now has a visible reading level and `reader_level` metadata. Beginner instructions keep recovery, recipient verification and fees in the ordinary flow; detailed reference is separate. No unrelated wallet-brand mention remains in the public manuscript. Exact code paths and original research names remain truthful editorial provenance.
+
+Technical sections were moved into separate advanced files inside this topic, preserving independent PR review and the existing basic page IDs. The released-source evidence above also applies to those redistributed sections.

@@ -4,9 +4,12 @@ title: "Coin Control, History, and Stuck Transactions"
 description: "Inspect Ginger UTXOs and payment history, select coins deliberately, and understand when speeding up or cancelling is possible."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # Coin Control, History, and Stuck Transactions
+
+> Reading level: Advanced guide. First understand the normal send preview, recipient amount and fee.
 
 The total wallet balance can contain many separate coins with different origins, confirmation states, and privacy histories. Coin control helps you decide which of them to spend. It also makes it easier to accidentally link funds that were previously separate, so use it with a specific purpose.
 
@@ -32,7 +35,7 @@ The wallet home screen shows incoming, outgoing, and CoinJoin activity. Expand g
 
 Use **Copy Transaction ID** when you need to identify a specific transaction. Keep transaction IDs private where possible: sharing one can disclose addresses, amounts, and links to other activity. A public explorer also learns the queries you make. Ginger's local history is the first place to check your own payments.
 
-This release's documented history workflow is inspection, sorting, grouping, and copying transaction IDs. Do not expect a Wasabi-specific transaction search or CSV export control to exist under an invented Ginger menu name.
+You can inspect, sort and group history, and copy transaction IDs. This release does not offer a transaction-search or CSV-export control in this history workflow.
 
 ## Speed up an unconfirmed transaction
 

@@ -4,9 +4,12 @@ title: "Receive Bitcoin and Manage Addresses"
 description: "Generate a Ginger receiving address, choose SegWit or Taproot where supported, label payments, and check confirmations."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "beginner"
 ---
 
 # Receive Bitcoin and Manage Addresses
+
+> Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
 Use a fresh receiving address for each payment. The address tells a payer where to send bitcoin; it does not reveal your recovery words. Reusing it, however, lets observers link payments to that same destination.
 

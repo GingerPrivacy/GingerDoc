@@ -4,9 +4,12 @@ title: "PayJoin and Message Signing"
 description: "Send a PayJoin payment request, understand recipient knowledge, wallet fingerprints and fallback, and sign a narrowly scoped address-ownership message."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # PayJoin and Message Signing
+
+> Reading level: Advanced guide. First understand the normal send preview, recipient amount and fee.
 
 PayJoin and message signing are separate tools. PayJoin changes how a payment transaction is constructed. Message signing proves control of a key for a particular statement without making a payment. Neither feature should be used as a reason to disclose your recovery words.
 
