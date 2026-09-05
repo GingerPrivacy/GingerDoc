@@ -1,0 +1,40 @@
+# Review 11: Understanding self-custody and recovery
+
+Complete English user-manual manuscripts, outside the live site build. Each topic branch starts at the same fork base and can be reviewed independently.
+
+- Application baseline: [v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26), commit `fa27e5419da5dfa391fb1db38012c0b1141f59b3`.
+- Source checked: 2026-09-05. Source/UI inspection; no real payment, CoinJoin, provider order, or physical-device test was performed.
+- Target: `molnard/GingerDoc:master`. No upstream PR, deployment, engine change, or translation is part of this topic.
+
+## Read the manuscripts
+
+- [Bitcoin Self-Custody: Backups, Passphrases, and Hardware Wallets](../en/learn-self-custody/basics.md) — `learn-self-custody.basics`
+- [Build a Recoverable Bitcoin Security Routine](../en/learn-self-custody/security-routine.md) — `learn-self-custody.security-routine`
+
+## Behavior evidence
+
+| Claim reviewed | Pinned released source |
+| --- | --- |
+| Recovery material and passphrase | [KeyManager.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Blockchain/Keys/KeyManager.cs#L241) |
+| Software-wallet generation | [WalletCreationOptions.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/AddWallet/Models/WalletCreationOptions.cs#L12) |
+| Hardware public account import | [HardwareWalletInterface.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi.Fluent/Models/Wallets/HardwareWalletInterface.cs#L71) |
+| 2FA startup service dependency | [TwoFactorAuthenticationService.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Services/TwoFactorAuthenticationService.cs#L78) |
+| Metadata cannot be recovered from words | [WalletAttributes.cs](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Blockchain/Keys/WalletAttributes.cs#L35) |
+
+## Exact English UI labels
+
+These labels used in the prose match the released resources. Literal XAML/enum labels are covered by the source files above. Button availability is checked in views/view models, not inferred only from a translated string.
+
+| Visible label | Resource key |
+| --- | --- |
+| Verify Recovery Words | [`WalletToolsVerifyRecoveryWords`](https://github.com/GingerPrivacy/GingerWallet/blob/fa27e5419da5dfa391fb1db38012c0b1141f59b3/WalletWasabi/Lang/Resources.resx#L514) |
+
+## Release differences and review limits
+
+Educational self-custody guidance complements the operational recovery chapter. External listings are context, not security endorsements or proof of this release being audited. Hardware seed import into desktop is explicitly a change to the custody arrangement.
+
+## Integration handoff
+
+Keep page IDs stable. Convert frontmatter keys to the chosen engine when integrating. The only relative manuscript links point inside this topic, so merging another topic is not a prerequisite. The PR00 page registry lists the intended navigation across topics; add those links after all relevant pages have merged. Keep source notes out of public reader navigation.
+
+Before publication, review the instructions against the installed release and recheck live provider/coordinator terms. No screenshots or framework-specific components are required.
