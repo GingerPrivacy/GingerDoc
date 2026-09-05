@@ -1,26 +1,26 @@
 ---
 doc_id: "backup-recovery.backups"
 title: "Back Up Your Ginger Wallet"
-description: "Understand recovery words, the BIP39 passphrase, wallet files, and the extra data needed to preserve labels and settings."
+description: "Keep and verify the recovery words and original passphrase needed to recover a Ginger software wallet after losing the computer."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "beginner"
 ---
 
 # Back Up Your Ginger Wallet
 
-For a software wallet, keep the recovery words and the exact original passphrase, if one was used. Together they recreate the keys. A wallet-file backup serves a different purpose: it can preserve local information that the Bitcoin blockchain cannot reconstruct.
+> Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
-## What to keep
+For a Ginger software wallet, keep the recovery words and the exact original passphrase, if you used one. These let you recover access after losing the computer. A hardware wallet uses its own device backup process; keep its words off the computer.
 
-| Backup item | Purpose | Important limit |
-| --- | --- | --- |
-| Recovery words, in order | Recreate the wallet's keys | Need the original passphrase when one was used |
-| Original passphrase, including capitalization and characters | Select the correct BIP39 wallet and unlock its protected secret | Cannot be reset by Ginger |
-| Wallet `.json` file | Preserve the wallet's stored key and synchronization information | An encrypted file still requires its credentials; 2FA can add a service dependency |
-| Matching `.attr` file | Preserve local labels and wallet-specific attributes | Contains sensitive metadata; recovery words do not restore it |
-| Hardware device recovery backup | Recover keys using the hardware manufacturer's process | Keep it off the desktop computer |
+## The backup you need first
 
-The local automatic backup directory is on the same computer. It can help after a damaged wallet file, but it does not protect against loss of the whole disk, theft, or ransomware.
+1. Write the words in the displayed order and keep them private.
+2. Record the exact passphrase, or record that the wallet was created without one. It cannot be reset by Ginger.
+3. Keep the backup somewhere you can reach after losing the computer, while preventing others from reading it.
+4. Verify the backup while the wallet is still accessible.
+
+The wallet's name is not a recovery secret. An authenticator code or hardware PIN does not replace the words and original passphrase.
 
 ## Store recovery information safely
 
@@ -30,31 +30,11 @@ Keep a non-empty passphrase recoverable too. Memorization alone can fail. Separa
 
 An application password, a device PIN, an authenticator code, and a BIP39 passphrase are not interchangeable. Label your backup instructions clearly without revealing the secrets to an unintended reader.
 
-## Choose the backup medium deliberately
+## Choose something durable and readable
 
-Paper is simple to inspect but can burn, fade, or become unreadable when wet. Durable metal can resist some of those hazards but does not stop a person from reading the words. Lamination can help against moisture without solving every storage risk. Check legibility and accessibility over time.
+Paper can be damaged by fire, water or fading. Metal can resist some damage but still needs protection from people reading it. Check that your backup remains legible and accessible.
 
-Typing words into a printer, cloud document, or ordinary computer can leave additional copies in memory, storage, print queues, or backups. Removable drives and older optical media can fail or become hard to read; use protected file backups as a complement to a recoverable word backup, not an excuse to keep the only copy on one device.
-
-A pre-funded physical coin whose maker generated the key requires trust that the maker did not retain it. It is not equivalent to a wallet you generated and backed up yourself. Do not use a printed single private key or a manufacturer's secret as if it were Ginger's full recovery-word backup.
-
-## Make a file backup
-
-Use Ginger's search to open **Data Folder**. Note the location, then close Ginger normally before copying files. In a normal mainnet data folder, `Wallets` contains wallet `.json` files and associated `.attr` files, and `WalletBackups` contains automatic wallet backups. Other networks use separate subdirectories.
-
-Copy the relevant files to protected backup storage, preserving names and the association between each JSON and ATTR file. A copy of the data folder is privacy-sensitive even if you set a passphrase: addresses, labels, logs, configuration, and order metadata can reveal activity. Do not upload it to an issue tracker or email it to support.
-
-With 2FA enabled, preserve `2fa_info.gws` too, but do not mistake it for an independent recovery key. It records an identifier used with Ginger's 2FA service. Recovery words and the original passphrase remain the route that does not depend on decrypting that particular local wallet file.
-
-## Choose and preserve a passphrase
-
-Use a passphrase that is difficult for another person to guess and that you can reproduce exactly. Randomly selected words from a defined word list, or a strong password generated by a trusted password manager, can avoid the predictability of names, dates, quotations, and ordinary sentences. Human-chosen “random-looking” substitutions are often less unpredictable than they appear.
-
-Entropy describes unpredictability under a particular generation process; length alone does not establish it. Six words chosen uniformly from a large list and six words selected from a favorite lyric do not have the same guessing resistance. This manual does not promise that a particular character count defeats every attack.
-
-Record the generated result accurately and confirm that your recovery plan preserves it. Avoid leading or trailing spaces: Ginger's entry validation can trim or reject them. A password manager can help retain a strong passphrase, but plan how to access that manager after the same computer is lost. Storing words and passphrase together creates a single point of compromise; separating them creates an extra recovery dependency. Choose an arrangement you can actually maintain.
-
-For a Ginger software wallet, the passphrase also protects the stored encrypted secret. This is why neither a file thief nor a recovery attempt should be assumed to succeed without it. Do not casually change the passphrase in another wallet application: a different BIP39 passphrase selects different keys, rather than simply renaming the old wallet's login password.
+Avoid photographs, ordinary cloud notes and printers for recovery words: they can leave copies you do not control. If you keep more than one copy, protect and keep track of each one. Do not split words into an improvised puzzle that you might be unable to reconstruct.
 
 ## Check the backup before you need it
 
@@ -63,3 +43,9 @@ For an open software wallet, use **Wallet Settings** → **Tools** → **Verify 
 If the words do not verify, check spelling and order privately. If you still have spending access but cannot establish a usable recovery backup, create a new wallet with a verified backup and transfer funds carefully. Do not delete the old wallet while investigating.
 
 Back up local metadata again after important label or settings changes. Receiving more bitcoin does not normally require a new set of recovery words, but a new wallet or a different passphrase does.
+
+## What about labels and computer files?
+
+Recovery words do not bring back every label, setting or provider-order record. Local automatic backups are on the same computer, so they do not protect against losing that whole computer.
+
+Optional advanced reference: [wallet files, metadata and passphrase details](backup-files.md). It explains file copies and 2FA-related files separately from the essential word backup.

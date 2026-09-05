@@ -4,9 +4,12 @@ title: "Use Two-Factor Authentication in Ginger"
 description: "Set up Ginger two-factor authentication and understand its wallet-file encryption, Tor requirement, and recovery limits."
 lang: "en-US"
 verified_release: "v2.0.26"
+reader_level: "advanced"
 ---
 
 # Use Two-Factor Authentication in Ginger
+
+> Reading level: Advanced guide. Keep the original recovery information and wallet files before changing the recovery or file setup.
 
 Ginger's optional two-factor authentication (2FA) adds an application-startup check and encryption of local wallet files. It is separate from each wallet's passphrase. It is not a Bitcoin rule requiring a second signature for every spend, and it does not protect a recovery-word backup from someone who also knows its passphrase.
 
@@ -40,6 +43,6 @@ A lost authenticator or a service outage can prevent normal startup. First prese
 
 For software-wallet funds, use a separate trusted installation or clean application environment to recover from the original words and passphrase. Verify known history and access before changing the old files. Recovered keys do not depend on retaining the old 2FA setup, but downloading and synchronizing Ginger still need its normal network services. Compatible recovery software can be an option if it supports the original account types.
 
-Labels and other local attributes are not reconstructed from words. Preserve their `.attr` backups before investigating metadata recovery. There is no need to delete a Wasabi or Ginger folder as a standard 2FA setup step.
+Labels and other local attributes are not reconstructed from words. Preserve their `.attr` backups before investigating metadata recovery. Preserve the existing wallet data when setting up or troubleshooting 2FA.
 
 If recovery material was exposed, creating a new wallet and transferring remaining funds changes which keys control them. Disabling 2FA or reinstalling the application does not invalidate old recovery words.

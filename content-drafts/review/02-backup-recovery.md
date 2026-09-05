@@ -8,9 +8,11 @@ Complete English user-manual manuscripts, outside the live site build. Each topi
 
 ## Read the manuscripts
 
-- [Back Up Your Ginger Wallet](../en/backup-recovery/backups.md) — `backup-recovery.backups`
-- [Recover a Wallet or Missing Balance](../en/backup-recovery/restore.md) — `backup-recovery.restore`
-- [Use Two-Factor Authentication in Ginger](../en/backup-recovery/two-factor-authentication.md) — `backup-recovery.two-factor-authentication`
+- [Back Up Your Ginger Wallet](../en/backup-recovery/backups.md) — beginner; `backup-recovery.backups`
+- [Recover a Wallet or Missing Balance](../en/backup-recovery/restore.md) — everyday; `backup-recovery.restore`
+- [Wallet Files, Metadata and Passphrase Details](../en/backup-recovery/backup-files.md) — advanced; `backup-recovery.backup-files`
+- [Advanced Recovery: Accounts, Address Scanning and Files](../en/backup-recovery/recovery-options.md) — advanced; `backup-recovery.recovery-options`
+- [Use Two-Factor Authentication in Ginger](../en/backup-recovery/two-factor-authentication.md) — advanced; `backup-recovery.two-factor-authentication`
 
 ## Behavior evidence
 
@@ -56,3 +58,9 @@ Corrects website claims about 2fa_info.gws: it stores JSON ClientServerId, not a
 Keep page IDs stable. Convert frontmatter keys to the chosen engine when integrating. The only relative manuscript links point inside this topic, so merging another topic is not a prerequisite. The PR00 page registry lists the intended navigation across topics; add those links after all relevant pages have merged. Keep source notes out of public reader navigation.
 
 Before publication, review the instructions against the installed release and recheck live provider/coordinator terms. No screenshots or framework-specific components are required.
+
+## Reader-level and FAQ revision
+
+Every page now has a visible reading level and `reader_level` metadata. Beginner instructions keep recovery, recipient verification and fees in the ordinary flow; detailed reference is separate. No unrelated wallet-brand mention remains in the public manuscript. Exact code paths and original research names remain truthful editorial provenance.
+
+Technical sections were moved into separate advanced files inside this topic, preserving independent PR review and the existing basic page IDs. The released-source evidence above also applies to those redistributed sections.
