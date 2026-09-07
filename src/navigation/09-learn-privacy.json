@@ -1,13 +1,18 @@
 {
   "replaces": [
     "using-ginger/privacy",
-    "using-ginger/address-reuse"
+    "using-ginger/address-reuse",
+    "why-ginger",
+    "why-ginger/difference"
   ],
   "learn": [
     {
       "label": "Bitcoin privacy",
       "collapsed": false,
       "items": [
+        {
+          "slug": "why-ginger"
+        },
         {
           "slug": "using-ginger/privacy"
         },
