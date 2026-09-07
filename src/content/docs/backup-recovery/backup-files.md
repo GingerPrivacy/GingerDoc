@@ -5,13 +5,13 @@ description: "Preserve Ginger wallet JSON and ATTR files, understand the 2FA fil
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Wallet Files, Metadata and Passphrase Details
 
 > Reading level: Advanced guide. Keep the original recovery information and wallet files before changing the recovery or file setup.
 
-Use this reference when copying local wallet data or investigating what a backup preserves. Start with [the basic backup guide](backups.md) for the recovery information every software wallet needs.
+Use this reference when copying local wallet data or investigating what a backup preserves. Start with [the basic backup guide](/backup-recovery/backups/) for the recovery information every software wallet needs.
 
 ## What to keep
 
@@ -43,7 +43,7 @@ Record the generated result accurately and confirm that your recovery plan prese
 
 For a Ginger software wallet, the passphrase also protects the stored encrypted secret. This is why neither a file thief nor a recovery attempt should be assumed to succeed without it. Do not casually change the passphrase in another wallet application: a different BIP39 passphrase selects different keys, rather than simply renaming the old wallet's login password.
 
-For account compatibility, file import or a scan that missed addresses, use [advanced recovery options](recovery-options.md).
+For account compatibility, file import or a scan that missed addresses, use [advanced recovery options](/backup-recovery/recovery-options/).
 
 ## A single private key is not the full recovery backup
 

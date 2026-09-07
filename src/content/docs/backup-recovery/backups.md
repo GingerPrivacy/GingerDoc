@@ -5,9 +5,9 @@ description: "Keep and verify the recovery words and original passphrase needed 
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "beginner"
+prev: false
+next: false
 ---
-
-# Back Up Your Ginger Wallet
 
 > Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
@@ -48,4 +48,4 @@ Back up local metadata again after important label or settings changes. Receivin
 
 Recovery words do not bring back every label, setting or provider-order record. Local automatic backups are on the same computer, so they do not protect against losing that whole computer.
 
-Optional advanced reference: [wallet files, metadata and passphrase details](backup-files.md). It explains file copies and 2FA-related files separately from the essential word backup.
+Optional advanced reference: [wallet files, metadata and passphrase details](/backup-recovery/backup-files/). It explains file copies and 2FA-related files separately from the essential word backup.

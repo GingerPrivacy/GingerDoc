@@ -5,13 +5,13 @@ description: "Investigate Ginger recovery compatibility, the gap limit, wallet J
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Advanced Recovery: Accounts, Address Scanning and Files
 
 > Reading level: Advanced guide. Keep the original recovery information and wallet files before changing the recovery or file setup.
 
-First complete [the normal recovery checks](restore.md): the intended wallet, exact original words and passphrase, connection and scan progress. This page covers specific reasons why those checks may not be enough.
+First complete [the normal recovery checks](/backup-recovery/restore/): the intended wallet, exact original words and passphrase, connection and scan progress. This page covers specific reasons why those checks may not be enough.
 
 ## Address scanning and account compatibility
 
@@ -33,4 +33,4 @@ Use the original passphrase to open a protected imported software wallet. A file
 
 The blockchain cannot restore private labels, all application settings, or provider order metadata. Preserve the matching `.attr` file when those matter. Do not overwrite newly recovered files with old metadata while Ginger is running. If you need help restoring sidecar data, work from copies and describe the file names and version without sharing their contents publicly.
 
-Keep the originals and work from copies. See [wallet-file backups](backup-files.md) before manipulating local data.
+Keep the originals and work from copies. See [wallet-file backups](/backup-recovery/backup-files/) before manipulating local data.

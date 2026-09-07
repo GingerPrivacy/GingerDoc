@@ -5,9 +5,9 @@ description: "Recover a Ginger wallet with its original words and passphrase, th
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "everyday"
+prev: false
+next: false
 ---
-
-# Recover a Wallet or Missing Balance
 
 > Reading level: Everyday use. Choose this guide when you need the task it describes.
 
@@ -29,7 +29,7 @@ First check that you selected the intended wallet and network. Mainnet and test 
 
 If those checks are correct but known transactions remain missing, stop changing settings at random. A wallet created with another application, or a large number of unused addresses, can need a more specific investigation.
 
-Optional advanced reference: [accounts, address scanning and file import](recovery-options.md). It covers those cases without making custom recovery settings part of the normal word-recovery steps.
+Optional advanced reference: [accounts, address scanning and file import](/backup-recovery/recovery-options/). It covers those cases without making custom recovery settings part of the normal word-recovery steps.
 
 Recovery from words restores access to the corresponding keys. Private labels and other local records may need a separate file backup.
 
