@@ -1,7 +1,7 @@
 name: docs
 
 on:
-  # trigger deployment on every push to main branch
+  # trigger deployment on every push to master branch
   push:
     branches: [master]
   # trigger deployment manually
@@ -13,31 +13,23 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          # fetch all commits to get last updated time or other git log info
-          fetch-depth: 0
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-          run_install: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm ci
 
       # run build script
-      - name: Build VuePress site
-        run: pnpm docs:build
+      - name: Build Starlight site
+        run: npm run build
 
       # create the CNAME file
       - name: Generate CNAME file
-        run: echo "docs.gingerwallet.io" > docs/.vuepress/dist/CNAME
+        run: echo "docs.gingerwallet.io" > dist/CNAME
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
@@ -46,8 +38,8 @@ jobs:
         with:
           # deploy to gh-pages branch
           target_branch: gh-pages
-          # deploy the default output dir of VuePress
-          build_dir: docs/.vuepress/dist
+          # deploy the default output dir of Astro
+          build_dir: dist
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
