@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
+import { manualSidebar } from './src/manual-sidebar.mjs'
 
 export default defineConfig({
   site: 'https://docs.gingerwallet.io',
@@ -62,37 +63,7 @@ export default defineConfig({
         },
       ],
 
-      sidebar: [
-        {
-          label: 'Getting Started',
-          items: [{ slug: 'getting-started' }],
-        },
-        {
-          label: 'Why Ginger?',
-          items: [{ slug: 'why-ginger' }, { slug: 'why-ginger/difference' }],
-        },
-        {
-          label: 'Using Ginger',
-          items: [
-            { slug: 'using-ginger' },
-            { slug: 'using-ginger/2fa' },
-            { slug: 'using-ginger/coinjoin' },
-            { slug: 'using-ginger/hardware-wallet' },
-            { slug: 'using-ginger/annonset' },
-            { slug: 'using-ginger/fee' },
-            { slug: 'using-ginger/privacy' },
-            { slug: 'using-ginger/tor' },
-            { slug: 'using-ginger/passphrase' },
-            { slug: 'using-ginger/address-reuse' },
-            { slug: 'using-ginger/buy' },
-            { slug: 'using-ginger/sell' },
-          ],
-        },
-        // {
-        //   label: 'Building Ginger',
-        //   items: [{ slug: 'building-ginger' }],
-        // },
-      ],
+      sidebar: manualSidebar(),
     }),
   ],
 })
