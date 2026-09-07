@@ -40,6 +40,10 @@ jobs:
           target_branch: gh-pages
           # deploy the default output dir of Astro
           build_dir: dist
+          # Astro emits assets into `_astro/`, and Jekyll silently drops paths
+          # starting with an underscore. `public/.nojekyll` covers this too;
+          # this is belt and braces.
+          jekyll: false
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
