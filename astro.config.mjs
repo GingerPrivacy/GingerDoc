@@ -23,7 +23,12 @@ export default defineConfig({
         replacesTitle: true,
       },
 
-      favicon: '/favicon.svg',
+      favicon: '/ginger-icon.png',
+
+      head: [
+        { tag: 'link', attrs: { rel: 'icon', href: '/favicon.ico', sizes: '16x16 24x24 32x32 48x48 256x256' } },
+        { tag: 'link', attrs: { rel: 'apple-touch-icon', href: '/ginger-icon.png' } },
+      ],
 
       // Pagefind powers the search box. It is on by default; kept explicit so the
       // dependency is obvious.
