@@ -58,7 +58,7 @@ Ginger cannot reset the original passphrase and keep the same wallet keys. Check
 
 ### Can Ginger show my recovery words again?
 
-The creation flow warns that it will not show them again afterward. **Wallet Settings** → **Tools** → **Verify Recovery Words** checks the words you provide; it does not reveal a forgotten backup. If access remains but the backup is lost, establish and verify a new wallet backup before moving funds carefully.
+The creation flow warns that it will not show them again afterward. **Wallet Settings** â†’ **Tools** â†’ **Verify Recovery Words** checks the words you provide; it does not reveal a forgotten backup. If access remains but the backup is lost, establish and verify a new wallet backup before moving funds carefully.
 
 ### Why is my recovered wallet empty or missing transactions?
 
@@ -167,3 +167,7 @@ Ginger can prepare an ordinary Bitcoin payment, but it cannot guarantee a provid
 ### What can I share with support, and where do I report a bug?
 
 Use links from the [official Ginger repository](https://github.com/GingerPrivacy/GingerWallet/issues), and provide the version, operating system, exact error and non-secret steps. Review any log excerpt before sharing; never send recovery words, passphrases, authenticator codes or a complete wallet data folder. Support does not need a website-based wallet validation or an activation payment; see [how to report a useful issue](/help/troubleshooting/#report-a-useful-issue).
+
+## About this manual
+
+This English manual describes Ginger v2.0.26 and uses its English interface labels. Documentation and translations may contain errors. Ginger does not guarantee their accuracy; verify critical details in the application before proceeding. If you find an error, [report it in the documentation repository](https://github.com/GingerPrivacy/GingerDoc/issues) without including wallet secrets.
