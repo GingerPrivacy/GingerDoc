@@ -5,9 +5,9 @@ description: "Learn who can spend your bitcoin, what makes a recovery backup com
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "beginner"
+prev: false
+next: false
 ---
-
-# Bitcoin Self-Custody: Backups, Passphrases, and Hardware Wallets
 
 > Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
@@ -45,4 +45,4 @@ Keep more than application files. Downloaded installers can be obtained again; a
 
 Use official releases, verify signatures, and read the limits of the features you intend to use. Open source makes inspection possible; it does not establish that every binary or dependency has been audited. External listings such as [Bitcoin.org's Ginger entry](https://bitcoin.org/en/wallets/desktop/windows/ginger/) and [WalletScrutiny's Ginger page](https://walletscrutiny.com/desktop/gingerwallet/) offer additional context. Check their scope and dates rather than treating a listing as a guarantee about your installed version.
 
-Ginger brings software-wallet recovery, hardware integration, and privacy tools into a desktop workflow. Optional advanced reading: [build a recoverable security routine](security-routine.md), including responses to exposed addresses, wallet data or keys.
+Ginger brings software-wallet recovery, hardware integration, and privacy tools into a desktop workflow. Optional advanced reading: [build a recoverable security routine](/learn-self-custody/security-routine/), including responses to exposed addresses, wallet data or keys.

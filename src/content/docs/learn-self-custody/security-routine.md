@@ -5,9 +5,9 @@ description: "Build a recoverable Bitcoin security routine and respond appropria
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Build a Recoverable Bitcoin Security Routine
 
 > Reading level: Advanced guide. Keep the basic recovery backup available; use the incident steps that match the information exposed.
 
