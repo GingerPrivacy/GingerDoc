@@ -72,6 +72,14 @@ const translations = {
         document.body.removeAttribute('data-search-modal-open')
         open.focus()
       }, { signal })
+      // In a dialog, Escape closes search without Pagefind clearing the query.
+      dialog.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && event.target instanceof HTMLInputElement) {
+          event.preventDefault()
+          event.stopPropagation()
+          dialog.close()
+        }
+      }, { capture: true, signal })
       window.addEventListener('keydown', (event) => {
         if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
           event.preventDefault()
