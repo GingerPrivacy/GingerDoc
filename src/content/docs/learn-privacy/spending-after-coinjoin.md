@@ -5,9 +5,9 @@ description: "Use practical Bitcoin payment examples to understand coin selectio
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Spending After CoinJoin: Worked Examples
 
 > Reading level: Advanced guide. First understand fresh receiving addresses and ordinary payment review.
 
@@ -76,4 +76,4 @@ There is no universal number of rounds or waiting period that guarantees privacy
 4. Inspect change and remember its connection when spending it later.
 5. Accept only a fee and privacy tradeoff appropriate to the payment; check history before repeating a payment after an uncertain result.
 
-For the surrounding wallet and browser choices, continue with [privacy habits](habits.md) and [where wallet information goes](information-sharing.md).
+For the surrounding wallet and browser choices, continue with [privacy habits](/using-ginger/address-reuse/) and [where wallet information goes](/learn-privacy/information-sharing/).

@@ -5,9 +5,9 @@ description: "Understand what Ginger synchronization, CoinJoin, providers, explo
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Where Your Wallet Information Goes
 
 > Reading level: Advanced guide. First understand fresh receiving addresses and ordinary payment review.
 
@@ -56,4 +56,4 @@ Web-payment research shows why browser observations and blockchain information s
 
 Labels, privacy accounting and provider-order records can live in wallet metadata. They are useful for later decisions and recovery, but are not all protected identically to signing keys. Protect the computer, backups and accounts that can access them. **Discreet Mode** helps with supported on-screen fields; the operating system's screen lock protects unattended access more broadly.
 
-A restoration from words can recover spendable keys without restoring all private notes. Deleting those notes is not a way to erase information already held by a recipient or service. Before changing installations, read [wallet migration](wallet-migration.md); before sending a payment, review [privacy habits](habits.md).
+A restoration from words can recover spendable keys without restoring all private notes. Deleting those notes is not a way to erase information already held by a recipient or service. Before changing installations, read [wallet migration](/learn-privacy/wallet-migration/); before sending a payment, review [privacy habits](/using-ginger/address-reuse/).

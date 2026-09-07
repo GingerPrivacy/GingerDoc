@@ -5,9 +5,9 @@ description: "Receive Bitcoin donations and recurring payments with fresh addres
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "everyday"
+prev: false
+next: false
 ---
-
-# Receiving Donations and Repeated Payments
 
 > Reading level: Everyday use. Choose this guide when you need the task it describes.
 
@@ -60,4 +60,4 @@ Unexpected tiny payments need no immediate response. Spending a small output can
 
 If you direct eligible CoinJoin outputs to another loaded wallet for storage, check that choice before every session. It resets after restart, and the normal release flow does not force an extra round when all eligible funds are already private. A recurring receipt setup should not rely on an unverified assumption that everything is continually forwarded to hardware.
 
-Continue with [spending after CoinJoin](spending-after-coinjoin.md) for concrete examples and [information sharing](information-sharing.md) for what websites, explorers and other apps can learn.
+Continue with [spending after CoinJoin](/learn-privacy/spending-after-coinjoin/) for concrete examples and [information sharing](/learn-privacy/information-sharing/) for what websites, explorers and other apps can learn.

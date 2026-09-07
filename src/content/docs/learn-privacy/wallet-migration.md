@@ -5,9 +5,9 @@ description: "Compare restoring the same Bitcoin keys, connecting hardware to an
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Moving to Ginger Without Exposing More Wallet History
 
 > Reading level: Advanced guide. First understand fresh receiving addresses and ordinary payment review.
 
@@ -61,4 +61,4 @@ Choose when and how to stop using old receiving addresses. Update payment instru
 
 An exposed xpub primarily raises a privacy problem. Exposed signing secrets raise an immediate fund-control problem. If an attacker may already spend the funds, prioritize a trusted destination with new keys over waiting for an elaborate privacy process. Changing an application password or putting an exposed seed on a new hardware device does not revoke copied keys.
 
-After the move, review [spending examples](spending-after-coinjoin.md) and [information sharing](information-sharing.md). The sustainable goal is to understand what remains known and avoid unnecessary new disclosures.
+After the move, review [spending examples](/learn-privacy/spending-after-coinjoin/) and [information sharing](/learn-privacy/information-sharing/). The sustainable goal is to understand what remains known and avoid unnecessary new disclosures.
