@@ -10,6 +10,8 @@ node_modules/
 
 # Output directories
 dist/
+test-results/
+playwright-report/
 
 # Temp files
 .astro/
