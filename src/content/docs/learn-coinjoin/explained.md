@@ -5,9 +5,9 @@ description: "Learn in plain language how a shared Bitcoin transaction can help 
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "beginner"
+prev: false
+next: false
 ---
-
-# What Is CoinJoin? A Simple Explanation
 
 > Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
@@ -37,4 +37,4 @@ There is no fixed completion time. Ginger may wait for confirmations, acceptable
 
 No. Receiving, sending and CoinJoin are separate actions. You can learn ordinary payments first, then decide what privacy problem you want to address.
 
-For that decision, read [when CoinJoin is useful](when-to-use.md). Optional advanced reading: [trust and limitations](trust-and-limits.md), including what different observers can learn. You do not need to study the protocol to use the ordinary start-and-pause controls.
+For that decision, read [when CoinJoin is useful](/learn-coinjoin/when-to-use/). Optional advanced reading: [trust and limitations](/learn-coinjoin/trust-and-limits/), including what different observers can learn. You do not need to study the protocol to use the ordinary start-and-pause controls.

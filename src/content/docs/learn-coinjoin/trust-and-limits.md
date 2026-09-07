@@ -5,9 +5,9 @@ description: "Distinguish control of Bitcoin keys, CoinJoin privacy assumptions,
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# What Do You Trust When You CoinJoin?
 
 > Reading level: Advanced guide. First read the simple CoinJoin explanation.
 
@@ -58,4 +58,4 @@ A rejection or failed round is not, by itself, evidence of an attack or a judgme
 
 An own Bitcoin node is useful for the roles it actually performs, such as supplying blocks or fee estimates when configured. It does not replace the CoinJoin coordinator or establish that participants are independent. A hardware wallet isolates keys but does not make the transaction graph private.
 
-For the basic transaction model, read [CoinJoin explained](explained.md). To decide whether it fits a particular purpose, read [when CoinJoin is useful](when-to-use.md). Treat strong product claims as questions to investigate: what observer, what assumptions, what software version, and what evidence?
+For the basic transaction model, read [CoinJoin explained](/learn-coinjoin/explained/). To decide whether it fits a particular purpose, read [when CoinJoin is useful](/learn-coinjoin/when-to-use/). Treat strong product claims as questions to investigate: what observer, what assumptions, what software version, and what evidence?

@@ -5,9 +5,9 @@ description: "Evaluate whether CoinJoin addresses your Bitcoin privacy concern, 
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "everyday"
+prev: false
+next: false
 ---
-
-# When Does CoinJoin Make Sense?
 
 > Reading level: Everyday use. Choose this guide when you need the task it describes.
 
@@ -48,4 +48,4 @@ Do not treat another provider's advertised acceptance as permanent. A service ca
 
 Once the objective, backup, and costs are clear, open a synchronized software wallet, review **Coinjoin Settings**, and decide between manual start and **Automatically start coinjoin**. Watch the status and examine a completed round in history. Pause if the behavior or balance change differs from what you expected, and investigate before continuing.
 
-For the assumptions behind that decision, read [what you trust when you CoinJoin](trust-and-limits.md). It separates control of keys, transaction privacy, service availability and confidence in the software you run.
+For the assumptions behind that decision, read [what you trust when you CoinJoin](/learn-coinjoin/trust-and-limits/). It separates control of keys, transaction privacy, service availability and confidence in the software you run.
