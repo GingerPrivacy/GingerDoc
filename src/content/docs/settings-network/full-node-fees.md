@@ -5,9 +5,9 @@ description: "Configure Ginger block downloads from a node you control, review t
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Use Your Own Bitcoin Node and Choose Fee Estimates
 
 > Reading level: Advanced guide. First check the ordinary connection and synchronization status.
 

@@ -5,9 +5,9 @@ description: "Find Ginger Secret Hunt event results, control wallet participatio
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "everyday"
+prev: false
+next: false
 ---
-
-# Secret Hunt in Ginger Wallet
 
 > Reading level: Everyday use. Choose this guide when you need the task it describes.
 

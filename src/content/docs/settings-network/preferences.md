@@ -5,9 +5,9 @@ description: "Change Ginger language, display formats, background behavior, brow
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "everyday"
+prev: false
+next: false
 ---
-
-# Appearance, Language, and Everyday Settings
 
 > Reading level: Everyday use. Choose this guide when you need the task it describes.
 
