@@ -65,7 +65,11 @@ export default defineConfig({
       sidebar: [
         {
           label: 'Getting Started',
-          items: [{ slug: 'getting-started' }],
+          items: [
+            { slug: 'getting-started' },
+            { slug: 'getting-started/install' },
+            { slug: 'getting-started/first-wallet' },
+          ],
         },
         {
           label: 'Why Ginger?',
@@ -87,6 +91,11 @@ export default defineConfig({
             { slug: 'using-ginger/buy' },
             { slug: 'using-ginger/sell' },
           ],
+        },
+        {
+          label: 'Advanced use',
+          collapsed: true,
+          items: [{ slug: 'getting-started/verify-download' }],
         },
         // {
         //   label: 'Building Ginger',

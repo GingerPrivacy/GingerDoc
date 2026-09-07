@@ -1,39 +1,77 @@
 ---
-title: "Getting Started"
+doc_id: "getting-started.start-here"
+title: "Start Here: Your First Steps with Ginger"
+description: "Learn what Ginger does, protect your recovery backup, and follow a simple first receive-and-send path before exploring optional advanced features."
+lang: "en-US"
+verified_release: "v2.0.26"
+reader_level: "beginner"
+sidebar:
+  label: Start here
+prev: false
+next:
+  link: /getting-started/install/
+  label: Install Ginger Wallet
 ---
 
-## Whats the officially supported operating systems?
-- Windows 10 1607+
-- Windows 11 22000+
-- macOS 12.0+
-- Ubuntu 22.04+
-- Fedora 37+
-- Debian 11+
+> Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
+Ginger is an application for receiving and sending bitcoin on your computer. You control the information that allows your bitcoin to be spent. Ginger can also help make payment history harder to follow through an optional feature called CoinJoin.
 
-## Is there an android/ios version?
-No. Ginger’s features, like coinjoin, require considerable computational power, which are currently not replicable on a smartphone.
+You can learn the ordinary wallet workflow first. You do not need your own Bitcoin node, a hardware device or advanced CoinJoin settings to create a software wallet.
 
-## Does ginger support altcoins?
-There are countless reasons why it is the only logical choice to be bitcoin-only. With Bitcoin we have a once in a lifetime opportunity to manifest libre sound money. If we succeed, then an utmost beautiful agora of sovereign individuals may emerge. If we fail, then this will conjure up the most horrific Orwellian nightmare. There is no room for wasted time and energy, this great work requires our full attention. Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.
+<!-- Preserve links to the questions previously published on this page. -->
+<span id="whats-the-officially-supported-operating-systems" aria-hidden="true"></span>
+<span id="is-there-an-androidios-version" aria-hidden="true"></span>
+<span id="does-ginger-support-altcoins" aria-hidden="true"></span>
+<span id="what-are-the-minimal-requirements-to-run-ginger" aria-hidden="true"></span>
+<span id="do-i-need-to-run-tor" aria-hidden="true"></span>
 
+## 1. Install the real application
 
-## What are the minimal requirements to run ginger?
-Ginger runs in most operating systems with 64-bit architecture.
+Follow [Install Ginger Wallet](/getting-started/install/) and use its official download links. Choose the download for your computer. Do not install a similarly named phone app or software sent by a stranger offering support.
 
-## Do i need to run tor?
-All Ginger network traffic goes via Tor by default -there's no need to set up Tor by yourself. If you do already have Tor, and it is running, then Ginger will try to use that first.
-You can turn off Tor in the Settings. Note that in this case you are still private, except when you coinjoin and when you broadcast a transaction. In the first case, the coordinator would know the links between your inputs and outputs based on your IP address. In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
+Ginger supports Windows, macOS and Linux; the installation guide lists the supported versions and processors. This release is Bitcoin-only and has no Android or iOS app. You need an internet connection and writable storage. Tor is included, so you do not need to install it separately.
 
+Keep the download checks in that guide. The separate [advanced signature-verification reference](/getting-started/verify-download/) explains the command-line checks when you need them.
 
-## Why is it important to use a new address for every payment?
-Addresses being used more than once is very damaging to privacy because that links together more blockchain transactions with proof that they were created by the same entity. The most private and secure way to use bitcoin is to send a brand new address to each person who pays you. After an address has received a coin, it should never be used again. Also, a brand new bitcoin address should be demanded from the recipient when sending bitcoin. Ginger has a user interface which discourages address reuse by removing from the GUI addresses which have received a coin.
-It has been argued that the phrase "bitcoin address" was a bad name for this object because it implies it can be reused like an email address. A better name would be something like "bitcoin invoice".
-Bitcoin isn't anonymous but pseudonymous, and the pseudonyms are bitcoin addresses. Avoiding address reuse is like throwing away a pseudonym after it has been used.
+<span id="what-is-the-password-used-for" aria-hidden="true"></span>
 
+## 2. Create a wallet and make its backup
 
-## What is the password used for?
-The password you set is used as a 13th seed word (as described in BIP 39) and to encrypt the private key of the extended private key (as described in BIP 38) to get an encrypted secret which is stored on the computer.
-Ginger Wallet stores only the BIP38 encrypted blob, so you'll need to type in the password to spend or coinjoin from the wallet.
-The password will unlock your bitcoin to anyone who has access to the recovery words backup or the computer! If your backup gets compromised, this password is the only thing protecting your precious sats.
-It is important to use a random and long password.
+Follow [Create your first wallet](/getting-started/first-wallet/). Choose **New**, record the twelve **Recovery Words** in order, and complete **Confirm Recovery Words**. Keep the written backup private and available even if the computer is lost.
+
+At **Add Passphrase**, understand the choice before continuing. If you use a passphrase, the original words and that exact passphrase are both needed for recovery. The passphrase also protects access to the wallet on your computer. Ginger cannot reset it. Leaving the fields empty creates a wallet without that extra passphrase; record which choice you made.
+
+Do not continue with a meaningful balance until the backup is readable and you can open the intended wallet. Never share the words or passphrase with support.
+
+<span id="why-is-it-important-to-use-a-new-address-for-every-payment" aria-hidden="true"></span>
+
+## 3. Receive a small first payment
+
+Wait for the wallet to finish synchronizing: this means checking the Bitcoin network for your transactions. Choose **Receive**, add a useful label and generate a receiving address. Share it with the intended payer, or use it in an exchange's on-chain Bitcoin withdrawal flow.
+
+Generate a fresh address for each payment. Reusing an address makes separate payments easier to link on the public Bitcoin ledger.
+
+Check the whole address and the network before the payment is authorized. Ginger receives on-chain Bitcoin; another asset's network or a Lightning invoice is not interchangeable. A confirmation means the transaction was included in a Bitcoin block. A payer's screenshot alone is not confirmation.
+
+## 4. Make a small first payment
+
+Choose **Send** and use **Automatic** selection for the ordinary workflow. Enter the recipient's address and amount, choose **Continue**, and review the destination, the amount the recipient will receive and the fee. Choose **Confirm** only when these are correct.
+
+The fee pays for Bitcoin transaction space. If part of the selected money is left over, it returns to your wallet as change. You do not need to send that change back manually. A confirmed payment cannot be reversed by Ginger.
+
+After a connection error, check history before trying to pay again. This helps avoid paying twice when the first transaction was already sent.
+
+## 5. Decide whether to use CoinJoin
+
+CoinJoin combines several people's activity into a shared Bitcoin transaction to make ownership links harder to infer. Your wallet keeps its signing keys. It costs fees, can take time, and cannot erase information a recipient or exchange already knows.
+
+Review **Automatically start coinjoin** in **Coinjoin Settings** for the selected wallet. Turn automatic participation off while you learn if you do not want it to start unattended. If a round is already active, use the player's pause control and allow critical work to finish.
+
+You can receive and make ordinary payments without waiting for a privacy indicator to reach 100%. You also do not need to tune every advanced setting to start using the wallet.
+
+## You have finished the first-use path
+
+Your essential checks are a recoverable backup, the intended wallet, the right payment network, the recipient and the actual fee. Keep using fresh receiving addresses and review each payment.
+
+Return to this guide whenever you need the receive-and-send checklist. The **Advanced use** section is separate from this first-use path. For example, [Verify a Ginger Wallet Download](/getting-started/verify-download/) explains command-line signature checks in detail.
