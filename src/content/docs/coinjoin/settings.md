@@ -5,9 +5,9 @@ description: "Understand Ginger CoinJoin privacy and cost settings, excluded coi
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Configure CoinJoin and Output Wallets
 
 > Reading level: Advanced guide. First understand the ordinary start-and-pause controls and the fact that completed rounds cost fees.
 

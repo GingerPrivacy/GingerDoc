@@ -5,13 +5,13 @@ description: "Understand Ginger CoinJoin phases, input eligibility and retry beh
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# CoinJoin Rounds and Input Eligibility
 
 > Reading level: Advanced guide. First understand the ordinary start-and-pause controls and the fact that completed rounds cost fees.
 
-Start with [the ordinary CoinJoin guide](use-coinjoin.md). Ginger manages the protocol automatically; this reference is for understanding a specific status or limitation.
+Start with [the ordinary CoinJoin guide](/using-ginger/coinjoin/). Ginger manages the protocol automatically; this reference is for understanding a specific status or limitation.
 
 ## Why a balance may not be eligible
 
@@ -32,6 +32,6 @@ These phases are managed by the application; you do not need to exchange keys or
 
 ## Private coins and another output wallet
 
-Normal v2.0.26 startup refuses a wallet or available candidate set whose coins already meet its privacy target. Selecting another output wallet does not force a private-only round. Check [the output-wallet settings](settings.md) before relying on a forwarding routine.
+Normal v2.0.26 startup refuses a wallet or available candidate set whose coins already meet its privacy target. Selecting another output wallet does not force a private-only round. Check [the output-wallet settings](/coinjoin/settings/) before relying on a forwarding routine.
 
-For score calculations and complete value reconciliation, use [fees and privacy progress](fees-and-progress.md).
+For score calculations and complete value reconciliation, use [fees and privacy progress](/using-ginger/annonset/).
