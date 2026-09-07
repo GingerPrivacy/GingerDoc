@@ -89,13 +89,16 @@ The generated site uses local fonts and local Pagefind search. Cloudflare can
 inject its Web Analytics beacon into responses after deployment, independently
 of this repository. A GitHub merge cannot switch off that account setting.
 
-For the account serving `docs.gingerwallet.io`, open **Web Analytics**, select
-**Manage site**, and disable automatic analytics for this hostname. If the
-analytics site covers the whole `gingerwallet.io` zone, use **Advanced options**
-to add an exclusion rule for hostname `docs.gingerwallet.io` and all paths.
-Keep analytics settings for other hostnames unchanged. See Cloudflare's
-[setup](https://developers.cloudflare.com/web-analytics/get-started/) and
-[hostname rules](https://developers.cloudflare.com/web-analytics/configuration-options/rules/).
+In the `gingerwallet.io` zone, open **Rules > Overview** and create a
+**Configuration Rule** named **Disable analytics on documentation**. Use the
+custom filter expression `(http.host eq "docs.gingerwallet.io")`, add
+**Disable Real User Monitoring (RUM)**, and deploy the rule. This covers every
+path on the documentation hostname while preserving other hostnames' settings.
+If this rule already exists, update it instead of creating a duplicate.
+
+Cloudflare's [RUM configuration setting](https://developers.cloudflare.com/rules/configuration-rules/settings/#disable-real-user-monitoring-rum)
+takes precedence over Web Analytics rules. Keep this hostname-specific rule
+active when changing the zone's analytics configuration.
 
 After saving, check the live HTML for `static.cloudflareinsights.com` and
 confirm that the browser makes no beacon request. Checking only `dist/` does
