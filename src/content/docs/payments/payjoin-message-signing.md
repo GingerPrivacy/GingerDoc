@@ -5,9 +5,9 @@ description: "Send a PayJoin payment request, understand recipient knowledge, wa
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# PayJoin and Message Signing
 
 > Reading level: Advanced guide. First understand the normal send preview, recipient amount and fee.
 

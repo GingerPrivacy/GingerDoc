@@ -5,9 +5,9 @@ description: "Inspect Ginger UTXOs and payment history, select coins deliberatel
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Coin Control, History, and Stuck Transactions
 
 > Reading level: Advanced guide. First understand the normal send preview, recipient amount and fee.
 

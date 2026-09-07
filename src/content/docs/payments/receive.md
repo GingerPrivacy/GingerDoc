@@ -5,9 +5,9 @@ description: "Generate a Ginger receiving address, choose SegWit or Taproot wher
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "beginner"
+prev: false
+next: false
 ---
-
-# Receive Bitcoin and Manage Addresses
 
 > Reading level: Start here. The essential steps come first; advanced references are optional follow-up.
 
