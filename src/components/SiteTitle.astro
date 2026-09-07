@@ -1,0 +1,73 @@
+---
+/**
+ * Adds top-level section links to the header, next to the logo — the
+ * equivalent of the old VuePress `navbar` config.
+ *
+ * This wraps Starlight's own SiteTitle rather than replacing it, so the logo
+ * keeps whatever behaviour the theme gives it across upgrades.
+ *
+ * The links are hidden below 50rem, which is Starlight's own header breakpoint:
+ * on narrow viewports the hamburger sidebar already lists every section.
+ */
+import Default from '@astrojs/starlight/components/SiteTitle.astro'
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const withBase = (path: string) => base + path
+
+const links = [
+  { label: 'Getting Started', href: withBase('/getting-started/') },
+  { label: 'Why Ginger?', href: withBase('/why-ginger/') },
+  { label: 'Using Ginger', href: withBase('/using-ginger/') },
+]
+
+// `/using-ginger/fee/` should light up the `/using-ginger/` link.
+const current = Astro.url.pathname
+const isActive = (href: string) => current === href || current.startsWith(href)
+---
+
+<Default {...Astro.props}><slot /></Default>
+
+<nav class="header-nav" aria-label="Main">
+  {
+    links.map(({ label, href }) => (
+      <a href={href} aria-current={isActive(href) ? 'page' : undefined}>
+        {label}
+      </a>
+    ))
+  }
+</nav>
+
+<style>
+	.header-nav {
+		display: none;
+	}
+
+	@media (min-width: 50rem) {
+		.header-nav {
+			display: flex;
+			align-items: center;
+			gap: 1.5rem;
+			margin-inline-start: 1.5rem;
+			white-space: nowrap;
+		}
+	}
+
+	.header-nav a {
+		font-size: 1rem;
+		font-weight: 800;
+		color: var(--sl-color-text);
+		text-decoration: none;
+		padding-block: 0.25rem;
+		border-bottom: 2px solid transparent;
+	}
+
+	.header-nav a:hover,
+	.header-nav a:focus-visible {
+		color: var(--sl-color-text-accent);
+	}
+
+	.header-nav a[aria-current='page'] {
+		color: var(--sl-color-text-accent);
+		border-bottom-color: var(--sl-color-text-accent);
+	}
+</style>

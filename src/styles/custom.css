@@ -1,0 +1,75 @@
+/*
+ * Ginger theme overrides for Starlight.
+ * Ported from the VuePress `docs/.vuepress/styles/index.scss`:
+ * Poppins type, the gold accent (#a68d67) and heavy headings.
+ */
+
+:root {
+	--ginger-gold: #a68d67;
+
+	--sl-font: 'Poppins', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+		Roboto, Helvetica, Arial, sans-serif;
+
+	/* Dark theme (Starlight's default palette lives on bare :root). */
+	--sl-color-accent-low: #362d1d;
+	--sl-color-accent: #a68d67;
+	--sl-color-accent-high: #e6dac6;
+
+	--sl-color-text-accent: var(--ginger-gold);
+
+	/* VuePress ran a slightly larger body copy than the Starlight default. */
+	--sl-text-body: 1.0625rem;
+
+	scroll-behavior: smooth;
+}
+
+:root[data-theme='light'] {
+	/* The raw gold does not clear contrast requirements on white, so links and
+	   headings use a darkened version of it in the light theme. */
+	--sl-color-accent-low: #ece3d3;
+	--sl-color-accent: #8a7245;
+	--sl-color-accent-high: #453720;
+
+	--sl-color-text-accent: #8a7245;
+}
+
+/* The VuePress build painted the dark navbar pure black. */
+:root:not([data-theme='light']) {
+	--sl-color-bg-nav: #000;
+	--sl-color-bg-sidebar: #000;
+}
+
+body {
+	font-family: var(--sl-font);
+}
+
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6),
+h1#_top {
+	font-weight: 800;
+}
+
+/* Page title in the accent colour, as in the VuePress stylesheet. */
+h1#_top {
+	color: var(--sl-color-text-accent);
+}
+
+/* Nav links were bumped to 800 weight in the old theme. */
+.site-title,
+.sidebar-content a[aria-current='page'] {
+	font-weight: 800;
+}
+
+/* The wordmark is 196x56; scale it down to navbar height. */
+.site-title img {
+	height: 2rem;
+	width: auto;
+}
+
+/* The header nav lives alongside the logo in Starlight's `.title-wrapper`,
+   which clips overflow to protect narrow viewports. The nav is hidden below
+   50rem anyway, so let the wrapper breathe above that. */
+@media (min-width: 50rem) {
+	.title-wrapper {
+		overflow: visible;
+	}
+}

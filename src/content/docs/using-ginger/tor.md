@@ -1,0 +1,7 @@
+---
+title: "What is TOR?"
+sidebar:
+  label: "Tor"
+---
+
+Tor (The Onion Router) is a free, open-source software and network that ensures online privacy and anonymity. It routes encrypted data through a series of volunteer-operated nodes, hiding the user's IP address and activity. Tor allows users to bypass censorship, communicate securely, and access ".onion" websites. While effective for anonymity, it can be slow and doesn't guarantee complete security, so additional protections like HTTPS are recommended.
