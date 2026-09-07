@@ -1,0 +1,40 @@
+{
+  "replaces": [
+    "using-ginger/fee",
+    "using-ginger"
+  ],
+  "use": [
+    {
+      "label": "Payments",
+      "collapsed": false,
+      "items": [
+        {
+          "slug": "using-ginger"
+        },
+        {
+          "slug": "payments/receive"
+        },
+        {
+          "slug": "payments/send"
+        }
+      ]
+    }
+  ],
+  "advanced": [
+    {
+      "label": "Payments",
+      "collapsed": true,
+      "items": [
+        {
+          "slug": "payments/coin-control-history"
+        },
+        {
+          "slug": "using-ginger/fee"
+        },
+        {
+          "slug": "payments/payjoin-message-signing"
+        }
+      ]
+    }
+  ]
+}
