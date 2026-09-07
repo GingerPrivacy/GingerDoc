@@ -1,0 +1,33 @@
+{
+  "replaces": [
+    "getting-started"
+  ],
+  "start": [
+    {
+      "label": "First steps",
+      "collapsed": false,
+      "items": [
+        {
+          "slug": "getting-started"
+        },
+        {
+          "slug": "getting-started/install"
+        },
+        {
+          "slug": "getting-started/first-wallet"
+        }
+      ]
+    }
+  ],
+  "advanced": [
+    {
+      "label": "First steps",
+      "collapsed": true,
+      "items": [
+        {
+          "slug": "getting-started/verify-download"
+        }
+      ]
+    }
+  ]
+}
