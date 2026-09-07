@@ -9,11 +9,10 @@ yarn-error.log*
 node_modules/
 
 # Output directories
-/docs/.vuepress/dist/
+dist/
 
 # Temp files
-/docs/.vuepress/.temp/
-/docs/.vuepress/.cache/
+.astro/
 
 # Local environment settings
 .env.local
