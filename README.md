@@ -26,9 +26,13 @@ while working on styles.
 | `npm run build`   | Build the production site into `dist/` and run Pagefind  |
 | `npm run preview` | Serve `dist/` locally — the only way to test search      |
 | `npm run check`   | Type-check the config and validate page frontmatter      |
+| `npm run test:search` | Test search filters, keyboard/mobile controls and local resources against the production build |
 
 Search is generated at build time, so it only works against `npm run preview`,
 never against `npm run dev`.
+
+Run `npx playwright install chromium` once before running the browser tests locally.
+Build the site before `npm run test:search`; the tests start a local preview server.
 
 ## Writing content
 
@@ -57,9 +61,16 @@ sidebar:
 ---
 ```
 
-Nav order and grouping are set explicitly in
-[`astro.config.mjs`](astro.config.mjs) — add new pages to the `sidebar` array
-there, or they will be reachable by URL but not linked.
+Nav order and grouping come from the per-topic JSON files in
+[`src/navigation/`](src/navigation/), read by
+[`src/manual-sidebar.mjs`](src/manual-sidebar.mjs). Register new pages in the
+appropriate topic and reading level; follow the [navigation guide](src/navigation/README.md).
+
+Search starts with beginner and everyday guides. Readers can select advanced
+guides or all guides in the search dialog. Set `reader_level` to `beginner`,
+`everyday`, or `advanced` in page frontmatter; this drives both the search filter
+and the result's reading-level label. Existing unclassified pages default to
+beginner. New search UI strings live in `src/search-labels.ts` for future locales.
 
 ## Theme
 
@@ -67,3 +78,28 @@ Colours, fonts and heading styles are in
 [`src/styles/custom.css`](src/styles/custom.css). The logo is
 [`src/assets/logo.svg`](src/assets/logo.svg) and the favicon is
 [`public/favicon.svg`](public/favicon.svg).
+
+Poppins is bundled from the pinned `@fontsource/poppins` package (OFL-1.1).
+Visitors load the font files from this site; no Google Fonts request is needed.
+The font's copyright and license ship in [`public/fonts/OFL-Poppins.txt`](public/fonts/OFL-Poppins.txt).
+
+## Hosting privacy
+
+The generated site uses local fonts and local Pagefind search. Cloudflare can
+inject its Web Analytics beacon into responses after deployment, independently
+of this repository. A GitHub merge cannot switch off that account setting.
+
+In the `gingerwallet.io` zone, open **Rules > Overview** and create a
+**Configuration Rule** named **Disable analytics on documentation**. Use the
+custom filter expression `(http.host eq "docs.gingerwallet.io")`, add
+**Disable Real User Monitoring (RUM)**, and deploy the rule. This covers every
+path on the documentation hostname while preserving other hostnames' settings.
+If this rule already exists, update it instead of creating a duplicate.
+
+Cloudflare's [RUM configuration setting](https://developers.cloudflare.com/rules/configuration-rules/settings/#disable-real-user-monitoring-rum)
+takes precedence over Web Analytics rules. Keep this hostname-specific rule
+active when changing the zone's analytics configuration.
+
+After saving, check the live HTML for `static.cloudflareinsights.com` and
+confirm that the browser makes no beacon request. Checking only `dist/` does
+not verify the Cloudflare setting.

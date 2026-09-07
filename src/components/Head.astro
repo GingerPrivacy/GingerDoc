@@ -1,0 +1,12 @@
+---
+import Default from '@astrojs/starlight/components/Head.astro'
+import { searchLabels } from '../search-labels'
+
+const { entry, lang } = Astro.locals.starlightRoute
+const level = entry.data.reader_level ?? 'beginner'
+const scope = level === 'advanced' ? 'advanced' : 'everyday'
+---
+
+<Default />
+<meta name="ginger-guide-scope" content={scope} data-pagefind-filter="guide[content]" />
+<meta name="ginger-guide-level" content={searchLabels(lang).level[level]} data-pagefind-meta="Level[content]" />

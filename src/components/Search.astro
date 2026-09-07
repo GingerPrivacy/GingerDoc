@@ -1,0 +1,168 @@
+---
+import { Icon } from '@astrojs/starlight/components'
+import { searchLabels } from '../search-labels'
+
+const labels = searchLabels(Astro.locals.starlightRoute.lang)
+const translations = {
+  placeholder: Astro.locals.t('search.label'),
+  ...Object.fromEntries(Object.entries(Astro.locals.t.all())
+    .filter(([key]) => key.startsWith('pagefind.'))
+    .map(([key, value]) => [key.replace('pagefind.', ''), value])),
+}
+---
+
+<ginger-search class={Astro.props.class} data-translations={JSON.stringify(translations)}>
+  <button class="open-search" type="button" disabled aria-label={Astro.locals.t('search.label')} aria-keyshortcuts="Control+K Meta+K" aria-haspopup="dialog">
+    <Icon name="magnifier" />
+    <span class="sl-hidden md:sl-block">{Astro.locals.t('search.label')}</span>
+  </button>
+  <dialog aria-label={Astro.locals.t('search.label')}>
+    <div class="search-frame">
+      <div class="search-toolbar">
+        <label>{labels.scope}
+          <select name="guide-scope" aria-describedby="search-scope-hint">
+            <option value="everyday">{labels.everyday}</option>
+            <option value="advanced">{labels.advanced}</option>
+            <option value="all">{labels.all}</option>
+          </select>
+        </label>
+        <button class="close-search" type="button">{Astro.locals.t('search.cancelLabel')}</button>
+      </div>
+      <p id="search-scope-hint">{labels.hint}</p>
+      {import.meta.env.DEV ? <p>{Astro.locals.t('search.devWarning')}</p> : <>
+        <p class="search-loading" role="status" hidden>{labels.loading}</p>
+        <div class="search-error" role="alert" hidden>
+          <p>{labels.error}</p>
+          <button class="retry-search" type="button">{labels.retry}</button>
+        </div>
+        <div id="ginger-search-results" />
+      </>}
+    </div>
+  </dialog>
+</ginger-search>
+
+<script>
+  import type { SearchUI } from '../search-ui'
+
+  class GingerSearch extends HTMLElement {
+    private ui?: SearchUI
+    private loading?: Promise<void>
+    private abort = new AbortController()
+
+    connectedCallback() {
+      const signal = this.abort.signal
+      const dialog = this.querySelector('dialog')!
+      const open = this.querySelector<HTMLButtonElement>('.open-search')!
+      const select = this.querySelector<HTMLSelectElement>('select')!
+      const openModal = async () => {
+        if (!dialog.open) dialog.showModal()
+        document.body.setAttribute('data-search-modal-open', '')
+        await this.loadSearch()
+        if (dialog.open) this.querySelector<HTMLInputElement>('input')?.focus()
+      }
+      open.disabled = false
+      open.addEventListener('click', openModal, { signal })
+      this.querySelector('.close-search')!.addEventListener('click', () => dialog.close(), { signal })
+      this.querySelector('.retry-search')?.addEventListener('click', openModal, { signal })
+      select.addEventListener('change', () => this.applyScope(), { signal })
+      dialog.addEventListener('click', (event) => {
+        if (event.target === dialog || (event.target as Element).closest('a[href]')) dialog.close()
+      }, { signal })
+      dialog.addEventListener('close', () => {
+        document.body.removeAttribute('data-search-modal-open')
+        open.focus()
+      }, { signal })
+      // In a dialog, Escape closes search without Pagefind clearing the query.
+      dialog.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && event.target instanceof HTMLInputElement) {
+          event.preventDefault()
+          event.stopPropagation()
+          dialog.close()
+        }
+      }, { capture: true, signal })
+      window.addEventListener('keydown', (event) => {
+        if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+          event.preventDefault()
+          if (dialog.open) dialog.close()
+          else void openModal()
+        }
+      }, { signal })
+    }
+
+    private applyScope() {
+      const scope = this.querySelector<HTMLSelectElement>('select')!.value
+      this.ui?.triggerFilters(scope === 'all' ? {} : { guide: [scope] })
+    }
+
+    private async loadSearch() {
+      if (import.meta.env.DEV || this.ui) return
+      if (this.loading) return this.loading
+      const loading = this.querySelector<HTMLElement>('.search-loading')!
+      const error = this.querySelector<HTMLElement>('.search-error')!
+      loading.hidden = false
+      error.hidden = true
+      this.loading = (async () => {
+        try {
+          const { createSearchUI } = await import('../search-ui')
+          if (!this.isConnected) return
+          this.ui = createSearchUI(this.querySelector<HTMLElement>('#ginger-search-results')!, JSON.parse(this.dataset.translations || '{}'))
+          this.applyScope()
+        } catch {
+          error.hidden = false
+        } finally {
+          loading.hidden = true
+          this.loading = undefined
+        }
+      })()
+      return this.loading
+    }
+
+    disconnectedCallback() {
+      this.abort.abort()
+      this.ui?.destroy()
+      document.body.removeAttribute('data-search-modal-open')
+    }
+  }
+  if (!customElements.get('ginger-search')) customElements.define('ginger-search', GingerSearch)
+</script>
+
+<style>
+  ginger-search { display: contents; }
+  button, select { font: inherit; color: var(--sl-color-text); }
+  button { cursor: pointer; }
+  .open-search { display: flex; align-items: center; gap: .5rem; background: transparent; border: 0; font-size: 1.3rem; min-height: 2.75rem; }
+  dialog { padding: 0; border: 1px solid var(--sl-color-gray-5); background: var(--sl-color-bg); color: var(--sl-color-text); width: min(48rem, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); border-radius: .5rem; }
+  dialog::backdrop { background: var(--sl-color-backdrop-overlay); }
+  .search-frame { padding: 1.25rem; }
+  .search-toolbar { display: flex; align-items: end; gap: .75rem; justify-content: space-between; }
+  label { display: grid; gap: .25rem; font-size: var(--sl-text-sm); min-width: 0; }
+  select { width: 100%; min-height: 2.75rem; border: 1px solid var(--sl-color-gray-4); border-radius: .25rem; padding: .4rem; background: var(--sl-color-bg); }
+  .close-search, .retry-search { min-height: 2.75rem; padding: .4rem .6rem; border: 1px solid var(--sl-color-gray-4); border-radius: .25rem; background: var(--sl-color-bg); }
+  #search-scope-hint { font-size: var(--sl-text-sm); margin: .75rem 0 1rem; }
+  @media (min-width: 50rem) {
+    .open-search { width: 100%; max-width: 22rem; border: 1px solid var(--sl-color-gray-5); border-radius: .5rem; padding: .5rem .75rem; font-size: var(--sl-text-sm); }
+    dialog { margin: 4rem auto; max-height: calc(100dvh - 8rem); }
+  }
+  @media (max-width: 30rem) {
+    dialog { width: 100%; max-width: 100%; max-height: 100dvh; height: 100dvh; border-radius: 0; }
+    .search-frame { padding: 1rem; }
+  }
+</style>
+
+<style is:global>
+  @import '@pagefind/default-ui/css/ui.css';
+  body[data-search-modal-open] { overflow: hidden; }
+  #ginger-search-results {
+    --pagefind-ui-primary: var(--sl-color-text-accent);
+    --pagefind-ui-text: var(--sl-color-text);
+    --pagefind-ui-background: var(--sl-color-bg);
+    --pagefind-ui-border: var(--sl-color-gray-5);
+    --pagefind-ui-tag: var(--sl-color-gray-6);
+    --pagefind-ui-font: var(--sl-font);
+    --pagefind-ui-border-width: 1px;
+  }
+  /* The labelled select controls the same filters through Pagefind's public API. */
+  #ginger-search-results .pagefind-ui__filter-panel { display: none; }
+  #ginger-search-results .pagefind-ui__results-area { min-width: 0; }
+  #ginger-search-results .pagefind-ui__result-link { overflow-wrap: anywhere; }
+</style>

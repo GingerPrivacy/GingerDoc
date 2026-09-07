@@ -10,15 +10,19 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "test:search": "playwright test",
     "docs:dev": "astro dev",
     "docs:build": "astro build"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.36.0",
+    "@fontsource/poppins": "5.3.0",
+    "@pagefind/default-ui": "1.5.2",
     "astro": "^5.14.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@playwright/test": "1.63.0",
     "typescript": "^5.9.3"
   }
 }
