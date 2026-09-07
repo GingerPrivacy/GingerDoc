@@ -33,13 +33,13 @@ Ginger's optional two-factor authentication (2FA) adds an application-startup ch
 
 Ginger verifies the authenticator code with its 2FA service and obtains the secret needed to decrypt the protected wallet files. A working connection to that service is therefore required for the normal 2FA startup flow. Tor must be enabled to use this feature.
 
-The local `2fa_info.gws` file stores a client/server identifier. It is not an encrypted copy of your recovery words or a self-contained recovery key. Copying only that file will not recover a wallet. Setting a passphrase also does not mean every label, log, or sidecar file is encrypted by 2FA.
+The local `2fa_info.gws` file stores a client/server identifier. It is not an encrypted copy of your recovery words or a self-contained recovery key. Copying only that file will not recover a wallet. Neither a wallet passphrase nor enabling 2FA means that every label, log, or sidecar file receives the same encryption. Protect the entire data folder and its backups.
 
 Before enabling 2FA, check that you have the recovery words and exact original passphrase for every software wallet you need to recover. Keep protected copies of wallet and metadata files as well.
 
 ## Enable 2FA
 
-1. Open **Settings** → **Security**. Enable **Network anonymization (Tor)** if needed and restart when prompted so Tor is active.
+1. Open **Settings** â†’ **Security**. Enable **Network anonymization (Tor)** if needed and restart when prompted so Tor is active.
 2. Enable **Two-factor authentication**. The setup dialog displays a QR code for an authenticator.
 3. Add that QR code to your authenticator privately. It contains a secret, so do not share it. Ginger's setup requires an authenticator compatible with SHA256 and eight-digit codes; a manually created default six-digit entry is not equivalent.
 4. Enter the current code and choose **Verify**. If verification fails, check your phone's time synchronization and that the entry came from this setup.
@@ -51,7 +51,7 @@ Do not assume that files copied before setup or before the authenticated restart
 
 At startup, enter the current authenticator code. Once the application has loaded, individual wallet passphrases and hardware-device approvals still have their own roles. An already unlocked computer remains a security concern.
 
-To disable 2FA while you have access, open **Settings** → **Security** and switch **Two-factor authentication** off. Ginger removes the additional wallet-file encryption and its local 2FA association. Normal software-wallet passphrase protection is separate and remains relevant. Back up the resulting files if your backup procedure depends on their current encryption state.
+To disable 2FA while you have access, open **Settings** â†’ **Security** and switch **Two-factor authentication** off. Ginger removes the additional wallet-file encryption and its local 2FA association. Normal software-wallet passphrase protection is separate and remains relevant. Back up the resulting files if your backup procedure depends on their current encryption state.
 
 ## Lost phone, missing file, or unavailable service
 
