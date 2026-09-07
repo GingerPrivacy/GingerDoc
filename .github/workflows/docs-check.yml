@@ -26,6 +26,8 @@ jobs:
         run: npm run check
       - name: Build site and search index
         run: npm run build
+      - name: Check local links and heading anchors
+        run: python3 scripts/check-doc-links.py
       - name: Upload preview files
         uses: actions/upload-artifact@v7
         with:
