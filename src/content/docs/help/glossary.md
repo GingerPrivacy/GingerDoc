@@ -5,9 +5,9 @@ description: "Understand the terms used in Ginger: UTXO, change, passphrase, Coi
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "everyday"
+prev: false
+next: false
 ---
-
-# Bitcoin and Ginger Wallet Glossary
 
 > Reading level: Everyday use. Choose this guide when you need the task it describes.
 

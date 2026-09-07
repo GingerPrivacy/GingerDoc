@@ -5,9 +5,9 @@ description: "Diagnose missing balances, connection problems, CoinJoin waiting s
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "everyday"
+prev: false
+next: false
 ---
-
-# Troubleshoot Ginger Wallet
 
 > Reading level: Everyday use. Choose this guide when you need the task it describes.
 
@@ -59,7 +59,7 @@ Use **Speed Up Transaction** or **Cancel Transaction** only when Ginger offers i
 
 ## 2FA and hardware
 
-For a rejected authenticator code, check phone time, the selected entry, the authenticator's compatibility with Ginger, and Tor/service connectivity. Preserve the existing wallet and 2FA files. If normal startup cannot be restored, recovery words plus the original passphrase are the independent key backup; reinstalling over the same data does not recreate a lost authenticator. The [advanced FAQ](advanced-faq.md#does-the-2fa-file-recover-the-wallet-without-the-service) explains the file dependency.
+For a rejected authenticator code, check phone time, the selected entry, the authenticator's compatibility with Ginger, and Tor/service connectivity. Preserve the existing wallet and 2FA files. If normal startup cannot be restored, recovery words plus the original passphrase are the independent key backup; reinstalling over the same data does not recreate a lost authenticator. The [advanced FAQ](/help/advanced-faq/#does-the-2fa-file-recover-the-wallet-without-the-service) explains the file dependency.
 
 For device detection, use one unlocked hardware wallet, a data cable, and a direct USB port, with competing device applications closed. Complete the required device-side Bitcoin-app, PIN, or passphrase steps. On Linux, check manufacturer USB permissions. Keep the device seed off the computer.
 

@@ -5,13 +5,13 @@ description: "Find released Ginger answers about recovery scanning, wallet metad
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Advanced Ginger Wallet FAQ
 
 > Reading level: Advanced guide. Start with the basic FAQ if you are setting up or using a wallet for the first time.
 
-These questions cover custom settings, deeper privacy choices and special recovery cases. For the ordinary first-use questions, return to the [basic FAQ](faq.md).
+These questions cover custom settings, deeper privacy choices and special recovery cases. For the ordinary first-use questions, return to the [basic FAQ](/help/).
 
 - [Recovery and local data](#recovery-and-local-data)
 - [Coin selection and spending](#coin-selection-and-spending)
@@ -52,7 +52,7 @@ Back up first, then use **Wallet Settings** → **Tools** → **Delete Wallet** 
 
 ### What is the difference between a coin, an address and a wallet?
 
-A coin, or UTXO, is one unspent output from an earlier Bitcoin transaction. One address can have received several coins, and a wallet can manage many addresses and coins. Decisions about spending and CoinJoin concern the available coins, not just the total wallet balance; the [glossary](glossary.md) explains the terms.
+A coin, or UTXO, is one unspent output from an earlier Bitcoin transaction. One address can have received several coins, and a wallet can manage many addresses and coins. Decisions about spending and CoinJoin concern the available coins, not just the total wallet balance; the [glossary](/help/glossary/) explains the terms.
 
 ### Does combining CoinJoined coins always destroy all privacy?
 
@@ -94,7 +94,7 @@ The client selects eligible inputs using the released CoinJoin settings. You can
 
 ### What do rejected coins or a blame round mean?
 
-A blame round is a protocol retry after the earlier attempt could not complete; it is not an instruction to identify or accuse another user. A rejection or temporary unavailability needs its exact reason and current status examined. Neither message by itself transfers control of the funds to the coordinator; see the [released status table](troubleshooting.md#coinjoin-does-not-start).
+A blame round is a protocol retry after the earlier attempt could not complete; it is not an instruction to identify or accuse another user. A rejection or temporary unavailability needs its exact reason and current status examined. Neither message by itself transfers control of the funds to the coordinator; see the [released status table](/help/troubleshooting/#coinjoin-does-not-start).
 
 ### How do I reconcile the full cost of a round?
 

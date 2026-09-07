@@ -5,13 +5,13 @@ description: "Get short answers about missing funds, backups, recovery, CoinJoin
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "beginner"
+prev: false
+next: false
 ---
-
-# Ginger Wallet FAQ: Start Here
 
 > Reading level: Start here. Short answers and first checks come before optional advanced follow-up.
 
-Start with the question closest to what you see. These answers cover ordinary use and the first safe checks; the separate [advanced FAQ](advanced-faq.md) is optional follow-up for custom settings and special cases.
+Start with the question closest to what you see. These answers cover ordinary use and the first safe checks; the separate [advanced FAQ](/help/advanced-faq/) is optional follow-up for custom settings and special cases.
 
 - [Start here](#start-here)
 - [Recovery and missing funds](#recovery-and-missing-funds)
@@ -62,11 +62,11 @@ The creation flow warns that it will not show them again afterward. **Wallet Set
 
 ### Why is my recovered wallet empty or missing transactions?
 
-Check the selected wallet, the original words and exact passphrase, and whether synchronization and recovery have finished. A passphrase typo can open a different valid wallet without producing a wrong-password error. Preserve the old files and compare a known transaction before changing settings; [recovery troubleshooting](troubleshooting.md#balance-recovery-and-receiving) gives the first checks.
+Check the selected wallet, the original words and exact passphrase, and whether synchronization and recovery have finished. A passphrase typo can open a different valid wallet without producing a wrong-password error. Preserve the old files and compare a known transaction before changing settings; [recovery troubleshooting](/help/troubleshooting/#balance-recovery-and-receiving) gives the first checks.
 
 ### The sender says paid. Why have I received nothing?
 
-Ask for the Bitcoin transaction ID and check the intended receiving address and network. A service can mark an order paid before broadcasting its Bitcoin transaction, and Ginger also needs to synchronize before showing it. Check the transaction and local progress before asking the sender to pay again; see [receiving troubleshooting](troubleshooting.md#balance-recovery-and-receiving).
+Ask for the Bitcoin transaction ID and check the intended receiving address and network. A service can mark an order paid before broadcasting its Bitcoin transaction, and Ginger also needs to synchronize before showing it. Check the transaction and local progress before asking the sender to pay again; see [receiving troubleshooting](/help/troubleshooting/#balance-recovery-and-receiving).
 
 ### Will changing the network make missing bitcoin appear?
 
@@ -82,17 +82,17 @@ Recovery may still be scanning and can hide ordinary wallet actions until it fin
 
 ### I lost my authenticator or my 2FA code is rejected. What now?
 
-Check the correct authenticator entry, phone time and Ginger's Tor/service connection. Preserve the existing wallet and 2FA files; reinstalling does not recreate a lost authenticator secret. Recovery words plus the exact original passphrase provide an independent key-recovery route; use [2FA troubleshooting](troubleshooting.md#2fa-and-hardware) before changing files.
+Check the correct authenticator entry, phone time and Ginger's Tor/service connection. Preserve the existing wallet and 2FA files; reinstalling does not recreate a lost authenticator secret. Recovery words plus the exact original passphrase provide an independent key-recovery route; use [2FA troubleshooting](/help/troubleshooting/#2fa-and-hardware) before changing files.
 
 ## Connection and updates
 
 ### Do I need Tor Browser or a VPN to make Ginger work?
 
-Ginger includes Tor for its ordinary wallet connections; you do not need to install Tor Browser merely to run the wallet. A separate browser or VPN does not automatically fix Ginger synchronization and does not hide information you send to a provider. Keep the normal Tor protection enabled while following [connection checks](troubleshooting.md#connection-or-synchronization).
+Ginger includes Tor for its ordinary wallet connections; you do not need to install Tor Browser merely to run the wallet. A separate browser or VPN does not automatically fix Ginger synchronization and does not hide information you send to a provider. Keep the normal Tor protection enabled while following [connection checks](/help/troubleshooting/#connection-or-synchronization).
 
 ### Why is Ginger still connecting or synchronizing?
 
-A first scan or recovered wallet can need time, while a stalled scan can indicate a connection or local problem. Check Internet access, the computer clock, free storage and any node you configured; record the exact status if progress stops. Follow [connection troubleshooting](troubleshooting.md#connection-or-synchronization) rather than repeatedly restarting or deleting wallet data.
+A first scan or recovered wallet can need time, while a stalled scan can indicate a connection or local problem. Check Internet access, the computer clock, free storage and any node you configured; record the exact status if progress stops. Follow [connection troubleshooting](/help/troubleshooting/#connection-or-synchronization) rather than repeatedly restarting or deleting wallet data.
 
 ### Why did reinstalling not reset a broken setting?
 
@@ -102,7 +102,7 @@ Application files and wallet data are stored separately, so an ordinary reinstal
 
 ### Why is CoinJoin waiting instead of starting?
 
-Read the status: the wallet may need confirmations, acceptable fees, other participants, a connection or eligible coins. Waiting does not by itself mean the funds are lost. The [CoinJoin troubleshooting table](troubleshooting.md#coinjoin-does-not-start) explains the released messages and the first action for each.
+Read the status: the wallet may need confirmations, acceptable fees, other participants, a connection or eligible coins. Waiting does not by itself mean the funds are lost. The [CoinJoin troubleshooting table](/help/troubleshooting/#coinjoin-does-not-start) explains the released messages and the first action for each.
 
 ### What is the minimum amount, and why are some coins left behind?
 
@@ -156,7 +156,7 @@ A payment can spend a larger piece of bitcoin and return the leftover value to y
 
 ### Can I use a hardware wallet, including after CoinJoin?
 
-Ginger supports the documented receiving and signing workflows for compatible hardware wallets. Keep the hardware recovery words on the device's recovery path, not in the computer. A hardware wallet can receive eligible CoinJoin outputs but is not the signing source for ordinary Ginger CoinJoin; that optional routing is an [advanced question](advanced-faq.md#can-coinjoin-send-directly-to-my-hardware-wallet).
+Ginger supports the documented receiving and signing workflows for compatible hardware wallets. Keep the hardware recovery words on the device's recovery path, not in the computer. A hardware wallet can receive eligible CoinJoin outputs but is not the signing source for ordinary Ginger CoinJoin; that optional routing is an [advanced question](/help/advanced-faq/#can-coinjoin-send-directly-to-my-hardware-wallet).
 
 ### Will an exchange accept my bitcoin after CoinJoin?
 
@@ -166,4 +166,4 @@ Ginger can prepare an ordinary Bitcoin payment, but it cannot guarantee a provid
 
 ### What can I share with support, and where do I report a bug?
 
-Use links from the [official Ginger repository](https://github.com/GingerPrivacy/GingerWallet/issues), and provide the version, operating system, exact error and non-secret steps. Review any log excerpt before sharing; never send recovery words, passphrases, authenticator codes or a complete wallet data folder. Support does not need a website-based wallet validation or an activation payment; see [how to report a useful issue](troubleshooting.md#report-a-useful-issue).
+Use links from the [official Ginger repository](https://github.com/GingerPrivacy/GingerWallet/issues), and provide the version, operating system, exact error and non-secret steps. Review any log excerpt before sharing; never send recovery words, passphrases, authenticator codes or a complete wallet data folder. Support does not need a website-based wallet validation or an activation payment; see [how to report a useful issue](/help/troubleshooting/#report-a-useful-issue).
