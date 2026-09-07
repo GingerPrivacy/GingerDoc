@@ -5,9 +5,9 @@ description: "Withdraw bitcoin, use Ginger CoinJoin, and move funds to a verifie
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# From an Exchange to Cold Storage with Ginger
 
 > Reading level: Advanced guide. First establish a verified hardware wallet and its independent backup.
 
@@ -23,7 +23,7 @@ There are two different routes. Choose one before starting so you know where the
 ## Prepare both wallets
 
 1. Use a verified Ginger installation. Create and back up the software wallet with its recovery words and original passphrase. Keep only the amount you intend to process in this wallet.
-2. Initialize and back up the hardware wallet through its manufacturer's supported process. [Connect it to Ginger](connect.md) and let the wallet synchronize.
+2. Initialize and back up the hardware wallet through its manufacturer's supported process. [Connect it to Ginger](/using-ginger/hardware-wallet/) and let the wallet synchronize.
 3. In the hardware wallet, choose **Receive** and use **Show on the hardware wallet** when available. Compare the entire receiving address on the device and computer. Complete a small receiving and signing test before relying on a new setup for a larger amount.
 4. Give the wallets distinct names so you can recognize the source and destination. Keep a recoverable backup for each; a backup of the software wallet does not recover a hardware wallet with different keys.
 
@@ -63,6 +63,6 @@ The destination selection resets after Ginger restarts. Check it again before ea
 
 Compare the source decrease with the outputs received in hardware and the source's remaining funds. The difference can include CoinJoin costs. A source balance of zero does not mean the funds were lost if the intended destination received them. Conversely, a successful round does not mean every source coin moved or reached the target.
 
-When you later spend from hardware, review coin selection again. Combining unrelated coins can reveal associations regardless of where their signing keys are stored. Use a fresh recipient address, inspect change and confirm the payment on the device. The [PSBT workflow](psbt.md) offers a supported file-based signing route for suitable hardware; it does not change the privacy consequences of the transaction you sign.
+When you later spend from hardware, review coin selection again. Combining unrelated coins can reveal associations regardless of where their signing keys are stored. Use a fresh recipient address, inspect change and confirm the payment on the device. The [PSBT workflow](/hardware-wallets/psbt/) offers a supported file-based signing route for suitable hardware; it does not change the privacy consequences of the transaction you sign.
 
 If you suspect the signing keys are already compromised, protecting remaining funds takes priority over waiting through a privacy workflow. A new device containing the same exposed seed does not revoke that seed.

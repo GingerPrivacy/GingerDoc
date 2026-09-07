@@ -5,9 +5,9 @@ description: "Prepare a Bitcoin transaction in Ginger, sign it with a hardware w
 lang: "en-US"
 verified_release: "v2.0.26"
 reader_level: "advanced"
+prev: false
+next: false
 ---
-
-# Use the PSBT Workflow
 
 > Reading level: Advanced guide. First establish a verified hardware wallet and its independent backup.
 
