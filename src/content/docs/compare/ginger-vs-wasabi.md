@@ -40,9 +40,9 @@ Ginger's practical advantage here is a shorter setup path. A supplied connection
 
 ## Privacy with future use in mind
 
-You may want to improve your Bitcoin privacy today and use an exchange later. In a CoinJoin, your coins share a transaction with inputs from other participants. [Those connections can matter](https://www.chainalysis.com/blog/cryptocurrency-risk-blockchain-analysis-indirect-exposure/) when a custodial service reviews your deposit.
+You may want to improve your Bitcoin privacy today and use an exchange later. In a CoinJoin, your coins share a transaction with inputs from other participants. Those connections can matter when a custodial service reviews your deposit.
 
-Ginger's coordinator screens participating inputs and excludes those that fail its [risk checks](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.26/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt). The aim is to limit exposure to flagged inputs from other participants—one potential source of additional scrutiny when you later use your bitcoin.
+Ginger's coordinator screens participating inputs and excludes those that fail its risk checks. The aim is to limit exposure to flagged inputs from other participants—one potential source of additional scrutiny when you later use your bitcoin.
 
 With Wasabi, whether comparable screening is applied depends on the coordinator you choose. Each receiving service still makes its own acceptance decisions.
 
