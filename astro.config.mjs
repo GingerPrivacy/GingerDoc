@@ -6,6 +6,8 @@ import { manualSidebar } from './src/manual-sidebar.mjs'
 export default defineConfig({
   site: 'https://docs.gingerwallet.io',
   base: '/',
+  // Preserve spaces between inline elements after the Astro 7 upgrade.
+  compressHTML: true,
   redirects: {
     '/why-ginger/difference': '/why-ginger/',
   },
