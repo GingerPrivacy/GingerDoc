@@ -9,6 +9,8 @@ Published to <https://docs.gingerwallet.io> from the `gh-pages` branch by
 
 ## Run on localhost
 
+Use Node.js 22.12.0 or newer. CI builds and deploys with Node.js 24.
+
 ```sh
 npm install
 npm run dev
