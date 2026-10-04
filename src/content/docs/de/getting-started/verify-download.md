@@ -18,7 +18,7 @@ next: false
 
 Eine separate Signatur hilft festzustellen, dass deine heruntergeladene Datei vom Inhaber eines bestimmten Signierschlüssels signiert wurde und seither unverändert ist. Sie beweist nicht, dass die Software fehlerfrei ist. Du musst außerdem feststellen, ob du genau diesem Signierschlüssel vertrauen wolltest.
 
-<span id="collect-the-matching-files" aria-hidden="true"></span>
+<span id="collect-the-matching-files" data-ginger-heading="die-passenden-dateien-beschaffen" aria-hidden="true"></span>
 
 ## Die passenden Dateien beschaffen
 
@@ -26,7 +26,7 @@ Lade von der [Veröffentlichung v2.0.26](https://github.com/GingerPrivacy/Ginger
 
 Beziehe den öffentlichen Signierschlüssel über den PGP-Link auf der [offiziellen Website](https://gingerwallet.io/). Speichere ihn als `PGP.txt`. Verwende eine vertrauenswürdige OpenPGP-Anwendung wie GnuPG zum Prüfen und Importieren. Falls GnuPG fehlt, beziehe es von der [offiziellen GnuPG-Downloadseite](https://gnupg.org/download/).
 
-<span id="check-the-fingerprint" aria-hidden="true"></span>
+<span id="check-the-fingerprint" data-ginger-heading="den-fingerabdruck-prüfen" aria-hidden="true"></span>
 
 ## Den Fingerabdruck prüfen
 
@@ -45,7 +45,7 @@ gpg --import PGP.txt
 
 Vergleiche den vollständigen Fingerabdruck, nicht nur eine kurze Schlüssel-ID oder den angezeigten Namen. Bestätige ihn nach Möglichkeit mit einer bereits vertrauenswürdigen Kopie oder einem anderen etablierten Ginger-Kanal. Schlüssel und Signatur aus derselben kompromittierten Quelle belegen allein keine Echtheit. Kündigt Ginger einen Schlüsselwechsel an, prüfe diese Mitteilung, bevor du dem neuen Fingerabdruck vertraust.
 
-<span id="verify-the-actual-download" aria-hidden="true"></span>
+<span id="verify-the-actual-download" data-ginger-heading="den-tatsächlichen-download-prüfen" aria-hidden="true"></span>
 
 ## Den tatsächlichen Download prüfen
 
@@ -59,7 +59,7 @@ Ersetze für andere Plattformen beide Dateinamen exakt. Eine erfolgreiche Prüfu
 
 Wenn das Ergebnis **BAD signature** meldet, der Schlüssel fehlt, der Fingerabdruck abweicht oder die Prüfung nicht abgeschlossen werden kann, öffne den Download noch nicht. Prüfe das Dateinamenpaar, wiederhole den Download und suche bei anhaltenden Problemen über die offiziellen Projektlinks Hilfe. Markiere einen unbekannten Schlüssel nicht nur zum Entfernen einer Warnung als vertrauenswürdig.
 
-<span id="checksums-and-platform-signatures" aria-hidden="true"></span>
+<span id="checksums-and-platform-signatures" data-ginger-heading="prüfsummen-und-plattformsignaturen" aria-hidden="true"></span>
 
 ## Prüfsummen und Plattformsignaturen
 

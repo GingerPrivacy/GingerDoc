@@ -13,7 +13,7 @@ next: false
 
 Der Gesamtkontostand kann viele einzelne Coins verschiedener Herkunft, Bestätigung und Privatsphärehistorie enthalten. Coin-Kontrolle hilft bei der Entscheidung, welche du ausgibst. Sie erleichtert aber auch versehentliche Verknüpfungen bislang getrennten Guthabens; nutze sie mit konkretem Zweck.
 
-<span id="inspect-and-select-coins" aria-hidden="true"></span>
+<span id="inspect-and-select-coins" data-ginger-heading="coins-prüfen-und-auswählen" aria-hidden="true"></span>
 
 ## Coins prüfen und auswählen
 
@@ -23,7 +23,7 @@ Wähle **Send** → **Manual Control**, um einzelne Coins im Zahlungsablauf zu b
 
 Behalte Bezeichnungen zur Herkunft oder dazu, wer Guthaben bereits kennt. Coins zu verwenden, die demselben Empfänger bereits zugeordnet sind, kann weniger neue Informationen offenlegen als unverwandte Quellen zu kombinieren. Eine Bezeichnung belegt keine Anonymität und verhindert keine fremde Blockchain-Analyse.
 
-<span id="consolidation-and-small-coins" aria-hidden="true"></span>
+<span id="consolidation-and-small-coins" data-ginger-heading="zusammenführung-und-kleine-coins" aria-hidden="true"></span>
 
 ## Zusammenführung und kleine Coins
 
@@ -33,7 +33,7 @@ Kombiniere unverwandte Coins nicht automatisch für eine ordentliche Liste. Sehr
 
 Eine Übertragung an deine Hardware-Wallet mit **Send** ist eine normale On-Chain-Transaktion. Beschaffe und prüfe eine neue Hardware-Empfangsadresse und kontrolliere dann Gebühr und ausgewählte Coins der Software-Wallet. Die Übertragung bleibt auf der Blockchain sichtbar.
 
-<span id="read-transaction-history" aria-hidden="true"></span>
+<span id="read-transaction-history" data-ginger-heading="den-transaktionsverlauf-lesen" aria-hidden="true"></span>
 
 ## Den Transaktionsverlauf lesen
 
@@ -43,7 +43,7 @@ Nutze **Copy Transaction ID**, um eine bestimmte Transaktion zu identifizieren. 
 
 Du kannst den Verlauf prüfen, sortieren, gruppieren und IDs kopieren. Diese Version bietet in diesem Ablauf keine Transaktionssuche oder CSV-Exportsteuerung.
 
-<span id="speed-up-an-unconfirmed-transaction" aria-hidden="true"></span>
+<span id="speed-up-an-unconfirmed-transaction" data-ginger-heading="eine-unbestätigte-transaktion-beschleunigen" aria-hidden="true"></span>
 
 ## Eine unbestätigte Transaktion beschleunigen
 
@@ -51,7 +51,7 @@ Bietet Ginger **Speed Up Transaction** für einen Verlaufseintrag an, öffne die
 
 Nicht jede Transaktion kann deine Wallet beschleunigen. Nötig sind unterstützte Struktur und Zugriff auf relevante Schlüssel und Guthaben. Eine höhere Gebühr erhöht den Miner-Anreiz, garantiert aber keine sofortige Bestätigung. Eine Ersetzung kann die ID ändern; prüfe den aktualisierten Verlauf bei Empfängerabsprachen.
 
-<span id="cancel-an-unconfirmed-transaction" aria-hidden="true"></span>
+<span id="cancel-an-unconfirmed-transaction" data-ginger-heading="eine-unbestätigte-transaktion-stornieren" aria-hidden="true"></span>
 
 ## Eine unbestätigte Transaktion stornieren
 

@@ -13,7 +13,7 @@ next: false
 
 Ginger benötigt Netzwerkdaten, um deine Transaktionen zu finden, Zahlungen zu veröffentlichen und an CoinJoin teilzunehmen. Tor ist enthalten und für normale Netzwerkverbindungen standardmäßig aktiviert. Es hilft, deine IP-Adresse von kontaktierten Diensten zu trennen, verbirgt aber keine öffentlichen Bitcoin-Beträge oder Transaktionen.
 
-<span id="tor-settings" aria-hidden="true"></span>
+<span id="tor-settings" data-ginger-heading="tor-einstellungen" aria-hidden="true"></span>
 
 ## Tor-Einstellungen
 
@@ -25,7 +25,7 @@ Tor auszuschalten verändert Offenlegungen gegenüber Diensten und Peers; es ist
 
 Gingers Tor-Verbindung macht einen externen Browser außerdem nicht zum Tor Browser. Anbieterseiten, Explorer und andere Links verwenden den konfigurierten Browser. Prüfe ihn separat, bevor du annimmst, dass seine Anfragen den Netzwerkschutz der Wallet übernehmen.
 
-<span id="what-synchronization-does" aria-hidden="true"></span>
+<span id="what-synchronization-does" data-ginger-heading="was-synchronisierung-tut" aria-hidden="true"></span>
 
 ## Was Synchronisierung tut
 
@@ -35,7 +35,7 @@ Erstnutzung und Wiederherstellung können länger dauern als das erneute Öffnen
 
 Full-Node-Betrieb und Wallet-Synchronisierung sind getrennte Aufgaben. Der optionale Full Node validiert die Blockchain; die Wallet muss eigene Transaktionen finden. Ein synchronisierter Node beweist keinen abgeschlossenen Scan einer frisch wiederhergestellten Wallet.
 
-<span id="when-synchronization-appears-stuck" aria-hidden="true"></span>
+<span id="when-synchronization-appears-stuck" data-ginger-heading="bei-scheinbar-stockender-synchronisierung" aria-hidden="true"></span>
 
 ## Bei scheinbar stockender Synchronisierung
 
@@ -48,7 +48,7 @@ Wird Tor in deinem Netzwerk blockiert, nutze die [Verbindungshilfe des Tor-Proje
 
 Nutze **Wallet Settings** → **Tools** → **Resync** nur bei einem Grund zum Neuaufbau der Wallet-Ansicht. Sichere zuerst Backups und lass die erneute Suche abschließen. Den Datenordner zu löschen ist kein erster Diagnoseschritt.
 
-<span id="separate-network-choice-from-real-funds" aria-hidden="true"></span>
+<span id="separate-network-choice-from-real-funds" data-ginger-heading="netzwerkwahl-und-echtes-guthaben-trennen" aria-hidden="true"></span>
 
 ## Netzwerkwahl und echtes Guthaben trennen
 

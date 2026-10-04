@@ -15,7 +15,7 @@ next: false
 
 Eine Passphrase ist ein optionales Geheimnis, das du bei der Wallet-Erstellung wählst. In Ginger schützt sie den Software-Wallet-Zugriff und ist Teil der Wiederherstellungsinformationen. Zur Wiederherstellung derselben Wallet brauchst du ursprüngliche Wörter und die exakte ursprüngliche Passphrase, falls verwendet. Ginger kann eine vergessene Passphrase nicht zurücksetzen.
 
-<span id="do-i-have-to-use-a-passphrase" aria-hidden="true"></span>
+<span id="do-i-have-to-use-a-passphrase" data-ginger-heading="muss-ich-eine-passphrase-verwenden" aria-hidden="true"></span>
 
 ## Muss ich eine Passphrase verwenden?
 
@@ -23,7 +23,7 @@ Ginger zeigt **Add Passphrase** nach **Confirm Recovery Words**. Gib eine Passph
 
 Ohne Passphrase kann jemand mit deinen Wörtern die Wallet wiederherstellen und Bitcoin ausgeben. Eine Passphrase ergänzt ein zu schützendes Geheimnis; vergisst du sie, kannst du möglicherweise trotz vorhandener Wörter nicht wiederherstellen. Wähle etwas schwer Erratbares, das du korrekt aufzeichnen und reproduzieren kannst. Vermeide führende oder abschließende Leerzeichen; Gingers Eingabeprüfung lehnt sie ab.
 
-<span id="is-it-the-same-as-recovery-words-or-a-2fa-code" aria-hidden="true"></span>
+<span id="is-it-the-same-as-recovery-words-or-a-2fa-code" data-ginger-heading="ist-sie-dasselbe-wie-wörter-oder-ein-2fa-code" aria-hidden="true"></span>
 
 ## Ist sie dasselbe wie Wörter oder ein 2FA-Code?
 
@@ -31,7 +31,7 @@ Nein. Ginger erzeugt zwölf **Recovery Words** für eine neue Software-Wallet. D
 
 Der Wallet-Name ist nur eine lokale Bezeichnung. Ein Authenticator-Code zur Zwei-Faktor-Authentifizierung ist eine separate Startprüfung. Keiner ersetzt ursprüngliche Wörter und Passphrase bei Software-Wiederherstellung.
 
-<span id="what-should-i-back-up" aria-hidden="true"></span>
+<span id="what-should-i-back-up" data-ginger-heading="was-sollte-ich-sichern" aria-hidden="true"></span>
 
 ## Was sollte ich sichern?
 
@@ -42,7 +42,7 @@ Halte diese Informationen privat und auch nach Computerverlust wiederherstellbar
 
 Wörter stellen Bitcoin-Zugriff wieder her, aber nicht jede Bezeichnung oder Einstellung. Behalte bestehende Wallet-Dateien während der Untersuchung eines Wiederherstellungsproblems. Automatische Backups auf demselben Computer schützen nicht vor dessen Verlust.
 
-<span id="how-do-i-check-my-backup" aria-hidden="true"></span>
+<span id="how-do-i-check-my-backup" data-ginger-heading="wie-prüfe-ich-mein-backup" aria-hidden="true"></span>
 
 ## Wie prüfe ich mein Backup?
 
@@ -50,7 +50,7 @@ Wörter stellen Bitcoin-Zugriff wieder her, aber nicht jede Bezeichnung oder Ein
 
 Die Funktion prüft, ob diese Wörter zur Wallet gehören. Sie zeigt keine vergessenen Wörter und setzt keine Passphrase zurück. Prüfe außerdem deinen Passphrase-Eintrag. Kontrolliere bei gescheiterter Verifikation Schreibweise und Reihenfolge vertraulich, bevor du dich auf das Backup verlässt.
 
-<span id="how-do-i-use-the-passphrase-during-recovery" aria-hidden="true"></span>
+<span id="how-do-i-use-the-passphrase-during-recovery" data-ginger-heading="wie-verwende-ich-sie-bei-wiederherstellung" aria-hidden="true"></span>
 
 ## Wie verwende ich sie bei Wiederherstellung?
 
@@ -62,7 +62,7 @@ Diese Schritte stellen eine Ginger-Software-Wallet aus Wörtern wieder her. Bewa
 4. Gib unter **Enter Passphrase** die ursprüngliche Passphrase ein und bestätige sie. Leere Felder sind nur richtig, wenn ursprünglich keine verwendet wurde. Du wählst kein neues Passwort.
 5. Lass Wiederherstellung und Synchronisierung abschließen und prüfe bekannten Verlauf. Synchronisierung sucht im Bitcoin-Netzwerk nach Wallet-Transaktionen.
 
-<span id="why-is-my-recovered-wallet-empty" aria-hidden="true"></span>
+<span id="why-is-my-recovered-wallet-empty" data-ginger-heading="warum-ist-meine-wiederhergestellte-wallet-leer" aria-hidden="true"></span>
 
 ## Warum ist meine wiederhergestellte Wallet leer?
 
@@ -72,7 +72,7 @@ Prüfe ursprüngliche Passphrase, Großschreibung, Leerzeichen und Tastaturlayou
 
 Fehlt der erwartete Verlauf weiterhin, bewahre Originaldateien und suche über [offizielle Ginger-Supportlinks](https://gingerwallet.io/) Hilfe. Teile nur nicht geheime Angaben wie Anwendungsversion und Fehlertext. Sende dem Support nie Wiederherstellungswörter, Passphrase oder Wallet-Dateien.
 
-<span id="can-i-reset-or-replace-a-forgotten-passphrase" aria-hidden="true"></span>
+<span id="can-i-reset-or-replace-a-forgotten-passphrase" data-ginger-heading="kann-ich-eine-vergessene-passphrase-ersetzen" aria-hidden="true"></span>
 
 ## Kann ich eine vergessene Passphrase ersetzen?
 

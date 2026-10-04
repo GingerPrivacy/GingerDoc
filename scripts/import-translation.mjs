@@ -22,7 +22,7 @@ for (const file of originals) {
   for (let i = target.headings.length - 1; i >= 0; i--) {
     const heading = target.headings[i]
     const id = source.headings[i].id
-    if (heading.id !== id && !body.includes(`id="${id}"`)) body = body.slice(0, heading.offset) + `<span id="${id}" aria-hidden="true"></span>\n\n` + body.slice(heading.offset)
+    if (heading.id !== id && !body.includes(`id="${id}"`)) body = body.slice(0, heading.offset) + `<span id="${id}" data-ginger-heading="${heading.id}" aria-hidden="true"></span>\n\n` + body.slice(heading.offset)
   }
   const destination = join(root, locale, file)
   mkdirSync(dirname(destination), { recursive: true })

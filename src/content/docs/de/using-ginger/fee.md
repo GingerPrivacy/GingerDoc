@@ -17,7 +17,7 @@ next: false
 
 Beginne für normale Schritte mit [Bitcoin senden](/de/payments/send/). Diese Referenz erklärt Gebührensteuerung und Wechselgeld ausführlicher; du musst nicht für jede Zahlung eine eigene Rate wählen.
 
-<span id="understand-the-fee" aria-hidden="true"></span>
+<span id="understand-the-fee" data-ginger-heading="die-gebühr-verstehen" aria-hidden="true"></span>
 
 ## Die Gebühr verstehen
 
@@ -27,7 +27,7 @@ Gebührenraten werden in Satoshis pro virtuellem Byte als **Fee Rate (sat/vByte)
 
 Ohne automatische Schätzungen kann Ginger manuelle Eingabe anbieten. Bist du unsicher, warte eher auf wiederhergestellte Schätzungen, als eine sehr hohe Zahl zu raten. Normale Transaktionsgebühren und CoinJoin-Koordinatorgebühren sind getrennt.
 
-<span id="change-is-still-your-bitcoin" aria-hidden="true"></span>
+<span id="change-is-still-your-bitcoin" data-ginger-heading="wechselgeld-ist-weiterhin-dein-bitcoin" aria-hidden="true"></span>
 
 ## Wechselgeld ist weiterhin dein Bitcoin
 

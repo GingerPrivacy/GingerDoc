@@ -13,7 +13,7 @@ next: false
 
 Wiederherstellung ist eine Suche nach Schlüsseln und deren Transaktionsverlauf. Sichere vor Beginn die Wallet-Dateien des alten Computers, falls zugänglich. Arbeite mit Kopien und behalte Originale, bis du die wiederhergestellte Wallet geprüft hast.
 
-<span id="recover-from-words" aria-hidden="true"></span>
+<span id="recover-from-words" data-ginger-heading="aus-wörtern-wiederherstellen" aria-hidden="true"></span>
 
 ## Aus Wörtern wiederherstellen
 
@@ -25,7 +25,7 @@ Wiederherstellung ist eine Suche nach Schlüsseln und deren Transaktionsverlauf.
 
 Verschiedene Passphrasen leiten verschiedene gültige Wallets ab. Ein Tippfehler kann daher bei einer Seed-Wiederherstellung eine leere Wallet ohne Meldung „falsche Passphrase“ erzeugen. Prüfe Großschreibung, Leerzeichen, Tastaturlayout und ursprüngliches Backup, bevor du Guthaben für verschwunden hältst.
 
-<span id="an-apparently-empty-recovered-wallet" aria-hidden="true"></span>
+<span id="an-apparently-empty-recovered-wallet" data-ginger-heading="eine-scheinbar-leere-wiederhergestellte-wallet" aria-hidden="true"></span>
 
 ## Eine scheinbar leere wiederhergestellte Wallet
 
@@ -37,7 +37,7 @@ Optionale weiterführende Referenz: [Konten, Adresssuche und Dateiimport](/de/ba
 
 Wiederherstellung aus Wörtern stellt den Zugriff auf zugehörige Schlüssel her. Private Bezeichnungen und andere lokale Aufzeichnungen können ein separates Dateibackup erfordern.
 
-<span id="if-something-is-missing" aria-hidden="true"></span>
+<span id="if-something-is-missing" data-ginger-heading="wenn-etwas-fehlt" aria-hidden="true"></span>
 
 ## Wenn etwas fehlt
 

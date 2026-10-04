@@ -15,7 +15,7 @@ Ginger Wallet und Sparrow Wallet sind quelloffene Bitcoin-Desktop-Wallets mit ei
 
 Zuletzt geprüft: **14. September 2026**. Versionsumfang: [Ginger v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) und [Sparrow 2.5.4](https://github.com/sparrowwallet/sparrow/releases/tag/2.5.4). Dieser Vergleich behandelt dokumentierte Abläufe dieser Versionen; er misst nicht Geschwindigkeit, Zuverlässigkeit oder Anonymität.
 
-<span id="at-a-glance" aria-hidden="true"></span>
+<span id="at-a-glance" data-ginger-heading="auf-einen-blick" aria-hidden="true"></span>
 
 ## Auf einen Blick
 
@@ -31,7 +31,7 @@ Zuletzt geprüft: **14. September 2026**. Versionsumfang: [Ginger v2.0.26](https
 
 Die folgenden Abschnitte erläutern diese Unterschiede und verlinken relevante Anleitungen.
 
-<span id="privacy-and-coinjoin-different-tools-for-different-links" aria-hidden="true"></span>
+<span id="privacy-and-coinjoin-different-tools-for-different-links" data-ginger-heading="privatsphäre-und-coinjoin-werkzeuge-für-unterschiedliche-verknüpfungen" aria-hidden="true"></span>
 
 ## Privatsphäre und CoinJoin: Werkzeuge für unterschiedliche Verknüpfungen
 
@@ -47,7 +47,7 @@ Beide unterstützen PayJoin-Senden in kompatiblen Abläufen. PayJoin beteiligt e
 
 Keines dieser Werkzeuge löscht Börsenaufzeichnungen oder macht die Blockchain privat. Spätere Coin-Kombinationen, Adressreuse oder Empfängerangaben können neue Links offenlegen. Siehe [CoinJoin-Vertrauen und Grenzen](/de/learn-coinjoin/trust-and-limits/).
 
-<span id="network-privacy-who-learns-about-your-wallet" aria-hidden="true"></span>
+<span id="network-privacy-who-learns-about-your-wallet" data-ginger-heading="netzwerkprivatsphäre-wer-erfährt-von-deiner-wallet" aria-hidden="true"></span>
 
 ## Netzwerkprivatsphäre: Wer erfährt von deiner Wallet?
 
@@ -59,7 +59,7 @@ Eigene Infrastruktur verhindert diese Abfragenoffenlegung an fremde öffentliche
 
 Tor schützt Verbindungsmetadaten wie IP-Adressen, verbirgt aber keinen Anfrageinhalt vor dem Empfangsdienst. Eigene Nodes entfernen keine Eigentumshinweise bereits veröffentlichter Transaktionen. Wähle Netzwerkeinstellungen und Ausgabepraxis gemeinsam.
 
-<span id="hardware-wallets-and-multisig" aria-hidden="true"></span>
+<span id="hardware-wallets-and-multisig" data-ginger-heading="hardware-wallets-und-multisig" aria-hidden="true"></span>
 
 ## Hardware-Wallets und Multisig
 
@@ -71,7 +71,7 @@ Sparrow erstellt Multisig-Wallets mit gewählter erforderlicher Signaturzahl, et
 
 Ginger-CoinJoin verwendet Software zum Signieren der Inputs. Eine unterstützte in Ginger geladene Hardware-Wallet empfängt stattdessen Outputs. Das bedeutet weder Hardware-Signierung der Inputs noch Erreichen deines Privatsphäreziels. Die Zielauswahl wird nach Neustart zurückgesetzt. Folge [Gingers Cold-Storage-Anleitung](/de/hardware-wallets/exchange-to-cold-storage/) und gib Hardware-Wörter niemals zur CoinJoin-Aktivierung am Desktop ein.
 
-<span id="transaction-control-and-everyday-use" aria-hidden="true"></span>
+<span id="transaction-control-and-everyday-use" data-ginger-heading="transaktionskontrolle-und-alltag" aria-hidden="true"></span>
 
 ## Transaktionskontrolle und Alltag
 
@@ -81,7 +81,7 @@ Sparrows Diagramm und Editor zeigen Inputs, Outputs, Gebühren und Signierdetail
 
 Prüfe in beiden Empfänger, Inputs, Wechselgeld und Gebühr vor Autorisierung. Manuelle Auswahl kann unverwandtes Guthaben weiterhin durch gemeinsame Ausgabe verknüpfen.
 
-<span id="fees-and-service-conditions" aria-hidden="true"></span>
+<span id="fees-and-service-conditions" data-ginger-heading="gebühren-und-dienstbedingungen" aria-hidden="true"></span>
 
 ## Gebühren und Dienstbedingungen
 
@@ -93,7 +93,7 @@ Ein gebührenpflichtiger 0.10-BTC-Input kostet beispielsweise 30,000 Satoshis Ko
 
 Gingers Koordinatorbetreiber InvisibleBit LLC veröffentlicht Einschränkungen zu US-Standorten und Staatsangehörigkeit. Bedingungen erlauben Drittanbieterprüfungen und Coin-Ablehnung. Prüfe [aktuelle Bedingungen](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt). Eigene Schlüssel garantieren keine Zulassung. Berücksichtige bei Sparrow Privatsphäre und Verfügbarkeit deines Nodes oder Servers.
 
-<span id="which-fits-your-needs" aria-hidden="true"></span>
+<span id="which-fits-your-needs" data-ginger-heading="was-passt-zu-dir" aria-hidden="true"></span>
 
 ## Was passt zu dir?
 

@@ -13,7 +13,7 @@ next: false
 
 Verwende für jede Zahlung eine neue Empfangsadresse. Sie sagt dem Zahler, wohin er Bitcoin senden soll, ohne deine Wiederherstellungswörter preiszugeben. Wiederverwendung ermöglicht jedoch die Verknüpfung von Zahlungen an dasselbe Ziel.
 
-<span id="request-a-payment" aria-hidden="true"></span>
+<span id="request-a-payment" data-ginger-heading="eine-zahlung-anfordern" aria-hidden="true"></span>
 
 ## Eine Zahlung anfordern
 
@@ -25,7 +25,7 @@ Verwende für jede Zahlung eine neue Empfangsadresse. Sie sagt dem Zahler, wohin
 
 Im Bitcoin-Mainnet beginnen native SegWit-Adressen normalerweise mit `bc1q`, Taproot-Adressen mit `bc1p`. Testnetz-Adressen unterscheiden sich. Lehnt ein Dienst eine unterstützte Bitcoin-Adresse ab, kläre Netzwerk- und Adresstypunterstützung mit ihm, statt Zeichen der Adresse zu verändern.
 
-<span id="labels-and-unused-addresses" aria-hidden="true"></span>
+<span id="labels-and-unused-addresses" data-ginger-heading="bezeichnungen-und-ungenutzte-adressen" aria-hidden="true"></span>
 
 ## Bezeichnungen und ungenutzte Adressen
 
@@ -35,7 +35,7 @@ Ausblenden widerruft keine Bitcoin-Adresse. Eine Zahlung an eine zuvor erzeugte 
 
 Bezeichnungen sind lokale Wallet-Metadaten, keine Blockchain-Nachrichten und werden nicht automatisch an den Zahler übermittelt. Backups, Protokolle, Exporte oder Bildschirmfreigaben können sie dennoch offenlegen. Sichere Dateien, wenn Bezeichnungen wichtig sind: Wiederherstellungswörter rekonstruieren sie nicht.
 
-<span id="know-when-you-have-been-paid" aria-hidden="true"></span>
+<span id="know-when-you-have-been-paid" data-ginger-heading="erkennen-wann-du-bezahlt-wurdest" aria-hidden="true"></span>
 
 ## Erkennen, wann du bezahlt wurdest
 
@@ -43,7 +43,7 @@ Die Veröffentlichung durch den Sender, Gingers Erkennung als unbestätigt und d
 
 Ginger kann bei geschlossener Anwendung empfangen. Der Zahler braucht eine gültige Adresse, keine online verfügbare Wallet. Beim erneuten Öffnen findet die Synchronisierung die Transaktion. Ein CoinJoin oder eine Zahlung an eine andere geladene Wallet erscheint nur in der Wallet, die die Outputs kontrolliert.
 
-<span id="if-the-payment-is-missing" aria-hidden="true"></span>
+<span id="if-the-payment-is-missing" data-ginger-heading="wenn-die-zahlung-fehlt" aria-hidden="true"></span>
 
 ## Wenn die Zahlung fehlt
 

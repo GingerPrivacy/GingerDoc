@@ -13,13 +13,13 @@ next: false
 
 Beginne mit [der normalen CoinJoin-Anleitung](/de/using-ginger/coinjoin/). Ginger verwaltet das Protokoll automatisch; diese Referenz erklärt konkrete Zustände oder Einschränkungen.
 
-<span id="why-a-balance-may-not-be-eligible" aria-hidden="true"></span>
+<span id="why-a-balance-may-not-be-eligible" data-ginger-heading="warum-guthaben-ungeeignet-sein-kann" aria-hidden="true"></span>
 
 ## Warum Guthaben ungeeignet sein kann
 
 Weder eine feste Wartezeit noch ein allgemeiner Mindestkontostand garantiert Teilnahme. Die Eignung hängt von Rundenparametern, Coin-Größen, Bestätigungen, Gebühren, Ausschlüssen und Wallet-Einstellungen ab. Ein Kontostand kann den Mindest-Inputwert übersteigen und trotzdem keinen wirtschaftlich geeigneten Coin enthalten.
 
-<span id="what-happens-during-a-round" aria-hidden="true"></span>
+<span id="what-happens-during-a-round" data-ginger-heading="was-während-einer-runde-geschieht" aria-hidden="true"></span>
 
 ## Was während einer Runde geschieht
 
@@ -34,7 +34,7 @@ Weder eine feste Wartezeit noch ein allgemeiner Mindestkontostand garantiert Tei
 
 Die Anwendung verwaltet diese Phasen; du musst weder Schlüssel austauschen noch dich manuell mit Fremden abstimmen. Die Runde und Coin-Auswahl bestimmen akzeptierte Inputs und resultierende Outputs. Für keine Wallet gibt es eine feste erwartbare Input- oder Outputzahl; ein Gesamtkontostand ist kein Versprechen, dass alles an einer Runde teilnehmen kann.
 
-<span id="private-coins-and-another-output-wallet" aria-hidden="true"></span>
+<span id="private-coins-and-another-output-wallet" data-ginger-heading="private-coins-und-eine-andere-output-wallet" aria-hidden="true"></span>
 
 ## Private Coins und eine andere Output-Wallet
 

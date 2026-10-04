@@ -13,7 +13,7 @@ next: false
 
 Privatsphäreverbesserungen bleiben leichter erhalten, wenn sie zur tatsächlichen Bitcoin-Nutzung passen. Bestimme vor Einstellungsänderungen, welche Informationen du weniger breit offenlegen willst und welche Person oder welcher Dienst sie sehen könnte.
 
-<span id="before-receiving" aria-hidden="true"></span>
+<span id="before-receiving" data-ginger-heading="vor-dem-empfang" aria-hidden="true"></span>
 
 ## Vor dem Empfang
 
@@ -21,7 +21,7 @@ Erzeuge eine neue Adresse für die konkrete Zahlung und nutze eine später verst
 
 Bedenke den Kommunikationskanal. Sendest du eine Adresse von einem identifizierten Konto, kann der Empfänger sie dir zuordnen, obwohl die Blockchain kein Namensfeld hat. Eine neue Adresse reduziert Wiederverwendung; sie löscht nicht das Gespräch mit der Adresse.
 
-<span id="before-sending" aria-hidden="true"></span>
+<span id="before-sending" data-ginger-heading="vor-dem-senden" aria-hidden="true"></span>
 
 ## Vor dem Senden
 
@@ -29,7 +29,7 @@ Prüfe die Herkunft verfügbarer Coins. Gemeinsame Ausgabe getrennter Aktivität
 
 Fordere ein neues Ziel an und bestätige Betrag und Adresse. Vermeidet eine Empfehlung Wechselgeld durch Betragsänderung, muss der Empfänger den neuen Betrag akzeptieren. Zahlungen an falsche Personen oder zu niedrige Rechnungszahlungen verbessern keine Privatsphäre.
 
-<span id="after-coinjoin" aria-hidden="true"></span>
+<span id="after-coinjoin" data-ginger-heading="nach-coinjoin" aria-hidden="true"></span>
 
 ## Nach CoinJoin
 
@@ -37,7 +37,7 @@ Der spätere Umgang mit resultierenden Coins bleibt relevant. Alle Outputs in ei
 
 Analysten können auch Zeiten und Beträge vergleichen. Keine allgemeine Wartezeit garantiert Sicherheit. Plane Ausgaben, statt von einer Runde oder festen Verzögerung die Lösung jeder Beobachtung zu erwarten.
 
-<span id="on-the-network-and-computer" aria-hidden="true"></span>
+<span id="on-the-network-and-computer" data-ginger-heading="im-netzwerk-und-auf-dem-computer" aria-hidden="true"></span>
 
 ## Im Netzwerk und auf dem Computer
 
@@ -47,13 +47,13 @@ Prüfe den Browser für Anbieter- und Explorerlinks. Dein gewöhnlicher Browser 
 
 Nutze **Discreet Mode** für unterstützte Bildschirmfelder bei fremden Blicken und die Betriebssystemsperre beim Weggehen. Schütze Backupmedien und lokale Bezeichnungen. Auch eine Watch-only-Wallet kann ohne Schlüsseloffenlegung Finanzaktivität preisgeben.
 
-<span id="when-asking-for-help" aria-hidden="true"></span>
+<span id="when-asking-for-help" data-ginger-heading="bei-hilfsanfragen" aria-hidden="true"></span>
 
 ## Bei Hilfsanfragen
 
 Beschreibe Version, Betriebssystem, Fehler und nicht geheime Reproduktionsschritte. Teile nur den kleinsten relevanten geprüften Protokollauszug. Veröffentliche weder xpub noch gesamten Datenordner, Wörter oder Authenticator-QR-Code. Support kann eine fehlende Passphrase nicht durch sicheren Empfang deiner Geheimnisse in öffentlichen Kanälen reparieren.
 
-<span id="choose-a-sustainable-routine" aria-hidden="true"></span>
+<span id="choose-a-sustainable-routine" data-ginger-heading="eine-nachhaltige-routine-wählen" aria-hidden="true"></span>
 
 ## Eine nachhaltige Routine wählen
 

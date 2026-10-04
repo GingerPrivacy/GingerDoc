@@ -17,7 +17,7 @@ next: false
 
 CoinJoin erstellt mit anderen Teilnehmern eine Bitcoin-Transaktion, um ihre Input-Output-Beziehungen schwerer ableitbar zu machen. Ginger signiert nur eigene Wallet-Inputs; du zahlst nicht auf ein Koordinatorkonto ein. Erfolgreiche Runden kosten trotzdem Gebühren und garantieren keine Anonymität.
 
-<span id="before-starting" aria-hidden="true"></span>
+<span id="before-starting" data-ginger-heading="vor-dem-start" aria-hidden="true"></span>
 
 ## Vor dem Start
 
@@ -27,7 +27,7 @@ Die Koordinatorgebühr wird pro Input-Coin geprüft. Bis einschließlich 0.03 BT
 
 Die Wallet benötigt bestätigtes brauchbares Guthaben und geeignete Rundenbedingungen. Kein Kontostand und keine Wartezeit garantiert sofortigen Start. Lies den aktuellen Status vor Einstellungsänderungen.
 
-<span id="start-and-pause" aria-hidden="true"></span>
+<span id="start-and-pause" data-ginger-heading="starten-und-pausieren" aria-hidden="true"></span>
 
 ## Starten und pausieren
 
@@ -39,7 +39,7 @@ Die Wallet benötigt bestätigtes brauchbares Guthaben und geeignete Rundenbedin
 
 Sende keine Bitcoin an jemanden, der angebliche „CoinJoin-Aktivierung“ anbietet. Es gibt keine separate Aktivierungszahlung an einen Supportkontakt.
 
-<span id="read-the-status" aria-hidden="true"></span>
+<span id="read-the-status" data-ginger-heading="den-status-lesen" aria-hidden="true"></span>
 
 ## Den Status lesen
 
@@ -58,7 +58,7 @@ Sende keine Bitcoin an jemanden, der angebliche „CoinJoin-Aktivierung“ anbie
 
 Bewahre bei Ablehnungs-, Verbindungs- und Eignungsmeldungen den exakten Fehlertext. Neuinstallation oder neue Wörter sind keine normale Antwort auf Wartestatus.
 
-<span id="keep-the-wallet-available" aria-hidden="true"></span>
+<span id="keep-the-wallet-available" data-ginger-heading="die-wallet-verfügbar-halten" aria-hidden="true"></span>
 
 ## Die Wallet verfügbar halten
 
@@ -68,13 +68,13 @@ Ruhezustand, Internetverlust oder erzwungenes Schließen können unterbrechen. N
 
 Je nach allgemeinen Einstellungen kann Ginger nach Fensterschließung im Hintergrund bleiben. Nutze zum vollständigen Beenden die normale Aktion und lass kritische Phasen abschließen.
 
-<span id="spend-after-coinjoin" aria-hidden="true"></span>
+<span id="spend-after-coinjoin" data-ginger-heading="nach-coinjoin-ausgeben" aria-hidden="true"></span>
 
 ## Nach CoinJoin ausgeben
 
 Sobald resultierende Coins brauchbar sind, gib sie wie andere Bitcoin aus. CoinJoin bleibt öffentlich. Unverwandte private und nicht private Coins zu kombinieren, Adressen wiederzuverwenden oder identifizierten Diensten Transaktionen offenzulegen schafft neue Links. Prüfe Auswahl und Wechselgeld; früherer CoinJoin macht nicht jede spätere Handlung privat.
 
-<span id="you-do-not-need-to-manage-the-protocol" aria-hidden="true"></span>
+<span id="you-do-not-need-to-manage-the-protocol" data-ginger-heading="du-musst-das-protokoll-nicht-verwalten" aria-hidden="true"></span>
 
 ## Du musst das Protokoll nicht verwalten
 

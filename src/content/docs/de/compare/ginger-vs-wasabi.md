@@ -15,7 +15,7 @@ Ginger Wallet und Wasabi Wallet sind quelloffene Bitcoin-Desktop-Wallets, mit de
 
 Zuletzt geprüft: **7. September 2026**. Versionsumfang: [Ginger v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) und [Wasabi v2.8.2](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.2). Dieser Vergleich behandelt dokumentierte Abläufe, keinen Geschwindigkeitstest, Zuverlässigkeitsvergleich oder Anonymitätsnachweis.
 
-<span id="at-a-glance" aria-hidden="true"></span>
+<span id="at-a-glance" data-ginger-heading="auf-einen-blick" aria-hidden="true"></span>
 
 ## Auf einen Blick
 
@@ -30,7 +30,7 @@ Zuletzt geprüft: **7. September 2026**. Versionsumfang: [Ginger v2.0.26](https:
 
 Die folgenden Abschnitte erklären Bedingungen dieser Unterschiede und verlinken passende Dokumentation.
 
-<span id="coordinator-setup-one-less-decision-with-ginger" aria-hidden="true"></span>
+<span id="coordinator-setup-one-less-decision-with-ginger" data-ginger-heading="koordinator-einrichtung-eine-entscheidung-weniger-mit-ginger" aria-hidden="true"></span>
 
 ## Koordinator-Einrichtung: Eine Entscheidung weniger mit Ginger
 
@@ -42,7 +42,7 @@ Wasabis [CoinJoin-Anleitung](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.
 
 Gingers praktischer Vorteil ist hier der kürzere Einrichtungsweg. Eine mitgelieferte Verbindung garantiert keine sofortige Runde: Bestätigtes Guthaben, akzeptable Gebühren, verfügbarer Dienst und ausreichend Inputs bleiben nötig.
 
-<span id="privacy-with-future-use-in-mind" aria-hidden="true"></span>
+<span id="privacy-with-future-use-in-mind" data-ginger-heading="privatsphäre-mit-blick-auf-künftige-nutzung" aria-hidden="true"></span>
 
 ## Privatsphäre mit Blick auf künftige Nutzung
 
@@ -52,11 +52,11 @@ Gingers Koordinator überprüft teilnehmende Inputs und schließt jene aus, die 
 
 Bei Wasabi hängt vergleichbare Prüfung vom gewählten Koordinator ab. Jeder Empfangsdienst trifft trotzdem eigene Akzeptanzentscheidungen.
 
-<span id="fees-compare-the-complete-cost" aria-hidden="true"></span>
+<span id="fees-compare-the-complete-cost" data-ginger-heading="gebühren-die-vollständigen-kosten-vergleichen" aria-hidden="true"></span>
 
 ## Gebühren: Die vollständigen Kosten vergleichen
 
-<span id="gingers-coordinator-fee" aria-hidden="true"></span>
+<span id="gingers-coordinator-fee" data-ginger-heading="gingers-koordinatorgebühr" aria-hidden="true"></span>
 
 ### Gingers Koordinatorgebühr
 
@@ -77,13 +77,13 @@ Für einen Input ohne weitere Ausnahme:
 
 Diese Beispiele erklären Berechnungen, keine Angebote für künftige Runden. Vollständige Regeln und weitere Beispiele stehen unter [CoinJoin-Gebühren und Privatsphäre-Fortschritt](/de/using-ginger/annonset/).
 
-<span id="wasabis-coordinator-fee-policy" aria-hidden="true"></span>
+<span id="wasabis-coordinator-fee-policy" data-ginger-heading="wasabis-koordinatorgebührenrichtlinie" aria-hidden="true"></span>
 
 ### Wasabis Koordinatorgebührenrichtlinie
 
 Wasabi akzeptiert seit Version 2.2.0.0 nur Runden ohne Koordinatorgebühr. Mining-Gebühren bleiben zahlbar. Die Dokumentation beschreibt außerdem seltene Outputverteilungsreste bis 10,000 Satoshis je CoinJoin, die an den Koordinator gehen. Siehe [Wasabis Gebührenerklärung](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
 
-<span id="budget-beyond-the-headline-percentage" aria-hidden="true"></span>
+<span id="budget-beyond-the-headline-percentage" data-ginger-heading="über-den-beworbenen-prozentsatz-hinaus-budgetieren" aria-hidden="true"></span>
 
 ### Über den beworbenen Prozentsatz hinaus budgetieren
 
@@ -91,7 +91,7 @@ Auch Ginger kann einen kleinen Rest bei der Outputverteilung hinterlassen. Vergl
 
 Null Koordinatorgebühr ist eine Vergleichskomponente. Transaktionsgröße, Mining-Raten, Outputverteilung und abgeschlossene Rundenzahl beeinflussen tatsächliche Ausgaben. Gingers [Kostenanleitung](/de/using-ginger/annonset/) erklärt den Betragsabgleich.
 
-<span id="hardware-wallets-signing-inputs-and-receiving-outputs-are-different" aria-hidden="true"></span>
+<span id="hardware-wallets-signing-inputs-and-receiving-outputs-are-different" data-ginger-heading="hardware-inputs-signieren-und-outputs-empfangen-sind-verschieden" aria-hidden="true"></span>
 
 ## Hardware: Inputs signieren und Outputs empfangen sind verschieden
 
@@ -103,7 +103,7 @@ Prüfe in Ginger nach Neustart das zurückgesetzte Ziel erneut. Halte getrennte 
 
 Folge [Gingers Cold-Storage-Anleitung](/de/hardware-wallets/exchange-to-cold-storage/) oder [Wasabis CoinJoin-to-wallet-Erklärung](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#can-i-coinjoin-to-another-wallet) für unterstützte Abläufe und Bedingungen.
 
-<span id="privacy-and-service-policies" aria-hidden="true"></span>
+<span id="privacy-and-service-policies" data-ginger-heading="privatsphäre-und-dienstrichtlinien" aria-hidden="true"></span>
 
 ## Privatsphäre und Dienstrichtlinien
 
@@ -111,7 +111,7 @@ Selbstverwahrung beantwortet, wer Ausgaben autorisiert, aber nicht jede Privatsp
 
 Gingers Betreiber InvisibleBit LLC veröffentlicht Beschränkungen einschließlich US-Standort und Staatsangehörigkeit. Die Bedingungen erlauben Drittprüfungen und Inputablehnung. Prüfe [aktuelle Bedingungen](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt). Prüfe bei Wasabi den gewählten Betreiber; Wallet-Gebührenregeln belegen nicht dessen Zulassungs- oder Datenpraktiken.
 
-<span id="which-fits-your-needs" aria-hidden="true"></span>
+<span id="which-fits-your-needs" data-ginger-heading="was-passt-zu-dir" aria-hidden="true"></span>
 
 ## Was passt zu dir?
 

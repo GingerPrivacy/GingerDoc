@@ -15,7 +15,7 @@ Mit Ginger behältst du die Bitcoin-Signierbefugnis, statt Guthaben bei einem Mi
 
 Bestimme vor Teilnahme dein Ziel: Vielleicht soll ein Empfänger weniger über andere Zahlungen erfahren oder die Verbindung künftiger Ausgaben zu einem öffentlichen Empfang schwächer werden. CoinJoin kann Transaktionsverknüpfungen erschweren, aber bereits vom Empfänger erhaltene Informationen nicht entfernen.
 
-<span id="four-separate-questions" aria-hidden="true"></span>
+<span id="four-separate-questions" data-ginger-heading="vier-getrennte-fragen" aria-hidden="true"></span>
 
 ## Vier getrennte Fragen
 
@@ -28,7 +28,7 @@ Bestimme vor Teilnahme dein Ziel: Vielleicht soll ein Empfänger weniger über a
 
 Die [WabiSabi-Veröffentlichung, Abschnitt 7](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3) behandelt Privatsphäre, aktive Angriffe und Diebstahlverhinderung getrennt. Diese Anleitung überträgt das auf Nutzerentscheidungen; sie ist kein Sicherheitsaudit einer installierten Wallet oder eines Koordinators.
 
-<span id="consider-the-observer" aria-hidden="true"></span>
+<span id="consider-the-observer" data-ginger-heading="den-beobachter-berücksichtigen" aria-hidden="true"></span>
 
 ## Den Beobachter berücksichtigen
 
@@ -36,7 +36,7 @@ Ein passiver Blockchain-Beobachter sieht Inputs, Outputs, Beträge und spätere 
 
 Ein Teilnehmer kennt eigene Inputs und Outputs und kann manche Möglichkeiten ausschließen. Ein Koordinator verarbeitet Registrierungen und beobachtet Protokollzeiten; ein aktiv bösartiger Koordinator kann Teilnehmer oder Rundenabschluss beeinflussen. Diese Fähigkeiten unterscheiden sich. Aussagen nur über öffentliche Blockchain-Beobachtung sind kein Schutzversprechen gegen alle.
 
-<span id="apparent-participants-are-not-independent-people" aria-hidden="true"></span>
+<span id="apparent-participants-are-not-independent-people" data-ginger-heading="scheinbare-teilnehmer-sind-keine-unabhängigen-personen" aria-hidden="true"></span>
 
 ## Scheinbare Teilnehmer sind keine unabhängigen Personen
 
@@ -46,7 +46,7 @@ Echte Inputs und Mining-Kosten schaffen wirtschaftliche Grenzen. Sie lassen norm
 
 Größere Runden können mehr Möglichkeiten bieten; Beträge, Teilnehmerwissen und spätere Transaktionen bleiben relevant. Keine Rundenzahl und kein Zielwert beweist, dass ein Angreifer nichts gelernt hat.
 
-<span id="when-the-coordinator-or-connection-is-unavailable" aria-hidden="true"></span>
+<span id="when-the-coordinator-or-connection-is-unavailable" data-ginger-heading="wenn-koordinator-oder-verbindung-ausfallen" aria-hidden="true"></span>
 
 ## Wenn Koordinator oder Verbindung ausfallen
 
@@ -56,7 +56,7 @@ Kann CoinJoin nicht fortfahren, pausiere und prüfe den Grund. Normales Senden b
 
 Eine Ablehnung oder gescheiterte Runde beweist weder Angriff noch Urteil über deine Identität. Umgekehrt bestätigt eine erfolgreiche Runde keine Koordinatorehrlichkeit. Bewahre relevante private Aufzeichnungen bei konkreten Untersuchungen.
 
-<span id="decisions-you-can-make" aria-hidden="true"></span>
+<span id="decisions-you-can-make" data-ginger-heading="deine-entscheidungen" aria-hidden="true"></span>
 
 ## Deine Entscheidungen
 

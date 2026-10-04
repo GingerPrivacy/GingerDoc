@@ -13,7 +13,7 @@ next: false
 
 Öffentlicher Bitcoin-Empfang erfordert nicht, alle Wallet-Adressen zu veröffentlichen. Er erfordert eine Entscheidung darüber, was jeder Zahler oder Websitebesucher sieht, und eine sinnvolle Trennung unverwandter Eingänge. Ginger unterstützt normalen On-Chain-Empfang und lokale Bezeichnungen; es ist kein Rechnungsserver oder automatischer Adressrotationsdienst für Websites.
 
-<span id="choose-how-to-give-out-addresses" aria-hidden="true"></span>
+<span id="choose-how-to-give-out-addresses" data-ginger-heading="wählen-wie-du-adressen-weitergibst" aria-hidden="true"></span>
 
 ## Wählen, wie du Adressen weitergibst
 
@@ -25,7 +25,7 @@ next: false
 
 Eingänge einer öffentlichen Adresse entsprechen nicht zwingend dem gesamten Guthaben, Einkommen oder der Spenderzahl. Eigenzahlungen, wiederholte Spenden und weitere Adressen sind möglich. Ziehe keine stärkeren Schlüsse als die sichtbaren Transaktionen stützen.
 
-<span id="receive-and-keep-useful-records" aria-hidden="true"></span>
+<span id="receive-and-keep-useful-records" data-ginger-heading="empfangen-und-nützliche-aufzeichnungen-führen" aria-hidden="true"></span>
 
 ## Empfangen und nützliche Aufzeichnungen führen
 
@@ -37,7 +37,7 @@ Eingänge einer öffentlichen Adresse entsprechen nicht zwingend dem gesamten Gu
 
 Bezeichnungen gehören in lokale Aufzeichnungen; sie erscheinen nicht als Namen in Bitcoin-Transaktionen. Wer lokale Dateien, Backups oder Bildschirmfreigaben sieht, kann sie trotzdem lesen. Verwende genug Details für verständliche spätere Coin-Auswahl, ohne unnötige persönliche Spenderdaten zu sammeln.
 
-<span id="handle-a-permanently-published-address" aria-hidden="true"></span>
+<span id="handle-a-permanently-published-address" data-ginger-heading="mit-einer-dauerhaft-veröffentlichten-adresse-umgehen" aria-hidden="true"></span>
 
 ## Mit einer dauerhaft veröffentlichten Adresse umgehen
 
@@ -47,7 +47,7 @@ CoinJoin kann unter seinen Annahmen Verknüpfungen zu späteren Ausgaben reduzie
 
 Teile bei Abos oder wiederholten Kundenzahlungen nach Möglichkeit pro Rate ein neues Ziel mit. Ginger widerruft alte Adressen nicht und zwingt niemanden zu neuen Anweisungen. Gleiche verspätete und doppelte Zahlungen ab, bevor du Erstattungen versprichst.
 
-<span id="refund-the-payer-through-a-verified-destination" aria-hidden="true"></span>
+<span id="refund-the-payer-through-a-verified-destination" data-ginger-heading="dem-zahler-über-ein-geprüftes-ziel-erstatten" aria-hidden="true"></span>
 
 ## Dem Zahler über ein geprüftes Ziel erstatten
 
@@ -60,7 +60,7 @@ Erstatte nicht automatisch an eine Inputadresse der ursprünglichen Zahlung. Der
 
 Eine Erstattung ist eine neue On-Chain-Zahlung. Sie macht den ursprünglichen Empfang nicht rückgängig und löscht keine Aufzeichnungen. Bedenke, was sie über deine ausgewählten Coins offenlegt.
 
-<span id="keep-receipt-handling-deliberate" aria-hidden="true"></span>
+<span id="keep-receipt-handling-deliberate" data-ginger-heading="eingänge-bewusst-handhaben" aria-hidden="true"></span>
 
 ## Eingänge bewusst handhaben
 

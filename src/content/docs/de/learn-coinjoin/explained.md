@@ -15,7 +15,7 @@ CoinJoin vereint die Bitcoin-Aktivität mehrerer Personen in einer gemeinsamen T
 
 Stell dir mehrere Personen vor, die in eine gemeinsame Transaktion einzahlen und neue Bitcoin-Stücke zurückbekommen. Die Öffentlichkeit sieht die bewegten Beträge. Weniger klar kann sein, wessen Geld zu welchem Stück wurde. Das ist nur eine Veranschaulichung: Echte Runden haben verschiedene Beträge und komplexere Details.
 
-<span id="do-i-hand-my-bitcoin-to-someone-else" aria-hidden="true"></span>
+<span id="do-i-hand-my-bitcoin-to-someone-else" data-ginger-heading="gebe-ich-meine-bitcoin-jemand-anderem" aria-hidden="true"></span>
 
 ## Gebe ich meine Bitcoin jemand anderem?
 
@@ -23,7 +23,7 @@ Gingers Wallet behält die Informationen zur Ausgabegenehmigung und prüft den T
 
 Du brauchst weiterhin eine vertrauenswürdige Installation, einen geschützten Computer und ein Wiederherstellungsbackup. Der Rundendienst muss ebenfalls verfügbar sein. Schlüsselkontrolle beseitigt nicht alle anderen Probleme.
 
-<span id="why-might-i-use-it" aria-hidden="true"></span>
+<span id="why-might-i-use-it" data-ginger-heading="warum-könnte-ich-es-nutzen" aria-hidden="true"></span>
 
 ## Warum könnte ich es nutzen?
 
@@ -31,7 +31,7 @@ Vielleicht soll ein Zahlungsempfänger weniger über deine anderen Zahlungen erf
 
 CoinJoin kann solche Verknüpfungen erschweren. Es löscht weder Auszahlungsaufzeichnungen einer Börse noch die Erinnerung eines Händlers an den Besteller. Die Blockchain bleibt öffentlich, und spätere Zahlungen können neue Verbindungen offenlegen.
 
-<span id="what-will-it-cost" aria-hidden="true"></span>
+<span id="what-will-it-cost" data-ginger-heading="was-kostet-es" aria-hidden="true"></span>
 
 ## Was kostet es?
 
@@ -39,7 +39,7 @@ Eine erfolgreiche Runde zahlt Bitcoin-Mining-Gebühren und möglicherweise Koord
 
 Es gibt keine feste Abschlusszeit. Ginger kann auf Bestätigungen, akzeptable Gebühren oder andere Teilnehmer warten. Lies den Status und prüfe Ergebnisse, bevor du wiederholte Teilnahme unbeaufsichtigt lässt.
 
-<span id="do-i-need-it-before-my-first-payment" aria-hidden="true"></span>
+<span id="do-i-need-it-before-my-first-payment" data-ginger-heading="brauche-ich-es-vor-meiner-ersten-zahlung" aria-hidden="true"></span>
 
 ## Brauche ich es vor meiner ersten Zahlung?
 

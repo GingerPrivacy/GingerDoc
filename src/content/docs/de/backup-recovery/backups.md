@@ -13,7 +13,7 @@ next: false
 
 Bewahre für eine Ginger-Software-Wallet die Wiederherstellungswörter und die exakte ursprüngliche Passphrase auf, falls du eine verwendet hast. Damit kannst du nach Computerverlust den Zugriff wiederherstellen. Eine Hardware-Wallet nutzt ihr eigenes Gerätebackup; halte ihre Wörter vom Computer fern.
 
-<span id="the-backup-you-need-first" aria-hidden="true"></span>
+<span id="the-backup-you-need-first" data-ginger-heading="das-zuerst-benötigte-backup" aria-hidden="true"></span>
 
 ## Das zuerst benötigte Backup
 
@@ -24,7 +24,7 @@ Bewahre für eine Ginger-Software-Wallet die Wiederherstellungswörter und die e
 
 Der Wallet-Name ist kein Wiederherstellungsgeheimnis. Ein Authenticator-Code oder eine Hardware-PIN ersetzt Wörter und ursprüngliche Passphrase nicht.
 
-<span id="store-recovery-information-safely" aria-hidden="true"></span>
+<span id="store-recovery-information-safely" data-ginger-heading="wiederherstellungsinformationen-sicher-lagern" aria-hidden="true"></span>
 
 ## Wiederherstellungsinformationen sicher lagern
 
@@ -34,7 +34,7 @@ Halte auch eine nicht leere Passphrase wiederherstellbar. Auswendiglernen allein
 
 Anwendungspasswort, Geräte-PIN, Authenticator-Code und BIP39-Passphrase sind nicht austauschbar. Beschrifte deine Backupanweisungen eindeutig, ohne Geheimnisse unbeabsichtigten Lesern offenzulegen.
 
-<span id="choose-something-durable-and-readable" aria-hidden="true"></span>
+<span id="choose-something-durable-and-readable" data-ginger-heading="dauerhafte-und-lesbare-sicherung-wählen" aria-hidden="true"></span>
 
 ## Dauerhafte und lesbare Sicherung wählen
 
@@ -42,7 +42,7 @@ Papier kann durch Feuer, Wasser oder Ausbleichen beschädigt werden. Metall wide
 
 Vermeide Fotos, gewöhnliche Cloud-Notizen und Drucker für Wiederherstellungswörter: Sie können unkontrollierte Kopien hinterlassen. Schütze und verzeichne jede zusätzliche Kopie. Teile Wörter nicht in ein improvisiertes Rätsel auf, das du womöglich nicht rekonstruieren kannst.
 
-<span id="check-the-backup-before-you-need-it" aria-hidden="true"></span>
+<span id="check-the-backup-before-you-need-it" data-ginger-heading="das-backup-vor-dem-ernstfall-prüfen" aria-hidden="true"></span>
 
 ## Das Backup vor dem Ernstfall prüfen
 
@@ -52,7 +52,7 @@ Wenn die Prüfung scheitert, prüfe Schreibweise und Reihenfolge vertraulich. Fa
 
 Sichere lokale Metadaten nach wichtigen Änderungen an Bezeichnungen oder Einstellungen erneut. Mehr Bitcoin zu empfangen erfordert normalerweise keine neuen Wiederherstellungswörter; eine neue Wallet oder eine andere Passphrase dagegen schon.
 
-<span id="what-about-labels-and-computer-files" aria-hidden="true"></span>
+<span id="what-about-labels-and-computer-files" data-ginger-heading="was-ist-mit-bezeichnungen-und-computerdateien" aria-hidden="true"></span>
 
 ## Was ist mit Bezeichnungen und Computerdateien?
 

@@ -13,7 +13,7 @@ next: false
 
 Nutze diese Referenz beim Kopieren lokaler Wallet-Daten oder um zu prüfen, was ein Backup erhält. Beginne mit [der grundlegenden Backupanleitung](/de/backup-recovery/backups/) für die Wiederherstellungsdaten jeder Software-Wallet.
 
-<span id="what-to-keep" aria-hidden="true"></span>
+<span id="what-to-keep" data-ginger-heading="was-du-aufbewahren-solltest" aria-hidden="true"></span>
 
 ## Was du aufbewahren solltest
 
@@ -27,7 +27,7 @@ Nutze diese Referenz beim Kopieren lokaler Wallet-Daten oder um zu prüfen, was 
 
 Der lokale automatische Backupordner liegt auf demselben Computer. Er hilft möglicherweise bei beschädigten Wallet-Dateien, schützt aber nicht vor Verlust der gesamten Festplatte, Diebstahl oder Ransomware.
 
-<span id="make-a-file-backup" aria-hidden="true"></span>
+<span id="make-a-file-backup" data-ginger-heading="ein-dateibackup-erstellen" aria-hidden="true"></span>
 
 ## Ein Dateibackup erstellen
 
@@ -37,7 +37,7 @@ Kopiere die relevanten Dateien auf geschützten Backupspeicher und erhalte Namen
 
 Sichere bei aktivierter 2FA auch `2fa_info.gws`, verwechsle sie aber nicht mit einem unabhängigen Wiederherstellungsschlüssel. Sie enthält eine Kennung für Gingers 2FA-Dienst. Wiederherstellungswörter und ursprüngliche Passphrase bleiben der Weg, der nicht von der Entschlüsselung dieser konkreten lokalen Wallet-Datei abhängt.
 
-<span id="choose-and-preserve-a-passphrase" aria-hidden="true"></span>
+<span id="choose-and-preserve-a-passphrase" data-ginger-heading="eine-passphrase-wählen-und-aufbewahren" aria-hidden="true"></span>
 
 ## Eine Passphrase wählen und aufbewahren
 
@@ -51,7 +51,7 @@ Bei einer Ginger-Software-Wallet schützt die Passphrase auch das gespeicherte v
 
 Für Kontokompatibilität, Dateiimport oder eine Suche mit fehlenden Adressen nutze [erweiterte Wiederherstellungsoptionen](/de/backup-recovery/recovery-options/).
 
-<span id="a-single-private-key-is-not-the-full-recovery-backup" aria-hidden="true"></span>
+<span id="a-single-private-key-is-not-the-full-recovery-backup" data-ginger-heading="ein-einzelner-privater-schlüssel-ist-kein-vollständiges-wiederherstellungsbackup" aria-hidden="true"></span>
 
 ## Ein einzelner privater Schlüssel ist kein vollständiges Wiederherstellungsbackup
 

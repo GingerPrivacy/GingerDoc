@@ -13,7 +13,7 @@ next: false
 
 **Secret Hunt** zeigt Ereignisgeheimnisse im Zusammenhang mit geeigneten CoinJoin-Aktivitäten. Das ist getrennt von Privatsphärescore und normalem Bitcoin-Empfang oder -Ausgeben. Ereignisse hängen vom Dienst ab; die Funktion verspricht weder ein aktuelles Ereignis noch Preise oder Belohnungen.
 
-<span id="view-and-control-participation" aria-hidden="true"></span>
+<span id="view-and-control-participation" data-ginger-heading="teilnahme-ansehen-und-steuern" aria-hidden="true"></span>
 
 ## Teilnahme ansehen und steuern
 
@@ -23,7 +23,7 @@ Nutze **Enable/disable the use of this wallet for Secret Hunt.** zur Steuerung d
 
 Für Watch-only-Wallets wird der Eintrag nicht angeboten. Er ist keine Hardware-Wallet-CoinJoin-Funktion und verlangt keine Wiederherstellungswörter auf einer Ereigniswebsite.
 
-<span id="what-is-shared" aria-hidden="true"></span>
+<span id="what-is-shared" data-ginger-heading="was-geteilt-wird" aria-hidden="true"></span>
 
 ## Was geteilt wird
 
@@ -31,7 +31,7 @@ Der Client ruft Ereignisinformationen von Gingers Dienst ab. Für Berechtigungsp
 
 Tor schützt auf Netzwerkebene, verbirgt aber nicht den Anfrageinhalt vor dem Empfänger. Deaktiviere Secret Hunt, wenn eine Wallet nicht für solche Prüfungen verwendet werden soll. Ereignislistenabfragen und normale Wallet-Netzwerkaktivität sind von diesem Wallet-Schalter getrennt.
 
-<span id="missing-or-incomplete-results" aria-hidden="true"></span>
+<span id="missing-or-incomplete-results" data-ginger-heading="fehlende-oder-unvollständige-ergebnisse" aria-hidden="true"></span>
 
 ## Fehlende oder unvollständige Ergebnisse
 

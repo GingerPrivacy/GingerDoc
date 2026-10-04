@@ -13,7 +13,7 @@ next: false
 
 Eine nützliche Sicherheitsroutine schützt vor unbefugtem Zugriff und lässt einen verständlichen Weg zur legitimen Wiederherstellung offen. Zusätzliche Geheimnisse ohne dokumentierte Rollen können versehentlichen Verlust wahrscheinlicher machen.
 
-<span id="record-the-recovery-plan" aria-hidden="true"></span>
+<span id="record-the-recovery-plan" data-ginger-heading="den-wiederherstellungsplan-dokumentieren" aria-hidden="true"></span>
 
 ## Den Wiederherstellungsplan dokumentieren
 
@@ -23,7 +23,7 @@ Bewahre ausreichend Informationen über Wallet-Konventionen auf, um das richtige
 
 Soll eine andere Person nach Handlungsunfähigkeit oder Tod Guthaben wiederherstellen können, organisiere einen klaren getesteten Zugangsplan passend zu deinen Umständen. Teile nicht beiläufig schon jetzt alle Geheimnisse und erwarte nicht, dass die Person das gemeinte Passwort errät. Nachlass- und Zugangsvorkehrungen können rechtliche Folgen haben und lokale professionelle Beratung erfordern; diese Seite schreibt keine Rechtsstruktur vor.
 
-<span id="check-before-funding-and-before-signing" aria-hidden="true"></span>
+<span id="check-before-funding-and-before-signing" data-ginger-heading="vor-einzahlung-und-signierung-prüfen" aria-hidden="true"></span>
 
 ## Vor Einzahlung und Signierung prüfen
 
@@ -33,7 +33,7 @@ Lerne einen neuen Ablauf mit einem kleinen Betrag. Gleiche gesendeten und angeko
 
 Aktualisiere Computer und Signiergerät aus authentifizierten Quellen. Updatehinweise per Privatnachricht beweisen keine Echtheit. Installiere keine „Wiederherstellungssoftware“ und gestatte keine Fernsteuerung, nur weil Fremde Synchronisierungsbedarf behaupten.
 
-<span id="understand-ginger-2fa" aria-hidden="true"></span>
+<span id="understand-ginger-2fa" data-ginger-heading="ginger-2fa-verstehen" aria-hidden="true"></span>
 
 ## Ginger-2FA verstehen
 
@@ -41,7 +41,7 @@ Gingers optionale 2FA ergänzt lokale Wallet-Dateiverschlüsselung und eine Dien
 
 Halte Wiederherstellungswörter und ursprüngliche Passphrase unabhängig verfügbar. Betrachte `2fa_info.gws` nicht als Offline-Hauptwiederherstellungsschlüssel. Gehe auch nicht davon aus, dass 2FA Angreifer mit Wörtern und Passphrase stoppt oder autorisierte Transaktionen aus einer entsperrten Anwendung verhindert.
 
-<span id="first-identify-what-was-exposed" aria-hidden="true"></span>
+<span id="first-identify-what-was-exposed" data-ginger-heading="zuerst-die-offengelegte-information-bestimmen" aria-hidden="true"></span>
 
 ## Zuerst die offengelegte Information bestimmen
 
@@ -60,7 +60,7 @@ Ein erweiterter öffentlicher Schlüssel deckt nicht unbedingt alle Gerätekonte
 
 Sind nur Wörter offengelegt und hast du eine separate Passphrase verwendet, hängt das Risiko auch von ihrer fortdauernden Geheimhaltung und Erratbarkeit ab. Gehe nicht davon aus, dass eine unbekannte oder schwache Passphrase das offengelegte Backup unbegrenzt schützt. Sind Belege unvollständig und könnte die Offenlegung Ausgaben autorisieren, nutze die Reaktion auf offengelegte Schlüssel.
 
-<span id="respond-to-exposed-signing-keys" aria-hidden="true"></span>
+<span id="respond-to-exposed-signing-keys" data-ginger-heading="auf-offengelegte-signierschlüssel-reagieren" aria-hidden="true"></span>
 
 ## Auf offengelegte Signierschlüssel reagieren
 
@@ -76,7 +76,7 @@ Guthabenübertragungen können beobachtbare On-Chain-Verbindungen schaffen. Bei 
 
 Bewahre während Untersuchungen nötige Aufzeichnungen privat. Gib angeblichem Support weder Wörter noch Passphrase, uneingeschränkte Wallet-Dateikopien oder Zugriff auf das Ersatzgerät. Du musst neue Wörter auf keiner Website „validieren“.
 
-<span id="respond-to-a-privacy-only-disclosure" aria-hidden="true"></span>
+<span id="respond-to-a-privacy-only-disclosure" data-ginger-heading="auf-reine-privatsphäreoffenlegung-reagieren" aria-hidden="true"></span>
 
 ## Auf reine Privatsphäreoffenlegung reagieren
 
@@ -86,7 +86,7 @@ Bestimme bei offengelegtem xpub zuerst dessen Konto. Weitere Nutzung kann künft
 
 Begrenze bei geleakten Aufzeichnungen weiteren Zugriff und prüfe, was sie gemeinsam verraten. Eine Transaktions-ID zusammen mit einem Kundennamen offenbart mehr als jeder Teil allein. Veröffentliche nicht das ganze Leck, um das Problem zu belegen.
 
-<span id="keep-privacy-separate-from-key-protection" aria-hidden="true"></span>
+<span id="keep-privacy-separate-from-key-protection" data-ginger-heading="privatsphäre-und-schlüsselschutz-trennen" aria-hidden="true"></span>
 
 ## Privatsphäre und Schlüsselschutz trennen
 

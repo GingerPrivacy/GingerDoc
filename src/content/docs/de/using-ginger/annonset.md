@@ -13,7 +13,7 @@ next: false
 
 CoinJoin hat Kosten und ein Privatsphäreziel. Prüfe beides vor dem Start: Eine Koordinatorgebührenbefreiung macht die Runde nicht kostenlos, und eine Fortschrittsanzeige misst nicht alles, was andere über dich wissen.
 
-<span id="coordinator-fee-versus-mining-fee" aria-hidden="true"></span>
+<span id="coordinator-fee-versus-mining-fee" data-ginger-heading="koordinator--und-mining-gebühren" aria-hidden="true"></span>
 
 ## Koordinator- und Mining-Gebühren
 
@@ -36,7 +36,7 @@ Mining-Gebühren entschädigen Miner für Transaktionsplatz. Sie hängen von Geb
 
 Teile Coins nicht allein zur Gebührenbefreiung auf, ohne zusätzliche Transaktionen, Gebühren und öffentliche Verknüpfungen zu verstehen.
 
-<span id="account-for-the-complete-cost" aria-hidden="true"></span>
+<span id="account-for-the-complete-cost" data-ginger-heading="die-vollständigen-kosten-erfassen" aria-hidden="true"></span>
 
 ## Die vollständigen Kosten erfassen
 
@@ -59,7 +59,7 @@ Hier gilt 15,000 + 3,600 + 600 = 19,200 Satoshis. Die letzten drei Zeilen erklä
 
 Gehen Outputs an Hardware, ist ihr Verschwinden aus dem Softwarekontostand eine Übertragung weiterhin eigenen Werts. Warte vor dem Abgleich, bis beide Wallets synchronisiert sind. Unbestätigte Transaktionen, parallele Zahlungen und eingehendes Guthaben können einen einfachen Vorher-nachher-Kontostandsvergleich irreführend machen.
 
-<span id="budget-for-the-whole-journey" aria-hidden="true"></span>
+<span id="budget-for-the-whole-journey" data-ginger-heading="den-ganzen-weg-budgetieren" aria-hidden="true"></span>
 
 ## Den ganzen Weg budgetieren
 
@@ -76,7 +76,7 @@ Eine Teilnahme für 19,200 Satoshis plus eine Übertragung für 1,200 Satoshis k
 
 Lerne mit einem verkraftbaren Betrag und prüfe das erste abgeschlossene Ergebnis, bevor du wiederholte Runden weiterlaufen lässt. Halte ein persönliches Kostenbudget; CoinJoin-Zeitpräferenz oder Coin-Auswahleinstellung garantiert keine Obergrenze für die gesamten Kosten des Wegs.
 
-<span id="when-ginger-waits-or-refuses-a-round" aria-hidden="true"></span>
+<span id="when-ginger-waits-or-refuses-a-round" data-ginger-heading="wenn-ginger-wartet-oder-eine-runde-ablehnt" aria-hidden="true"></span>
 
 ## Wenn Ginger wartet oder eine Runde ablehnt
 
@@ -86,7 +86,7 @@ Gebührenpräferenzen können **Awaiting cheaper coinjoins** auslösen. Zeitprä
 
 Der normale CoinJoin-Start lehnt in dieser Version auch Wallets ab, deren Guthaben das Privatsphäreziel bereits erreicht, oder Auswahlen nur solcher Coins. Eine andere Output-Wallet umgeht diese Prüfung nicht. Prüfe zum Bewegen bereits privater Coins eine normale Übertragung, statt von der Zielauswahl eine erzwungene Runde zu erwarten.
 
-<span id="what-the-privacy-score-can-tell-you" aria-hidden="true"></span>
+<span id="what-the-privacy-score-can-tell-you" data-ginger-heading="was-der-privatsphärescore-sagt" aria-hidden="true"></span>
 
 ## Was der Privatsphärescore sagt
 
@@ -105,7 +105,7 @@ Nur 25 % des Werts erreicht das Ziel. Für Gesamtfortschritt gewichtet diese Ver
 
 **Hurray! All your funds are private!** bedeutet, dass die Wallet Guthaben nach aktuellem Ziel und ihrer Berechnung privat nennt. Es bedeutet weder verschwundenen Verlauf noch Internetanonymität oder Unverknüpfbarkeit späterer Zahlungen.
 
-<span id="decide-when-you-have-achieved-your-objective" aria-hidden="true"></span>
+<span id="decide-when-you-have-achieved-your-objective" data-ginger-heading="entscheiden-wann-dein-ziel-erreicht-ist" aria-hidden="true"></span>
 
 ## Entscheiden, wann dein Ziel erreicht ist
 

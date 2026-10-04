@@ -13,7 +13,7 @@ next: false
 
 Schließe zuerst [die normalen Wiederherstellungsprüfungen](/de/backup-recovery/restore/) ab: gewünschte Wallet, exakte ursprüngliche Wörter und Passphrase, Verbindung und Suchfortschritt. Diese Seite behandelt konkrete Gründe, weshalb diese Prüfungen nicht ausreichen können.
 
-<span id="address-scanning-and-account-compatibility" aria-hidden="true"></span>
+<span id="address-scanning-and-account-compatibility" data-ginger-heading="adresssuche-und-kontokompatibilität" aria-hidden="true"></span>
 
 ## Adresssuche und Kontokompatibilität
 
@@ -25,7 +25,7 @@ Eine in einer anderen Anwendung erstellte Wallet kann andere Adresstypen, Konten
 
 Diese Ginger-Version bietet keine SLIP39-Share-Wiederherstellung. Gib eine Sammlung von Wiederherstellungsanteilen nicht wie eine einzelne BIP39-Wortliste ein.
 
-<span id="import-a-file" aria-hidden="true"></span>
+<span id="import-a-file" data-ginger-heading="eine-datei-importieren" aria-hidden="true"></span>
 
 ## Eine Datei importieren
 
@@ -33,7 +33,7 @@ Wähle **Import File** beim Hinzufügen einer Wallet und eine kompatible `.json`
 
 Öffne eine geschützte importierte Software-Wallet mit der ursprünglichen Passphrase. Eine durch 2FA verschlüsselte Datei entspricht keinem unverschlüsselten portablen Backup. Erhalte zugehörige Dateien und Zugangsdaten oder stelle stattdessen aus Wörtern und ursprünglicher Passphrase wieder her. Ein importierter Hardware-Export erzeugt eine Wallet, die zum Signieren weiterhin vom Gerät abhängt.
 
-<span id="what-recovery-does-not-restore" aria-hidden="true"></span>
+<span id="what-recovery-does-not-restore" data-ginger-heading="was-die-wiederherstellung-nicht-zurückbringt" aria-hidden="true"></span>
 
 ## Was die Wiederherstellung nicht zurückbringt
 

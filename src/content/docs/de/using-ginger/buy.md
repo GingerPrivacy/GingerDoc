@@ -30,7 +30,7 @@ next: false
 
 **Buy** verbindet dich mit Drittanbieterangeboten zum Bitcoin-Kauf. Ginger liefert die Wallet-Oberfläche und eine Empfangsadresse; der gewählte Anbieter übernimmt Zahlung, Zugangsberechtigung, Identitätsprüfungen und Lieferung. Die Nutzung einer selbstverwahrten Wallet macht einen Kauf bei einem Anbieter nicht anonym.
 
-<span id="request-and-compare-offers" aria-hidden="true"></span>
+<span id="request-and-compare-offers" data-ginger-heading="angebote-anfordern-und-vergleichen" aria-hidden="true"></span>
 
 ## Angebote anfordern und vergleichen
 
@@ -42,7 +42,7 @@ next: false
 
 Angebote und Grenzen sind aktuelle Informationen des Dienstes, keine dauerhaften Eigenschaften einer Version. Ein fester Höchstwert aus einem alten Artikel kann inzwischen ungültig sein. Ein prominent platziertes Angebot ist keine Garantie, dass es für deine Situation das beste ist.
 
-<span id="complete-the-provider-steps" aria-hidden="true"></span>
+<span id="complete-the-provider-steps" data-ginger-heading="anbieterschritte-abschließen" aria-hidden="true"></span>
 
 ## Anbieterschritte abschließen
 
@@ -54,7 +54,7 @@ Der Anbieter erhält Kaufziel und Bestellinformationen und kann sie deinem Zahlu
 
 Sende zum Kaufabschluss weder Wiederherstellungswörter noch private Schlüssel oder Wallet-Passphrase. Ein Anbieter benötigt eine Empfangsadresse zur Bitcoin-Lieferung, keinen Zugriff auf die empfangende Wallet.
 
-<span id="track-the-result" aria-hidden="true"></span>
+<span id="track-the-result" data-ginger-heading="ergebnis-verfolgen" aria-hidden="true"></span>
 
 ## Ergebnis verfolgen
 
@@ -64,7 +64,7 @@ Eine abgeschlossene Bankzahlung ist nicht dasselbe Ereignis wie Bitcoin-Bestäti
 
 Lies bei zurückgehaltenen, abgelaufenen, gescheiterten oder erstatteten Bestellungen [Bestellstatus und Verkauf](/de/using-ginger/sell/). Beginne wegen langsamer Aktualisierung keinen weiteren Kauf, bevor du die ursprüngliche Zahlungsbelastung geklärt hast.
 
-<span id="browser-privacy" aria-hidden="true"></span>
+<span id="browser-privacy" data-ginger-heading="browserprivatsphäre" aria-hidden="true"></span>
 
 ## Browserprivatsphäre
 

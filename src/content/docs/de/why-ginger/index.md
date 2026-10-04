@@ -11,7 +11,7 @@ next: false
 
 Ginger ist eine quelloffene Desktop-Wallet für On-Chain-Bitcoin. Du kontrollierst die Schlüssel, empfängst an neuen Adressen und prüfst Zahlungen vor dem Signieren. Optionaler CoinJoin erschwert Eigentumszuordnungen von Transaktionen, während integriertes Tor direkte IP-Offenlegung bei darüber geleiteten Verbindungen reduziert.
 
-<span id="start-with-what-you-want-to-protect" aria-hidden="true"></span>
+<span id="start-with-what-you-want-to-protect" data-ginger-heading="beginne-mit-dem-was-du-schützen-möchtest" aria-hidden="true"></span>
 
 ## Beginne mit dem, was du schützen möchtest
 
@@ -21,7 +21,7 @@ Ginger ist eine quelloffene Desktop-Wallet für On-Chain-Bitcoin. Du kontrollier
 
 Empfangen, Senden und CoinJoin sind getrennte Aktionen. Lerne zuerst normale Zahlungen und entscheide später, ob CoinJoin ein Privatsphäreproblem adressiert. Abgeschlossene Runden kosten Gebühren und haben keine garantierte Abschlusszeit.
 
-<span id="understand-the-limits" aria-hidden="true"></span>
+<span id="understand-the-limits" data-ginger-heading="grenzen-verstehen" aria-hidden="true"></span>
 
 ## Grenzen verstehen
 

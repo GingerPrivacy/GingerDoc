@@ -13,7 +13,7 @@ next: false
 
 Ginger kann eine bestätigte Bitcoin-Zahlung nicht zurückrufen. Prüfe vor der Bestätigung den Empfänger über einen vertrauenswürdigen Kanal sowie vollständiges Ziel, Betrag und Gebühr. Beginne bei einem neuen Ablauf mit einer kleinen Zahlung.
 
-<span id="prepare-a-payment" aria-hidden="true"></span>
+<span id="prepare-a-payment" data-ginger-heading="eine-zahlung-vorbereiten" aria-hidden="true"></span>
 
 ## Eine Zahlung vorbereiten
 
@@ -26,7 +26,7 @@ Ginger kann eine bestätigte Bitcoin-Zahlung nicht zurückrufen. Prüfe vor der 
 
 Beim Senden des gesamten Guthabens kann die Gebühr vom Empfängerbetrag abgezogen werden. Festbetragsanfragen und PayJoin haben andere Einschränkungen. Prüfe den tatsächlichen Empfängerbetrag in der Vorschau, statt anzunehmen, der gesamte Kontostand komme an.
 
-<span id="check-the-fee-without-custom-settings" aria-hidden="true"></span>
+<span id="check-the-fee-without-custom-settings" data-ginger-heading="gebühren-ohne-eigene-einstellungen-prüfen" aria-hidden="true"></span>
 
 ## Gebühren ohne eigene Einstellungen prüfen
 
@@ -34,7 +34,7 @@ Prüfe Gesamtgebühr und geschätzte Bestätigungspräferenz in der Vorschau. Ei
 
 Nutze eine verfügbare Gebührenschätzung, die du verstehst. Fehlen Schätzungen und bist du unsicher, warte und untersuche die Ursache, statt eine sehr hohe eigene Gebühr zu raten.
 
-<span id="the-leftover-money-is-change" aria-hidden="true"></span>
+<span id="the-leftover-money-is-change" data-ginger-heading="der-restbetrag-ist-wechselgeld" aria-hidden="true"></span>
 
 ## Der Restbetrag ist Wechselgeld
 
@@ -44,7 +44,7 @@ Eine Privatsphäreempfehlung kann den vorgeschlagenen Empfängerbetrag ändern. 
 
 Optionale weiterführende Referenz: [Eigene Gebührenraten und Wechselgeld](/de/using-ginger/fee/) oder [Manuelle Coin-Kontrolle und Transaktionsverlauf](/de/payments/coin-control-history/).
 
-<span id="when-a-payment-cannot-be-prepared" aria-hidden="true"></span>
+<span id="when-a-payment-cannot-be-prepared" data-ginger-heading="wenn-sich-keine-zahlung-vorbereiten-lässt" aria-hidden="true"></span>
 
 ## Wenn sich keine Zahlung vorbereiten lässt
 

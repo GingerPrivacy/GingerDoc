@@ -11,7 +11,7 @@ next: false
 
 > Schwierigkeitsgrad: Alltagsnutzung. Wähle diese Anleitung, wenn du die beschriebene Aufgabe erledigen möchtest.
 
-<span id="amounts-and-transactions" aria-hidden="true"></span>
+<span id="amounts-and-transactions" data-ginger-heading="beträge-und-transaktionen" aria-hidden="true"></span>
 
 ## Beträge und Transaktionen
 
@@ -33,7 +33,7 @@ next: false
 | CPFP | Child-pays-for-parent: Ein Output mit höherer Gebühr der Kindtransaktion kann auch die Bestätigung ihrer unbestätigten Elterntransaktion fördern. |
 | Dust | Ein unter einer bestimmten Richtlinie oder Kostenannahme zu kleiner nützlicher Betrag. Wallet-Schwelle und Netzwerkregel sind nicht notwendigerweise gleich. |
 
-<span id="the-network-in-context" aria-hidden="true"></span>
+<span id="the-network-in-context" data-ginger-heading="das-netzwerk-im-zusammenhang" aria-hidden="true"></span>
 
 ## Das Netzwerk im Zusammenhang
 
@@ -52,7 +52,7 @@ next: false
 
 Lightning, Zahlungskanäle, Multisig-Aufbau, öffentliche Testnet-/Signet-Einrichtung und Script-Interna liegen außerhalb dokumentierter Nutzerabläufe dieser Version. Allgemeine Glossareinträge belegen keine Ginger-Funktion.
 
-<span id="keys-and-recovery" aria-hidden="true"></span>
+<span id="keys-and-recovery" data-ginger-heading="schlüssel-und-wiederherstellung" aria-hidden="true"></span>
 
 ## Schlüssel und Wiederherstellung
 
@@ -72,7 +72,7 @@ Lightning, Zahlungskanäle, Multisig-Aufbau, öffentliche Testnet-/Signet-Einric
 | PSBT | Teilweise signierte Bitcoin-Transaktionsdatei mit vorgeschlagener Transaktion und Signierinformationen. |
 | SegWit /de/ Taproot | Output- und Ausgabeformate. Native Mainnet-Adressen beginnen meist mit `bc1q` beziehungsweise `bc1p`. |
 
-<span id="privacy-and-ginger" aria-hidden="true"></span>
+<span id="privacy-and-ginger" data-ginger-heading="privatsphäre-und-ginger" aria-hidden="true"></span>
 
 ## Privatsphäre und Ginger
 

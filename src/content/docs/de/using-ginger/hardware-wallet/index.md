@@ -15,7 +15,7 @@ next: false
 
 Eine Hardware-Wallet bewahrt Signierschlüssel auf einem separaten Gerät. Ginger kann ihren Kontostand anzeigen und Transaktionen vorbereiten, während das Gerät unterstützte Signiervorgänge autorisiert. Der Desktop verarbeitet weiterhin sensible öffentliche Informationen; Hardware-Verwahrung macht die Wallet-Aktivität deshalb nicht anonym.
 
-<span id="compatibility-in-this-release" aria-hidden="true"></span>
+<span id="compatibility-in-this-release" data-ginger-heading="kompatibilität-in-dieser-version" aria-hidden="true"></span>
 
 ## Kompatibilität in dieser Version
 
@@ -25,7 +25,7 @@ Die [HWI-3.2.0-Gerätematrix](https://github.com/bitcoin-core/HWI/blob/3.2.0/doc
 
 Prüfe vor größeren Übertragungen, ob dein konkretes Gerät sich verbinden, eine Empfangsadresse anzeigen und eine kleine Testzahlung signieren kann. Benötigt es eine PIN- oder Passphrase-Eingabe, die Ginger nicht abschließen kann, nutze den unterstützten geräteseitigen Ablauf oder frage den Hersteller. Gib die Wiederherstellungswörter des Geräts nicht als Umgehung in Ginger ein.
 
-<span id="add-the-device" aria-hidden="true"></span>
+<span id="add-the-device" data-ginger-heading="das-gerät-hinzufügen" aria-hidden="true"></span>
 
 ## Das Gerät hinzufügen
 
@@ -37,7 +37,7 @@ Prüfe vor größeren Übertragungen, ob dein konkretes Gerät sich verbinden, e
 
 Ginger kann einen öffentlichen Wallet-Datensatz ohne angeschlossene Hardware auf dem Computer behalten. Er erlaubt Beobachtung und Adresserzeugung; zum Ausgeben braucht es weiterhin das Signiergerät oder eine gültige Wiederherstellung seiner Schlüssel.
 
-<span id="receive-and-verify" aria-hidden="true"></span>
+<span id="receive-and-verify" data-ginger-heading="empfangen-und-prüfen" aria-hidden="true"></span>
 
 ## Empfangen und prüfen
 
@@ -45,7 +45,7 @@ Wähle **Receive**, füge eine Bezeichnung hinzu und erzeuge eine Adresse. Nutze
 
 Der Desktop kann selbst bei Kompromittierung eine glaubwürdig wirkende Adresse zeigen. Der Gerätebildschirm liefert eine separate Prüfung anhand eigener Schlüssel. Nutze für jede Zahlung eine neue Adresse gegen Verknüpfungen unverwandter Eingänge.
 
-<span id="send-and-approve" aria-hidden="true"></span>
+<span id="send-and-approve" data-ginger-heading="senden-und-genehmigen" aria-hidden="true"></span>
 
 ## Senden und genehmigen
 
@@ -53,7 +53,7 @@ Bereite eine Zahlung in Ginger vor und prüfe Empfänger, Betrag, Wechselgeld un
 
 Halte das Gerät bis zum Abschluss der Signierung verbunden. Prüfe anschließend im Ginger-Verlauf Veröffentlichung und Bestätigung. Das Abziehen des Geräts storniert keine bereits veröffentlichte Transaktion.
 
-<span id="coinjoin-and-other-limits" aria-hidden="true"></span>
+<span id="coinjoin-and-other-limits" data-ginger-heading="coinjoin-und-weitere-grenzen" aria-hidden="true"></span>
 
 ## CoinJoin und weitere Grenzen
 
@@ -63,7 +63,7 @@ Die [Anleitung von der Börse zur Cold Storage](/de/hardware-wallets/exchange-to
 
 PayJoin-Senden aus Hardware-Wallets wird in dieser Version abgelehnt. Nachrichtensignierung hängt von Geräte- und Prüferkompatibilität ab. Weder Gerät noch Ginger können bestätigte Zahlungen umkehren. Lies für Dateisignierung [Den PSBT-Ablauf verwenden](/de/hardware-wallets/psbt/).
 
-<span id="connection-problems" aria-hidden="true"></span>
+<span id="connection-problems" data-ginger-heading="verbindungsprobleme" aria-hidden="true"></span>
 
 ## Verbindungsprobleme
 

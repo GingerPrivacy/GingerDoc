@@ -13,7 +13,7 @@ next: false
 
 **Coinjoin Settings** gelten für die ausgewählte Wallet. Ändere jeweils eine Einstellung und beobachte ihre Wirkung. Aggressivere Einstellungen können Gebühren oder Wartezeiten erhöhen, ohne die für deine Situation relevante Privatsphäre zu verbessern.
 
-<span id="automatic-participation-and-cost-preferences" aria-hidden="true"></span>
+<span id="automatic-participation-and-cost-preferences" data-ginger-heading="automatische-teilnahme-und-kosteneinstellungen" aria-hidden="true"></span>
 
 ## Automatische Teilnahme und Kosteneinstellungen
 
@@ -27,7 +27,7 @@ next: false
 
 Meldet der Player einen unwirtschaftlichen Kontostand, kann das Betätigen der Wiedergabe die Stoppschwelle umgehen. Transaktionsgebühren entfallen dadurch nicht. Berücksichtige Coin-Größen und erwartete Kosten vor einer Übersteuerung.
 
-<span id="privacy-settings" aria-hidden="true"></span>
+<span id="privacy-settings" data-ginger-heading="privatsphäreeinstellungen" aria-hidden="true"></span>
 
 ## Privatsphäreeinstellungen
 
@@ -37,7 +37,7 @@ Meldet der Player einen unwirtschaftlichen Kontostand, kann das Betätigen der W
 
 Ein niedrigeres Ziel kann sofort ändern, was die Oberfläche als privat bezeichnet, ohne die Blockchain zu ändern. Betrachte Privatsphäreanzeigen als Schätzungen und Richtlinieneinstellungen, nicht als Beleg dafür, dass ein externer Beobachter alle Informationen verloren hat.
 
-<span id="exclude-specific-coins" aria-hidden="true"></span>
+<span id="exclude-specific-coins" data-ginger-heading="bestimmte-coins-ausschließen" aria-hidden="true"></span>
 
 ## Bestimmte Coins ausschließen
 
@@ -45,7 +45,7 @@ Ein niedrigeres Ziel kann sofort ändern, was die Oberfläche als privat bezeich
 
 Ein CoinJoin-Ausschluss sperrt einen Coin nicht für normale Ausgaben und ersetzt keine Hardware-Verwahrung. Sind alle verfügbaren Coins ausgeschlossen, kann **Only excluded funds are available** erscheinen. Prüfe diese Liste, bevor du Gebühren- oder Privatsphäreeinstellungen änderst.
 
-<span id="receive-outputs-in-another-wallet" aria-hidden="true"></span>
+<span id="receive-outputs-in-another-wallet" data-ginger-heading="outputs-in-einer-anderen-wallet-empfangen" aria-hidden="true"></span>
 
 ## Outputs in einer anderen Wallet empfangen
 
@@ -60,7 +60,7 @@ Während eines laufenden CoinJoins lässt sich das Ziel nicht ändern. **Diese A
 
 Die veröffentlichte Zielauswahl kann eine geladene Hardware-Wallet enthalten. Die Quelle bleibt die Software-Wallet, die den CoinJoin signiert; ein Hardware-Ziel macht sie weder zu einer Cold Wallet noch ermöglicht es der Hardware-Wallet eigene CoinJoins. Nutze nur ein tatsächlich angebotenes Ziel und prüfe Backup und Adresskontrolle, bevor du dich darauf verlässt.
 
-<span id="experimental-coin-selection" aria-hidden="true"></span>
+<span id="experimental-coin-selection" data-ginger-heading="experimentelle-coin-auswahl" aria-hidden="true"></span>
 
 ## Experimentelle Coin-Auswahl
 
@@ -77,7 +77,7 @@ Die Version bietet **(EXPERIMENTAL) Improved Coin Selection**. Ihre Konfiguratio
 
 Behalte Anfangswerte, solange du den veränderten Kompromiss nicht verstehst. Es sind Auswahlpräferenzen, keine exakte Gesamtgebührenobergrenze und kein Versprechen zur Outputzahl einer Runde.
 
-<span id="when-another-round-cannot-start" aria-hidden="true"></span>
+<span id="when-another-round-cannot-start" data-ginger-heading="wenn-keine-weitere-runde-starten-kann" aria-hidden="true"></span>
 
 ## Wenn keine weitere Runde starten kann
 

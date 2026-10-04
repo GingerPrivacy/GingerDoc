@@ -13,7 +13,7 @@ next: false
 
 Eine partially signed Bitcoin transaction (PSBT), also teilweise signierte Bitcoin-Transaktion, ist eine Datei mit einer Transaktion und den vom Signierer benötigten Informationen. Sie trennt die Vorbereitung am Desktop von der Signierung auf Hardware. Eine PSBT kann Adressen, Beträge und Wallet-Informationen offenlegen; behandle sie schon vor ihrer Ausgabefähigkeit als privat.
 
-<span id="prepare-the-wallet-connection" aria-hidden="true"></span>
+<span id="prepare-the-wallet-connection" data-ginger-heading="die-wallet-verbindung-vorbereiten" aria-hidden="true"></span>
 
 ## Die Wallet-Verbindung vorbereiten
 
@@ -21,7 +21,7 @@ Du benötigst einen kompatiblen Hardware-Wallet-Datensatz in Ginger, der zu den 
 
 Der Export enthält öffentliche Kontoinformationen und einen Gerätefingerabdruck, keine Wiederherstellungswörter. Prüfe vor der Einzahlung, ob Gingers Empfangsadresse mit dem Gerät übereinstimmt. Ein importiertes Konto mit anderem Ableitungspfad oder anderer Passphrase kann auch auf demselben Gerät eine andere Wallet sein.
 
-<span id="export-a-transaction" aria-hidden="true"></span>
+<span id="export-a-transaction" data-ginger-heading="eine-transaktion-exportieren" aria-hidden="true"></span>
 
 ## Eine Transaktion exportieren
 
@@ -33,7 +33,7 @@ Der Export enthält öffentliche Kontoinformationen und einen Gerätefingerabdru
 
 Genehmige eine Transaktion nicht allein deshalb, weil Ginger sie vorbereitet hat. Das Gerät muss die gewünschte Zahlung autorisieren. Halte Wiederherstellungswörter sowohl aus der PSBT-Datei als auch vom Computer fern.
 
-<span id="import-and-broadcast" aria-hidden="true"></span>
+<span id="import-and-broadcast" data-ginger-heading="importieren-und-veröffentlichen" aria-hidden="true"></span>
 
 ## Importieren und veröffentlichen
 
@@ -43,7 +43,7 @@ Eine unsignierte oder unvollständig signierte PSBT lässt sich nicht als gülti
 
 Nach Veröffentlichung muss das Signiergerät für die Bestätigung nicht mehr verbunden bleiben. Prüfe den endgültigen Verlaufseintrag und die Bestätigungen in Ginger. Eine signierte Datei zu löschen storniert keine Transaktion, die jemand anderes bereits veröffentlichen könnte.
 
-<span id="handle-files-carefully" aria-hidden="true"></span>
+<span id="handle-files-carefully" data-ginger-heading="dateien-sorgfältig-behandeln" aria-hidden="true"></span>
 
 ## Dateien sorgfältig behandeln
 

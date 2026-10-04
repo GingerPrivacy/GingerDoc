@@ -13,7 +13,7 @@ next: false
 
 Beginne mit dem exakten Fehler, ausgewählter Wallet, Netzwerk und Anwendungsversion. Sichere Wiederherstellungsinformationen und Wallet-Dateien vor Datenänderungen. Neuinstallation, Ordnerlöschung oder neue Wörter sind bei Verbindungs- oder Anzeigeproblemen selten der erste Schritt.
 
-<span id="balance-recovery-and-receiving" aria-hidden="true"></span>
+<span id="balance-recovery-and-receiving" data-ginger-heading="kontostand-wiederherstellung-und-empfang" aria-hidden="true"></span>
 
 ## Kontostand, Wiederherstellung und Empfang
 
@@ -28,7 +28,7 @@ Beginne mit dem exakten Fehler, ausgewählter Wallet, Netzwerk und Anwendungsver
 
 Gib keine Wörter auf einer Website zum „Resynchronisieren“ ein. Nutze den Wiederherstellungsablauf einer installierten geprüften Wallet nur auf vertrauenswürdigem Computer.
 
-<span id="connection-or-synchronization" aria-hidden="true"></span>
+<span id="connection-or-synchronization" data-ginger-heading="verbindung-oder-synchronisierung" aria-hidden="true"></span>
 
 ## Verbindung oder Synchronisierung
 
@@ -38,7 +38,7 @@ Prüfe Verbindung, Computeruhr, freien Speicher und Zustand eines konfigurierten
 
 Sichere vor **Wallet Settings** → **Tools** → **Resync** und erwarte einen neuen Scan. Lösche nicht `Wallets`, `WalletBackups` oder 2FA-Dateien, nur um eine Fortschrittsmeldung zu entfernen.
 
-<span id="coinjoin-does-not-start" aria-hidden="true"></span>
+<span id="coinjoin-does-not-start" data-ginger-heading="coinjoin-startet-nicht" aria-hidden="true"></span>
 
 ## CoinJoin startet nicht
 
@@ -57,7 +57,7 @@ Sichere vor **Wallet Settings** → **Tools** → **Resync** und erwarte einen n
 
 Teilnehmer können Schritte nicht abschließen oder Coins nach unterbrochener Teilnahme vorübergehend blockiert sein. Wiederholte Versuche, Importe oder Umgehung von Koordinatorablehnungen sind keine Reparatur. Nutze Grund und Status für die Entscheidung zwischen Warten und offiziellem Support.
 
-<span id="payment-or-fee-problems" aria-hidden="true"></span>
+<span id="payment-or-fee-problems" data-ginger-heading="zahlungs--oder-gebührenprobleme" aria-hidden="true"></span>
 
 ## Zahlungs- oder Gebührenprobleme
 
@@ -65,7 +65,7 @@ Fehlen Schätzungen, warte, repariere die gewählte Anbieter-/Node-Verbindung od
 
 Nutze **Speed Up Transaction** oder **Cancel Transaction** nur bei Angebot durch Ginger und nach Gebührenprüfung. Stornierung versucht Ersetzung einer ausstehenden Zahlung, keine Umkehr einer bestätigten. Prüfe bei unklarem Veröffentlichungsresultat den Verlauf vor einer Doppelzahlung.
 
-<span id="2fa-and-hardware" aria-hidden="true"></span>
+<span id="2fa-and-hardware" data-ginger-heading="2fa-und-hardware" aria-hidden="true"></span>
 
 ## 2FA und Hardware
 
@@ -73,7 +73,7 @@ Prüfe bei abgelehntem Code Telefonzeit, gewählten Eintrag, Authenticator-Kompa
 
 Nutze zur Erkennung ein entsperrtes Gerät, Datenkabel und direkten Port, während konkurrierende Geräteanwendungen geschlossen sind. Erledige notwendige Bitcoin-App-, PIN- und Passphraseschritte am Gerät. Prüfe unter Linux Hersteller-USB-Berechtigungen. Halte den Geräte-Seed vom Computer fern.
 
-<span id="report-a-useful-issue" aria-hidden="true"></span>
+<span id="report-a-useful-issue" data-ginger-heading="einen-nützlichen-fehlerbericht-erstellen" aria-hidden="true"></span>
 
 ## Einen nützlichen Fehlerbericht erstellen
 

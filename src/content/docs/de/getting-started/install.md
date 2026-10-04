@@ -21,7 +21,7 @@ Ginger Wallet ist eine Bitcoin-Desktop-Wallet. Du hältst die Schlüssel zu dein
 
 Diese Anleitung behandelt Version 2.0.26. Beziehe Software über die [offizielle Ginger-Website](https://gingerwallet.io/) oder die dort verlinkte [GitHub-Veröffentlichung](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26). Eine Suchanzeige, Privatnachricht oder ähnlich benannte Handy-App ist keine verlässliche Downloadquelle.
 
-<span id="choose-a-download" aria-hidden="true"></span>
+<span id="choose-a-download" data-ginger-heading="einen-download-wählen" aria-hidden="true"></span>
 
 ## Einen Download wählen
 
@@ -37,7 +37,7 @@ Auf einem Mac zeigt **About This Mac** den Chip oder Prozessor. Die Veröffentli
 
 Ginger benötigt eine Internetverbindung und beschreibbaren Speicher für Wallet- und Synchronisierungsdaten. Der optionale Full Node braucht deutlich mehr Speicherplatz, Bandbreite und Zeit zur ersten Synchronisierung als die normale Wallet-Nutzung. Zum Einstieg brauchst du weder einen Full Node noch eine separate Tor-Installation oder Entwicklerwerkzeuge.
 
-<span id="install-the-application" aria-hidden="true"></span>
+<span id="install-the-application" data-ginger-heading="die-anwendung-installieren" aria-hidden="true"></span>
 
 ## Die Anwendung installieren
 
@@ -48,7 +48,7 @@ Ginger benötigt eine Internetverbindung und beschreibbaren Speicher für Wallet
 
 Ein ZIP- oder tar-Archiv umgeht den normalen Installer, macht deine Wallet aber weder wegwerfbar noch hinterlässt es keine Daten auf dem Computer. Wallet-Dateien werden getrennt von der Anwendung gespeichert. Sichere beide, bevor du sie verschiebst oder entfernst.
 
-<span id="if-your-operating-system-displays-a-warning" aria-hidden="true"></span>
+<span id="if-your-operating-system-displays-a-warning" data-ginger-heading="wenn-dein-betriebssystem-eine-warnung-anzeigt" aria-hidden="true"></span>
 
 ## Wenn dein Betriebssystem eine Warnung anzeigt
 
@@ -56,7 +56,7 @@ Eine neue Veröffentlichung hat möglicherweise noch keine etablierte Downloadre
 
 Beachte bei Linux-Gerätezugriffsproblemen die USB-Berechtigungsanleitung deines Hardware-Wallet-Herstellers. Eine Wallet zu installieren erfordert nicht, sie dauerhaft als Administrator auszuführen.
 
-<span id="updates-and-availability" aria-hidden="true"></span>
+<span id="updates-and-availability" data-ginger-heading="updates-und-verfügbarkeit" aria-hidden="true"></span>
 
 ## Updates und Verfügbarkeit
 

@@ -11,7 +11,7 @@ next: false
 
 Beginne mit einer gesicherten Wallet und lass die Synchronisierung abschließen, bevor du dich auf den Kontostand verlässt. Empfangen, normales Senden und CoinJoin sind getrennte Aktionen.
 
-<span id="make-an-ordinary-payment" aria-hidden="true"></span>
+<span id="make-an-ordinary-payment" data-ginger-heading="eine-normale-zahlung-vornehmen" aria-hidden="true"></span>
 
 ## Eine normale Zahlung vornehmen
 
@@ -19,7 +19,7 @@ Beginne mit einer gesicherten Wallet und lass die Synchronisierung abschließen,
 2. [Bitcoin senden](/de/payments/send/): Ziel und Betrag eingeben, dann vor Bestätigung Empfängerbetrag, Wechselgeld und Gebühr prüfen.
 3. Prüfe nach dem Senden den Wallet-Verlauf. Kläre ein unsicheres Ergebnis, bevor du erneut zahlst.
 
-<span id="choose-an-optional-feature" aria-hidden="true"></span>
+<span id="choose-an-optional-feature" data-ginger-heading="eine-optionale-funktion-wählen" aria-hidden="true"></span>
 
 ## Eine optionale Funktion wählen
 
@@ -31,7 +31,7 @@ Beginne mit einer gesicherten Wallet und lass die Synchronisierung abschließen,
 | Kaufangebote vergleichen | [Bitcoin kaufen](/de/using-ginger/buy/) |
 | Bitcoin über einen Anbieter tauschen | [Bitcoin verkaufen](/de/using-ginger/sell/) |
 
-<span id="when-you-need-more-detail" aria-hidden="true"></span>
+<span id="when-you-need-more-detail" data-ginger-heading="wenn-du-mehr-details-brauchst" aria-hidden="true"></span>
 
 ## Wenn du mehr Details brauchst
 

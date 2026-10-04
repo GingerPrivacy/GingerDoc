@@ -13,7 +13,7 @@ next: false
 
 Ein eigener Bitcoin-Node kann die Abhängigkeit von öffentlichen Peers für Blockdaten reduzieren. Er bringt zusätzliche Verantwortung für Speicher, Bandbreite, Verfügbarkeit und Wartung. Ginger funktioniert ohne optionalen Full Node.
 
-<span id="start-the-bundled-node" aria-hidden="true"></span>
+<span id="start-the-bundled-node" data-ginger-heading="den-mitgelieferten-node-starten" aria-hidden="true"></span>
 
 ## Den mitgelieferten Node starten
 
@@ -28,7 +28,7 @@ Aktiviere diesen Schalter nicht allein zur Reparatur fehlenden Guthabens. Ein No
 
 Der Full Node kann Blöcke lokal prüfen, beseitigt aber keine Abhängigkeiten von Koordinator, 2FA, Kauf-/Verkaufs- oder anderen Diensten. Er verbirgt auch keine freiwillig einer Börse offengelegte Transaktion.
 
-<span id="connect-to-an-existing-node" aria-hidden="true"></span>
+<span id="connect-to-an-existing-node" data-ginger-heading="mit-einem-vorhandenen-node-verbinden" aria-hidden="true"></span>
 
 ## Mit einem vorhandenen Node verbinden
 
@@ -38,7 +38,7 @@ Prüfe, ob der Node die Wallet-Verbindung zulässt und benötigte Blockdaten bes
 
 Eine entfernte Node-Verbindung hat eigene Netzwerkexposition. Nutze einen Node und Transport, die du verstehst; ein gesetzter Endpunkt beweist keine private Verbindung. Öffne administrativen RPC-Zugriff nicht zum öffentlichen Internet, um eine Wallet-Verbindung herzustellen.
 
-<span id="choose-fee-estimates-separately" aria-hidden="true"></span>
+<span id="choose-fee-estimates-separately" data-ginger-heading="gebührenschätzungen-separat-wählen" aria-hidden="true"></span>
 
 ## Gebührenschätzungen separat wählen
 
@@ -48,7 +48,7 @@ Ist bei **Full Node** der Node nicht verfügbar, meldet v2.0.26 fehlende Gebühr
 
 Gebührenschätzungen sind Vorhersagen, keine Blockplatzreservierungen. Unterschiede zwischen Anbietern können verschiedene Mempool-Beobachtungen spiegeln. Prüfe neben der Rate auch die Gesamttransaktionsgebühr.
 
-<span id="dust-threshold" aria-hidden="true"></span>
+<span id="dust-threshold" data-ginger-heading="dust-schwelle" aria-hidden="true"></span>
 
 ## Dust-Schwelle
 

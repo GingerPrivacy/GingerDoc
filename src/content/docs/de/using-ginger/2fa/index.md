@@ -29,7 +29,7 @@ next: false
 
 Gingers optionale Zwei-Faktor-Authentifizierung (2FA) ergänzt eine Startprüfung und Verschlüsselung lokaler Wallet-Dateien. Sie ist von der Passphrase jeder Wallet getrennt. Sie ist keine Bitcoin-Regel für Zweitsignaturen bei jeder Ausgabe und schützt kein Wörterbackup gegen jemanden, der auch dessen Passphrase kennt.
 
-<span id="understand-the-dependency-first" aria-hidden="true"></span>
+<span id="understand-the-dependency-first" data-ginger-heading="zuerst-die-abhängigkeit-verstehen" aria-hidden="true"></span>
 
 ## Zuerst die Abhängigkeit verstehen
 
@@ -39,7 +39,7 @@ Die lokale Datei `2fa_info.gws` speichert eine Client-/Serverkennung. Sie ist ke
 
 Prüfe vor Aktivierung, ob du Wörter und exakte ursprüngliche Passphrase jeder benötigten Software-Wallet besitzt. Halte außerdem geschützte Kopien von Wallet- und Metadatendateien.
 
-<span id="enable-2fa" aria-hidden="true"></span>
+<span id="enable-2fa" data-ginger-heading="2fa-aktivieren" aria-hidden="true"></span>
 
 ## 2FA aktivieren
 
@@ -51,7 +51,7 @@ Prüfe vor Aktivierung, ob du Wörter und exakte ursprüngliche Passphrase jeder
 
 Dateien, die vor Einrichtung oder authentifiziertem Neustart kopiert wurden, erhalten nicht automatisch neuen Schutz. Schütze ältere Backups unabhängig. Aktivierung ist kein Grund, deine einzige bekannte funktionierende Wiederherstellung zu löschen.
 
-<span id="everyday-use-and-disabling" aria-hidden="true"></span>
+<span id="everyday-use-and-disabling" data-ginger-heading="alltag-und-deaktivierung" aria-hidden="true"></span>
 
 ## Alltag und Deaktivierung
 
@@ -59,7 +59,7 @@ Gib beim Start den aktuellen Authenticator-Code ein. Nach Laden der Anwendung be
 
 Deaktiviere bei vorhandenem Zugriff **Two-factor authentication** unter **Settings** → **Security**. Ginger entfernt die zusätzliche Dateiverschlüsselung und lokale 2FA-Zuordnung. Normale Software-Passphrase bleibt separat relevant. Sichere resultierende Dateien, wenn dein Backupverfahren vom aktuellen Verschlüsselungszustand abhängt.
 
-<span id="lost-phone-missing-file-or-unavailable-service" aria-hidden="true"></span>
+<span id="lost-phone-missing-file-or-unavailable-service" data-ginger-heading="verlorenes-telefon-fehlende-datei-oder-nicht-verfügbarer-dienst" aria-hidden="true"></span>
 
 ## Verlorenes Telefon, fehlende Datei oder nicht verfügbarer Dienst
 

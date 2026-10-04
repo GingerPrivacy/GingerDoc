@@ -20,7 +20,7 @@ Es gibt zwei unterschiedliche Wege. Wähle einen vor Beginn, damit du weißt, in
 | CoinJoin in der Software-Wallet, danach eine normale Übertragung | Die Outputs bleiben in Gingers Software-Wallet, bis du Guthaben auswählst und an die Hardware sendest. | Du kannst zuerst ihre Privatsphäre prüfen; jede spätere Übertragung kostet Gebühren und legt ihre Input-Output-Beziehungen offen. |
 | CoinJoin-Outputs direkt in der Hardware-Wallet empfangen | Eine geeignete Software-Wallet signiert den CoinJoin; ihre Outputs gehen an die geladene Hardware-Wallet. | Für diese Outputs entfällt eine separate Übertragung. Sie verlassen die Quelle aber nach dieser Runde, ohne Garantie, dass sie dein Ziel erreichen. |
 
-<span id="prepare-both-wallets" aria-hidden="true"></span>
+<span id="prepare-both-wallets" data-ginger-heading="beide-wallets-vorbereiten" aria-hidden="true"></span>
 
 ## Beide Wallets vorbereiten
 
@@ -31,7 +31,7 @@ Es gibt zwei unterschiedliche Wege. Wähle einen vor Beginn, damit du weißt, in
 
 Gib die Wiederherstellungswörter der Hardware-Wallet niemals in Ginger ein, um CoinJoin zu ermöglichen. Dadurch bekäme der Desktop Zugriff auf die Signierschlüssel der Hardware-Wallet.
 
-<span id="withdraw-from-the-exchange" aria-hidden="true"></span>
+<span id="withdraw-from-the-exchange" data-ginger-heading="von-der-börse-auszahlen" aria-hidden="true"></span>
 
 ## Von der Börse auszahlen
 
@@ -39,7 +39,7 @@ Wähle in der Software-Wallet **Receive**, füge eine hilfreiche Bezeichnung hin
 
 Erfasse die Auszahlungsgebühr der Börse separat. Der in Ginger ankommende Betrag kann kleiner sein als der von der Börse abgebuchte Betrag. Warte auf die Synchronisierung der Wallet und die Bestätigung des Guthabens, bevor du seine CoinJoin-Teilnahme erwartest. Eine Transaktions-ID hilft beim Abgleich; vermeide aber ihre Veröffentlichung oder wiederholte Abfragen in öffentlichen Explorern.
 
-<span id="route-a-review-coinjoin-results-then-transfer" aria-hidden="true"></span>
+<span id="route-a-review-coinjoin-results-then-transfer" data-ginger-heading="weg-a-coinjoin-ergebnisse-prüfen-und-dann-übertragen" aria-hidden="true"></span>
 
 ## Weg A: CoinJoin-Ergebnisse prüfen und dann übertragen
 
@@ -51,7 +51,7 @@ Erfasse die Auszahlungsgebühr der Börse separat. Der in Ginger ankommende Betr
 
 Alle Outputs gemeinsam zu senden schafft eine sichtbare Verbindung zwischen ihnen. Einzelne Coins zu übertragen vermeidet diese konkrete Mehrfachinput-Verbindung, kostet aber zusätzliche Gebühren und zeigt weiterhin eine Transaktion je Übertragung. Beträge, Zeitpunkte und das Vorwissen eines Beobachters können weitere Verbindungen liefern. Wähle einen praktikablen Übertragungsplan; gehe bei keinem der Ansätze von garantierter Anonymität aus.
 
-<span id="route-b-choose-hardware-as-the-coinjoin-destination" aria-hidden="true"></span>
+<span id="route-b-choose-hardware-as-the-coinjoin-destination" data-ginger-heading="weg-b-hardware-als-coinjoin-ziel-wählen" aria-hidden="true"></span>
 
 ## Weg B: Hardware als CoinJoin-Ziel wählen
 
@@ -67,7 +67,7 @@ Das Ziel erhält die Outputs der abgeschlossenen Runde; diese Einstellung wartet
 
 Die Zielauswahl wird nach einem Ginger-Neustart zurückgesetzt. Prüfe sie vor jeder Sitzung erneut. Du kannst sie während aktiver Teilnahme nicht ändern; nach der Signierung einer Transaktion kann eine Änderung diese nicht umleiten. Prüfe automatische Teilnahme ausdrücklich, statt eine dauerhafte Übertragung im Hintergrund anzunehmen.
 
-<span id="reconcile-balances-and-plan-the-next-spend" aria-hidden="true"></span>
+<span id="reconcile-balances-and-plan-the-next-spend" data-ginger-heading="kontostände-abgleichen-und-nächste-ausgabe-planen" aria-hidden="true"></span>
 
 ## Kontostände abgleichen und nächste Ausgabe planen
 

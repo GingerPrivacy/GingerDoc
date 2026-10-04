@@ -13,7 +13,7 @@ next: false
 
 Ein Wechsel der Wallet-Software verändert die verwendete Anwendung. Er verändert nicht notwendigerweise Bitcoin-Schlüssel, Adressen oder Informationen, die ein früherer Dienst bereits kennt. Entscheide, ob du Zugriff wiederherstellst, aus Bequemlichkeit Software wechselst oder eine neue Trennung für künftige Aktivität schaffst.
 
-<span id="choose-the-kind-of-move" aria-hidden="true"></span>
+<span id="choose-the-kind-of-move" data-ginger-heading="die-art-des-wechsels-wählen" aria-hidden="true"></span>
 
 ## Die Art des Wechsels wählen
 
@@ -25,7 +25,7 @@ Ein Wechsel der Wallet-Software verändert die verwendete Anwendung. Er verände
 
 Die Wiederherstellung derselben Wallet bewegt keine Bitcoin; allein dafür fällt keine Netzwerkgebühr an. Eine On-Chain-Übertragung auf neue Schlüssel kostet eine Gebühr und erzeugt eine sichtbare Transaktion. Das sind verschiedene Vorgänge, auch wenn beide mit angezeigtem Guthaben in Ginger enden.
 
-<span id="understand-what-an-xpub-exposes" aria-hidden="true"></span>
+<span id="understand-what-an-xpub-exposes" data-ginger-heading="verstehen-was-ein-xpub-offenlegt" aria-hidden="true"></span>
 
 ## Verstehen, was ein xpub offenlegt
 
@@ -35,7 +35,7 @@ Eine frühere Wallet-App, ein Portfolio-Dienst oder Buchhaltungswerkzeug kann ei
 
 Weißt du nicht, was ein Dienst erhalten hat, behandle das als Unsicherheit. Lade zur Untersuchung keinen xpub in einen Online-„Privatsphäreprüfer“ hoch.
 
-<span id="restore-access-to-an-existing-software-wallet" aria-hidden="true"></span>
+<span id="restore-access-to-an-existing-software-wallet" data-ginger-heading="zugriff-auf-eine-vorhandene-software-wallet-wiederherstellen" aria-hidden="true"></span>
 
 ## Zugriff auf eine vorhandene Software-Wallet wiederherstellen
 
@@ -47,7 +47,7 @@ Weißt du nicht, was ein Dienst erhalten hat, behandle das als Unsicherheit. Lad
 
 Eine falsche Passphrase kann eine andere gültige Wallet ergeben. Wechsle nicht zufällig Einstellungen, sende kein Testguthaben auf ein ungeklärt leeres Konto und gib keinem fremden Supportkontakt Wörter zum Beheben der Abweichung.
 
-<span id="use-the-same-hardware-wallet-in-ginger" aria-hidden="true"></span>
+<span id="use-the-same-hardware-wallet-in-ginger" data-ginger-heading="dieselbe-hardware-wallet-in-ginger-nutzen" aria-hidden="true"></span>
 
 ## Dieselbe Hardware-Wallet in Ginger nutzen
 
@@ -57,7 +57,7 @@ Die Verbindung erlaubt Ginger öffentliche Wallet-Daten zu speichern, während S
 
 Importiere Hardware-Wörter nicht als Umgehung einer nicht unterstützten Verbindung oder eines Kontos auf den Computer. Nutze den unterstützten Geräteablauf, wenn das Konto sich nicht korrekt darstellen lässt.
 
-<span id="create-a-new-separation-for-future-activity" aria-hidden="true"></span>
+<span id="create-a-new-separation-for-future-activity" data-ginger-heading="eine-neue-trennung-für-künftige-aktivität-schaffen" aria-hidden="true"></span>
 
 ## Eine neue Trennung für künftige Aktivität schaffen
 
@@ -67,7 +67,7 @@ Prüfe die Inputs jeder Übertragung. Alle alten Coins gemeinsam zu senden kann 
 
 Wähle Zeitpunkt und Vorgehen für das Ende alter Empfangsadressen. Aktualisiere eigene Zahlungsanweisungen, behalte Kontext für verspätete Zahlungen und erwarte nicht, dass entfernte Websiteadressen ungültig werden. Halte Wiederherstellungsdaten für möglicherweise weiterhin empfangende Wallets bereit.
 
-<span id="when-the-move-is-urgent" aria-hidden="true"></span>
+<span id="when-the-move-is-urgent" data-ginger-heading="wenn-der-wechsel-dringend-ist" aria-hidden="true"></span>
 
 ## Wenn der Wechsel dringend ist
 

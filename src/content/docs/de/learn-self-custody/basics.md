@@ -13,7 +13,7 @@ next: false
 
 Selbstverwahrung bedeutet, dass du die zum Ausgeben deiner Bitcoin nötigen Informationen hältst. Du genehmigst Zahlungen ohne Geldfreigabe durch einen Kontoanbieter. Dafür musst du Informationen schützen, ein brauchbares Backup halten und jede Zahlung sorgfältig prüfen.
 
-<span id="keys-records-and-recovery" aria-hidden="true"></span>
+<span id="keys-records-and-recovery" data-ginger-heading="schlüssel-aufzeichnungen-und-wiederherstellung" aria-hidden="true"></span>
 
 ## Schlüssel, Aufzeichnungen und Wiederherstellung
 
@@ -21,7 +21,7 @@ Das Bitcoin-Netzwerk hält ein öffentliches Transaktionsregister. Deine Wallet 
 
 Bei Ginger-Software-Wallets erzeugen Wörter und ursprüngliche Passphrase die Schlüssel erneut. Lokale Wallet-Dateien bewahren zusätzlichen Kontext wie Bezeichnungen und Einstellungen. Authenticator, Hardware-PIN und Dateikopie erfüllen verschiedene Zwecke; keiner ersetzt automatisch das Wörterbackup.
 
-<span id="the-passphrase-changes-the-wallet" aria-hidden="true"></span>
+<span id="the-passphrase-changes-the-wallet" data-ginger-heading="die-passphrase-verändert-die-wallet" aria-hidden="true"></span>
 
 ## Die Passphrase verändert die Wallet
 
@@ -29,7 +29,7 @@ Ginger nutzt eine BIP39-Passphrase mit Wiederherstellungswörtern. Eine andere P
 
 Halte fest, ob eine verwendet wurde, und sichere sie korrekt. Wähle wiederherstellbaren Schutz statt eines komplexen Geheimnisses nur im Gedächtnis. Verfasse Anweisungen so, dass du später Wallet-Passphrase, Computeranmeldung und Authenticator-Code unterscheiden kannst.
 
-<span id="software-versus-hardware" aria-hidden="true"></span>
+<span id="software-versus-hardware" data-ginger-heading="software-und-hardware" aria-hidden="true"></span>
 
 ## Software und Hardware
 
@@ -41,7 +41,7 @@ Halte fest, ob eine verwendet wurde, und sichere sie korrekt. Wähle wiederherst
 
 Eine Hardware-Wallet reduziert Schlüsselkontakt mit Desktop-Schadsoftware; ohne Prüfung ihres Bildschirms kannst du trotzdem bösartige Zahlungen autorisieren. Ein Seed-Import in den Desktop verändert das Sicherheitsmodell: Diese Schlüssel sind dann dem Computer ausgesetzt.
 
-<span id="recovery-is-part-of-the-setup" aria-hidden="true"></span>
+<span id="recovery-is-part-of-the-setup" data-ginger-heading="wiederherstellung-gehört-zur-einrichtung" aria-hidden="true"></span>
 
 ## Wiederherstellung gehört zur Einrichtung
 
@@ -49,7 +49,7 @@ Prüfe vor Nutzung, ob du dein Backup findest und verstehst. **Verify Recovery W
 
 Sichere mehr als Anwendungsdateien. Installer können erneut heruntergeladen werden; fehlende Geheimnisse nicht von der Projektwebsite. Bedenke Festplattenausfall, Geräteverlust und Backupzugang. Bitcoin.orgs [Wallet-Sicherheitshinweise](https://bitcoin.org/en/secure-your-wallet) behandeln Backups und Geräteschutz als ergänzende Maßnahmen.
 
-<span id="evaluate-a-wallet-with-evidence" aria-hidden="true"></span>
+<span id="evaluate-a-wallet-with-evidence" data-ginger-heading="wallets-anhand-von-belegen-bewerten" aria-hidden="true"></span>
 
 ## Wallets anhand von Belegen bewerten
 

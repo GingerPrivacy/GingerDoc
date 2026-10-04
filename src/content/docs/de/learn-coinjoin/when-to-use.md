@@ -13,7 +13,7 @@ next: false
 
 CoinJoin ist nützlich, wenn weniger Transaktionsverknüpfungen ein tatsächliches Problem lösen. Es hilft weniger bei gestohlenen Wiederherstellungswörtern, einem kompromittierten Computer oder Informationen, die du einem Anbieter gleich direkt offenlegst.
 
-<span id="start-with-a-concrete-objective" aria-hidden="true"></span>
+<span id="start-with-a-concrete-objective" data-ginger-heading="mit-einem-konkreten-ziel-beginnen" aria-hidden="true"></span>
 
 ## Mit einem konkreten Ziel beginnen
 
@@ -21,7 +21,7 @@ Vielleicht soll ein künftiger Empfänger weniger direkten Einblick in den Verla
 
 Geht es nur um Schlüsselschutz beim Halten von Bitcoin, helfen ein wiederherstellbares Backup und ein geeigneter Hardware-Wallet-Ablauf direkter. Wird eine öffentliche Adresse für jede Rechnung wiederverwendet, stoppe zuerst die Wiederverwendung; späterer CoinJoin macht alte Eingänge nicht privat.
 
-<span id="compare-the-tradeoffs" aria-hidden="true"></span>
+<span id="compare-the-tradeoffs" data-ginger-heading="kompromisse-vergleichen" aria-hidden="true"></span>
 
 ## Kompromisse vergleichen
 
@@ -36,7 +36,7 @@ Geht es nur um Schlüsselschutz beim Halten von Bitcoin, helfen ein wiederherste
 
 Das sind Kompromisse, keine Empfehlung für bestimmte Beträge oder Zusicherung finanzieller Ergebnisse. Lerne mit einem kleinen verkraftbaren Betrag und gleiche Gebühren ab, bevor du mehr riskierst.
 
-<span id="set-a-cost-and-attention-budget" aria-hidden="true"></span>
+<span id="set-a-cost-and-attention-budget" data-ginger-heading="kosten--und-aufmerksamkeitsbudget-festlegen" aria-hidden="true"></span>
 
 ## Kosten- und Aufmerksamkeitsbudget festlegen
 
@@ -44,7 +44,7 @@ Prüfe beide Gebührenkomponenten und wiederholte Runden. Entscheide über akzep
 
 Gingers Stoppschwelle kann unwirtschaftliche automatische Teilnahme teilweise verhindern. Zeitpräferenz und Gebührenschwelle können Teilnahme bei hohen Kosten reduzieren. Diese Einstellungen begrenzen nicht allgemein deine Gesamtausgaben über viele Runden.
 
-<span id="plan-the-next-spend" aria-hidden="true"></span>
+<span id="plan-the-next-spend" data-ginger-heading="die-nächste-ausgabe-planen" aria-hidden="true"></span>
 
 ## Die nächste Ausgabe planen
 
@@ -52,7 +52,7 @@ Fordere ein neues Ziel an, halte nützliche lokale Bezeichnungen und prüfe Inpu
 
 Betrachte beworbene Akzeptanz anderer Anbieter nicht als dauerhaft. Dienste können Richtlinien ändern oder Übertragungen hinterfragen. Ginger garantiert weder künftige Akzeptanz noch die Entfernung aller historischen Zuordnungen durch CoinJoin.
 
-<span id="try-the-released-workflow-deliberately" aria-hidden="true"></span>
+<span id="try-the-released-workflow-deliberately" data-ginger-heading="den-veröffentlichten-ablauf-bewusst-ausprobieren" aria-hidden="true"></span>
 
 ## Den veröffentlichten Ablauf bewusst ausprobieren
 

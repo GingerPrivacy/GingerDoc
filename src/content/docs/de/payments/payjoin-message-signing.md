@@ -13,7 +13,7 @@ next: false
 
 PayJoin und Nachrichtensignierung sind getrennte Werkzeuge. PayJoin verändert den Aufbau einer Zahlungstransaktion. Nachrichtensignierung beweist Schlüsselkontrolle für eine bestimmte Erklärung ohne Zahlung. Keines rechtfertigt die Offenlegung deiner Wiederherstellungswörter.
 
-<span id="send-a-payjoin-request" aria-hidden="true"></span>
+<span id="send-a-payjoin-request" data-ginger-heading="eine-payjoin-anforderung-senden" aria-hidden="true"></span>
 
 ## Eine PayJoin-Anforderung senden
 
@@ -30,7 +30,7 @@ Nutze im Mainnet einen kompatiblen HTTPS-Endpunkt. In v2.0.26 lehnen Endpunktpr�
 
 Diese Anleitung behandelt vom Empfänger bereitgestellte Anforderungen. Gingers normales **Receive** betreibt keinen PayJoin-Empfangsserver; diese Version bietet dafür keinen Einrichtungsablauf.
 
-<span id="what-the-recipient-and-an-observer-learn" aria-hidden="true"></span>
+<span id="what-the-recipient-and-an-observer-learn" data-ginger-heading="was-empfänger-und-beobachter-erfahren" aria-hidden="true"></span>
 
 ## Was Empfänger und Beobachter erfahren
 
@@ -40,7 +40,7 @@ Externe Beobachter sehen die letztlich auf Bitcoin veröffentlichte Transaktion.
 
 Unterscheide diese Zielgruppen. Der Empfänger kann über Bestellung oder Aushandlung Details erfahren, obwohl ein unabhängiger Beobachter Inputs nicht sicher zuordnen kann. Ein öffentlicher Explorer schafft eine weitere Offenlegung, wenn du die Zahlung über eine identifizierte Browsersitzung abfragst.
 
-<span id="wallet-fingerprints-and-the-ordinary-payment-fallback" aria-hidden="true"></span>
+<span id="wallet-fingerprints-and-the-ordinary-payment-fallback" data-ginger-heading="wallet-fingerabdrücke-und-rückfall-auf-normale-zahlungen" aria-hidden="true"></span>
 
 ## Wallet-Fingerabdrücke und Rückfall auf normale Zahlungen
 
@@ -50,7 +50,7 @@ Wähle einen aktuellen kompatiblen Empfangsdienst, prüfe Zahlungsanforderung so
 
 Wenn du eine gemeinsame Zahlung benötigst, vereinbare eine kompatible Methode vor Autorisierung in Ginger. Wegen des Rückfalls kann eine gescheiterte Aushandlung trotzdem zu einer gültigen Zahlung führen. Sende nach Veröffentlichung bei unklarem Ergebnis nicht erneut; prüfe zuerst Transaktion und Zahlungsstatus beim Empfänger. Gescheiterte PayJoin-Aushandlung und gescheiterte Bitcoin-Zahlung sind verschiedene Situationen.
 
-<span id="sign-a-message-for-an-address" aria-hidden="true"></span>
+<span id="sign-a-message-for-an-address" data-ginger-heading="eine-nachricht-für-eine-adresse-signieren" aria-hidden="true"></span>
 
 ## Eine Nachricht für eine Adresse signieren
 

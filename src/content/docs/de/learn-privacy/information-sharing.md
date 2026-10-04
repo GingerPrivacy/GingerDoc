@@ -15,7 +15,7 @@ Verschiedene Wallet-Aktionen legen unterschiedliche Informationen offen. Öffent
 
 Tor reduziert direkte IP-Offenlegung bei darüber geleiteten Verbindungen. Es verbirgt eine Anfrage nicht vor dem Empfangsdienst, entfernt keine Blockchain-Transaktion, schützt keinen entsperrten Computer und verändert deinen externen Browser nicht automatisch. Ein konfigurierter lokaler Node ist eine separate Verbindung zu einem von dir kontrollierten Rechner.
 
-<span id="synchronization-and-bitcoin-network-activity" aria-hidden="true"></span>
+<span id="synchronization-and-bitcoin-network-activity" data-ginger-heading="synchronisierung-und-bitcoin-netzwerkaktivität" aria-hidden="true"></span>
 
 ## Synchronisierung und Bitcoin-Netzwerkaktivität
 
@@ -28,7 +28,7 @@ Tor reduziert direkte IP-Offenlegung bei darüber geleiteten Verbindungen. Es ve
 
 Schütze bei einem selbst betriebenen Node den Rechnerzugriff und etwaige Fernverbindungen. Sein Betreiber kann Anfragen beobachten; ein bloß „eigener Node“ genannter Server ist bei fremder Administration nicht notwendigerweise privat. Normaler Internetzugang, Peer-Erkennung und Dienstverfügbarkeit bleiben relevant.
 
-<span id="coinjoin-and-optional-services" aria-hidden="true"></span>
+<span id="coinjoin-and-optional-services" data-ginger-heading="coinjoin-und-optionale-dienste" aria-hidden="true"></span>
 
 ## CoinJoin und optionale Dienste
 
@@ -44,7 +44,7 @@ Tor verbirgt weder zur Prüfung gesendete Adressen noch Bestelldetails, 2FA-Kenn
 
 Die 2FA-Kennung kann normale Startversuche beim Dienst miteinander verknüpfen. Der zurückgegebene Verschlüsselungsschlüssel ist Teil eines zusätzlichen lokalen Dateischutzes, kein neuer Bitcoin-Schlüssel anstelle deiner Wörter und Passphrase. Gib weder diese Geheimnisse noch Authenticator-Codes an Supportkontakte.
 
-<span id="browsers-other-applications-and-people" aria-hidden="true"></span>
+<span id="browsers-other-applications-and-people" data-ginger-heading="browser-andere-anwendungen-und-menschen" aria-hidden="true"></span>
 
 ## Browser, andere Anwendungen und Menschen
 
@@ -58,7 +58,7 @@ Die 2FA-Kennung kann normale Startversuche beim Dienst miteinander verknüpfen. 
 
 Webzahlungsforschung zeigt, warum Browserbeobachtungen und Blockchain-Daten gemeinsam betrachtet werden müssen. Sie belegt keine aktuellen Trackingregeln eines bestimmten Ginger-Anbieters. [Goldfeder und Kollegen, When the Cookie Meets the Blockchain](https://arxiv.org/abs/1708.04748)
 
-<span id="local-information-also-needs-protection" aria-hidden="true"></span>
+<span id="local-information-also-needs-protection" data-ginger-heading="auch-lokale-informationen-schützen" aria-hidden="true"></span>
 
 ## Auch lokale Informationen schützen
 

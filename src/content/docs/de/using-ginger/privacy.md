@@ -15,7 +15,7 @@ Bitcoin-Transaktionen sind öffentlich, aber der Name eines Wallet-Besitzers ste
 
 Ein Kunde kennt vielleicht die Rechnungsadresse, die du ihm gegeben hast. Eine Börse kennt deine Auszahlungsadresse und geprüfte Identität. Ein Beobachter einer öffentlichen Spendenadresse sieht deren Eingänge. Wegen unterschiedlichen Vorwissens ist kontrollierte Offenlegung ein hilfreicheres Privatsphäremodell als ein einziger Anonymitätsschalter.
 
-<span id="what-the-blockchain-reveals" aria-hidden="true"></span>
+<span id="what-the-blockchain-reveals" data-ginger-heading="was-die-blockchain-offenlegt" aria-hidden="true"></span>
 
 ## Was die Blockchain offenlegt
 
@@ -23,7 +23,7 @@ Transaktionen zeigen Inputs, Outputs, Werte und Ausgabebeziehungen. Ein später 
 
 Ordnet jemand einer Person eine Adresse zu, kann er verbundene Aktivität untersuchen. Manche Beziehungen sind direkt, etwa wiederholte Zahlungen an dieselbe Adresse. Andere beruhen auf Annahmen zu gemeinsamem Inputbesitz oder Wechselgeld. Diese können falsch sein, aber trotzdem die Einstufung durch Dienste beeinflussen.
 
-<span id="who-can-learn-what" aria-hidden="true"></span>
+<span id="who-can-learn-what" data-ginger-heading="wer-kann-was-erfahren" aria-hidden="true"></span>
 
 ## Wer kann was erfahren?
 
@@ -38,7 +38,7 @@ Ordnet jemand einer Person eine Adresse zu, kann er verbundene Aktivität unters
 
 Keine einzelne Einstellung löst jedes Problem dieser Tabelle. Hardware schützt Schlüssel, verbirgt aber keine öffentliche Adresse. Tor schützt Verbindungsmetadaten, verbirgt aber keine Informationen, die du in Anbieterformulare eingibst.
 
-<span id="why-this-matters-in-ordinary-life" aria-hidden="true"></span>
+<span id="why-this-matters-in-ordinary-life" data-ginger-heading="warum-das-im-alltag-wichtig-ist" aria-hidden="true"></span>
 
 ## Warum das im Alltag wichtig ist
 
@@ -48,7 +48,7 @@ Bezahlst du aus Guthaben einer öffentlichen Spendenkampagne, kann die Transakti
 
 Finanzielle Privatsphäre schützt Kundenvertraulichkeit, Geschäftsinformationen, persönliche Beziehungen und körperliche Sicherheit. Solche Grenzen zu wünschen setzt kein Fehlverhalten voraus. Entscheidend ist, ob die andere Person diese Information für den Vorgang benötigt.
 
-<span id="privacy-and-fungibility" aria-hidden="true"></span>
+<span id="privacy-and-fungibility" data-ginger-heading="privatsphäre-und-fungibilität" aria-hidden="true"></span>
 
 ## Privatsphäre und Fungibilität
 
@@ -56,7 +56,7 @@ Fungibilität bedeutet Austauschbarkeit zu gleichwertigen Bedingungen. Bitcoin-R
 
 Privatsphärewerkzeuge können manche historischen Einstufungen schwerer zuverlässig machen. Sie verpflichten keinen Anbieter zur Annahme und löschen keine bereits vorhandenen Aufzeichnungen. Prüfe Aussagen über „saubere“ Coins oder garantierte Akzeptanz sorgfältig: Wallet-Schätzung und Dienstrichtlinie sind verschiedene Dinge.
 
-<span id="where-ginger-fits" aria-hidden="true"></span>
+<span id="where-ginger-fits" data-ginger-heading="gingers-rolle" aria-hidden="true"></span>
 
 ## Gingers Rolle
 

@@ -15,7 +15,7 @@ CoinJoin verändert die Unsicherheit bei Input-Output-Verknüpfungen. Die nächs
 
 Die Beispiele verwenden fiktive Satoshi-Beträge. Die Gebühren dienen dem Rechnen und sind keine Netzwerkangebote. Ein Coin ist ein unspent transaction output (UTXO), also ein unverbrauchter Transaktionsoutput; er ist keine Wallet oder Bitcoin-Adresse.
 
-<span id="start-with-the-payment-you-need-to-make" aria-hidden="true"></span>
+<span id="start-with-the-payment-you-need-to-make" data-ginger-heading="mit-der-benötigten-zahlung-beginnen" aria-hidden="true"></span>
 
 ## Mit der benötigten Zahlung beginnen
 
@@ -23,7 +23,7 @@ Die Beispiele verwenden fiktive Satoshi-Beträge. Die Gebühren dienen dem Rechn
 
 Auch automatische Auswahl und Gingers Empfehlungen können helfen. Manuelle Kontrolle ist nützlich bei Zusatzwissen, das die Wallet nicht hat, etwa welcher Kunde einen Eingang bereits kennt. Sie ist nicht für jede Zahlung grundsätzlich besser.
 
-<span id="example-1-one-coin-covers-a-purchase" aria-hidden="true"></span>
+<span id="example-1-one-coin-covers-a-purchase" data-ginger-heading="beispiel-1-ein-coin-deckt-einen-kauf" aria-hidden="true"></span>
 
 ## Beispiel 1: Ein Coin deckt einen Kauf
 
@@ -40,7 +40,7 @@ Der Händler kennt seine Zahlungsadresse und den Betrag. Er kann die Transaktion
 
 Alex muss das Wechselgeld nicht manuell zurückbewegen: Es gehört bereits zur Wallet. Der nützliche nächste Prüfpunkt ist eine spätere Zahlung mit diesem Wechselgeld.
 
-<span id="example-2-two-unrelated-receipts-are-combined" aria-hidden="true"></span>
+<span id="example-2-two-unrelated-receipts-are-combined" data-ginger-heading="beispiel-2-zwei-unverwandte-eingänge-werden-kombiniert" aria-hidden="true"></span>
 
 ## Beispiel 2: Zwei unverwandte Eingänge werden kombiniert
 
@@ -52,7 +52,7 @@ Ein anderer ausreichend großer Coin derselben Aktivität könnte weniger neue I
 
 CoinJoin und PayJoin sind selbst gemeinsame Transaktionen; die Annahme eines einzigen Inputbesitzers gilt nicht allgemein. Beachte diesen Unterschied bei Transaktionsdeutung.
 
-<span id="example-3-change-carries-a-connection-forward" aria-hidden="true"></span>
+<span id="example-3-change-carries-a-connection-forward" data-ginger-heading="beispiel-3-wechselgeld-trägt-eine-verbindung-weiter" aria-hidden="true"></span>
 
 ## Beispiel 3: Wechselgeld trägt eine Verbindung weiter
 
@@ -62,7 +62,7 @@ Der erste Händler kann beobachten, dass sein wahrscheinlicher Wechselgeldoutput
 
 Nutze Bezeichnungen zum Erhalten späteren Entscheidungskontexts. Sie sind lokale Notizen; sie veröffentlichen weder einen Namen auf der Blockchain noch verhindern sie Beobachterableitungen.
 
-<span id="example-4-moving-the-entire-balance-to-hardware" aria-hidden="true"></span>
+<span id="example-4-moving-the-entire-balance-to-hardware" data-ginger-heading="beispiel-4-den-gesamtkontostand-auf-hardware-bewegen" aria-hidden="true"></span>
 
 ## Beispiel 4: Den Gesamtkontostand auf Hardware bewegen
 
@@ -72,7 +72,7 @@ Hardware verbessert Schlüsselisolation, aber der Transfer zeigt gemeinsame Ausg
 
 Gib nicht den ganzen Kontostand aus, nur weil die Coin-Liste unordentlich wirkt. Zusammenführung reduziert möglicherweise spätere Inputs; eine niedrige Rate verändert nur die Kosten, nicht die Offenlegung.
 
-<span id="other-participants-and-future-observations-matter" aria-hidden="true"></span>
+<span id="other-participants-and-future-observations-matter" data-ginger-heading="andere-teilnehmer-und-spätere-beobachtungen-zählen" aria-hidden="true"></span>
 
 ## Andere Teilnehmer und spätere Beobachtungen zählen
 
@@ -80,7 +80,7 @@ Dein Verhalten ist nicht der einzige Einfluss. Spätere Transaktionen anderer Te
 
 Keine allgemeine Rundenzahl oder Wartezeit garantiert Privatsphäre. Warten löscht keine Informationen, die bereits einem identifizierten Händler, einer Börse oder einem anderen Wallet-Dienst offengelegt wurden.
 
-<span id="a-short-review-before-confirming" aria-hidden="true"></span>
+<span id="a-short-review-before-confirming" data-ginger-heading="kurze-prüfung-vor-der-bestätigung" aria-hidden="true"></span>
 
 ## Kurze Prüfung vor der Bestätigung
 

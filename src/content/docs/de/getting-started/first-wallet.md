@@ -17,7 +17,7 @@ next: false
 
 Eine Ginger-Wallet enthält die Informationen, die zum Erkennen und Ausgeben deiner Bitcoin nötig sind. Die Bitcoin selbst sind im Bitcoin-Netzwerk erfasst. Nach dem Verlust deines Computers kannst du sie mit dem richtigen Backup wiederherstellen; nach dem Verlust der Wallet und ihrer Wiederherstellungsdaten ist das möglicherweise nicht mehr möglich.
 
-<span id="create-a-software-wallet" aria-hidden="true"></span>
+<span id="create-a-software-wallet" data-ginger-heading="eine-software-wallet-erstellen" aria-hidden="true"></span>
 
 ## Eine Software-Wallet erstellen
 
@@ -29,7 +29,7 @@ Eine Ginger-Wallet enthält die Informationen, die zum Erkennen und Ausgeben dei
 
 Der Wallet-Name ist eine lokale Bezeichnung. Er ist keine Wiederherstellungsinformation und verändert die Schlüssel nicht. Eine Wallet umzubenennen ist nicht dasselbe, wie eine neue zu erstellen.
 
-<span id="decide-how-to-use-coinjoin" aria-hidden="true"></span>
+<span id="decide-how-to-use-coinjoin" data-ginger-heading="über-die-coinjoin-nutzung-entscheiden" aria-hidden="true"></span>
 
 ## Über die CoinJoin-Nutzung entscheiden
 
@@ -37,7 +37,7 @@ Ginger kann dich auffordern, deine CoinJoin-Einstellungen anzupassen. Prüfe die
 
 CoinJoin kostet Transaktionsgebühren und kann Zeit beanspruchen. Bitcoin empfangen, eine normale Zahlung senden und CoinJoin verwenden sind getrennte Vorgänge. Du kannst den Empfangs- und Sendeablauf zunächst mit einem kleinen Betrag lernen, dessen Verlust verkraftbar wäre.
 
-<span id="open-an-existing-wallet" aria-hidden="true"></span>
+<span id="open-an-existing-wallet" data-ginger-heading="eine-vorhandene-wallet-öffnen" aria-hidden="true"></span>
 
 ## Eine vorhandene Wallet öffnen
 
@@ -45,7 +45,7 @@ Wähle ihren Namen in Gingers Wallet-Liste. Gib die ursprüngliche Passphrase ei
 
 Um eine Wallet aus Wiederherstellungswörtern hinzuzufügen, wähle **Recover** im Bildschirm zum Hinzufügen einer Wallet. Für ein kompatibles Wallet-JSON-Backup oder einen unterstützten Hardware-Export wähle **Import File**. Füge keine Wiederherstellungswörter in einen Dateiimportdialog ein und importiere nicht die Wiederherstellungswörter einer Hardware-Wallet, nur um das Gerät anzuschließen.
 
-<span id="know-when-the-wallet-is-ready" aria-hidden="true"></span>
+<span id="know-when-the-wallet-is-ready" data-ginger-heading="erkennen-wann-die-wallet-bereit-ist" aria-hidden="true"></span>
 
 ## Erkennen, wann die Wallet bereit ist
 
@@ -53,13 +53,13 @@ Die Synchronisierung findet Transaktionen, die zu deiner Wallet gehören. Bis zu
 
 Bevor du einen größeren Betrag empfängst, prüfe, ob die Wallet sich öffnen lässt, dein Wiederherstellungsbackup lesbar ist und du deine Passphrase-Entscheidung verstehst. Prüfe die Wörter einer zugänglichen Software-Wallet unter **Wallet Settings** → **Tools** → **Verify Recovery Words** mit **Verify**. Das prüft ein Backup; vergessene Wörter werden dadurch nicht angezeigt.
 
-<span id="close-safely" aria-hidden="true"></span>
+<span id="close-safely" data-ginger-heading="sicher-schließen" aria-hidden="true"></span>
 
 ## Sicher schließen
 
 Ginger kann nach dem Schließen des Fensters weiterlaufen, wenn unter **Settings** → **General** die Option **Run in background when window closed** aktiviert ist. Verwende die normale Beenden-Funktion, wenn die Anwendung stoppen soll. Lass Ginger während einer kritischen CoinJoin-Phase sein Herunterfahren abschließen. Erzwungenes Schließen kann die Teilnahme unterbrechen.
 
-<span id="next-receive-and-send" aria-hidden="true"></span>
+<span id="next-receive-and-send" data-ginger-heading="als-nächstes-empfangen-und-senden" aria-hidden="true"></span>
 
 ## Als Nächstes: empfangen und senden
 

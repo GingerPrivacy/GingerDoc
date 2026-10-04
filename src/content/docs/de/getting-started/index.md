@@ -26,7 +26,7 @@ Lerne zunächst den normalen Wallet-Ablauf. Du brauchst weder einen eigenen Bitc
 <span id="what-are-the-minimal-requirements-to-run-ginger" aria-hidden="true"></span>
 <span id="do-i-need-to-run-tor" aria-hidden="true"></span>
 
-<span id="1-install-the-real-application" aria-hidden="true"></span>
+<span id="1-install-the-real-application" data-ginger-heading="1-die-echte-anwendung-installieren" aria-hidden="true"></span>
 
 ## 1. Die echte Anwendung installieren
 
@@ -38,7 +38,7 @@ Beachte die Downloadprüfungen in dieser Anleitung. Die separate [erweiterte Anl
 
 <span id="what-is-the-password-used-for" aria-hidden="true"></span>
 
-<span id="2-create-a-wallet-and-make-its-backup" aria-hidden="true"></span>
+<span id="2-create-a-wallet-and-make-its-backup" data-ginger-heading="2-eine-wallet-erstellen-und-sichern" aria-hidden="true"></span>
 
 ## 2. Eine Wallet erstellen und sichern
 
@@ -50,7 +50,7 @@ Verwende keinen bedeutenden Kontostand, bevor das Backup lesbar ist und du die g
 
 <span id="why-is-it-important-to-use-a-new-address-for-every-payment" aria-hidden="true"></span>
 
-<span id="3-receive-a-small-first-payment" aria-hidden="true"></span>
+<span id="3-receive-a-small-first-payment" data-ginger-heading="3-eine-kleine-erste-zahlung-empfangen" aria-hidden="true"></span>
 
 ## 3. Eine kleine erste Zahlung empfangen
 
@@ -60,7 +60,7 @@ Erzeuge für jede Zahlung eine neue Adresse. Wiederverwendung erleichtert das Ve
 
 Prüfe die gesamte Adresse und das Netzwerk, bevor die Zahlung autorisiert wird. Ginger empfängt On-Chain-Bitcoin; das Netzwerk eines anderen Vermögenswerts oder eine Lightning-Rechnung ist kein Ersatz. Eine Bestätigung bedeutet, dass die Transaktion in einen Bitcoin-Block aufgenommen wurde. Ein Screenshot des Zahlers allein ist keine Bestätigung.
 
-<span id="4-make-a-small-first-payment" aria-hidden="true"></span>
+<span id="4-make-a-small-first-payment" data-ginger-heading="4-eine-kleine-erste-zahlung-senden" aria-hidden="true"></span>
 
 ## 4. Eine kleine erste Zahlung senden
 
@@ -70,7 +70,7 @@ Die Gebühr bezahlt den Platz für die Bitcoin-Transaktion. Ein Restbetrag des a
 
 Prüfe nach einem Verbindungsfehler den Verlauf, bevor du erneut zahlst. So vermeidest du eine doppelte Zahlung, falls die erste Transaktion bereits versendet wurde.
 
-<span id="5-decide-whether-to-use-coinjoin" aria-hidden="true"></span>
+<span id="5-decide-whether-to-use-coinjoin" data-ginger-heading="5-über-coinjoin-entscheiden" aria-hidden="true"></span>
 
 ## 5. Über CoinJoin entscheiden
 
@@ -80,7 +80,7 @@ Prüfe **Automatically start coinjoin** unter **Coinjoin Settings** der ausgewä
 
 Du kannst Bitcoin empfangen und normale Zahlungen senden, ohne auf eine Privatsphäreanzeige von 100 % zu warten. Du musst auch nicht jede erweiterte Einstellung anpassen, um die Wallet zu verwenden.
 
-<span id="you-have-finished-the-first-use-path" aria-hidden="true"></span>
+<span id="you-have-finished-the-first-use-path" data-ginger-heading="der-einstieg-ist-abgeschlossen" aria-hidden="true"></span>
 
 ## Der Einstieg ist abgeschlossen
 

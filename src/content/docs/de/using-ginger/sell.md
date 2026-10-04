@@ -31,7 +31,7 @@ next: false
 
 Ein Verkauf tauscht Bitcoin gegen die von einem Anbieter angebotene Zahlungsmethode. Ginger hilft beim Beschaffen von Angeboten und Vorbereiten der On-Chain-Zahlung; der Anbieter kontrolliert die Fiat-Auszahlung und Bestellprüfung. Lies seine Anforderungen, bevor du Guthaben bindest.
 
-<span id="create-and-fund-a-sale" aria-hidden="true"></span>
+<span id="create-and-fund-a-sale" data-ginger-heading="verkauf-erstellen-und-bezahlen" aria-hidden="true"></span>
 
 ## Verkauf erstellen und bezahlen
 
@@ -45,7 +45,7 @@ Ein Verkauf tauscht Bitcoin gegen die von einem Anbieter angebotene Zahlungsmeth
 
 Der Verkaufsdialog erhält den Anbieterbezug, entbindet dich aber nicht vom Vergleich der Zahlungsanforderung mit der Vorschau. Läuft das Angebot vor dem Senden ab, hole aktualisierte Anweisungen, statt spekulativ an eine alte Adresse zu zahlen.
 
-<span id="understand-status" aria-hidden="true"></span>
+<span id="understand-status" data-ginger-heading="status-verstehen" aria-hidden="true"></span>
 
 ## Status verstehen
 
@@ -61,7 +61,7 @@ Der Verkaufsdialog erhält den Anbieterbezug, entbindet dich aber nicht vom Verg
 
 Statusbezeichnungen spiegeln die neuesten Integrationsdaten und können Ereignissen hinterherlaufen. Eine Hold-Anzeige bei **Buy** oder **Sell** weist auf eine Bestellung mit Handlungsbedarf hin; sie bedeutet keinen verlorenen Wallet-Schlüssel.
 
-<span id="which-support-channel-to-use" aria-hidden="true"></span>
+<span id="which-support-channel-to-use" data-ginger-heading="den-richtigen-support-nutzen" aria-hidden="true"></span>
 
 ## Den richtigen Support nutzen
 
@@ -69,7 +69,7 @@ Kontaktiere bei Identitätsprüfung, Auszahlungsverzögerung, akzeptierten Zahlu
 
 Melde Ginger-Abstürze, Fehler beim Browseröffnen oder falsch angezeigte Bestellungen mit Anwendungsversion, Betriebssystem, Fehlertext und Schritten über offizielle Supportlinks. Teile keine Wiederherstellungswörter, Passphrasen, 2FA-Geheimnisse oder Wallet-Dateien; prüfe vollständige Protokolle vor etwaiger Weitergabe.
 
-<span id="privacy-and-fees" aria-hidden="true"></span>
+<span id="privacy-and-fees" data-ginger-heading="privatsphäre-und-gebühren" aria-hidden="true"></span>
 
 ## Privatsphäre und Gebühren
 

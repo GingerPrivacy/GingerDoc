@@ -13,7 +13,7 @@ next: false
 
 Nutze **Settings** für anwendungsweite Einstellungen und **Wallet Settings** für Name, CoinJoin-Konfiguration und Werkzeuge der ausgewählten Wallet. Die Anwendungssuche findet Aktionen wie **Data Folder**, **Wallet Info** und **Discreet Mode**, unabhängig von der Position eines Symbols.
 
-<span id="language-and-amounts" aria-hidden="true"></span>
+<span id="language-and-amounts" data-ginger-heading="sprache-und-beträge" aria-hidden="true"></span>
 
 ## Sprache und Beträge
 
@@ -21,7 +21,7 @@ Unter **Settings** → **Appearance** wählt **Language** die Oberflächensprach
 
 **Dark mode** ändert die Darstellung. **Exchange currency** ändert die Fiat-Referenzanzeige; Dezimal- und Gruppentrennzeichen, Bitcoin-Nachkommastellengruppierung und **Fee display unit** steuern Zahlenformate. Sie ändern weder den BTC-Betrag noch die Netzwerkgebühr. Lies Einstellungsbeispiele vor Eingabe in einem unbekannten Format.
 
-<span id="discreet-mode" aria-hidden="true"></span>
+<span id="discreet-mode" data-ginger-heading="diskreter-modus" aria-hidden="true"></span>
 
 ## Diskreter Modus
 
@@ -29,7 +29,7 @@ Nutze **Discreet Mode**, wenn jemand deinen Bildschirm sieht. Er verbirgt unters
 
 Der diskrete Modus verschlüsselt keine Dateien, sperrt keine Wallet, stoppt keine Signierung und ändert keine Blockchain-Privatsphäre. Personen mit Computerzugriff können die Anwendung weiter bedienen. Nutze beim Weggehen die Bildschirmsperre deines Betriebssystems.
 
-<span id="general-settings" aria-hidden="true"></span>
+<span id="general-settings" data-ginger-heading="allgemeine-einstellungen" aria-hidden="true"></span>
 
 ## Allgemeine Einstellungen
 
@@ -46,7 +46,7 @@ Zwischenablagekomfort authentifiziert keinen Empfänger. Andere Anwendungen kön
 
 Externe Seiten nutzen das eigene Netzwerk- und Privatsphäreverhalten des Browsers. Ein Kauf-/Verkaufsanbieter kann Identitätsdaten verlangen, obwohl Ginger Tor verwendet. Anzeige- oder Browseränderungen verändern keine Anbieteraufzeichnungen.
 
-<span id="wallet-information-and-tools" aria-hidden="true"></span>
+<span id="wallet-information-and-tools" data-ginger-heading="wallet-informationen-und-werkzeuge" aria-hidden="true"></span>
 
 ## Wallet-Informationen und Werkzeuge
 
