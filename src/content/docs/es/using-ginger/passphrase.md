@@ -1,0 +1,81 @@
+---
+doc_id: "backup-recovery.passphrase"
+title: "¿Qué es una frase de contraseña?"
+description: "Comprende la frase de contraseña de tu cartera Ginger, qué respaldar y por qué la recuperación necesita la original aunque una diferente abra una cartera vacía."
+lang: "es"
+verified_release: "v2.0.26"
+reader_level: "beginner"
+sidebar:
+  label: "Frase de contraseña"
+prev: false
+next: false
+---
+
+> Nivel de lectura: Empieza aquí. Esta guía cubre carteras de software en Ginger v2.0.26. Para hardware, sigue las instrucciones de recuperación del fabricante y mantén sus palabras fuera del ordenador.
+
+Una frase de contraseña es un secreto opcional que eliges al crear una cartera. En Ginger protege el acceso al software y también forma parte de su información de recuperación. Para recuperar la misma cartera necesitas las palabras originales y la frase original exacta, si utilizaste una. Ginger no puede restablecer una frase olvidada.
+
+<span id="do-i-have-to-use-a-passphrase" data-ginger-heading="tengo-que-utilizar-una-frase-de-contraseña" aria-hidden="true"></span>
+
+## ¿Tengo que utilizar una frase de contraseña?
+
+Al crear una cartera, Ginger muestra **Add Passphrase** después de **Confirm Recovery Words**. Puedes introducir y confirmar una frase o dejar ambos campos vacíos para crear sin ella.
+
+Sin frase, quien obtenga tus palabras puede recuperar y gastar tus bitcoin. Una frase añade otro secreto que proteger, pero olvidarla puede impedirte recuperar aunque conserves las palabras. Elige algo difícil de adivinar que puedas registrar y reproducir con precisión. Evita espacios al principio o al final; Ginger los rechaza en sus comprobaciones de entrada.
+
+<span id="is-it-the-same-as-recovery-words-or-a-2fa-code" data-ginger-heading="es-igual-que-las-palabras-o-un-código-2fa" aria-hidden="true"></span>
+
+## ¿Es igual que las palabras o un código 2FA?
+
+No. Ginger genera doce **Recovery Words** para una cartera de software nueva. Tú eliges la frase por separado. Mantenla fuera de la lista numerada; no la introduzcas como una palabra adicional.
+
+El nombre de tu cartera es solo una etiqueta local. Un código del autenticador 2FA es una comprobación separada de inicio. Ninguno sustituye a palabras y frase originales al recuperar software.
+
+<span id="what-should-i-back-up" data-ginger-heading="qué-debo-respaldar" aria-hidden="true"></span>
+
+## ¿Qué debo respaldar?
+
+- Las palabras en el orden mostrado.
+- La frase original exacta, incluidas mayúsculas y caracteres, o una nota clara de que creaste sin ella.
+
+Mantén esta información privada y recuperable después de perder el ordenador. Escribe las palabras sin conexión; evita fotos, correo y notas normales en la nube. Conserva también la frase recuperable. Guardarla por separado protege frente a encontrar ambos secretos juntos, pero asegúrate de poder localizar los dos cuando los necesites. No dependas únicamente de memoria.
+
+Las palabras restauran acceso a bitcoin, pero no todas las etiquetas o ajustes. Conserva archivos existentes durante la investigación de un problema de recuperación. Un respaldo automático en el mismo ordenador no protege contra perderlo.
+
+<span id="how-do-i-check-my-backup" data-ginger-heading="cómo-compruebo-mi-respaldo" aria-hidden="true"></span>
+
+## ¿Cómo compruebo mi respaldo?
+
+Mientras el software sea accesible, abre **Wallet Settings** → **Tools**. Busca **Verify Recovery Words** y elige **Verify**; introduce después las palabras del respaldo y completa la comprobación.
+
+Comprueba si esas palabras pertenecen a la cartera. No muestra palabras olvidadas ni restablece la frase. Asegura también que su registro sea correcto. Si falla, comprueba ortografía y orden en privado antes de confiar en el respaldo.
+
+<span id="how-do-i-use-the-passphrase-during-recovery" data-ginger-heading="cómo-utilizo-la-frase-durante-la-recuperación" aria-hidden="true"></span>
+
+## ¿Cómo utilizo la frase durante la recuperación?
+
+Estos pasos recuperan software Ginger mediante palabras. Conserva los archivos existentes hasta confirmar la recuperación.
+
+1. Abre Ginger en un ordenador fiable. En la pantalla para añadir una cartera, elige **Recover**.
+2. Introduce un **Wallet Name** diferente si se solicita, para distinguirla de las existentes.
+3. Introduce las **Recovery Words** originales en orden.
+4. En **Enter Passphrase**, introduce y confirma la original. Deja vacíos solo si la original no tenía frase. Aquí no eliges una contraseña nueva.
+5. Deja terminar recuperación y sincronización y comprueba tu historial conocido. Sincronizar significa consultar la red en busca de transacciones de la cartera.
+
+<span id="why-is-my-recovered-wallet-empty" data-ginger-heading="por-qué-está-vacía-mi-cartera-recuperada" aria-hidden="true"></span>
+
+## ¿Por qué está vacía mi cartera recuperada?
+
+Durante la recuperación mediante palabras, una frase diferente produce otra cartera. Ginger puede aceptar una mal escrita y recuperar vacía sin indicar un error de frase incorrecta. Es distinto de abrir un archivo protegido existente, donde sí se rechaza la incorrecta.
+
+Comprueba la original, mayúsculas, espacios y distribución del teclado. Comprueba también cartera y red seleccionadas y si terminó recuperación. Un escaneo incompleto puede mostrar saldo incompleto. Vacío por sí solo no demuestra que desaparecieron los bitcoin originales.
+
+Si sigue faltando historial previsto, conserva originales y busca ayuda mediante [enlaces de soporte oficiales Ginger](https://gingerwallet.io/). Comparte solo detalles no secretos, como versión y texto del error. Nunca envíes palabras, frase o archivos de cartera al soporte.
+
+<span id="can-i-reset-or-replace-a-forgotten-passphrase" data-ginger-heading="puedo-restablecer-o-sustituir-una-frase-olvidada" aria-hidden="true"></span>
+
+## ¿Puedo restablecer o sustituir una frase olvidada?
+
+Ginger no puede restablecerla. Recuperar con las mismas palabras y otra frase da acceso a una cartera diferente; no cambia la frase original ni mueve sus bitcoin.
+
+Si aún puedes enviar desde la original pero no establecer un respaldo utilizable, crea otra, verifica respaldo y transfiere cuidadosamente mientras tengas acceso. Conserva la antigua hasta confirmar traslado. Sin acceso de gasto ni información necesaria, el soporte no puede recrear el secreto ausente.

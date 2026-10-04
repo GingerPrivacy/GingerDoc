@@ -1,0 +1,54 @@
+---
+doc_id: manual.home
+title: "Documentación de GingerWallet"
+description: "Guías prácticas para tu primera cartera Ginger y el uso cotidiano de bitcoin. Aprende a respaldar tu cartera, enviar y recibir bitcoin y comprender la privacidad."
+lang: "es"
+reader_level: beginner
+template: splash
+hero: {}
+---
+
+import ManualHome from '../../../components/ManualHome.astro';
+
+<ManualHome
+  eyebrow="Manual de usuario"
+  title="Familiarízate"
+  titleSecondLine="con"
+  titleAccent="Ginger."
+  description="Guías prácticas para tu primera cartera y el uso cotidiano de bitcoin."
+  start={{ label: 'Empieza a utilizar Ginger', href: '/es/getting-started/' }}
+  faq={{ label: 'Consulta las preguntas frecuentes', href: '/es/help/' }}
+  stepsTitle="Tus primeros pasos"
+  stepsDescription="Un camino sencillo para empezar."
+  steps={[
+    { label: 'Instala Ginger', description: 'Descarga la aplicación y configúrala en tu dispositivo.', href: '/es/getting-started/install/' },
+    { label: 'Crea y respalda tu cartera', description: 'Configura tu cartera y protege sus datos de recuperación.', href: '/es/getting-started/first-wallet/' },
+    { label: 'Recibe tu primer pago', description: 'Obtén una dirección Bitcoin y recibe tus primeras monedas.', href: '/es/payments/receive/' },
+  ]}
+  groups={[
+    {
+      title: 'Guías de uso cotidiano',
+      description: 'Guías prácticas para utilizar Ginger en el día a día.',
+      icon: 'book',
+      links: [
+        { label: 'Enviar y recibir', href: '/es/using-ginger/' },
+        { label: 'CoinJoin', href: '/es/using-ginger/coinjoin/' },
+        { label: 'Carteras de hardware', href: '/es/using-ginger/hardware-wallet/' },
+      ],
+    },
+    {
+      title: 'Aprende sobre privacidad',
+      description: 'Comprende cómo Ginger te ayuda a conservar la privacidad.',
+      icon: 'shield',
+      links: [
+        { label: 'Privacidad en Bitcoin', href: '/es/using-ginger/privacy/' },
+        { label: 'Cómo funciona CoinJoin', href: '/es/learn-coinjoin/explained/' },
+        { label: 'Autocustodia', href: '/es/learn-self-custody/basics/' },
+      ],
+    },
+  ]}
+  searchTitle="¿Buscas algo concreto?"
+  searchDescription="Busca en el manual para encontrar guías, ajustes y más."
+  searchLabel="Buscar en el manual"
+  advanced={{ label: 'Guías avanzadas', href: '/es/help/advanced-faq/' }}
+/>
