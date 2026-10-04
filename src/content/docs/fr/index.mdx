@@ -1,0 +1,54 @@
+---
+doc_id: manual.home
+title: "Documentation GingerWallet"
+description: "Des guides pratiques pour votre premier portefeuille Ginger et l'utilisation quotidienne de bitcoin. Apprenez à sauvegarder, envoyer et recevoir, et à comprendre la confidentialité."
+lang: fr
+reader_level: beginner
+template: splash
+hero: {}
+---
+
+import ManualHome from '../../../components/ManualHome.astro';
+
+<ManualHome
+  eyebrow="Manuel utilisateur"
+  title="Prenez vos marques"
+  titleSecondLine="avec"
+  titleAccent="Ginger."
+  description="Des guides pratiques pour votre premier portefeuille et l'utilisation quotidienne de bitcoin."
+  start={{ label: 'Commencer à utiliser Ginger', href: '/fr/getting-started/' }}
+  faq={{ label: 'Consulter la FAQ', href: '/fr/help/' }}
+  stepsTitle="Vos premiers pas"
+  stepsDescription="Un parcours simple pour commencer."
+  steps={[
+    { label: 'Installer Ginger', description: 'Téléchargez et configurez l’application sur votre appareil.', href: '/fr/getting-started/install/' },
+    { label: 'Créer et sauvegarder votre portefeuille', description: 'Configurez votre portefeuille et protégez ses informations de récupération.', href: '/fr/getting-started/first-wallet/' },
+    { label: 'Recevoir votre premier paiement', description: 'Obtenez une adresse Bitcoin et recevez vos premiers coins.', href: '/fr/payments/receive/' },
+  ]}
+  groups={[
+    {
+      title: 'Guides courants',
+      description: 'Des guides pratiques pour utiliser Ginger au quotidien.',
+      icon: 'book',
+      links: [
+        { label: 'Envoyer et recevoir', href: '/fr/using-ginger/' },
+        { label: 'CoinJoin', href: '/fr/using-ginger/coinjoin/' },
+        { label: 'Portefeuilles matériels', href: '/fr/using-ginger/hardware-wallet/' },
+      ],
+    },
+    {
+      title: 'Comprendre la confidentialité',
+      description: 'Comprenez comment Ginger aide à préserver votre confidentialité.',
+      icon: 'shield',
+      links: [
+        { label: 'Confidentialité Bitcoin', href: '/fr/using-ginger/privacy/' },
+        { label: 'Fonctionnement de CoinJoin', href: '/fr/learn-coinjoin/explained/' },
+        { label: 'Garde de vos propres clés', href: '/fr/learn-self-custody/basics/' },
+      ],
+    },
+  ]}
+  searchTitle="Vous cherchez quelque chose de précis ?"
+  searchDescription="Recherchez des guides, des paramètres et bien plus dans le manuel."
+  searchLabel="Rechercher dans le manuel"
+  advanced={{ label: 'Guides avancés', href: '/fr/help/advanced-faq/' }}
+/>
