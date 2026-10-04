@@ -1,4 +1,5 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
+import { sidebarTranslations } from './localization-config.mjs'
 
 // Each topic owns one manifest. A topic can be reviewed and merged independently.
 export function manualSidebar(root = new URL('./navigation/', import.meta.url)) {
@@ -23,6 +24,14 @@ export function manualSidebar(root = new URL('./navigation/', import.meta.url)) 
     const fallback = legacy[section].filter((slug) => !replaced.has(slug))
       .map((slug) => ({ slug }))
     const items = [...additions, ...fallback]
-    return items.length ? [{ label: labels[index], collapsed: !['start', 'help'].includes(section), items }] : []
+    return items.length ? [localizeItem({ label: labels[index], collapsed: !['start', 'help'].includes(section), items })] : []
   })
+}
+
+function localizeItem(item) {
+  return {
+    ...item,
+    ...(item.label ? { translations: sidebarTranslations(item.label) } : {}),
+    ...(item.items ? { items: item.items.map(localizeItem) } : {}),
+  }
 }

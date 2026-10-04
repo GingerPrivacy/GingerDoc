@@ -66,10 +66,15 @@ const translations = {
       }
       open.disabled = false
       open.addEventListener('click', openModal, { signal })
-      document.querySelectorAll<HTMLButtonElement>('[data-open-manual-search]').forEach((button) => {
-        button.disabled = false
-        button.addEventListener('click', openModal, { signal })
-      })
+      const connectManualButtons = () => {
+        document.querySelectorAll<HTMLButtonElement>('[data-open-manual-search]').forEach((button) => {
+          button.disabled = false
+          button.addEventListener('click', openModal, { signal })
+        })
+      }
+      // The header can be upgraded while the homepage content is still parsing.
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', connectManualButtons, { once: true, signal })
+      else connectManualButtons()
       this.querySelector('.close-search')!.addEventListener('click', () => dialog.close(), { signal })
       this.querySelector('.retry-search')?.addEventListener('click', openModal, { signal })
       select.addEventListener('change', () => this.applyScope(), { signal })

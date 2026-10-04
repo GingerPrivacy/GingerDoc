@@ -2,11 +2,13 @@
 import Default from '@astrojs/starlight/components/SocialIcons.astro'
 import { Icon } from '@astrojs/starlight/components'
 import World from '../assets/icons/world.svg'
+import { copyForLanguage } from '../localization'
+const websiteLabel = copyForLanguage(Astro.locals.starlightRoute.lang).header['Ginger Wallet website'] ?? 'Ginger Wallet website'
 ---
 
 <Default {...Astro.props}><slot /></Default>
-<a href="https://gingerwallet.io/" title="Ginger Wallet website" rel="me">
-  <span class="sr-only">Ginger Wallet website</span>
+<a href="https://gingerwallet.io/" title={websiteLabel} rel="me">
+  <span class="sr-only">{websiteLabel}</span>
   <World width="1em" height="1em" aria-hidden="true" />
 </a>
 <a href="https://t.me/GingerWallet" title="Telegram" rel="me">

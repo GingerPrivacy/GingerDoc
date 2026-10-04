@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
 import { manualSidebar } from './src/manual-sidebar.mjs'
+import { documentationLocales, documentationTitles } from './src/localization-config.mjs'
 
 export default defineConfig({
   site: 'https://docs.gingerwallet.io',
@@ -14,7 +15,9 @@ export default defineConfig({
 
   integrations: [
     starlight({
-      title: 'GingerWallet Documentation',
+      title: documentationTitles,
+      defaultLocale: 'root',
+      locales: documentationLocales,
       description: 'Documentation for GingerWallet',
       lastUpdated: false,
 

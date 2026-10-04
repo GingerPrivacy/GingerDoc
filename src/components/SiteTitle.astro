@@ -10,14 +10,17 @@
  * and the homepage's first steps provide navigation when these links are hidden.
  */
 import Default from '@astrojs/starlight/components/SiteTitle.astro'
+import { copyForLanguage } from '../localization'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-const withBase = (path: string) => base + path
+const { locale, lang } = Astro.locals.starlightRoute
+const copy = copyForLanguage(lang)
+const withBase = (path: string) => base + (locale ? '/' + locale : '') + path
 
 const links = [
-  { label: 'Getting Started', href: withBase('/getting-started/') },
-  { label: 'Why Ginger?', href: withBase('/why-ginger/') },
-  { label: 'Using Ginger', href: withBase('/using-ginger/') },
+  { label: copy.header['Getting Started'], href: withBase('/getting-started/') },
+  { label: copy.header['Why Ginger?'], href: withBase('/why-ginger/') },
+  { label: copy.header['Using Ginger'], href: withBase('/using-ginger/') },
 ]
 
 // `/using-ginger/fee/` should light up the `/using-ginger/` link.
@@ -27,7 +30,7 @@ const isActive = (href: string) => current === href || current.startsWith(href)
 
 <Default {...Astro.props}><slot /></Default>
 
-<nav class="header-nav" aria-label="Main">
+<nav class="header-nav" aria-label={Astro.locals.t('sidebarNav.accessibleLabel')}>
   {
     links.map(({ label, href }) => (
       <a href={href} aria-current={isActive(href) ? 'page' : undefined}>
@@ -42,7 +45,7 @@ const isActive = (href: string) => current === href || current.startsWith(href)
 		display: none;
 	}
 
-	@media (min-width: 72rem) {
+	@media (min-width: 90rem) {
 		.header-nav {
 			display: flex;
 			align-items: center;
