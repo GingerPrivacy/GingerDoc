@@ -13,7 +13,7 @@ next: false
 
 Ginger a besoin de données réseau pour découvrir vos transactions, diffuser les paiements et participer à CoinJoin. Tor est inclus et activé par défaut pour ses connexions ordinaires. Il aide à séparer votre adresse IP des services contactés, mais ne cache pas les montants et transactions Bitcoin publics.
 
-<span id="tor-settings" aria-hidden="true"></span>
+<span id="tor-settings" data-ginger-heading="paramètres-tor" aria-hidden="true"></span>
 
 ## Paramètres Tor
 
@@ -25,7 +25,7 @@ Désactiver Tor change les informations exposées aux services et pairs contact�
 
 La connexion Tor de Ginger ne transforme pas non plus le navigateur externe en Tor Browser. Prestataires, explorateurs et autres liens utilisent le navigateur configuré. Examinez-le séparément avant de supposer que ses demandes héritent de la protection du portefeuille.
 
-<span id="what-synchronization-does" aria-hidden="true"></span>
+<span id="what-synchronization-does" data-ginger-heading="ce-que-fait-la-synchronisation" aria-hidden="true"></span>
 
 ## Ce que fait la synchronisation
 
@@ -35,7 +35,7 @@ La première utilisation et la récupération peuvent prendre davantage de temps
 
 Exécuter un nœud complet et synchroniser un portefeuille sont deux tâches distinctes. Le nœud facultatif valide la blockchain ; le portefeuille doit ensuite trouver ses transactions. L'état synchronisé du nœud ne signifie pas nécessairement que l'analyse du nouveau portefeuille récupéré est achevée.
 
-<span id="when-synchronization-appears-stuck" aria-hidden="true"></span>
+<span id="when-synchronization-appears-stuck" data-ginger-heading="quand-la-synchronisation-semble-bloquée" aria-hidden="true"></span>
 
 ## Quand la synchronisation semble bloquée
 
@@ -48,7 +48,7 @@ Si Tor est bloqué sur votre réseau, consultez [les conseils du projet Tor](htt
 
 Utilisez **Wallet Settings** → **Tools** → **Resync** uniquement si vous avez une raison de reconstruire la vue du portefeuille. Préservez les sauvegardes d'abord et laissez la nouvelle analyse se terminer. Supprimer le dossier de données n'est pas la première étape de dépannage.
 
-<span id="separate-network-choice-from-real-funds" aria-hidden="true"></span>
+<span id="separate-network-choice-from-real-funds" data-ginger-heading="séparer-le-choix-réseau-des-fonds-réels" aria-hidden="true"></span>
 
 ## Séparer le choix réseau des fonds réels
 

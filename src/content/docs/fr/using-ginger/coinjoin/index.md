@@ -17,7 +17,7 @@ next: false
 
 CoinJoin crée une transaction Bitcoin avec d'autres participants afin de rendre les liens entre ses entrées et ses sorties plus difficiles à déduire. Ginger signe uniquement les entrées de votre portefeuille ; vous ne versez aucun dépôt sur un compte contrôlé par un coordinateur. Les tours réussis entraînent tout de même des frais et ne garantissent pas l'anonymat.
 
-<span id="before-starting" aria-hidden="true"></span>
+<span id="before-starting" data-ginger-heading="avant-de-commencer" aria-hidden="true"></span>
 
 ## Avant de commencer
 
@@ -27,7 +27,7 @@ Les frais de coordinateur sont vérifiés pour chaque coin utilisé comme entré
 
 Le portefeuille doit disposer de fonds confirmés et utilisables, et les conditions du tour doivent être appropriées. Aucun solde ni aucun délai d'attente ne garantit un démarrage immédiat. Lisez l'état actuel avant de modifier les paramètres.
 
-<span id="start-and-pause" aria-hidden="true"></span>
+<span id="start-and-pause" data-ginger-heading="démarrer-et-mettre-en-pause" aria-hidden="true"></span>
 
 ## Démarrer et mettre en pause
 
@@ -39,7 +39,7 @@ Le portefeuille doit disposer de fonds confirmés et utilisables, et les conditi
 
 N'envoyez pas de bitcoins à une adresse fournie par quelqu'un qui prétend « activer » CoinJoin. Il n'existe aucun paiement d'activation distinct à verser à un agent d'assistance.
 
-<span id="read-the-status" aria-hidden="true"></span>
+<span id="read-the-status" data-ginger-heading="comprendre-létat-affiché" aria-hidden="true"></span>
 
 ## Comprendre l'état affiché
 
@@ -58,7 +58,7 @@ N'envoyez pas de bitcoins à une adresse fournie par quelqu'un qui prétend « a
 
 Pour les messages de refus, de connexion ou d'admissibilité, conservez le texte exact de l'erreur. Réinstaller Ginger ou créer de nouveaux mots de récupération n'est pas une réponse normale à un état d'attente.
 
-<span id="keep-the-wallet-available" aria-hidden="true"></span>
+<span id="keep-the-wallet-available" data-ginger-heading="garder-le-portefeuille-disponible" aria-hidden="true"></span>
 
 ## Garder le portefeuille disponible
 
@@ -68,13 +68,13 @@ La mise en veille, une perte de connexion à Internet ou un arrêt forcé peuven
 
 Selon les paramètres généraux, la fenêtre peut se fermer tandis que Ginger continue de fonctionner en arrière-plan. Pour arrêter complètement l'application, utilisez la commande de fermeture habituelle et laissez toute phase critique se terminer.
 
-<span id="spend-after-coinjoin" aria-hidden="true"></span>
+<span id="spend-after-coinjoin" data-ginger-heading="dépenser-après-coinjoin" aria-hidden="true"></span>
 
 ## Dépenser après CoinJoin
 
 Une fois que les coins obtenus sont utilisables, vous pouvez les dépenser comme les autres bitcoins. La transaction CoinJoin reste publique. Combiner des coins privés et non privés sans lien entre eux, réutiliser une adresse ou divulguer une transaction à un service auquel vous vous êtes identifié peut créer de nouveaux liens. Examinez les coins sélectionnés et la monnaie rendue lorsque vous effectuez un paiement ; une participation antérieure à CoinJoin ne rend pas toutes vos actions futures privées.
 
-<span id="you-do-not-need-to-manage-the-protocol" aria-hidden="true"></span>
+<span id="you-do-not-need-to-manage-the-protocol" data-ginger-heading="vous-navez-pas-besoin-de-gérer-le-protocole" aria-hidden="true"></span>
 
 ## Vous n'avez pas besoin de gérer le protocole
 

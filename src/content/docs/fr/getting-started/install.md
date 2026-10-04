@@ -21,7 +21,7 @@ Ginger Wallet est un portefeuille Bitcoin pour ordinateur. Vous détenez les cl�
 
 Ce guide concerne la version 2.0.26. Obtenez le logiciel sur [le site officiel Ginger](https://gingerwallet.io/) ou [sa version GitHub liée](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26). Une publicité de recherche, un message privé ou une application mobile au nom similaire ne sont pas des sources fiables.
 
-<span id="choose-a-download" aria-hidden="true"></span>
+<span id="choose-a-download" data-ginger-heading="choisir-un-téléchargement" aria-hidden="true"></span>
 
 ## Choisir un téléchargement
 
@@ -37,7 +37,7 @@ Sur Mac, **About This Mac** indique la puce ou le processeur. La version contien
 
 Ginger nécessite une connexion internet et du stockage accessible en écriture pour ses données de portefeuille et de synchronisation. Le nœud complet facultatif nécessite beaucoup plus d'espace disque, de bande passante et de temps de synchronisation initiale que l'utilisation ordinaire. Vous n'avez besoin ni d'un nœud complet, ni de Tor séparé, ni d'outils de développement pour commencer.
 
-<span id="install-the-application" aria-hidden="true"></span>
+<span id="install-the-application" data-ginger-heading="installer-lapplication" aria-hidden="true"></span>
 
 ## Installer l'application
 
@@ -48,7 +48,7 @@ Ginger nécessite une connexion internet et du stockage accessible en écriture 
 
 Une archive ZIP ou tar évite l'installateur habituel, mais ne rend pas votre portefeuille jetable et ne garantit pas l'absence de données sur l'ordinateur. Les fichiers du portefeuille sont stockés séparément de l'application. Gardez des sauvegardes avant de déplacer ou supprimer l'un ou l'autre.
 
-<span id="if-your-operating-system-displays-a-warning" aria-hidden="true"></span>
+<span id="if-your-operating-system-displays-a-warning" data-ginger-heading="si-votre-système-affiche-un-avertissement" aria-hidden="true"></span>
 
 ## Si votre système affiche un avertissement
 
@@ -56,7 +56,7 @@ Une nouvelle version peut ne pas encore avoir une forte réputation de télécha
 
 Pour les problèmes d'accès aux appareils Linux, consultez les instructions USB du fabricant du portefeuille matériel. Installer un portefeuille ne nécessite pas de l'exécuter en permanence comme administrateur.
 
-<span id="updates-and-availability" aria-hidden="true"></span>
+<span id="updates-and-availability" data-ginger-heading="mises-à-jour-et-disponibilité" aria-hidden="true"></span>
 
 ## Mises à jour et disponibilité
 

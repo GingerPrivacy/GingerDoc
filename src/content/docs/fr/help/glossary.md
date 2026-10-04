@@ -11,7 +11,7 @@ next: false
 
 > Niveau de lecture : utilisation courante. Choisissez ce guide lorsque vous avez besoin de la tâche qu'il décrit.
 
-<span id="amounts-and-transactions" aria-hidden="true"></span>
+<span id="amounts-and-transactions" data-ginger-heading="montants-et-transactions" aria-hidden="true"></span>
 
 ## Montants et transactions
 
@@ -33,7 +33,7 @@ next: false
 | CPFP | Child-pays-for-parent : dépenser une sortie dans une transaction enfant à frais élevés peut encourager aussi la confirmation de son parent non confirmé. |
 | Poussière | Un montant trop petit pour être utile selon une politique ou hypothèse de coût donnée. Seuil du portefeuille et politique réseau ne sont pas nécessairement identiques. |
 
-<span id="the-network-in-context" aria-hidden="true"></span>
+<span id="the-network-in-context" data-ginger-heading="le-réseau-en-contexte" aria-hidden="true"></span>
 
 ## Le réseau en contexte
 
@@ -52,7 +52,7 @@ next: false
 
 Lightning, canaux de paiement, construction multisignature, configuration testnet public/Signet et fonctionnement interne des scripts sortent des parcours utilisateur documentés de cette version. Leur présence dans un glossaire Bitcoin général ne démontre pas une fonction Ginger.
 
-<span id="keys-and-recovery" aria-hidden="true"></span>
+<span id="keys-and-recovery" data-ginger-heading="clés-et-récupération" aria-hidden="true"></span>
 
 ## Clés et récupération
 
@@ -72,7 +72,7 @@ Lightning, canaux de paiement, construction multisignature, configuration testne
 | PSBT | Un fichier de transaction Bitcoin partiellement signée contenant une proposition et les informations de signature. |
 | SegWit /fr/ Taproot | Des formats de sorties et de dépenses Bitcoin. Sur mainnet, les adresses natives commencent souvent par `bc1q` et `bc1p`, respectivement. |
 
-<span id="privacy-and-ginger" aria-hidden="true"></span>
+<span id="privacy-and-ginger" data-ginger-heading="confidentialité-et-ginger" aria-hidden="true"></span>
 
 ## Confidentialité et Ginger
 

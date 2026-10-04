@@ -17,7 +17,7 @@ next: false
 
 Un portefeuille Ginger contient les informations nécessaires pour reconnaître et dépenser votre bitcoin. Le bitcoin lui-même est enregistré sur le réseau Bitcoin. La perte de l'ordinateur est récupérable avec la bonne sauvegarde ; la perte simultanée du portefeuille et de ses informations de récupération peut ne pas l'être.
 
-<span id="create-a-software-wallet" aria-hidden="true"></span>
+<span id="create-a-software-wallet" data-ginger-heading="créer-un-portefeuille-logiciel" aria-hidden="true"></span>
 
 ## Créer un portefeuille logiciel
 
@@ -29,7 +29,7 @@ Un portefeuille Ginger contient les informations nécessaires pour reconnaître 
 
 Le nom du portefeuille est une étiquette locale. Il n'est pas un identifiant de récupération et ne change pas les clés. Renommer un portefeuille ne revient pas à en créer un nouveau.
 
-<span id="decide-how-to-use-coinjoin" aria-hidden="true"></span>
+<span id="decide-how-to-use-coinjoin" data-ginger-heading="décider-comment-utiliser-coinjoin" aria-hidden="true"></span>
 
 ## Décider comment utiliser CoinJoin
 
@@ -37,7 +37,7 @@ Ginger peut vous inviter à personnaliser les paramètres CoinJoin. Examinez les
 
 CoinJoin coûte des frais de transaction et peut prendre du temps. Recevoir du bitcoin, envoyer un paiement normal et utiliser CoinJoin sont des actions distinctes. Vous pouvez d'abord apprendre la réception et l'envoi avec un petit montant dont la perte resterait supportable.
 
-<span id="open-an-existing-wallet" aria-hidden="true"></span>
+<span id="open-an-existing-wallet" data-ginger-heading="ouvrir-un-portefeuille-existant" aria-hidden="true"></span>
 
 ## Ouvrir un portefeuille existant
 
@@ -45,7 +45,7 @@ Sélectionnez son nom dans la liste de Ginger. Saisissez la phrase secrète d'or
 
 Pour ajouter un portefeuille depuis ses mots, choisissez **Recover** dans l'écran d'ajout. Pour charger une sauvegarde JSON compatible ou un export matériel pris en charge, choisissez **Import File**. Ne collez pas de mots dans un dialogue d'importation de fichier et n'importez pas les mots d'un portefeuille matériel simplement pour connecter l'appareil.
 
-<span id="know-when-the-wallet-is-ready" aria-hidden="true"></span>
+<span id="know-when-the-wallet-is-ready" data-ginger-heading="savoir-quand-le-portefeuille-est-prêt" aria-hidden="true"></span>
 
 ## Savoir quand le portefeuille est prêt
 
@@ -53,13 +53,13 @@ La synchronisation trouve les transactions de votre portefeuille. Tant qu'elle n
 
 Avant de recevoir un montant important, vérifiez que le portefeuille s'ouvre, que la sauvegarde est lisible et que vous comprenez votre choix de phrase secrète. Utilisez **Wallet Settings** → **Tools** → **Verify Recovery Words**, avec **Verify**, pour vérifier les mots d'un portefeuille logiciel accessible. Cela vérifie une sauvegarde ; cela ne révèle pas des mots oubliés.
 
-<span id="close-safely" aria-hidden="true"></span>
+<span id="close-safely" data-ginger-heading="fermer-en-sécurité" aria-hidden="true"></span>
 
 ## Fermer en sécurité
 
 Fermer la fenêtre peut laisser Ginger actif si **Run in background when window closed** est activé dans **Settings** → **General**. Utilisez la sortie normale de l'application quand elle doit s'arrêter. Pendant une phase CoinJoin critique, laissez Ginger terminer sa procédure de fermeture. Le forcer à fermer peut interrompre la participation.
 
-<span id="next-receive-and-send" aria-hidden="true"></span>
+<span id="next-receive-and-send" data-ginger-heading="ensuite--recevoir-et-envoyer" aria-hidden="true"></span>
 
 ## Ensuite : recevoir et envoyer
 

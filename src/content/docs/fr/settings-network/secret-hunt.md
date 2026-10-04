@@ -13,7 +13,7 @@ next: false
 
 **Secret Hunt** est une fonction de Ginger qui affiche les secrets d'événements associés à une activité CoinJoin admissible. Elle est distincte du score de confidentialité du portefeuille et de la procédure ordinaire de réception ou de dépense de bitcoins. La disponibilité des événements dépend du service ; la présence de la fonction ne promet pas un événement en cours, un prix ou une récompense.
 
-<span id="view-and-control-participation" aria-hidden="true"></span>
+<span id="view-and-control-participation" data-ginger-heading="consulter-et-contrôler-la-participation" aria-hidden="true"></span>
 
 ## Consulter et contrôler la participation
 
@@ -23,7 +23,7 @@ Utilisez **Enable/disable the use of this wallet for Secret Hunt.** pour contrô
 
 Cette entrée n'est pas proposée pour les portefeuilles en lecture seule. Ce n'est pas une fonction de CoinJoin pour portefeuille matériel, et elle n'exige pas de saisir des mots de récupération sur un site d'événement.
 
-<span id="what-is-shared" aria-hidden="true"></span>
+<span id="what-is-shared" data-ginger-heading="informations-partagées" aria-hidden="true"></span>
 
 ## Informations partagées
 
@@ -31,7 +31,7 @@ Le client récupère les informations d'événements auprès du service de Ginge
 
 Tor répond à l'exposition au niveau du réseau ; il ne retire pas le contenu d'une demande de la vue de son destinataire. Si vous ne voulez pas qu'un portefeuille soit utilisé pour ces contrôles, désactivez sa participation à Secret Hunt. Les demandes de liste d'événements et l'activité réseau ordinaire du portefeuille sont distinctes de cette option propre à chaque portefeuille.
 
-<span id="missing-or-incomplete-results" aria-hidden="true"></span>
+<span id="missing-or-incomplete-results" data-ginger-heading="résultats-absents-ou-incomplets" aria-hidden="true"></span>
 
 ## Résultats absents ou incomplets
 

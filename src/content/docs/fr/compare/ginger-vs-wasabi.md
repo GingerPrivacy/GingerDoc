@@ -15,7 +15,7 @@ Ginger Wallet et Wasabi Wallet sont des portefeuilles Bitcoin open source pour o
 
 Dernière vérification : **7 septembre 2026**. Versions étudiées : [Ginger v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) et [Wasabi v2.8.2](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.2). Cette comparaison porte sur les parcours documentés, pas sur des mesures de vitesse, de fiabilité ou d'anonymat.
 
-<span id="at-a-glance" aria-hidden="true"></span>
+<span id="at-a-glance" data-ginger-heading="en-un-coup-dœil" aria-hidden="true"></span>
 
 ## En un coup d'œil
 
@@ -30,7 +30,7 @@ Dernière vérification : **7 septembre 2026**. Versions étudiées : [Ginger v2
 
 Les sections suivantes expliquent les conditions de ces différences et renvoient à la documentation correspondante.
 
-<span id="coordinator-setup-one-less-decision-with-ginger" aria-hidden="true"></span>
+<span id="coordinator-setup-one-less-decision-with-ginger" data-ginger-heading="configuration-du-coordinateur--une-décision-en-moins-avec-ginger" aria-hidden="true"></span>
 
 ## Configuration du coordinateur : une décision en moins avec Ginger
 
@@ -42,7 +42,7 @@ Le [guide CoinJoin de Wasabi](https://docs.wasabiwallet.io/using-wasabi/CoinJoin
 
 L'avantage pratique de Ginger est ici un parcours de configuration plus court. Une connexion fournie ne garantit pas un tour immédiat : il faut toujours des fonds confirmés, des frais acceptables, un service disponible et assez d'entrées participantes.
 
-<span id="privacy-with-future-use-in-mind" aria-hidden="true"></span>
+<span id="privacy-with-future-use-in-mind" data-ginger-heading="la-confidentialité-en-tenant-compte-des-usages-futurs" aria-hidden="true"></span>
 
 ## La confidentialité en tenant compte des usages futurs
 
@@ -52,11 +52,11 @@ Le coordinateur de Ginger contrôle les entrées participantes et exclut celles 
 
 Avec Wasabi, l'application de contrôles comparables dépend du coordinateur choisi. Chaque service destinataire prend toujours ses propres décisions d'acceptation.
 
-<span id="fees-compare-the-complete-cost" aria-hidden="true"></span>
+<span id="fees-compare-the-complete-cost" data-ginger-heading="frais--comparer-le-coût-complet" aria-hidden="true"></span>
 
 ## Frais : comparer le coût complet
 
-<span id="gingers-coordinator-fee" aria-hidden="true"></span>
+<span id="gingers-coordinator-fee" data-ginger-heading="les-frais-de-coordinateur-de-ginger" aria-hidden="true"></span>
 
 ### Les frais de coordinateur de Ginger
 
@@ -77,13 +77,13 @@ Pour une entrée sans autre exonération :
 
 Ces exemples expliquent le calcul ; ce ne sont pas des devis pour des tours futurs. Les règles complètes et d'autres exemples figurent dans [frais CoinJoin et progression de confidentialité](/fr/using-ginger/annonset/).
 
-<span id="wasabis-coordinator-fee-policy" aria-hidden="true"></span>
+<span id="wasabis-coordinator-fee-policy" data-ginger-heading="la-politique-de-frais-de-coordinateur-de-wasabi" aria-hidden="true"></span>
 
 ### La politique de frais de coordinateur de Wasabi
 
 Depuis la version 2.2.0.0, Wasabi n'accepte que les tours sans frais de coordinateur. Les frais de minage restent dus. Sa documentation décrit aussi de rares restes d'allocation de sorties pouvant atteindre 10,000 satoshis par CoinJoin, qui reviennent au coordinateur. Consultez [l'explication des frais de Wasabi](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
 
-<span id="budget-beyond-the-headline-percentage" aria-hidden="true"></span>
+<span id="budget-beyond-the-headline-percentage" data-ginger-heading="budgéter-au-delà-du-pourcentage-annoncé" aria-hidden="true"></span>
 
 ### Budgéter au-delà du pourcentage annoncé
 
@@ -91,7 +91,7 @@ Ginger peut aussi laisser un petit reste lors de l'allocation des montants des s
 
 Des frais de coordinateur nuls ne constituent qu'une composante de la comparaison. La taille des transactions, les taux de minage, l'allocation des sorties et le nombre de tours terminés influencent la dépense finale. Le [guide des coûts Ginger](/fr/using-ginger/annonset/) explique comment rapprocher ces montants.
 
-<span id="hardware-wallets-signing-inputs-and-receiving-outputs-are-different" aria-hidden="true"></span>
+<span id="hardware-wallets-signing-inputs-and-receiving-outputs-are-different" data-ginger-heading="matériel--signer-les-entrées-et-recevoir-les-sorties-sont-deux-opérations-différentes" aria-hidden="true"></span>
 
 ## Matériel : signer les entrées et recevoir les sorties sont deux opérations différentes
 
@@ -103,7 +103,7 @@ Dans Ginger, vérifiez à nouveau la destination après un redémarrage, car la 
 
 Suivez [le guide de stockage à froid Ginger](/fr/hardware-wallets/exchange-to-cold-storage/) ou [l'explication CoinJoin-to-wallet de Wasabi](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#can-i-coinjoin-to-another-wallet) pour le parcours pris en charge et ses conditions.
 
-<span id="privacy-and-service-policies" aria-hidden="true"></span>
+<span id="privacy-and-service-policies" data-ginger-heading="confidentialité-et-politiques-des-services" aria-hidden="true"></span>
 
 ## Confidentialité et politiques des services
 
@@ -111,7 +111,7 @@ La garde de vos propres clés répond à la question de qui peut autoriser la d�
 
 L'opérateur de Ginger, InvisibleBit LLC, publie des restrictions de service, notamment concernant les lieux et la nationalité américains. Ses conditions autorisent aussi des contrôles tiers et le refus de certaines entrées. Lisez [les conditions actuelles de Ginger](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt) avant utilisation. Avec Wasabi, examinez les politiques du coordinateur configuré ; la politique de frais du portefeuille n'établit pas les pratiques d'admission ou de traitement des données de cet opérateur.
 
-<span id="which-fits-your-needs" aria-hidden="true"></span>
+<span id="which-fits-your-needs" data-ginger-heading="lequel-correspond-à-vos-besoins-" aria-hidden="true"></span>
 
 ## Lequel correspond à vos besoins ?
 

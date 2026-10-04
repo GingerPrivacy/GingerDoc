@@ -13,7 +13,7 @@ next: false
 
 Il est plus facile de préserver les améliorations de confidentialité lorsqu'elles correspondent à votre utilisation réelle de Bitcoin. Avant de modifier un paramètre, déterminez quelles informations vous souhaitez divulguer moins largement et quelle personne ou quel service pourrait les voir.
 
-<span id="before-receiving" aria-hidden="true"></span>
+<span id="before-receiving" data-ginger-heading="avant-de-recevoir" aria-hidden="true"></span>
 
 ## Avant de recevoir
 
@@ -21,7 +21,7 @@ Générez une nouvelle adresse pour le paiement concerné et utilisez une étiqu
 
 Pensez aussi au canal de communication. Si vous envoyez une adresse de réception depuis un compte auquel vous vous êtes identifié, le destinataire peut associer cette adresse à vous, même si la blockchain elle-même ne comporte pas de champ pour un nom. Une nouvelle adresse réduit la réutilisation ; elle n'efface pas la conversation dans laquelle vous l'avez partagée.
 
-<span id="before-sending" aria-hidden="true"></span>
+<span id="before-sending" data-ginger-heading="avant-denvoyer" aria-hidden="true"></span>
 
 ## Avant d'envoyer
 
@@ -29,7 +29,7 @@ Examinez l'origine des coins disponibles. Combiner des paiements issus d'activit
 
 Demandez une nouvelle adresse de destination et confirmez le montant et l'adresse. Si une suggestion évite la monnaie rendue en modifiant le montant destiné au bénéficiaire, assurez-vous que celui-ci accepte réellement le montant révisé. Envoyer un paiement à la mauvaise personne ou payer une facture avec un montant insuffisant n'améliore pas la confidentialité.
 
-<span id="after-coinjoin" aria-hidden="true"></span>
+<span id="after-coinjoin" data-ginger-heading="après-coinjoin" aria-hidden="true"></span>
 
 ## Après CoinJoin
 
@@ -37,7 +37,7 @@ Considérez les coins obtenus comme des fonds dont l'utilisation future reste im
 
 Un analyste peut également comparer les horaires et les montants entre les transactions. Aucun délai d'attente universel ne garantit la sécurité. Prévoyez la manière dont vous comptez dépenser les fonds plutôt que de vous attendre à ce qu'un seul tour ou un délai fixe résolve toutes les formes d'observation.
 
-<span id="on-the-network-and-computer" aria-hidden="true"></span>
+<span id="on-the-network-and-computer" data-ginger-heading="sur-le-réseau-et-lordinateur" aria-hidden="true"></span>
 
 ## Sur le réseau et l'ordinateur
 
@@ -47,13 +47,13 @@ Vérifiez quel navigateur est utilisé pour ouvrir les liens vers les prestatair
 
 Utilisez **Discreet Mode** pour les champs à l'écran pris en charge lorsque quelqu'un peut voir votre écran, et verrouillez le système d'exploitation lorsque vous vous éloignez. Protégez les supports de sauvegarde et les étiquettes locales. Un portefeuille en lecture seule peut révéler votre activité financière même sans exposer les clés de signature.
 
-<span id="when-asking-for-help" aria-hidden="true"></span>
+<span id="when-asking-for-help" data-ginger-heading="lorsque-vous-demandez-de-laide" aria-hidden="true"></span>
 
 ## Lorsque vous demandez de l'aide
 
 Indiquez la version, le système d'exploitation, l'erreur et les étapes non secrètes permettant de reproduire le problème. Partagez uniquement le plus petit extrait de journal pertinent, après l'avoir examiné. Ne publiez pas de xpub, de dossier complet de données de portefeuille, de mots de récupération ou de code QR d'authentification. Transmettre vos secrets dans un canal public n'est pas sûr et ne permet pas à un bénévole de l'assistance de résoudre le problème d'une phrase secrète manquante.
 
-<span id="choose-a-sustainable-routine" aria-hidden="true"></span>
+<span id="choose-a-sustainable-routine" data-ginger-heading="choisir-une-routine-durable" aria-hidden="true"></span>
 
 ## Choisir une routine durable
 

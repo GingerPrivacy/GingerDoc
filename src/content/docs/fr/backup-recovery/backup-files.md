@@ -13,7 +13,7 @@ next: false
 
 Utilisez cette référence pour copier les données locales du portefeuille ou examiner ce qu'une sauvegarde préserve. Commencez par [le guide de sauvegarde essentiel](/fr/backup-recovery/backups/) pour les informations de récupération nécessaires à tout portefeuille logiciel.
 
-<span id="what-to-keep" aria-hidden="true"></span>
+<span id="what-to-keep" data-ginger-heading="que-conserver" aria-hidden="true"></span>
 
 ## Que conserver
 
@@ -27,7 +27,7 @@ Utilisez cette référence pour copier les données locales du portefeuille ou e
 
 Le dossier de sauvegarde automatique locale se trouve sur le même ordinateur. Il peut aider après la corruption d'un fichier, mais ne protège pas contre la perte du disque entier, le vol ou les rançongiciels.
 
-<span id="make-a-file-backup" aria-hidden="true"></span>
+<span id="make-a-file-backup" data-ginger-heading="sauvegarder-les-fichiers" aria-hidden="true"></span>
 
 ## Sauvegarder les fichiers
 
@@ -37,7 +37,7 @@ Copiez les fichiers concernés vers un stockage de sauvegarde protégé, en cons
 
 Avec la 2FA activée, conservez aussi `2fa_info.gws`, mais ne le confondez pas avec une clé de récupération indépendante. Il enregistre un identifiant utilisé avec le service 2FA de Ginger. Les mots de récupération et la phrase secrète d'origine restent la voie qui ne dépend pas du déchiffrement de ce fichier local particulier.
 
-<span id="choose-and-preserve-a-passphrase" aria-hidden="true"></span>
+<span id="choose-and-preserve-a-passphrase" data-ginger-heading="choisir-et-conserver-une-phrase-secrète" aria-hidden="true"></span>
 
 ## Choisir et conserver une phrase secrète
 
@@ -51,7 +51,7 @@ Pour un portefeuille logiciel Ginger, la phrase secrète protège aussi le secre
 
 Pour la compatibilité des comptes, l'importation de fichiers ou une analyse ayant manqué des adresses, consultez [les options de récupération avancées](/fr/backup-recovery/recovery-options/).
 
-<span id="a-single-private-key-is-not-the-full-recovery-backup" aria-hidden="true"></span>
+<span id="a-single-private-key-is-not-the-full-recovery-backup" data-ginger-heading="une-seule-clé-privée-ne-constitue-pas-une-sauvegarde-complète" aria-hidden="true"></span>
 
 ## Une seule clé privée ne constitue pas une sauvegarde complète
 

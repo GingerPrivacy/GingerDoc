@@ -13,7 +13,7 @@ next: false
 
 Utilisez **Settings** pour les préférences communes à toute l'application et **Wallet Settings** pour le nom, la configuration CoinJoin et les outils du portefeuille sélectionné. La recherche de l'application permet de trouver des actions telles que **Data Folder**, **Wallet Info** et **Discreet Mode** sans dépendre de la position d'une icône.
 
-<span id="language-and-amounts" aria-hidden="true"></span>
+<span id="language-and-amounts" data-ginger-heading="langue-et-montants" aria-hidden="true"></span>
 
 ## Langue et montants
 
@@ -21,7 +21,7 @@ Dans **Settings** → **Appearance**, **Language** sélectionne la langue de l'i
 
 **Dark mode** change l'apparence. **Exchange currency** modifie la monnaie fiduciaire de référence affichée, tandis que les séparateurs décimaux et de groupes, le regroupement des fractions de bitcoin et **Fee display unit** contrôlent la présentation des nombres. Ces réglages ne modifient ni le montant sous-jacent en BTC ni les frais de transaction du réseau. Lisez les exemples des réglages avant de saisir un montant dans un format qui ne vous est pas familier.
 
-<span id="discreet-mode" aria-hidden="true"></span>
+<span id="discreet-mode" data-ginger-heading="mode-discret" aria-hidden="true"></span>
 
 ## Mode discret
 
@@ -29,7 +29,7 @@ Utilisez **Discreet Mode** lorsque quelqu'un peut voir votre écran. Il masque l
 
 Le mode discret ne chiffre pas les fichiers, ne verrouille pas le portefeuille, n'arrête pas la signature et ne modifie pas la confidentialité sur la blockchain. Une personne ayant accès à l'ordinateur peut toujours interagir avec l'application. Utilisez le verrouillage de l'écran du système d'exploitation lorsque vous vous éloignez.
 
-<span id="general-settings" aria-hidden="true"></span>
+<span id="general-settings" data-ginger-heading="réglages-généraux" aria-hidden="true"></span>
 
 ## Réglages généraux
 
@@ -46,7 +46,7 @@ La commodité du presse-papiers n'authentifie pas le destinataire. D'autres appl
 
 Les pages externes utilisent le comportement réseau et de confidentialité du navigateur sélectionné. Un prestataire d'achat ou de vente peut demander des informations d'identification même si Ginger utilise Tor. Modifier une préférence d'affichage ou de navigateur ne change pas les données conservées par le prestataire.
 
-<span id="wallet-information-and-tools" aria-hidden="true"></span>
+<span id="wallet-information-and-tools" data-ginger-heading="informations-et-outils-du-portefeuille" aria-hidden="true"></span>
 
 ## Informations et outils du portefeuille
 

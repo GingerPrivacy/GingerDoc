@@ -13,7 +13,7 @@ next: false
 
 Le solde total du portefeuille peut contenir de nombreux coins distincts, avec des origines, des états de confirmation et des historiques de confidentialité différents. Le contrôle des coins vous aide à choisir lesquels dépenser. Il facilite aussi l'association accidentelle de fonds auparavant séparés ; utilisez-le donc dans un but précis.
 
-<span id="inspect-and-select-coins" aria-hidden="true"></span>
+<span id="inspect-and-select-coins" data-ginger-heading="examiner-et-sélectionner-les-coins" aria-hidden="true"></span>
 
 ## Examiner et sélectionner les coins
 
@@ -23,7 +23,7 @@ Choisissez **Send** → **Manual Control** pour travailler avec des coins indivi
 
 Conservez des étiquettes expliquant l'origine des fonds ou les personnes qui les connaissent déjà. Payer avec des coins déjà associés au même destinataire peut révéler moins d'informations nouvelles que de combiner des sources sans rapport. Une étiquette ne garantit pas en elle-même l'anonymat et n'empêche pas l'analyse de la blockchain par autrui.
 
-<span id="consolidation-and-small-coins" aria-hidden="true"></span>
+<span id="consolidation-and-small-coins" data-ginger-heading="consolidation-et-petits-coins" aria-hidden="true"></span>
 
 ## Consolidation et petits coins
 
@@ -33,7 +33,7 @@ Ne combinez pas automatiquement des coins sans rapport simplement pour obtenir u
 
 Envoyer des fonds vers votre portefeuille matériel est une transaction ordinaire sur la chaîne si vous utilisez **Send**. Obtenez et vérifiez une nouvelle adresse de réception du portefeuille matériel, puis examinez les frais et les coins sélectionnés dans le portefeuille logiciel. Le transfert lui-même reste visible sur la blockchain.
 
-<span id="read-transaction-history" aria-hidden="true"></span>
+<span id="read-transaction-history" data-ginger-heading="lire-lhistorique-des-transactions" aria-hidden="true"></span>
 
 ## Lire l'historique des transactions
 
@@ -43,7 +43,7 @@ Utilisez **Copy Transaction ID** pour identifier une transaction précise. Garde
 
 Vous pouvez examiner, trier et regrouper l'historique, et copier les identifiants de transaction. Cette version ne propose pas de commande de recherche de transactions ni d'exportation CSV dans cette procédure d'historique.
 
-<span id="speed-up-an-unconfirmed-transaction" aria-hidden="true"></span>
+<span id="speed-up-an-unconfirmed-transaction" data-ginger-heading="accélérer-une-transaction-non-confirmée" aria-hidden="true"></span>
 
 ## Accélérer une transaction non confirmée
 
@@ -51,7 +51,7 @@ Lorsque Ginger propose **Speed Up Transaction** pour une entrée de l'historique
 
 Votre portefeuille ne peut pas accélérer toutes les transactions. Il a besoin d'une structure de transaction prise en charge et d'un accès aux clés et aux fonds concernés. Des frais plus élevés augmentent l'incitation des mineurs ; ils ne garantissent pas une confirmation immédiate. Un remplacement peut changer l'identifiant de la transaction ; vérifiez donc l'historique actualisé lorsque vous vous coordonnez avec un destinataire.
 
-<span id="cancel-an-unconfirmed-transaction" aria-hidden="true"></span>
+<span id="cancel-an-unconfirmed-transaction" data-ginger-heading="annuler-une-transaction-non-confirmée" aria-hidden="true"></span>
 
 ## Annuler une transaction non confirmée
 

@@ -26,7 +26,7 @@ Apprenez d'abord le fonctionnement ordinaire du portefeuille. Vous n'avez besoin
 <span id="what-are-the-minimal-requirements-to-run-ginger" aria-hidden="true"></span>
 <span id="do-i-need-to-run-tor" aria-hidden="true"></span>
 
-<span id="1-install-the-real-application" aria-hidden="true"></span>
+<span id="1-install-the-real-application" data-ginger-heading="1-installer-la-véritable-application" aria-hidden="true"></span>
 
 ## 1. Installer la véritable application
 
@@ -38,7 +38,7 @@ Conservez les vérifications de téléchargement de ce guide. La [référence av
 
 <span id="what-is-the-password-used-for" aria-hidden="true"></span>
 
-<span id="2-create-a-wallet-and-make-its-backup" aria-hidden="true"></span>
+<span id="2-create-a-wallet-and-make-its-backup" data-ginger-heading="2-créer-un-portefeuille-et-sa-sauvegarde" aria-hidden="true"></span>
 
 ## 2. Créer un portefeuille et sa sauvegarde
 
@@ -50,7 +50,7 @@ N'y conservez pas un solde significatif avant que la sauvegarde soit lisible et 
 
 <span id="why-is-it-important-to-use-a-new-address-for-every-payment" aria-hidden="true"></span>
 
-<span id="3-receive-a-small-first-payment" aria-hidden="true"></span>
+<span id="3-receive-a-small-first-payment" data-ginger-heading="3-recevoir-un-premier-petit-paiement" aria-hidden="true"></span>
 
 ## 3. Recevoir un premier petit paiement
 
@@ -60,7 +60,7 @@ Générez une nouvelle adresse pour chaque paiement. Réutiliser une adresse fac
 
 Vérifiez l'adresse entière et le réseau avant l'autorisation du paiement. Ginger reçoit du Bitcoin on-chain ; le réseau d'un autre actif ou une facture Lightning ne sont pas interchangeables. Une confirmation signifie que la transaction a été incluse dans un bloc Bitcoin. Une capture d'écran du payeur ne suffit pas.
 
-<span id="4-make-a-small-first-payment" aria-hidden="true"></span>
+<span id="4-make-a-small-first-payment" data-ginger-heading="4-effectuer-un-premier-petit-paiement" aria-hidden="true"></span>
 
 ## 4. Effectuer un premier petit paiement
 
@@ -70,7 +70,7 @@ Les frais paient l'espace de transaction Bitcoin. Si une partie de l'argent sél
 
 Après une erreur de connexion, vérifiez l'historique avant de réessayer. Cela aide à éviter un double paiement si la première transaction a déjà été envoyée.
 
-<span id="5-decide-whether-to-use-coinjoin" aria-hidden="true"></span>
+<span id="5-decide-whether-to-use-coinjoin" data-ginger-heading="5-décider-dutiliser-coinjoin" aria-hidden="true"></span>
 
 ## 5. Décider d'utiliser CoinJoin
 
@@ -80,7 +80,7 @@ Vérifiez **Automatically start coinjoin** dans **Coinjoin Settings** du portefe
 
 Vous pouvez recevoir et effectuer des paiements ordinaires sans attendre un indicateur de confidentialité à 100 %. Vous n'avez pas non plus à régler tous les paramètres avancés pour commencer.
 
-<span id="you-have-finished-the-first-use-path" aria-hidden="true"></span>
+<span id="you-have-finished-the-first-use-path" data-ginger-heading="vous-avez-terminé-le-parcours-initial" aria-hidden="true"></span>
 
 ## Vous avez terminé le parcours initial
 

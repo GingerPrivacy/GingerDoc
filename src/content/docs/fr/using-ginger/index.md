@@ -11,7 +11,7 @@ next: false
 
 Commencez par un portefeuille sauvegardé et laissez finir la synchronisation avant de vous fier au solde. Réception, envoi ordinaire et CoinJoin sont trois actions distinctes.
 
-<span id="make-an-ordinary-payment" aria-hidden="true"></span>
+<span id="make-an-ordinary-payment" data-ginger-heading="effectuer-un-paiement-ordinaire" aria-hidden="true"></span>
 
 ## Effectuer un paiement ordinaire
 
@@ -19,7 +19,7 @@ Commencez par un portefeuille sauvegardé et laissez finir la synchronisation av
 2. [Envoyer du bitcoin](/fr/payments/send/) : saisissez destination et montant, puis vérifiez réception, monnaie rendue et frais avant confirmation.
 3. Vérifiez l'historique après envoi. Si le résultat est incertain, établissez ce qui s'est passé avant de payer à nouveau.
 
-<span id="choose-an-optional-feature" aria-hidden="true"></span>
+<span id="choose-an-optional-feature" data-ginger-heading="choisir-une-fonction-facultative" aria-hidden="true"></span>
 
 ## Choisir une fonction facultative
 
@@ -31,7 +31,7 @@ Commencez par un portefeuille sauvegardé et laissez finir la synchronisation av
 | Comparer les offres d'achat | [Acheter du bitcoin](/fr/using-ginger/buy/) |
 | Échanger via un prestataire | [Vendre du bitcoin](/fr/using-ginger/sell/) |
 
-<span id="when-you-need-more-detail" aria-hidden="true"></span>
+<span id="when-you-need-more-detail" data-ginger-heading="lorsque-vous-avez-besoin-de-détails" aria-hidden="true"></span>
 
 ## Lorsque vous avez besoin de détails
 

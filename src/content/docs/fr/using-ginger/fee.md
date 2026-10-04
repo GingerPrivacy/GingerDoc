@@ -17,7 +17,7 @@ next: false
 
 Pour les étapes d'un paiement ordinaire, commencez par [Envoyer des bitcoins](/fr/payments/send/). Cette référence explique plus en détail les réglages des frais et la monnaie rendue ; il n'est pas nécessaire de choisir un taux personnalisé pour chaque paiement.
 
-<span id="understand-the-fee" aria-hidden="true"></span>
+<span id="understand-the-fee" data-ginger-heading="comprendre-les-frais" aria-hidden="true"></span>
 
 ## Comprendre les frais
 
@@ -27,7 +27,7 @@ Utilisez le réglage des frais dans l'aperçu pour modifier le délai de confirm
 
 Lorsque les estimations automatiques sont indisponibles, Ginger peut tout de même proposer une saisie manuelle des frais. Si vous ne savez pas quel taux convient, il est préférable d'attendre le retour des estimations plutôt que de choisir au hasard un nombre très élevé. Les frais de transaction ordinaires et les frais de coordinateur CoinJoin sont distincts.
 
-<span id="change-is-still-your-bitcoin" aria-hidden="true"></span>
+<span id="change-is-still-your-bitcoin" data-ginger-heading="la-monnaie-rendue-reste-vos-bitcoins" aria-hidden="true"></span>
 
 ## La monnaie rendue reste vos bitcoins
 

@@ -13,13 +13,13 @@ next: false
 
 Commencez par [le guide CoinJoin courant](/fr/using-ginger/coinjoin/). Ginger gère automatiquement le protocole ; cette référence sert à comprendre un état ou une limite particulière.
 
-<span id="why-a-balance-may-not-be-eligible" aria-hidden="true"></span>
+<span id="why-a-balance-may-not-be-eligible" data-ginger-heading="pourquoi-un-solde-peut-ne-pas-être-admissible" aria-hidden="true"></span>
 
 ## Pourquoi un solde peut ne pas être admissible
 
 Aucun délai fixe ni solde minimum universel ne garantit la participation. L'admissibilité dépend des paramètres du tour, de la taille des coins, des confirmations, des frais, des exclusions et des paramètres du portefeuille. Un solde peut dépasser la valeur minimale d'une entrée tout en ne contenant aucun coin admissible économiquement.
 
-<span id="what-happens-during-a-round" aria-hidden="true"></span>
+<span id="what-happens-during-a-round" data-ginger-heading="ce-qui-se-passe-pendant-un-tour" aria-hidden="true"></span>
 
 ## Ce qui se passe pendant un tour
 
@@ -34,7 +34,7 @@ Aucun délai fixe ni solde minimum universel ne garantit la participation. L'adm
 
 L'application gère ces phases ; vous n'avez pas à échanger des clés ni à vous coordonner manuellement avec des inconnus. Le tour et la sélection des coins déterminent le nombre d'entrées acceptées et de sorties produites. Il n'existe aucun nombre fixe d'entrées ou de sorties à attendre pour chaque portefeuille, et son solde total ne garantit pas qu'il puisse participer intégralement à un seul tour.
 
-<span id="private-coins-and-another-output-wallet" aria-hidden="true"></span>
+<span id="private-coins-and-another-output-wallet" data-ginger-heading="coins-privés-et-autre-portefeuille-de-sortie" aria-hidden="true"></span>
 
 ## Coins privés et autre portefeuille de sortie
 

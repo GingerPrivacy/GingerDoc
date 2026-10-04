@@ -13,7 +13,7 @@ next: false
 
 Recevoir publiquement n'exige pas de publier toutes les adresses du portefeuille. Il faut décider ce que chaque payeur ou visiteur verra, puis séparer les réceptions sans rapport lorsque c'est utile. Ginger permet la réception on-chain ordinaire et les étiquettes locales ; ce n'est pas un serveur de facturation ni un service automatique de rotation d'adresses web.
 
-<span id="choose-how-to-give-out-addresses" aria-hidden="true"></span>
+<span id="choose-how-to-give-out-addresses" data-ginger-heading="choisir-comment-communiquer-les-adresses" aria-hidden="true"></span>
 
 ## Choisir comment communiquer les adresses
 
@@ -25,7 +25,7 @@ Recevoir publiquement n'exige pas de publier toutes les adresses du portefeuille
 
 Les réceptions d'une adresse publique ne représentent pas nécessairement le solde total, le revenu ou le nombre de donateurs du propriétaire. On peut s'envoyer du bitcoin, un donateur peut payer plusieurs fois et d'autres adresses peuvent exister. N'en déduisez pas davantage que ce que les transactions établissent.
 
-<span id="receive-and-keep-useful-records" aria-hidden="true"></span>
+<span id="receive-and-keep-useful-records" data-ginger-heading="recevoir-et-conserver-des-enregistrements-utiles" aria-hidden="true"></span>
 
 ## Recevoir et conserver des enregistrements utiles
 
@@ -37,7 +37,7 @@ Les réceptions d'une adresse publique ne représentent pas nécessairement le s
 
 Les étiquettes sont locales ; elles ne sont pas publiées comme noms dans la transaction. Mais quiconque lit fichiers, sauvegardes ou écran partagé peut les voir. Gardez assez de détail pour comprendre les sélections futures sans collecter inutilement des données personnelles sur les donateurs.
 
-<span id="handle-a-permanently-published-address" aria-hidden="true"></span>
+<span id="handle-a-permanently-published-address" data-ginger-heading="gérer-une-adresse-publiée-en-permanence" aria-hidden="true"></span>
 
 ## Gérer une adresse publiée en permanence
 
@@ -47,7 +47,7 @@ CoinJoin peut réduire les liens vers les dépenses ultérieures selon ses hypot
 
 Pour abonnement ou paiements clients répétés, communiquez si possible une nouvelle destination à chaque échéance. Ginger ne révoque pas l'ancienne adresse et n'oblige pas le payeur à suivre la mise à jour. Rapprochez paiements tardifs et doublons avant de promettre un remboursement.
 
-<span id="refund-the-payer-through-a-verified-destination" aria-hidden="true"></span>
+<span id="refund-the-payer-through-a-verified-destination" data-ginger-heading="rembourser-vers-une-destination-vérifiée" aria-hidden="true"></span>
 
 ## Rembourser vers une destination vérifiée
 
@@ -60,7 +60,7 @@ N'envoyez pas automatiquement le remboursement vers une entrée du paiement d'or
 
 Un remboursement est un nouveau paiement on-chain. Il n'annule pas la réception ni ses enregistrements. Considérez ce qu'il révèle sur les coins dépensés.
 
-<span id="keep-receipt-handling-deliberate" aria-hidden="true"></span>
+<span id="keep-receipt-handling-deliberate" data-ginger-heading="gérer-les-réceptions-de-façon-réfléchie" aria-hidden="true"></span>
 
 ## Gérer les réceptions de façon réfléchie
 

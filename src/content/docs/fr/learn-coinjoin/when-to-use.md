@@ -13,7 +13,7 @@ next: false
 
 CoinJoin est utile lorsque réduire les liens transactionnels répond à une préoccupation réelle. Il l'est moins si le problème principal est une phrase volée, un ordinateur compromis ou une information que vous allez divulguer directement à un prestataire.
 
-<span id="start-with-a-concrete-objective" aria-hidden="true"></span>
+<span id="start-with-a-concrete-objective" data-ginger-heading="commencer-par-un-objectif-concret" aria-hidden="true"></span>
 
 ## Commencer par un objectif concret
 
@@ -21,7 +21,7 @@ Vous pouvez vouloir qu'un futur destinataire voie moins directement l'historique
 
 Si votre objectif est simplement de protéger les clés pendant la détention de bitcoin, une sauvegarde récupérable et un parcours matériel adapté y répondent plus directement. Si votre souci est une adresse publique réutilisée pour chaque facture, arrêtez d'abord la réutilisation ; CoinJoin ultérieur ne rend pas les anciennes réceptions privées.
 
-<span id="compare-the-tradeoffs" aria-hidden="true"></span>
+<span id="compare-the-tradeoffs" data-ginger-heading="comparer-les-compromis" aria-hidden="true"></span>
 
 ## Comparer les compromis
 
@@ -36,7 +36,7 @@ Si votre objectif est simplement de protéger les clés pendant la détention de
 
 Ce sont des compromis, pas une recommandation de déplacer un montant précis ni une assurance financière. Apprenez avec un montant petit et gérable et rapprochez les frais avant d'accroître votre exposition.
 
-<span id="set-a-cost-and-attention-budget" aria-hidden="true"></span>
+<span id="set-a-cost-and-attention-budget" data-ginger-heading="définir-un-budget-de-coût-et-dattention" aria-hidden="true"></span>
 
 ## Définir un budget de coût et d'attention
 
@@ -44,7 +44,7 @@ Examinez les deux composantes des frais et les tours répétés. Décidez combie
 
 Le seuil d'arrêt de Ginger peut empêcher certaines participations automatiques non économiques. La préférence temporelle et le seuil de frais réduisent la participation lorsque les conditions sont coûteuses. Ces réglages ne plafonnent pas universellement le total dépensé sur plusieurs tours.
 
-<span id="plan-the-next-spend" aria-hidden="true"></span>
+<span id="plan-the-next-spend" data-ginger-heading="préparer-la-prochaine-dépense" aria-hidden="true"></span>
 
 ## Préparer la prochaine dépense
 
@@ -52,7 +52,7 @@ Demandez une nouvelle destination, conservez des étiquettes locales utiles et v
 
 Ne considérez pas l'acceptation annoncée d'un prestataire comme permanente. Un service peut changer sa politique ou poser des questions sur un transfert. Ginger ne peut certifier l'acceptation future ni garantir que CoinJoin supprime tous les liens historiques.
 
-<span id="try-the-released-workflow-deliberately" aria-hidden="true"></span>
+<span id="try-the-released-workflow-deliberately" data-ginger-heading="essayer-délibérément-le-parcours-publié" aria-hidden="true"></span>
 
 ## Essayer délibérément le parcours publié
 

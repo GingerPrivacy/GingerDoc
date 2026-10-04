@@ -13,7 +13,7 @@ next: false
 
 Une routine de sécurité utile protège contre les accès non autorisés tout en laissant un chemin compréhensible pour une récupération légitime. Ajouter des secrets sans documenter leurs rôles peut augmenter le risque de perte accidentelle.
 
-<span id="record-the-recovery-plan" aria-hidden="true"></span>
+<span id="record-the-recovery-plan" data-ginger-heading="consigner-le-plan-de-récupération" aria-hidden="true"></span>
 
 ## Consigner le plan de récupération
 
@@ -23,7 +23,7 @@ Préservez suffisamment d'informations sur les conventions du portefeuille pour 
 
 Si vous souhaitez qu'une autre personne récupère les fonds après une incapacité ou un décès, organisez un plan d'accès clair, testé et adapté à votre situation. Évitez de partager à la légère tous les secrets dès maintenant ou de supposer que cette personne devinera quel mot de passe vous vouliez dire. Les dispositions successorales et d'accès peuvent avoir des implications juridiques nécessitant un conseil professionnel local ; cette page ne prescrit pas de structure juridique.
 
-<span id="check-before-funding-and-before-signing" aria-hidden="true"></span>
+<span id="check-before-funding-and-before-signing" data-ginger-heading="vérifier-avant-dalimenter-le-portefeuille-et-avant-de-signer" aria-hidden="true"></span>
 
 ## Vérifier avant d'alimenter le portefeuille et avant de signer
 
@@ -33,7 +33,7 @@ Utilisez un petit montant pour apprendre une nouvelle procédure. Rapprochez ce 
 
 Maintenez l'ordinateur et l'appareil de signature à jour via des sources authentifiées. Un avis de mise à jour dans un message privé ne prouve pas qu'un fichier est légitime. N'installez jamais de « logiciel de récupération » et n'autorisez jamais le contrôle à distance simplement parce qu'un inconnu affirme que vos coins ont besoin d'une synchronisation.
 
-<span id="understand-ginger-2fa" aria-hidden="true"></span>
+<span id="understand-ginger-2fa" data-ginger-heading="comprendre-la-2fa-de-ginger" aria-hidden="true"></span>
 
 ## Comprendre la 2FA de Ginger
 
@@ -41,7 +41,7 @@ La 2FA facultative de Ginger ajoute un chiffrement local des fichiers de portefe
 
 Gardez les mots de récupération et la phrase secrète d'origine disponibles de façon indépendante. Ne supposez pas que `2fa_info.gws` est une clé maîtresse de récupération hors ligne. Ne supposez pas non plus que la 2FA arrêtera un attaquant qui possède déjà les mots et la phrase secrète, ou qu'elle empêchera une transaction autorisée depuis une application déverrouillée.
 
-<span id="first-identify-what-was-exposed" aria-hidden="true"></span>
+<span id="first-identify-what-was-exposed" data-ginger-heading="identifier-dabord-ce-qui-a-été-exposé" aria-hidden="true"></span>
 
 ## Identifier d'abord ce qui a été exposé
 
@@ -60,7 +60,7 @@ Une clé publique étendue ne montre pas nécessairement tous les comptes d'un a
 
 Si seuls les mots de récupération ont été divulgués et que vous utilisiez une phrase secrète séparée, le risque dépend aussi du maintien de son secret et de sa difficulté à deviner. Ne supposez pas qu'une phrase secrète inconnue ou faible rende la sauvegarde exposée sûre indéfiniment. Si les éléments sont incomplets et que l'exposition pourrait autoriser des dépenses, appliquez la réponse à l'exposition de clés.
 
-<span id="respond-to-exposed-signing-keys" aria-hidden="true"></span>
+<span id="respond-to-exposed-signing-keys" data-ginger-heading="réagir-à-lexposition-des-clés-de-signature" aria-hidden="true"></span>
 
 ## Réagir à l'exposition des clés de signature
 
@@ -76,7 +76,7 @@ Déplacer les fonds peut créer un lien observable sur la chaîne. Préserver le
 
 Gardez les registres nécessaires privés pendant l'enquête. Ne donnez jamais à un prétendu agent de support vos mots de récupération, la phrase secrète, une copie sans restriction des fichiers du portefeuille ou l'accès à l'appareil de remplacement. Il n'est pas nécessaire de « valider » de nouveaux mots de récupération sur un site web.
 
-<span id="respond-to-a-privacy-only-disclosure" aria-hidden="true"></span>
+<span id="respond-to-a-privacy-only-disclosure" data-ginger-heading="réagir-à-une-divulgation-concernant-seulement-la-confidentialité" aria-hidden="true"></span>
 
 ## Réagir à une divulgation concernant seulement la confidentialité
 
@@ -86,7 +86,7 @@ Pour une xpub divulguée, déterminez d'abord quel compte elle couvre. Continuer
 
 Pour des registres divulgués, limitez les accès supplémentaires et évaluez ce qu'ils révèlent ensemble. Un identifiant de transaction associé à un nom de client révèle plus que chacun séparément. Ne publiez pas la fuite complète pour démontrer le problème.
 
-<span id="keep-privacy-separate-from-key-protection" aria-hidden="true"></span>
+<span id="keep-privacy-separate-from-key-protection" data-ginger-heading="distinguer-confidentialité-et-protection-des-clés" aria-hidden="true"></span>
 
 ## Distinguer confidentialité et protection des clés
 

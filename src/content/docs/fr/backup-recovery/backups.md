@@ -13,7 +13,7 @@ next: false
 
 Pour un portefeuille logiciel Ginger, conservez les mots de récupération et la phrase secrète d'origine exacte, si vous en avez utilisé une. Ils permettent de retrouver l'accès après la perte de l'ordinateur. Un portefeuille matériel utilise la procédure de sauvegarde de son appareil ; gardez ses mots hors de l'ordinateur.
 
-<span id="the-backup-you-need-first" aria-hidden="true"></span>
+<span id="the-backup-you-need-first" data-ginger-heading="la-sauvegarde-dont-vous-avez-besoin-en-premier" aria-hidden="true"></span>
 
 ## La sauvegarde dont vous avez besoin en premier
 
@@ -24,7 +24,7 @@ Pour un portefeuille logiciel Ginger, conservez les mots de récupération et la
 
 Le nom du portefeuille n'est pas un secret de récupération. Un code d'authentification ou un PIN matériel ne remplace pas les mots et la phrase secrète d'origine.
 
-<span id="store-recovery-information-safely" aria-hidden="true"></span>
+<span id="store-recovery-information-safely" data-ginger-heading="stocker-les-informations-de-récupération-en-sécurité" aria-hidden="true"></span>
 
 ## Stocker les informations de récupération en sécurité
 
@@ -34,7 +34,7 @@ Assurez aussi la récupération d'une phrase secrète non vide. La mémorisation
 
 Un mot de passe d'application, un PIN d'appareil, un code d'authentification et une phrase secrète BIP39 ne sont pas interchangeables. Étiquetez clairement vos instructions de sauvegarde sans révéler les secrets à un lecteur non autorisé.
 
-<span id="choose-something-durable-and-readable" aria-hidden="true"></span>
+<span id="choose-something-durable-and-readable" data-ginger-heading="choisir-un-support-durable-et-lisible" aria-hidden="true"></span>
 
 ## Choisir un support durable et lisible
 
@@ -42,7 +42,7 @@ Le papier peut être endommagé par le feu, l'eau ou la décoloration. Le métal
 
 Évitez les photographies, les notes cloud ordinaires et les imprimantes pour les mots de récupération : elles peuvent laisser des copies hors de votre contrôle. Si vous conservez plusieurs copies, protégez-les et suivez chacune d'elles. Ne divisez pas les mots en une énigme improvisée que vous pourriez être incapable de reconstituer.
 
-<span id="check-the-backup-before-you-need-it" aria-hidden="true"></span>
+<span id="check-the-backup-before-you-need-it" data-ginger-heading="vérifier-la-sauvegarde-avant-den-avoir-besoin" aria-hidden="true"></span>
 
 ## Vérifier la sauvegarde avant d'en avoir besoin
 
@@ -52,7 +52,7 @@ Si les mots ne sont pas validés, vérifiez leur orthographe et leur ordre en pr
 
 Sauvegardez à nouveau les métadonnées locales après des changements importants d'étiquettes ou de paramètres. Recevoir davantage de bitcoin ne nécessite normalement pas un nouvel ensemble de mots ; un nouveau portefeuille ou une phrase secrète différente, si.
 
-<span id="what-about-labels-and-computer-files" aria-hidden="true"></span>
+<span id="what-about-labels-and-computer-files" data-ginger-heading="et-les-étiquettes-et-les-fichiers-de-lordinateur-" aria-hidden="true"></span>
 
 ## Et les étiquettes et les fichiers de l'ordinateur ?
 

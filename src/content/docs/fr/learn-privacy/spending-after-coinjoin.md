@@ -15,7 +15,7 @@ CoinJoin change l'incertitude sur les liens entre entrées et sorties. La transa
 
 Les exemples utilisent des montants fictifs en satoshis. Les frais servent aux calculs, pas de cotation réseau. Un coin est une sortie non dépensée, ou UTXO ; ce n'est ni un portefeuille ni une adresse.
 
-<span id="start-with-the-payment-you-need-to-make" aria-hidden="true"></span>
+<span id="start-with-the-payment-you-need-to-make" data-ginger-heading="commencer-par-le-paiement-nécessaire" aria-hidden="true"></span>
 
 ## Commencer par le paiement nécessaire
 
@@ -23,7 +23,7 @@ Dans Ginger, ouvrez **Wallet Coins** pour voir montants, étiquettes et confiden
 
 La sélection automatique et les suggestions peuvent aussi aider. Le contrôle manuel est utile lorsque vous savez ce que le portefeuille ignore, comme quel client reconnaît déjà une réception. Il n'est pas intrinsèquement meilleur pour tout paiement.
 
-<span id="example-1-one-coin-covers-a-purchase" aria-hidden="true"></span>
+<span id="example-1-one-coin-covers-a-purchase" data-ginger-heading="exemple-1--un-coin-couvre-un-achat" aria-hidden="true"></span>
 
 ## Exemple 1 : un coin couvre un achat
 
@@ -40,7 +40,7 @@ Le marchand connaît adresse et montant du paiement. Il peut examiner la transac
 
 Alex n'a pas à renvoyer ce rendu manuellement : il appartient déjà au portefeuille. Le point utile à vérifier est sa prochaine dépense.
 
-<span id="example-2-two-unrelated-receipts-are-combined" aria-hidden="true"></span>
+<span id="example-2-two-unrelated-receipts-are-combined" data-ginger-heading="exemple-2--deux-réceptions-sans-rapport-sont-combinées" aria-hidden="true"></span>
 
 ## Exemple 2 : deux réceptions sans rapport sont combinées
 
@@ -52,7 +52,7 @@ Si Blair a un autre coin suffisant déjà lié à la même activité, il peut r�
 
 CoinJoin et PayJoin sont collaboratifs : supposer un seul propriétaire de toutes les entrées n'est pas universellement valable. Gardez cette distinction en interprétant une transaction.
 
-<span id="example-3-change-carries-a-connection-forward" aria-hidden="true"></span>
+<span id="example-3-change-carries-a-connection-forward" data-ginger-heading="exemple-3--le-rendu-prolonge-un-lien" aria-hidden="true"></span>
 
 ## Exemple 3 : le rendu prolonge un lien
 
@@ -62,7 +62,7 @@ Le premier marchand voit son probable rendu dépensé avec l'entrée de 60,000. 
 
 Gardez le contexte par des étiquettes pour vos décisions futures. Ces notes locales ne publient pas un nom dans la blockchain et n'empêchent pas les déductions.
 
-<span id="example-4-moving-the-entire-balance-to-hardware" aria-hidden="true"></span>
+<span id="example-4-moving-the-entire-balance-to-hardware" data-ginger-heading="exemple-4--déplacer-tout-le-solde-vers-le-matériel" aria-hidden="true"></span>
 
 ## Exemple 4 : déplacer tout le solde vers le matériel
 
@@ -72,7 +72,7 @@ Le matériel isole mieux les clés, mais le transfert expose une dépense commun
 
 Ne dépensez pas tout simplement parce que la liste paraît désordonnée. La consolidation réduit parfois le nombre d'entrées futures, mais un faible taux de frais change le coût, pas la divulgation.
 
-<span id="other-participants-and-future-observations-matter" aria-hidden="true"></span>
+<span id="other-participants-and-future-observations-matter" data-ginger-heading="les-autres-participants-et-observations-futures-comptent" aria-hidden="true"></span>
 
 ## Les autres participants et observations futures comptent
 
@@ -80,7 +80,7 @@ Votre comportement n'est pas la seule influence. Les transactions ultérieures d
 
 Aucun nombre universel de tours ni délai ne garantit la confidentialité. Attendre n'efface pas les informations divulguées à un marchand identifié, une plateforme ou un autre service de portefeuille.
 
-<span id="a-short-review-before-confirming" aria-hidden="true"></span>
+<span id="a-short-review-before-confirming" data-ginger-heading="vérification-courte-avant-confirmation" aria-hidden="true"></span>
 
 ## Vérification courte avant confirmation
 

@@ -13,7 +13,7 @@ next: false
 
 PayJoin et la signature de messages sont deux outils distincts. PayJoin modifie la construction d'une transaction de paiement. La signature d'un message prouve le contrôle d'une clé pour une déclaration précise, sans effectuer de paiement. Aucune de ces fonctions ne doit servir de prétexte pour divulguer vos mots de récupération.
 
-<span id="send-a-payjoin-request" aria-hidden="true"></span>
+<span id="send-a-payjoin-request" data-ginger-heading="envoyer-une-demande-payjoin" aria-hidden="true"></span>
 
 ## Envoyer une demande PayJoin
 
@@ -30,7 +30,7 @@ Utilisez un point de terminaison HTTPS compatible pour le réseau principal. Dan
 
 Ce guide couvre l'envoi d'une demande fournie par le destinataire. La procédure ordinaire **Receive** de Ginger n'exploite pas de serveur de réception PayJoin, et cette version ne fournit pas de procédure permettant à l'utilisateur d'en configurer un.
 
-<span id="what-the-recipient-and-an-observer-learn" aria-hidden="true"></span>
+<span id="what-the-recipient-and-an-observer-learn" data-ginger-heading="ce-quapprennent-le-destinataire-et-un-observateur" aria-hidden="true"></span>
 
 ## Ce qu'apprennent le destinataire et un observateur
 
@@ -40,7 +40,7 @@ Un observateur extérieur voit la transaction finalement publiée sur Bitcoin. U
 
 Distinguez ces publics. Un destinataire peut apprendre des détails grâce à la commande ou à la négociation même si un observateur sans rapport ne peut pas attribuer avec certitude les entrées de la transaction. Un explorateur public de transactions peut entraîner une divulgation supplémentaire si vous consultez le paiement depuis une session de navigateur identifiée.
 
-<span id="wallet-fingerprints-and-the-ordinary-payment-fallback" aria-hidden="true"></span>
+<span id="wallet-fingerprints-and-the-ordinary-payment-fallback" data-ginger-heading="empreintes-de-portefeuille-et-repli-sur-un-paiement-ordinaire" aria-hidden="true"></span>
 
 ## Empreintes de portefeuille et repli sur un paiement ordinaire
 
@@ -50,7 +50,7 @@ En tant qu'utilisateur, choisissez un service de réception à jour et compatibl
 
 Si vous exigez un paiement collaboratif, convenez d'une méthode compatible avec le destinataire avant d'autoriser l'envoi dans Ginger. Son repli sur un paiement ordinaire signifie qu'une négociation échouée peut quand même produire un paiement valide. Après la diffusion, n'envoyez pas à nouveau simplement parce que le résultat est incertain ; vérifiez d'abord la transaction et l'état du paiement auprès du destinataire. Un échec de négociation PayJoin et un échec de paiement Bitcoin sont des situations différentes.
 
-<span id="sign-a-message-for-an-address" aria-hidden="true"></span>
+<span id="sign-a-message-for-an-address" data-ginger-heading="signer-un-message-pour-une-adresse" aria-hidden="true"></span>
 
 ## Signer un message pour une adresse
 

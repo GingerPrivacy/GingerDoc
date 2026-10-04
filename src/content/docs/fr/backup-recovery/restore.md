@@ -13,7 +13,7 @@ next: false
 
 La récupération recherche les clés et leur historique de transactions. Avant de commencer, préservez les fichiers du portefeuille de l'ancien ordinateur si vous y avez accès. Travaillez sur des copies et conservez les originaux jusqu'à avoir vérifié le portefeuille récupéré.
 
-<span id="recover-from-words" aria-hidden="true"></span>
+<span id="recover-from-words" data-ginger-heading="récupérer-depuis-les-mots" aria-hidden="true"></span>
 
 ## Récupérer depuis les mots
 
@@ -25,7 +25,7 @@ La récupération recherche les clés et leur historique de transactions. Avant 
 
 Des phrases secrètes différentes dérivent des portefeuilles valides différents. Une faute de frappe peut donc produire un portefeuille vide sans erreur « mauvaise phrase secrète » lors de la récupération depuis la seed. Vérifiez majuscules, espaces, disposition du clavier et sauvegarde d'origine avant de conclure à la disparition des fonds.
 
-<span id="an-apparently-empty-recovered-wallet" aria-hidden="true"></span>
+<span id="an-apparently-empty-recovered-wallet" data-ginger-heading="un-portefeuille-récupéré-apparemment-vide" aria-hidden="true"></span>
 
 ## Un portefeuille récupéré apparemment vide
 
@@ -37,7 +37,7 @@ Référence avancée facultative : [comptes, analyse des adresses et importation
 
 La récupération depuis les mots rétablit l'accès aux clés correspondantes. Les étiquettes privées et autres données locales peuvent nécessiter une sauvegarde de fichiers distincte.
 
-<span id="if-something-is-missing" aria-hidden="true"></span>
+<span id="if-something-is-missing" data-ginger-heading="si-quelque-chose-manque" aria-hidden="true"></span>
 
 ## Si quelque chose manque
 

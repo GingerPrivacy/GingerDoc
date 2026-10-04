@@ -13,7 +13,7 @@ next: false
 
 Ginger ne peut pas annuler un paiement Bitcoin confirmé. Avant de confirmer, vérifiez le destinataire par un canal de confiance et examinez la destination complète, le montant et les frais. Commencez par un petit paiement lorsque vous découvrez une nouvelle procédure.
 
-<span id="prepare-a-payment" aria-hidden="true"></span>
+<span id="prepare-a-payment" data-ginger-heading="préparer-un-paiement" aria-hidden="true"></span>
 
 ## Préparer un paiement
 
@@ -26,7 +26,7 @@ Ginger ne peut pas annuler un paiement Bitcoin confirmé. Avant de confirmer, v�
 
 L'envoi de tous les fonds disponibles peut déduire les frais du montant reçu par le destinataire. Les demandes à montant fixe et PayJoin ont des contraintes différentes. L'aperçu est l'endroit où vérifier le montant réellement reçu, plutôt que de supposer que tout le solde du portefeuille arrivera à destination.
 
-<span id="check-the-fee-without-custom-settings" aria-hidden="true"></span>
+<span id="check-the-fee-without-custom-settings" data-ginger-heading="vérifier-les-frais-sans-réglages-personnalisés" aria-hidden="true"></span>
 
 ## Vérifier les frais sans réglages personnalisés
 
@@ -34,7 +34,7 @@ Examinez les frais totaux et la préférence de confirmation estimée dans l'ape
 
 Utilisez une estimation de frais disponible que vous comprenez. Si aucune estimation n'est disponible et que vous ne savez pas quoi choisir, attendez et renseignez-vous plutôt que de deviner un montant de frais personnalisés très élevé.
 
-<span id="the-leftover-money-is-change" aria-hidden="true"></span>
+<span id="the-leftover-money-is-change" data-ginger-heading="largent-restant-est-la-monnaie-rendue" aria-hidden="true"></span>
 
 ## L'argent restant est la monnaie rendue
 
@@ -44,7 +44,7 @@ Une suggestion de confidentialité peut modifier le montant proposé pour le des
 
 Référence avancée facultative : [taux de frais personnalisés et monnaie rendue](/fr/using-ginger/fee/) ou [contrôle manuel des coins et historique des transactions](/fr/payments/coin-control-history/).
 
-<span id="when-a-payment-cannot-be-prepared" aria-hidden="true"></span>
+<span id="when-a-payment-cannot-be-prepared" data-ginger-heading="quand-un-paiement-ne-peut-pas-être-préparé" aria-hidden="true"></span>
 
 ## Quand un paiement ne peut pas être préparé
 

@@ -15,7 +15,7 @@ Les transactions Bitcoin sont publiques, mais le nom du propriétaire n'est pas 
 
 Un client peut connaître l'adresse de facture fournie. Une plateforme peut connaître votre adresse de retrait et votre identité vérifiée. Un observateur d'une adresse de dons publique voit ses réceptions. Ces personnes partent d'informations différentes ; pensez à une divulgation contrôlée plutôt qu'à un seul interrupteur anonyme/non anonyme.
 
-<span id="what-the-blockchain-reveals" aria-hidden="true"></span>
+<span id="what-the-blockchain-reveals" data-ginger-heading="ce-que-révèle-la-blockchain" aria-hidden="true"></span>
 
 ## Ce que révèle la blockchain
 
@@ -23,7 +23,7 @@ Les transactions montrent entrées, sorties, valeurs et relations de dépense. U
 
 Une fois l'adresse associée à une personne, l'activité reliée peut être étudiée. Certains liens sont directs, comme les paiements répétés à une adresse. D'autres supposent propriété commune des entrées ou identification du rendu. Ces hypothèses peuvent être erronées mais influencer la classification par les services.
 
-<span id="who-can-learn-what" aria-hidden="true"></span>
+<span id="who-can-learn-what" data-ginger-heading="qui-peut-apprendre-quoi-" aria-hidden="true"></span>
 
 ## Qui peut apprendre quoi ?
 
@@ -38,7 +38,7 @@ Une fois l'adresse associée à une personne, l'activité reliée peut être ét
 
 Aucun paramètre unique ne traite toutes les lignes. Le matériel protège les clés sans cacher une adresse publique. Tor protège la connexion sans cacher ce que vous saisissez dans le formulaire d'un prestataire.
 
-<span id="why-this-matters-in-ordinary-life" aria-hidden="true"></span>
+<span id="why-this-matters-in-ordinary-life" data-ginger-heading="pourquoi-cela-compte-dans-la-vie-courante" aria-hidden="true"></span>
 
 ## Pourquoi cela compte dans la vie courante
 
@@ -48,7 +48,7 @@ Payer depuis des fonds associés à une campagne publique de dons peut révéler
 
 La confidentialité financière peut protéger les clients, les informations commerciales, les relations personnelles et la sécurité physique. Vouloir ces limites ne nécessite pas d'avoir mal agi. La question pertinente est de savoir si l'autre personne a besoin des informations pour terminer l'interaction.
 
-<span id="privacy-and-fungibility" aria-hidden="true"></span>
+<span id="privacy-and-fungibility" data-ginger-heading="confidentialité-et-fongibilité" aria-hidden="true"></span>
 
 ## Confidentialité et fongibilité
 
@@ -56,7 +56,7 @@ La fongibilité signifie échanger les unités selon des conditions équivalente
 
 Les outils de confidentialité rendent certaines classifications historiques plus difficiles à établir avec certitude. Ils ne peuvent imposer l'acceptation ou effacer les registres déjà détenus. Prudence avec les « coins propres » ou l'acceptation garantie : estimation du portefeuille et politique du service sont deux choses distinctes.
 
-<span id="where-ginger-fits" aria-hidden="true"></span>
+<span id="where-ginger-fits" data-ginger-heading="la-place-de-ginger" aria-hidden="true"></span>
 
 ## La place de Ginger
 

@@ -31,7 +31,7 @@ next: false
 
 Une vente échange du bitcoin contre la méthode de paiement offerte par un prestataire. Ginger obtient les offres et prépare l'on-chain, mais le prestataire contrôle le versement fiat et l'examen de commande. Lisez ses exigences avant d'engager les fonds.
 
-<span id="create-and-fund-a-sale" aria-hidden="true"></span>
+<span id="create-and-fund-a-sale" data-ginger-heading="créer-et-financer-une-vente" aria-hidden="true"></span>
 
 ## Créer et financer une vente
 
@@ -45,7 +45,7 @@ Une vente échange du bitcoin contre la méthode de paiement offerte par un pres
 
 Le dialogue conserve le contexte sans supprimer votre responsabilité de comparer demande et aperçu. Si le devis expire avant envoi, obtenez une instruction actualisée plutôt que de payer spéculativement une ancienne adresse.
 
-<span id="understand-status" aria-hidden="true"></span>
+<span id="understand-status" data-ginger-heading="comprendre-létat" aria-hidden="true"></span>
 
 ## Comprendre l'état
 
@@ -61,7 +61,7 @@ Le dialogue conserve le contexte sans supprimer votre responsabilité de compare
 
 Les états reflètent la dernière information de l'intégration et peuvent retarder les événements. Une indication d'attente sur **Buy** ou **Sell** signale une commande nécessitant attention ; pas une clé perdue.
 
-<span id="which-support-channel-to-use" aria-hidden="true"></span>
+<span id="which-support-channel-to-use" data-ginger-heading="quelle-assistance-contacter" aria-hidden="true"></span>
 
 ## Quelle assistance contacter
 
@@ -69,7 +69,7 @@ Pour identité, retard de versement, méthodes acceptées, remboursement ou atte
 
 Pour crash Ginger, navigateur qui ne s'ouvre pas ou commande mal affichée, signalez version, système, erreur et étapes via les liens officiels. N'incluez pas mots, phrases, secrets 2FA, fichiers ou journaux complets sans en avoir examiné le contenu.
 
-<span id="privacy-and-fees" aria-hidden="true"></span>
+<span id="privacy-and-fees" data-ginger-heading="confidentialité-et-frais" aria-hidden="true"></span>
 
 ## Confidentialité et frais
 

@@ -13,7 +13,7 @@ next: false
 
 **Coinjoin Settings** s'applique au portefeuille sélectionné. Modifiez un seul paramètre à la fois et observez son effet. Des réglages plus exigeants peuvent augmenter les frais ou l'attente sans améliorer la confidentialité pertinente dans votre situation.
 
-<span id="automatic-participation-and-cost-preferences" aria-hidden="true"></span>
+<span id="automatic-participation-and-cost-preferences" data-ginger-heading="participation-automatique-et-préférences-de-coût" aria-hidden="true"></span>
 
 ## Participation automatique et préférences de coût
 
@@ -27,7 +27,7 @@ next: false
 
 Lorsque le lecteur signale un solde non économique, appuyer sur lecture peut contourner le seuil d'arrêt. Cela ne supprime pas les frais de transaction. Évaluez la taille des coins disponibles et les coûts attendus avant de le contourner.
 
-<span id="privacy-settings" aria-hidden="true"></span>
+<span id="privacy-settings" data-ginger-heading="paramètres-de-confidentialité" aria-hidden="true"></span>
 
 ## Paramètres de confidentialité
 
@@ -37,7 +37,7 @@ Lorsque le lecteur signale un solde non économique, appuyer sur lecture peut co
 
 Abaisser l'objectif peut immédiatement modifier ce que l'interface appelle privé sans changer la blockchain. Traitez les indicateurs comme des estimations et des règles, pas comme la preuve qu'un observateur extérieur a perdu toute information.
 
-<span id="exclude-specific-coins" aria-hidden="true"></span>
+<span id="exclude-specific-coins" data-ginger-heading="exclure-certains-coins" aria-hidden="true"></span>
 
 ## Exclure certains coins
 
@@ -45,7 +45,7 @@ Ouvrez **Exclude Coins** dans le menu du lecteur CoinJoin. Examinez la liste et 
 
 Exclure un coin de CoinJoin ne bloque pas sa dépense ordinaire et ne remplace pas le stockage matériel. Si tous les coins disponibles sont exclus, le lecteur peut afficher **Only excluded funds are available**. Vérifiez cette liste avant de changer les frais ou les paramètres de confidentialité.
 
-<span id="receive-outputs-in-another-wallet" aria-hidden="true"></span>
+<span id="receive-outputs-in-another-wallet" data-ginger-heading="recevoir-les-sorties-dans-un-autre-portefeuille" aria-hidden="true"></span>
 
 ## Recevoir les sorties dans un autre portefeuille
 
@@ -60,7 +60,7 @@ La destination ne peut pas être changée pendant un CoinJoin actif. **Cette sé
 
 La sélection de destination de cette version peut inclure un portefeuille matériel chargé. La source reste le portefeuille logiciel qui signe CoinJoin ; une destination matérielle ne transforme pas cette source en portefeuille froid et ne permet pas au portefeuille matériel d'exécuter lui-même CoinJoin. Utilisez uniquement une destination réellement proposée par l'application, et vérifiez sa sauvegarde ainsi que le contrôle des adresses avant de compter sur cette voie.
 
-<span id="experimental-coin-selection" aria-hidden="true"></span>
+<span id="experimental-coin-selection" data-ginger-heading="sélection-expérimentale-des-coins" aria-hidden="true"></span>
 
 ## Sélection expérimentale des coins
 
@@ -77,7 +77,7 @@ Cette version propose **(EXPERIMENTAL) Improved Coin Selection**. Sa configurati
 
 Gardez les valeurs initiales à moins de comprendre le compromis que vous modifiez. Ce sont des préférences de sélection ; elles ne sont ni un plafond exact des frais totaux ni une promesse sur le nombre de sorties d'un tour.
 
-<span id="when-another-round-cannot-start" aria-hidden="true"></span>
+<span id="when-another-round-cannot-start" data-ginger-heading="quand-un-autre-tour-ne-peut-pas-démarrer" aria-hidden="true"></span>
 
 ## Quand un autre tour ne peut pas démarrer
 

@@ -13,7 +13,7 @@ next: false
 
 CoinJoin a un coût et un objectif de confidentialité. Examinez les deux avant de commencer : une exonération des frais de coordinateur ne rend pas un tour gratuit, et un indicateur de progression ne peut pas mesurer tout ce qu'une autre personne sait de vous.
 
-<span id="coordinator-fee-versus-mining-fee" aria-hidden="true"></span>
+<span id="coordinator-fee-versus-mining-fee" data-ginger-heading="frais-de-coordinateur-et-frais-de-minage" aria-hidden="true"></span>
 
 ## Frais de coordinateur et frais de minage
 
@@ -36,7 +36,7 @@ Les frais de minage rémunèrent les mineurs pour l'espace occupé par la transa
 
 Ne fractionnez pas des coins uniquement pour obtenir une exonération sans comprendre les transactions supplémentaires, les frais et les liens publics que cela crée.
 
-<span id="account-for-the-complete-cost" aria-hidden="true"></span>
+<span id="account-for-the-complete-cost" data-ginger-heading="tenir-compte-du-coût-total" aria-hidden="true"></span>
 
 ## Tenir compte du coût total
 
@@ -59,7 +59,7 @@ Ici, 15,000 + 3,600 + 600 = 19,200 satoshis. Les trois dernières lignes expliqu
 
 Si les sorties ont été envoyées à un portefeuille matériel, leur disparition du solde du portefeuille logiciel correspond à un transfert de valeur qui vous appartient toujours. Attendez que les deux portefeuilles soient synchronisés avant de faire le rapprochement. Des transactions non confirmées, des paiements simultanés et des fonds entrants peuvent rendre trompeuse une simple comparaison du solde du portefeuille avant et après.
 
-<span id="budget-for-the-whole-journey" aria-hidden="true"></span>
+<span id="budget-for-the-whole-journey" data-ginger-heading="prévoir-le-coût-de-lensemble-du-parcours" aria-hidden="true"></span>
 
 ## Prévoir le coût de l'ensemble du parcours
 
@@ -76,7 +76,7 @@ Par exemple, une participation coûtant 19,200 satoshis suivie d'un transfert co
 
 Choisissez un montant que vous pouvez vous permettre de consacrer à l'apprentissage et examinez le premier résultat terminé avant de laisser se poursuivre les tours répétés. Fixez-vous un budget personnel pour les frais ; une préférence de délai CoinJoin ou un paramètre de sélection des coins ne garantit pas un plafond pour le coût total de l'ensemble du parcours.
 
-<span id="when-ginger-waits-or-refuses-a-round" aria-hidden="true"></span>
+<span id="when-ginger-waits-or-refuses-a-round" data-ginger-heading="lorsque-ginger-attend-ou-refuse-un-tour" aria-hidden="true"></span>
 
 ## Lorsque Ginger attend ou refuse un tour
 
@@ -86,7 +86,7 @@ Les préférences de frais peuvent également entraîner l'affichage de **Awaiti
 
 Dans cette version, le démarrage normal de CoinJoin refuse également un portefeuille dont les fonds atteignent déjà son objectif de confidentialité, ou une sélection contenant uniquement des coins qui atteignent cet objectif. Choisir un autre portefeuille de destination ne contourne pas cette vérification. Si le but est de déplacer des fonds déjà considérés comme privés, examinez la possibilité d'un transfert ordinaire plutôt que de vous attendre à ce que le choix de la destination impose un autre tour.
 
-<span id="what-the-privacy-score-can-tell-you" aria-hidden="true"></span>
+<span id="what-the-privacy-score-can-tell-you" data-ginger-heading="ce-que-le-score-de-confidentialité-peut-vous-indiquer" aria-hidden="true"></span>
 
 ## Ce que le score de confidentialité peut vous indiquer
 
@@ -105,7 +105,7 @@ Seuls 25% de la valeur atteignent l'objectif. Pour la progression globale, cette
 
 Le message **Hurray! All your funds are private!** signifie que le portefeuille considère les fonds comme privés selon son objectif actuel et sa méthode de calcul. Il ne signifie pas que l'historique a disparu, que vous êtes anonyme sur Internet ou qu'un paiement ultérieur ne peut pas créer de lien.
 
-<span id="decide-when-you-have-achieved-your-objective" aria-hidden="true"></span>
+<span id="decide-when-you-have-achieved-your-objective" data-ginger-heading="décider-quand-vous-avez-atteint-votre-objectif" aria-hidden="true"></span>
 
 ## Décider quand vous avez atteint votre objectif
 

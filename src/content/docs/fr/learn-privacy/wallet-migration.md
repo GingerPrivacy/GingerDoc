@@ -13,7 +13,7 @@ next: false
 
 Changer de logiciel change l'application utilisée. Cela ne change pas nécessairement clés, adresses ou informations déjà connues d'un service. Décidez si vous récupérez l'accès, changez par commodité ou créez une séparation future.
 
-<span id="choose-the-kind-of-move" aria-hidden="true"></span>
+<span id="choose-the-kind-of-move" data-ginger-heading="choisir-le-type-de-migration" aria-hidden="true"></span>
 
 ## Choisir le type de migration
 
@@ -25,7 +25,7 @@ Changer de logiciel change l'application utilisée. Cela ne change pas nécessai
 
 Restaurer le même portefeuille ne déplace pas le bitcoin, donc ne coûte pas de frais réseau à lui seul. Transférer on-chain vers de nouvelles clés coûte des frais et crée une transaction visible. Ce sont des opérations différentes, même si les deux finissent avec un solde affiché dans Ginger.
 
-<span id="understand-what-an-xpub-exposes" aria-hidden="true"></span>
+<span id="understand-what-an-xpub-exposes" data-ginger-heading="comprendre-ce-quexpose-une-xpub" aria-hidden="true"></span>
 
 ## Comprendre ce qu'expose une xpub
 
@@ -35,7 +35,7 @@ Une ancienne application, un service de portefeuille de placements ou de comptab
 
 Si vous ignorez ce qu'un service a reçu, considérez cela comme incertain. Ne chargez pas une xpub dans un « vérificateur de confidentialité » en ligne pour l'étudier.
 
-<span id="restore-access-to-an-existing-software-wallet" aria-hidden="true"></span>
+<span id="restore-access-to-an-existing-software-wallet" data-ginger-heading="restaurer-un-portefeuille-logiciel-existant" aria-hidden="true"></span>
 
 ## Restaurer un portefeuille logiciel existant
 
@@ -47,7 +47,7 @@ Si vous ignorez ce qu'un service a reçu, considérez cela comme incertain. Ne c
 
 Une phrase incorrecte peut produire un autre portefeuille valide. Ne changez pas les réglages au hasard, n'envoyez pas de fonds tests à un compte vide inexpliqué et ne donnez pas les mots à un inconnu d'assistance pour résoudre le décalage.
 
-<span id="use-the-same-hardware-wallet-in-ginger" aria-hidden="true"></span>
+<span id="use-the-same-hardware-wallet-in-ginger" data-ginger-heading="utiliser-le-même-matériel-dans-ginger" aria-hidden="true"></span>
 
 ## Utiliser le même matériel dans Ginger
 
@@ -57,7 +57,7 @@ La connexion donne à Ginger les données publiques tandis que les clés restent
 
 N'importez pas les mots matériels sur l'ordinateur pour contourner une connexion ou un compte non pris en charge. Consultez le parcours du fabricant si le compte ne peut pas être représenté correctement.
 
-<span id="create-a-new-separation-for-future-activity" aria-hidden="true"></span>
+<span id="create-a-new-separation-for-future-activity" data-ginger-heading="créer-une-nouvelle-séparation-future" aria-hidden="true"></span>
 
 ## Créer une nouvelle séparation future
 
@@ -67,7 +67,7 @@ Examinez les entrées de chaque transfert. Dépenser tous les anciens coins ense
 
 Décidez quand et comment cesser les anciennes adresses. Mettez à jour vos instructions, gardez des données pour les paiements tardifs et ne supposez pas une adresse inactive parce qu'elle a été retirée d'un site. Gardez les informations de récupération des portefeuilles pouvant encore recevoir.
 
-<span id="when-the-move-is-urgent" aria-hidden="true"></span>
+<span id="when-the-move-is-urgent" data-ginger-heading="quand-la-migration-est-urgente" aria-hidden="true"></span>
 
 ## Quand la migration est urgente
 

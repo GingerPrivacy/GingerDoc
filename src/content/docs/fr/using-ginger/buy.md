@@ -30,7 +30,7 @@ next: false
 
 **Buy** vous relie à des offres tierces pour acheter du bitcoin. Ginger fournit l'interface et une adresse de réception ; le prestataire sélectionné gère paiement, admissibilité, identité et livraison. Utiliser un portefeuille sans garde par un tiers ne rend pas l'achat anonyme.
 
-<span id="request-and-compare-offers" aria-hidden="true"></span>
+<span id="request-and-compare-offers" data-ginger-heading="demander-et-comparer-les-offres" aria-hidden="true"></span>
 
 ## Demander et comparer les offres
 
@@ -42,7 +42,7 @@ next: false
 
 Les offres et limites sont des informations de service en direct, pas des propriétés permanentes d'une version. Un maximum d'un ancien article peut ne plus valoir. Une offre mise en avant ne garantit pas qu'elle soit la meilleure pour votre situation.
 
-<span id="complete-the-provider-steps" aria-hidden="true"></span>
+<span id="complete-the-provider-steps" data-ginger-heading="terminer-les-étapes-du-prestataire" aria-hidden="true"></span>
 
 ## Terminer les étapes du prestataire
 
@@ -54,7 +54,7 @@ Le prestataire reçoit destination et informations de commande. Il peut les asso
 
 Ne donnez pas mots, clés privées ou phrase du portefeuille pour l'achat. Il faut une adresse pour livrer le bitcoin, pas un accès au portefeuille.
 
-<span id="track-the-result" aria-hidden="true"></span>
+<span id="track-the-result" data-ginger-heading="suivre-le-résultat" aria-hidden="true"></span>
 
 ## Suivre le résultat
 
@@ -64,7 +64,7 @@ Un paiement bancaire terminé n'est pas le même événement qu'une confirmation
 
 Pour une commande en attente, expirée, échouée ou remboursée, consultez [états et vente](/fr/using-ginger/sell/). Évitez un nouvel achat parce que l'actualisation est lente ; établissez d'abord si le paiement initial a été encaissé.
 
-<span id="browser-privacy" aria-hidden="true"></span>
+<span id="browser-privacy" data-ginger-heading="confidentialité-du-navigateur" aria-hidden="true"></span>
 
 ## Confidentialité du navigateur
 

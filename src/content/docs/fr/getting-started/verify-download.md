@@ -18,7 +18,7 @@ next: false
 
 Une signature détachée aide à établir que le fichier téléchargé a été signé par le détenteur d'une clé précise et n'a pas changé depuis. Elle ne prouve pas que le logiciel est sans bugs. Vous devez aussi établir que cette clé est celle à laquelle vous vouliez faire confiance.
 
-<span id="collect-the-matching-files" aria-hidden="true"></span>
+<span id="collect-the-matching-files" data-ginger-heading="rassembler-les-fichiers-correspondants" aria-hidden="true"></span>
 
 ## Rassembler les fichiers correspondants
 
@@ -26,7 +26,7 @@ Depuis [la version v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releas
 
 Obtenez la clé publique via le lien PGP du [site officiel](https://gingerwallet.io/). Enregistrez-la sous `PGP.txt`. Utilisez une application OpenPGP fiable, comme GnuPG, pour l'examiner et l'importer. Si GnuPG manque, obtenez-le sur [sa page officielle](https://gnupg.org/download/).
 
-<span id="check-the-fingerprint" aria-hidden="true"></span>
+<span id="check-the-fingerprint" data-ginger-heading="vérifier-lempreinte" aria-hidden="true"></span>
 
 ## Vérifier l'empreinte
 
@@ -45,7 +45,7 @@ gpg --import PGP.txt
 
 Comparez l'empreinte entière, pas seulement un identifiant court ou le nom affiché. Si possible, corroborez-la avec une copie déjà fiable ou un autre canal Ginger établi. Obtenir une clé et une signature depuis une même source compromise ne suffit pas à établir l'authenticité. Si Ginger annonce un changement de clé, vérifiez l'annonce avant de faire confiance à la nouvelle empreinte.
 
-<span id="verify-the-actual-download" aria-hidden="true"></span>
+<span id="verify-the-actual-download" data-ginger-heading="vérifier-le-téléchargement-réel" aria-hidden="true"></span>
 
 ## Vérifier le téléchargement réel
 
@@ -59,7 +59,7 @@ Pour une autre plateforme, remplacez les deux noms exacts. Une vérification ré
 
 Si le résultat indique **BAD signature**, si la clé manque, si l'empreinte diffère ou si la vérification ne se termine pas, n'ouvrez pas encore le téléchargement. Vérifiez la paire de noms, recommencez le téléchargement et demandez de l'aide via les liens officiels si le problème persiste. Ne déclarez pas une clé inconnue fiable simplement pour supprimer un avertissement.
 
-<span id="checksums-and-platform-signatures" aria-hidden="true"></span>
+<span id="checksums-and-platform-signatures" data-ginger-heading="sommes-de-contrôle-et-signatures-de-plateforme" aria-hidden="true"></span>
 
 ## Sommes de contrôle et signatures de plateforme
 

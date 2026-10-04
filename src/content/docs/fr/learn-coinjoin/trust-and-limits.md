@@ -15,7 +15,7 @@ Avec Ginger, vous gardez l'autorité de signature au lieu de déposer les fonds 
 
 Avant de participer, définissez l'objectif : qu'un destinataire sache moins sur vos autres paiements, ou réduire les liens entre dépenses futures et réception connue publiquement. CoinJoin aide la confidentialité des liens transactionnels, mais ne supprime pas les informations déjà obtenues auprès de vous.
 
-<span id="four-separate-questions" aria-hidden="true"></span>
+<span id="four-separate-questions" data-ginger-heading="quatre-questions-distinctes" aria-hidden="true"></span>
 
 ## Quatre questions distinctes
 
@@ -28,7 +28,7 @@ Avant de participer, définissez l'objectif : qu'un destinataire sache moins sur
 
 L'[article WabiSabi, section 7](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3) distingue confidentialité, attaques actives et prévention du vol. Ce guide applique cette distinction aux décisions utilisateur ; ce n'est pas un audit de sécurité du portefeuille ou coordinateur installé.
 
-<span id="consider-the-observer" aria-hidden="true"></span>
+<span id="consider-the-observer" data-ginger-heading="considérer-lobservateur" aria-hidden="true"></span>
 
 ## Considérer l'observateur
 
@@ -36,7 +36,7 @@ Un observateur passif de blockchain voit entrées, sorties, montants et dépense
 
 Un participant connaît ses propres entrées et sorties, éliminant certaines possibilités. Un coordinateur traite les enregistrements et observe les horaires du protocole ; s'il est activement malveillant, il peut influencer les participants et l'achèvement des tours. Ce sont des capacités différentes : une protection limitée à l'observation de la chaîne publique ne protège pas nécessairement contre toutes.
 
-<span id="apparent-participants-are-not-independent-people" aria-hidden="true"></span>
+<span id="apparent-participants-are-not-independent-people" data-ginger-heading="les-participants-apparents-ne-sont-pas-des-personnes-indépendantes" aria-hidden="true"></span>
 
 ## Les participants apparents ne sont pas des personnes indépendantes
 
@@ -46,7 +46,7 @@ De vraies entrées et les frais de minage créent des contraintes économiques. 
 
 Les grands tours peuvent offrir plus de possibilités, mais montants, connaissances des participants et transactions ultérieures comptent toujours. Aucun nombre de tours ni objectif ne prouve qu'un attaquant n'a rien appris.
 
-<span id="when-the-coordinator-or-connection-is-unavailable" aria-hidden="true"></span>
+<span id="when-the-coordinator-or-connection-is-unavailable" data-ginger-heading="quand-le-coordinateur-ou-la-connexion-manque" aria-hidden="true"></span>
 
 ## Quand le coordinateur ou la connexion manque
 
@@ -56,7 +56,7 @@ Si CoinJoin ne peut continuer, mettez en pause et examinez la cause. Un envoi or
 
 Un refus ou un tour échoué n'est pas en soi une preuve d'attaque ou un jugement sur votre identité. Inversement, un tour réussi ne certifie pas l'honnêteté du coordinateur. Préservez les données privées pertinentes si un problème concret doit être étudié.
 
-<span id="decisions-you-can-make" aria-hidden="true"></span>
+<span id="decisions-you-can-make" data-ginger-heading="décisions-possibles" aria-hidden="true"></span>
 
 ## Décisions possibles
 

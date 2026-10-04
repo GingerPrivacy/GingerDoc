@@ -13,7 +13,7 @@ next: false
 
 Utiliser votre propre nœud Bitcoin peut réduire la dépendance aux pairs publics pour les données de blocs. Cela ajoute aussi des responsabilités de stockage, de bande passante, de disponibilité et de maintenance. Vous pouvez utiliser Ginger sans activer le nœud complet facultatif.
 
-<span id="start-the-bundled-node" aria-hidden="true"></span>
+<span id="start-the-bundled-node" data-ginger-heading="démarrer-le-nœud-intégré" aria-hidden="true"></span>
 
 ## Démarrer le nœud intégré
 
@@ -28,7 +28,7 @@ N'activez pas cette option uniquement pour corriger un solde de portefeuille man
 
 Le nœud complet peut vérifier les blocs localement, mais cela ne supprime pas les dépendances de Ginger au coordinateur, à la 2FA, aux services d'achat et de vente ou à d'autres services. Cela ne cache pas non plus une transaction que vous divulguez volontairement à une plateforme d'échange.
 
-<span id="connect-to-an-existing-node" aria-hidden="true"></span>
+<span id="connect-to-an-existing-node" data-ginger-heading="se-connecter-à-un-nœud-existant" aria-hidden="true"></span>
 
 ## Se connecter à un nœud existant
 
@@ -38,7 +38,7 @@ Assurez-vous que le nœud autorise la connexion de votre portefeuille et possèd
 
 Une connexion à un nœud distant a sa propre exposition réseau. Utilisez un nœud et un transport que vous comprenez ; définir simplement un point de terminaison ne prouve pas que toutes les connexions vers lui sont privées. Évitez d'ouvrir l'accès RPC d'administration à l'Internet public pour faire fonctionner une connexion de portefeuille.
 
-<span id="choose-fee-estimates-separately" aria-hidden="true"></span>
+<span id="choose-fee-estimates-separately" data-ginger-heading="choisir-séparément-les-estimations-de-frais" aria-hidden="true"></span>
 
 ## Choisir séparément les estimations de frais
 
@@ -48,7 +48,7 @@ Lorsque **Full Node** est sélectionné mais que le nœud est indisponible, la v
 
 Les estimations de frais sont des prévisions, pas des réservations d'espace dans un bloc. Une différence entre fournisseurs peut refléter des observations différentes de la mempool. Examinez les frais totaux de la transaction ainsi que le taux affiché.
 
-<span id="dust-threshold" aria-hidden="true"></span>
+<span id="dust-threshold" data-ginger-heading="seuil-de-poussière" aria-hidden="true"></span>
 
 ## Seuil de poussière
 

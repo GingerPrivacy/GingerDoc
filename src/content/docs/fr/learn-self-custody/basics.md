@@ -13,7 +13,7 @@ next: false
 
 La garde de vos propres clés signifie détenir les informations nécessaires pour dépenser votre bitcoin. Vous approuvez sans demander à un fournisseur de compte de libérer l'argent. En contrepartie, protégez ces informations, gardez une sauvegarde utilisable et vérifiez chaque paiement.
 
-<span id="keys-records-and-recovery" aria-hidden="true"></span>
+<span id="keys-records-and-recovery" data-ginger-heading="clés-enregistrements-et-récupération" aria-hidden="true"></span>
 
 ## Clés, enregistrements et récupération
 
@@ -21,7 +21,7 @@ Le réseau Bitcoin conserve un registre public des transactions. Votre portefeui
 
 Pour un portefeuille logiciel Ginger, mots et phrase d'origine recréent les clés. Les fichiers locaux préservent aussi le contexte, comme étiquettes et paramètres. Authentificateur, PIN matériel et fichier copié ont des rôles différents ; aucun ne doit être supposé remplacer les mots.
 
-<span id="the-passphrase-changes-the-wallet" aria-hidden="true"></span>
+<span id="the-passphrase-changes-the-wallet" data-ginger-heading="la-phrase-secrète-change-le-portefeuille" aria-hidden="true"></span>
 
 ## La phrase secrète change le portefeuille
 
@@ -29,7 +29,7 @@ Ginger utilise une phrase secrète BIP39 avec les mots. Une phrase différente p
 
 Notez si vous en avez utilisé une et conservez-la exactement. Choisissez une protection récupérable plutôt qu'un secret complexe seulement mémorisé. Rangez les instructions pour pouvoir distinguer plus tard la phrase du portefeuille de la connexion ordinateur ou du code d'authentification.
 
-<span id="software-versus-hardware" aria-hidden="true"></span>
+<span id="software-versus-hardware" data-ginger-heading="logiciel-ou-matériel" aria-hidden="true"></span>
 
 ## Logiciel ou matériel
 
@@ -41,7 +41,7 @@ Notez si vous en avez utilisé une et conservez-la exactement. Choisissez une pr
 
 Le matériel réduit l'exposition aux logiciels malveillants de l'ordinateur, mais vous pouvez approuver un paiement malveillant sans vérifier son écran. Importer sa seed sur ordinateur change la sécurité : les clés y sont désormais exposées.
 
-<span id="recovery-is-part-of-the-setup" aria-hidden="true"></span>
+<span id="recovery-is-part-of-the-setup" data-ginger-heading="la-récupération-fait-partie-de-la-configuration" aria-hidden="true"></span>
 
 ## La récupération fait partie de la configuration
 
@@ -49,7 +49,7 @@ Avant de compter sur le portefeuille, vérifiez que vous trouvez et comprenez sa
 
 Gardez davantage que les fichiers de l'application. L'installateur se télécharge à nouveau ; un secret manquant ne se retrouve pas sur le site du projet. Envisagez panne de disque, appareil perdu et accès au lieu de sauvegarde. Les [conseils de sécurité de Bitcoin.org](https://bitcoin.org/en/secure-your-wallet) traitent sauvegarde et protection d'appareil comme complémentaires.
 
-<span id="evaluate-a-wallet-with-evidence" aria-hidden="true"></span>
+<span id="evaluate-a-wallet-with-evidence" data-ginger-heading="évaluer-un-portefeuille-avec-des-preuves" aria-hidden="true"></span>
 
 ## Évaluer un portefeuille avec des preuves
 

@@ -15,7 +15,7 @@ next: false
 
 Une phrase secrète est un secret facultatif que vous choisissez lors de la création d'un portefeuille. Dans Ginger, elle protège l'accès au portefeuille logiciel et fait également partie des informations nécessaires à sa récupération. Pour récupérer le même portefeuille, vous avez besoin des mots de récupération d'origine et de la phrase secrète d'origine exacte, si vous en avez utilisé une. Ginger ne peut pas réinitialiser une phrase secrète oubliée.
 
-<span id="do-i-have-to-use-a-passphrase" aria-hidden="true"></span>
+<span id="do-i-have-to-use-a-passphrase" data-ginger-heading="dois-je-utiliser-une-phrase-secrète-" aria-hidden="true"></span>
 
 ## Dois-je utiliser une phrase secrète ?
 
@@ -23,7 +23,7 @@ Lorsque vous créez un portefeuille, Ginger affiche **Add Passphrase** après **
 
 Sans phrase secrète, une personne qui obtient vos mots de récupération peut récupérer et dépenser vos bitcoins. Une phrase secrète ajoute un autre secret à protéger, mais l'oublier peut vous empêcher de récupérer votre portefeuille même si vous disposez encore des mots. Choisissez une phrase difficile à deviner que vous pouvez consigner et reproduire avec exactitude. Évitez les espaces au début ou à la fin ; les contrôles de saisie de Ginger les refusent.
 
-<span id="is-it-the-same-as-recovery-words-or-a-2fa-code" aria-hidden="true"></span>
+<span id="is-it-the-same-as-recovery-words-or-a-2fa-code" data-ginger-heading="est-ce-la-même-chose-que-les-mots-de-récupération-ou-un-code-2fa-" aria-hidden="true"></span>
 
 ## Est-ce la même chose que les mots de récupération ou un code 2FA ?
 
@@ -31,7 +31,7 @@ Non. Ginger génère douze **Recovery Words** pour un nouveau portefeuille logic
 
 Le nom de votre portefeuille est uniquement une étiquette locale. Un code fourni par une application d'authentification pour l'authentification à deux facteurs (2FA) correspond à une vérification distincte au démarrage de l'application. Ni l'un ni l'autre ne remplace les mots et la phrase secrète d'origine lors de la récupération d'un portefeuille logiciel.
 
-<span id="what-should-i-back-up" aria-hidden="true"></span>
+<span id="what-should-i-back-up" data-ginger-heading="que-dois-je-sauvegarder-" aria-hidden="true"></span>
 
 ## Que dois-je sauvegarder ?
 
@@ -42,7 +42,7 @@ Gardez ces informations confidentielles et accessibles même après la perte de 
 
 Les mots de récupération rétablissent l'accès aux bitcoins, mais ne restaurent pas toutes les étiquettes ni tous les paramètres. Conservez les fichiers de portefeuille existants pendant que vous examinez un problème de récupération. Une sauvegarde automatique sur le même ordinateur ne protège pas contre la perte de cet ordinateur.
 
-<span id="how-do-i-check-my-backup" aria-hidden="true"></span>
+<span id="how-do-i-check-my-backup" data-ginger-heading="comment-vérifier-ma-sauvegarde-" aria-hidden="true"></span>
 
 ## Comment vérifier ma sauvegarde ?
 
@@ -50,7 +50,7 @@ Tant que votre portefeuille logiciel est accessible, ouvrez **Wallet Settings** 
 
 Cela vérifie si ces mots appartiennent au portefeuille. Cette procédure n'affiche pas les mots oubliés et ne réinitialise pas la phrase secrète. Assurez-vous également que la phrase secrète que vous avez consignée est correcte. Si la vérification échoue, vérifiez l'orthographe et l'ordre des mots en privé avant de vous fier à la sauvegarde.
 
-<span id="how-do-i-use-the-passphrase-during-recovery" aria-hidden="true"></span>
+<span id="how-do-i-use-the-passphrase-during-recovery" data-ginger-heading="comment-utiliser-la-phrase-secrète-pendant-la-récupération-" aria-hidden="true"></span>
 
 ## Comment utiliser la phrase secrète pendant la récupération ?
 
@@ -62,7 +62,7 @@ Ces étapes permettent de récupérer un portefeuille logiciel Ginger à partir 
 4. À l'étape **Enter Passphrase**, saisissez et confirmez la phrase secrète d'origine. Laissez les champs vides uniquement si le portefeuille d'origine n'avait pas de phrase secrète. Vous ne choisissez pas un nouveau mot de passe à cette étape.
 5. Laissez la récupération et la synchronisation se terminer, puis vérifiez l'historique des transactions que vous connaissez. La synchronisation consiste à vérifier sur le réseau Bitcoin les transactions appartenant au portefeuille.
 
-<span id="why-is-my-recovered-wallet-empty" aria-hidden="true"></span>
+<span id="why-is-my-recovered-wallet-empty" data-ginger-heading="pourquoi-mon-portefeuille-récupéré-est-il-vide-" aria-hidden="true"></span>
 
 ## Pourquoi mon portefeuille récupéré est-il vide ?
 
@@ -72,7 +72,7 @@ Vérifiez la phrase secrète d'origine, les majuscules et les minuscules, les es
 
 Si l'historique attendu est toujours absent, conservez les fichiers et informations d'origine et demandez de l'aide via les [liens d'assistance officiels du projet Ginger](https://gingerwallet.io/). Partagez uniquement des détails non secrets, tels que la version de l'application et le texte de l'erreur. N'envoyez jamais vos mots de récupération, votre phrase secrète ou vos fichiers de portefeuille à l'assistance.
 
-<span id="can-i-reset-or-replace-a-forgotten-passphrase" aria-hidden="true"></span>
+<span id="can-i-reset-or-replace-a-forgotten-passphrase" data-ginger-heading="puis-je-réinitialiser-ou-remplacer-une-phrase-secrète-oubliée-" aria-hidden="true"></span>
 
 ## Puis-je réinitialiser ou remplacer une phrase secrète oubliée ?
 

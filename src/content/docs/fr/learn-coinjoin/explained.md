@@ -15,7 +15,7 @@ CoinJoin réunit l'activité Bitcoin de plusieurs personnes dans une transaction
 
 Imaginez plusieurs personnes versant dans une transaction commune et recevant de nouveaux morceaux de bitcoin. Le public voit les montants déplacés. Ce qui devient moins clair est quel argent est devenu quel morceau. Ce n'est qu'une illustration : les vrais tours ont des montants différents et des détails plus complexes.
 
-<span id="do-i-hand-my-bitcoin-to-someone-else" aria-hidden="true"></span>
+<span id="do-i-hand-my-bitcoin-to-someone-else" data-ginger-heading="est-ce-que-je-confie-mon-bitcoin-à-quelquun-" aria-hidden="true"></span>
 
 ## Est-ce que je confie mon bitcoin à quelqu'un ?
 
@@ -23,7 +23,7 @@ Le portefeuille Ginger conserve les informations servant à approuver les dépen
 
 Il faut toujours une installation fiable, un ordinateur protégé et une sauvegarde récupérable. Le service organisant le tour doit aussi être disponible. Garder le contrôle des clés ne fait pas disparaître les autres problèmes.
 
-<span id="why-might-i-use-it" aria-hidden="true"></span>
+<span id="why-might-i-use-it" data-ginger-heading="pourquoi-lutiliser-" aria-hidden="true"></span>
 
 ## Pourquoi l'utiliser ?
 
@@ -31,7 +31,7 @@ Vous pouvez souhaiter que votre destinataire en sache moins sur vos autres paiem
 
 CoinJoin peut aider sur ces liens. Il ne supprime pas le registre de retrait d'une plateforme et ne fait pas oublier à un marchand qui a commandé. La blockchain reste publique et un paiement ultérieur peut révéler un nouveau lien.
 
-<span id="what-will-it-cost" aria-hidden="true"></span>
+<span id="what-will-it-cost" data-ginger-heading="combien-cela-coûte-t-il-" aria-hidden="true"></span>
 
 ## Combien cela coûte-t-il ?
 
@@ -39,7 +39,7 @@ Un tour réussi paie des frais de minage Bitcoin et peut aussi facturer des frai
 
 Il n'y a pas de délai fixe. Ginger peut attendre confirmations, frais acceptables ou autres participants. Lisez l'état et examinez le résultat avant de laisser des participations répétées sans surveillance.
 
-<span id="do-i-need-it-before-my-first-payment" aria-hidden="true"></span>
+<span id="do-i-need-it-before-my-first-payment" data-ginger-heading="en-ai-je-besoin-avant-mon-premier-paiement-" aria-hidden="true"></span>
 
 ## En ai-je besoin avant mon premier paiement ?
 

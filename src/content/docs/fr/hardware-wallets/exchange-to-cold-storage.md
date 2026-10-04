@@ -20,7 +20,7 @@ Deux parcours différents existent. Choisissez-en un avant de commencer pour sav
 | CoinJoin dans le portefeuille logiciel, puis transfert ordinaire | Les sorties restent dans le portefeuille logiciel Ginger jusqu'à leur sélection et leur envoi vers le matériel | Vous pouvez vérifier leur confidentialité d'abord ; chaque transfert ultérieur coûte des frais et expose la relation entre ses entrées et sorties |
 | Réception directe des sorties CoinJoin dans le portefeuille matériel | Un portefeuille logiciel admissible signe CoinJoin ; ses sorties vont au portefeuille matériel chargé | Évite un transfert séparé, mais les sorties quittent la source après ce tour, sans garantie d'atteindre votre objectif |
 
-<span id="prepare-both-wallets" aria-hidden="true"></span>
+<span id="prepare-both-wallets" data-ginger-heading="préparer-les-deux-portefeuilles" aria-hidden="true"></span>
 
 ## Préparer les deux portefeuilles
 
@@ -31,7 +31,7 @@ Deux parcours différents existent. Choisissez-en un avant de commencer pour sav
 
 Ne saisissez jamais les mots du portefeuille matériel dans Ginger pour faire fonctionner CoinJoin. Cela donnerait à l'ordinateur accès à ses clés de signature.
 
-<span id="withdraw-from-the-exchange" aria-hidden="true"></span>
+<span id="withdraw-from-the-exchange" data-ginger-heading="retirer-depuis-la-plateforme" aria-hidden="true"></span>
 
 ## Retirer depuis la plateforme
 
@@ -39,7 +39,7 @@ Dans le portefeuille logiciel, choisissez **Receive**, ajoutez une étiquette ut
 
 Notez séparément les frais de retrait. Le montant reçu dans Ginger peut être inférieur au montant débité par la plateforme. Attendez la synchronisation et la confirmation des fonds avant de les attendre dans CoinJoin. Un identifiant de transaction aide à rapprocher les montants, mais évitez de le publier ou de le rechercher répétitivement dans des explorateurs publics.
 
-<span id="route-a-review-coinjoin-results-then-transfer" aria-hidden="true"></span>
+<span id="route-a-review-coinjoin-results-then-transfer" data-ginger-heading="parcours-a--examiner-coinjoin-puis-transférer" aria-hidden="true"></span>
 
 ## Parcours A : examiner CoinJoin, puis transférer
 
@@ -51,7 +51,7 @@ Notez séparément les frais de retrait. Le montant reçu dans Ginger peut être
 
 Envoyer toutes les sorties ensemble crée un lien visible entre elles. Déplacer les coins individuellement évite ce lien particulier à plusieurs entrées, mais coûte davantage de frais et révèle toujours une transaction par transfert. Montants, horaires et informations détenues par un observateur peuvent fournir d'autres liens. Choisissez un plan réalisable ; aucune des deux approches ne garantit l'anonymat.
 
-<span id="route-b-choose-hardware-as-the-coinjoin-destination" aria-hidden="true"></span>
+<span id="route-b-choose-hardware-as-the-coinjoin-destination" data-ginger-heading="parcours-b--choisir-le-matériel-comme-destination-coinjoin" aria-hidden="true"></span>
 
 ## Parcours B : choisir le matériel comme destination CoinJoin
 
@@ -67,7 +67,7 @@ La destination reçoit les sorties du tour terminé ; ce réglage n'attend pas u
 
 La sélection de destination est réinitialisée au redémarrage. Vérifiez-la à chaque session. Vous ne pouvez pas la modifier pendant la participation, et la modifier après signature ne redirige pas une transaction. Vérifiez explicitement les réglages automatiques au lieu de supposer un transfert permanent en arrière-plan.
 
-<span id="reconcile-balances-and-plan-the-next-spend" aria-hidden="true"></span>
+<span id="reconcile-balances-and-plan-the-next-spend" data-ginger-heading="rapprocher-les-soldes-et-préparer-la-dépense-suivante" aria-hidden="true"></span>
 
 ## Rapprocher les soldes et préparer la dépense suivante
 

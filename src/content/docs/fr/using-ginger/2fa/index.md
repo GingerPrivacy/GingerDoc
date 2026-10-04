@@ -29,7 +29,7 @@ next: false
 
 L'authentification à deux facteurs (2FA), facultative dans Ginger, ajoute une vérification au démarrage de l'application et un chiffrement des fichiers de portefeuille locaux. Elle est distincte de la phrase secrète de chaque portefeuille. Il ne s'agit pas d'une règle Bitcoin qui exige une deuxième signature pour chaque dépense, et elle ne protège pas une sauvegarde des mots de récupération contre une personne qui connaît également sa phrase secrète.
 
-<span id="understand-the-dependency-first" aria-hidden="true"></span>
+<span id="understand-the-dependency-first" data-ginger-heading="comprendre-dabord-la-dépendance-au-service" aria-hidden="true"></span>
 
 ## Comprendre d'abord la dépendance au service
 
@@ -39,7 +39,7 @@ Le fichier local `2fa_info.gws` stocke un identifiant client/serveur. Il ne cont
 
 Avant d'activer la 2FA, vérifiez que vous disposez des mots de récupération et de la phrase secrète d'origine exacte pour chaque portefeuille logiciel que vous devez pouvoir récupérer. Conservez également des copies protégées des fichiers de portefeuille et de métadonnées.
 
-<span id="enable-2fa" aria-hidden="true"></span>
+<span id="enable-2fa" data-ginger-heading="activer-la-2fa" aria-hidden="true"></span>
 
 ## Activer la 2FA
 
@@ -51,7 +51,7 @@ Avant d'activer la 2FA, vérifiez que vous disposez des mots de récupération e
 
 Ne supposez pas que les fichiers copiés avant la configuration ou avant le redémarrage authentifié ont acquis la nouvelle protection. Protégez ces anciennes sauvegardes indépendamment. Activer l'option n'est pas une raison d'effacer vos seules informations de récupération dont vous savez qu'elles fonctionnent.
 
-<span id="everyday-use-and-disabling" aria-hidden="true"></span>
+<span id="everyday-use-and-disabling" data-ginger-heading="utilisation-quotidienne-et-désactivation" aria-hidden="true"></span>
 
 ## Utilisation quotidienne et désactivation
 
@@ -59,7 +59,7 @@ Au démarrage, saisissez le code actuel de votre application d'authentification.
 
 Pour désactiver la 2FA tant que vous avez accès à l'application, ouvrez **Settings** → **Security** et désactivez **Two-factor authentication**. Ginger retire le chiffrement supplémentaire des fichiers de portefeuille et son association locale à la 2FA. La protection habituelle des portefeuilles logiciels par phrase secrète est distincte et reste pertinente. Sauvegardez les fichiers obtenus si votre procédure de sauvegarde dépend de leur état de chiffrement actuel.
 
-<span id="lost-phone-missing-file-or-unavailable-service" aria-hidden="true"></span>
+<span id="lost-phone-missing-file-or-unavailable-service" data-ginger-heading="téléphone-perdu-fichier-manquant-ou-service-indisponible" aria-hidden="true"></span>
 
 ## Téléphone perdu, fichier manquant ou service indisponible
 

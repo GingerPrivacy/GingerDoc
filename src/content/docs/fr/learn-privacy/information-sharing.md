@@ -15,7 +15,7 @@ Les actions du portefeuille divulguent des informations différentes. Consulter 
 
 Tor réduit l'exposition directe de l'IP pour les connexions qui le traversent. Il ne masque pas une requête à son destinataire, ne retire pas une transaction de la blockchain, ne protège pas un ordinateur déverrouillé et ne modifie pas automatiquement votre navigateur externe. Un nœud local configuré constitue une connexion distincte à une machine que vous contrôlez.
 
-<span id="synchronization-and-bitcoin-network-activity" aria-hidden="true"></span>
+<span id="synchronization-and-bitcoin-network-activity" data-ginger-heading="synchronisation-et-activité-réseau-bitcoin" aria-hidden="true"></span>
 
 ## Synchronisation et activité réseau Bitcoin
 
@@ -28,7 +28,7 @@ Tor réduit l'exposition directe de l'IP pour les connexions qui le traversent. 
 
 Pour votre nœud Bitcoin, protégez l'accès à la machine et aux connexions distantes. Son opérateur peut observer les demandes : un serveur simplement appelé « votre nœud » n'est pas nécessairement privé s'il est administré par un tiers. Accès internet normal, découverte des pairs et disponibilité comptent toujours.
 
-<span id="coinjoin-and-optional-services" aria-hidden="true"></span>
+<span id="coinjoin-and-optional-services" data-ginger-heading="coinjoin-et-services-facultatifs" aria-hidden="true"></span>
 
 ## CoinJoin et services facultatifs
 
@@ -44,7 +44,7 @@ Tor ne cache pas au service destinataire une adresse soumise pour validation, le
 
 L'identifiant 2FA peut relier les tentatives normales de démarrage auprès de ce service. La clé de chiffrement renvoyée fait partie d'une protection supplémentaire des fichiers locaux, pas d'une nouvelle clé Bitcoin remplaçant mots et phrase secrète. N'envoyez ni ces secrets ni vos codes d'authentification aux contacts d'assistance.
 
-<span id="browsers-other-applications-and-people" aria-hidden="true"></span>
+<span id="browsers-other-applications-and-people" data-ginger-heading="navigateurs-autres-applications-et-personnes" aria-hidden="true"></span>
 
 ## Navigateurs, autres applications et personnes
 
@@ -58,7 +58,7 @@ L'identifiant 2FA peut relier les tentatives normales de démarrage auprès de c
 
 La recherche sur les paiements web montre pourquoi observations du navigateur et blockchain doivent être considérées ensemble. Elle n'établit pas la politique actuelle d'un prestataire Ginger précis. [Goldfeder et collègues, When the Cookie Meets the Blockchain](https://arxiv.org/abs/1708.04748)
 
-<span id="local-information-also-needs-protection" aria-hidden="true"></span>
+<span id="local-information-also-needs-protection" data-ginger-heading="les-informations-locales-doivent-aussi-être-protégées" aria-hidden="true"></span>
 
 ## Les informations locales doivent aussi être protégées
 

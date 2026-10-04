@@ -13,7 +13,7 @@ next: false
 
 Commencez par l'erreur exacte, le portefeuille choisi, le réseau et la version. Préservez les informations de récupération et les fichiers avant de modifier les données. Réinstaller, supprimer des dossiers ou créer de nouveaux mots est rarement la première étape pour un problème de connexion ou d'affichage.
 
-<span id="balance-recovery-and-receiving" aria-hidden="true"></span>
+<span id="balance-recovery-and-receiving" data-ginger-heading="solde-récupération-et-réception" aria-hidden="true"></span>
 
 ## Solde, récupération et réception
 
@@ -28,7 +28,7 @@ Commencez par l'erreur exacte, le portefeuille choisi, le réseau et la version.
 
 Ne saisissez pas les mots sur un site pour « resynchroniser » un portefeuille. N'utilisez que le parcours de récupération installé et vérifié sur un ordinateur fiable.
 
-<span id="connection-or-synchronization" aria-hidden="true"></span>
+<span id="connection-or-synchronization" data-ginger-heading="connexion-ou-synchronisation" aria-hidden="true"></span>
 
 ## Connexion ou synchronisation
 
@@ -38,7 +38,7 @@ Vérifiez connexion, horloge, stockage libre et état du nœud configuré. Une p
 
 Si vous utilisez **Wallet Settings** → **Tools** → **Resync**, sauvegardez d'abord et prévoyez une nouvelle analyse. Ne supprimez pas `Wallets`, `WalletBackups` ou les fichiers 2FA simplement pour effacer un message.
 
-<span id="coinjoin-does-not-start" aria-hidden="true"></span>
+<span id="coinjoin-does-not-start" data-ginger-heading="coinjoin-ne-démarre-pas" aria-hidden="true"></span>
 
 ## CoinJoin ne démarre pas
 
@@ -57,7 +57,7 @@ Si vous utilisez **Wallet Settings** → **Tools** → **Resync**, sauvegardez d
 
 Des participants peuvent ne pas terminer, ou un coin devenir temporairement indisponible après interruption. Réessais, imports répétés et tentatives de contourner un refus ne constituent pas une réparation. Utilisez raison et état actuel pour décider d'attendre ou de contacter l'assistance officielle.
 
-<span id="payment-or-fee-problems" aria-hidden="true"></span>
+<span id="payment-or-fee-problems" data-ginger-heading="problèmes-de-paiement-ou-de-frais" aria-hidden="true"></span>
 
 ## Problèmes de paiement ou de frais
 
@@ -65,7 +65,7 @@ Si les estimations manquent, attendez, réparez la connexion prestataire/nœud o
 
 Utilisez **Speed Up Transaction** ou **Cancel Transaction** seulement si proposé et après vérification des frais. Annuler tente un remplacement, pas un renversement confirmé. Après une diffusion incertaine, vérifiez l'historique avant un double paiement.
 
-<span id="2fa-and-hardware" aria-hidden="true"></span>
+<span id="2fa-and-hardware" data-ginger-heading="2fa-et-matériel" aria-hidden="true"></span>
 
 ## 2FA et matériel
 
@@ -73,7 +73,7 @@ Pour un code rejeté, vérifiez heure du téléphone, entrée choisie, compatibi
 
 Pour la détection, utilisez un seul matériel déverrouillé, un câble de données et un port direct, avec applications concurrentes fermées. Terminez les étapes requises de Bitcoin, PIN ou phrase sur l'appareil. Sous Linux, vérifiez les permissions du fabricant. Gardez la seed hors ordinateur.
 
-<span id="report-a-useful-issue" aria-hidden="true"></span>
+<span id="report-a-useful-issue" data-ginger-heading="signaler-un-problème-utilement" aria-hidden="true"></span>
 
 ## Signaler un problème utilement
 

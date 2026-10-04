@@ -15,7 +15,7 @@ Ginger Wallet et Sparrow Wallet sont des portefeuilles Bitcoin open source pour 
 
 Dernière vérification : **14 septembre 2026**. Versions étudiées : [Ginger v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) et [Sparrow 2.5.4](https://github.com/sparrowwallet/sparrow/releases/tag/2.5.4). Cette comparaison porte sur les parcours documentés de ces versions ; elle ne mesure pas leur vitesse, leur fiabilité ni leur anonymat.
 
-<span id="at-a-glance" aria-hidden="true"></span>
+<span id="at-a-glance" data-ginger-heading="en-un-coup-dœil" aria-hidden="true"></span>
 
 ## En un coup d'œil
 
@@ -31,7 +31,7 @@ Dernière vérification : **14 septembre 2026**. Versions étudiées : [Ginger v
 
 Les sections suivantes expliquent ces différences et renvoient aux guides pertinents.
 
-<span id="privacy-and-coinjoin-different-tools-for-different-links" aria-hidden="true"></span>
+<span id="privacy-and-coinjoin-different-tools-for-different-links" data-ginger-heading="confidentialité-et-coinjoin--différents-outils-pour-différents-liens" aria-hidden="true"></span>
 
 ## Confidentialité et CoinJoin : différents outils pour différents liens
 
@@ -47,7 +47,7 @@ Les deux prennent aussi en charge l'envoi PayJoin dans des parcours compatibles.
 
 Aucun de ces outils n'efface les registres d'une plateforme ni ne rend la blockchain privée. Combinaisons ultérieures, réutilisation d'adresses et informations partagées peuvent révéler de nouveaux liens. Consultez [confiance et limites CoinJoin](/fr/learn-coinjoin/trust-and-limits/).
 
-<span id="network-privacy-who-learns-about-your-wallet" aria-hidden="true"></span>
+<span id="network-privacy-who-learns-about-your-wallet" data-ginger-heading="confidentialité-réseau--qui-apprend-des-informations-sur-votre-portefeuille-" aria-hidden="true"></span>
 
 ## Confidentialité réseau : qui apprend des informations sur votre portefeuille ?
 
@@ -59,7 +59,7 @@ Une infrastructure sous votre contrôle évite de divulguer ces requêtes à un 
 
 Tor aide à protéger les métadonnées de connexion comme l'IP. Il ne cache pas le contenu au service destinataire. Votre propre nœud ne retire pas non plus les indices de propriété d'une transaction déjà publique. Choisissez ensemble les paramètres réseau et les habitudes de dépense.
 
-<span id="hardware-wallets-and-multisig" aria-hidden="true"></span>
+<span id="hardware-wallets-and-multisig" data-ginger-heading="portefeuilles-matériels-et-multisig" aria-hidden="true"></span>
 
 ## Portefeuilles matériels et multisig
 
@@ -71,7 +71,7 @@ Sparrow permet de créer des portefeuilles multisig exigeant un nombre choisi de
 
 CoinJoin Ginger utilise un logiciel pour signer les entrées. Un matériel compatible chargé peut plutôt recevoir les sorties. Cela ne signifie pas qu'il signe les entrées ou que les sorties atteignent l'objectif prévu. La destination est réinitialisée au redémarrage. Suivez [le guide de stockage à froid Ginger](/fr/hardware-wallets/exchange-to-cold-storage/) pour les conditions et ne saisissez jamais les mots matériels sur ordinateur pour CoinJoin.
 
-<span id="transaction-control-and-everyday-use" aria-hidden="true"></span>
+<span id="transaction-control-and-everyday-use" data-ginger-heading="contrôle-des-transactions-et-utilisation-courante" aria-hidden="true"></span>
 
 ## Contrôle des transactions et utilisation courante
 
@@ -81,7 +81,7 @@ Le diagramme et l'éditeur Sparrow exposent entrées, sorties, frais et détails
 
 Dans les deux, vérifiez destinataire, entrées, monnaie rendue et frais avant autorisation. Même la sélection manuelle peut lier des fonds sans rapport dépensés ensemble.
 
-<span id="fees-and-service-conditions" aria-hidden="true"></span>
+<span id="fees-and-service-conditions" data-ginger-heading="frais-et-conditions-des-services" aria-hidden="true"></span>
 
 ## Frais et conditions des services
 
@@ -93,7 +93,7 @@ Par exemple, une entrée facturable de 0.10 BTC coûte 30,000 satoshis de coordi
 
 InvisibleBit LLC, opérateur du coordinateur Ginger, publie des restrictions sur les lieux et la nationalité américains. Les conditions permettent aussi contrôles tiers et refus de coins. Lisez [les conditions actuelles](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt). Garder les clés ne garantit pas l'admission. Avec Sparrow, considérez la confidentialité et la disponibilité du nœud ou serveur utilisé.
 
-<span id="which-fits-your-needs" aria-hidden="true"></span>
+<span id="which-fits-your-needs" data-ginger-heading="lequel-correspond-à-vos-besoins-" aria-hidden="true"></span>
 
 ## Lequel correspond à vos besoins ?
 

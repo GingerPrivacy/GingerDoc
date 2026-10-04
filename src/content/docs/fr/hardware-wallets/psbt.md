@@ -13,7 +13,7 @@ next: false
 
 Une transaction Bitcoin partiellement signée (PSBT) est un fichier contenant une transaction et les informations nécessaires au signataire. Elle sépare la préparation sur ordinateur de la signature matérielle. Un PSBT peut divulguer adresses, montants et informations du portefeuille ; traitez-le comme privé avant même qu'il puisse dépenser quoi que ce soit.
 
-<span id="prepare-the-wallet-connection" aria-hidden="true"></span>
+<span id="prepare-the-wallet-connection" data-ginger-heading="préparer-la-connexion-du-portefeuille" aria-hidden="true"></span>
 
 ## Préparer la connexion du portefeuille
 
@@ -21,7 +21,7 @@ Il faut dans Ginger un enregistrement matériel compatible, lié aux clés de l'
 
 L'export contient les informations publiques du compte et l'empreinte de l'appareil, pas les mots de récupération. Vérifiez la correspondance des adresses sur Ginger et l'appareil avant de financer le portefeuille. Un compte importé avec un autre chemin de dérivation ou une autre phrase secrète peut être un autre portefeuille malgré le même appareil.
 
-<span id="export-a-transaction" aria-hidden="true"></span>
+<span id="export-a-transaction" data-ginger-heading="exporter-une-transaction" aria-hidden="true"></span>
 
 ## Exporter une transaction
 
@@ -33,7 +33,7 @@ L'export contient les informations publiques du compte et l'empreinte de l'appar
 
 N'approuvez pas uniquement parce que Ginger a préparé la transaction. L'appareil doit autoriser le paiement voulu. Gardez les mots hors du fichier PSBT et de l'ordinateur.
 
-<span id="import-and-broadcast" aria-hidden="true"></span>
+<span id="import-and-broadcast" data-ginger-heading="importer-et-diffuser" aria-hidden="true"></span>
 
 ## Importer et diffuser
 
@@ -43,7 +43,7 @@ Un PSBT non signé ou incomplètement signé ne peut pas être diffusé comme pa
 
 Une fois la transaction diffusée, l'appareil n'a plus besoin de rester connecté pour la confirmation. Vérifiez l'entrée finale et les confirmations dans Ginger. Supprimer un fichier signé n'annule pas une transaction qu'un tiers peut déjà diffuser.
 
-<span id="handle-files-carefully" aria-hidden="true"></span>
+<span id="handle-files-carefully" data-ginger-heading="manipuler-les-fichiers-avec-soin" aria-hidden="true"></span>
 
 ## Manipuler les fichiers avec soin
 

@@ -13,7 +13,7 @@ next: false
 
 Effectuez d'abord [les vérifications normales de récupération](/fr/backup-recovery/restore/) : portefeuille voulu, mots et phrase secrète d'origine exacts, connexion et progression de l'analyse. Cette page traite des raisons précises pour lesquelles elles peuvent ne pas suffire.
 
-<span id="address-scanning-and-account-compatibility" aria-hidden="true"></span>
+<span id="address-scanning-and-account-compatibility" data-ginger-heading="analyse-des-adresses-et-compatibilité-des-comptes" aria-hidden="true"></span>
 
 ## Analyse des adresses et compatibilité des comptes
 
@@ -25,7 +25,7 @@ Un portefeuille créé dans une autre application peut employer d'autres types d
 
 Ginger ne propose pas la récupération par parts SLIP39 dans cette version. Ne saisissez pas un ensemble de parts comme s'il s'agissait d'une liste de mots BIP39 unique.
 
-<span id="import-a-file" aria-hidden="true"></span>
+<span id="import-a-file" data-ginger-heading="importer-un-fichier" aria-hidden="true"></span>
 
 ## Importer un fichier
 
@@ -33,7 +33,7 @@ Choisissez **Import File** dans l'écran d'ajout de portefeuille et sélectionne
 
 Utilisez la phrase secrète d'origine pour ouvrir un portefeuille logiciel importé protégé. Un fichier chiffré par 2FA n'équivaut pas à une sauvegarde portable non chiffrée. Conservez ses fichiers et identifiants associés, ou récupérez plutôt depuis les mots et la phrase secrète d'origine. L'importation d'un export matériel crée un portefeuille qui dépend toujours de l'appareil pour signer.
 
-<span id="what-recovery-does-not-restore" aria-hidden="true"></span>
+<span id="what-recovery-does-not-restore" data-ginger-heading="ce-que-la-récupération-ne-restaure-pas" aria-hidden="true"></span>
 
 ## Ce que la récupération ne restaure pas
 
