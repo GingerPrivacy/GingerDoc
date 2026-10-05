@@ -1,0 +1,54 @@
+---
+doc_id: manual.home
+title: "GingerWallet dokumentáció"
+description: "Gyakorlati útmutatók az első Ginger-pénztárcádhoz és a bitcoin mindennapi használatához. Ismerd meg a biztonsági mentést, a bitcoin küldését és fogadását, valamint a magánszférád védelmét."
+lang: "hu"
+reader_level: beginner
+template: splash
+hero: {}
+---
+
+import ManualHome from '../../../components/ManualHome.astro';
+
+<ManualHome
+  eyebrow="Felhasználói kézikönyv"
+  title="Ismerd meg"
+  titleSecondLine="közelebbről a"
+  titleAccent="Gingert."
+  description="Gyakorlati útmutatók az első pénztárcádhoz és a bitcoin mindennapi használatához."
+  start={{ label: 'Kezdd használni a Gingert', href: '/hu/getting-started/' }}
+  faq={{ label: 'Gyakori kérdések', href: '/hu/help/' }}
+  stepsTitle="Az első lépéseid"
+  stepsDescription="Egyszerű út az induláshoz."
+  steps={[
+    { label: 'A Ginger telepítése', description: 'Töltsd le az alkalmazást, és állítsd be az eszközödön.', href: '/hu/getting-started/install/' },
+    { label: 'Pénztárca létrehozása és mentése', description: 'Hozd létre a pénztárcádat, és őrizd meg biztonságosan a helyreállítási adatait.', href: '/hu/getting-started/first-wallet/' },
+    { label: 'Az első fizetés fogadása', description: 'Hozz létre egy Bitcoin-címet, és fogadd az első bitcoinjaidat.', href: '/hu/payments/receive/' },
+  ]}
+  groups={[
+    {
+      title: 'Útmutatók a mindennapokra',
+      description: 'Gyakorlati útmutatók a Ginger mindennapi használatához.',
+      icon: 'book',
+      links: [
+        { label: 'Küldés és fogadás', href: '/hu/using-ginger/' },
+        { label: 'CoinJoin', href: '/hu/using-ginger/coinjoin/' },
+        { label: 'Hardverpénztárcák', href: '/hu/using-ginger/hardware-wallet/' },
+      ],
+    },
+    {
+      title: 'Ismerd meg az adatvédelmet',
+      description: 'Értsd meg, hogyan segít a Ginger megőrizni a magánszférádat.',
+      icon: 'shield',
+      links: [
+        { label: 'Adatvédelem a Bitcoin használatakor', href: '/hu/using-ginger/privacy/' },
+        { label: 'Hogyan működik a CoinJoin?', href: '/hu/learn-coinjoin/explained/' },
+        { label: 'Saját kezelésű pénztárca', href: '/hu/learn-self-custody/basics/' },
+      ],
+    },
+  ]}
+  searchTitle="Valami konkrétat keresel?"
+  searchDescription="Keress a kézikönyvben útmutatókat, beállításokat és más tudnivalókat."
+  searchLabel="Keresés a kézikönyvben"
+  advanced={{ label: 'Haladó útmutatók', href: '/hu/help/advanced-faq/' }}
+/>
