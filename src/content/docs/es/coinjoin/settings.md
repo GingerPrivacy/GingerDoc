@@ -25,7 +25,7 @@ next: false
 | **Ignore coinjoin time preference below** | Permite participar por debajo de este umbral de tasa de comisión incluso cuando la comparación de preferencia temporal indicaría esperar. |
 | **Random Skip** | Selecciona con qué frecuencia se omiten rondas adecuadas. Las opciones son **Disabled**, **Rarely**, **Sometimes** y **Often**. Omitir más rondas generalmente implica esperar más. |
 
-Cuando el reproductor informa de un saldo antieconómico, pulsar el botón de inicio puede eludir el umbral de parada. Eso no elimina las comisiones de transacción. Considera los importes de las monedas disponibles y los costes previstos antes de anularlo.
+Cuando el panel de control informa de un saldo antieconómico, pulsar el botón de inicio puede eludir el umbral de parada. Eso no elimina las comisiones de transacción. Considera los importes de las monedas disponibles y los costes previstos antes de anularlo.
 
 <span id="privacy-settings" data-ginger-heading="ajustes-de-privacidad" aria-hidden="true"></span>
 
@@ -41,9 +41,9 @@ Bajar el objetivo puede cambiar inmediatamente lo que la interfaz llama privado 
 
 ## Excluye monedas concretas
 
-Abre **Exclude Coins** desde el menú del reproductor de CoinJoin. Revisa la lista de monedas y marca las que quieras excluir de CoinJoin. Vuelve a esta lista para que sean aptas otra vez. La exclusión se aplica a esas monedas; no es una regla permanente para todos los pagos futuros a la misma dirección.
+Abre **Exclude Coins** desde el menú del panel de control de CoinJoin. Revisa la lista de monedas y marca las que quieras excluir de CoinJoin. Vuelve a esta lista para que sean aptas otra vez. La exclusión se aplica a esas monedas; no es una regla permanente para todos los pagos futuros a la misma dirección.
 
-Excluir una moneda de CoinJoin no la bloquea para el gasto normal ni sustituye al almacenamiento en una cartera de hardware. Si todas las monedas disponibles están excluidas, el reproductor puede mostrar **Only excluded funds are available**. Comprueba esta lista antes de cambiar los ajustes de comisiones o privacidad.
+Excluir una moneda de CoinJoin no la bloquea para el gasto normal ni sustituye al almacenamiento en una cartera de hardware. Si todas las monedas disponibles están excluidas, el panel de control puede mostrar **Only excluded funds are available**. Comprueba esta lista antes de cambiar los ajustes de comisiones o privacidad.
 
 <span id="receive-outputs-in-another-wallet" data-ginger-heading="recibe-salidas-en-otra-cartera" aria-hidden="true"></span>
 
@@ -81,6 +81,6 @@ Mantén los valores iniciales salvo que comprendas las ventajas e inconvenientes
 
 ## Cuando otra ronda no puede empezar
 
-En esta versión, el inicio habitual de CoinJoin rechaza una cartera cuyos fondos ya cumplan su objetivo de privacidad y también rechaza una selección disponible compuesta únicamente por monedas privadas. Seleccionar una cartera de destino distinta no elude esta regla. El reproductor puede ocultar el control de reproducción manual cuando todos los fondos son privados. No confíes en excluir todas las monedas no privadas y después forzar una ronda únicamente para reenviar las monedas privadas restantes.
+En esta versión, el inicio habitual de CoinJoin rechaza una cartera cuyos fondos ya cumplan su objetivo de privacidad y también rechaza una selección disponible compuesta únicamente por monedas privadas. Seleccionar una cartera de destino distinta no elude esta regla. El panel de control puede ocultar el botón de inicio manual cuando todos los fondos son privados. No confíes en excluir todas las monedas no privadas y después forzar una ronda únicamente para reenviar las monedas privadas restantes.
 
 Elige el destino antes de iniciar una participación apta o considera una transferencia normal de fondos que ya sean privados. Bajar los requisitos de privacidad o incluir fondos sin relación solo para hacer que una ronda empiece puede cambiar el resultado de privacidad y el coste.

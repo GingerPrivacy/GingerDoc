@@ -31,10 +31,10 @@ La cartera necesita fondos confirmados y utilizables, además de unas condicione
 
 ## Inicia y pausa
 
-1. Abre **Coinjoin Settings** desde el menú del reproductor de CoinJoin, o búscalo mediante la búsqueda de Ginger mientras la cartera esté abierta.
+1. Abre **Coinjoin Settings** desde el menú del panel de control de CoinJoin, o búscalo mediante la búsqueda de Ginger mientras la cartera esté abierta.
 2. Revisa las preferencias de coste de la cartera y, para el procedimiento habitual, deja esta misma cartera como destino de las salidas. Los objetivos personalizados y el encaminamiento de las salidas se explican en la guía avanzada opcional de configuración.
-3. Activa **Automatically start coinjoin** si quieres participar sin intervención cuando las condiciones lo permitan. Para iniciar manualmente, usa el botón de reproducción del reproductor. Cuando está detenido, puede mostrar **Press Play to start**.
-4. Observa el estado debajo del reproductor. La cartera puede esperar confirmaciones, una ronda adecuada o comisiones más baratas antes de participar.
+3. Activa **Automatically start coinjoin** si quieres participar sin intervención cuando las condiciones lo permitan. Para iniciar manualmente, usa el botón de inicio del panel de control. Cuando está detenido, puede mostrar **Press Play to start**.
+4. Observa el estado debajo del panel de control. La cartera puede esperar confirmaciones, una ronda adecuada o comisiones más baratas antes de participar.
 5. Usa el botón de pausa cuando quieras detener las participaciones posteriores. Deja que termine cualquier fase crítica de la transacción. Desactivar el inicio automático cambia el comportamiento futuro; no revierte una transacción que ya se haya difundido.
 
 No envíes bitcoin a una dirección facilitada por alguien que afirme que debe «activar» CoinJoin. No hay ningún pago de activación independiente a un agente de soporte.

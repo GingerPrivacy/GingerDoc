@@ -76,7 +76,7 @@ Tras un error de conexión, comprueba el historial antes de volver a pagar. Así
 
 CoinJoin combina la actividad de varias personas en una transacción Bitcoin compartida para dificultar inferir vínculos de propiedad. Tu cartera conserva sus claves de firma. Cuesta comisiones, puede tardar y no borra información que un destinatario o exchange ya conoce.
 
-Revisa **Automatically start coinjoin** en **Coinjoin Settings** para la cartera seleccionada. Desactiva la participación automática mientras aprendes si no quieres que comience sin supervisión. Si ya hay una ronda activa, utiliza la pausa del reproductor y permite que termine el trabajo crítico.
+Revisa **Automatically start coinjoin** en **Coinjoin Settings** para la cartera seleccionada. Desactiva la participación automática mientras aprendes si no quieres que comience sin supervisión. Si ya hay una ronda activa, utiliza la pausa del panel de control y permite que termine el trabajo crítico.
 
 Puedes recibir y realizar pagos normales sin esperar a que un indicador de privacidad llegue al 100%. Tampoco necesitas ajustar todas las opciones avanzadas para empezar.
 

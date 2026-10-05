@@ -178,7 +178,7 @@ Con los ajustes actuales, cada entrada de 0.03 BTC (3 000 000 satoshis) o me
 
 ### ¿Puedo detener CoinJoin o apagar el ordenador?
 
-Usa el control de pausa del reproductor para detener las participaciones posteriores y deja que termine cualquier fase crítica. La suspensión, la pérdida de conexión o un apagado forzado pueden interrumpir una ronda activa; usa la salida normal de la aplicación y deja que complete su procedimiento de cierre. Una transacción ya difundida continúa en Bitcoin después de cerrar la aplicación.
+Usa el control de pausa del panel de control para detener las participaciones posteriores y deja que termine cualquier fase crítica. La suspensión, la pérdida de conexión o un apagado forzado pueden interrumpir una ronda activa; usa la salida normal de la aplicación y deja que complete su procedimiento de cierre. Una transacción ya difundida continúa en Bitcoin después de cerrar la aplicación.
 
 <span id="why-is-there-a-transaction-when-i-never-pressed-send" data-ginger-heading="por-qué-hay-una-transacción-si-nunca-pulsé-send" aria-hidden="true"></span>
 
@@ -196,7 +196,7 @@ Puedes hacer un pago normal cuando los fondos se puedan gastar y el proceso de e
 
 ### ¿Por qué falta el control de reproducción cuando todos los fondos son privados?
 
-El reproductor manual habitual puede ocultar la reproducción cuando todos los fondos cumplen el objetivo de privacidad de la cartera. El inicio normal también rechaza un conjunto disponible de monedas exclusivamente privadas, así que elegir otro destino no fuerza otra ronda. Si solo quieres mover esos fondos, considera un pago normal.
+El panel de control manual habitual puede ocultar el botón de inicio cuando todos los fondos cumplen el objetivo de privacidad de la cartera. El inicio normal también rechaza un conjunto disponible de monedas exclusivamente privadas, así que elegir otro destino no fuerza otra ronda. Si solo quieres mover esos fondos, considera un pago normal.
 
 <span id="payments-and-hardware" data-ginger-heading="pagos-y-dispositivos-de-hardware" aria-hidden="true"></span>
 

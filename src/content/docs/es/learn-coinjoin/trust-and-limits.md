@@ -50,7 +50,7 @@ Las rondas mayores pueden ofrecer más posibilidades, pero los importes, el cono
 
 ## Cuando el coordinador o la conexión no están disponibles
 
-Las monedas que ya controlan tus claves no se convierten en un saldo que te deba el coordinador. Un intento fallido antes de la difusión no se las transfiere por sí mismo. Sin embargo, durante una ronda activa, Ginger puede necesitar completar trabajo crítico antes de que las monedas estén disponibles para otra acción; usa el control de pausa del reproductor y sigue su estado actual.
+Las monedas que ya controlan tus claves no se convierten en un saldo que te deba el coordinador. Un intento fallido antes de la difusión no se las transfiere por sí mismo. Sin embargo, durante una ronda activa, Ginger puede necesitar completar trabajo crítico antes de que las monedas estén disponibles para otra acción; usa el control de pausa del panel de control y sigue su estado actual.
 
 Si CoinJoin no puede continuar, pausa e inspecciona el motivo. El envío normal sigue requiriendo una vía de firma disponible, monedas que puedas gastar, información sincronizada y una forma de difundir. Una interrupción del coordinador por sí sola no es motivo para descartar copias de seguridad ni subir palabras de recuperación a un servicio sustituto. El 2FA opcional de Ginger tiene su propia dependencia de servicio para el inicio habitual, así que conserva las palabras y la frase de contraseña original de forma que puedan recuperarse independientemente.
 
