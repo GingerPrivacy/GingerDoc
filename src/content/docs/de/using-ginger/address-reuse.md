@@ -45,7 +45,7 @@ Lass Tor für die vorgesehene private Wallet-Netzwerknutzung aktiv. Es leitet Ve
 
 Prüfe den Browser für Anbieter- und Explorerlinks. Dein gewöhnlicher Browser kann angemeldete Konten und identifizierende Cookies enthalten. Gingers Browserpräferenz und Tor-Einstellung sind getrennt. Bevorzuge lokalen Verlauf vor wiederholten öffentlichen Abfragen eigener Adressen.
 
-Nutze **Discreet Mode** für unterstützte Bildschirmfelder bei fremden Blicken und die Betriebssystemsperre beim Weggehen. Schütze Backupmedien und lokale Bezeichnungen. Auch eine Watch-only-Wallet kann ohne Schlüsseloffenlegung Finanzaktivität preisgeben.
+Nutze **Discreet Mode** für unterstützte Bildschirmfelder bei fremden Blicken und die Betriebssystemsperre beim Weggehen. Schütze Backupmedien und lokale Bezeichnungen. Auch eine beobachtende Wallet kann ohne Schlüsseloffenlegung Finanzaktivität preisgeben.
 
 <span id="when-asking-for-help" data-ginger-heading="bei-hilfsanfragen" aria-hidden="true"></span>
 

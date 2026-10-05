@@ -53,7 +53,7 @@ Eine falsche Passphrase kann eine andere gültige Wallet ergeben. Wechsle nicht 
 
 Füge das Gerät über **Hardware Wallet** hinzu, folge unterstützten PIN-/Passphraseabfragen und prüfe eine Empfangsadresse auf seinem eigenen Bildschirm. Prüfe, ob Ginger das gewünschte Konto zeigt. Der normale Import dieser Version verwendet natives SegWit; andere Software zeigte möglicherweise ein anderes Konto oder einen anderen Adresstyp.
 
-Die Verbindung erlaubt Ginger öffentliche Wallet-Daten zu speichern, während Schlüssel auf dem Gerät bleiben. Sie macht frühere Offenlegungen der Hersteller-App nicht rückgängig. Dasselbe Konto in einer weiteren Watch-only-App zu öffnen kann mehr Verlauf offenlegen, obwohl keine Anwendung ohne Hardware ausgeben kann.
+Die Verbindung erlaubt Ginger öffentliche Wallet-Daten zu speichern, während Schlüssel auf dem Gerät bleiben. Sie macht frühere Offenlegungen der Hersteller-App nicht rückgängig. Dasselbe Konto in einer weiteren App mit beobachtender Wallet zu öffnen kann mehr Verlauf offenlegen, obwohl keine Anwendung ohne Hardware ausgeben kann.
 
 Importiere Hardware-Wörter nicht als Umgehung einer nicht unterstützten Verbindung oder eines Kontos auf den Computer. Nutze den unterstützten Geräteablauf, wenn das Konto sich nicht korrekt darstellen lässt.
 

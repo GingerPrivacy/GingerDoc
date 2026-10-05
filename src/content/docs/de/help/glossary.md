@@ -67,7 +67,7 @@ Lightning, Zahlungskanäle, Multisig-Aufbau, öffentliche Testnet-/Signet-Einric
 | xpub / Erweiterter öffentlicher Schlüssel | Daten zur Ableitung vieler zugehöriger öffentlicher Adressen. Sie signieren nicht direkt, können aber Wallet-Aktivität offenlegen. |
 | Ableitungspfad / Konto | Konvention zur Identifikation eines Schlüsselzweigs. Wiederherstellungswerkzeuge benötigen kompatible Konventionen. |
 | Gap Limit | Folge ungenutzter Adressen, die eine Wiederherstellungssuche toleriert, bevor sie die Suche im Zweig beendet. |
-| Watch-only-Wallet | Datensatz zur Aktivitätsbeobachtung ohne lokale Signierschlüssel. Hardware kann Signierung separat bereitstellen. |
+| Beobachtende Wallet | Datensatz zur Aktivitätsbeobachtung ohne lokale Signierschlüssel. Hardware kann Signierung separat bereitstellen. |
 | Hardware-Wallet | Ein separates Gerät für Schlüsselschutz und Genehmigung unterstützter Transaktionen. |
 | PSBT | Teilweise signierte Bitcoin-Transaktionsdatei mit vorgeschlagener Transaktion und Signierinformationen. |
 | SegWit / Taproot | Output- und Ausgabeformate. Native Mainnet-Adressen beginnen meist mit `bc1q` beziehungsweise `bc1p`. |

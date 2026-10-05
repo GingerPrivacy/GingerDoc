@@ -52,7 +52,7 @@ Die 2FA-Kennung kann normale Startversuche beim Dienst miteinander verknüpfen. 
 | --- | --- | --- |
 | Öffentlicher Explorer | Abgefragte Transaktion/Adresse und Browser-Netzwerk-/Sitzungsdaten | Zuerst lokalen Verlauf nutzen; Explorer nur bei benötigten Zusatzdaten öffnen. |
 | Anbieterwebsite | Bestelldetails, Anmelde-/Zahlungsdaten, Cookies und browserspezifische Beobachtungen | Sitzung getrennt von Gingers Tor betrachten. |
-| xpub-Import oder dasselbe Konto in anderer App | Öffentlicher Adresszweig oder Wallet-Abfragen je nach App | Synchronisierung und Datenweitergabe vor Import prüfen. „Watch-only“ beschreibt Ausgabebefugnis, keine Vertraulichkeit. |
+| xpub-Import oder dasselbe Konto in anderer App | Öffentlicher Adresszweig oder Wallet-Abfragen je nach App | Synchronisierung und Datenweitergabe vor Import prüfen. „Beobachtende Wallet“ beschreibt Ausgabebefugnis, keine Vertraulichkeit. |
 | Adresse in Nachricht oder Beitrag teilen | Verbindung von Adresse und Person/Konto | Neue Adresse über vertrauenswürdigen Kanal an vorgesehenen Zahler geben. |
 | Protokolle, Dateien oder Bildschirm teilen | Je nach Material Pfade, Bezeichnungen, Adressen, Transaktions-/Rundenkennungen und eventuell Geheimnisse | Kleinsten relevanten geprüften Auszug teilen. Nie vollständige Daten oder Wiederherstellungsgeheimnisse bloß auf Anfrage senden. |
 

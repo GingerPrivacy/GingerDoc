@@ -142,13 +142,13 @@ Blame ist eine Protokollwiederholung nach unvollständigem Versuch, keine Auffor
 
 ### Wie gleiche ich vollständige Rundenkosten ab?
 
-Summiere den Wert deiner ausgegebenen Inputs und ziehe den Wert aller eigenen Transaktionsoutputs ab, einschließlich anderer Wallets. Die Differenz kann Koordinatorgebühren, Mining-Kosten und Outputverteilungsreste enthalten. Zähle fremde Outputs nicht als eigene und gehe nicht davon aus, ein Gebührenfeld decke zwingend die Gesamtdifferenz ab.
+Summiere den Wert deiner ausgegebenen Inputs und ziehe den Wert aller eigenen Transaktionsoutputs ab, einschließlich anderer Wallets. Die Differenz kann Koordinatorgebühren, Mining-Gebühren und Outputverteilungsreste enthalten. Zähle fremde Outputs nicht als eigene und gehe nicht davon aus, ein Gebührenfeld decke zwingend die Gesamtdifferenz ab.
 
 <span id="is-a-remix-exemption-permanent-or-applied-to-my-entire-balance" data-ginger-heading="ist-remix-befreiung-dauerhaft-oder-auf-mein-ganzes-guthaben-anwendbar" aria-hidden="true"></span>
 
 ### Ist Remix-Befreiung dauerhaft oder auf mein ganzes Guthaben anwendbar?
 
-Nein. Sie ist eine Input-Eignungsregel der angebotenen Runde, kein dauerhafter Anspruch für jede Wallet-Transaktion. Gingers beworbene Regeln umfassen geeignete Remixes und direkte Ausgabe über eine Transaktion; Mining bleibt zahlbar. Prüfe Bedingungen, statt allein für angenommene Befreiung Coins zu teilen oder zu bewegen.
+Nein. Sie ist eine Input-Eignungsregel der angebotenen Runde, kein dauerhafter Anspruch für jede Wallet-Transaktion. Gingers beworbene Regeln umfassen geeignete Remixes und direkte Ausgabe über eine Transaktion; Mining-Gebühren bleiben zahlbar. Prüfe Bedingungen, statt allein für angenommene Befreiung Coins zu teilen oder zu bewegen.
 
 <span id="hardware-and-privacy-boundaries" data-ginger-heading="hardware-und-privatsphäregrenzen" aria-hidden="true"></span>
 
