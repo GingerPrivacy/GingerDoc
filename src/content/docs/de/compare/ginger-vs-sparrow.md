@@ -43,9 +43,9 @@ Sparrow entfernte seinen Whirlpool-Client in [Version 1.9.0](https://github.com/
 
 Sparrow bietet weiterhin weniger aufschlussreiche Ausgaben. Die Transaktionsoption **Privacy** kann eine Stonewall-Transaktion mit einem zusätzlichen Output gleicher Zahlungshöhe erstellen. Alle Inputs gehören deiner Wallet; sie erzeugt Mehrdeutigkeit ohne Mischung fremden Guthabens. Nötig sind geeignete Coins, genug Guthaben und passende Adresstypen; zusätzliche Inputs und Outputs können Mining-Kosten erhöhen. Sparrow unterstützt außerdem BIP47-Zahlungscodes für neue Zahlungsadressen. Siehe [Spending Privately](https://sparrowwallet.com/docs/spending-privately.html).
 
-Beide unterstützen PayJoin-Senden in kompatiblen Abläufen. PayJoin beteiligt einen kompatiblen Empfänger am Zahlungsaufbau, getrennt von Mixing-Runden eines Koordinators. Ginger benötigt hierfür Software. Siehe [Gingers PayJoin-Anleitung](/de/payments/payjoin-message-signing/) und [Sparrows PayJoin-Updates](https://github.com/sparrowwallet/sparrow/releases/tag/2.5.4).
+Beide unterstützen PayJoin-Senden in kompatiblen Abläufen. PayJoin beteiligt einen kompatiblen Empfänger am Zahlungsaufbau, getrennt von Mixing-Runden eines Koordinators. Ginger benötigt hierfür eine Software-Wallet. Siehe [Gingers PayJoin-Anleitung](/de/payments/payjoin-message-signing/) und [Sparrows PayJoin-Updates](https://github.com/sparrowwallet/sparrow/releases/tag/2.5.4).
 
-Keines dieser Werkzeuge löscht Börsenaufzeichnungen oder macht die Blockchain privat. Spätere Coin-Kombinationen, Adressreuse oder Empfängerangaben können neue Links offenlegen. Siehe [CoinJoin-Vertrauen und Grenzen](/de/learn-coinjoin/trust-and-limits/).
+Keines dieser Werkzeuge löscht Börsenaufzeichnungen oder macht die Blockchain privat. Spätere Coin-Kombinationen, Adresswiederverwendung oder mit einem Empfänger geteilte Informationen können neue Verknüpfungen offenlegen. Siehe [CoinJoin-Vertrauen und Grenzen](/de/learn-coinjoin/trust-and-limits/).
 
 <span id="network-privacy-who-learns-about-your-wallet" data-ginger-heading="netzwerkprivatsphäre-wer-erfährt-von-deiner-wallet" aria-hidden="true"></span>
 
@@ -69,7 +69,7 @@ Ginger unterstützt normale Hardware-Zahlungen und einen [PSBT-Dateiablauf](/de/
 
 Sparrow erstellt Multisig-Wallets mit gewählter erforderlicher Signaturzahl, etwa zwei aus drei. Das verteilt Signierbefugnis flexibler, verlangt aber mehr Einrichtung und Backups. Ginger bietet keine vergleichbare allgemeine Multisig-Einrichtung. Siehe Sparrows [Wallet-Erstellung](https://sparrowwallet.com/docs/quick-start.html#creating-your-first-wallet) für Richtlinienoptionen.
 
-Ginger-CoinJoin verwendet Software zum Signieren der Inputs. Eine unterstützte in Ginger geladene Hardware-Wallet empfängt stattdessen Outputs. Das bedeutet weder Hardware-Signierung der Inputs noch Erreichen deines Privatsphäreziels. Die Zielauswahl wird nach Neustart zurückgesetzt. Folge [Gingers Cold-Storage-Anleitung](/de/hardware-wallets/exchange-to-cold-storage/) und gib Hardware-Wörter niemals zur CoinJoin-Aktivierung am Desktop ein.
+Ginger-CoinJoin verwendet eine Software-Wallet zum Signieren der teilnehmenden Inputs. Eine unterstützte in Ginger geladene Hardware-Wallet empfängt stattdessen Outputs. Das bedeutet weder Hardware-Signierung der Inputs noch Erreichen deines Privatsphäreziels. Die Zielauswahl wird nach Neustart zurückgesetzt. Folge [Gingers Cold-Storage-Anleitung](/de/hardware-wallets/exchange-to-cold-storage/) und gib Hardware-Wörter niemals zur CoinJoin-Aktivierung am Desktop ein.
 
 <span id="transaction-control-and-everyday-use" data-ginger-heading="transaktionskontrolle-und-alltag" aria-hidden="true"></span>
 
@@ -79,7 +79,7 @@ Beide Wallets beschriften Guthaben und wählen einzelne Zahlungscoins. Ginger ze
 
 Sparrows Diagramm und Editor zeigen Inputs, Outputs, Gebühren und Signierdetails mit Werkzeugen zur Prüfung vor Veröffentlichung. Seine [Funktionsübersicht](https://sparrowwallet.com/features/) erklärt die Kontrolle. Sie kann zu regelmäßiger PSBT-Arbeit oder dem Wunsch nach genauer Zahlungsaufbauprüfung passen.
 
-Prüfe in beiden Empfänger, Inputs, Wechselgeld und Gebühr vor Autorisierung. Manuelle Auswahl kann unverwandtes Guthaben weiterhin durch gemeinsame Ausgabe verknüpfen.
+Prüfe in beiden Empfänger, Inputs, Wechselgeld und Gebühr vor Autorisierung. Manuelle Auswahl kann nicht zusammengehöriges Guthaben weiterhin durch gemeinsame Ausgabe verknüpfen.
 
 <span id="fees-and-service-conditions" data-ginger-heading="gebühren-und-dienstbedingungen" aria-hidden="true"></span>
 
@@ -89,7 +89,7 @@ Normale On-Chain-Zahlungen haben in beiden Mining-Gebühren. Größe und Rate be
 
 Nach Gingers [dokumentierten Koordinatoreinstellungen](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.26/WalletWasabi/WabiSabi/Backend/WabiSabiConfig.cs) sind Inputs **bis einschließlich 0.03 BTC** befreit. Größere bezahlen normalerweise **0.3 % ihres gesamten Werts**, mit Ausnahmen für geeignete Remixes. Die Schwelle gilt je Input, nicht für den Gesamtkontostand.
 
-Ein gebührenpflichtiger 0.10-BTC-Input kostet beispielsweise 30,000 Satoshis Koordinatorgebühr plus Mining. CoinJoin kann kleine nicht zurückgegebene Verteilungsreste hinterlassen. Prüfe tatsächliche Bedingungen und [vollständige Kosten](/de/using-ginger/annonset/); Einstellungen sind keine künftigen Angebote. Sparrows normale Zahlungen kaufen keinen gleichwertigen Mixing-Dienst, weshalb Mining-Gebühren allein kein entsprechender CoinJoin-Preisvergleich sind.
+Ein gebührenpflichtiger 0.10-BTC-Input kostet beispielsweise 30 000 Satoshis Koordinatorgebühr plus Mining. CoinJoin kann kleine nicht zurückgegebene Verteilungsreste hinterlassen. Prüfe tatsächliche Bedingungen und [vollständige Kosten](/de/using-ginger/annonset/); Einstellungen sind keine künftigen Angebote. Sparrows normale Zahlungen kaufen keinen gleichwertigen Mixing-Dienst, weshalb Mining-Gebühren allein kein entsprechender CoinJoin-Preisvergleich sind.
 
 Gingers Koordinatorbetreiber InvisibleBit LLC veröffentlicht Einschränkungen zu US-Standorten und Staatsangehörigkeit. Bedingungen erlauben Drittanbieterprüfungen und Coin-Ablehnung. Prüfe [aktuelle Bedingungen](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt). Eigene Schlüssel garantieren keine Zulassung. Berücksichtige bei Sparrow Privatsphäre und Verfügbarkeit deines Nodes oder Servers.
 

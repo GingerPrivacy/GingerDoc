@@ -15,15 +15,15 @@ next: false
 
 > Schwierigkeitsgrad: Einstieg. Die wichtigsten Schritte stehen zuerst; weiterführende Anleitungen sind optional.
 
-CoinJoin erstellt mit anderen Teilnehmern eine Bitcoin-Transaktion, um ihre Input-Output-Beziehungen schwerer ableitbar zu machen. Ginger signiert nur eigene Wallet-Inputs; du zahlst nicht auf ein Koordinatorkonto ein. Erfolgreiche Runden kosten trotzdem Gebühren und garantieren keine Anonymität.
+CoinJoin erstellt mit anderen Teilnehmern eine Bitcoin-Transaktion, um ihre Input-Output-Beziehungen schwerer ableitbar zu machen. Ginger signiert nur die Inputs deiner Wallet; du zahlst nicht auf ein Koordinatorkonto ein. Erfolgreiche Runden kosten trotzdem Gebühren und garantieren keine Anonymität.
 
 <span id="before-starting" data-ginger-heading="vor-dem-start" aria-hidden="true"></span>
 
 ## Vor dem Start
 
-Öffne eine gesicherte Software-Wallet und lass sie synchronisieren. Halte bestätigte Bitcoin verfügbar, den Computer verbunden und prüfe erwartete Kosten. Erfolgreiche Runden haben Mining- und möglicherweise Koordinatorgebühren; Wiederholungen erhöhen Kosten. Die optionale [erweiterte Kostenreferenz](/de/using-ginger/annonset/) erklärt die Berechnung. Hardware kann normal empfangen und senden, aber nicht die Signierquelle automatischer Ginger-CoinJoins sein.
+Öffne eine gesicherte Software-Wallet und lass sie synchronisieren. Halte bestätigte Bitcoin verfügbar, den Computer verbunden und prüfe erwartete Kosten. Erfolgreiche Runden haben Mining- und möglicherweise Koordinatorgebühren; Wiederholungen können zusätzliche Kosten verursachen. Die optionale [erweiterte Kostenreferenz](/de/using-ginger/annonset/) erklärt die Berechnung. Hardware kann normal empfangen und senden, aber nicht die Signierquelle automatischer Ginger-CoinJoins sein.
 
-Die Koordinatorgebühr wird pro Input-Coin geprüft. Bis einschließlich 0.03 BTC (3,000,000 Satoshis) fällt keine an. Größere Coins zahlen normalerweise 0.3 % ihres gesamten Werts; geeignete Remixes können ebenfalls befreit sein. Mining-Gebühren bleiben auch bei Koordinatorgebühr null.
+Die Koordinatorgebühr wird pro Input-Coin geprüft. Bis einschließlich 0.03 BTC (3 000 000 Satoshis) fällt keine an. Größere Coins zahlen normalerweise 0.3 % ihres gesamten Werts; geeignete Remixes können ebenfalls befreit sein. Mining-Gebühren bleiben auch bei Koordinatorgebühr null.
 
 Die Wallet benötigt bestätigtes brauchbares Guthaben und geeignete Rundenbedingungen. Kein Kontostand und keine Wartezeit garantiert sofortigen Start. Lies den aktuellen Status vor Einstellungsänderungen.
 
@@ -33,7 +33,7 @@ Die Wallet benötigt bestätigtes brauchbares Guthaben und geeignete Rundenbedin
 
 1. Öffne **Coinjoin Settings** über das Player-Menü oder Gingers Suche bei geöffneter Wallet.
 2. Prüfe die Kosteneinstellungen und lass im normalen Ablauf das Outputziel auf dieser Wallet. Eigene Ziele und Routing behandelt die optionale erweiterte Einstellungsanleitung.
-3. Aktiviere **Automatically start coinjoin** für unbeaufsichtigte Teilnahme bei geeigneten Bedingungen. Nutze für manuellen Start die Wiedergabesteuerung. Der gestoppte Player kann **Press Play to start** anzeigen.
+3. Aktiviere **Automatically start coinjoin** für unbeaufsichtigte Teilnahme bei geeigneten Bedingungen. Nutze für den manuellen Start die Starttaste des Players. Der gestoppte Player kann **Press Play to start** anzeigen.
 4. Beobachte den Status unter dem Player. Vor Teilnahme kann die Wallet auf Bestätigungen, geeignete Runden oder günstigere Gebühren warten.
 5. Nutze Pause zum Stoppen weiterer Teilnahme und lass kritische Phasen abschließen. Deaktivierte Automatik verändert künftiges Verhalten, macht aber veröffentlichte Transaktionen nicht rückgängig.
 
@@ -72,7 +72,7 @@ Je nach allgemeinen Einstellungen kann Ginger nach Fensterschließung im Hinterg
 
 ## Nach CoinJoin ausgeben
 
-Sobald resultierende Coins brauchbar sind, gib sie wie andere Bitcoin aus. CoinJoin bleibt öffentlich. Unverwandte private und nicht private Coins zu kombinieren, Adressen wiederzuverwenden oder identifizierten Diensten Transaktionen offenzulegen schafft neue Links. Prüfe Auswahl und Wechselgeld; früherer CoinJoin macht nicht jede spätere Handlung privat.
+Sobald resultierende Coins brauchbar sind, gib sie wie andere Bitcoin aus. CoinJoin bleibt öffentlich. Nicht zusammengehörige private und nicht private Coins zu kombinieren, Adressen wiederzuverwenden oder identifizierten Diensten Transaktionen offenzulegen kann neue Verknüpfungen schaffen. Prüfe Auswahl und Wechselgeld; früherer CoinJoin macht nicht jede spätere Handlung privat.
 
 <span id="you-do-not-need-to-manage-the-protocol" data-ginger-heading="du-musst-das-protokoll-nicht-verwalten" aria-hidden="true"></span>
 

@@ -17,7 +17,7 @@ CoinJoin hat Kosten und ein Privatsphäreziel. Prüfe beides vor dem Start: Eine
 
 ## Koordinator- und Mining-Gebühren
 
-Mit Gingers aktuellen Einstellungen bezahlt jeder Input von höchstens 3,000,000 Satoshis (0.03 BTC) keine Koordinatorgebühr. Genau 0.03 BTC sind eingeschlossen. Größere Inputs bezahlen normalerweise 0.3 % ihres gesamten Werts, nicht nur des Anteils über 0.03 BTC. Dezimal beträgt die Rate 0.003; rechnerische Satoshi-Bruchteile werden abgerundet.
+Mit Gingers aktuellen Einstellungen bezahlt jeder Input von höchstens 3 000 000 Satoshis (0.03 BTC) keine Koordinatorgebühr. Genau 0.03 BTC sind eingeschlossen. Größere Inputs bezahlen normalerweise 0.3 % ihres gesamten Werts, nicht nur des Anteils über 0.03 BTC. Dezimal beträgt die Rate 0.003; rechnerische Satoshi-Bruchteile werden abgerundet.
 
 Die Schwelle wird für jeden Input getrennt geprüft, nicht anhand des Gesamtkontostands oder der Summe registrierter Inputs. Geeignete Remixes können ebenfalls befreit sein; Gingers beworbene Befreiung umfasst direktes Ausgeben von CoinJoin-Guthaben über eine Transaktion. Diese Zusatzbefreiungen hängen von der angebotenen Runde und Input-Eignung ab. Prüfe vor Teilnahme erneut die [aktuelle Ginger-Gebührenerklärung](https://gingerwallet.io/).
 
@@ -25,12 +25,12 @@ Für Inputs ohne andere Koordinatorgebührenbefreiung:
 
 | Inputwert | BTC-Wert | Koordinatorgebühr |
 | --- | --- | --- |
-| 2,999,999 Satoshis | 0.02999999 BTC | 0 Satoshis |
-| 3,000,000 Satoshis | 0.03 BTC | 0 Satoshis |
-| 3,000,001 Satoshis | 0.03000001 BTC | 9,000 Satoshis |
-| 4,000,000 Satoshis | 0.04 BTC | 12,000 Satoshis |
+| 2 999 999 Satoshis | 0.02999999 BTC | 0 Satoshis |
+| 3 000 000 Satoshis | 0.03 BTC | 0 Satoshis |
+| 3 000 001 Satoshis | 0.03000001 BTC | 9 000 Satoshis |
+| 4 000 000 Satoshis | 0.04 BTC | 12 000 Satoshis |
 
-Der 0.04-BTC-Input bezahlt beispielsweise 0.00012 BTC (12,000 Satoshis), nicht 0.3 % nur der 0.01 BTC über der Schwelle. Mining-Gebühren kommen hinzu, auch bei Koordinatorgebühr null. Die Beispiele erklären die konfigurierte Berechnung, kein Angebot für künftige Runden.
+Der 0.04-BTC-Input bezahlt beispielsweise 0.00012 BTC (12 000 Satoshis), nicht 0.3 % nur der 0.01 BTC über der Schwelle. Mining-Gebühren kommen hinzu, auch bei Koordinatorgebühr null. Die Beispiele erklären die konfigurierte Berechnung, kein Angebot für künftige Runden.
 
 Mining-Gebühren entschädigen Miner für Transaktionsplatz. Sie hängen von Gebührenrate sowie Inputs und Outputs der Transaktion ab. Einen kleinen Coin auszugeben kann einen großen Anteil seines Werts kosten. Wiederholte CoinJoins können jeweils weitere Mining-Kosten verursachen, auch wenn sie von der Koordinatorgebühr befreit sind.
 
@@ -42,20 +42,20 @@ Teile Coins nicht allein zur Gebührenbefreiung auf, ohne zusätzliche Transakti
 
 Dein ausgegebener Betrag kann mehr als den beworbenen Koordinatorprozentsatz enthalten. CoinJoin benötigt auch Transaktionsplatz, und nach der Verteilung verfügbaren Werts durch den Client können Outputbeträge einen kleinen Rest hinterlassen. Dieser kann zum Koordinatorerlös oder zur Mining-Gebühr beitragen; er erscheint nicht unbedingt als eigener Gebührenposten in der Wallet.
 
-Vergleiche für einen abgeschlossenen CoinJoin den Gesamtwert deiner Inputs mit allen eigenen Outputs dieser Transaktion. Schließe an andere Output-Wallets gesendete Werte ein. Ziehe nicht sämtliche Outputs der gemeinsamen Transaktion nur von deinen Inputs ab: Andere Teilnehmer besitzen einen Teil davon.
+Vergleiche für einen abgeschlossenen CoinJoin den Gesamtwert deiner Inputs mit dem Gesamtwert aller eigenen Outputs dieser Transaktion. Schließe an andere Output-Wallets gesendete Werte ein. Ziehe nicht sämtliche Outputs der gemeinsamen Transaktion nur von deinen Inputs ab: Andere Teilnehmer besitzen einen Teil davon.
 
 Folgendes ist ein Rechenbeispiel, keine Vorhersage von Ginger-Outputs oder ein Anwendungsbildschirm:
 
 | Posten | Satoshis |
 | --- | ---: |
-| Dein gebührenpflichtiger Input | 5,000,000 |
-| Deine Outputs über beide Wallets summiert | 4,980,800 |
-| Wertdifferenz | 19,200 |
-| Angenommene Koordinatorgebühr: 0.3 % des Inputs | 15,000 |
-| Hier deiner Teilnahme zugeordnete Mining-Kosten | 3,600 |
+| Dein gebührenpflichtiger Input | 5 000 000 |
+| Deine Outputs über beide Wallets summiert | 4 980 800 |
+| Wertdifferenz | 19 200 |
+| Angenommene Koordinatorgebühr: 0.3 % des Inputs | 15 000 |
+| Hier deiner Teilnahme zugeordnete Mining-Kosten | 3 600 |
 | Verbleibende Verteilungsdifferenz | 600 |
 
-Hier gilt 15,000 + 3,600 + 600 = 19,200 Satoshis. Die letzten drei Zeilen erklären dieselbe Differenz; addiere sie nicht nochmals als zusätzliche Belastung. Auch die rundenweite Mining-Gebühr bezahlt nicht jeder Teilnehmer vollständig. Einzelne Gebührenfelder oder Protokollzeilen decken nicht automatisch jede Wertdifferenzkomponente ab.
+Hier gilt 15 000 + 3 600 + 600 = 19 200 Satoshis. Die letzten drei Zeilen erklären dieselbe Differenz; addiere diese Differenz nicht nochmals als zusätzliche Belastung. Auch die rundenweite Mining-Gebühr bezahlt nicht jeder Teilnehmer vollständig. Einzelne Gebührenfelder oder Protokollzeilen decken nicht automatisch jede Wertdifferenzkomponente ab.
 
 Gehen Outputs an Hardware, ist ihr Verschwinden aus dem Softwarekontostand eine Übertragung weiterhin eigenen Werts. Warte vor dem Abgleich, bis beide Wallets synchronisiert sind. Unbestätigte Transaktionen, parallele Zahlungen und eingehendes Guthaben können einen einfachen Vorher-nachher-Kontostandsvergleich irreführend machen.
 
@@ -72,7 +72,7 @@ Berücksichtige auch die Schritte um CoinJoin bei der Nutzen-Kosten-Entscheidung
 | Übertragung an andere Wallet | Weitere Mining-Gebühr einer normalen Übertragung |
 | Späteres Ausgeben | Gebühren für Inputs und Outputs jener Zahlung |
 
-Eine Teilnahme für 19,200 Satoshis plus eine Übertragung für 1,200 Satoshis kostet beispielsweise 20,400 Satoshis für diese zwei Schritte. Spätere Zahlungen kosten separat. Mehr Outputs schaffen kleinere getrennt ausgebbare Stücke, verbrauchen beim Ausgeben aber ebenfalls Platz. Diese künftigen Kosten werden nicht schon bei Outputerzeugung bezahlt.
+Eine Teilnahme für 19 200 Satoshis plus eine Übertragung für 1 200 Satoshis kostet beispielsweise 20 400 Satoshis für diese zwei Schritte. Spätere Zahlungen kosten separat. Mehr Outputs können kleinere getrennt ausgebbare Stücke schaffen, verbrauchen beim Ausgeben aber ebenfalls Platz. Diese künftigen Kosten werden nicht schon bei Outputerzeugung bezahlt.
 
 Lerne mit einem verkraftbaren Betrag und prüfe das erste abgeschlossene Ergebnis, bevor du wiederholte Runden weiterlaufen lässt. Halte ein persönliches Kostenbudget; CoinJoin-Zeitpräferenz oder Coin-Auswahleinstellung garantiert keine Obergrenze für die gesamten Kosten des Wegs.
 
@@ -92,16 +92,16 @@ Der normale CoinJoin-Start lehnt in dieser Version auch Wallets ab, deren Guthab
 
 Ginger verfolgt Privatsphäredaten der Coins und vergleicht sie mit dem Anonymitätsscore-Ziel der Wallet. Der Score ist eine lokale Schätzung anhand ihrer Transaktionskenntnis. Er ist weder eine Zahl unabhängig geprüfter Menschen noch die Wahrscheinlichkeit, dass ein Beobachter dich identifiziert.
 
-Der Gesamtfortschritt gewichtet den Scorefortschritt nach Beträgen. Die separate farbige Guthabenaufteilung zeigt Beträge nach Privatsphärekategorien. Das sind verschiedene Messungen.
+Der Gesamtfortschritt gewichtet den Fortschritt der Scores zum Ziel nach Beträgen. Die separate farbige Guthabenaufteilung zeigt Beträge nach Privatsphärekategorien. Das sind verschiedene Messungen.
 
 Vereinfachtes Beispiel mit Ziel 5 und nur zwei Coins:
 
 | Coin | Wert | Lokaler Score | Ziel erreicht? |
 | --- | ---: | ---: | --- |
-| A | 1,000,000 Satoshis | 5 | Ja |
-| B | 3,000,000 Satoshis | 3 | Nein |
+| A | 1 000 000 Satoshis | 5 | Ja |
+| B | 3 000 000 Satoshis | 3 | Nein |
 
-Nur 25 % des Werts erreicht das Ziel. Für Gesamtfortschritt gewichtet diese Version Fortschritt oberhalb Score 1: A liefert 1,000,000 × 4 und B 3,000,000 × 2 gegenüber maximal 4,000,000 × 4. Das ergibt 62.5 %, angezeigt ganzzahlig als 62 %. Unterschiedliche Prozente in beiden Ansichten sind daher nicht automatisch Fehler.
+Nur 25 % des Werts erreicht das Ziel. Für Gesamtfortschritt gewichtet diese Version Fortschritt oberhalb Score 1: A liefert 1 000 000 × 4 und B 3 000 000 × 2 gegenüber maximal 4 000 000 × 4. Das ergibt 62.5 %, angezeigt ganzzahlig als 62 %. Unterschiedliche Prozente in beiden Ansichten sind daher nicht automatisch Fehler.
 
 **Hurray! All your funds are private!** bedeutet, dass die Wallet Guthaben nach aktuellem Ziel und ihrer Berechnung privat nennt. Es bedeutet weder verschwundenen Verlauf noch Internetanonymität oder Unverknüpfbarkeit späterer Zahlungen.
 

@@ -13,7 +13,7 @@ next: false
 
 CoinJoin verändert die Unsicherheit bei Input-Output-Verknüpfungen. Die nächste Transaktion kann neue Informationen liefern. Entscheide vor einer Zahlung, welche Coins Empfänger oder andere Beobachter dir bereits zuordnen könnten und was die geplante Zahlung verrät.
 
-Die Beispiele verwenden fiktive Satoshi-Beträge. Die Gebühren dienen dem Rechnen und sind keine Netzwerkangebote. Ein Coin ist ein unspent transaction output (UTXO), also ein unverbrauchter Transaktionsoutput; er ist keine Wallet oder Bitcoin-Adresse.
+Die Beispiele verwenden fiktive Satoshi-Beträge. Die Gebühren dienen dem Rechnen und sind keine Netzwerkangebote. Ein Coin ist ein unspent transaction output (UTXO), also ein noch nicht ausgegebener Transaktionsoutput; er ist keine Wallet oder Bitcoin-Adresse.
 
 <span id="start-with-the-payment-you-need-to-make" data-ginger-heading="mit-der-benötigten-zahlung-beginnen" aria-hidden="true"></span>
 
@@ -27,24 +27,24 @@ Auch automatische Auswahl und Gingers Empfehlungen können helfen. Manuelle Kont
 
 ## Beispiel 1: Ein Coin deckt einen Kauf
 
-Alex hat einen CoinJoin-Coin über 120,000 Satoshis und möchte 70,000 bezahlen. Die angenommene Gebühr beträgt 1,000 Satoshis.
+Alex hat einen CoinJoin-Coin über 120 000 Satoshis und möchte 70 000 bezahlen. Die angenommene Gebühr beträgt 1 000 Satoshis.
 
 | Transaktionsteil | Betrag |
 | --- | --- |
-| Ausgegebener Input | 120,000 sats |
-| Empfang des Händlers | 70,000 sats |
-| Wechselgeld an Alex | 49,000 sats |
-| Mining-Gebühr | 1,000 sats |
+| Ausgegebener Input | 120 000 sats |
+| Empfang des Händlers | 70 000 sats |
+| Wechselgeld an Alex | 49 000 sats |
+| Mining-Gebühr | 1 000 sats |
 
 Der Händler kennt seine Zahlungsadresse und den Betrag. Er kann die Transaktion prüfen und vermuten, dass der andere Output Alex' Wechselgeld ist. Er erfährt allein aus dieser Transaktion nicht Alex' Gesamtkontostand, sieht aber den Input und kann spätere Ausgaben des wahrscheinlichen Wechselgelds verfolgen.
 
 Alex muss das Wechselgeld nicht manuell zurückbewegen: Es gehört bereits zur Wallet. Der nützliche nächste Prüfpunkt ist eine spätere Zahlung mit diesem Wechselgeld.
 
-<span id="example-2-two-unrelated-receipts-are-combined" data-ginger-heading="beispiel-2-zwei-unverwandte-eingänge-werden-kombiniert" aria-hidden="true"></span>
+<span id="example-2-two-unrelated-receipts-are-combined" data-ginger-heading="beispiel-2-zwei-nicht-zusammengehörige-zahlungseingänge-werden-kombiniert" aria-hidden="true"></span>
 
-## Beispiel 2: Zwei unverwandte Eingänge werden kombiniert
+## Beispiel 2: Zwei nicht zusammengehörige Zahlungseingänge werden kombiniert
 
-Blair hat einen Coin über 90,000 Satoshis aus freiberuflicher Arbeit und einen über 80,000 aus einer öffentlichen Spendenadresse. Eine Zahlung von 150,000 bei 2,000 Gebühr braucht mehr als jeder Coin allein; gemeinsam liefern sie 18,000 Satoshis Wechselgeld.
+Blair hat einen Coin über 90 000 Satoshis aus freiberuflicher Arbeit und einen über 80 000 aus einer öffentlichen Spendenadresse. Eine Zahlung von 150 000 bei 2 000 Gebühr braucht mehr als jeder Coin allein; gemeinsam liefern sie 18 000 Satoshis Wechselgeld.
 
 Normale gemeinsame Ausgabe kann gemeinsamen Inputbesitz nahelegen. Jemand mit Kenntnis des Spenden-Coins erhält möglicherweise einen Hinweis auf den Arbeits-Coin. Das ist eine Ableitung aus Transaktion und Vorwissen, kein automatischer Identitätsbeweis.
 
@@ -56,9 +56,9 @@ CoinJoin und PayJoin sind selbst gemeinsame Transaktionen; die Annahme eines ein
 
 ## Beispiel 3: Wechselgeld trägt eine Verbindung weiter
 
-Alex kombiniert später die 49,000 Satoshis Wechselgeld aus Beispiel 1 mit unverwandten 60,000 für eine Zahlung von 100,000. Bei angenommener Gebühr von 1,000 kehren 8,000 Satoshis als neues Wechselgeld zurück.
+Alex kombiniert später die 49 000 Satoshis Wechselgeld aus Beispiel 1 mit einem nicht damit zusammengehörigen Coin über 60 000 Satoshis für eine Zahlung von 100 000. Bei angenommener Gebühr von 1 000 kehren 8 000 Satoshis als neues Wechselgeld zurück.
 
-Der erste Händler kann beobachten, dass sein wahrscheinlicher Wechselgeldoutput gemeinsam mit dem 60,000-Input ausgegeben wurde. Auch bei neuer Empfängeradresse bleibt diese Inputbeziehung. Eine neue Outputadresse macht gemeinsame Inputausgabe nicht rückgängig.
+Der erste Händler kann beobachten, dass der von ihm als Wechselgeld vermutete Output gemeinsam mit dem 60 000-Input ausgegeben wurde. Auch bei neuer Empfängeradresse bleibt diese Inputbeziehung. Eine neue Outputadresse macht gemeinsame Inputausgabe nicht rückgängig.
 
 Nutze Bezeichnungen zum Erhalten späteren Entscheidungskontexts. Sie sind lokale Notizen; sie veröffentlichen weder einen Namen auf der Blockchain noch verhindern sie Beobachterableitungen.
 
@@ -66,9 +66,9 @@ Nutze Bezeichnungen zum Erhalten späteren Entscheidungskontexts. Sie sind lokal
 
 ## Beispiel 4: Den Gesamtkontostand auf Hardware bewegen
 
-Casey hat vier Coins zu je 200,000 Satoshis. Alle an eine Hardware-Empfangsadresse zu senden gibt 800,000 Satoshis Inputs in einer Transaktion aus. Bei angenommener Gebühr von 2,000 empfängt die Hardware-Wallet 798,000.
+Casey hat vier Coins zu je 200 000 Satoshis. Alle an eine Hardware-Empfangsadresse zu senden gibt 800 000 Satoshis Inputs in einer Transaktion aus. Bei angenommener Gebühr von 2 000 empfängt die Hardware-Wallet 798 000.
 
-Hardware verbessert Schlüsselisolation, aber der Transfer zeigt gemeinsame Ausgabe aller vier Inputs. Separate Übertragungen können diese konkrete Zuordnung vermeiden, verursachen aber mehr Gebühren und andere sichtbare Zeit-/Betragsmuster. Direkter Hardware-Empfang geeigneter CoinJoin-Outputs spart einen späteren Transfer, hat aber versionsabhängige Eignungs- und Zielprüfungen; er ist kein allgemeiner Remix-Weg für hardwareverwahrte Coins.
+Hardware verbessert Schlüsselisolation, aber der Transfer zeigt gemeinsame Ausgabe aller vier Inputs. Separate Übertragungen können diese konkrete Zuordnung vermeiden, verursachen aber mehr Gebühren und andere sichtbare Zeit-/Betragsmuster. Direkter Hardware-Empfang geeigneter CoinJoin-Outputs kann einen späteren Transfer ersparen, hat aber versionsabhängige Eignungs- und Zielprüfungen; er ist kein allgemeiner Remix-Weg für hardwareverwahrte Coins.
 
 Gib nicht den ganzen Kontostand aus, nur weil die Coin-Liste unordentlich wirkt. Zusammenführung reduziert möglicherweise spätere Inputs; eine niedrige Rate verändert nur die Kosten, nicht die Offenlegung.
 

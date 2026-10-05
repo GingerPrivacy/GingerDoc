@@ -17,7 +17,7 @@ Privatsphäreverbesserungen bleiben leichter erhalten, wenn sie zur tatsächlich
 
 ## Vor dem Empfang
 
-Erzeuge eine neue Adresse für die konkrete Zahlung und nutze eine später verständliche lokale Bezeichnung. Vermeide eine öffentliche wiederverwendbare Adresse für unverwandte Eingänge, wenn einzelne Zahlungsanforderungen möglich sind. Prüfe Hardware-Adressen auf dem Gerät.
+Erzeuge eine neue Adresse für die konkrete Zahlung und nutze eine später verständliche lokale Bezeichnung. Vermeide eine öffentliche wiederverwendbare Adresse für nicht zusammengehörige Zahlungseingänge, wenn einzelne Zahlungsanforderungen möglich sind. Prüfe Hardware-Adressen auf dem Gerät.
 
 Bedenke den Kommunikationskanal. Sendest du eine Adresse von einem identifizierten Konto, kann der Empfänger sie dir zuordnen, obwohl die Blockchain kein Namensfeld hat. Eine neue Adresse reduziert Wiederverwendung; sie löscht nicht das Gespräch mit der Adresse.
 
@@ -25,7 +25,7 @@ Bedenke den Kommunikationskanal. Sendest du eine Adresse von einem identifiziert
 
 ## Vor dem Senden
 
-Prüfe die Herkunft verfügbarer Coins. Gemeinsame Ausgabe getrennter Aktivitäten offenbart eine Inputverknüpfung. **Manual Control** hilft in Ginger bei Prüfung und Auswahl; automatische Auswahl und Privatsphäreempfehlungen helfen normalen Zahlungen. Prüfe immer die resultierende Vorschau.
+Prüfe die Herkunft verfügbarer Coins. Gemeinsame Ausgabe von Zahlungen aus getrennten Aktivitäten kann offenlegen, dass ihre Inputs zusammen ausgegeben wurden. **Manual Control** hilft in Ginger bei Prüfung und Auswahl; automatische Auswahl und Privatsphäreempfehlungen helfen normalen Zahlungen. Prüfe immer die resultierende Vorschau.
 
 Fordere ein neues Ziel an und bestätige Betrag und Adresse. Vermeidet eine Empfehlung Wechselgeld durch Betragsänderung, muss der Empfänger den neuen Betrag akzeptieren. Zahlungen an falsche Personen oder zu niedrige Rechnungszahlungen verbessern keine Privatsphäre.
 
@@ -33,7 +33,7 @@ Fordere ein neues Ziel an und bestätige Betrag und Adresse. Vermeidet eine Empf
 
 ## Nach CoinJoin
 
-Der spätere Umgang mit resultierenden Coins bleibt relevant. Alle Outputs in einer Folgezahlung zu kombinieren schafft neue Zuordnungen. Identifizierte Adressen oder Anbieter erzeugen weitere Informationen, unabhängig vom zuvor angezeigten Score.
+Der spätere Umgang mit resultierenden Coins bleibt relevant. Alle Outputs in einer Folgezahlung zu kombinieren kann neue Zuordnungen schaffen. Identifizierte Adressen oder Anbieter erzeugen weitere Informationen, unabhängig vom zuvor angezeigten Score.
 
 Analysten können auch Zeiten und Beträge vergleichen. Keine allgemeine Wartezeit garantiert Sicherheit. Plane Ausgaben, statt von einer Runde oder festen Verzögerung die Lösung jeder Beobachtung zu erwarten.
 

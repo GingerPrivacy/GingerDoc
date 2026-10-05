@@ -73,7 +73,7 @@ Für einen Input ohne weitere Ausnahme:
 | Inputwert | Koordinatorgebühr | Mining-Gebühr |
 | --- | --- | --- |
 | 0.03 BTC | 0 Satoshis | Zusätzlich |
-| 0.10 BTC | 0.0003 BTC oder 30,000 Satoshis | Zusätzlich |
+| 0.10 BTC | 0.0003 BTC oder 30 000 Satoshis | Zusätzlich |
 
 Diese Beispiele erklären Berechnungen, keine Angebote für künftige Runden. Vollständige Regeln und weitere Beispiele stehen unter [CoinJoin-Gebühren und Privatsphäre-Fortschritt](/de/using-ginger/annonset/).
 
@@ -81,13 +81,13 @@ Diese Beispiele erklären Berechnungen, keine Angebote für künftige Runden. Vo
 
 ### Wasabis Koordinatorgebührenrichtlinie
 
-Wasabi akzeptiert seit Version 2.2.0.0 nur Runden ohne Koordinatorgebühr. Mining-Gebühren bleiben zahlbar. Die Dokumentation beschreibt außerdem seltene Outputverteilungsreste bis 10,000 Satoshis je CoinJoin, die an den Koordinator gehen. Siehe [Wasabis Gebührenerklärung](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
+Wasabi akzeptiert seit Version 2.2.0.0 nur Runden ohne Koordinatorgebühr. Mining-Gebühren bleiben zahlbar. Die Dokumentation beschreibt außerdem seltene Outputverteilungsreste bis 10 000 Satoshis je CoinJoin, die an den Koordinator gehen. Siehe [Wasabis Gebührenerklärung](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
 
 <span id="budget-beyond-the-headline-percentage" data-ginger-heading="über-den-beworbenen-prozentsatz-hinaus-budgetieren" aria-hidden="true"></span>
 
 ### Über den beworbenen Prozentsatz hinaus budgetieren
 
-Auch Ginger kann einen kleinen Rest bei der Outputverteilung hinterlassen. Vergleiche bei beiden den Wert deiner teilnehmenden Inputs mit **allen eigenen Outputs** aus der abgeschlossenen Transaktion, einschließlich anderer Wallets. Wiederholte Runden und spätere Transfers verursachen zusätzliche Kosten.
+Auch Ginger kann einen kleinen Rest bei der Outputverteilung hinterlassen. Vergleiche bei beiden den Wert deiner teilnehmenden Inputs mit **allen eigenen Outputs** aus der abgeschlossenen Transaktion, einschließlich anderer Wallets. Wiederholte Runden und spätere Transfers können zusätzliche Kosten verursachen.
 
 Null Koordinatorgebühr ist eine Vergleichskomponente. Transaktionsgröße, Mining-Raten, Outputverteilung und abgeschlossene Rundenzahl beeinflussen tatsächliche Ausgaben. Gingers [Kostenanleitung](/de/using-ginger/annonset/) erklärt den Betragsabgleich.
 
@@ -97,7 +97,7 @@ Null Koordinatorgebühr ist eine Vergleichskomponente. Transaktionsgröße, Mini
 
 Beide Anwendungen unterstützen Hardware für normales Empfangen und Zahlungssignieren. Ihre dokumentierten CoinJoin-Abläufe benötigen eine Software-Wallet für Inputsignierung; Hardware kann diese Quelle nicht sein. Siehe [Gingers Hardware-Unterstützung](/de/using-ginger/hardware-wallet/) und [Wasabis Hardware-Anleitung](https://docs.wasabiwallet.io/using-wasabi/ColdWasabi.html).
 
-Resultierende Coins zu empfangen ist ein eigener Vorgang. Beide erlauben andere unterstützte geladene Wallets einschließlich Hardware als CoinJoin-Outputziel. Das spart eine separate Übertragung nach der Runde. Es bedeutet **nicht**, dass Hardware die Inputs signiert oder Outputs vor Ankunft garantiert dein Privatsphäreziel erreicht haben.
+Resultierende Coins zu empfangen ist ein eigener Vorgang. Beide erlauben andere unterstützte geladene Wallets einschließlich Hardware als CoinJoin-Outputziel. Das kann eine separate Übertragung nach der Runde ersparen. Es bedeutet **nicht**, dass Hardware die Inputs signiert oder Outputs vor Ankunft garantiert dein Privatsphäreziel erreicht haben.
 
 Prüfe in Ginger nach Neustart das zurückgesetzte Ziel erneut. Halte getrennte Backups für Softwarequelle und Hardwareziel. Gib Hardware-Wörter niemals zur CoinJoin-Aktivierung am Desktop ein.
 
@@ -107,7 +107,7 @@ Folge [Gingers Cold-Storage-Anleitung](/de/hardware-wallets/exchange-to-cold-sto
 
 ## Privatsphäre und Dienstrichtlinien
 
-Selbstverwahrung beantwortet, wer Ausgaben autorisiert, aber nicht jede Privatsphäre- oder Verfügbarkeitsfrage. CoinJoin erschwert manche Beziehungen, Transaktionen bleiben öffentlich. Börsen behalten Aufzeichnungen; spätere Kombination, Adressreuse und Empfängeroffenlegung schafft neue Links. Ein Score garantiert keine Anonymität oder Börsenakzeptanz. Siehe [Vertrauen und Grenzen](/de/learn-coinjoin/trust-and-limits/).
+Selbstverwahrung beantwortet, wer Ausgaben autorisiert, aber nicht jede Privatsphäre- oder Verfügbarkeitsfrage. CoinJoin erschwert manche Beziehungen, Transaktionen bleiben öffentlich. Börsen behalten Aufzeichnungen; spätere Coin-Kombinationen, Adresswiederverwendung oder gegenüber einem Empfänger offengelegte Informationen können neue Verknüpfungen schaffen. Ein Score garantiert keine Anonymität oder Börsenakzeptanz. Siehe [Vertrauen und Grenzen](/de/learn-coinjoin/trust-and-limits/).
 
 Gingers Betreiber InvisibleBit LLC veröffentlicht Beschränkungen einschließlich US-Standort und Staatsangehörigkeit. Die Bedingungen erlauben Drittprüfungen und Inputablehnung. Prüfe [aktuelle Bedingungen](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt). Prüfe bei Wasabi den gewählten Betreiber; Wallet-Gebührenregeln belegen nicht dessen Zulassungs- oder Datenpraktiken.
 

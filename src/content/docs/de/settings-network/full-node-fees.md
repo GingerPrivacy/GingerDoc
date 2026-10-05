@@ -19,7 +19,7 @@ Ein eigener Bitcoin-Node kann die Abhängigkeit von öffentlichen Peers für Blo
 
 Unter **Settings** → **Bitcoin** heißt der Schalter **(EXPERIMENTAL) Run Bitcoin Core on startup**. Version 2.0.26 enthält Bitcoin Core 31. Verwende Anleitungen, die zu diesem Node und deiner Version passen.
 
-1. Wähle einen **Bitcoin Core Data Folder** mit ausreichendem Platz und zuverlässigem Speicher. Verwende keinen fremden Ordner und lass nie zwei Node-Prozesse gleichzeitig dasselbe Verzeichnis verwalten.
+1. Wähle einen **Bitcoin Core Data Folder** mit ausreichendem Platz und zuverlässigem Speicher. Verwende keinen Ordner, der nicht für diesen Node vorgesehen ist, und lass nie zwei Node-Prozesse gleichzeitig dasselbe Verzeichnis verwalten.
 2. Aktiviere **(EXPERIMENTAL) Run Bitcoin Core on startup** und starte Ginger nach Aufforderung neu.
 3. Lass die erste Node-Synchronisierung laufen. Beobachte Verbindung und Downloadstatus; sie kann lange dauern.
 4. Wähle **Stop Bitcoin Core on shutdown** je nachdem, ob der Node nach Ginger weiterlaufen soll.

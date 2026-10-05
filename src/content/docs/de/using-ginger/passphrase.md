@@ -38,7 +38,7 @@ Der Wallet-Name ist nur eine lokale Bezeichnung. Ein Authenticator-Code zur Zwei
 - Wiederherstellungswörter in angezeigter Reihenfolge.
 - Exakte ursprüngliche Passphrase mit Großschreibung und Zeichen oder klare Notiz, dass keine verwendet wurde.
 
-Halte diese Informationen privat und auch nach Computerverlust wiederherstellbar. Schreibe die Wörter offline auf und vermeide Fotos, E-Mail und gewöhnliche Cloud-Notizen. Sichere auch die Passphrase. Getrennte Lagerung schützt gegen einen gemeinsamen Fund beider Geheimnisse, aber du musst beide bei Bedarf finden können. Verlasse dich nicht allein auf Erinnerung.
+Halte diese Informationen privat und auch nach Computerverlust wiederherstellbar. Schreibe die Wörter offline auf und vermeide Fotos, E-Mail und gewöhnliche Cloud-Notizen. Sichere auch die Passphrase. Getrennte Lagerung kann gegen einen gemeinsamen Fund beider Geheimnisse schützen, aber du musst beide bei Bedarf finden können. Verlasse dich nicht allein auf Erinnerung.
 
 Wörter stellen Bitcoin-Zugriff wieder her, aber nicht jede Bezeichnung oder Einstellung. Behalte bestehende Wallet-Dateien während der Untersuchung eines Wiederherstellungsproblems. Automatische Backups auf demselben Computer schützen nicht vor dessen Verlust.
 

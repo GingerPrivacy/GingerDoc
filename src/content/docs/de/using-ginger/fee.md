@@ -31,7 +31,7 @@ Ohne automatische Schätzungen kann Ginger manuelle Eingabe anbieten. Bist du un
 
 ## Wechselgeld ist weiterhin dein Bitcoin
 
-Bitcoin gibt ganze Coins, auch UTXOs genannt, aus. Übersteigen Inputs Empfängerbetrag plus Gebühr, kehrt der Rest normalerweise an eine neue Wechselgeldadresse deiner Wallet zurück. Beispielsweise hinterlassen 100,000 Satoshis Input bei 60,000 Satoshis Zahlung und 1,000 Satoshis Gebühr 39,000 Satoshis Wechselgeld.
+Bitcoin gibt ganze Coins, auch UTXOs genannt, aus. Übersteigen Inputs Empfängerbetrag plus Gebühr, kehrt der Rest normalerweise an eine neue Wechselgeldadresse deiner Wallet zurück. Beispielsweise hinterlassen 100 000 Satoshis Input bei 60 000 Satoshis Zahlung und 1 000 Satoshis Gebühr 39 000 Satoshis Wechselgeld.
 
 Die Wechselgeldadresse kann von zuvor gezeigten Empfangsadressen abweichen. Du musst sie weder herauskopieren noch manuell zurücksenden. Transaktionsanalyse kann Wechselgeld mit der Zahlung verknüpfen; das zählt bei späterer Kombination mit anderem Guthaben.
 

@@ -13,7 +13,7 @@ next: false
 
 Bitcoin-Transaktionen sind öffentlich, aber der Name eines Wallet-Besitzers steht nicht automatisch neben jeder Adresse. Praktisch zählt, wer eine Adresse oder Transaktion mit dir verbinden kann und was er daraus weiter ableitet.
 
-Ein Kunde kennt vielleicht die Rechnungsadresse, die du ihm gegeben hast. Eine Börse kennt deine Auszahlungsadresse und geprüfte Identität. Ein Beobachter einer öffentlichen Spendenadresse sieht deren Eingänge. Wegen unterschiedlichen Vorwissens ist kontrollierte Offenlegung ein hilfreicheres Privatsphäremodell als ein einziger Anonymitätsschalter.
+Ein Kunde kennt vielleicht die Rechnungsadresse, die du ihm gegeben hast. Eine Börse kennt möglicherweise deine Auszahlungsadresse und geprüfte Identität. Ein Beobachter einer öffentlichen Spendenadresse sieht deren Eingänge. Wegen unterschiedlichen Vorwissens ist kontrollierte Offenlegung ein hilfreicheres Privatsphäremodell als ein einziger Anonymitätsschalter.
 
 <span id="what-the-blockchain-reveals" data-ginger-heading="was-die-blockchain-offenlegt" aria-hidden="true"></span>
 
@@ -32,11 +32,11 @@ Ordnet jemand einer Person eine Adresse zu, kann er verbundene Aktivität unters
 | Zahler | Deine bereitgestellte Adresse und seine Zahlung | Neue Adresse pro Empfang geben |
 | Zahlungsempfänger | Zahlungstransaktion und Kaufdaten | Ausgewählte Inputs prüfen und unnötige Identitätsangaben vermeiden |
 | Börse oder Kaufanbieter | Kontoaufzeichnungen, Zahlungsdaten, Ein-/Auszahlungsadressen | Anbieteraufzeichnungen vor Nutzung verstehen |
-| Öffentlicher Blockchain-Analyst | Transaktionsdaten und externe Bezeichnungen | Einfache Links vermeiden; CoinJoin und spätere Ausgaben prüfen |
+| Öffentlicher Blockchain-Analyst | Transaktionsdaten und externe Bezeichnungen | Einfache Verknüpfungen vermeiden; CoinJoin und spätere Ausgaben prüfen |
 | Kontaktierter Netzwerkdienst | Anfrageinhalt und mögliche Verbindungsmetadaten | Tor soweit unterstützt aktiv lassen und funktionsbezogene Offenlegungen verstehen |
 | Person mit Computer-/Backupzugriff | Wallet-Dateien, Bezeichnungen, Adressen, Protokolle, möglicherweise Schlüssel | Gerät, Wiederherstellungsbackup und lokale Metadaten schützen |
 
-Keine einzelne Einstellung löst jedes Problem dieser Tabelle. Hardware schützt Schlüssel, verbirgt aber keine öffentliche Adresse. Tor schützt Verbindungsmetadaten, verbirgt aber keine Informationen, die du in Anbieterformulare eingibst.
+Keine einzelne Einstellung löst jedes Problem dieser Tabelle. Hardware hilft, Schlüssel zu schützen, verbirgt aber keine öffentliche Adresse. Tor hilft beim Schutz von Verbindungsmetadaten, verbirgt aber keine Informationen, die du in Anbieterformulare eingibst.
 
 <span id="why-this-matters-in-ordinary-life" data-ginger-heading="warum-das-im-alltag-wichtig-ist" aria-hidden="true"></span>
 
@@ -46,15 +46,15 @@ Stellst du mehreren Kunden Rechnungen an dieselbe Adresse, sieht jeder deren Ein
 
 Bezahlst du aus Guthaben einer öffentlichen Spendenkampagne, kann die Transaktion mehr Kontext als den Betrag verraten. Aufzeichnungen über die Zuordnung von Coins zu Aktivitäten helfen bewussten Entscheidungen vor der Ausgabe.
 
-Finanzielle Privatsphäre schützt Kundenvertraulichkeit, Geschäftsinformationen, persönliche Beziehungen und körperliche Sicherheit. Solche Grenzen zu wünschen setzt kein Fehlverhalten voraus. Entscheidend ist, ob die andere Person diese Information für den Vorgang benötigt.
+Finanzielle Privatsphäre kann Kundenvertraulichkeit, Geschäftsinformationen, persönliche Beziehungen und körperliche Sicherheit schützen. Solche Grenzen zu wünschen setzt kein Fehlverhalten voraus. Entscheidend ist, ob die andere Person diese Information für den Vorgang benötigt.
 
 <span id="privacy-and-fungibility" data-ginger-heading="privatsphäre-und-fungibilität" aria-hidden="true"></span>
 
 ## Privatsphäre und Fungibilität
 
-Fungibilität bedeutet Austauschbarkeit zu gleichwertigen Bedingungen. Bitcoin-Regeln erfassen Werte, aber Personen und Dienste können Outputs anhand vermuteter Geschichte unterschiedlich einstufen. Diese Urteile schaffen Reibung, selbst wenn ein Output nach Bitcoin-Regeln gültig ist.
+Fungibilität bedeutet Austauschbarkeit zu gleichwertigen Bedingungen. Bitcoin-Regeln erfassen Werte, aber Personen und Dienste können Outputs anhand vermuteter Geschichte unterschiedlich einstufen. Diese Urteile können Reibung verursachen, selbst wenn ein Output nach Bitcoin-Regeln gültig ist.
 
-Privatsphärewerkzeuge können manche historischen Einstufungen schwerer zuverlässig machen. Sie verpflichten keinen Anbieter zur Annahme und löschen keine bereits vorhandenen Aufzeichnungen. Prüfe Aussagen über „saubere“ Coins oder garantierte Akzeptanz sorgfältig: Wallet-Schätzung und Dienstrichtlinie sind verschiedene Dinge.
+Privatsphärewerkzeuge können es erschweren, manche Einstufungen nach der Transaktionshistorie mit Sicherheit vorzunehmen. Sie verpflichten keinen Anbieter zur Annahme und löschen keine bereits vorhandenen Aufzeichnungen. Prüfe Aussagen über „saubere“ Coins oder garantierte Akzeptanz sorgfältig: Wallet-Schätzung und Dienstrichtlinie sind verschiedene Dinge.
 
 <span id="where-ginger-fits" data-ginger-heading="gingers-rolle" aria-hidden="true"></span>
 

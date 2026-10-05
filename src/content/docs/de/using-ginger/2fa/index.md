@@ -45,7 +45,7 @@ Prüfe vor Aktivierung, ob du Wörter und exakte ursprüngliche Passphrase jeder
 
 1. Öffne **Settings** → **Security**. Aktiviere bei Bedarf **Network anonymization (Tor)** und starte nach Aufforderung neu, damit Tor aktiv ist.
 2. Aktiviere **Two-factor authentication**. Der Dialog zeigt einen Authenticator-QR-Code.
-3. Füge ihn vertraulich deinem Authenticator hinzu. Er enthält ein Geheimnis und darf nicht geteilt werden. Ginger benötigt SHA256-kompatible achtstellige Codes; ein manuell erstellter sechsstelliger Standardeintrag ist nicht gleichwertig.
+3. Füge ihn vertraulich deinem Authenticator hinzu. Er enthält ein Geheimnis und darf nicht geteilt werden. Ginger benötigt einen Authenticator, der SHA256 und achtstellige Codes unterstützt; ein manuell erstellter sechsstelliger Standardeintrag ist nicht gleichwertig.
 4. Gib den aktuellen Code ein und wähle **Verify**. Prüfe bei Fehlern Telefon-Zeitsynchronisierung und ob der Eintrag aus dieser Einrichtung stammt.
 5. Starte nach Anweisung neu und erledige die Startprüfung. Nach erfolgreichem authentifiziertem Start erhält Ginger das Geheimnis und stellt die Verschlüsselung von Wallet- und automatischen Backup-JSON-Dateien sicher.
 
@@ -57,7 +57,7 @@ Dateien, die vor Einrichtung oder authentifiziertem Neustart kopiert wurden, erh
 
 Gib beim Start den aktuellen Authenticator-Code ein. Nach Laden der Anwendung behalten Wallet-Passphrasen und Hardware-Genehmigungen ihre eigenen Rollen. Ein bereits entsperrter Computer bleibt ein Sicherheitsproblem.
 
-Deaktiviere bei vorhandenem Zugriff **Two-factor authentication** unter **Settings** → **Security**. Ginger entfernt die zusätzliche Dateiverschlüsselung und lokale 2FA-Zuordnung. Normale Software-Passphrase bleibt separat relevant. Sichere resultierende Dateien, wenn dein Backupverfahren vom aktuellen Verschlüsselungszustand abhängt.
+Deaktiviere bei vorhandenem Zugriff **Two-factor authentication** unter **Settings** → **Security**. Ginger entfernt die zusätzliche Dateiverschlüsselung und lokale 2FA-Zuordnung. Der normale Passphrase-Schutz der Software-Wallet bleibt separat relevant. Sichere resultierende Dateien, wenn dein Backupverfahren vom aktuellen Verschlüsselungszustand abhängt.
 
 <span id="lost-phone-missing-file-or-unavailable-service" data-ginger-heading="verlorenes-telefon-fehlende-datei-oder-nicht-verfügbarer-dienst" aria-hidden="true"></span>
 

@@ -25,7 +25,7 @@ next: false
 | **Ignore coinjoin time preference below** | Ermöglicht Teilnahme unter dieser Gebührenratenschwelle, auch wenn der Zeitpräferenzvergleich sonst warten würde. |
 | **Random Skip** | Bestimmt, wie oft geeignete Runden übersprungen werden. Optionen: **Disabled**, **Rarely**, **Sometimes**, **Often**. Häufigeres Überspringen bedeutet meist längeres Warten. |
 
-Meldet der Player einen unwirtschaftlichen Kontostand, kann das Betätigen der Wiedergabe die Stoppschwelle umgehen. Transaktionsgebühren entfallen dadurch nicht. Berücksichtige Coin-Größen und erwartete Kosten vor einer Übersteuerung.
+Meldet der Player einen unwirtschaftlichen Kontostand, kann das Betätigen der Starttaste die Stoppschwelle umgehen. Transaktionsgebühren entfallen dadurch nicht. Berücksichtige Coin-Größen und erwartete Kosten vor einer Übersteuerung.
 
 <span id="privacy-settings" data-ginger-heading="privatsphäreeinstellungen" aria-hidden="true"></span>
 
@@ -81,6 +81,6 @@ Behalte Anfangswerte, solange du den veränderten Kompromiss nicht verstehst. Es
 
 ## Wenn keine weitere Runde starten kann
 
-Diese Version lehnt beim normalen CoinJoin-Start Wallets ab, deren Guthaben das Privatsphäreziel bereits erreicht, ebenso eine verfügbare Auswahl nur privater Coins. Eine andere Output-Wallet umgeht diese Regel nicht. Sind alle Coins privat, kann die manuelle Wiedergabesteuerung verschwinden. Verlasse dich nicht darauf, alle nicht privaten Coins auszuschließen und eine Runde allein zur Weiterleitung privater Coins zu erzwingen.
+Diese Version lehnt beim normalen CoinJoin-Start Wallets ab, deren Guthaben das Privatsphäreziel bereits erreicht, ebenso eine verfügbare Auswahl nur privater Coins. Eine andere Output-Wallet umgeht diese Regel nicht. Sind alle Coins privat, kann die manuelle Startsteuerung verschwinden. Verlasse dich nicht darauf, alle nicht privaten Coins auszuschließen und eine Runde allein zur Weiterleitung privater Coins zu erzwingen.
 
-Wähle das Ziel vor geeigneter Teilnahme oder prüfe eine normale Übertragung bereits privater Coins. Niedrigere Privatsphäreanforderungen oder zusätzliche unverbundene Coins nur zum Starten einer Runde können Privatsphäreergebnis und Kosten verändern.
+Wähle das Ziel vor geeigneter Teilnahme oder prüfe eine normale Übertragung bereits privater Coins. Die Privatsphäreanforderungen zu senken oder nicht zu diesem Vorhaben gehörendes Guthaben hinzuzufügen, nur damit eine Runde startet, kann das Privatsphäreergebnis und die Kosten verändern.

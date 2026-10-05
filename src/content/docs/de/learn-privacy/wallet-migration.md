@@ -31,7 +31,7 @@ Die Wiederherstellung derselben Wallet bewegt keine Bitcoin; allein dafür fäll
 
 Ein erweiterter öffentlicher Schlüssel, oft xpub genannt, erlaubt die Ableitung eines öffentlichen Adresszweigs ohne normale Signierbefugnis. Ein Konto-xpub zeigt typischerweise mehr als eine Empfangsadresse, einschließlich künftiger Kontoadressen. Sein Bereich hängt von seiner Position im Schlüsselbaum ab; er offenbart nicht jedes andere gehärtete Konto. [BIP32: Hierarchical Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 
-Eine frühere Wallet-App, ein Portfolio-Dienst oder Buchhaltungswerkzeug kann einen xpub oder Adressabfragen erhalten haben. Das Entfernen der App widerruft keine anderswo vorhandenen Kopien. Weitere Kontonutzung kann diesem Beobachter auch spätere Aktivität zeigen. Tor verbirgt eine direkte IP-Verbindung, lässt den Empfangsdienst aber keine übermittelten Wallet-Daten vergessen.
+Eine frühere Wallet-App, ein Portfolio-Dienst oder Buchhaltungswerkzeug kann einen xpub oder Adressabfragen erhalten haben. Das Entfernen der App widerruft keine anderswo vorhandenen Kopien. Weitere Kontonutzung kann diesem Beobachter auch spätere Aktivität zeigen. Tor kann eine direkte IP-Verbindung verbergen, lässt den Empfangsdienst aber keine übermittelten Wallet-Daten vergessen.
 
 Weißt du nicht, was ein Dienst erhalten hat, behandle das als Unsicherheit. Lade zur Untersuchung keinen xpub in einen Online-„Privatsphäreprüfer“ hoch.
 
@@ -63,7 +63,7 @@ Importiere Hardware-Wörter nicht als Umgehung einer nicht unterstützten Verbin
 
 Erfordert dein Ziel andere Schlüssel, erstelle und prüfe eine neue Wallet samt Backup. Beschaffe ein neues Ziel und teste mit kleinem Betrag, wenn die Situation nicht dringend ist. Prüfe Empfang und einen funktionierenden Signier- oder Wiederherstellungsweg, bevor du den vorgesehenen Rest bewegst.
 
-Prüfe die Inputs jeder Übertragung. Alle alten Coins gemeinsam zu senden kann bisher getrennte Aktivitäten verbinden. Normale Übertragungen verknüpfen außerdem Input- und Outputgeschichte. Neue Schlüssel allein verbergen das nicht; ein überlegter CoinJoin-Ablauf adressiert manche Verknüpfungsziele unter Berücksichtigung von Gebühren, Eignung und späteren Ausgaben.
+Prüfe die Inputs jeder Übertragung. Alle alten Coins gemeinsam zu senden kann bisher getrennte Aktivitäten verbinden. Normale Übertragungen verknüpfen außerdem Input- und Outputgeschichte. Neue Schlüssel allein verbergen das nicht; ein überlegter CoinJoin-Ablauf kann unter Berücksichtigung von Gebühren, Eignung und späteren Ausgaben bei manchen Zielen zur Privatsphäre von Transaktionsverknüpfungen helfen.
 
 Wähle Zeitpunkt und Vorgehen für das Ende alter Empfangsadressen. Aktualisiere eigene Zahlungsanweisungen, behalte Kontext für verspätete Zahlungen und erwarte nicht, dass entfernte Websiteadressen ungültig werden. Halte Wiederherstellungsdaten für möglicherweise weiterhin empfangende Wallets bereit.
 

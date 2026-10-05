@@ -54,7 +54,7 @@ Coins unter deinen Schlüsseln werden nicht zu einer Forderung gegen den Koordin
 
 Kann CoinJoin nicht fortfahren, pausiere und prüfe den Grund. Normales Senden benötigt weiterhin verfügbare Signierung, ausgebbare Coins, synchronisierte Informationen und Veröffentlichung. Ein Koordinatorausfall rechtfertigt weder Backupverwerfung noch Wörteruploads an Ersatzdienste. Optionale Ginger-2FA hat eine eigene Dienstabhängigkeit beim normalen Start; halte Wörter und ursprüngliche Passphrase unabhängig wiederherstellbar.
 
-Eine Ablehnung oder gescheiterte Runde beweist weder Angriff noch Urteil über deine Identität. Umgekehrt bestätigt eine erfolgreiche Runde keine Koordinatorehrlichkeit. Bewahre relevante private Aufzeichnungen bei konkreten Untersuchungen.
+Eine Ablehnung oder gescheiterte Runde ist für sich allein weder ein Beleg für einen Angriff noch ein Urteil über deine Identität. Umgekehrt bestätigt eine erfolgreiche Runde keine Koordinatorehrlichkeit. Bewahre relevante private Aufzeichnungen bei konkreten Untersuchungen.
 
 <span id="decisions-you-can-make" data-ginger-heading="deine-entscheidungen" aria-hidden="true"></span>
 
@@ -66,6 +66,6 @@ Eine Ablehnung oder gescheiterte Runde beweist weder Angriff noch Urteil über d
 4. Halte unabhängige Wiederherstellungsdaten. Gib Koordinator oder Support niemals Wörter, Passphrase oder private Schlüssel zum „Entsperren“ einer Runde.
 5. Prüfe Ergebnis und spätere Ausgaben. Neue Adresse und hoher Score machen eine neue Offenlegung an identifizierte Empfänger nicht rückgängig.
 
-Ein eigener Bitcoin-Node hilft bei seinen tatsächlichen Aufgaben, etwa konfigurierten Block- oder Gebührendaten. Er ersetzt weder Koordinator noch beweist er Teilnehmerunabhängigkeit. Hardware-Wallets isolieren Schlüssel, machen aber keinen Transaktionsgraphen privat.
+Ein eigener Bitcoin-Node hilft bei seinen tatsächlichen Aufgaben, etwa beim Bereitstellen von Blöcken oder Gebührenschätzungen, wenn entsprechend konfiguriert. Er ersetzt weder Koordinator noch beweist er Teilnehmerunabhängigkeit. Hardware-Wallets isolieren Schlüssel, machen aber keinen Transaktionsgraphen privat.
 
 Lies für das Grundmodell [CoinJoin erklärt](/de/learn-coinjoin/explained/) und für bestimmte Ziele [Wann CoinJoin sinnvoll ist](/de/learn-coinjoin/when-to-use/). Prüfe starke Produktaussagen anhand von Beobachter, Annahmen, Softwareversion und Belegen.
