@@ -43,6 +43,7 @@ export default defineConfig({
 
       // Adds the top-level section links to the header (the old VuePress navbar).
       components: {
+        Header: './src/components/Header.astro',
         SiteTitle: './src/components/SiteTitle.astro',
         Head: './src/components/Head.astro',
         Search: './src/components/Search.astro',

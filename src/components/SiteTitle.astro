@@ -10,6 +10,7 @@
  * and the homepage's first steps provide navigation when these links are hidden.
  */
 import Default from '@astrojs/starlight/components/SiteTitle.astro'
+import LanguageMenu from './LanguageMenu.astro'
 import { copyForLanguage } from '../localization'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
@@ -29,6 +30,7 @@ const isActive = (href: string) => current === href || current.startsWith(href)
 ---
 
 <Default {...Astro.props}><slot /></Default>
+<LanguageMenu />
 
 <nav class="header-nav" aria-label={Astro.locals.t('sidebarNav.accessibleLabel')}>
   {

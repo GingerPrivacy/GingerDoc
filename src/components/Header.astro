@@ -1,0 +1,10 @@
+---
+import Header from '@astrojs/starlight/components/Header.astro'
+---
+
+<Header />
+
+<style is:global>
+  /* The language menu is next to the logo at every screen size. */
+  .header .right-group > starlight-lang-select { display: none; }
+</style>

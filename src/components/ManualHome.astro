@@ -1,7 +1,6 @@
 ---
 import { Icon } from '@astrojs/starlight/components'
 import ThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro'
-import LanguageSelect from '@astrojs/starlight/components/LanguageSelect.astro'
 import Shield from '../assets/icons/shield.svg'
 
 interface Link { label: string; href: string }
@@ -73,7 +72,7 @@ const withBase = (path: string) => base + path
     <button type="button" data-open-manual-search disabled aria-haspopup="dialog">{copy.searchLabel}<Icon name="right-arrow" /></button>
   </div>
   <div class="home-footer">
-    <div class="mobile-theme"><ThemeSelect /><LanguageSelect /></div>
+    <div class="mobile-theme"><ThemeSelect /></div>
     <a href={withBase(copy.advanced.href)}>{copy.advanced.label}<Icon name="right-arrow" /></a>
   </div>
 </div>
