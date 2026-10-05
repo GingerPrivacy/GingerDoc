@@ -37,7 +37,7 @@ Halte fest, ob eine verwendet wurde, und sichere sie korrekt. Wähle wiederherst
 | --- | --- | --- |
 | Ginger-Software-Wallet | Auf dem Desktop mit verfügbarem Geheimnis | Computer und Wiederherstellungsdaten schützen; automatische CoinJoins brauchen Signierfähigkeit |
 | Hardware-Wallet über Ginger | Auf dem Gerät für unterstützte Vorgänge | Transaktionsdetails auf dem Gerät prüfen und Hersteller-Wiederherstellungsbackup sichern |
-| Watch-only ohne Signierer | Kann allein keine Ausgabe autorisieren | Sensible öffentliche Daten schützen und Zugriff auf separaten Signierer behalten |
+| Beobachtende Wallet ohne Signierer | Kann allein keine Ausgabe autorisieren | Sensible öffentliche Daten schützen und Zugriff auf separaten Signierer behalten |
 
 Eine Hardware-Wallet kann die Offenlegung von Schlüsseln gegenüber Desktop-Schadsoftware reduzieren; ohne Prüfung ihres Bildschirms kannst du trotzdem bösartige Zahlungen autorisieren. Ein Seed-Import in den Desktop verändert das Sicherheitsmodell: Diese Schlüssel sind dann dem Computer ausgesetzt.
 

@@ -35,7 +35,7 @@ CoinJoin kann solche Verknüpfungen erschweren. Es löscht weder Auszahlungsaufz
 
 ## Was kostet es?
 
-Eine erfolgreiche Runde zahlt Bitcoin-Mining-Gebühren und möglicherweise Koordinatorgebühren. Koordinatorgebührenbefreiung beseitigt keine Mining-Kosten. Mehrere Runden können mehrere Kosten bedeuten.
+Eine erfolgreiche Runde zahlt Bitcoin-Mining-Gebühren und möglicherweise Koordinatorgebühren. Koordinatorgebührenbefreiung beseitigt keine Mining-Gebühren. Mehrere Runden können mehrere Kosten bedeuten.
 
 Es gibt keine feste Abschlusszeit. Ginger kann auf Bestätigungen, akzeptable Gebühren oder andere Teilnehmer warten. Lies den Status und prüfe Ergebnisse, bevor du wiederholte Teilnahme unbeaufsichtigt lässt.
 

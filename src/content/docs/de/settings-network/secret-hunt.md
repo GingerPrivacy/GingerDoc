@@ -21,7 +21,7 @@ Wähle **Secret Hunt** im Menü einer Software-Wallet. Der Dialog zeigt Ergebnis
 
 Nutze **Enable/disable the use of this wallet for Secret Hunt.** zur Steuerung dieser Wallet. Standardmäßig ist es in dieser Version aktiviert. Ausschalten leert den angezeigten Baum der deaktivierten Ansicht und verhindert die Auswahl dieser Wallet durch den Updater für Teilnahmeberechtigungsprüfungen. Es storniert weder CoinJoin noch löscht es Blockchain-Transaktionen oder bereits übermittelte Informationen.
 
-Für Watch-only-Wallets wird der Eintrag nicht angeboten. Er ist keine Hardware-Wallet-CoinJoin-Funktion und verlangt keine Wiederherstellungswörter auf einer Ereigniswebsite.
+Für beobachtende Wallets wird der Eintrag nicht angeboten. Er ist keine Hardware-Wallet-CoinJoin-Funktion und verlangt keine Wiederherstellungswörter auf einer Ereigniswebsite.
 
 <span id="what-is-shared" data-ginger-heading="was-geteilt-wird" aria-hidden="true"></span>
 
