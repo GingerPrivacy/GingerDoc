@@ -1,0 +1,43 @@
+{
+  "label": "Русский",
+  "lang": "ru",
+  "title": "Документация GingerWallet",
+  "header": {
+    "Getting Started": "Начало работы",
+    "Why Ginger?": "Почему Ginger?",
+    "Using Ginger": "Использование Ginger",
+    "Ginger Wallet website": "Сайт Ginger Wallet"
+  },
+  "sidebar": {
+    "Getting Started": "Начало работы",
+    "Help": "Помощь",
+    "Using Ginger": "Использование Ginger",
+    "Bitcoin basics": "Основы биткоина",
+    "Advanced use": "Углублённое использование",
+    "First steps": "Первые шаги",
+    "Backup and recovery": "Резервные копии и восстановление",
+    "CoinJoin": "CoinJoin",
+    "Payments": "Платежи",
+    "Hardware wallets": "Аппаратные кошельки",
+    "Settings and network": "Настройки и сеть",
+    "Buy and sell": "Покупка и продажа",
+    "Questions and troubleshooting": "Вопросы и устранение неполадок",
+    "Bitcoin privacy": "Конфиденциальность биткоина",
+    "Ginger vs Wasabi": "Ginger и Wasabi",
+    "Ginger vs Sparrow": "Ginger и Sparrow",
+    "Understanding CoinJoin": "Знакомство с CoinJoin",
+    "Self-custody": "Самостоятельное хранение"
+  },
+  "search": {
+    "levelLabel": "Уровень",
+    "scope": "Область поиска",
+    "everyday": "Начальные и повседневные руководства",
+    "advanced": "Углублённые руководства",
+    "all": "Все руководства",
+    "hint": "Начните с повседневных руководств. Для технических подробностей выберите углублённые руководства.",
+    "loading": "Загрузка поиска…",
+    "error": "Не удалось загрузить поиск. Проверьте подключение и повторите попытку.",
+    "retry": "Повторить попытку",
+    "level": { "beginner": "Начальный", "everyday": "Повседневное использование", "advanced": "Углублённый" }
+  }
+}
