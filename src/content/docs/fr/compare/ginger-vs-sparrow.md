@@ -9,7 +9,7 @@ prev: false
 next: false
 ---
 
-Ginger Wallet et Sparrow Wallet sont des portefeuilles Bitcoin open source pour ordinateur qui vous permettent de détenir vos propres clés. Les deux prennent en charge les paiements ordinaires, les portefeuilles matériels et la sélection réfléchie des coins.
+Ginger Wallet et Sparrow Wallet sont des portefeuilles Bitcoin open source pour ordinateur qui vous permettent de détenir vos propres clés. Les deux prennent en charge les paiements ordinaires, les portefeuilles matériels et la sélection réfléchie des pièces.
 
 **Ginger propose CoinJoin avec une connexion au coordinateur déjà configurée. Sparrow offre davantage de configurations de portefeuille et d'outils d'inspection et de signature des transactions, dont multisig.** Le choix dépend du parcours dont vous avez besoin et des responsabilités que vous êtes prêt à assumer.
 
@@ -26,7 +26,7 @@ Dernière vérification : **14 septembre 2026**. Versions étudiées : [Ginger v
 | Comment récupère-t-il l'historique ? | Filtres compacts et traitement local des blocs ; Tor est activé par défaut. | Serveur Electrum public, votre nœud Bitcoin Core ou serveur Electrum privé ; Tor est pris en charge. |
 | Puis-je utiliser du matériel ? | Oui, appareils compatibles et parcours PSBT par fichier. | Oui, parcours compatibles USB, QR et carte SD. |
 | Puis-je configurer multisig ? | Pas de configuration multisig générale dans l'interface documentée. | Oui, avec plusieurs signataires et un seuil de signature choisi. |
-| Puis-je choisir chaque coin ? | Oui, avec Manual Control. | Oui, avec inspection et édition détaillées des transactions. |
+| Puis-je choisir chaque pièce ? | Oui, avec Manual Control. | Oui, avec inspection et édition détaillées des transactions. |
 | Quels frais prévoir ? | Minage ; CoinJoin peut aussi coûter coordinateur et petits restes. | Minage ; davantage d'entrées ou de sorties peut augmenter les coûts. |
 
 Les sections suivantes expliquent ces différences et renvoient aux guides pertinents.
@@ -35,13 +35,13 @@ Les sections suivantes expliquent ces différences et renvoient aux guides perti
 
 ## Confidentialité et CoinJoin : différents outils pour différents liens
 
-Un solde Bitcoin est composé de coins distincts, aussi appelés UTXO. En dépenser plusieurs ensemble peut associer leurs historiques. CoinJoin combine les entrées de participants dans une transaction pour rendre certains liens de propriété plus difficiles à déduire.
+Un solde Bitcoin est composé de pièces distinctes, aussi appelées UTXO. En dépenser plusieurs ensemble peut associer leurs historiques. CoinJoin combine les entrées de participants dans une transaction pour rendre certains liens de propriété plus difficiles à déduire.
 
 La [configuration publiée de Ginger](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.26/WalletWasabi.Daemon/PersistentConfig.cs) inclut la connexion au coordinateur. Après avoir sauvegardé un portefeuille logiciel et reçu des fonds confirmés, vous pouvez examiner [les commandes CoinJoin](/fr/using-ginger/coinjoin/) et participer. Le coordinateur organise sans détenir vos clés de signature. Disponibilité, fonds admissibles, frais et participation suffisante influencent toujours l'achèvement du tour.
 
 Sparrow a retiré son client Whirlpool en [version 1.9.0](https://github.com/sparrowwallet/sparrow/releases/tag/1.9.0). Les anciennes instructions de mixage Whirlpool dans Sparrow ne décrivent pas la version actuelle.
 
-Sparrow propose toujours des moyens de rendre les dépenses moins révélatrices. L'option transactionnelle **Privacy** peut construire une transaction Stonewall avec une sortie supplémentaire égale au montant du paiement. Toutes les entrées appartiennent à votre portefeuille : cela crée de l'ambiguïté sans mélanger des fonds avec d'autres participants. Il faut des coins adaptés, assez de fonds et des types d'adresses correspondants ; les entrées et sorties supplémentaires peuvent augmenter les frais de minage. Sparrow prend aussi en charge les codes de paiement BIP47 pour dériver de nouvelles adresses. Consultez [Spending Privately](https://sparrowwallet.com/docs/spending-privately.html).
+Sparrow propose toujours des moyens de rendre les dépenses moins révélatrices. L'option transactionnelle **Privacy** peut construire une transaction Stonewall avec une sortie supplémentaire égale au montant du paiement. Toutes les entrées appartiennent à votre portefeuille : cela crée de l'ambiguïté sans mélanger des fonds avec d'autres participants. Il faut des pièces adaptées, assez de fonds et des types d'adresses correspondants ; les entrées et sorties supplémentaires peuvent augmenter les frais de minage. Sparrow prend aussi en charge les codes de paiement BIP47 pour dériver de nouvelles adresses. Consultez [Spending Privately](https://sparrowwallet.com/docs/spending-privately.html).
 
 Les deux prennent aussi en charge l'envoi PayJoin dans des parcours compatibles. PayJoin fait collaborer un destinataire à la construction du paiement, séparément d'un tour de mixage du coordinateur. Ginger exige un portefeuille logiciel pour cela. Consultez [le guide PayJoin Ginger](/fr/payments/payjoin-message-signing/) et [les mises à jour PayJoin Sparrow](https://github.com/sparrowwallet/sparrow/releases/tag/2.5.4).
 
@@ -75,7 +75,7 @@ CoinJoin Ginger utilise un portefeuille logiciel pour signer les entrées partic
 
 ## Contrôle des transactions et utilisation courante
 
-Les deux permettent d'étiqueter les fonds et de choisir des coins précis. Dans Ginger, **Wallet Coins** montre chaque coin, et **Send** → **Manual Control** permet de sélectionner les fonds et d'examiner le paiement résultant. Consultez [sélection et historique](/fr/payments/coin-control-history/).
+Les deux permettent d'étiqueter les fonds et de choisir des pièces précises. Dans Ginger, **Wallet Coins** montre chaque pièce, et **Send** → **Manual Control** permet de sélectionner les fonds et d'examiner le paiement résultant. Consultez [sélection et historique](/fr/payments/coin-control-history/).
 
 Le diagramme et l'éditeur Sparrow exposent entrées, sorties, frais et détails de signature, avec des outils d'inspection avant diffusion. Son [guide des fonctions](https://sparrowwallet.com/features/) décrit ce contrôle. Il peut convenir aux personnes travaillant régulièrement avec des PSBT ou voulant examiner l'assemblage d'un paiement.
 
@@ -89,9 +89,9 @@ Les paiements on-chain ordinaires des deux coûtent des frais de minage. Taille 
 
 Selon [les paramètres documentés de Ginger](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.26/WalletWasabi/WabiSabi/Backend/WabiSabiConfig.cs), une entrée de **0.03 BTC ou moins** est exonérée de coordinateur. Au-dessus, elle paie normalement **0.3 % de sa valeur entière**, avec exonérations de remix admissibles. Le seuil s'applique par entrée, pas au solde total.
 
-Par exemple, une entrée facturable de 0.10 BTC coûte 30 000 satoshis de coordinateur, plus le minage. CoinJoin peut aussi laisser un petit reste non retourné d'allocation. Vérifiez les conditions réelles et [le coût complet](/fr/using-ginger/annonset/) ; ces paramètres ne sont pas un devis futur. Les paiements Sparrow ordinaires n'achètent pas un mixage coordonné équivalent, donc leur minage seul n'est pas une comparaison CoinJoin à service égal.
+Par exemple, une entrée facturable de 0.10 BTC coûte 30 000 satoshis de coordinateur, plus les frais de minage. CoinJoin peut aussi laisser un petit reste non retourné d'allocation. Vérifiez les conditions réelles et [le coût complet](/fr/using-ginger/annonset/) ; ces paramètres ne sont pas un devis futur. Les paiements Sparrow ordinaires n'achètent pas un mixage coordonné équivalent, donc leurs frais de minage seuls ne sont pas une comparaison CoinJoin à service égal.
 
-InvisibleBit LLC, opérateur du coordinateur Ginger, publie des restrictions concernant la localisation aux États-Unis et la nationalité américaine. Les conditions permettent aussi des contrôles d'entrées par des tiers et le refus de certains coins. Lisez [les conditions actuelles](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt). Garder les clés ne garantit pas l'admission à un tour. Avec Sparrow, considérez la confidentialité et la disponibilité du nœud ou serveur utilisé.
+InvisibleBit LLC, opérateur du coordinateur Ginger, publie des restrictions concernant la localisation aux États-Unis et la nationalité américaine. Les conditions permettent aussi des contrôles d'entrées par des tiers et le refus de certaines pièces. Lisez [les conditions actuelles](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt). Garder les clés ne garantit pas l'admission à un tour. Avec Sparrow, considérez la confidentialité et la disponibilité du nœud ou serveur utilisé.
 
 <span id="which-fits-your-needs" data-ginger-heading="lequel-correspond-à-vos-besoins-" aria-hidden="true"></span>
 
@@ -101,4 +101,4 @@ InvisibleBit LLC, opérateur du coordinateur Ginger, publie des restrictions con
 
 **Envisagez Sparrow si la priorité est multisig, un parcours de signature matérielle précis ou un contrôle transactionnel détaillé.** Choisissez sa connexion serveur délibérément et vérifiez votre configuration exacte.
 
-Les deux peuvent aussi servir des rôles différents : Ginger pour CoinJoin et Sparrow pour un portefeuille matériel distinct. Un transfert ordinaire coûte du minage et laisse une transaction visible ; combiner les sorties peut les relier à nouveau. La destination CoinJoin directe doit être compatible et chargée dans Ginger, pas seulement ouverte dans Sparrow. Gardez des sauvegardes indépendantes et lisez [dépenser après CoinJoin](/fr/learn-privacy/spending-after-coinjoin/) avant de combiner les fonds.
+Les deux peuvent aussi servir des rôles différents : Ginger pour CoinJoin et Sparrow pour un portefeuille matériel distinct. Un transfert ordinaire entraîne des frais de minage et laisse une transaction visible ; combiner les sorties peut les relier à nouveau. La destination CoinJoin directe doit être compatible et chargée dans Ginger, pas seulement ouverte dans Sparrow. Gardez des sauvegardes indépendantes et lisez [dépenser après CoinJoin](/fr/learn-privacy/spending-after-coinjoin/) avant de combiner les fonds.

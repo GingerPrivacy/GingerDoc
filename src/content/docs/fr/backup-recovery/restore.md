@@ -29,7 +29,7 @@ Des phrases secrètes différentes dérivent des portefeuilles valides différen
 
 ## Un portefeuille récupéré apparemment vide
 
-Vérifiez d'abord le portefeuille et le réseau sélectionnés. Mainnet et réseaux de test ont des coins distincts. Vérifiez ensuite la connexion et la progression de la récupération. Si l'application cherche encore, un solde incomplet n'est pas un résultat définitif.
+Vérifiez d'abord le portefeuille et le réseau sélectionnés. Mainnet et réseaux de test ont des pièces distinctes. Vérifiez ensuite la connexion et la progression de la récupération. Si l'application cherche encore, un solde incomplet n'est pas un résultat définitif.
 
 Si ces vérifications sont correctes mais que les transactions connues restent absentes, cessez de changer les paramètres au hasard. Un portefeuille créé dans une autre application ou un grand nombre d'adresses inutilisées peut nécessiter un examen plus précis.
 

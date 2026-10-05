@@ -1,7 +1,7 @@
 ---
 doc_id: "learn-privacy.habits"
 title: "Habitudes de confidentialité Bitcoin avant et après un paiement"
-description: "Adopter des habitudes pratiques concernant les adresses de réception, les étiquettes, la sélection des coins, les navigateurs et les demandes d'assistance lors de l'utilisation de Ginger Wallet."
+description: "Adopter des habitudes pratiques concernant les adresses de réception, les étiquettes, la sélection des pièces, les navigateurs et les demandes d'assistance lors de l'utilisation de Ginger Wallet."
 lang: "fr"
 verified_release: "v2.0.26"
 reader_level: "beginner"
@@ -25,7 +25,7 @@ Pensez aussi au canal de communication. Si vous envoyez une adresse de réceptio
 
 ## Avant d'envoyer
 
-Examinez l'origine des coins disponibles. Combiner des paiements issus d'activités distinctes peut révéler que leurs entrées ont été dépensées ensemble. Dans Ginger, **Manual Control** peut vous aider à examiner et à choisir les coins, tandis que la sélection automatique et les suggestions de confidentialité peuvent vous aider pour les paiements ordinaires. Vérifiez toujours l'aperçu obtenu.
+Examinez l'origine des pièces disponibles. Combiner des paiements issus d'activités distinctes peut révéler que leurs entrées ont été dépensées ensemble. Dans Ginger, **Manual Control** peut vous aider à examiner et à choisir les pièces, tandis que la sélection automatique et les suggestions de confidentialité peuvent vous aider pour les paiements ordinaires. Vérifiez toujours l'aperçu obtenu.
 
 Demandez une nouvelle adresse de destination et confirmez le montant et l'adresse. Si une suggestion évite la monnaie rendue en modifiant le montant destiné au bénéficiaire, assurez-vous que celui-ci accepte réellement le montant révisé. Envoyer un paiement à la mauvaise personne ou payer une facture avec un montant insuffisant n'améliore pas la confidentialité.
 
@@ -33,7 +33,7 @@ Demandez une nouvelle adresse de destination et confirmez le montant et l'adress
 
 ## Après CoinJoin
 
-Considérez les coins obtenus comme des fonds dont l'utilisation future reste importante. Regrouper toutes les sorties dans une seule transaction ultérieure peut créer une nouvelle association. Réutiliser une adresse associée à votre identité ou dépenser par l'intermédiaire d'un prestataire auquel vous vous êtes identifié crée des informations supplémentaires, quel que soit le score affiché par Ginger avant le paiement.
+Considérez les pièces obtenues comme des fonds dont l'utilisation future reste importante. Regrouper toutes les sorties dans une seule transaction ultérieure peut créer une nouvelle association. Réutiliser une adresse associée à votre identité ou dépenser par l'intermédiaire d'un prestataire auquel vous vous êtes identifié crée des informations supplémentaires, quel que soit le score affiché par Ginger avant le paiement.
 
 Un analyste peut également comparer les horaires et les montants entre les transactions. Aucun délai d'attente universel ne garantit la sécurité. Prévoyez la manière dont vous comptez dépenser les fonds plutôt que de vous attendre à ce qu'un seul tour ou un délai fixe résolve toutes les formes d'observation.
 

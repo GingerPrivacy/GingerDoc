@@ -98,7 +98,7 @@ Demandez l'identifiant de la transaction Bitcoin et vérifiez l'adresse de réce
 
 ### Changer de réseau fera-t-il apparaître le bitcoin manquant ?
 
-Utilisez Main pour le véritable Bitcoin on-chain. Un autre réseau a d'autres coins ; le sélectionner ne déplace ni ne récupère les fonds mainnet. Vérifiez le bon portefeuille et la synchronisation plutôt que de changer de réseau pour améliorer un indicateur de connexion.
+Utilisez Main pour le véritable Bitcoin on-chain. Un autre réseau a d'autres pièces ; le sélectionner ne déplace ni ne récupère les fonds mainnet. Vérifiez le bon portefeuille et la synchronisation plutôt que de changer de réseau pour améliorer un indicateur de connexion.
 
 <span id="why-has-a-receiving-address-disappeared-does-it-expire" data-ginger-heading="pourquoi-une-adresse-a-t-elle-disparu--expire-t-elle-" aria-hidden="true"></span>
 
@@ -148,19 +148,19 @@ Les fichiers d'application et les données sont séparés : une réinstallation 
 
 ### Pourquoi CoinJoin attend-il au lieu de démarrer ?
 
-Lisez l'état : confirmations, frais acceptables, autres participants, connexion ou coins admissibles peuvent manquer. L'attente seule ne signifie pas perte des fonds. Le [tableau de dépannage CoinJoin](/fr/help/troubleshooting/#coinjoin-does-not-start) explique les messages de cette version et la première action pour chacun.
+Lisez l'état : confirmations, frais acceptables, autres participants, connexion ou pièces admissibles peuvent manquer. L'attente seule ne signifie pas perte des fonds. Le [tableau de dépannage CoinJoin](/fr/help/troubleshooting/#coinjoin-does-not-start) explique les messages de cette version et la première action pour chacun.
 
-<span id="what-is-the-minimum-amount-and-why-are-some-coins-left-behind" data-ginger-heading="quel-est-le-minimum-et-pourquoi-des-coins-restent-ils-" aria-hidden="true"></span>
+<span id="what-is-the-minimum-amount-and-why-are-some-coins-left-behind" data-ginger-heading="quel-est-le-minimum-et-pourquoi-des-pièces-restent-elles-" aria-hidden="true"></span>
 
-### Quel est le minimum, et pourquoi des coins restent-ils ?
+### Quel est le minimum, et pourquoi des pièces restent-elles ?
 
-Aucun solde total ne garantit une participation. Chaque coin disponible doit satisfaire les conditions du tour et les contrôles d'admissibilité et de coût ; certains petits coins, non confirmés ou exclus peuvent rester hors du tour. Ne combinez ou ajoutez pas des fonds simplement pour atteindre un minimum d'un ancien guide.
+Aucun solde total ne garantit une participation. Chaque pièce disponible doit satisfaire les conditions du tour et les contrôles d'admissibilité et de coût ; certaines petites pièces, non confirmées ou exclues peuvent rester hors du tour. Ne combinez ou ajoutez pas des fonds simplement pour atteindre un minimum d'un ancien guide.
 
 <span id="how-long-will-it-take-and-how-many-rounds-do-i-need" data-ginger-heading="combien-de-temps-et-combien-de-tours-faut-il-" aria-hidden="true"></span>
 
 ### Combien de temps et combien de tours faut-il ?
 
-Il n'y a ni durée garantie ni nombre universel de tours. Confirmations, frais, participants disponibles, coins et objectif choisi comptent. Vérifiez l'état réel et les coûts terminés plutôt que d'interpréter une préférence temporelle comme une échéance promise.
+Il n'y a ni durée garantie ni nombre universel de tours. Confirmations, frais, participants disponibles, pièces et objectif choisi comptent. Vérifiez l'état réel et les coûts terminés plutôt que d'interpréter une préférence temporelle comme une échéance promise.
 
 <span id="why-did-my-balance-decrease-if-coinjoin-was-described-as-free" data-ginger-heading="pourquoi-mon-solde-baisse-t-il-si-coinjoin-était-dit-gratuit-" aria-hidden="true"></span>
 
@@ -196,7 +196,7 @@ Un paiement ordinaire est possible si les fonds sont dépensables et l'envoi dis
 
 ### Pourquoi le bouton de démarrage manque-t-il lorsque tous les fonds sont privés ?
 
-Le panneau de contrôle manuel ordinaire peut masquer le bouton de démarrage lorsque tous les fonds atteignent l'objectif de confidentialité du portefeuille. Le démarrage normal rejette aussi un ensemble de coins disponibles uniquement privés : une autre destination ne force pas un tour. Si vous voulez seulement déplacer ces fonds, examinez plutôt un paiement ordinaire.
+Le panneau de contrôle manuel ordinaire peut masquer le bouton de démarrage lorsque tous les fonds atteignent l'objectif de confidentialité du portefeuille. Le démarrage normal rejette aussi un ensemble de pièces disponibles uniquement privées : une autre destination ne force pas un tour. Si vous voulez seulement déplacer ces fonds, examinez plutôt un paiement ordinaire.
 
 <span id="payments-and-hardware" data-ginger-heading="paiements-et-matériel" aria-hidden="true"></span>
 
@@ -220,11 +220,11 @@ Ginger ne peut renverser un paiement confirmé. Avant confirmation, **Cancel Tra
 
 Le total n'est pas toujours disponible : fonds non confirmés, temporairement en CoinJoin ou insuffisants après frais. Vérifiez portefeuille, montant et aperçu final. Envoyer tout peut réduire l'arrivée ; comparez le montant reçu à la facture fixe éventuelle.
 
-<span id="why-did-my-payment-create-another-address-or-leave-change" data-ginger-heading="pourquoi-mon-paiement-crée-t-il-une-autre-adresse-ou-du-rendu-" aria-hidden="true"></span>
+<span id="why-did-my-payment-create-another-address-or-leave-change" data-ginger-heading="pourquoi-mon-paiement-crée-t-il-une-autre-adresse-ou-de-la-monnaie-rendue-" aria-hidden="true"></span>
 
-### Pourquoi mon paiement crée-t-il une autre adresse ou du rendu ?
+### Pourquoi mon paiement crée-t-il une autre adresse ou de la monnaie rendue ?
 
-Il peut dépenser un morceau plus grand et retourner l'excès comme monnaie rendue. Une adresse de rendu neuve est normale et ne signifie pas un envoi à un inconnu. Rien à renvoyer manuellement ; vérifiez la transaction complète si un montant reste inexpliqué.
+Il peut dépenser un morceau plus grand et retourner l'excès comme monnaie rendue. Une adresse de monnaie rendue neuve est normale et ne signifie pas un envoi à un inconnu. Rien à renvoyer manuellement ; vérifiez la transaction complète si un montant reste inexpliqué.
 
 <span id="can-i-use-a-hardware-wallet-including-after-coinjoin" data-ginger-heading="puis-je-utiliser-du-matériel-y-compris-après-coinjoin-" aria-hidden="true"></span>
 

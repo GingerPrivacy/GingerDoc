@@ -1,7 +1,7 @@
 ---
 doc_id: "learn-privacy.repeated-payments"
 title: "Recevoir des dons et des paiements répétés"
-description: "Recevoir des dons Bitcoin et paiements récurrents avec de nouvelles adresses, des étiquettes utiles, des remboursements prudents et une gestion réfléchie des coins."
+description: "Recevoir des dons Bitcoin et paiements récurrents avec de nouvelles adresses, des étiquettes utiles, des remboursements prudents et une gestion réfléchie des pièces."
 lang: fr
 verified_release: "v2.0.26"
 reader_level: "everyday"
@@ -58,13 +58,13 @@ N'envoyez pas automatiquement le remboursement vers l'une des adresses des entr�
 3. Utilisez **Send**, vérifiez entrées et frais, et n'autorisez que le paiement convenu.
 4. Notez la transaction et vérifiez le résultat avant de réessayer après une erreur réseau.
 
-Un remboursement est un nouveau paiement on-chain. Il n'annule pas la réception ni ses enregistrements. Considérez ce qu'il révèle sur les coins dépensés.
+Un remboursement est un nouveau paiement on-chain. Il n'annule pas la réception ni ses enregistrements. Considérez ce qu'il révèle sur les pièces dépensées.
 
 <span id="keep-receipt-handling-deliberate" data-ginger-heading="gérer-les-réceptions-de-façon-réfléchie" aria-hidden="true"></span>
 
 ## Gérer les réceptions de façon réfléchie
 
-Ouvrez **Wallet Coins** pour examiner les coins. **Send** → **Manual Control** aide à choisir les fonds associés à l'activité concernée. Vérifiez la transaction finale au lieu de supposer qu'une étiquette impose automatiquement une séparation.
+Ouvrez **Wallet Coins** pour examiner les pièces. **Send** → **Manual Control** aide à choisir les fonds associés à l'activité concernée. Vérifiez la transaction finale au lieu de supposer qu'une étiquette impose automatiquement une séparation.
 
 Les petits paiements imprévus n'exigent pas de réponse immédiate. Dépenser une petite sortie peut coûter une forte part de sa valeur et la relier à d'autres entrées. **Exclude Coins** ne concerne que CoinJoin ; cela ne bloque pas une dépense ordinaire. Ne suivez pas des instructions dans un paiement non sollicité ou un contact prétendant devoir envoyer des fonds pour le débloquer.
 

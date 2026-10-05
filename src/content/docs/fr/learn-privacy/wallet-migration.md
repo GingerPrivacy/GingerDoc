@@ -43,7 +43,7 @@ Si vous ignorez ce qu'un service a reçu, considérez cela comme incertain. Ne c
 2. Utilisez la récupération Ginger avec mots et phrase exacte d'origine. Confirmez format, types d'adresses et compte compatibles. Un mnémonique valide ne suffit pas.
 3. Laissez finir l'analyse. Comparez transactions connues ou adresse de vos données privées avant de conclure qu'un affichage vide signifie une perte.
 4. Examinez étiquettes restaurées, paramètres CoinJoin et confidentialité. Les mots récupèrent les clés, pas toutes les notes ni réglages de l'ancienne application.
-5. Vérifiez CoinJoin automatique et destination avant de laisser les fonds sans surveillance. Évitez deux applications dépensant les mêmes coins simultanément.
+5. Vérifiez CoinJoin automatique et destination avant de laisser les fonds sans surveillance. Évitez deux applications dépensant les mêmes pièces simultanément.
 
 Une phrase incorrecte peut produire un autre portefeuille valide. Ne changez pas les réglages au hasard, n'envoyez pas de fonds tests à un compte vide inexpliqué et ne donnez pas les mots à un inconnu d'assistance pour résoudre le décalage.
 
@@ -63,7 +63,7 @@ N'importez pas les mots de récupération du portefeuille matériel sur l'ordina
 
 Si l'objectif exige de nouvelles clés, créez et vérifiez portefeuille et sauvegarde nouveaux. Obtenez une nouvelle destination et testez avec un petit montant si ce n'est pas urgent. Confirmez réception et signature ou récupération avant de déplacer le reste prévu.
 
-Examinez les entrées de chaque transfert. Dépenser tous les anciens coins ensemble peut relier des activités séparées. Un transfert ordinaire relie aussi les historiques des entrées et sorties. De nouvelles clés seules ne cachent pas ce lien ; une procédure CoinJoin réfléchie peut répondre à certains objectifs de confidentialité des liens entre transactions, sous réserve de frais, d'admissibilité et de dépenses ultérieures.
+Examinez les entrées de chaque transfert. Dépenser toutes les anciennes pièces ensemble peut relier des activités séparées. Un transfert ordinaire relie aussi les historiques des entrées et sorties. De nouvelles clés seules ne cachent pas ce lien ; une procédure CoinJoin réfléchie peut répondre à certains objectifs de confidentialité des liens entre transactions, sous réserve de frais, d'admissibilité et de dépenses ultérieures.
 
 Décidez quand et comment cesser les anciennes adresses. Mettez à jour vos instructions, gardez des données pour les paiements tardifs et ne supposez pas une adresse inactive parce qu'elle a été retirée d'un site. Gardez les informations de récupération des portefeuilles pouvant encore recevoir.
 

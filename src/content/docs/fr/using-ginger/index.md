@@ -35,4 +35,4 @@ Commencez par un portefeuille sauvegardé et laissez finir la synchronisation av
 
 ## Lorsque vous avez besoin de détails
 
-Les références avancées couvrent [sélection et transactions en attente](/fr/payments/coin-control-history/), [frais et rendu](/fr/using-ginger/fee/) et [PayJoin et signature de message](/fr/payments/payjoin-message-signing/). Elles sont des suites facultatives aux étapes ordinaires de paiement.
+Les références avancées couvrent [sélection et transactions en attente](/fr/payments/coin-control-history/), [frais et monnaie rendue](/fr/using-ginger/fee/) et [PayJoin et signature de message](/fr/payments/payjoin-message-signing/). Elles sont des suites facultatives aux étapes ordinaires de paiement.

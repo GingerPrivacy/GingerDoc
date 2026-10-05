@@ -1,7 +1,7 @@
 ---
 doc_id: "help.advanced-faq"
 title: "FAQ avancée de Ginger Wallet"
-description: "Trouver les réponses de la version publiée sur récupération, métadonnées, xpubs, sélection des coins, progression, coûts complets CoinJoin, destinations et partage des données."
+description: "Trouver les réponses de la version publiée sur récupération, métadonnées, xpubs, sélection des pièces, progression, coûts complets CoinJoin, destinations et partage des données."
 lang: fr
 verified_release: "v2.0.26"
 reader_level: "advanced"
@@ -14,7 +14,7 @@ next: false
 Ces questions couvrent les paramètres personnalisés, les choix de confidentialité plus approfondis et les cas particuliers de récupération. Pour les questions ordinaires de première utilisation, revenez à [la FAQ de base](/fr/help/).
 
 - [Récupération et données locales](#recovery-and-local-data)
-- [Sélection des coins et dépenses](#coin-selection-and-spending)
+- [Sélection des pièces et dépenses](#coin-selection-and-spending)
 - [Coûts CoinJoin et progression](#coinjoin-costs-and-progress)
 - [Matériel et limites de confidentialité](#hardware-and-privacy-boundaries)
 
@@ -44,7 +44,7 @@ Les mots restaurent les clés, pas toutes les notes privées ni chaque élément
 
 ### Puis-je utiliser les mêmes mots dans deux applications ?
 
-Des applications compatibles peuvent contrôler les mêmes clés, mais cela ne crée pas un nouveau portefeuille ni ne révoque les informations partagées avec l'ancienne application. La seconde peut divulguer les adresses ou une clé publique étendue à ses services, et les dépenses simultanées peuvent créer une confusion sur les coins disponibles. Ne saisissez pas les mots de récupération du portefeuille matériel sur l'ordinateur simplement pour connecter un appareil.
+Des applications compatibles peuvent contrôler les mêmes clés, mais cela ne crée pas un nouveau portefeuille ni ne révoque les informations partagées avec l'ancienne application. La seconde peut divulguer les adresses ou une clé publique étendue à ses services, et les dépenses simultanées peuvent créer une confusion sur les pièces disponibles. Ne saisissez pas les mots de récupération du portefeuille matériel sur l'ordinateur simplement pour connecter un appareil.
 
 <span id="what-does-an-exposed-address-or-xpub-allow-someone-to-do" data-ginger-heading="que-permet-une-adresse-ou-une-xpub-exposée-" aria-hidden="true"></span>
 
@@ -64,21 +64,21 @@ Ne considérez pas `2fa_info.gws` comme une clé de récupération hors ligne in
 
 Sauvegardez d'abord, puis utilisez **Wallet Settings** → **Tools** → **Delete Wallet** et lisez la confirmation. Retirer les données locales n'efface pas les transactions Bitcoin et n'invalide pas les copies des mots. Si les clés de signature ont été exposées, supprimer simplement le portefeuille n'empêche pas une autre personne de les utiliser pour dépenser.
 
-<span id="coin-selection-and-spending" data-ginger-heading="sélection-des-coins-et-dépenses" aria-hidden="true"></span>
+<span id="coin-selection-and-spending" data-ginger-heading="sélection-des-pièces-et-dépenses" aria-hidden="true"></span>
 
-## Sélection des coins et dépenses
+## Sélection des pièces et dépenses
 
-<span id="what-is-the-difference-between-a-coin-an-address-and-a-wallet" data-ginger-heading="quelle-différence-entre-coin-adresse-et-portefeuille-" aria-hidden="true"></span>
+<span id="what-is-the-difference-between-a-coin-an-address-and-a-wallet" data-ginger-heading="quelle-différence-entre-pièce-adresse-et-portefeuille-" aria-hidden="true"></span>
 
-### Quelle différence entre coin, adresse et portefeuille ?
+### Quelle différence entre pièce, adresse et portefeuille ?
 
-Un coin, ou UTXO, est une sortie non dépensée d'une transaction antérieure. Une adresse peut recevoir plusieurs coins, et un portefeuille gérer de nombreuses adresses et coins. Les décisions de dépense et de CoinJoin concernent les coins disponibles, pas seulement le solde total ; le [glossaire](/fr/help/glossary/) explique ces termes.
+Une pièce, ou UTXO, est une sortie non dépensée d'une transaction antérieure. Une adresse peut recevoir plusieurs pièces, et un portefeuille gérer de nombreuses adresses et pièces. Les décisions de dépense et de CoinJoin concernent les pièces disponibles, pas seulement le solde total ; le [glossaire](/fr/help/glossary/) explique ces termes.
 
-<span id="does-combining-coinjoined-coins-always-destroy-all-privacy" data-ginger-heading="combiner-des-coins-coinjoined-détruit-il-toujours-toute-confidentialité-" aria-hidden="true"></span>
+<span id="does-combining-coinjoined-coins-always-destroy-all-privacy" data-ginger-heading="combiner-des-pièces-coinjoined-détruit-il-toujours-toute-confidentialité-" aria-hidden="true"></span>
 
-### Combiner des coins CoinJoined détruit-il toujours toute confidentialité ?
+### Combiner des pièces CoinJoined détruit-il toujours toute confidentialité ?
 
-Aucune règle unique ne décrit tous les observateurs ou paiements. Une dépense commune ordinaire peut associer ses entrées, surtout si l'une est déjà liée à une identité, mais ne révèle pas automatiquement tous les liens de propriété antérieurs. Examinez les entrées et le rendu du paiement réellement nécessaire plutôt que de considérer « toujours combiner » ou « ne jamais combiner » comme une garantie.
+Aucune règle unique ne décrit tous les observateurs ou paiements. Une dépense commune ordinaire peut associer ses entrées, surtout si l'une est déjà liée à une identité, mais ne révèle pas automatiquement tous les liens de propriété antérieurs. Examinez les entrées et la monnaie rendue du paiement réellement nécessaire plutôt que de considérer « toujours combiner » ou « ne jamais combiner » comme une garantie.
 
 <span id="does-a-reused-address-automatically-publish-my-entire-wallet" data-ginger-heading="une-adresse-réutilisée-publie-t-elle-automatiquement-tout-le-portefeuille-" aria-hidden="true"></span>
 
@@ -90,19 +90,19 @@ Non, mais les réceptions à cette adresse peuvent être examinées ensemble et 
 
 ### Manual Control impose-t-il ces entrées exactes dans le paiement final ?
 
-**Manual Control** sélectionne des coins candidats pour un paiement ordinaire. Examinez les entrées réellement utilisées dans l'aperçu final, le montant reçu, le rendu et les frais avant autorisation. Cela est distinct de la sélection d'entrées CoinJoin et ne fixe pas une liste exacte pour un futur tour.
+**Manual Control** sélectionne des pièces candidates pour un paiement ordinaire. Examinez les entrées réellement utilisées dans l'aperçu final, le montant reçu, la monnaie rendue et les frais avant autorisation. Cela est distinct de la sélection d'entrées CoinJoin et ne fixe pas une liste exacte pour un futur tour.
 
-<span id="should-i-consolidate-many-small-coins-while-fees-are-low" data-ginger-heading="dois-je-consolider-de-petits-coins-lorsque-les-frais-sont-bas-" aria-hidden="true"></span>
+<span id="should-i-consolidate-many-small-coins-while-fees-are-low" data-ginger-heading="dois-je-consolider-de-petites-pièces-lorsque-les-frais-sont-bas-" aria-hidden="true"></span>
 
-### Dois-je consolider de petits coins lorsque les frais sont bas ?
+### Dois-je consolider de petites pièces lorsque les frais sont bas ?
 
-La consolidation peut réduire le nombre d'entrées nécessaires plus tard, mais la transaction de regroupement coûte des frais et peut associer des activités auparavant séparées. Un taux inférieur change ce coût, pas la divulgation. Considérez le but, la valeur et l'historique connu des coins avant de les combiner.
+La consolidation peut réduire le nombre d'entrées nécessaires plus tard, mais la transaction de regroupement coûte des frais et peut associer des activités auparavant séparées. Un taux inférieur change ce coût, pas la divulgation. Considérez le but, la valeur et l'historique connu des pièces avant de les combiner.
 
 <span id="why-is-a-tiny-payment-missing-and-does-exclude-coins-freeze-it" data-ginger-heading="pourquoi-un-petit-paiement-manque-t-il-et-exclude-coins-le-bloque-t-il-" aria-hidden="true"></span>
 
 ### Pourquoi un petit paiement manque-t-il, et Exclude Coins le bloque-t-il ?
 
-Vérifiez la synchronisation et le seuil de poussière configuré avant de conclure à la perte d'une petite sortie. **Exclude Coins** affecte CoinJoin, pas les dépenses ordinaires, et ne gèle pas un coin. Les petites réceptions imprévues n'exigent pas de réponse immédiate ; évaluez leur coût de dépense et les associations possibles avant de les inclure dans un paiement.
+Vérifiez la synchronisation et le seuil de poussière configuré avant de conclure à la perte d'une petite sortie. **Exclude Coins** affecte CoinJoin, pas les dépenses ordinaires, et ne gèle pas une pièce. Les petites réceptions imprévues n'exigent pas de réponse immédiate ; évaluez leur coût de dépense et les associations possibles avant de les inclure dans un paiement.
 
 <span id="can-i-set-any-custom-fee-rate-or-guarantee-a-confirmation-time" data-ginger-heading="puis-je-définir-nimporte-quel-taux-ou-garantir-un-délai-de-confirmation-" aria-hidden="true"></span>
 
@@ -118,23 +118,23 @@ Non. L'éditeur manuel de cette version rejette les taux inférieurs à 1 sat/vB
 
 ### Pourquoi le pourcentage de solde privé diffère-t-il de la progression globale ?
 
-Ce sont des mesures locales différentes. La progression pondère le score de chaque coin vers l'objectif par sa valeur, tandis que le solde privé coloré compte la valeur atteignant déjà cet objectif. Aucun n'est une probabilité mesurée d'identification par un observateur. Les deux affichages peuvent différer même si les deux soldes sont corrects.
+Ce sont des mesures locales différentes. La progression pondère le score de chaque pièce vers l'objectif par sa valeur, tandis que le solde privé coloré compte la valeur atteignant déjà cet objectif. Aucun n'est une probabilité mesurée d'identification par un observateur. Les deux affichages peuvent différer même si les deux soldes sont corrects.
 
 <span id="why-can-progress-fall-or-change-when-i-adjust-the-target" data-ginger-heading="pourquoi-la-progression-baisse-t-elle-ou-change-t-elle-avec-lobjectif-" aria-hidden="true"></span>
 
 ### Pourquoi la progression baisse-t-elle ou change-t-elle avec l'objectif ?
 
-Recevoir des fonds, dépenser des coins ensemble, restaurer sans analyse locale ou changer l'objectif peut modifier l'affichage. Abaisser l'objectif peut reclasser des coins sans changer leur historique publié. Examinez les transactions et paramètres concernés plutôt que de supposer qu'un changement de score prouve un vol ou garantit un nouveau résultat de confidentialité.
+Recevoir des fonds, dépenser des pièces ensemble, restaurer sans analyse locale ou changer l'objectif peut modifier l'affichage. Abaisser l'objectif peut reclasser des pièces sans changer leur historique publié. Examinez les transactions et paramètres concernés plutôt que de supposer qu'un changement de score prouve un vol ou garantit un nouveau résultat de confidentialité.
 
-<span id="can-i-choose-exactly-which-coins-join-a-round" data-ginger-heading="puis-je-choisir-exactement-les-coins-dun-tour-" aria-hidden="true"></span>
+<span id="can-i-choose-exactly-which-coins-join-a-round" data-ginger-heading="puis-je-choisir-exactement-les-pièces-dun-tour-" aria-hidden="true"></span>
 
-### Puis-je choisir exactement les coins d'un tour ?
+### Puis-je choisir exactement les pièces d'un tour ?
 
-Le client sélectionne les entrées admissibles selon les paramètres CoinJoin publiés. Vous pouvez exclure certains coins et ajuster les préférences, mais la sélection manuelle d'envoi n'impose pas une liste CoinJoin. L'exclusion est attachée à ces coins ; elle ne réserve pas chaque réception future à la même adresse.
+Le client sélectionne les entrées admissibles selon les paramètres CoinJoin publiés. Vous pouvez exclure certaines pièces et ajuster les préférences, mais la sélection manuelle d'envoi n'impose pas une liste CoinJoin. L'exclusion est attachée à ces pièces ; elle ne réserve pas chaque réception future à la même adresse.
 
-<span id="what-do-rejected-coins-or-a-blame-round-mean" data-ginger-heading="que-signifient-les-coins-refusés-ou-un-blame-round-" aria-hidden="true"></span>
+<span id="what-do-rejected-coins-or-a-blame-round-mean" data-ginger-heading="que-signifient-les-pièces-refusées-ou-un-blame-round-" aria-hidden="true"></span>
 
-### Que signifient les coins refusés ou un blame round ?
+### Que signifient les pièces refusées ou un blame round ?
 
 Un blame round est une reprise du protocole après une tentative inachevée ; ce n'est pas une instruction d'identifier ou d'accuser quelqu'un. Un refus ou une indisponibilité temporaire exige d'examiner sa raison exacte et l'état actuel. Aucun message ne transfère à lui seul le contrôle au coordinateur ; consultez [le tableau des états](/fr/help/troubleshooting/#coinjoin-does-not-start).
 
@@ -148,7 +148,7 @@ Additionnez la valeur de vos entrées dépensées et soustrayez la valeur de tou
 
 ### L'exonération remix est-elle permanente ou appliquée au solde entier ?
 
-Non. C'est une règle d'admissibilité d'entrée selon la politique du tour proposé, pas un droit perpétuel pour toutes les transactions. La politique annoncée inclut remix admissibles et dépense directe via une transaction ; le minage reste dû. Revérifiez les conditions au lieu de diviser ou déplacer des coins uniquement pour une exonération supposée.
+Non. C'est une règle d'admissibilité d'entrée selon la politique du tour proposé, pas un droit perpétuel pour toutes les transactions. La politique annoncée inclut remix admissibles et dépense directe via une transaction ; les frais de minage restent dus. Revérifiez les conditions au lieu de diviser ou déplacer des pièces uniquement pour une exonération supposée.
 
 <span id="hardware-and-privacy-boundaries" data-ginger-heading="matériel-et-limites-de-confidentialité" aria-hidden="true"></span>
 

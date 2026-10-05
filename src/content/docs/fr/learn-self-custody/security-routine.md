@@ -31,7 +31,7 @@ Vérifiez le téléchargement de l'application, confirmez que le portefeuille s'
 
 Utilisez un petit montant pour apprendre une nouvelle procédure. Rapprochez ce qui a été envoyé, ce qui est arrivé et les frais payés. Augmenter le montant ne rend pas une procédure inconnue plus facile à diagnostiquer.
 
-Maintenez l'ordinateur et l'appareil de signature à jour via des sources authentifiées. Un avis de mise à jour dans un message privé ne prouve pas qu'un fichier est légitime. N'installez jamais de « logiciel de récupération » et n'autorisez jamais le contrôle à distance simplement parce qu'un inconnu affirme que vos coins ont besoin d'une synchronisation.
+Maintenez l'ordinateur et l'appareil de signature à jour via des sources authentifiées. Un avis de mise à jour dans un message privé ne prouve pas qu'un fichier est légitime. N'installez jamais de « logiciel de récupération » et n'autorisez jamais le contrôle à distance simplement parce qu'un inconnu affirme que vos pièces ont besoin d'une synchronisation.
 
 <span id="understand-ginger-2fa" data-ginger-heading="comprendre-la-2fa-de-ginger" aria-hidden="true"></span>
 
@@ -80,7 +80,7 @@ Gardez les registres nécessaires privés pendant l'enquête. Ne donnez jamais �
 
 ## Réagir à une divulgation concernant seulement la confidentialité
 
-Pour une adresse exposée, décidez si son utilisation continue est acceptable. Vous pouvez recevoir les paiements futurs à de nouvelles adresses et éviter de publier des détails de transaction supplémentaires, mais l'observateur conserve ce qu'il a déjà appris. Il n'est pas automatiquement nécessaire de déplacer tous les coins simplement parce qu'une adresse est devenue publique.
+Pour une adresse exposée, décidez si son utilisation continue est acceptable. Vous pouvez recevoir les paiements futurs à de nouvelles adresses et éviter de publier des détails de transaction supplémentaires, mais l'observateur conserve ce qu'il a déjà appris. Il n'est pas automatiquement nécessaire de déplacer toutes les pièces simplement parce qu'une adresse est devenue publique.
 
 Pour une xpub divulguée, déterminez d'abord quel compte elle couvre. Continuer à utiliser ce compte peut exposer les activités futures. Un nouveau portefeuille avec des clés indépendantes établit un autre ensemble d'adresses, même si un transfert direct peut relier visiblement les anciens fonds à cet ensemble. Planifiez le déplacement et les dépenses ultérieures selon les observateurs et ce qu'ils savent. Réinstaller une application de portefeuille ou importer le même compte ailleurs ne supprime pas son exposition.
 
@@ -90,6 +90,6 @@ Pour des registres divulgués, limitez les accès supplémentaires et évaluez c
 
 ## Distinguer confidentialité et protection des clés
 
-Un observateur qui connaît une transaction ne possède pas nécessairement les clés pour en dépenser les fonds. À l'inverse, un voleur possédant les clés peut dépenser des fonds dont l'historique de transactions était difficile à analyser. Utilisez la protection de la récupération et la vérification des appareils pour le second problème, et les pratiques d'adresses, Tor, la sélection des coins et un usage réfléchi de CoinJoin pour le premier.
+Un observateur qui connaît une transaction ne possède pas nécessairement les clés pour en dépenser les fonds. À l'inverse, un voleur possédant les clés peut dépenser des fonds dont l'historique de transactions était difficile à analyser. Utilisez la protection de la récupération et la vérification des appareils pour le second problème, et les pratiques d'adresses, Tor, la sélection des pièces et un usage réfléchi de CoinJoin pour le premier.
 
 Réexaminez la routine après l'ajout d'un portefeuille, un changement de matériel, l'activation de la 2FA ou le déplacement des sauvegardes. Vérifiez les éléments qui ont changé plutôt que d'exposer à répétition tous les secrets lors d'un exercice complet de récupération inutile.

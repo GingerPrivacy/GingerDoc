@@ -43,25 +43,25 @@ Notez séparément les frais de retrait. Le montant reçu dans Ginger peut être
 
 ## Parcours A : examiner CoinJoin, puis transférer
 
-1. Dans **Coinjoin Settings** de la source, laissez **Coinjoin to this wallet** sur la source. Examinez objectif, préférences de frais et coins exclus avant de démarrer par la commande de lecture.
+1. Dans **Coinjoin Settings** de la source, laissez **Coinjoin to this wallet** sur la source. Examinez objectif, préférences de frais et pièces exclues avant de démarrer par la commande de lecture.
 2. Surveillez les tours terminés et les informations de confidentialité. Vous pouvez mettre en pause pour examiner frais et progression. Dans une phase critique, laissez Ginger finir le travail requis au lieu de terminer l'application.
 3. Obtenez une nouvelle adresse matérielle et vérifiez-la sur l'appareil. Dans le portefeuille logiciel, choisissez **Send** → **Manual Control** et les fonds à déplacer.
 4. Vérifiez entrées réellement sélectionnées, destination, montant reçu, monnaie rendue et frais. Confirmez uniquement si tout correspond à votre intention.
-5. Vérifiez l'historique synchronisé du portefeuille matériel et les coins restants de la source. Attendez la confirmation avant de considérer le transfert terminé.
+5. Vérifiez l'historique synchronisé du portefeuille matériel et les pièces restantes de la source. Attendez la confirmation avant de considérer le transfert terminé.
 
-Envoyer toutes les sorties ensemble crée un lien visible entre elles. Déplacer les coins individuellement évite ce lien particulier à plusieurs entrées, mais coûte davantage de frais et révèle toujours une transaction par transfert. Montants, horaires et informations détenues par un observateur peuvent fournir d'autres liens. Choisissez un plan réalisable ; aucune des deux approches ne garantit l'anonymat.
+Envoyer toutes les sorties ensemble crée un lien visible entre elles. Déplacer les pièces individuellement évite ce lien particulier à plusieurs entrées, mais coûte davantage de frais et révèle toujours une transaction par transfert. Montants, horaires et informations détenues par un observateur peuvent fournir d'autres liens. Choisissez un plan réalisable ; aucune des deux approches ne garantit l'anonymat.
 
 <span id="route-b-choose-hardware-as-the-coinjoin-destination" data-ginger-heading="parcours-b--choisir-le-matériel-comme-destination-coinjoin" aria-hidden="true"></span>
 
 ## Parcours B : choisir le matériel comme destination CoinJoin
 
-Utilisez ce parcours tant que le portefeuille logiciel contient encore des fonds admissibles. Le parcours normal v2.0.26 rejette la participation si le portefeuille ou tous les candidats disponibles sont déjà privés selon son objectif. Une autre destination ne contourne pas cette vérification. En particulier, exclure tous les coins non privés n'est pas un moyen fiable de forcer un tour supplémentaire contenant uniquement des coins déjà traités. Utilisez le parcours A pour ces fonds au lieu de changer l'objectif pour contourner l'arrêt.
+Utilisez ce parcours tant que le portefeuille logiciel contient encore des fonds admissibles. Le parcours normal v2.0.26 rejette la participation si le portefeuille ou tous les candidats disponibles sont déjà privés selon son objectif. Une autre destination ne contourne pas cette vérification. En particulier, exclure toutes les pièces non privées n'est pas un moyen fiable de forcer un tour supplémentaire contenant uniquement des pièces déjà traitées. Utilisez le parcours A pour ces fonds au lieu de changer l'objectif pour contourner l'arrêt.
 
 1. Chargez et vérifiez le portefeuille matériel dans Ginger. Arrêtez la participation de la source et attendez la disponibilité du sélecteur de destination.
 2. Ouvrez **Coinjoin Settings** de la source. Réglez **Coinjoin to this wallet** sur le matériel voulu. Ne choisissez qu'une destination proposée par Ginger.
-3. Examinez **Exclude Coins** pour les fonds qui doivent rester hors CoinJoin. L'exclusion vise des coins précis et ne réserve pas toute réception future de la même source.
+3. Examinez **Exclude Coins** pour les fonds qui doivent rester hors CoinJoin. L'exclusion vise des pièces précises et ne réserve pas toute réception future de la même source.
 4. Revérifiez la destination et démarrez. Gardez l'application active pendant le tour.
-5. Après un tour réussi, examinez les deux portefeuilles. Seules les entrées sélectionnées ont été dépensées et les sorties peuvent être réparties sur plusieurs coins. Un solde restant à la source n'est pas nécessairement un échec.
+5. Après un tour réussi, examinez les deux portefeuilles. Seules les entrées sélectionnées ont été dépensées et les sorties peuvent être réparties sur plusieurs pièces. Un solde restant à la source n'est pas nécessairement un échec.
 
 La destination reçoit les sorties du tour terminé ; ce réglage n'attend pas un événement distinct d'atteinte de l'objectif avant de les transmettre. Examinez leur confidentialité résultante. Les fonds détenus par le matériel ne peuvent pas ensuite fournir d'entrées CoinJoin via le parcours matériel normal de cette version.
 
@@ -71,8 +71,8 @@ La sélection de destination est réinitialisée au redémarrage. Vérifiez-la �
 
 ## Rapprocher les soldes et préparer la dépense suivante
 
-Comparez la diminution de la source aux sorties reçues dans le matériel et aux fonds restants. La différence peut inclure les coûts CoinJoin. Un solde source nul ne signifie pas une perte si la destination prévue les a reçus. Inversement, un tour réussi ne signifie pas que tous les coins ont été déplacés ou ont atteint l'objectif.
+Comparez la diminution de la source aux sorties reçues dans le matériel et aux fonds restants. La différence peut inclure les coûts CoinJoin. Un solde source nul ne signifie pas une perte si la destination prévue les a reçus. Inversement, un tour réussi ne signifie pas que toutes les pièces ont été déplacées ou ont atteint l'objectif.
 
-Lors d'une dépense ultérieure depuis le matériel, vérifiez à nouveau la sélection. Combiner des coins sans rapport peut révéler des liens quel que soit le stockage des clés. Utilisez une nouvelle adresse destinataire, examinez la monnaie rendue et confirmez sur l'appareil. Le [parcours PSBT](/fr/hardware-wallets/psbt/) permet une signature par fichier sur du matériel adapté ; il ne change pas les conséquences de confidentialité de la transaction signée.
+Lors d'une dépense ultérieure depuis le matériel, vérifiez à nouveau la sélection. Combiner des pièces sans rapport peut révéler des liens quel que soit le stockage des clés. Utilisez une nouvelle adresse destinataire, examinez la monnaie rendue et confirmez sur l'appareil. Le [parcours PSBT](/fr/hardware-wallets/psbt/) permet une signature par fichier sur du matériel adapté ; il ne change pas les conséquences de confidentialité de la transaction signée.
 
 Si vous soupçonnez les clés déjà compromises, protéger les fonds restants prime sur l'attente d'un parcours de confidentialité. Un nouvel appareil contenant la même seed exposée ne révoque pas celle-ci.

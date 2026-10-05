@@ -21,7 +21,7 @@ Un client peut connaître l'adresse de facture fournie. Une plateforme peut conn
 
 Les transactions montrent entrées, sorties, valeurs et relations de dépense. Une sortie dépensée plus tard crée un lien public. Cela ne prouve pas automatiquement chaque propriétaire : paiement, transfert entre vos portefeuilles ou collaboration à plusieurs sont possibles. La [section confidentialité de l'article Bitcoin](https://bitcoin.org/bitcoin.pdf) discute la séparation des transactions publiques et des identités, ainsi que le problème des liens entre clés.
 
-Une fois l'adresse associée à une personne, l'activité reliée peut être étudiée. Certains liens sont directs, comme les paiements répétés à une adresse. D'autres supposent propriété commune des entrées ou identification du rendu. Ces hypothèses peuvent être erronées mais influencer la classification par les services.
+Une fois l'adresse associée à une personne, l'activité reliée peut être étudiée. Certains liens sont directs, comme les paiements répétés à une adresse. D'autres supposent propriété commune des entrées ou identification de la monnaie rendue. Ces hypothèses peuvent être erronées mais influencer la classification par les services.
 
 <span id="who-can-learn-what" data-ginger-heading="qui-peut-apprendre-quoi-" aria-hidden="true"></span>
 
@@ -44,7 +44,7 @@ Aucun paramètre unique ne traite toutes les lignes. Un portefeuille matériel a
 
 Si plusieurs clients sont facturés à une même adresse, chacun peut voir les réceptions à cette adresse, dont les paiements des autres. Une adresse neuve évite cet identifiant commun direct. Elle n'empêche pas automatiquement les liens ultérieurs si toutes les réceptions sont dépensées ensemble.
 
-Payer depuis des fonds associés à une campagne publique de dons peut révéler plus de contexte que le seul montant. Conserver le contexte des coins par activité permet un choix informé avant dépense.
+Payer depuis des fonds associés à une campagne publique de dons peut révéler plus de contexte que le seul montant. Conserver le contexte des pièces par activité permet un choix informé avant dépense.
 
 La confidentialité financière peut protéger les clients, les informations commerciales, les relations personnelles et la sécurité physique. Vouloir ces limites ne nécessite pas d'avoir mal agi. La question pertinente est de savoir si l'autre personne a besoin des informations pour terminer l'interaction.
 
@@ -54,14 +54,14 @@ La confidentialité financière peut protéger les clients, les informations com
 
 La fongibilité signifie échanger les unités selon des conditions équivalentes. Les règles Bitcoin comptabilisent les valeurs, mais les personnes et services peuvent classer différemment les sorties selon leurs historiques apparents. Ces jugements créent parfois des frictions même si une sortie est valide selon Bitcoin.
 
-Les outils de confidentialité peuvent rendre certaines classifications historiques plus difficiles à établir avec certitude. Ils ne peuvent imposer l'acceptation ou effacer les registres déjà détenus. Prudence avec les « coins propres » ou l'acceptation garantie : estimation du portefeuille et politique du service sont deux choses distinctes.
+Les outils de confidentialité peuvent rendre certaines classifications historiques plus difficiles à établir avec certitude. Ils ne peuvent imposer l'acceptation ou effacer les registres déjà détenus. Prudence avec les « pièces propres » ou l'acceptation garantie : estimation du portefeuille et politique du service sont deux choses distinctes.
 
 <span id="where-ginger-fits" data-ginger-heading="la-place-de-ginger" aria-hidden="true"></span>
 
 ## La place de Ginger
 
-Ginger propose réception à de nouvelles adresses, étiquettes locales, sélection des coins, Tor, synchronisation par filtres compacts et CoinJoin. Ces outils réduisent certaines divulgations et permettent l'examen avant autorisation. Il propose aussi des parcours matériels pour protéger les clés.
+Ginger propose réception à de nouvelles adresses, étiquettes locales, sélection des pièces, Tor, synchronisation par filtres compacts et CoinJoin. Ces outils réduisent certaines divulgations et permettent l'examen avant autorisation. Il propose aussi des parcours matériels pour protéger les clés.
 
-Commencez par une adresse neuve et la compréhension des coins existants. Si les liens transactionnels vous préoccupent, apprenez les possibilités et limites de CoinJoin avant d'activer les tours automatiques. Pour les choix courants, continuez avec [les habitudes avant et après paiement](/fr/using-ginger/address-reuse/).
+Commencez par une adresse neuve et la compréhension des pièces existantes. Si les liens transactionnels vous préoccupent, apprenez les possibilités et limites de CoinJoin avant d'activer les tours automatiques. Pour les choix courants, continuez avec [les habitudes avant et après paiement](/fr/using-ginger/address-reuse/).
 
 L'objectif est une amélioration délibérée adaptée à votre situation. Ginger ne peut effacer les informations déjà collectées par une plateforme, promettre l'acceptation universelle ou empêcher une divulgation volontaire ultérieure de créer un lien.

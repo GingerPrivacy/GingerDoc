@@ -11,7 +11,7 @@ next: false
 
 > Niveau de lecture : commencez ici. Les étapes essentielles viennent d'abord ; les références avancées sont facultatives.
 
-CoinJoin réunit l'activité Bitcoin de plusieurs personnes dans une transaction commune. Cela peut compliquer, pour un lecteur de l'historique public, l'identification du propriétaire de chaque coin résultant.
+CoinJoin réunit l'activité Bitcoin de plusieurs personnes dans une transaction commune. Cela peut compliquer, pour un lecteur de l'historique public, l'identification du propriétaire de chaque pièce résultante.
 
 Imaginez plusieurs personnes versant dans une transaction commune et recevant de nouveaux morceaux de bitcoin. Le public voit les montants déplacés. Ce qui devient moins clair est quel argent est devenu quel morceau. Ce n'est qu'une illustration : les vrais tours ont des montants différents et des détails plus complexes.
 
@@ -35,7 +35,7 @@ CoinJoin peut aider sur ces liens. Il ne supprime pas le registre de retrait d'u
 
 ## Combien cela coûte-t-il ?
 
-Un tour réussi entraîne des frais de minage Bitcoin et peut aussi entraîner des frais de coordinateur. Une exonération des frais de coordinateur ne supprime pas les coûts de minage. Plusieurs tours peuvent entraîner plusieurs coûts.
+Un tour réussi entraîne des frais de minage Bitcoin et peut aussi entraîner des frais de coordinateur. Une exonération des frais de coordinateur ne supprime pas les frais de minage. Plusieurs tours peuvent entraîner plusieurs coûts.
 
 Il n'y a pas de délai fixe. Ginger peut attendre confirmations, frais acceptables ou autres participants. Lisez l'état et examinez le résultat avant de laisser des participations répétées sans surveillance.
 

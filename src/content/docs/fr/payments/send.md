@@ -17,7 +17,7 @@ Ginger ne peut pas annuler un paiement Bitcoin confirmé. Avant de confirmer, v�
 
 ## Préparer un paiement
 
-1. Ouvrez le portefeuille contenant les fonds et choisissez **Send**. Choisissez **Automatic** pour la procédure de paiement ordinaire. Vous pourrez apprendre séparément la sélection manuelle des coins lorsque vous en aurez besoin.
+1. Ouvrez le portefeuille contenant les fonds et choisissez **Send**. Choisissez **Automatic** pour la procédure de paiement ordinaire. Vous pourrez apprendre séparément la sélection manuelle des pièces lorsque vous en aurez besoin.
 2. Saisissez l'adresse Bitcoin ou l'URI de paiement du destinataire dans **To:**. Une demande de paiement peut inclure le montant ; vérifiez-le après le collage. Si l'action **Scan QR Code** est disponible sur votre plateforme, vous pouvez utiliser la caméra, puis vérifier la destination décodée.
 3. Saisissez le montant et une étiquette informative pour le destinataire. Vérifiez si l'affichage est en BTC ou en monnaie fiduciaire. Une estimation en monnaie fiduciaire varie avec le taux de change et n'est pas le montant transféré par le réseau Bitcoin.
 4. Choisissez **Continue** et examinez l'aperçu de la transaction, les fonds sélectionnés, les éventuelles suggestions de confidentialité et la monnaie rendue attendue. Une suggestion qui modifie le montant n'est appropriée que si elle satisfait toujours la demande du destinataire.
@@ -42,7 +42,7 @@ Le paiement peut utiliser une portion de bitcoins supérieure au montant du dest
 
 Une suggestion de confidentialité peut modifier le montant proposé pour le destinataire. Acceptez-la seulement si elle satisfait toujours sa demande. En particulier, ne payez pas moins qu'une facture à montant fixe pour éviter la monnaie rendue.
 
-Référence avancée facultative : [taux de frais personnalisés et monnaie rendue](/fr/using-ginger/fee/) ou [contrôle manuel des coins et historique des transactions](/fr/payments/coin-control-history/).
+Référence avancée facultative : [taux de frais personnalisés et monnaie rendue](/fr/using-ginger/fee/) ou [contrôle manuel des pièces et historique des transactions](/fr/payments/coin-control-history/).
 
 <span id="when-a-payment-cannot-be-prepared" data-ginger-heading="quand-un-paiement-ne-peut-pas-être-préparé" aria-hidden="true"></span>
 

@@ -49,7 +49,7 @@ Un ordinateur compromis peut afficher une adresse crédible. L'écran matériel 
 
 ## Envoyer et approuver
 
-Préparez le paiement dans Ginger et vérifiez destinataire, montant, rendu et frais. Inspectez la demande de signature sur le matériel. Rejetez-la si destination ou montant diffèrent, ou si une condition de sortie ou de rendu reste inexplicable.
+Préparez le paiement dans Ginger et vérifiez destinataire, montant, monnaie rendue et frais. Inspectez la demande de signature sur le matériel. Rejetez-la si destination ou montant diffèrent, ou si une condition de sortie ou de monnaie rendue reste inexplicable.
 
 Gardez l'appareil connecté jusqu'à la fin de la signature. Vérifiez ensuite diffusion et confirmation dans l'historique. Retirer l'appareil n'annule pas une transaction déjà diffusée.
 
@@ -59,7 +59,7 @@ Gardez l'appareil connecté jusqu'à la fin de la signature. Vérifiez ensuite d
 
 Un portefeuille matériel ne peut être le portefeuille source signataire du CoinJoin automatique de Ginger. Lorsqu'il est chargé, il peut apparaître comme destination des sorties CoinJoin d'un portefeuille logiciel : c'est un rôle de réception, et la sélection de cette destination est réinitialisée au redémarrage. Utilisez uniquement la destination réellement proposée et vérifiez que vous la contrôlez avant de compter dessus.
 
-Le [parcours plateforme vers stockage à froid](/fr/hardware-wallets/exchange-to-cold-storage/) compare réception directe de sorties admissibles et transfert ultérieur. Il comprend la restriction empêchant le démarrage avec uniquement des coins privés et les contrôles de rapprochement des deux portefeuilles.
+Le [parcours plateforme vers stockage à froid](/fr/hardware-wallets/exchange-to-cold-storage/) compare réception directe de sorties admissibles et transfert ultérieur. Il comprend la restriction empêchant le démarrage avec uniquement des pièces privées et les contrôles de rapprochement des deux portefeuilles.
 
 L'envoi PayJoin depuis un portefeuille matériel est rejeté dans cette version. La signature de message dépend de la compatibilité appareil/vérificateur. Ni l'appareil ni Ginger ne peut annuler un paiement confirmé. Pour la signature par fichier, lisez [le parcours PSBT](/fr/hardware-wallets/psbt/).
 

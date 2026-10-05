@@ -50,6 +50,6 @@ Les pages externes utilisent le comportement réseau et de confidentialité du n
 
 ## Informations et outils du portefeuille
 
-**Wallet Info** peut afficher les informations de compte et de clé publique étendue. Une clé publique étendue ne permet pas de dépenser directement les coins, mais peut révéler de nombreuses adresses liées. Ne la publiez pas dans une demande de support publique.
+**Wallet Info** peut afficher les informations de compte et de clé publique étendue. Une clé publique étendue ne permet pas de dépenser directement les pièces, mais peut révéler de nombreuses adresses liées. Ne la publiez pas dans une demande de support publique.
 
 Sous **Wallet Settings** → **General**, utilisez la commande de nom pour renommer le portefeuille. Sous **Tools**, **Verify Recovery Words** vérifie la sauvegarde d'un portefeuille logiciel accessible, **Resync** reconstruit sa vue et **Delete Wallet** supprime un portefeuille local via sa procédure de confirmation. La suppression ne détruit pas les bitcoins, ne révoque pas les mots de récupération et ne remplace pas une sauvegarde. Conservez des informations de récupération fonctionnelles avant de supprimer l'accès local.

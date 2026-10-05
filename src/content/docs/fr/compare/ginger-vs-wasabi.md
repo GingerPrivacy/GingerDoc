@@ -11,7 +11,7 @@ next: false
 
 Ginger Wallet et Wasabi Wallet sont des portefeuilles Bitcoin open source pour ordinateur qui vous permettent de détenir vos propres clés et d'utiliser CoinJoin. Pour une personne qui commence à utiliser CoinJoin, les principales différences pratiques concernent la configuration du coordinateur et ses frais.
 
-**Ginger fournit une connexion à son coordinateur déjà configurée. Wasabi vous demande de configurer un coordinateur avant de démarrer CoinJoin.** Le coordinateur de Ginger facture normalement 0.3 % sur les entrées admissibles supérieures à 0.03 BTC, avec les exonérations décrites ci-dessous. La version actuelle de Wasabi n'accepte que les tours sans frais de coordinateur. Les deux entraînent des coûts de minage.
+**Ginger fournit une connexion à son coordinateur déjà configurée. Wasabi vous demande de configurer un coordinateur avant de démarrer CoinJoin.** Le coordinateur de Ginger facture normalement 0.3 % sur les entrées admissibles supérieures à 0.03 BTC, avec les exonérations décrites ci-dessous. La version actuelle de Wasabi n'accepte que les tours sans frais de coordinateur. Les deux entraînent des frais de minage.
 
 Dernière vérification : **7 septembre 2026**. Versions étudiées : [Ginger v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) et [Wasabi v2.8.2](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.2). Cette comparaison porte sur les parcours documentés, pas sur des mesures de vitesse, de fiabilité ou d'anonymat.
 
@@ -46,7 +46,7 @@ L'avantage pratique de Ginger est ici un parcours de configuration plus court. U
 
 ## La confidentialité en tenant compte des usages futurs
 
-Vous pouvez vouloir améliorer aujourd'hui votre confidentialité Bitcoin et utiliser plus tard une plateforme d'échange. Dans un CoinJoin, vos coins partagent une transaction avec les entrées d'autres participants. Ces liens peuvent compter lorsqu'un service custodial examine votre dépôt.
+Vous pouvez vouloir améliorer aujourd'hui votre confidentialité Bitcoin et utiliser plus tard une plateforme d'échange. Dans un CoinJoin, vos pièces partagent une transaction avec les entrées d'autres participants. Ces liens peuvent compter lorsqu'un service custodial examine votre dépôt.
 
 Le coordinateur de Ginger contrôle les entrées participantes et exclut celles qui échouent à ses vérifications de risque. L'objectif est de limiter l'exposition aux entrées signalées d'autres participants, une source possible d'examen supplémentaire lorsque vous utiliserez ensuite votre bitcoin.
 
@@ -60,7 +60,7 @@ Avec Wasabi, l'application de contrôles comparables dépend du coordinateur cho
 
 ### Les frais de coordinateur de Ginger
 
-Le seuil d'exonération est **par entrée**, aussi appelée coin ou UTXO. Ce n'est pas une limite sur le solde de votre portefeuille ni sur le montant total que vous enregistrez.
+Le seuil d'exonération est **par entrée**, aussi appelée pièce ou UTXO. Ce n'est pas une limite sur le solde de votre portefeuille ni sur le montant total que vous enregistrez.
 
 Avec les paramètres actuels du coordinateur :
 
@@ -97,7 +97,7 @@ Des frais de coordinateur nuls ne constituent qu'une composante de la comparaiso
 
 Les deux applications prennent en charge des portefeuilles matériels pour la réception ordinaire et la signature de paiements. Leurs parcours CoinJoin documentés nécessitent un portefeuille logiciel pour signer les entrées participantes ; l'appareil matériel ne peut pas servir de source de signature. Consultez [le matériel dans Ginger](/fr/using-ginger/hardware-wallet/) et [le guide matériel de Wasabi](https://docs.wasabiwallet.io/using-wasabi/ColdWasabi.html).
 
-Recevoir les coins résultants est une opération distincte. Les deux permettent de sélectionner un autre portefeuille compatible chargé comme destination des sorties CoinJoin, y compris un portefeuille matériel. Cela peut éviter un transfert séparé après le tour. Cela ne signifie **pas** que l'appareil a signé les entrées CoinJoin, ni que les sorties ont nécessairement atteint votre objectif de confidentialité avant d'y arriver.
+Recevoir les pièces résultantes est une opération distincte. Les deux permettent de sélectionner un autre portefeuille compatible chargé comme destination des sorties CoinJoin, y compris un portefeuille matériel. Cela peut éviter un transfert séparé après le tour. Cela ne signifie **pas** que l'appareil a signé les entrées CoinJoin, ni que les sorties ont nécessairement atteint votre objectif de confidentialité avant d'y arriver.
 
 Dans Ginger, vérifiez à nouveau la destination après un redémarrage, car la sélection est réinitialisée. Gardez des sauvegardes séparées pour la source logicielle et la destination matérielle. Ne saisissez jamais les mots de récupération du matériel dans l'application ordinateur pour activer CoinJoin.
 
@@ -119,4 +119,4 @@ L'opérateur de Ginger, InvisibleBit LLC, publie des restrictions de service, no
 
 **Envisagez Wasabi si vous préférez choisir un coordinateur et exigez des tours sans frais de coordinateur.** Vérifiez l'opérateur et le coût complet des transactions avant de commencer.
 
-Si vous voulez surtout recevoir, conserver et envoyer avec un portefeuille matériel, comparez d'abord les appareils compatibles et les parcours de paiement ordinaires. CoinJoin reste facultatif ; son utilité dépend des informations à protéger et de la manière dont vous dépenserez les coins résultants.
+Si vous voulez surtout recevoir, conserver et envoyer avec un portefeuille matériel, comparez d'abord les appareils compatibles et les parcours de paiement ordinaires. CoinJoin reste facultatif ; son utilité dépend des informations à protéger et de la manière dont vous dépenserez les pièces résultantes.

@@ -16,7 +16,7 @@ Ginger est un portefeuille open source pour les transactions Bitcoin sur la bloc
 ## Commencer par ce que vous voulez protéger
 
 - **Vos clés de dépense :** gardez une sauvegarde complète de récupération et protégez l'ordinateur utilisé pour signer. Un portefeuille matériel compatible peut conserver les clés de signature sur un appareil séparé.
-- **Votre historique de paiements :** utilisez de nouvelles adresses, des étiquettes locales utiles et examinez quels coins sont dépensés. [Découvrez ce que révèle une transaction Bitcoin](/fr/using-ginger/privacy/).
+- **Votre historique de paiements :** utilisez de nouvelles adresses, des étiquettes locales utiles et examinez quelles pièces sont dépensées. [Découvrez ce que révèle une transaction Bitcoin](/fr/using-ginger/privacy/).
 - **Vos connexions :** gardez la protection Tor normale. Le navigateur externe a son propre comportement réseau, ses cookies et ses comptes.
 
 Réception, envoi et CoinJoin sont distincts. Vous pouvez apprendre les paiements ordinaires d'abord et décider ensuite si CoinJoin répond à une préoccupation. Les tours achevés coûtent des frais et n'ont pas de délai garanti.

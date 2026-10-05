@@ -1,7 +1,7 @@
 ---
 doc_id: "payments.coin-control-history"
-title: "Contrôle des coins, historique et transactions bloquées"
-description: "Examinez les UTXO et l'historique des paiements Ginger, sélectionnez les coins de façon délibérée et comprenez quand une accélération ou une annulation est possible."
+title: "Contrôle des pièces, historique et transactions bloquées"
+description: "Examinez les UTXO et l'historique des paiements Ginger, sélectionnez les pièces de façon délibérée et comprenez quand une accélération ou une annulation est possible."
 lang: "fr"
 verified_release: "v2.0.26"
 reader_level: "advanced"
@@ -11,27 +11,27 @@ next: false
 
 > Niveau de lecture : guide avancé. Comprenez d'abord l'aperçu d'envoi ordinaire, le montant reçu par le destinataire et les frais.
 
-Le solde total du portefeuille peut contenir de nombreux coins distincts, avec des origines, des états de confirmation et des historiques de confidentialité différents. Le contrôle des coins vous aide à choisir lesquels dépenser. Il facilite aussi l'association accidentelle de fonds auparavant séparés ; utilisez-le donc dans un but précis.
+Le solde total du portefeuille peut contenir de nombreuses pièces distinctes, avec des origines, des états de confirmation et des historiques de confidentialité différents. Le contrôle des pièces vous aide à choisir lesquelles dépenser. Il facilite aussi l'association accidentelle de fonds auparavant séparés ; utilisez-le donc dans un but précis.
 
-<span id="inspect-and-select-coins" data-ginger-heading="examiner-et-sélectionner-les-coins" aria-hidden="true"></span>
+<span id="inspect-and-select-coins" data-ginger-heading="examiner-et-sélectionner-les-pièces" aria-hidden="true"></span>
 
-## Examiner et sélectionner les coins
+## Examiner et sélectionner les pièces
 
-Ouvrez le menu du portefeuille et choisissez **Wallet Coins**. Examinez le montant, les étiquettes, les informations de confirmation et les données de confidentialité des coins que vous possédez. Une transaction peut créer plusieurs coins, et une adresse peut recevoir plusieurs paiements distincts ; ni une ligne ni une adresse ne représente nécessairement un portefeuille entier.
+Ouvrez le menu du portefeuille et choisissez **Wallet Coins**. Examinez le montant, les étiquettes, les informations de confirmation et les données de confidentialité des pièces que vous possédez. Une transaction peut créer plusieurs pièces, et une adresse peut recevoir plusieurs paiements distincts ; ni une ligne ni une adresse ne représente nécessairement un portefeuille entier.
 
-Choisissez **Send** → **Manual Control** pour travailler avec des coins individuels pendant le paiement. Sélectionnez une valeur suffisante pour le paiement et les frais. Examinez les entrées et la monnaie rendue résultantes avant de confirmer. La sélection rend les coins disponibles pour le constructeur de transaction ; consultez l'aperçu final pour voir lesquels sont réellement utilisés.
+Choisissez **Send** → **Manual Control** pour travailler avec des pièces individuelles pendant le paiement. Sélectionnez une valeur suffisante pour le paiement et les frais. Examinez les entrées et la monnaie rendue résultantes avant de confirmer. La sélection rend les pièces disponibles pour le constructeur de transaction ; consultez l'aperçu final pour voir lesquelles sont réellement utilisées.
 
-Conservez des étiquettes expliquant l'origine des fonds ou les personnes qui les connaissent déjà. Payer avec des coins déjà associés au même destinataire peut révéler moins d'informations nouvelles que de combiner des sources sans rapport. Une étiquette ne garantit pas en elle-même l'anonymat et n'empêche pas l'analyse de la blockchain par autrui.
+Conservez des étiquettes expliquant l'origine des fonds ou les personnes qui les connaissent déjà. Payer avec des pièces déjà associées au même destinataire peut révéler moins d'informations nouvelles que de combiner des sources sans rapport. Une étiquette ne garantit pas en elle-même l'anonymat et n'empêche pas l'analyse de la blockchain par autrui.
 
-<span id="consolidation-and-small-coins" data-ginger-heading="consolidation-et-petits-coins" aria-hidden="true"></span>
+<span id="consolidation-and-small-coins" data-ginger-heading="consolidation-et-petites-pièces" aria-hidden="true"></span>
 
-## Consolidation et petits coins
+## Consolidation et petites pièces
 
-La consolidation dépense plusieurs petits coins pour produire moins de sorties, généralement vers un portefeuille que vous contrôlez. Elle coûte des frais maintenant et peut réduire le nombre d'entrées nécessaire pour un paiement ultérieur. Elle associe aussi publiquement les entrées sélectionnées. Des frais bas peuvent rendre la consolidation moins chère, mais n'éliminent pas ce compromis de confidentialité.
+La consolidation dépense plusieurs petites pièces pour produire moins de sorties, généralement vers un portefeuille que vous contrôlez. Elle coûte des frais maintenant et peut réduire le nombre d'entrées nécessaire pour un paiement ultérieur. Elle associe aussi publiquement les entrées sélectionnées. Des frais bas peuvent rendre la consolidation moins chère, mais n'éliminent pas ce compromis de confidentialité.
 
-Ne combinez pas automatiquement des coins sans rapport simplement pour obtenir une liste bien rangée. De très petites sorties reçues peuvent coûter trop cher à dépenser. Le seuil de poussière de Ginger et les exclusions de CoinJoin répondent à des situations différentes ; exclure un coin de CoinJoin ne vous empêche pas de le sélectionner pour un paiement ordinaire.
+Ne combinez pas automatiquement des pièces sans rapport simplement pour obtenir une liste bien rangée. De très petites sorties reçues peuvent coûter trop cher à dépenser. Le seuil de poussière de Ginger et les exclusions de CoinJoin répondent à des situations différentes ; exclure une pièce de CoinJoin ne vous empêche pas de la sélectionner pour un paiement ordinaire.
 
-Envoyer des fonds vers votre portefeuille matériel est une transaction ordinaire sur la chaîne si vous utilisez **Send**. Obtenez et vérifiez une nouvelle adresse de réception du portefeuille matériel, puis examinez les frais et les coins sélectionnés dans le portefeuille logiciel. Le transfert lui-même reste visible sur la blockchain.
+Envoyer des fonds vers votre portefeuille matériel est une transaction ordinaire sur la chaîne si vous utilisez **Send**. Obtenez et vérifiez une nouvelle adresse de réception du portefeuille matériel, puis examinez les frais et les pièces sélectionnées dans le portefeuille logiciel. Le transfert lui-même reste visible sur la blockchain.
 
 <span id="read-transaction-history" data-ginger-heading="lire-lhistorique-des-transactions" aria-hidden="true"></span>
 

@@ -40,7 +40,7 @@ Un participant connaît ses propres entrées et sorties, éliminant certaines po
 
 ## Les participants apparents ne sont pas des personnes indépendantes
 
-Une attaque Sybil signifie qu'un acteur apparaît comme plusieurs participants. S'il contrôle la majorité de l'activité autour d'une cible, il peut exclure ses propres coins des possibilités considérées. Une transaction peut sembler active tout en apportant moins d'incertitude à cet observateur qu'à un observateur non informé.
+Une attaque Sybil signifie qu'un acteur apparaît comme plusieurs participants. S'il contrôle la majorité de l'activité autour d'une cible, il peut exclure ses propres pièces des possibilités considérées. Une transaction peut sembler active tout en apportant moins d'incertitude à cet observateur qu'à un observateur non informé.
 
 De vraies entrées et les frais de minage créent des contraintes économiques. Ils ne permettent pas à un utilisateur normal de vérifier l'identité indépendante de chaque participant. Nombres d'entrées ou sorties, volume et score d'anonymat ne constituent donc pas un recensement de personnes indépendantes.
 
@@ -50,9 +50,9 @@ Les grands tours peuvent offrir plus de possibilités, mais montants, connaissan
 
 ## Quand le coordinateur ou la connexion manque
 
-Les coins contrôlés par vos clés ne deviennent pas une dette du coordinateur envers vous. Une tentative échouée avant diffusion ne les lui transfère pas à elle seule. Pendant un tour actif, Ginger peut cependant devoir finir un travail critique avant de rendre les coins disponibles pour une autre action ; utilisez pause et suivez l'état actuel.
+Les pièces contrôlées par vos clés ne deviennent pas une dette du coordinateur envers vous. Une tentative échouée avant diffusion ne les lui transfère pas à elle seule. Pendant un tour actif, Ginger peut cependant devoir finir un travail critique avant de rendre les pièces disponibles pour une autre action ; utilisez pause et suivez l'état actuel.
 
-Si CoinJoin ne peut continuer, mettez en pause et examinez la cause. Un envoi ordinaire exige toujours un moyen de signature disponible, des coins dépensables, des informations synchronisées et un moyen de diffuser. Une panne du coordinateur ne justifie pas de jeter les sauvegardes ou d'envoyer les mots de récupération à un service de remplacement. La 2FA facultative de Ginger a sa propre dépendance au service au démarrage normal ; conservez les mots de récupération et la phrase secrète d'origine de façon à pouvoir les récupérer indépendamment du service.
+Si CoinJoin ne peut continuer, mettez en pause et examinez la cause. Un envoi ordinaire exige toujours un moyen de signature disponible, des pièces dépensables, des informations synchronisées et un moyen de diffuser. Une panne du coordinateur ne justifie pas de jeter les sauvegardes ou d'envoyer les mots de récupération à un service de remplacement. La 2FA facultative de Ginger a sa propre dépendance au service au démarrage normal ; conservez les mots de récupération et la phrase secrète d'origine de façon à pouvoir les récupérer indépendamment du service.
 
 Un refus ou un tour échoué n'est pas en soi une preuve d'attaque ou un jugement sur votre identité. Inversement, un tour réussi ne certifie pas l'honnêteté du coordinateur. Préservez les données privées pertinentes si un problème concret doit être étudié.
 
@@ -62,7 +62,7 @@ Un refus ou un tour échoué n'est pas en soi une preuve d'attaque ou un jugemen
 
 1. Obtenez Ginger depuis sa distribution officielle et vérifiez le téléchargement. Utilisez des mises à jour authentifiées et protégez la machine signataire.
 2. Gardez Tor activé pour la confidentialité réseau prévue. Il ne masque pas les informations que vous soumettez explicitement au service destinataire.
-3. Vérifiez portefeuille, destination des sorties, coins admissibles et coûts. N'augmentez pas les limites simplement pour faire taire une erreur inexpliquée.
+3. Vérifiez portefeuille, destination des sorties, pièces admissibles et coûts. N'augmentez pas les limites simplement pour faire taire une erreur inexpliquée.
 4. Gardez des informations de récupération indépendantes. Ne donnez jamais mots, phrase secrète ou clés privées au coordinateur ou à l'assistance pour « débloquer » un tour.
 5. Examinez résultat et dépenses ultérieures. Une adresse neuve et un score élevé ne peuvent pas annuler une nouvelle divulgation à un destinataire identifié.
 

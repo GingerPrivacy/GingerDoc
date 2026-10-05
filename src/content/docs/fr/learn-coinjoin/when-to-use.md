@@ -27,7 +27,7 @@ Si votre objectif est simplement de protéger les clés pendant la détention de
 
 | Situation | Décision à envisager |
 | --- | --- |
-| Beaucoup de petits coins et frais de minage élevés | La participation peut consommer une forte part relative ; vérifiez les frais et envisagez d'attendre |
+| Beaucoup de petites pièces et frais de minage élevés | La participation peut consommer une forte part relative ; vérifiez les frais et envisagez d'attendre |
 | Un paiement est dû immédiatement | L'achèvement CoinJoin n'est pas programmé ; évitez de compter sur un tour pour une échéance exacte |
 | Dépenses à long terme depuis une source identifiée | Examinez l'articulation entre CoinJoin, adresses distinctes et sélection ultérieure |
 | Un prestataire exige identité et preuve d'adresse | Cette divulgation directe reste ; vérifiez si CoinJoin change les informations qui vous importent |

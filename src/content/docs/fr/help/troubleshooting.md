@@ -44,8 +44,8 @@ Si vous utilisez **Wallet Settings** → **Tools** → **Resync**, sauvegardez d
 
 | Message ou condition | Action probable |
 | --- | --- |
-| **Insufficient funds eligible for coinjoin** | Examinez les confirmations, les montants des coins, les frais et les exclusions ; le total ne suffit pas à établir l'admissibilité |
-| **Only excluded funds are available** | Examinez **Exclude Coins** si vous souhaitez faire participer certains coins |
+| **Insufficient funds eligible for coinjoin** | Examinez les confirmations, les montants des pièces, les frais et les exclusions ; le total ne suffit pas à établir l'admissibilité |
+| **Only excluded funds are available** | Examinez **Exclude Coins** si vous souhaitez faire participer certaines pièces |
 | **Only immature funds are available** | Attendez le nombre requis de confirmations ; les sorties nouvellement minées ont des règles de dépense spéciales |
 | **Some funds are rejected from coinjoining** | Lisez la raison et les conditions actuelles ; le refus ne transfère pas la propriété |
 | **Awaiting cheaper coinjoins** | Examinez les préférences de coût et décidez si attendre correspond au but |
@@ -55,7 +55,7 @@ Si vous utilisez **Wallet Settings** → **Tools** → **Resync**, sauvegardez d
 | **Mining fee rate was too high** ou **Coordination fee rate was too high** | Attendez ou examinez les conditions ; n'augmentez pas aveuglément les limites |
 | Source matérielle | La signature automatique exige un portefeuille logiciel admissible |
 
-Des participants peuvent ne pas terminer, ou un coin devenir temporairement indisponible après interruption. Réessais, imports répétés et tentatives de contourner un refus ne constituent pas une réparation. Utilisez raison et état actuel pour décider d'attendre ou de contacter l'assistance officielle.
+Des participants peuvent ne pas terminer, ou une pièce devenir temporairement indisponible après interruption. Réessais, imports répétés et tentatives de contourner un refus ne constituent pas une réparation. Utilisez raison et état actuel pour décider d'attendre ou de contacter l'assistance officielle.
 
 <span id="payment-or-fee-problems" data-ginger-heading="problèmes-de-paiement-ou-de-frais" aria-hidden="true"></span>
 

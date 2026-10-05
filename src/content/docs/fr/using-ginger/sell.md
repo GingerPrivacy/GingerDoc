@@ -75,4 +75,4 @@ Pour crash Ginger, navigateur qui ne s'ouvre pas ou commande mal affichée, sign
 
 Le prestataire peut relier sa demande de paiement à l'identité ou à la méthode de paiement fournie. Dépenser des fonds issus de CoinJoin ne supprime pas cet enregistrement, et il peut appliquer sa propre politique d'acceptation. Ginger ne garantit pas l'acceptation de tous les historiques par chaque plateforme.
 
-Comparez versement annoncé au bitcoin, frais prestataire et minage séparé de votre paiement. Gardez assez de valeur dépensable pour ce dernier. Solde bas, hausse de frais ou phase CoinJoin critique peut empêcher le paiement immédiat d'une commande valide.
+Comparez le versement annoncé avec le montant en bitcoins, les frais affichés par le prestataire et les frais de minage distincts pour votre paiement. Gardez assez de valeur dépensable pour ces derniers. Solde bas, hausse de frais ou phase CoinJoin critique peut empêcher le paiement immédiat d'une commande valide.
