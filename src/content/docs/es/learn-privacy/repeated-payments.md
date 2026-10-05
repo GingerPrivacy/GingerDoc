@@ -11,7 +11,7 @@ next: false
 
 > Nivel de lectura: Uso cotidiano. Elige esta guía cuando necesites realizar la tarea que describe.
 
-Recibir bitcoin públicamente no exige publicar todas las direcciones de tu cartera. Sí exige decidir qué verá cada pagador o visitante del sitio web y después mantener separadas las recepciones sin relación cuando resulte útil. Ginger admite la recepción normal en cadena y etiquetas locales; no es un servidor de facturación ni un servicio automático de rotación de direcciones para sitios web.
+Recibir bitcoin públicamente no exige publicar todas las direcciones de tu monedero. Sí exige decidir qué verá cada pagador o visitante del sitio web y después mantener separadas las recepciones sin relación cuando resulte útil. Ginger admite la recepción normal en cadena y etiquetas locales; no es un servidor de facturación ni un servicio automático de rotación de direcciones para sitios web.
 
 <span id="choose-how-to-give-out-addresses" data-ginger-heading="elige-cómo-facilitar-las-direcciones" aria-hidden="true"></span>
 
@@ -29,10 +29,10 @@ Las recepciones de una dirección pública no representan necesariamente todo el
 
 ## Recibe y conserva registros útiles
 
-1. Abre la cartera prevista y elige **Receive**. Añade una etiqueta que te ayude a reconocer después el propósito, como una referencia privada de factura o la actividad correspondiente.
+1. Abre el monedero previsto y elige **Receive**. Añade una etiqueta que te ayude a reconocer después el propósito, como una referencia privada de factura o la actividad correspondiente.
 2. Genera una dirección de recepción nueva para ese pago. En un dispositivo de hardware, verifícala en el dispositivo mediante **Show on the hardware wallet** cuando esté disponible.
 3. Comparte la dirección y el importe acordado de Bitcoin en cadena mediante el canal previsto. Verifica lo que pegaste; no reutilices una dirección solo porque ya aparezca en el historial de un chat.
-4. Comprueba la recepción real y las confirmaciones en Ginger. Un mensaje del pagador o una imagen de su pantalla de pago no son la confirmación de la cartera de que los fondos hayan llegado.
+4. Comprueba la recepción real y las confirmaciones en Ginger. Un mensaje del pagador o una imagen de su pantalla de pago no son la confirmación del monedero de que los fondos hayan llegado.
 5. Conserva la asociación entre la recepción, la etiqueta y cualquier registro privado de factura o donación. Las palabras de recuperación no reconstruyen todas esas notas.
 
 Las etiquetas pertenecen a los registros locales; no se publican como nombres en la transacción de Bitcoin. Sin embargo, cualquiera que lea tus archivos locales, tu copia de seguridad o una pantalla compartida puede verlas. Usa suficientes detalles para comprender la selección futura de monedas sin recopilar información personal innecesaria de los donantes.
@@ -68,6 +68,6 @@ Abre **Wallet Coins** para inspeccionar las monedas resultantes. **Send** → **
 
 Los pagos diminutos inesperados no necesitan una respuesta inmediata. Gastar una salida pequeña puede costar un gran porcentaje de su valor y asociarla a otras entradas seleccionadas. **Exclude Coins** afecta únicamente a la participación en CoinJoin; no bloquea una moneda frente a un gasto normal. No sigas instrucciones incluidas en un pago o contacto no solicitado que afirme que debes enviar fondos para desbloquearlo.
 
-Si diriges salidas aptas de CoinJoin a otra cartera cargada para almacenarlas, comprueba esa elección antes de cada sesión. Se restablece después de reiniciar, y el procedimiento normal de la versión no fuerza una ronda adicional cuando todos los fondos aptos ya son privados. Una configuración de recepción recurrente no debe depender de la suposición no verificada de que todo se envía continuamente a un dispositivo de hardware.
+Si diriges salidas aptas de CoinJoin a otro monedero cargado para almacenarlas, comprueba esa elección antes de cada sesión. Se restablece después de reiniciar, y el procedimiento normal de la versión no fuerza una ronda adicional cuando todos los fondos aptos ya son privados. Una configuración de recepción recurrente no debe depender de la suposición no verificada de que todo se envía continuamente a un dispositivo de hardware.
 
 Continúa con [Gastar después de CoinJoin](/es/learn-privacy/spending-after-coinjoin/) para ver ejemplos concretos y con [Divulgación de información](/es/learn-privacy/information-sharing/) para saber qué pueden aprender los sitios web, exploradores y otras aplicaciones.

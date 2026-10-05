@@ -1,7 +1,7 @@
 ---
 doc_id: "payments.payjoin-message-signing"
 title: "PayJoin y firma de mensajes"
-description: "Envía una solicitud de pago PayJoin, comprende lo que sabe el destinatario, las huellas de carteras y el pago alternativo, y firma un mensaje de control de dirección de alcance limitado."
+description: "Envía una solicitud de pago PayJoin, comprende lo que sabe el destinatario, las huellas de monederos y el pago alternativo, y firma un mensaje de control de dirección de alcance limitado."
 lang: "es"
 verified_release: "v2.0.26"
 reader_level: "advanced"
@@ -19,7 +19,7 @@ PayJoin y la firma de mensajes son herramientas independientes. PayJoin cambia c
 
 PayJoin es un pago colaborativo en el que el receptor puede aportar una entrada. Esto puede debilitar la suposición de que todas las entradas de un pago de aspecto normal pertenecen a un único remitente. El receptor debe proporcionar una URI de pago Bitcoin compatible que contenga un punto de conexión PayJoin; una dirección normal por sí sola no lo activa. El protocolo se describe en [BIP78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
 
-1. Usa una cartera de software con fondos que puedas gastar. Esta versión rechaza las solicitudes PayJoin para enviar desde carteras de hardware.
+1. Usa un monedero de software con fondos que puedas gastar. Esta versión rechaza las solicitudes PayJoin para enviar desde monederos de hardware.
 2. Pega la URI completa del pago en **Send**, en vez de copiar únicamente su dirección. Comprueba el destino y el importe mediante el mismo canal de confianza que usarías para cualquier pago.
 3. Revisa la vista previa de la transacción y el indicador de PayJoin, y autoriza el pago si el importe y las comisiones son aceptables.
 4. Comprueba la transacción resultante en el historial.
@@ -40,13 +40,13 @@ Un observador externo ve la transacción que finalmente se publique en Bitcoin. 
 
 Distingue estos públicos. Un destinatario puede aprender detalles mediante la orden o la negociación aunque un observador ajeno no pueda atribuir con confianza las entradas de la transacción. Un explorador público de transacciones puede crear otra divulgación si consultas el pago desde una sesión de navegador identificada.
 
-<span id="wallet-fingerprints-and-the-ordinary-payment-fallback" data-ginger-heading="huellas-de-carteras-y-el-pago-normal-alternativo" aria-hidden="true"></span>
+<span id="wallet-fingerprints-and-the-ordinary-payment-fallback" data-ginger-heading="huellas-de-monederos-y-el-pago-normal-alternativo" aria-hidden="true"></span>
 
-## Huellas de carteras y el pago normal alternativo
+## Huellas de monederos y el pago normal alternativo
 
-Las carteras toman decisiones sobre los tipos de dirección de las entradas, la estructura de la transacción y la firma. Las combinaciones de estas decisiones pueden dejar patrones reconocibles. Por tanto, una transacción puede perder parte de su ambigüedad aunque sus mensajes del protocolo PayJoin sean válidos. Los [ejemplos publicados de identificación de huellas de PayJoin](https://payjoin.org/blog/2026/03/25/wallet-fingerprints-payjoin-privacy/) ilustran este problema en combinaciones concretas de carteras; no demuestran que Ginger tenga los mismos problemas ni cuantifican su privacidad.
+Los monederos toman decisiones sobre los tipos de dirección de las entradas, la estructura de la transacción y la firma. Las combinaciones de estas decisiones pueden dejar patrones reconocibles. Por tanto, una transacción puede perder parte de su ambigüedad aunque sus mensajes del protocolo PayJoin sean válidos. Los [ejemplos publicados de identificación de huellas de PayJoin](https://payjoin.org/blog/2026/03/25/wallet-fingerprints-payjoin-privacy/) ilustran este problema en combinaciones concretas de monederos; no demuestran que Ginger tenga los mismos problemas ni cuantifican su privacidad.
 
-Como usuario, elige un servicio receptor actualizado y compatible, verifica la solicitud de pago y revisa la comisión y el importe propuestos. No cambies opciones de transacción que desconozcas simplemente para imitar otra cartera: una transacción de aspecto plausible no demuestra un buen resultado de privacidad.
+Como usuario, elige un servicio receptor actualizado y compatible, verifica la solicitud de pago y revisa la comisión y el importe propuestos. No cambies opciones de transacción que desconozcas simplemente para imitar otro monedero: una transacción de aspecto plausible no demuestra un buen resultado de privacidad.
 
 Si necesitas un pago colaborativo, acuerda un método compatible con el destinatario antes de autorizar el procedimiento de envío de Ginger. Su alternativa de pago normal significa que una negociación fallida todavía puede producir un pago válido. Después de la difusión, no vuelvas a enviar solo porque el resultado no esté claro; comprueba primero la transacción y el estado del pago del destinatario. Una negociación PayJoin fallida y un pago Bitcoin fallido son situaciones diferentes.
 
@@ -54,10 +54,10 @@ Si necesitas un pago colaborativo, acuerda un método compatible con el destinat
 
 ## Firma un mensaje para una dirección
 
-Algunos servicios te piden demostrar que controlas una dirección de recepción. Abre el menú de la cartera y elige **Sign Message**. Introduce una dirección que pertenezca a esta cartera y la declaración exacta que quieras firmar. Ginger rechaza las direcciones que no le pertenecen. Introduce el mensaje, elige **Continue** y copia la firma resultante para el verificador previsto.
+Algunos servicios te piden demostrar que controlas una dirección de recepción. Abre el menú del monedero y elige **Sign Message**. Introduce una dirección que pertenezca a este monedero y la declaración exacta que quieras firmar. Ginger rechaza las direcciones que no le pertenecen. Introduce el mensaje, elige **Continue** y copia la firma resultante para el verificador previsto.
 
-En una cartera de hardware, sigue la solicitud de firma del dispositivo; la disponibilidad depende del dispositivo y de su compatibilidad con la firma de mensajes. Una cartera de solo observación sin dispositivo de firma no puede producir una firma. El tipo de dirección y el formato de firma admitido por el verificador también deben ser compatibles.
+En un monedero de hardware, sigue la solicitud de firma del dispositivo; la disponibilidad depende del dispositivo y de su compatibilidad con la firma de mensajes. Un monedero solo de observación sin dispositivo de firma no puede producir una firma. El tipo de dirección y el formato de firma admitido por el verificador también deben ser compatibles.
 
 Lee el mensaje con tanto cuidado como una declaración de autorización. Prefiere un texto de alcance limitado que identifique al destinatario, el propósito y la fecha o el desafío. No firmes una declaración vacía ni una cuyas consecuencias no comprendas. Una firma puede copiarse y mostrarse a otros después de compartirla.
 
-Firmar un mensaje no transfiere bitcoin ni establece la propiedad de todas las direcciones de tu cartera. También crea un vínculo entre la dirección firmada y quien el verificador identifique como tú. Si lo solicita un exchange, esa divulgación permanece incluso después de que uses CoinJoin.
+Firmar un mensaje no transfiere bitcoin ni establece la propiedad de todas las direcciones de tu monedero. También crea un vínculo entre la dirección firmada y quien el verificador identifique como tú. Si lo solicita un exchange, esa divulgación permanece incluso después de que uses CoinJoin.

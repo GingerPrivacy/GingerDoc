@@ -1,7 +1,7 @@
 ---
 doc_id: "buy-sell.buy"
 title: "Compra bitcoin a través de Ginger Wallet"
-description: "Compara ofertas de proveedores en Ginger, completa la compra en el navegador del proveedor y sigue la entrega a tu cartera."
+description: "Compara ofertas de proveedores en Ginger, completa la compra en el navegador del proveedor y sigue la entrega a tu monedero."
 lang: "es"
 verified_release: "v2.0.26"
 reader_level: "everyday"
@@ -28,17 +28,17 @@ next: false
 
 > Nivel de lectura: Uso cotidiano. Elige esta guía cuando necesites realizar la tarea que describe.
 
-**Buy** te conecta con ofertas de terceros para comprar bitcoin. Ginger proporciona la interfaz de la cartera y una dirección de recepción; el proveedor seleccionado gestiona el pago, los requisitos de admisibilidad, las comprobaciones de identidad y el proceso de entrega. Usar una cartera sin custodia no hace que la compra al proveedor sea anónima.
+**Buy** te conecta con ofertas de terceros para comprar bitcoin. Ginger proporciona la interfaz del monedero y una dirección de recepción; el proveedor seleccionado gestiona el pago, los requisitos de admisibilidad, las comprobaciones de identidad y el proceso de entrega. Usar un monedero sin custodia no hace que la compra al proveedor sea anónima.
 
 <span id="request-and-compare-offers" data-ginger-heading="solicita-y-compara-ofertas" aria-hidden="true"></span>
 
 ## Solicita y compara ofertas
 
-1. Abre la cartera que debe recibir el bitcoin y termina cualquier exploración de recuperación. Elige **Buy**. La acción puede estar disponible aunque la cartera no tenga saldo, incluso en una cartera de hardware.
+1. Abre el monedero que debe recibir el bitcoin y termina cualquier exploración de recuperación. Elige **Buy**. La acción puede estar disponible aunque el monedero no tenga saldo, incluso en un monedero de hardware.
 2. Selecciona tu país y, cuando se solicite, el estado o la región. El servicio determina la disponibilidad, así que usa información exacta en vez de suponer que elegir un país solo sirve para expresar una preferencia de moneda.
 3. En **Buy Bitcoin**, introduce el importe de compra en la moneda seleccionada. Comprueba el símbolo de la moneda y el mínimo o máximo que se muestra para la oferta concreta.
 4. Elige **Continue** para ver **Offers**. Si lo necesitas, filtra por método de pago. Compara el bitcoin estimado que recibirás, el coste total en moneda fiduciaria, las comisiones, el proveedor y el método de pago.
-5. Elige **Accept** para la oferta que quieras usar. Ginger crea una orden utilizando una dirección de recepción de la cartera seleccionada y abre la página del proveedor en el navegador configurado.
+5. Elige **Accept** para la oferta que quieras usar. Ginger crea una orden utilizando una dirección de recepción del monedero seleccionado y abre la página del proveedor en el navegador configurado.
 
 Las ofertas y los límites son información en tiempo real del servicio, no características permanentes de una versión. Un máximo fijo copiado de un artículo antiguo puede haber dejado de ser aplicable. Que una oferta aparezca destacada no garantiza que sea la mejor para tus circunstancias.
 
@@ -48,11 +48,11 @@ Las ofertas y los límites son información en tiempo real del servicio, no cara
 
 Comprueba que la página del navegador pertenezca al proveedor seleccionado. Lee el importe final, el tipo de cambio, los cargos, las condiciones de entrega y los requisitos de identidad antes de pagar. La estimación mostrada en Ginger puede cambiar antes de que se formalice una orden.
 
-La información emergente de la oferta de Ginger describe la comisión mostrada como incluida en el total cotizado. Revisa el pago final del proveedor y las condiciones de tu entidad de pago para detectar otros cargos; no supongas que la cartera puede garantizar todas las comisiones bancarias o de tarjeta.
+La información emergente de la oferta de Ginger describe la comisión mostrada como incluida en el total cotizado. Revisa el pago final del proveedor y las condiciones de tu entidad de pago para detectar otros cargos; no supongas que el monedero puede garantizar todas las comisiones bancarias o de tarjeta.
 
 El proveedor recibe el destino de compra y la información de la orden. Puede asociarlos a tu instrumento de pago o a tu identidad. Incluso una oferta marcada como que no requiere subir documentos no demuestra que el proveedor no recopile datos o que nunca pueda pedir una verificación. Considera que la política real del proceso de pago es la que rige esa orden.
 
-No envíes palabras de recuperación, claves privadas ni la frase de contraseña de tu cartera para completar una compra. Un proveedor necesita una dirección de recepción para entregar bitcoin, no acceso a la cartera que lo recibirá.
+No envíes palabras de recuperación, claves privadas ni la frase de contraseña de tu monedero para completar una compra. Un proveedor necesita una dirección de recepción para entregar bitcoin, no acceso al monedero que lo recibirá.
 
 <span id="track-the-result" data-ginger-heading="sigue-el-resultado" aria-hidden="true"></span>
 
@@ -60,7 +60,7 @@ No envíes palabras de recuperación, claves privadas ni la frase de contraseña
 
 Abre **Buy** → **Previous Orders** para consultar el estado de la orden. Las acciones disponibles dependen de su estado. Usa **Order Details** para anotar el proveedor y el **Order ID** si necesitas ayuda.
 
-Que un pago se haya completado en tu cuenta bancaria no es lo mismo que una confirmación de Bitcoin. Una vez que el proveedor envíe la transacción, deja que Ginger se sincronice y comprueba el historial de la cartera. Verifica el importe recibido y el estado de la transacción en vez de confiar únicamente en una página del navegador que indique que la operación tuvo éxito.
+Que un pago se haya completado en tu cuenta bancaria no es lo mismo que una confirmación de Bitcoin. Una vez que el proveedor envíe la transacción, deja que Ginger se sincronice y comprueba el historial del monedero. Verifica el importe recibido y el estado de la transacción en vez de confiar únicamente en una página del navegador que indique que la operación tuvo éxito.
 
 Si una orden está retenida, caducada, fallida o reembolsada, consulta [Estado de las órdenes y venta](/es/using-ginger/sell/). Evita iniciar otra compra solo porque una actualización de estado tarde; primero determina si se cobró el pago original.
 

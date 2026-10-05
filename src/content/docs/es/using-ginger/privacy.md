@@ -11,7 +11,7 @@ next: false
 
 > Nivel de lectura: Empieza aquí. Los pasos esenciales aparecen primero; las referencias avanzadas son lecturas posteriores opcionales.
 
-Las transacciones Bitcoin son públicas, pero el nombre del propietario de una cartera no se escribe automáticamente junto a cada dirección. La pregunta práctica es quién puede relacionar una dirección o transacción contigo y qué más puede inferir de esa relación.
+Las transacciones Bitcoin son públicas, pero el nombre del propietario de un monedero no se escribe automáticamente junto a cada dirección. La pregunta práctica es quién puede relacionar una dirección o transacción contigo y qué más puede inferir de esa relación.
 
 Un cliente puede conocer la dirección de la factura que le diste. Un exchange puede conocer tu dirección de retirada y tu identidad verificada. Quien sigue una dirección pública de donaciones puede observar sus recepciones. Estos observadores parten de información diferente, por lo que resulta más útil pensar en la privacidad como divulgación controlada que como un único interruptor de anónimo o no anónimo.
 
@@ -19,7 +19,7 @@ Un cliente puede conocer la dirección de la factura que le diste. Un exchange p
 
 ## Qué revela la cadena de bloques
 
-Las transacciones muestran entradas, salidas, valores y sus relaciones mediante el gasto. Una salida gastada después por otra transacción crea una conexión pública. Eso no demuestra automáticamente quién posee cada salida: una transacción puede ser un pago, una transferencia entre tus propias carteras o una colaboración con varios propietarios. [La sección de privacidad del documento Bitcoin original](https://bitcoin.org/bitcoin.pdf) trata la separación entre transacciones públicas e identidades y el problema de vincular claves.
+Las transacciones muestran entradas, salidas, valores y sus relaciones mediante el gasto. Una salida gastada después por otra transacción crea una conexión pública. Eso no demuestra automáticamente quién posee cada salida: una transacción puede ser un pago, una transferencia entre tus propios monederos o una colaboración con varios propietarios. [La sección de privacidad del documento Bitcoin original](https://bitcoin.org/bitcoin.pdf) trata la separación entre transacciones públicas e identidades y el problema de vincular claves.
 
 Una vez que alguien asocia una dirección con una persona, puede investigar la actividad conectada. Algunas asociaciones son directas, como pagos repetidos a una dirección. Otras se apoyan en suposiciones sobre la propiedad común de las entradas o sobre qué salida es cambio. Estas suposiciones pueden ser incorrectas, pero aun así influyen en cómo clasifican las transacciones los servicios.
 
@@ -34,9 +34,9 @@ Una vez que alguien asocia una dirección con una persona, puede investigar la a
 | Un exchange o proveedor de compra | Registros de cuenta, detalles de pago y direcciones de depósito o retirada | Comprende los registros del proveedor antes de utilizarlo |
 | Un analista público de la cadena | Datos de transacciones y etiquetas obtenidas en otros lugares | Evita crear vínculos fáciles; evalúa CoinJoin y tus hábitos posteriores de gasto |
 | Un servicio de red contactado | Contenido de solicitudes y posiblemente metadatos de conexión | Mantén Tor donde sea compatible y comprende las revelaciones específicas de cada función |
-| Alguien con acceso a tu ordenador o respaldos | Archivos, etiquetas, direcciones, registros y posiblemente claves | Protege el dispositivo, el respaldo de recuperación y los metadatos locales |
+| Alguien con acceso a tu ordenador o copias de seguridad | Archivos, etiquetas, direcciones, registros y posiblemente claves | Protege el dispositivo, la copia de seguridad de recuperación y los metadatos locales |
 
-Ningún ajuste único de cartera aborda todas las filas. Una cartera de hardware ayuda a proteger las claves, pero no oculta una dirección pública. Tor ayuda con los metadatos de conexión, pero no oculta información escrita en un formulario del proveedor.
+Ningún ajuste único de monedero aborda todas las filas. Un monedero de hardware ayuda a proteger las claves, pero no oculta una dirección pública. Tor ayuda con los metadatos de conexión, pero no oculta información escrita en un formulario del proveedor.
 
 <span id="why-this-matters-in-ordinary-life" data-ginger-heading="por-qué-importa-en-la-vida-cotidiana" aria-hidden="true"></span>
 

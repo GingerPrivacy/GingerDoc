@@ -35,7 +35,7 @@ Una venta intercambia bitcoin por el método de pago ofrecido por un proveedor. 
 
 ## Crea y financia una venta
 
-1. Abre una cartera sincronizada con bitcoin que se pueda gastar y elige **Sell**. Si la acción no aparece, comprueba el progreso de recuperación y si la cartera puede enviar.
+1. Abre un monedero sincronizado con bitcoin que se pueda gastar y elige **Sell**. Si la acción no aparece, comprueba el progreso de recuperación y si el monedero puede enviar.
 2. Selecciona tu país o región cuando se solicite. Introduce el importe que quieres vender y la moneda en la que quieres recibir el pago. Comprueba las unidades y los límites mostrados.
 3. Elige **Continue**, filtra **Offers** por método de pago y compara el abono neto y los cargos del proveedor.
 4. Elige **Accept**. Completa los pasos del proveedor en el navegador hasta obtener el destino exacto de Bitcoin, el importe y cualquier plazo de pago.
@@ -52,14 +52,14 @@ El diálogo de venta conserva el contexto del proveedor, pero no elimina tu resp
 | Estado en los detalles de la orden | Qué hacer |
 | --- | --- |
 | **Created** | La orden existe; comprueba qué pasos del proveedor quedan pendientes antes de volver a pagar. |
-| **Pending** | El procesamiento sigue en curso. Compara el estado del proveedor con el historial de la cartera. |
+| **Pending** | El procesamiento sigue en curso. Compara el estado del proveedor con el historial del monedero. |
 | **Your transaction is on hold. Please contact Support.** | Contacta con el proveedor seleccionado usando el identificador de la orden. Ginger no puede resolver su revisión. |
 | **Expired** | No supongas que una cotización o dirección de pago antigua siga siendo utilizable. Consulta al proveedor si ya se enviaron fondos. |
 | **Failed** | Comprueba si se transfirió el pago o el bitcoin antes de intentar una nueva orden. |
 | **Refunded** | Confirma con el proveedor el método, el destino y la liquidación del reembolso. |
-| **Completed** | Verifica la recepción de bitcoin o el abono en moneda fiduciaria previstos mediante la cartera o la cuenta de pago correspondiente. |
+| **Completed** | Verifica la recepción de bitcoin o el abono en moneda fiduciaria previstos mediante el monedero o la cuenta de pago correspondiente. |
 
-Las etiquetas de estado reflejan la información más reciente de la integración del proveedor y pueden retrasarse respecto a los hechos. Un indicador de retención en **Buy** o **Sell** señala una orden que necesita atención; no indica que se haya perdido una clave de cartera.
+Las etiquetas de estado reflejan la información más reciente de la integración del proveedor y pueden retrasarse respecto a los hechos. Un indicador de retención en **Buy** o **Sell** señala una orden que necesita atención; no indica que se haya perdido una clave de monedero.
 
 <span id="which-support-channel-to-use" data-ginger-heading="qué-canal-de-soporte-usar" aria-hidden="true"></span>
 
@@ -67,7 +67,7 @@ Las etiquetas de estado reflejan la información más reciente de la integració
 
 Para las comprobaciones de identidad, los retrasos del abono, los métodos de pago aceptados, las condiciones de reembolso o la retención de una orden, contacta con el proveedor mediante su sitio web autenticado. Facilita el identificador de la orden y únicamente la información de transacción necesaria para ese caso concreto. No publiques datos privados de tu cuenta en incidencias públicas de GitHub.
 
-Si Ginger falla, no abre el navegador o muestra una orden incorrectamente, comunica la versión de la aplicación, el sistema operativo, el texto del error y los pasos mediante los enlaces de soporte oficiales de Ginger. No incluyas palabras de recuperación, frases de contraseña, secretos de 2FA, archivos de cartera ni registros completos sin revisar su contenido.
+Si Ginger falla, no abre el navegador o muestra una orden incorrectamente, comunica la versión de la aplicación, el sistema operativo, el texto del error y los pasos mediante los enlaces de soporte oficiales de Ginger. No incluyas palabras de recuperación, frases de contraseña, secretos de 2FA, archivos de monedero ni registros completos sin revisar su contenido.
 
 <span id="privacy-and-fees" data-ginger-heading="privacidad-y-comisiones" aria-hidden="true"></span>
 

@@ -19,7 +19,7 @@ Imagina que varias personas aportan a una transacción compartida y reciben nuev
 
 ## ¿Entrego mi bitcoin a otra persona?
 
-La cartera de Ginger conserva la información utilizada para autorizar el gasto y comprueba la transacción propuesta antes de firmar. No depositas primero en un saldo controlado por un servicio de mezcla.
+El monedero de Ginger conserva la información utilizada para autorizar el gasto y comprueba la transacción propuesta antes de firmar. No depositas primero en un saldo controlado por un servicio de mezcla.
 
 Sigues necesitando una instalación de confianza, un ordenador protegido y una copia de recuperación. El servicio que organiza una ronda también necesita estar disponible. Mantener el control de las claves no significa que desaparezcan todos los demás problemas.
 
@@ -35,7 +35,7 @@ CoinJoin puede ayudar con esos vínculos. No puede borrar el registro de retirad
 
 ## ¿Qué costará?
 
-Una ronda completada paga comisiones de minería de Bitcoin y también puede cobrar una comisión del coordinador. Una exención de la comisión del coordinador no elimina los costes de minería. Varias rondas pueden implicar varios costes.
+Una ronda completada paga comisiones de minería de Bitcoin y también puede cobrar una comisión del coordinador. Una exención de la comisión del coordinador no elimina las comisiones de minería. Varias rondas pueden implicar varios costes.
 
 No hay un tiempo fijo de finalización. Ginger puede esperar confirmaciones, comisiones aceptables u otros participantes. Lee el estado y revisa el resultado antes de dejar participaciones repetidas sin supervisión.
 

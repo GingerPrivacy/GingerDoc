@@ -1,7 +1,7 @@
 ---
 doc_id: "getting-started.start-here"
 title: "Empieza aquí: tus primeros pasos con Ginger"
-description: "Aprende qué hace Ginger, protege tu respaldo de recuperación y sigue un camino sencillo para recibir y enviar antes de explorar funciones avanzadas opcionales."
+description: "Aprende qué hace Ginger, protege tu copia de seguridad de recuperación y sigue un camino sencillo para recibir y enviar antes de explorar funciones avanzadas opcionales."
 lang: "es"
 verified_release: "v2.0.26"
 reader_level: "beginner"
@@ -17,7 +17,7 @@ next:
 
 Ginger es una aplicación para recibir y enviar bitcoin en tu ordenador. Tú controlas la información que permite gastar tus bitcoin. Ginger también puede dificultar el seguimiento del historial de pagos mediante una función opcional llamada CoinJoin.
 
-Puedes aprender primero el funcionamiento normal de la cartera. No necesitas tu propio nodo Bitcoin, un dispositivo de hardware ni ajustes CoinJoin avanzados para crear una cartera de software.
+Puedes aprender primero el funcionamiento normal del monedero. No necesitas tu propio nodo Bitcoin, un dispositivo de hardware ni ajustes CoinJoin avanzados para crear un monedero de software.
 
 <!-- Conserva enlaces a las preguntas publicadas anteriormente en esta página. -->
 <span id="whats-the-officially-supported-operating-systems" aria-hidden="true"></span>
@@ -38,15 +38,15 @@ Mantén las comprobaciones de descarga de esa guía. [La referencia avanzada de 
 
 <span id="what-is-the-password-used-for" aria-hidden="true"></span>
 
-<span id="2-create-a-wallet-and-make-its-backup" data-ginger-heading="2-crea-una-cartera-y-su-respaldo" aria-hidden="true"></span>
+<span id="2-create-a-wallet-and-make-its-backup" data-ginger-heading="2-crea-un-monedero-y-su-copia-de-seguridad" aria-hidden="true"></span>
 
-## 2. Crea una cartera y su respaldo
+## 2. Crea un monedero y su copia de seguridad
 
-Sigue [Crea tu primera cartera](/es/getting-started/first-wallet/). Elige **New**, anota en orden las doce **Recovery Words** y completa **Confirm Recovery Words**. Mantén el respaldo escrito privado y disponible incluso si pierdes el ordenador.
+Sigue [Crea tu primer monedero](/es/getting-started/first-wallet/). Elige **New**, anota en orden las doce **Recovery Words** y completa **Confirm Recovery Words**. Mantén en privado la copia de seguridad escrita y asegúrate de tenerla disponible incluso si pierdes el ordenador.
 
-En **Add Passphrase**, comprende la elección antes de continuar. Si utilizas una frase de contraseña, necesitarás tanto las palabras originales como esa frase exacta para recuperar. También protege el acceso a la cartera en tu ordenador. Ginger no puede restablecerla. Dejar los campos vacíos crea una cartera sin esa frase adicional; anota qué opción elegiste.
+En **Add Passphrase**, comprende la elección antes de continuar. Si utilizas una frase de contraseña, necesitarás tanto las palabras originales como esa frase exacta para recuperar. También protege el acceso al monedero en tu ordenador. Ginger no puede restablecerla. Dejar los campos vacíos crea un monedero sin esa frase adicional; anota qué opción elegiste.
 
-No continúes con un saldo importante hasta que el respaldo sea legible y puedas abrir la cartera prevista. Nunca compartas palabras o frase de contraseña con soporte.
+No continúes con un saldo importante hasta que la copia de seguridad sea legible y puedas abrir el monedero previsto. Nunca compartas palabras o frase de contraseña con soporte.
 
 <span id="why-is-it-important-to-use-a-new-address-for-every-payment" aria-hidden="true"></span>
 
@@ -54,7 +54,7 @@ No continúes con un saldo importante hasta que el respaldo sea legible y puedas
 
 ## 3. Recibe un primer pago pequeño
 
-Espera a que la cartera termine de sincronizar: significa consultar la red Bitcoin en busca de tus transacciones. Elige **Receive**, añade una etiqueta útil y genera una dirección de recepción. Compártela con el pagador previsto o utilízala en el proceso de retirada Bitcoin on-chain de un exchange.
+Espera a que el monedero termine de sincronizar: significa consultar la red Bitcoin en busca de tus transacciones. Elige **Receive**, añade una etiqueta útil y genera una dirección de recepción. Compártela con el pagador previsto o utilízala en el proceso de retirada Bitcoin on-chain de un exchange.
 
 Genera una dirección nueva para cada pago. Reutilizarla facilita relacionar pagos separados en el registro público de Bitcoin.
 
@@ -66,7 +66,7 @@ Comprueba la dirección completa y la red antes de autorizar el pago. Ginger rec
 
 Elige **Send** y utiliza la selección **Automatic** para el funcionamiento normal. Introduce dirección e importe del destinatario, elige **Continue** y revisa destino, importe que recibirá y comisión. Elige **Confirm** solo si son correctos.
 
-La comisión paga el espacio de transacción Bitcoin. Si sobra parte del dinero seleccionado, vuelve a tu cartera como cambio. No necesitas reenviarlo manualmente. Ginger no puede revertir un pago confirmado.
+La comisión paga el espacio de transacción Bitcoin. Si sobra parte del dinero seleccionado, vuelve a tu monedero como cambio. No necesitas reenviarlo manualmente. Ginger no puede revertir un pago confirmado.
 
 Tras un error de conexión, comprueba el historial antes de volver a pagar. Así evitas pagar dos veces cuando la primera transacción ya se envió.
 
@@ -74,9 +74,9 @@ Tras un error de conexión, comprueba el historial antes de volver a pagar. Así
 
 ## 5. Decide si utilizar CoinJoin
 
-CoinJoin combina la actividad de varias personas en una transacción Bitcoin compartida para dificultar inferir vínculos de propiedad. Tu cartera conserva sus claves de firma. Cuesta comisiones, puede tardar y no borra información que un destinatario o exchange ya conoce.
+CoinJoin combina la actividad de varias personas en una transacción Bitcoin compartida para dificultar inferir vínculos de propiedad. Tu monedero conserva sus claves de firma. Cuesta comisiones, puede tardar y no borra información que un destinatario o exchange ya conoce.
 
-Revisa **Automatically start coinjoin** en **Coinjoin Settings** para la cartera seleccionada. Desactiva la participación automática mientras aprendes si no quieres que comience sin supervisión. Si ya hay una ronda activa, utiliza la pausa del panel de control y permite que termine el trabajo crítico.
+Revisa **Automatically start coinjoin** en **Coinjoin Settings** para el monedero seleccionado. Desactiva la participación automática mientras aprendes si no quieres que comience sin supervisión. Si ya hay una ronda activa, utiliza la pausa del panel de control y permite que termine el trabajo crítico.
 
 Puedes recibir y realizar pagos normales sin esperar a que un indicador de privacidad llegue al 100%. Tampoco necesitas ajustar todas las opciones avanzadas para empezar.
 
@@ -84,6 +84,6 @@ Puedes recibir y realizar pagos normales sin esperar a que un indicador de priva
 
 ## Has terminado el recorrido inicial
 
-Tus comprobaciones esenciales son un respaldo recuperable, la cartera prevista, la red de pago correcta, el destinatario y la comisión real. Sigue utilizando direcciones nuevas y revisando cada pago.
+Tus comprobaciones esenciales son una copia de seguridad recuperable, el monedero previsto, la red de pago correcta, el destinatario y la comisión real. Sigue utilizando direcciones nuevas y revisando cada pago.
 
 Vuelve a esta guía cuando necesites la lista de comprobaciones para recibir y enviar. La sección **Uso avanzado** está separada de este recorrido inicial. Por ejemplo, [Verifica una descarga de Ginger Wallet](/es/getting-started/verify-download/) explica detalladamente las comprobaciones de firmas en terminal.

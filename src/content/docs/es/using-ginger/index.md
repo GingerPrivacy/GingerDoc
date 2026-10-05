@@ -9,7 +9,7 @@ prev: false
 next: false
 ---
 
-Empieza con una cartera de la que tengas una copia de seguridad y deja que termine la sincronización antes de confiar en su saldo. La recepción, el envío normal y CoinJoin son acciones independientes.
+Empieza con un monedero del que tengas una copia de seguridad y deja que termine la sincronización antes de confiar en su saldo. La recepción, el envío normal y CoinJoin son acciones independientes.
 
 <span id="make-an-ordinary-payment" data-ginger-heading="haz-un-pago-normal" aria-hidden="true"></span>
 
@@ -17,7 +17,7 @@ Empieza con una cartera de la que tengas una copia de seguridad y deja que termi
 
 1. [Recibe bitcoin](/es/payments/receive/): crea una dirección nueva, etiquétala y comprueba la transacción entrante.
 2. [Envía bitcoin](/es/payments/send/): introduce el destino y el importe y después revisa el importe del destinatario, el cambio y la comisión antes de confirmar.
-3. Comprueba el historial de la cartera después de enviar. Si el resultado es incierto, determina qué ocurrió antes de pagar otra vez.
+3. Comprueba el historial del monedero después de enviar. Si el resultado es incierto, determina qué ocurrió antes de pagar otra vez.
 
 <span id="choose-an-optional-feature" data-ginger-heading="elige-una-función-opcional" aria-hidden="true"></span>
 
@@ -26,8 +26,8 @@ Empieza con una cartera de la que tengas una copia de seguridad y deja que termi
 | Qué quieres hacer | Guía |
 | --- | --- |
 | Reducir los vínculos entre entradas y salidas de las transacciones | [Usa CoinJoin](/es/using-ginger/coinjoin/) |
-| Mantener las claves de firma en un dispositivo independiente | [Usa una cartera de hardware](/es/using-ginger/hardware-wallet/) |
-| Comprender las conexiones de red de la cartera | [Tor y sincronización](/es/using-ginger/tor/) |
+| Mantener las claves de firma en un dispositivo independiente | [Usa un monedero de hardware](/es/using-ginger/hardware-wallet/) |
+| Comprender las conexiones de red del monedero | [Tor y sincronización](/es/using-ginger/tor/) |
 | Comparar ofertas de compra | [Compra bitcoin](/es/using-ginger/buy/) |
 | Intercambiar bitcoin mediante un proveedor | [Vende bitcoin](/es/using-ginger/sell/) |
 

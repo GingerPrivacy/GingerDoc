@@ -1,7 +1,7 @@
 ---
 doc_id: "help.advanced-faq"
 title: "Preguntas frecuentes avanzadas de Ginger Wallet"
-description: "Encuentra respuestas de la versión publicada de Ginger sobre escaneo de recuperación, metadatos, xpub, control de monedas, progreso de privacidad, coste completo CoinJoin, carteras de salida y compartición de datos."
+description: "Encuentra respuestas de la versión publicada de Ginger sobre escaneo de recuperación, metadatos, xpub, control de monedas, progreso de privacidad, coste completo CoinJoin, monederos de salida y compartición de datos."
 lang: "es"
 verified_release: "v2.0.26"
 reader_level: "advanced"
@@ -9,7 +9,7 @@ prev: false
 next: false
 ---
 
-> Nivel de lectura: Guía avanzada. Empieza por las preguntas frecuentes básicas si estás configurando o utilizando una cartera por primera vez.
+> Nivel de lectura: Guía avanzada. Empieza por las preguntas frecuentes básicas si estás configurando o utilizando un monedero por primera vez.
 
 Estas preguntas cubren ajustes personalizados, decisiones más profundas de privacidad y casos especiales de recuperación. Para las preguntas habituales del primer uso, vuelve a [las preguntas frecuentes básicas](/es/help/).
 
@@ -22,11 +22,11 @@ Estas preguntas cubren ajustes personalizados, decisiones más profundas de priv
 
 ## Recuperación y datos locales
 
-<span id="why-can-the-same-words-produce-a-different-wallet" data-ginger-heading="por-qué-las-mismas-palabras-pueden-producir-una-cartera-diferente" aria-hidden="true"></span>
+<span id="why-can-the-same-words-produce-a-different-wallet" data-ginger-heading="por-qué-las-mismas-palabras-pueden-producir-un-monedero-diferente" aria-hidden="true"></span>
 
-### ¿Por qué las mismas palabras pueden producir una cartera diferente?
+### ¿Por qué las mismas palabras pueden producir un monedero diferente?
 
-La frase de contraseña original interviene en la derivación de las claves, y otra aplicación de cartera puede utilizar una cuenta o un tipo de dirección diferentes. Un conjunto válido de palabras por sí solo no demuestra que las aplicaciones estén mostrando la misma cuenta. Comprueba primero la frase de contraseña original y el progreso del escaneo; investiga la compatibilidad de cuentas solo después de realizar las comprobaciones habituales de recuperación.
+La frase de contraseña original interviene en la derivación de las claves, y otra aplicación de monedero puede utilizar una cuenta o un tipo de dirección diferentes. Un conjunto válido de palabras por sí solo no demuestra que las aplicaciones estén mostrando la misma cuenta. Comprueba primero la frase de contraseña original y el progreso del escaneo; investiga la compatibilidad de cuentas solo después de realizar las comprobaciones habituales de recuperación.
 
 <span id="when-should-i-increase-the-recovery-gap-limit" data-ginger-heading="cuándo-debo-aumentar-el-límite-de-direcciones-sin-usar-de-la-recuperación" aria-hidden="true"></span>
 
@@ -38,13 +38,13 @@ Considéralo cuando tengas pruebas de muchas direcciones sin usar antes de una d
 
 ### ¿Por qué cambiaron las etiquetas o la información de privacidad después de recuperar?
 
-Las palabras restauran las claves, no todas las notas privadas ni cada elemento del análisis local de transacciones. El JSON de la cartera y los datos ATTR correspondientes cumplen funciones diferentes; conserva los archivos originales y utiliza copias durante la investigación. La ausencia de etiquetas o un cambio de puntuación local no demuestran por sí solos que haya cambiado una transacción Bitcoin o su historial público.
+Las palabras restauran las claves, no todas las notas privadas ni cada elemento del análisis local de transacciones. El JSON del monedero y los datos ATTR correspondientes cumplen funciones diferentes; conserva los archivos originales y utiliza copias durante la investigación. La ausencia de etiquetas o un cambio de puntuación local no demuestran por sí solos que haya cambiado una transacción Bitcoin o su historial público.
 
 <span id="can-i-use-the-same-recovery-words-in-two-wallet-applications" data-ginger-heading="puedo-utilizar-las-mismas-palabras-de-recuperación-en-dos-aplicaciones" aria-hidden="true"></span>
 
 ### ¿Puedo utilizar las mismas palabras de recuperación en dos aplicaciones?
 
-Las aplicaciones compatibles pueden controlar las mismas claves, pero eso no crea una cartera nueva ni revoca la información compartida con la aplicación anterior. La segunda aplicación puede revelar direcciones o una clave pública extendida a sus servicios, y gastar simultáneamente desde ambas puede generar confusión sobre qué monedas siguen disponibles. No escribas palabras de recuperación de un dispositivo de hardware en el ordenador simplemente para conectar un dispositivo.
+Las aplicaciones compatibles pueden controlar las mismas claves, pero eso no crea un monedero nuevo ni revoca la información compartida con la aplicación anterior. La segunda aplicación puede revelar direcciones o una clave pública extendida a sus servicios, y gastar simultáneamente desde ambas puede generar confusión sobre qué monedas siguen disponibles. No escribas palabras de recuperación de un dispositivo de hardware en el ordenador simplemente para conectar un dispositivo.
 
 <span id="what-does-an-exposed-address-or-xpub-allow-someone-to-do" data-ginger-heading="qué-permite-hacer-a-alguien-una-dirección-o-un-xpub-expuestos" aria-hidden="true"></span>
 
@@ -52,27 +52,27 @@ Las aplicaciones compatibles pueden controlar las mismas claves, pero eso no cre
 
 Una dirección señala una parte concreta del historial público de transacciones. Una clave pública extendida puede revelar muchas direcciones, incluidas las futuras dentro de su ámbito de derivación, pero normalmente no concede por sí sola autoridad para gastar. Las direcciones nuevas bajo la misma rama expuesta no revocan ese seguimiento; los secretos de firma expuestos requieren una respuesta diferente utilizando claves nuevas.
 
-<span id="does-the-2fa-file-recover-the-wallet-without-the-service" data-ginger-heading="el-archivo-2fa-recupera-la-cartera-sin-el-servicio" aria-hidden="true"></span>
+<span id="does-the-2fa-file-recover-the-wallet-without-the-service" data-ginger-heading="el-archivo-2fa-recupera-el-monedero-sin-el-servicio" aria-hidden="true"></span>
 
-### ¿El archivo 2FA recupera la cartera sin el servicio?
+### ¿El archivo 2FA recupera el monedero sin el servicio?
 
 No trates `2fa_info.gws` como una clave de recuperación independiente y sin conexión. El inicio normal con 2FA utiliza un identificador de instalación y la verificación del autenticador con un servicio para obtener el secreto adicional de cifrado de archivos. Conserva las palabras y la frase de contraseña original de forma independiente; activar 2FA no revoca una clave copiada.
 
-<span id="how-do-i-delete-a-local-wallet-without-confusing-deletion-with-revocation" data-ginger-heading="cómo-elimino-una-cartera-local-sin-confundir-eliminación-con-revocación" aria-hidden="true"></span>
+<span id="how-do-i-delete-a-local-wallet-without-confusing-deletion-with-revocation" data-ginger-heading="cómo-elimino-un-monedero-local-sin-confundir-eliminación-con-revocación" aria-hidden="true"></span>
 
-### ¿Cómo elimino una cartera local sin confundir eliminación con revocación?
+### ¿Cómo elimino un monedero local sin confundir eliminación con revocación?
 
-Haz primero un respaldo y después utiliza **Wallet Settings** → **Tools** → **Delete Wallet** y lee la confirmación. Eliminar los datos locales no borra transacciones Bitcoin ni invalida copias de las palabras de recuperación. Si las claves de firma fueron expuestas, borrar simplemente la cartera no impide que otra persona gaste con ellas.
+Haz primero una copia de seguridad y después utiliza **Wallet Settings** → **Tools** → **Delete Wallet** y lee la confirmación. Eliminar los datos locales no borra transacciones Bitcoin ni invalida copias de las palabras de recuperación. Si las claves de firma fueron expuestas, borrar simplemente el monedero no impide que otra persona gaste con ellas.
 
 <span id="coin-selection-and-spending" data-ginger-heading="selección-de-monedas-y-gasto" aria-hidden="true"></span>
 
 ## Selección de monedas y gasto
 
-<span id="what-is-the-difference-between-a-coin-an-address-and-a-wallet" data-ginger-heading="qué-diferencia-hay-entre-una-moneda-una-dirección-y-una-cartera" aria-hidden="true"></span>
+<span id="what-is-the-difference-between-a-coin-an-address-and-a-wallet" data-ginger-heading="qué-diferencia-hay-entre-una-moneda-una-dirección-y-un-monedero" aria-hidden="true"></span>
 
-### ¿Qué diferencia hay entre una moneda, una dirección y una cartera?
+### ¿Qué diferencia hay entre una moneda, una dirección y un monedero?
 
-Una moneda, o UTXO, es una salida sin gastar de una transacción Bitcoin anterior. Una dirección puede haber recibido varias monedas, y una cartera puede gestionar muchas direcciones y monedas. Las decisiones sobre gasto y CoinJoin afectan a las monedas disponibles, no solo al saldo total; [el glosario](/es/help/glossary/) explica estos términos.
+Una moneda, o UTXO, es una salida sin gastar de una transacción Bitcoin anterior. Una dirección puede haber recibido varias monedas, y un monedero puede gestionar muchas direcciones y monedas. Las decisiones sobre gasto y CoinJoin afectan a las monedas disponibles, no solo al saldo total; [el glosario](/es/help/glossary/) explica estos términos.
 
 <span id="does-combining-coinjoined-coins-always-destroy-all-privacy" data-ginger-heading="combinar-monedas-de-coinjoin-siempre-destruye-toda-la-privacidad" aria-hidden="true"></span>
 
@@ -80,9 +80,9 @@ Una moneda, o UTXO, es una salida sin gastar de una transacción Bitcoin anterio
 
 Ninguna regla única describe todos los observadores o pagos. Un gasto conjunto normal puede asociar sus entradas, especialmente si alguna ya estaba vinculada a una identidad, pero no revela automáticamente todos los vínculos anteriores de propiedad. Revisa las entradas y el cambio del pago que realmente necesitas, en lugar de tratar «combinar siempre» o «no combinar nunca» como garantías.
 
-<span id="does-a-reused-address-automatically-publish-my-entire-wallet" data-ginger-heading="una-dirección-reutilizada-publica-automáticamente-toda-mi-cartera" aria-hidden="true"></span>
+<span id="does-a-reused-address-automatically-publish-my-entire-wallet" data-ginger-heading="una-dirección-reutilizada-publica-automáticamente-todo-mi-monedero" aria-hidden="true"></span>
 
-### ¿Una dirección reutilizada publica automáticamente toda mi cartera?
+### ¿Una dirección reutilizada publica automáticamente todo mi monedero?
 
 No, pero las recepciones de esa dirección pueden inspeccionarse juntas y vincularse con quien la publicó o facilitó. Los gastos conjuntos posteriores y la información almacenada en otros lugares pueden revelar más. Las etiquetas ayudan a tus decisiones locales; no imponen una separación pública ni demuestran que la selección automática conservará el límite que deseas.
 
@@ -142,23 +142,23 @@ Una ronda de atribución de fallos es un reintento del protocolo tras un intento
 
 ### ¿Cómo concilio el coste completo de una ronda?
 
-Suma el valor de tus entradas gastadas y resta todas las salidas que te pertenecen de esa transacción, incluidas las enviadas a otra cartera. La diferencia puede incluir cargos de coordinador, minería y una diferencia restante de asignación de salidas. No cuentes como tuyas las salidas de otro participante ni supongas que una etiqueta de comisión cubre necesariamente toda la diferencia.
+Suma el valor de tus entradas gastadas y resta todas las salidas que te pertenecen de esa transacción, incluidas las enviadas a otro monedero. La diferencia puede incluir cargos de coordinador, comisiones de minería y una diferencia restante de asignación de salidas. No cuentes como tuyas las salidas de otro participante ni supongas que una etiqueta de comisión cubre necesariamente toda la diferencia.
 
 <span id="is-a-remix-exemption-permanent-or-applied-to-my-entire-balance" data-ginger-heading="una-exención-de-remix-es-permanente-o-se-aplica-a-todo-mi-saldo" aria-hidden="true"></span>
 
 ### ¿Una exención de remix es permanente o se aplica a todo mi saldo?
 
-No. Es una regla de elegibilidad de entradas bajo la política de la ronda ofrecida, no un derecho perpetuo para todas las transacciones de una cartera. La política anunciada de Ginger incluye remixes elegibles y un gasto directo mediante una transacción; las comisiones de minería siguen siendo pagaderas. Revisa las condiciones actuales en lugar de dividir o mover monedas solo para perseguir una exención supuesta.
+No. Es una regla de elegibilidad de entradas bajo la política de la ronda ofrecida, no un derecho perpetuo para todas las transacciones de un monedero. La política anunciada de Ginger incluye remixes elegibles y un gasto directo mediante una transacción; las comisiones de minería siguen siendo pagaderas. Revisa las condiciones actuales en lugar de dividir o mover monedas solo para perseguir una exención supuesta.
 
 <span id="hardware-and-privacy-boundaries" data-ginger-heading="hardware-y-límites-de-privacidad" aria-hidden="true"></span>
 
 ## Hardware y límites de privacidad
 
-<span id="can-coinjoin-send-directly-to-my-hardware-wallet" data-ginger-heading="puede-coinjoin-enviar-directamente-a-mi-cartera-de-hardware" aria-hidden="true"></span>
+<span id="can-coinjoin-send-directly-to-my-hardware-wallet" data-ginger-heading="puede-coinjoin-enviar-directamente-a-mi-monedero-de-hardware" aria-hidden="true"></span>
 
-### ¿Puede CoinJoin enviar directamente a mi cartera de hardware?
+### ¿Puede CoinJoin enviar directamente a mi monedero de hardware?
 
-Una cartera de software elegible puede seleccionar una cartera de hardware ofrecida y cargada en **Coinjoin to this wallet**. El destino recibe las salidas de esa ronda sin esperar un evento separado de logro del objetivo; el inicio normal no fuerza una ronda de candidatos ya privados. Comprueba el destino después de cada reinicio, porque la selección se restablece, y nunca importes la semilla de hardware al ordenador para hacer que funcione.
+Un monedero de software elegible puede seleccionar un monedero de hardware ofrecido y cargado en **Coinjoin to this wallet**. El destino recibe las salidas de esa ronda sin esperar un evento separado de logro del objetivo; el inicio normal no fuerza una ronda de candidatos ya privados. Comprueba el destino después de cada reinicio, porque la selección se restablece, y nunca importes la semilla de hardware al ordenador para hacer que funcione.
 
 <span id="does-an-own-node-replace-every-ginger-service-or-make-tor-unnecessary" data-ginger-heading="un-nodo-propio-sustituye-todos-los-servicios-de-ginger-o-hace-innecesario-tor" aria-hidden="true"></span>
 
@@ -176,7 +176,7 @@ No. El destinatario ya conoce su solicitud y puede ver el pago propuesto durante
 
 ### ¿Cómo demuestro control de una dirección sin pagar?
 
-Utiliza **Sign Message** para una dirección de la cartera, lee la declaración exacta y comparte la firma resultante solo con el verificador previsto. Sigue importando la compatibilidad de dispositivo, tipo de dirección y verificador. Firmar no transfiere bitcoin ni prueba la propiedad de todas las direcciones; puede vincular la dirección firmada con la identidad conocida por el verificador.
+Utiliza **Sign Message** para una dirección del monedero, lee la declaración exacta y comparte la firma resultante solo con el verificador previsto. Sigue importando la compatibilidad de dispositivo, tipo de dirección y verificador. Firmar no transfiere bitcoin ni prueba la propiedad de todas las direcciones; puede vincular la dirección firmada con la identidad conocida por el verificador.
 
 <span id="what-information-do-secret-hunt-and-buysell-services-receive" data-ginger-heading="qué-información-reciben-secret-hunt-y-los-servicios-de-compraventa" aria-hidden="true"></span>
 

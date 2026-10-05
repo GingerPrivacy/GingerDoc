@@ -12,12 +12,12 @@ prev:
   label: Empieza aquí
 next:
   link: /getting-started/first-wallet/
-  label: Crea tu primera cartera
+  label: Crea tu primer monedero
 ---
 
 > Nivel de lectura: Empieza aquí. Los pasos esenciales aparecen primero; las referencias avanzadas son lecturas posteriores opcionales.
 
-Ginger Wallet es una cartera Bitcoin de escritorio. Tú conservas las claves de tus bitcoin y puedes utilizar CoinJoin para dificultar el rastreo de transacciones. Esta versión no ofrece cartera móvil, cartera Lightning ni compatibilidad con otras criptomonedas.
+Ginger Wallet es un monedero Bitcoin de escritorio. Tú conservas las claves de tus bitcoin y puedes utilizar CoinJoin para dificultar el rastreo de transacciones. Esta versión no ofrece monedero móvil, monedero Lightning ni compatibilidad con otras criptomonedas.
 
 Esta guía cubre la versión 2.0.26. Obtén el software desde [el sitio oficial de Ginger](https://gingerwallet.io/) o la [versión de GitHub enlazada](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26). Un anuncio de búsqueda, un mensaje privado o una aplicación móvil de nombre similar no son fuentes de descarga fiables.
 
@@ -35,7 +35,7 @@ Esta guía cubre la versión 2.0.26. Obtén el software desde [el sitio oficial 
 
 En un Mac, **About This Mac** identifica el chip o procesador. La versión también contiene archivos ZIP etiquetados `win-x64`, `linux-x64`, `macOS-x64` y `macOS-arm64`. No hay paquetes Windows ARM ni Linux ARM en esta versión. No supongas que funcionará un archivo para otro procesador.
 
-Ginger necesita conexión a internet y almacenamiento escribible para los datos de cartera y sincronización. El nodo completo opcional necesita mucho más espacio, ancho de banda y tiempo de sincronización inicial que el uso normal. No necesitas un nodo completo, una instalación Tor separada ni herramientas de desarrollo para empezar.
+Ginger necesita conexión a internet y almacenamiento escribible para los datos de monedero y sincronización. El nodo completo opcional necesita mucho más espacio, ancho de banda y tiempo de sincronización inicial que el uso normal. No necesitas un nodo completo, una instalación Tor separada ni herramientas de desarrollo para empezar.
 
 <span id="install-the-application" data-ginger-heading="instala-la-aplicación" aria-hidden="true"></span>
 
@@ -43,10 +43,10 @@ Ginger necesita conexión a internet y almacenamiento escribible para los datos 
 
 1. Descarga el paquete para tu sistema desde la versión oficial. Comprueba fuente, versión y nombre del paquete, y presta atención a las comprobaciones de firma y seguridad del sistema operativo. Para una verificación PGP independiente, utiliza el archivo `.asc` correspondiente y [la guía avanzada de verificación](/es/getting-started/verify-download/) antes de abrir el paquete.
 2. En Windows, abre el `.msi` y sigue el instalador. En macOS, abre el `.dmg` y copia Ginger a Applications. En Ubuntu o Debian, abre el `.deb` con el instalador de software del sistema. Para el archivo Linux, extrae el archivo completo y ejecuta la aplicación incluida; mantén juntos sus archivos acompañantes.
-3. Abre Ginger. Deja tiempo para la primera conexión y sincronización. Tor está incluido y normalmente se inicia con la cartera.
-4. Continúa con [Crea y abre una cartera](/es/getting-started/first-wallet/).
+3. Abre Ginger. Deja tiempo para la primera conexión y sincronización. Tor está incluido y normalmente se inicia con el monedero.
+4. Continúa con [Crea y abre un monedero](/es/getting-started/first-wallet/).
 
-Un ZIP o archivo tar evita el instalador normal, pero no convierte tu cartera en desechable ni evita que deje datos en el ordenador. Los archivos de cartera se almacenan por separado de la aplicación. Conserva respaldos antes de mover o eliminar cualquiera de ellos.
+Un ZIP o archivo tar evita el instalador normal, pero no convierte tu monedero en desechable ni evita que deje datos en el ordenador. Los archivos de monedero se almacenan por separado de la aplicación. Conserva copias de seguridad antes de mover o eliminar cualquiera de ellos.
 
 <span id="if-your-operating-system-displays-a-warning" data-ginger-heading="si-tu-sistema-operativo-muestra-una-advertencia" aria-hidden="true"></span>
 
@@ -54,12 +54,12 @@ Un ZIP o archivo tar evita el instalador normal, pero no convierte tu cartera en
 
 Una versión nueva puede no tener todavía una reputación de descarga sólida. Una advertencia también puede indicar un archivo dañado o no fiable. Comprueba primero la fuente, la versión correspondiente y la firma. Si falla la verificación, detente y descarga de nuevo desde la versión oficial. No desactives el antivirus ni las comprobaciones de seguridad generales del sistema para superar una advertencia sin explicar.
 
-Para problemas de acceso a dispositivos en Linux, consulta las instrucciones de permisos USB del fabricante de tu cartera de hardware. Instalar una cartera no requiere ejecutarla permanentemente como administrador.
+Para problemas de acceso a dispositivos en Linux, consulta las instrucciones de permisos USB del fabricante de tu monedero de hardware. Instalar un monedero no requiere ejecutarlo permanentemente como administrador.
 
 <span id="updates-and-availability" data-ginger-heading="actualizaciones-y-disponibilidad" aria-hidden="true"></span>
 
 ## Actualizaciones y disponibilidad
 
-[La lista de versiones](https://github.com/GingerPrivacy/GingerWallet/releases) muestra las versiones publicadas y sus cambios. En **Settings** → **General**, **Auto download new version** controla la descarga de actualizaciones. Descargar una actualización es distinto de instalarla; sigue el aviso y deja que Ginger se cierre normalmente. Ten disponible tu respaldo de recuperación antes de actualizar. Los archivos de aplicación pueden sustituirse sin eliminar intencionadamente los datos de cartera.
+[La lista de versiones](https://github.com/GingerPrivacy/GingerWallet/releases) muestra las versiones publicadas y sus cambios. En **Settings** → **General**, **Auto download new version** controla la descarga de actualizaciones. Descargar una actualización es distinto de instalarla; sigue el aviso y deja que Ginger se cierre normalmente. Ten disponible tu copia de seguridad de recuperación antes de actualizar. Los archivos de aplicación pueden sustituirse sin eliminar intencionadamente los datos de monedero.
 
 Lee los términos actuales de servicio presentados por Ginger antes de aceptarlos, incluidas restricciones de elegibilidad. Instalar la aplicación no establece la elegibilidad para utilizar todos los servicios conectados.

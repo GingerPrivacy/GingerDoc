@@ -11,7 +11,7 @@ next: false
 
 > Nivel de lectura: Uso cotidiano. Elige esta guía cuando necesites realizar la tarea que describe.
 
-Empieza por el error exacto, la cartera seleccionada, la red y la versión de la aplicación. Conserva la información de recuperación y los archivos de cartera antes de modificar los datos. Reinstalar, borrar carpetas o crear palabras nuevas rara vez es el primer paso para un problema de conexión o visualización.
+Empieza por el error exacto, el monedero seleccionado, la red y la versión de la aplicación. Conserva la información de recuperación y los archivos de monedero antes de modificar los datos. Reinstalar, borrar carpetas o crear palabras nuevas rara vez es el primer paso para un problema de conexión o visualización.
 
 <span id="balance-recovery-and-receiving" data-ginger-heading="saldo-recuperación-y-recepción" aria-hidden="true"></span>
 
@@ -19,14 +19,14 @@ Empieza por el error exacto, la cartera seleccionada, la red y la versión de la
 
 | Síntoma | Comprueba primero | Siguiente paso |
 | --- | --- | --- |
-| La cartera recuperada está vacía | Las palabras originales, la frase de contraseña exacta, la red y el progreso de exploración | Compara direcciones o historial conocidos después de sincronizar; usa las comprobaciones avanzadas de recuperación solo si estas comprobaciones habituales no lo explican |
-| Falta un pago entrante | La dirección correcta, el identificador de transacción del remitente y la cartera seleccionada | Comprueba la difusión y la confirmación, y después la sincronización local |
-| No aparece Receive o Send | ¿Sigue activa la recuperación? ¿Es una cartera de solo observación? | Espera a que se complete la recuperación o usa el dispositivo de firma necesario |
+| El monedero recuperado está vacío | Las palabras originales, la frase de contraseña exacta, la red y el progreso de exploración | Compara direcciones o historial conocidos después de sincronizar; usa las comprobaciones avanzadas de recuperación solo si estas comprobaciones habituales no lo explican |
+| Falta un pago entrante | La dirección correcta, el identificador de transacción del remitente y el monedero seleccionado | Comprueba la difusión y la confirmación, y después la sincronización local |
+| No aparece Receive o Send | ¿Sigue activa la recuperación? ¿Es un monedero solo de observación? | Espera a que se complete la recuperación o usa el dispositivo de firma necesario |
 | Una dirección antigua desapareció de la lista de recepción | ¿Recibió un pago o se ocultó? | Comprueba el historial; la visibilidad en la lista no invalida las claves |
 | Solo falta un pago diminuto | El umbral de polvo y la sincronización | Compara el umbral configurado antes de suponer que se robaron los fondos |
 | Las etiquetas desaparecieron después de recuperar con la semilla | ¿Se hizo una copia del archivo ATTR correspondiente? | Conserva ese archivo; las etiquetas no pueden reconstruirse a partir de la cadena de bloques |
 
-No introduzcas palabras de recuperación en un sitio web para «resincronizar» una cartera. Usa el proceso de recuperación de la cartera instalada y verificada únicamente en un ordenador de confianza.
+No introduzcas palabras de recuperación en un sitio web para «resincronizar» un monedero. Usa el proceso de recuperación del monedero instalado y verificado únicamente en un ordenador de confianza.
 
 <span id="connection-or-synchronization" data-ginger-heading="conexión-o-sincronización" aria-hidden="true"></span>
 
@@ -34,7 +34,7 @@ No introduzcas palabras de recuperación en un sitio web para «resincronizar» 
 
 Comprueba la conectividad, el reloj del ordenador, el espacio libre y el estado de un nodo completo configurado. La primera exploración puede simplemente necesitar tiempo. Si el progreso nunca cambia, cierra Ginger normalmente y vuelve a abrirlo una vez. Anota lo que sucede en vez de reiniciar repetidamente una exploración.
 
-**Awaiting connection** puede impedir CoinJoin y otros servicios aunque la cartera tenga un historial almacenado en caché. Considera que un saldo sin conexión puede estar incompleto. Mantén Tor activado mientras investigas. La conexión P2P de un nodo configurado y las estimaciones de comisiones mediante RPC son independientes; que una funcione no demuestra que la otra funcione.
+**Awaiting connection** puede impedir CoinJoin y otros servicios aunque el monedero tenga un historial almacenado en caché. Considera que un saldo sin conexión puede estar incompleto. Mantén Tor activado mientras investigas. La conexión P2P de un nodo configurado y las estimaciones de comisiones mediante RPC son independientes; que una funcione no demuestra que la otra funcione.
 
 Si usas **Wallet Settings** → **Tools** → **Resync**, conserva primero las copias de seguridad y espera otra exploración. No borres `Wallets`, `WalletBackups` ni archivos de 2FA simplemente para quitar un mensaje de progreso.
 
@@ -53,7 +53,7 @@ Si usas **Wallet Settings** → **Tools** → **Resync**, conserva primero las c
 | **Awaiting the blame round** | Espera el reintento del protocolo; no es una instrucción para culpar a otro usuario |
 | **Awaiting closure of send dialog** | Termina o cierra el proceso de envío |
 | **Mining fee rate was too high** o **Coordination fee rate was too high** | Espera o investiga las condiciones ofrecidas; no subas los límites sin examinarlos |
-| Una cartera de hardware como origen | La firma de CoinJoin automático requiere una cartera de software apta |
+| Un monedero de hardware como origen | La firma de CoinJoin automático requiere un monedero de software apto |
 
 Los participantes de una ronda pueden no terminar, o una moneda puede quedar temporalmente no disponible después de una participación interrumpida. Los reintentos repetidos, las importaciones o los intentos de eludir un rechazo del coordinador no son una reparación. Usa el motivo y el estado actual para decidir si debes esperar o contactar con el soporte oficial.
 
@@ -69,9 +69,9 @@ Usa **Speed Up Transaction** o **Cancel Transaction** únicamente cuando Ginger 
 
 ## 2FA y dispositivos de hardware
 
-Si se rechaza un código del autenticador, comprueba la hora del teléfono, la entrada seleccionada, la compatibilidad del autenticador con Ginger y la conectividad de Tor y del servicio. Conserva los archivos existentes de cartera y 2FA. Si no se puede restablecer el inicio habitual, las palabras de recuperación junto con la frase de contraseña original son la copia independiente de las claves; reinstalar sobre los mismos datos no recrea un autenticador perdido. Las [preguntas frecuentes avanzadas](/es/help/advanced-faq/#does-the-2fa-file-recover-the-wallet-without-the-service) explican la dependencia del archivo.
+Si se rechaza un código del autenticador, comprueba la hora del teléfono, la entrada seleccionada, la compatibilidad del autenticador con Ginger y la conectividad de Tor y del servicio. Conserva los archivos existentes de monedero y 2FA. Si no se puede restablecer el inicio habitual, las palabras de recuperación junto con la frase de contraseña original son la copia independiente de las claves; reinstalar sobre los mismos datos no recrea un autenticador perdido. Las [preguntas frecuentes avanzadas](/es/help/advanced-faq/#does-the-2fa-file-recover-the-wallet-without-the-service) explican la dependencia del archivo.
 
-Para la detección del dispositivo, usa una sola cartera de hardware desbloqueada, un cable de datos y un puerto USB directo, con las aplicaciones que compitan por el dispositivo cerradas. Completa los pasos requeridos de aplicación de Bitcoin, PIN o frase de contraseña en el propio dispositivo. En Linux, comprueba los permisos USB del fabricante. Mantén la semilla del dispositivo fuera del ordenador.
+Para la detección del dispositivo, usa un solo monedero de hardware desbloqueado, un cable de datos y un puerto USB directo, con las aplicaciones que compitan por el dispositivo cerradas. Completa los pasos requeridos de aplicación de Bitcoin, PIN o frase de contraseña en el propio dispositivo. En Linux, comprueba los permisos USB del fabricante. Mantén la semilla del dispositivo fuera del ordenador.
 
 <span id="report-a-useful-issue" data-ginger-heading="informa-de-un-problema-de-forma-útil" aria-hidden="true"></span>
 
