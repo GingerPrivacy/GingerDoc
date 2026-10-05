@@ -3,7 +3,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
-import { copiesRoot, docsRoot, document, localeCodes, localizeLinks, pages, formatTranslatedAmounts } from './translation-utils.mjs'
+import { copiesRoot, docsRoot, document, localeCodes, localizeLinks, pages, formatTranslatedAmounts, localizeHomeImport } from './translation-utils.mjs'
 
 const [locale, staging] = process.argv.slice(2)
 if (!/^[a-z]{2}(?:-[a-z]{2})?$/.test(locale ?? '') || !staging) throw new Error('Provide a locale directory name and staging directory')
@@ -26,6 +26,7 @@ for (const file of originals) {
   }
   const destination = join(root, locale, file)
   mkdirSync(dirname(destination), { recursive: true })
+  if (file === 'index.mdx') body = localizeHomeImport(body)
   writeFileSync(destination, localizeLinks(target.frontmatter + body, locale, originals))
 }
 writeFileSync(new URL(`${locale}.json`, copiesRoot), readFileSync(join(staging, 'locale.json')))
