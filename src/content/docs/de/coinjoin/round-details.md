@@ -38,6 +38,6 @@ Die Anwendung verwaltet diese Phasen; du musst weder Schlüssel austauschen noch
 
 ## Private Coins und eine andere Output-Wallet
 
-Der normale Start in v2.0.26 lehnt eine Wallet oder verfügbare Kandidatenauswahl ab, deren Coins das Privatsphäreziel bereits erreichen. Eine andere Output-Wallet erzwingt keine ausschließlich private Runde. Prüfe [die Output-Wallet-Einstellungen](/de/coinjoin/settings/), bevor du dich auf eine Weiterleitungsroutine verlässt.
+Der normale Start in v2.0.26 lehnt eine Wallet oder verfügbare Kandidatenauswahl ab, deren Coins das Privatsphäreziel bereits erreichen. Eine andere Output-Wallet erzwingt keine Runde mit ausschließlich privaten Coins. Prüfe [die Output-Wallet-Einstellungen](/de/coinjoin/settings/), bevor du dich auf eine Weiterleitungsroutine verlässt.
 
 Für Scoreberechnungen und vollständigen Wertabgleich nutze [Gebühren und Privatsphäre-Fortschritt](/de/using-ginger/annonset/).

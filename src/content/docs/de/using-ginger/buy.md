@@ -50,7 +50,7 @@ Prüfe, ob die Browserseite zum ausgewählten Anbieter gehört. Lies vor der Zah
 
 Gingers Angebotshinweis beschreibt die angezeigte Gebühr als im angebotenen Gesamtbetrag enthalten. Prüfe den endgültigen Checkout und die Bedingungen deiner Zahlungsinstitution auf weitere Gebühren; gehe nicht davon aus, dass die Wallet sämtliche Bank- oder Kartengebühren garantieren kann.
 
-Der Anbieter erhält Kaufziel und Bestellinformationen und kann sie deinem Zahlungsmittel oder deiner Identität zuordnen. Auch ein Angebot ohne Dokumentupload beweist weder keinerlei Datensammlung noch den Ausschluss späterer Verifikationsanforderungen. Betrachte die tatsächliche Checkout-Richtlinie für diese Bestellung als maßgeblich.
+Der Anbieter erhält Kaufziel und Bestellinformationen und kann sie deinem Zahlungsmittel oder deiner Identität zuordnen. Auch ein als ohne Dokumentupload beworbenes Angebot belegt weder, dass der Anbieter keine Daten sammelt, noch dass er niemals eine Verifikation verlangen kann. Betrachte die tatsächliche Checkout-Richtlinie für diese Bestellung als maßgeblich.
 
 Sende zum Kaufabschluss weder Wiederherstellungswörter noch private Schlüssel oder Wallet-Passphrase. Ein Anbieter benötigt eine Empfangsadresse zur Bitcoin-Lieferung, keinen Zugriff auf die empfangende Wallet.
 

@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { join } from 'node:path'
-import { docsRoot, document, localeCodes, pages, readCopy, localizeLinks } from './translation-utils.mjs'
+import { docsRoot, document, localeCodes, pages, readCopy, localizeLinks, localizeHref } from './translation-utils.mjs'
 
 const root = fileURLToPath(docsRoot)
 const originals = pages(root, localeCodes)
@@ -30,7 +30,7 @@ for (const locale of checkedLocales) {
     if (!stagingDirectory) for (const heading of source.headings) if (!ids.has(heading.id)) errors.push(`${locale}/${file}: missing source anchor ${heading.id}`)
     for (const [, id] of source.body.matchAll(/\bid="([^"]+)"/g)) if (!ids.has(id)) errors.push(`${locale}/${file}: missing explicit anchor ${id}`)
     if (!stagingDirectory && localizeLinks(text, locale, originals) !== text) errors.push(`${locale}/${file}: documentation link leaves the selected language`)
-    const expectedLinks = source.links.map((href) => stagingDirectory ? href : localizeLinks(`(${href})`, locale, originals).slice(1, -1)).sort()
+    const expectedLinks = source.links.map((href) => stagingDirectory ? href : localizeHref(href, locale, originals)).sort()
     if (JSON.stringify(expectedLinks) !== JSON.stringify(target.links.slice().sort())) errors.push(`${locale}/${file}: source link targets changed`)
   }
 }

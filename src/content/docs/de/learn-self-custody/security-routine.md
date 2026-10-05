@@ -52,7 +52,7 @@ Die Offenlegung einer Adresse und die von Wiederherstellungswörtern benötigen 
 | Empfangsadresse oder Transaktions-ID | Beobachtung und mögliche Verknüpfungen; keine Signierschlüssel | Unnötige Wiederverwendung und Offenlegung stoppen; verknüpfte Identitäten und Zahlungen prüfen |
 | Bezeichnungen, Bestellaufzeichnungen oder Verlaufsexport | Zuordnung getrennter Transaktionen zu Personen, Zwecken oder Guthaben | Zugriff begrenzen, gegebenenfalls private Kopie sichern und Weitergabe ändern |
 | Erweiterter öffentlicher Schlüssel, oft xpub | Beobachtung seiner Ableitungsadressen einschließlich möglicher künftiger; normalerweise keine eigene Ausgabeautorität | Betroffenes Konto oder Zweig bestimmen; bei unakzeptabler Dauerbeobachtung neue Wallet erwägen |
-| Wallet-Datei oder vollständige Anwendungskopie | Abhängig von Verschlüsselung, Passwörtern und anderen kopierten Dateien; möglicherweise Schlüssel und Metadaten | Unsicherheit ernst nehmen und Schlüsselexposition aus vertrauenswürdiger Umgebung prüfen |
+| Wallet-Datei oder vollständige Kopie der Anwendungsdaten | Abhängig von Verschlüsselung, Passwörtern und anderen kopierten Dateien; möglicherweise Schlüssel und Metadaten | Unsicherheit ernst nehmen und Schlüsselexposition aus vertrauenswürdiger Umgebung prüfen |
 | Wörter mit erforderlicher Passphrase oder brauchbare private Schlüssel | Ausgabe und Ableitung weiterer Schlüssel im betroffenen Bereich | Neue Wallet mit neuen Schlüsseln auf vertrauenswürdigem Gerät vorbereiten und kontrolliertes Guthaben bewegen |
 | Gestohlener Computer, entsperrte Anwendung oder Fernsteuerung | Je nach Zustand Zugriff auf Daten, Signierung und andere Konten | Unbefugten Zugriff beenden und verbleibendes Guthaben von vertrauenswürdigem Gerät schützen |
 

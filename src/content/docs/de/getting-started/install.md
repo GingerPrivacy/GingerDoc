@@ -8,10 +8,10 @@ reader_level: "beginner"
 sidebar:
   label: Ginger installieren
 prev:
-  link: /de/getting-started/
+  link: /getting-started/
   label: Hier beginnen
 next:
-  link: /de/getting-started/first-wallet/
+  link: /getting-started/first-wallet/
   label: Deine erste Wallet erstellen
 ---
 
@@ -46,7 +46,7 @@ Ginger benötigt eine Internetverbindung und beschreibbaren Speicher für Wallet
 3. Öffne Ginger. Gib der ersten Verbindung und Synchronisierung Zeit. Tor ist enthalten und startet normalerweise mit der Wallet.
 4. Fahre mit [Eine Wallet erstellen und öffnen](/de/getting-started/first-wallet/) fort.
 
-Ein ZIP- oder tar-Archiv umgeht den normalen Installer, macht deine Wallet aber weder wegwerfbar noch hinterlässt es keine Daten auf dem Computer. Wallet-Dateien werden getrennt von der Anwendung gespeichert. Sichere beide, bevor du sie verschiebst oder entfernst.
+Ein ZIP- oder tar-Archiv umgeht den normalen Installer, macht deine Wallet aber nicht wegwerfbar und bedeutet nicht, dass keine Daten auf dem Computer bleiben. Wallet-Dateien werden getrennt von der Anwendung gespeichert. Halte Backups bereit, bevor du Anwendungs- oder Wallet-Dateien verschiebst oder entfernst.
 
 <span id="if-your-operating-system-displays-a-warning" data-ginger-heading="wenn-dein-betriebssystem-eine-warnung-anzeigt" aria-hidden="true"></span>
 

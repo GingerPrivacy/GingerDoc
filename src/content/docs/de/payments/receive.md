@@ -20,7 +20,7 @@ Verwende für jede Zahlung eine neue Empfangsadresse. Sie sagt dem Zahler, wohin
 1. Öffne die gewünschte Wallet und warte auf den Abschluss von Wiederherstellung oder Synchronisierung.
 2. Wähle **Receive**. Füge eine Bezeichnung für Zahler oder Zweck hinzu, etwa „Juni-Rechnung“. Verwende genug Details zur späteren Wiedererkennung, ohne unnötige personenbezogene Daten zu erfassen.
 3. Wähle **Generate**. Die normale Aktion erzeugt eine native SegWit-Adresse. Unterstützt die Wallet Taproot, bietet die alternative Aktion **Taproot**, angezeigt mit **TR**; nutze sie nur, wenn der Zahler diesen Adresstyp unterstützt.
-4. Kopiere die Adresse oder teile den Empfangs-QR-Code. Nutze bei Hardware-Wallets **Show on the hardware wallet** und vergleiche die gesamte Geräteadresse, bevor du sie weitergibst.
+4. Kopiere die Adresse oder teile den Empfangs-QR-Code. Nutze bei Hardware-Wallets **Show on the hardware wallet** und vergleiche die vollständige Adresse auf dem Gerät mit der in Ginger angezeigten Adresse, bevor du sie weitergibst.
 5. Prüfe das Ziel nach dem Einfügen in eine andere Anwendung. Zwischenablage-Schadsoftware kann eine Adresse ersetzen, auch wenn ursprünglicher QR-Code und Wallet-Anzeige korrekt waren.
 
 Im Bitcoin-Mainnet beginnen native SegWit-Adressen normalerweise mit `bc1q`, Taproot-Adressen mit `bc1p`. Testnetz-Adressen unterscheiden sich. Lehnt ein Dienst eine unterstützte Bitcoin-Adresse ab, kläre Netzwerk- und Adresstypunterstützung mit ihm, statt Zeichen der Adresse zu verändern.

@@ -41,9 +41,9 @@ Ginger kann einen öffentlichen Wallet-Datensatz ohne angeschlossene Hardware au
 
 ## Empfangen und prüfen
 
-Wähle **Receive**, füge eine Bezeichnung hinzu und erzeuge eine Adresse. Nutze soweit verfügbar **Show on the hardware wallet**. Vergleiche die vollständige Geräteadresse mit Gingers Adresse vor Weitergabe. Stimmen sie nicht überein, stoppe: Eine andere Adresse zu genehmigen kann Geld außerhalb deiner Wallet senden.
+Wähle **Receive**, füge eine Bezeichnung hinzu und erzeuge eine Adresse. Nutze soweit verfügbar **Show on the hardware wallet**. Vergleiche die vollständige auf dem Gerät angezeigte Adresse mit Gingers Adresse vor Weitergabe. Stimmen sie nicht überein, stoppe: Eine andere Adresse zu genehmigen kann Geld außerhalb deiner Wallet senden.
 
-Der Desktop kann selbst bei Kompromittierung eine glaubwürdig wirkende Adresse zeigen. Der Gerätebildschirm liefert eine separate Prüfung anhand eigener Schlüssel. Nutze für jede Zahlung eine neue Adresse gegen Verknüpfungen unverwandter Eingänge.
+Der Desktop kann selbst bei Kompromittierung eine glaubwürdig wirkende Adresse zeigen. Der Gerätebildschirm liefert eine separate Prüfung anhand eigener Schlüssel. Nutze für jede Zahlung eine neue Adresse gegen Verknüpfungen nicht zusammengehöriger Zahlungseingänge.
 
 <span id="send-and-approve" data-ginger-heading="senden-und-genehmigen" aria-hidden="true"></span>
 

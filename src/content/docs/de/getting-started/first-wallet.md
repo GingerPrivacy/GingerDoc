@@ -8,7 +8,7 @@ reader_level: "beginner"
 sidebar:
   label: Deine erste Wallet erstellen
 prev:
-  link: /de/getting-started/install/
+  link: /getting-started/install/
   label: Ginger Wallet installieren
 next: false
 ---
@@ -33,7 +33,7 @@ Der Wallet-Name ist eine lokale Bezeichnung. Er ist keine Wiederherstellungsinfo
 
 ## Über die CoinJoin-Nutzung entscheiden
 
-Ginger kann dich auffordern, deine CoinJoin-Einstellungen anzupassen. Prüfe die Einstellungen und Gebühren, bevor du Guthaben für automatische CoinJoins verfügbar lässt. Unter **Coinjoin Settings** bestimmt **Automatically start coinjoin**, ob die Wallet ohne Betätigen der Wiedergabesteuerung startet. Prüfe den tatsächlichen Schalter deiner Wallet; importierte oder zuvor konfigurierte Wallets können andere Einstellungen haben.
+Ginger kann dich auffordern, deine CoinJoin-Einstellungen anzupassen. Prüfe die Einstellungen und Gebühren, bevor du Guthaben für automatische CoinJoins verfügbar lässt. Unter **Coinjoin Settings** bestimmt **Automatically start coinjoin**, ob die Wallet ohne Betätigen der Starttaste des Players startet. Prüfe den tatsächlichen Schalter deiner Wallet; importierte oder zuvor konfigurierte Wallets können andere Einstellungen haben.
 
 CoinJoin kostet Transaktionsgebühren und kann Zeit beanspruchen. Bitcoin empfangen, eine normale Zahlung senden und CoinJoin verwenden sind getrennte Vorgänge. Du kannst den Empfangs- und Sendeablauf zunächst mit einem kleinen Betrag lernen, dessen Verlust verkraftbar wäre.
 

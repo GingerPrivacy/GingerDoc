@@ -40,7 +40,8 @@ export function document(text) {
   }
   visit(tree)
   const metadata = (key) => frontmatter[1].match(new RegExp(`^${key}:\\s*(.*?)\\s*$`, 'm'))?.[1].replace(/^['"]|['"]$/g, '')
-  const numbers = new Set(toString(tree, { includeHtml: false }).match(/(?<![\p{L}\p{N}.,])\d+(?:[.,]\d+)*(?![\p{L}\p{N}]|[.,]\d)/gu) ?? [])
+  const numericText = toString(tree, { includeHtml: false }).replace(/(?<=\d)[\u202f\u00a0](?=\d)/g, ',')
+  const numbers = new Set(numericText.match(/(?<![\p{L}\p{N}.,])\d+(?:[.,]\d+)*(?![\p{L}\p{N}]|[.,]\d)/gu) ?? [])
   return { frontmatter: frontmatter[0], body, headings, code, links, metadata, numbers }
 }
 
@@ -48,16 +49,64 @@ export function route(file) {
   return '/' + file.replace(/(?:^|\/)index\.mdx?$/, '').replace(/\.mdx?$/, '').replace(/\/$/, '')
 }
 
-export function localizeLinks(text, locale, englishPages) {
+export function localizeHref(href, locale, englishPages) {
   const routes = new Set(englishPages.map(route))
   routes.add('/why-ginger/difference')
-  return text.replace(/([('"\s])\/(?![/>])([^\s)'"<>]*)/g, (match, before, path) => {
-    const [pathname] = path.split(/[?#]/)
-    const normalized = '/' + pathname.replace(/\/$/, '')
-    if (!routes.has(normalized)) return match
-    const target = normalized === '/why-ginger/difference' ? path.replace('why-ginger/difference', 'why-ginger') : path
-    return `${before}/${locale}/${target}`
-  })
+  if (!href.startsWith('/') || href.startsWith('//')) return href
+  const path = href.slice(1)
+  const [pathname] = path.split(/[?#]/)
+  const normalized = '/' + pathname.replace(/\/$/, '')
+  if (!routes.has(normalized)) return href
+  const target = normalized === '/why-ginger/difference' ? path.replace('why-ginger/difference', 'why-ginger') : path
+  return `/${locale}/${target}`
+}
+
+export function localizeLinks(text, locale, englishPages) {
+  const changes = []
+  function visit(node) {
+    const start = node.position?.start.offset
+    const end = node.position?.end.offset
+    let translated
+    if (node.type === 'link' || node.type === 'definition' || node.type === 'image') {
+      translated = text.slice(start, end).replace(/(\]\(\s*<?|\]:\s*<?)(\/[^\s)>"']*)/g,
+        (match, before, href) => before + localizeHref(href, locale, englishPages))
+    } else if (node.type === 'html' || (node.type === 'text' && /^\s*<[A-Z]\w*\b/.test(text.slice(start, end)))) {
+      // MDX homepage props and HTML hrefs are not Markdown link nodes.
+      translated = text.slice(start, end).replace(/(\bhref\s*[:=]\s*['"])(\/[^'"]*)/g,
+        (match, before, href) => before + localizeHref(href, locale, englishPages))
+    }
+    if (translated !== undefined && translated !== text.slice(start, end)) {
+      changes.push({ start, end, translated })
+      return
+    }
+    // Code and inline code have no child link nodes and remain untouched.
+    for (const child of node.children ?? []) visit(child)
+  }
+  visit(fromMarkdown(text))
+  for (const change of changes.sort((a, b) => b.start - a.start)) {
+    text = text.slice(0, change.start) + change.translated + text.slice(change.end)
+  }
+  return text
+}
+
+export function formatTranslatedAmounts(text, sourceNumbers) {
+  const changes = []
+  function visit(node) {
+    if (node.type === 'text') {
+      const start = node.position.start.offset
+      const end = node.position.end.offset
+      const original = text.slice(start, end)
+      const translated = original.replace(/(?<![\p{L}\p{N}.,])\d{1,3}(?:,\d{3})+(?:\.\d+)?(?![\p{L}\p{N}]|[.,]\d)/gu,
+        (number) => sourceNumbers.has(number) ? number.replaceAll(',', '\u202f') : number)
+      if (translated !== original) changes.push({ start, end, translated })
+    }
+    for (const child of node.children ?? []) visit(child)
+  }
+  visit(fromMarkdown(text))
+  for (const change of changes.sort((a, b) => b.start - a.start)) {
+    text = text.slice(0, change.start) + change.translated + text.slice(change.end)
+  }
+  return text
 }
 
 export function readCopy(locale) {
