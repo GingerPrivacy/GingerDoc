@@ -50,7 +50,7 @@ Rodadas maiores podem oferecer mais possibilidades, mas os valores, o conhecimen
 
 ## Quando o coordenador ou a conexão estão indisponíveis
 
-As moedas já controladas por suas chaves não se tornam um saldo que o coordenador deve a você. Uma tentativa malsucedida antes da transmissão não as transfere, por si só, para o coordenador. Durante uma rodada ativa, porém, o Ginger pode precisar concluir tarefas críticas antes que as moedas fiquem disponíveis para outra ação; use o controle de pausa do player e acompanhe o estado atual.
+As moedas já controladas por suas chaves não se tornam um saldo que o coordenador deve a você. Uma tentativa malsucedida antes da transmissão não as transfere, por si só, para o coordenador. Durante uma rodada ativa, porém, o Ginger pode precisar concluir tarefas críticas antes que as moedas fiquem disponíveis para outra ação; use o controle de pausa do painel de controle do CoinJoin e acompanhe o estado atual.
 
 Se o CoinJoin não puder continuar, pause e examine o motivo. Um envio comum ainda exige um caminho de assinatura disponível, moedas que possam ser gastas, informações sincronizadas e uma forma de transmitir a transação. A indisponibilidade de um coordenador, sozinha, não é motivo para descartar backups ou enviar palavras de recuperação a um serviço substituto. O 2FA opcional do Ginger tem sua própria dependência de serviço para a inicialização normal, portanto mantenha as palavras e a frase-senha original recuperáveis de forma independente.
 

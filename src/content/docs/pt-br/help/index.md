@@ -178,7 +178,7 @@ Com as configurações atuais, cada entrada de 0.03 BTC (3 000 000 satoshis)
 
 ### Posso parar o CoinJoin ou desligar o computador?
 
-Use o botão de pausa do player para interromper novas participações e deixe qualquer fase crítica terminar. Suspensão, perda de conexão ou desligamento forçado podem interromper uma rodada ativa; saia do aplicativo normalmente e deixe o procedimento de encerramento terminar. Uma transação já transmitida continua no Bitcoin após o fechamento do aplicativo.
+Use o botão de pausa do painel de controle do CoinJoin para interromper novas participações e deixe qualquer fase crítica terminar. Suspensão, perda de conexão ou desligamento forçado podem interromper uma rodada ativa; saia do aplicativo normalmente e deixe o procedimento de encerramento terminar. Uma transação já transmitida continua no Bitcoin após o fechamento do aplicativo.
 
 <span id="why-is-there-a-transaction-when-i-never-pressed-send" data-ginger-heading="por-que-existe-uma-transação-se-nunca-apertei-send" aria-hidden="true"></span>
 
@@ -192,11 +192,11 @@ O CoinJoin automático pode criar transações compartilhadas depois que você h
 
 Você pode fazer um pagamento comum quando os fundos estão disponíveis para gastar e o fluxo de envio está disponível; a porcentagem de privacidade não é um requisito do Bitcoin para gastar. Ela é uma estimativa local do Ginger sob a meta selecionada, não uma garantia sobre o que outra pessoa sabe. Um pagamento, um endereço reutilizado ou uma corretora que conhece sua identidade ainda podem criar uma ligação.
 
-<span id="why-is-the-play-control-missing-when-all-funds-are-private" data-ginger-heading="por-que-o-botão-de-reprodução-desapareceu-quando-todos-os-fundos-estão-privados" aria-hidden="true"></span>
+<span id="why-is-the-play-control-missing-when-all-funds-are-private" data-ginger-heading="por-que-o-botão-de-iniciar-desapareceu-quando-todos-os-fundos-estão-privados" aria-hidden="true"></span>
 
-### Por que o botão de reprodução desapareceu quando todos os fundos estão privados?
+### Por que o botão de iniciar desapareceu quando todos os fundos estão privados?
 
-O player manual comum pode ocultar o botão de reprodução quando todos os fundos atingem a meta de privacidade da carteira. A inicialização normal também rejeita um conjunto de moedas disponíveis formado apenas por moedas privadas, portanto escolher outro destino não força uma nova rodada. Se você só quer mover esses fundos, considere um pagamento comum.
+O painel de controle manual comum pode ocultar o botão de iniciar quando todos os fundos atingem a meta de privacidade da carteira. A inicialização normal também rejeita um conjunto de moedas disponíveis formado apenas por moedas privadas, portanto escolher outro destino não força uma nova rodada. Se você só quer mover esses fundos, considere um pagamento comum.
 
 <span id="payments-and-hardware" data-ginger-heading="pagamentos-e-hardware" aria-hidden="true"></span>
 

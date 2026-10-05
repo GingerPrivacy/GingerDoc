@@ -33,7 +33,7 @@ O nome da carteira é um rótulo local. Não é uma credencial de recuperação 
 
 ## Decida como usar CoinJoin
 
-O Ginger pode exibir uma solicitação para personalizar as configurações de CoinJoin. Confira as configurações e as taxas antes de deixar fundos disponíveis para CoinJoin automático. Em **Coinjoin Settings**, **Automatically start coinjoin** determina se a carteira inicia sem que você pressione o controle de reprodução do painel. Verifique a opção efetiva da sua carteira; uma carteira importada ou configurada anteriormente pode ter configurações diferentes.
+O Ginger pode exibir uma solicitação para personalizar as configurações de CoinJoin. Confira as configurações e as taxas antes de deixar fundos disponíveis para CoinJoin automático. Em **Coinjoin Settings**, **Automatically start coinjoin** determina se a carteira inicia sem que você pressione o controle de início do painel. Verifique a opção efetiva da sua carteira; uma carteira importada ou configurada anteriormente pode ter configurações diferentes.
 
 O CoinJoin consome taxas de transação e pode levar tempo. Receber bitcoin, enviar um pagamento normal e usar CoinJoin são ações separadas. Você pode primeiro aprender o processo de receber e enviar usando uma quantia pequena cuja perda seria administrável.
 
