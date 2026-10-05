@@ -1,0 +1,54 @@
+---
+doc_id: manual.home
+title: Documentação do GingerWallet
+description: Guias práticos para a sua primeira carteira Ginger e a utilização quotidiana de bitcoin. Aprenda a fazer uma cópia de segurança da carteira, enviar e receber bitcoin e compreender a privacidade.
+lang: pt-PT
+reader_level: beginner
+template: splash
+hero: {}
+---
+
+import ManualHome from '../../../components/ManualHome.astro';
+
+<ManualHome
+  eyebrow="Manual do utilizador"
+  title="Sinta-se à vontade"
+  titleSecondLine="com o"
+  titleAccent="Ginger."
+  description="Guias práticos para a sua primeira carteira e a utilização quotidiana de bitcoin."
+  start={{ label: 'Comece a usar o Ginger', href: '/pt-pt/getting-started/' }}
+  faq={{ label: 'Consulte as perguntas frequentes', href: '/pt-pt/help/' }}
+  stepsTitle="Os seus primeiros passos"
+  stepsDescription="Um caminho simples para começar."
+  steps={[
+    { label: 'Instale o Ginger', description: 'Descarregue o programa e configure-o no seu dispositivo.', href: '/pt-pt/getting-started/install/' },
+    { label: 'Crie a sua carteira e faça a cópia de segurança', description: 'Configure a sua carteira e proteja os dados de recuperação.', href: '/pt-pt/getting-started/first-wallet/' },
+    { label: 'Receba o seu primeiro pagamento', description: 'Obtenha um endereço bitcoin e receba as suas primeiras moedas.', href: '/pt-pt/payments/receive/' },
+  ]}
+  groups={[
+    {
+      title: 'Guias do dia a dia',
+      description: 'Orientações práticas para usar o Ginger no quotidiano.',
+      icon: 'book',
+      links: [
+        { label: 'Enviar e receber', href: '/pt-pt/using-ginger/' },
+        { label: 'CoinJoin', href: '/pt-pt/using-ginger/coinjoin/' },
+        { label: 'Carteiras de hardware', href: '/pt-pt/using-ginger/hardware-wallet/' },
+      ],
+    },
+    {
+      title: 'Aprenda sobre privacidade',
+      description: 'Compreenda como o Ginger ajuda a preservar a sua privacidade.',
+      icon: 'shield',
+      links: [
+        { label: 'Privacidade no Bitcoin', href: '/pt-pt/using-ginger/privacy/' },
+        { label: 'Como o CoinJoin funciona', href: '/pt-pt/learn-coinjoin/explained/' },
+        { label: 'Autocustódia', href: '/pt-pt/learn-self-custody/basics/' },
+      ],
+    },
+  ]}
+  searchTitle="Procura algo específico?"
+  searchDescription="Pesquise no manual para encontrar guias, definições e muito mais."
+  searchLabel="Pesquisar no manual"
+  advanced={{ label: 'Guias avançados', href: '/pt-pt/help/advanced-faq/' }}
+/>
