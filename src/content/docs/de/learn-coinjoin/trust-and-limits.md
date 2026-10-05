@@ -42,7 +42,7 @@ Ein Teilnehmer kennt eigene Inputs und Outputs und kann manche Möglichkeiten au
 
 Bei einem Sybil-Angriff erscheint ein Akteur als mehrere Teilnehmer. Kontrolliert er die meisten Aktivitäten rund um ein Ziel, kann er eigene Coins als Möglichkeiten ausschließen. Eine geschäftig wirkende Transaktion kann ihm weniger Unsicherheit bieten als einem uninformierten Beobachter.
 
-Echte Inputs und Mining-Kosten schaffen wirtschaftliche Grenzen. Sie lassen normale Nutzer aber nicht die unabhängige Identität jedes Teilnehmers prüfen. Inputzahl, Outputzahl, Transaktionsvolumen und Wallet-Anonymitätsscore zählen daher keine unabhängigen Personen.
+Echte Inputs und Mining-Gebühren schaffen wirtschaftliche Grenzen. Sie lassen normale Nutzer aber nicht die unabhängige Identität jedes Teilnehmers prüfen. Inputzahl, Outputzahl, Transaktionsvolumen und Wallet-Anonymitätsscore zählen daher keine unabhängigen Personen.
 
 Größere Runden können mehr Möglichkeiten bieten; Beträge, Teilnehmerwissen und spätere Transaktionen bleiben relevant. Keine Rundenzahl und kein Zielwert beweist, dass ein Angreifer nichts gelernt hat.
 

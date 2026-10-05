@@ -21,7 +21,7 @@ Beginne mit dem exakten Fehler, ausgewählter Wallet, Netzwerk und Anwendungsver
 | --- | --- | --- |
 | Wiederhergestellte Wallet ist leer | Originalwörter, exakte Passphrase, Netzwerk, Suchfortschritt | Nach Synchronisierung bekannte Adressen oder Verlauf vergleichen; nur bei ungeklärten normalen Prüfungen erweiterte Schritte verwenden |
 | Eingehende Zahlung fehlt | Richtige Adresse, Sender-Transaktions-ID, ausgewählte Wallet | Veröffentlichung und Bestätigung prüfen, danach lokale Synchronisierung |
-| Receive oder Send fehlt | Läuft Wiederherstellung noch? Ist die Wallet Watch-only? | Wiederherstellung abwarten oder erforderliches Signiergerät verwenden |
+| Receive oder Send fehlt | Läuft Wiederherstellung noch? Ist es eine beobachtende Wallet? | Wiederherstellung abwarten oder erforderliches Signiergerät verwenden |
 | Alte Adresse fehlt in Empfangsliste | Hat sie eine Zahlung empfangen oder wurde sie ausgeblendet? | Verlauf prüfen; Listensichtbarkeit entwertet keine Schlüssel |
 | Nur Kleinstzahlung fehlt | Dust-Schwelle und Synchronisierung | Einstellung vergleichen, bevor du Diebstahl vermutest |
 | Bezeichnungen fehlen nach Seed-Wiederherstellung | Wurde passende ATTR-Datei gesichert? | Datei erhalten; Blockchain rekonstruiert keine Bezeichnungen |

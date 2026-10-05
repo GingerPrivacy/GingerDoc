@@ -32,7 +32,7 @@ Für Inputs ohne andere Koordinatorgebührenbefreiung:
 
 Der 0.04-BTC-Input bezahlt beispielsweise 0.00012 BTC (12 000 Satoshis), nicht 0.3 % nur der 0.01 BTC über der Schwelle. Mining-Gebühren kommen hinzu, auch bei Koordinatorgebühr null. Die Beispiele erklären die konfigurierte Berechnung, kein Angebot für künftige Runden.
 
-Mining-Gebühren entschädigen Miner für Transaktionsplatz. Sie hängen von Gebührenrate sowie Inputs und Outputs der Transaktion ab. Einen kleinen Coin auszugeben kann einen großen Anteil seines Werts kosten. Wiederholte CoinJoins können jeweils weitere Mining-Kosten verursachen, auch wenn sie von der Koordinatorgebühr befreit sind.
+Mining-Gebühren entschädigen Miner für Transaktionsplatz. Sie hängen von Gebührenrate sowie Inputs und Outputs der Transaktion ab. Einen kleinen Coin auszugeben kann einen großen Anteil seines Werts kosten. Wiederholte CoinJoins können jeweils weitere Mining-Gebühren verursachen, auch wenn sie von der Koordinatorgebühr befreit sind.
 
 Teile Coins nicht allein zur Gebührenbefreiung auf, ohne zusätzliche Transaktionen, Gebühren und öffentliche Verknüpfungen zu verstehen.
 
@@ -52,7 +52,7 @@ Folgendes ist ein Rechenbeispiel, keine Vorhersage von Ginger-Outputs oder ein A
 | Deine Outputs über beide Wallets summiert | 4 980 800 |
 | Wertdifferenz | 19 200 |
 | Angenommene Koordinatorgebühr: 0.3 % des Inputs | 15 000 |
-| Hier deiner Teilnahme zugeordnete Mining-Kosten | 3 600 |
+| Hier deiner Teilnahme zugeordnete Mining-Gebühren | 3 600 |
 | Verbleibende Verteilungsdifferenz | 600 |
 
 Hier gilt 15 000 + 3 600 + 600 = 19 200 Satoshis. Die letzten drei Zeilen erklären dieselbe Differenz; addiere diese Differenz nicht nochmals als zusätzliche Belastung. Auch die rundenweite Mining-Gebühr bezahlt nicht jeder Teilnehmer vollständig. Einzelne Gebührenfelder oder Protokollzeilen decken nicht automatisch jede Wertdifferenzkomponente ab.
@@ -67,7 +67,7 @@ Berücksichtige auch die Schritte um CoinJoin bei der Nutzen-Kosten-Entscheidung
 
 | Schritt | Zu berücksichtigende Kosten |
 | --- | --- |
-| Börsenauszahlung | Auszahlungsentgelt, möglicherweise anders als deren Transaktions-Mining-Gebühr |
+| Börsenauszahlung | Auszahlungsentgelt, möglicherweise anders als deren Transaktionsgebühr |
 | Eine oder mehrere Runden | Tatsächliche Wertdifferenz jeder abgeschlossenen Teilnahme |
 | Übertragung an andere Wallet | Weitere Mining-Gebühr einer normalen Übertragung |
 | Späteres Ausgeben | Gebühren für Inputs und Outputs jener Zahlung |
