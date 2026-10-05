@@ -1,17 +1,17 @@
 ---
 doc_id: "getting-started.install"
 title: "Установка Ginger Wallet"
-description: "Выберите подходящую настольную загрузку Ginger Wallet, проверьте совместимость и установите опубликованное приложение."
+description: "Выберите подходящий пакет Ginger Wallet для компьютера, проверьте совместимость и установите опубликованное приложение."
 lang: "ru"
 verified_release: "v2.0.26"
 reader_level: "beginner"
 sidebar:
   label: Установка Ginger
 prev:
-  link: /ru/getting-started/
+  link: /getting-started/
   label: Начните здесь
 next:
-  link: /ru/getting-started/first-wallet/
+  link: /getting-started/first-wallet/
   label: Создание первого кошелька
 ---
 
