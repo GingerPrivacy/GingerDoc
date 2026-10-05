@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test'
 import { readdirSync, readFileSync } from 'node:fs'
+import { pagefindLabels } from '../src/pagefind-labels'
 
 const locales = readdirSync(new URL('../src/locales/', import.meta.url))
   .filter((name) => name.endsWith('.json') && name !== 'en.json')
@@ -66,6 +67,14 @@ for (const locale of locales) {
     await dialog.locator('.pagefind-ui__search-input').fill('CoinJoin')
     const results = dialog.locator('.pagefind-ui__result')
     await expect(results.first()).toBeVisible()
+    const searchCopy = pagefindLabels(locale.lang)
+    await expect(dialog.getByRole('button', { name: searchCopy.clear_search, exact: true })).toBeVisible()
+    await expect(dialog.getByRole('button', { name: searchCopy.load_more, exact: true })).toBeVisible()
+    await expect(dialog.locator('form')).toHaveAttribute('aria-label', searchCopy.search_label)
+    const summary = searchCopy.many_results.split('[COUNT]')
+      .map((part) => part.replace('[SEARCH_TERM]', 'CoinJoin').replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+      .join('[\\d\\s.,]+')
+    await expect(dialog.locator('.pagefind-ui__message')).toHaveText(new RegExp(`^${summary}$`))
     await expect(results.first().locator('.pagefind-ui__result-tag')).toContainText(new RegExp(`${locale.search.level.beginner}|${locale.search.level.everyday}`))
     await scope.selectOption('advanced')
     await expect(results.first().locator('.pagefind-ui__result-tag')).toContainText(locale.search.level.advanced)
