@@ -34,11 +34,11 @@ Questa guida riguarda l'invio di una richiesta fornita dal destinatario. La norm
 
 ## Cosa scoprono il destinatario e un osservatore
 
-Il destinatario conosce già la richiesta di pagamento, il suo indirizzo di ricezione e l'importo previsto. Se la richiesta è associata a un ordine identificato, PayJoin non cancella quell'identità. Durante la negoziazione, il servizio di ricezione vede anche la transazione di pagamento proposta, compresi gli input proposti dal mittente. Non va considerato un soggetto a cui il pagamento stesso sia nascosto.
+Il destinatario conosce già la richiesta di pagamento, il suo indirizzo di ricezione e l'importo previsto. Se la richiesta è associata a un ordine collegato alla tua identità, PayJoin non cancella quel collegamento. Durante la negoziazione, il servizio di ricezione vede anche la transazione di pagamento proposta, compresi gli input proposti dal mittente. Non va considerato un soggetto a cui il pagamento stesso sia nascosto.
 
 Un osservatore esterno vede la transazione infine pubblicata su Bitcoin. Un PayJoin riuscito può rendere inaffidabile la comune ipotesi che «tutti gli input appartengano al mittente». Questo beneficio dipende dalla transazione e dalle altre informazioni dell'osservatore; non garantisce che la transazione sia indistinguibile da ogni pagamento ordinario.
 
-Tieni distinti questi soggetti. Un destinatario può conoscere dettagli tramite l'ordine o la negoziazione anche se un osservatore estraneo non può attribuire con certezza gli input della transazione. Un esploratore pubblico delle transazioni può creare un'ulteriore divulgazione se cerchi il pagamento attraverso una sessione del browser identificata.
+Tieni distinti questi soggetti. Un destinatario può conoscere dettagli tramite l'ordine o la negoziazione anche se un osservatore estraneo non può attribuire con certezza gli input della transazione. Un esploratore pubblico delle transazioni può creare un'ulteriore divulgazione se cerchi il pagamento attraverso una sessione del browser collegata alla tua identità.
 
 <span id="wallet-fingerprints-and-the-ordinary-payment-fallback" data-ginger-heading="tratti-riconoscibili-dei-portafogli-e-ripiego-sul-pagamento-ordinario" aria-hidden="true"></span>
 

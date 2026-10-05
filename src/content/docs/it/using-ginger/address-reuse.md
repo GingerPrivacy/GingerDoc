@@ -19,7 +19,7 @@ I miglioramenti di privacy sono più facili da mantenere quando si adattano al m
 
 Genera un nuovo indirizzo per lo specifico pagamento e usa un'etichetta locale che abbia senso in seguito. Evita un unico indirizzo pubblico riutilizzabile per ricezioni non correlate quando puoi fornire richieste di pagamento individuali. Verifica gli indirizzi del portafoglio hardware sul dispositivo.
 
-Pensa anche al canale di comunicazione. Se invii un indirizzo di ricezione da un account identificato, quel destinatario può associarlo a te anche se la blockchain stessa non ha un campo nome. Un nuovo indirizzo riduce il riutilizzo; non cancella la conversazione in cui lo hai condiviso.
+Pensa anche al canale di comunicazione. Se invii un indirizzo di ricezione da un account collegato alla tua identità, quel destinatario può associarlo a te anche se la blockchain stessa non ha un campo nome. Un nuovo indirizzo riduce il riutilizzo; non cancella la conversazione in cui lo hai condiviso.
 
 <span id="before-sending" data-ginger-heading="prima-di-inviare" aria-hidden="true"></span>
 
@@ -33,7 +33,7 @@ Chiedi una nuova destinazione e conferma importo e indirizzo. Se un suggerimento
 
 ## Dopo CoinJoin
 
-Tratta le monete risultanti come fondi la cui gestione futura conta ancora. Combinare tutti gli output in un'unica transazione successiva può creare una nuova associazione. Riutilizzare un indirizzo identificato o spendere tramite un fornitore identificato crea ulteriori informazioni, indipendentemente dal punteggio mostrato da Ginger prima del pagamento.
+Tratta le monete risultanti come fondi la cui gestione futura conta ancora. Combinare tutti gli output in un'unica transazione successiva può creare una nuova associazione. Riutilizzare un indirizzo collegato alla tua identità o spendere tramite un fornitore che la conosce crea ulteriori informazioni, indipendentemente dal punteggio mostrato da Ginger prima del pagamento.
 
 Un analista può anche confrontare tempi e importi tra transazioni. Non esiste un periodo di attesa universale che garantisca la sicurezza. Pianifica come intendi spendere anziché aspettarti che un round o un ritardo fisso risolvano ogni forma di osservazione.
 

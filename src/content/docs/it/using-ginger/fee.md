@@ -25,7 +25,7 @@ Una tariffa di commissione è misurata in satoshi per byte virtuale, mostrata co
 
 Usa il controllo delle commissioni nell'anteprima per cambiare la preferenza di conferma desiderata o inserire una **Custom Fee Rate**. Un tempo stimato non è una garanzia: nuove transazioni competono per lo spazio e i blocchi arrivano a intervalli irregolari. Il controllo di inserimento manuale pubblicato rifiuta tariffe inferiori a 1 sat/vByte; la politica del nodo può richiedere più del minimo dell'editor.
 
-Quando le stime automatiche non sono disponibili, Ginger può comunque offrire l'inserimento manuale della commissione. Se non sai quale tariffa sia appropriata, attendere il ripristino delle stime è preferibile a indovinare un numero molto alto. Le commissioni delle transazioni ordinarie e quelle del coordinatore CoinJoin sono separate.
+Quando le stime automatiche non sono disponibili, Ginger può comunque offrire l'inserimento manuale della tariffa di commissione. Se non sai quale tariffa sia appropriata, attendere il ripristino delle stime è preferibile a indovinare un numero molto alto. Le commissioni delle transazioni ordinarie e quelle del coordinatore CoinJoin sono separate.
 
 <span id="change-is-still-your-bitcoin" data-ginger-heading="il-resto-è-ancora-tuo-bitcoin" aria-hidden="true"></span>
 

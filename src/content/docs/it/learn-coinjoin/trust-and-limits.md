@@ -64,7 +64,7 @@ Un rifiuto o un round fallito non sono, da soli, prove di un attacco o un giudiz
 2. Mantieni Tor attivo per la privacy di rete prevista dal portafoglio. Non nasconde le informazioni che invii esplicitamente al servizio che le riceve.
 3. Controlla il portafoglio selezionato, la destinazione degli output, le monete ammissibili e le preferenze di costo. Non aumentare i limiti solo per far tacere un errore non spiegato.
 4. Conserva materiale di ripristino indipendente. Non dare mai a un coordinatore o a un contatto di assistenza le parole, la passphrase o le chiavi private per «sbloccare» un round.
-5. Controlla il risultato e le spese successive. Un nuovo indirizzo e un punteggio alto non possono annullare una nuova divulgazione a un destinatario identificato.
+5. Controlla il risultato e le spese successive. Un nuovo indirizzo e un punteggio alto non possono annullare una nuova divulgazione a un destinatario che conosce la tua identità.
 
 Un tuo nodo Bitcoin è utile per le funzioni che svolge davvero, come fornire blocchi o stime delle commissioni quando configurato. Non sostituisce il coordinatore CoinJoin e non stabilisce che i partecipanti siano indipendenti. Un portafoglio hardware isola le chiavi, ma non rende privato il grafo delle transazioni.
 

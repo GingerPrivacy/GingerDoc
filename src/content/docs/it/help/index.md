@@ -190,7 +190,7 @@ CoinJoin automatico può creare transazioni condivise dopo che hai attivato la p
 
 ### Posso spendere al 99% e il 100% significa che sono anonimo?
 
-Puoi effettuare un pagamento ordinario quando i fondi sono spendibili e la procedura di invio è disponibile; la percentuale di privacy non è un requisito di spesa Bitcoin. È la stima locale di Ginger secondo l'obiettivo selezionato, non una garanzia su ciò che un'altra persona sa. Un pagamento, un indirizzo riutilizzato o un exchange identificato possono comunque creare un collegamento.
+Puoi effettuare un pagamento ordinario quando i fondi sono spendibili e la procedura di invio è disponibile; la percentuale di privacy non è un requisito di spesa Bitcoin. È la stima locale di Ginger secondo l'obiettivo selezionato, non una garanzia su ciò che un'altra persona sa. Un pagamento, un indirizzo riutilizzato o un exchange che conosce la tua identità possono comunque creare un collegamento.
 
 <span id="why-is-the-play-control-missing-when-all-funds-are-private" data-ginger-heading="perché-manca-il-comando-di-avvio-quando-tutti-i-fondi-sono-privati" aria-hidden="true"></span>
 

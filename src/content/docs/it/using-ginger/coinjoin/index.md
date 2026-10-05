@@ -72,7 +72,7 @@ La finestra può chiudersi mentre Ginger resta in background, a seconda delle im
 
 ## Spendi dopo CoinJoin
 
-Una volta utilizzabili, puoi spendere le monete risultanti come altri bitcoin. La transazione CoinJoin resta pubblica. Combinare monete private e non private non correlate, riutilizzare un indirizzo o divulgare una transazione a un servizio identificato può creare nuovi collegamenti. Controlla le monete selezionate e il resto quando effettui un pagamento; un CoinJoin precedente non rende privata ogni azione futura.
+Una volta utilizzabili, puoi spendere le monete risultanti come altri bitcoin. La transazione CoinJoin resta pubblica. Combinare monete private e non private non correlate, riutilizzare un indirizzo o divulgare una transazione a un servizio che conosce la tua identità può creare nuovi collegamenti. Controlla le monete selezionate e il resto quando effettui un pagamento; un CoinJoin precedente non rende privata ogni azione futura.
 
 <span id="you-do-not-need-to-manage-the-protocol" data-ginger-heading="non-devi-gestire-il-protocollo" aria-hidden="true"></span>
 

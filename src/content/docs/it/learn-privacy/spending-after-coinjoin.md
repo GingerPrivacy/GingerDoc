@@ -78,7 +78,7 @@ Non spendere un intero saldo solo perché l'elenco delle monete sembra disordina
 
 Il tuo comportamento non è l'unica influenza. Le transazioni successive degli altri partecipanti possono restringere le possibilità considerate da un osservatore. La ricerca sul consolidamento dopo CoinJoin studia questo effetto, riconoscendo i limiti nel trasformare queste osservazioni in un'identificazione utilizzabile. Le sue misurazioni non rappresentano la probabilità che un utente specifico venga tracciato. [Gavenda e colleghi, 2025](https://arxiv.org/html/2510.17284v1)
 
-Non esistono un numero universale di round o un periodo di attesa che garantiscano la privacy. Attendere non cancella le informazioni già divulgate a un commerciante identificato, un exchange o un altro servizio per portafogli.
+Non esistono un numero universale di round o un periodo di attesa che garantiscano la privacy. Attendere non cancella le informazioni già divulgate a un commerciante che conosce la tua identità, un exchange o un altro servizio per portafogli.
 
 <span id="a-short-review-before-confirming" data-ginger-heading="un-breve-controllo-prima-di-confermare" aria-hidden="true"></span>
 

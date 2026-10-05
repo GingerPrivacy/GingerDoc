@@ -17,7 +17,7 @@ CoinJoin è utile quando ridurre le informazioni sui collegamenti tra transazion
 
 ## Parti da un obiettivo concreto
 
-Per esempio, potresti volere che il destinatario di un pagamento futuro abbia meno visibilità diretta sulla storia di una ricezione già identificata. Annota chi conosce già quella ricezione e cosa rivelerà il prossimo pagamento. CoinJoin può modificare il problema dei collegamenti tra transazioni nel mezzo, ma non può annullare la prima divulgazione né impedire la seconda.
+Per esempio, potresti volere che il destinatario di un pagamento futuro abbia meno visibilità diretta sulla storia di una ricezione già associata alla tua identità. Annota chi conosce già quella ricezione e cosa rivelerà il prossimo pagamento. CoinJoin può modificare il problema dei collegamenti tra transazioni nel mezzo, ma non può annullare la prima divulgazione né impedire la seconda.
 
 Se l'obiettivo è semplicemente proteggere le chiavi mentre detieni bitcoin, un backup utilizzabile per il ripristino e una procedura adeguata con un portafoglio hardware affrontano quel problema più direttamente. Se la preoccupazione è un indirizzo pubblico di ricezione riutilizzato per ogni fattura, interrompi prima il riutilizzo; CoinJoin in seguito non rende private le vecchie ricezioni.
 
@@ -29,9 +29,9 @@ Se l'obiettivo è semplicemente proteggere le chiavi mentre detieni bitcoin, un 
 | --- | --- |
 | Molte piccole monete quando le commissioni di mining sono alte | La partecipazione può consumare una quota relativa elevata; controlla le condizioni delle commissioni e valuta di aspettare |
 | Un pagamento è dovuto immediatamente | Il completamento di CoinJoin non è programmato; evita di affidarti a un round per rispettare una scadenza precisa |
-| Spese a lungo termine da una fonte identificata | Valuta come CoinJoin, indirizzi di ricezione separati e successiva selezione delle monete funzionino insieme |
+| Spese a lungo termine da una fonte già associata alla tua identità | Valuta come CoinJoin, indirizzi di ricezione separati e successiva selezione delle monete funzionino insieme |
 | Un fornitore richiede identità e prova dell'indirizzo | Quella divulgazione diretta resta; verifica se CoinJoin cambia le informazioni che ti interessano |
-| La destinazione è un portafoglio hardware | Verifica l'account di ricezione e la procedura di destinazione pubblicata; non importare le parole di recupero hardware in un portafoglio online |
+| La destinazione è un portafoglio hardware | Verifica l'account di ricezione e la procedura di destinazione pubblicata; non importare le parole di recupero hardware in un portafoglio software con chiavi sul computer (hot wallet) |
 | Non puoi mantenere il computer disponibile | La partecipazione automatica richiede connettività e capacità di firma sbloccata durante il round |
 
 Questi sono compromessi, non una raccomandazione a spostare un importo particolare o una garanzia di un risultato finanziario. Usa un importo piccolo e gestibile per imparare la procedura e verificare il conto delle commissioni prima di aumentare l'esposizione.

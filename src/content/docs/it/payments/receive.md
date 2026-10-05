@@ -29,7 +29,7 @@ Sulla mainnet Bitcoin, gli indirizzi di ricezione SegWit nativi iniziano normalm
 
 ## Etichette e indirizzi inutilizzati
 
-**Addresses Awaiting Payment** mostra gli indirizzi di ricezione che non hanno ancora ricevuto un pagamento e che sono ancora presenti in quell'elenco. Puoi esaminare i codici QR, copiarli, modificarne le etichette o nascondere un indirizzo tramite le azioni disponibili.
+**Addresses Awaiting Payment** mostra gli indirizzi di ricezione che non hanno ancora ricevuto un pagamento e che sono ancora presenti in quell'elenco. Puoi esaminare i loro codici QR, copiare gli indirizzi, modificarne le etichette o nascondere un indirizzo tramite le azioni disponibili.
 
 Nascondere un indirizzo non lo revoca su Bitcoin. Un pagamento verso un indirizzo generato in precedenza appartiene ancora al portafoglio se ne controlli le chiavi. Gli indirizzi usati possono scomparire dall'elenco in attesa di pagamento per scelta progettuale; questo incoraggia nuovi indirizzi, anziché indicare che le vecchie chiavi siano state eliminate.
 

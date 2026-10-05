@@ -53,7 +53,7 @@ La finestra di vendita conserva il contesto del fornitore, ma non elimina la res
 | --- | --- |
 | **Created** | L'ordine esiste; controlla quali passaggi del fornitore restano prima di pagare di nuovo. |
 | **Pending** | L'elaborazione è ancora in corso. Confronta lo stato del fornitore e la cronologia del portafoglio. |
-| **Your transaction is on hold. Please contact Support.** | Contatta il fornitore selezionato usando l'ID dell'ordine. Ginger non può concludere la sua revisione. |
+| **Your transaction is on hold. Please contact Support.** | Contatta il fornitore selezionato usando l'ID dell'ordine. Ginger non può sbloccare l'ordine sottoposto alla verifica del fornitore. |
 | **Expired** | Non presumere che una vecchia quotazione o un indirizzo di pagamento siano ancora utilizzabili. Chiedi al fornitore se i fondi sono già stati inviati. |
 | **Failed** | Controlla se pagamento o bitcoin siano stati trasferiti prima di tentare un nuovo ordine. |
 | **Refunded** | Conferma metodo, destinazione ed effettivo regolamento del rimborso con il fornitore. |
