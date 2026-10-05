@@ -1,0 +1,54 @@
+---
+doc_id: manual.home
+title: GingerWallet 文档
+description: 创建首个 Ginger 钱包及日常使用比特币的实用指南。学习备份钱包、收发比特币以及保护隐私。
+lang: zh-CN
+reader_level: beginner
+template: splash
+hero: {}
+---
+
+import ManualHome from '../../../components/ManualHome.astro';
+
+<ManualHome
+  eyebrow="用户手册"
+  title="轻松上手"
+  titleSecondLine="使用"
+  titleAccent="Ginger。"
+  description="创建首个钱包及日常使用比特币的实用指南。"
+  start={{ label: '开始使用 Ginger', href: '/zh-cn/getting-started/' }}
+  faq={{ label: '浏览常见问题', href: '/zh-cn/help/' }}
+  stepsTitle="迈出第一步"
+  stepsDescription="循序渐进，轻松入门。"
+  steps={[
+    { label: '安装 Ginger', description: '下载应用，并在设备上完成安装。', href: '/zh-cn/getting-started/install/' },
+    { label: '创建并备份钱包', description: '设置钱包，妥善保管恢复资料。', href: '/zh-cn/getting-started/first-wallet/' },
+    { label: '接收第一笔付款', description: '生成比特币地址，接收第一笔比特币。', href: '/zh-cn/payments/receive/' },
+  ]}
+  groups={[
+    {
+      title: '日常使用指南',
+      description: '日常使用 Ginger 的实用操作指南。',
+      icon: 'book',
+      links: [
+        { label: '发送与接收', href: '/zh-cn/using-ginger/' },
+        { label: 'CoinJoin', href: '/zh-cn/using-ginger/coinjoin/' },
+        { label: '硬件钱包', href: '/zh-cn/using-ginger/hardware-wallet/' },
+      ],
+    },
+    {
+      title: '了解隐私保护',
+      description: '了解 Ginger 如何帮助你保护隐私。',
+      icon: 'shield',
+      links: [
+        { label: '比特币隐私', href: '/zh-cn/using-ginger/privacy/' },
+        { label: 'CoinJoin 的工作原理', href: '/zh-cn/learn-coinjoin/explained/' },
+        { label: '自行保管', href: '/zh-cn/learn-self-custody/basics/' },
+      ],
+    },
+  ]}
+  searchTitle="正在寻找具体内容？"
+  searchDescription="搜索手册，查找指南、设置和其他内容。"
+  searchLabel="搜索手册"
+  advanced={{ label: '进阶指南', href: '/zh-cn/help/advanced-faq/' }}
+/>
