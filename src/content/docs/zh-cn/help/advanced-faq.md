@@ -32,7 +32,7 @@ next: false
 
 ### 什么时候应增加恢复地址间隔限制？
 
-有证据表明收款地址之前有许多未使用地址时考虑，例如其他应用生成的地址。**Advanced Recovery Options** → **Minimum Gap Limit:** 扩大扫描，可能增加工作量和时间；v2.0.26 恢复页面初始值为 114。它不能修复错误助记词、错误口令或不兼容账户。
+有证据表明已收到付款的地址之前有许多未使用地址时考虑，例如其他应用生成的地址。**Advanced Recovery Options** → **Minimum Gap Limit:** 扩大扫描，可能增加工作量和时间；v2.0.26 恢复页面初始值为 114。它不能修复错误助记词、错误口令或不兼容账户。
 
 <span id="why-did-labels-or-privacy-information-change-after-recovery" data-ginger-heading="为什么恢复后标签或隐私信息改变" aria-hidden="true"></span>
 

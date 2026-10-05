@@ -19,7 +19,7 @@ next:
 
 Ginger Wallet 是桌面版比特币钱包。你持有比特币的密钥，并可使用 CoinJoin 增加交易追踪难度。本版本不提供手机钱包、闪电网络钱包或其他加密货币支持。
 
-本指南适用于 2.0.26 版本。通过 [Ginger 官方网站](https://gingerwallet.io/)或其链接的 [GitHub 发布页](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26)获取软件。搜索广告、私信或同名手机应用都不是可靠的下载来源。
+本指南适用于 2.0.26 版本。通过 [Ginger 官方网站](https://gingerwallet.io/)或其链接的 [GitHub 发布页](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26)获取软件。搜索广告、私信或名称相近的手机应用都不是可靠的下载来源。
 
 <span id="choose-a-download" data-ginger-heading="选择下载文件" aria-hidden="true"></span>
 

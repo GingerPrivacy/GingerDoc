@@ -25,7 +25,7 @@ next: false
 | **Ignore coinjoin time preference below** | 费率低于此阈值时，即使时间偏好比较原本要求等待，也允许参与。 |
 | **Random Skip** | 选择跳过适合轮次的频率。选项为 **Disabled**、**Rarely**、**Sometimes** 和 **Often**。更多跳过通常意味着更久等待。 |
 
-控制面板报告余额不经济时，按启动按钮可以绕过停止阈值。这不会免除交易手续费。覆盖前，考虑可用币的金额和预计成本。
+控制面板报告余额不经济时，按启动按钮可以绕过停止阈值。这不会免除交易手续费。绕过该阈值前，考虑可用币的金额和预计成本。
 
 <span id="privacy-settings" data-ginger-heading="隐私设置" aria-hidden="true"></span>
 

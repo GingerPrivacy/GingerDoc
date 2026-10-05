@@ -37,7 +37,7 @@ next: false
 
 在软件钱包选择 **Receive**，添加有用标签并创建新地址。复制到交易所比特币提现流程，在交易所授权前核对完整地址和网络。Ginger 使用比特币链上交易；闪电网络发票或其他资产网络不能替代。
 
-单独记录交易所提现费用。Ginger 到账金额可能低于交易所扣除金额。等待钱包同步及收到资金确认，再期待 CoinJoin 参与。交易 ID 有助核对，但避免公布或反复在公开浏览器搜索。
+单独记录交易所提现费用。Ginger 到账金额可能低于交易所扣除金额。等待钱包同步及收到资金确认，再期待 CoinJoin 参与。交易 ID 有助核对，但避免公布或反复在公开区块浏览器搜索。
 
 <span id="route-a-review-coinjoin-results-then-transfer" data-ginger-heading="路径-a检查-coinjoin-结果后转账" aria-hidden="true"></span>
 

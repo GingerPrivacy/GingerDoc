@@ -51,7 +51,7 @@ CoinJoin 与其他参与者一起创建比特币交易，使输入与输出之�
 | **Skipping a round for better privacy** | 随机跳过已启用。这不是连接故障。 |
 | **Awaiting other participants** | 正在注册。其他参与者也需要完成各自步骤。 |
 | **Awaiting the blame round** | 上次尝试未完成；协议正与符合条件的参与者重试。不是要求你识别谁。 |
-| **Insufficient participants, retrying...** | 未达到所需参与人数。等待下一轮。 |
+| **Insufficient participants, retrying...** | 参与者数量未达到要求。等待下一轮。 |
 | **Awaiting closure of send dialog** | 先完成或关闭付款流程，再等待 CoinJoin 恢复。 |
 | **Coinjoin may be uneconomical** | 停止阈值正在起作用。增加资金或手动覆盖阈值是有成本的选择，不是必须的修复。 |
 | **Coinjoin successful! Continuing...** | 一轮成功。钱包仍有待处理资金时，可能继续下一轮。 |
@@ -72,7 +72,7 @@ CoinJoin 与其他参与者一起创建比特币交易，使输入与输出之�
 
 ## CoinJoin 后花费
 
-产生的币可用后，可像其他比特币一样花费。CoinJoin 交易仍公开。合并无关的私密与非私密币、重复地址或向实名服务披露交易，都会建立新关联。付款时检查选中币和找零；以前参与过 CoinJoin 不会让所有后续操作都私密。
+产生的币可用后，可像其他比特币一样花费。CoinJoin 交易仍公开。合并无关的私密与非私密币、复用地址或向已获知你身份的服务披露交易，都可能建立新关联。付款时检查选中币和找零；以前参与过 CoinJoin 不会让所有后续操作都私密。
 
 <span id="you-do-not-need-to-manage-the-protocol" data-ginger-heading="无须管理协议" aria-hidden="true"></span>
 

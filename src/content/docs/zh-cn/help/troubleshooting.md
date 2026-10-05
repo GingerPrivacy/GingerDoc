@@ -49,7 +49,7 @@ next: false
 | **Only immature funds are available** | 等待要求的成熟期；新挖矿输出有特殊花费规则 |
 | **Some funds are rejected from coinjoining** | 阅读相关原因和当前服务条款；拒绝不转移资金所有权 |
 | **Awaiting cheaper coinjoins** | 检查成本偏好，判断等待是否符合目标 |
-| **Coinjoin may be uneconomical** | 手动覆盖前检查停止阈值和相对成本 |
+| **Coinjoin may be uneconomical** | 手动绕过停止阈值前，检查该阈值和相对成本 |
 | **Awaiting the blame round** | 等待协议重试；不是要求责怪其他用户 |
 | **Awaiting closure of send dialog** | 完成或关闭发送流程 |
 | **Mining fee rate was too high** 或 **Coordination fee rate was too high** | 等待或调查轮次条件；不要盲目提高限制 |

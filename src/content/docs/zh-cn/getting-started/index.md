@@ -30,11 +30,11 @@ Ginger 是一款在电脑上接收和发送比特币的应用。你掌握花费�
 
 ## 1. 安装正版应用
 
-按照[安装 Ginger Wallet](/zh-cn/getting-started/install/)操作，并使用其中的官方下载链接。选择适合电脑的下载文件。不要安装同名手机应用，也不要安装自称提供支持的陌生人发来的软件。
+按照[安装 Ginger Wallet](/zh-cn/getting-started/install/)操作，并使用其中的官方下载链接。选择适合电脑的下载文件。不要安装名称相近的手机应用，也不要安装自称提供支持的陌生人发来的软件。
 
 Ginger 支持 Windows、macOS 和 Linux；安装指南列出了支持的版本和处理器。本版本仅支持比特币，没有 Android 或 iOS 应用。你需要互联网连接和可写入的存储空间。应用内附 Tor，不必单独安装。
 
-保留该指南中的下载检查步骤。需要时，可阅读单独的[进阶签名验证参考](/zh-cn/getting-started/verify-download/)，了解命令行检查方法。
+按该指南完成下载检查。需要时，可阅读单独的[进阶签名验证参考](/zh-cn/getting-started/verify-download/)，了解命令行检查方法。
 
 <span id="what-is-the-password-used-for" aria-hidden="true"></span>
 
