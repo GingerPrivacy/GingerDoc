@@ -56,7 +56,7 @@ Wenn du eine gemeinsame Zahlung benötigst, vereinbare eine kompatible Methode v
 
 Manche Dienste verlangen den Nachweis der Kontrolle einer Empfangsadresse. Wähle **Sign Message** im Wallet-Menü. Gib eine zur Wallet gehörende Adresse und die exakt beabsichtigte Erklärung ein. Fremde Adressen lehnt Ginger ab. Gib die Nachricht ein, wähle **Continue** und kopiere die resultierende Signatur für den vorgesehenen Prüfer.
 
-Folge bei Hardware-Wallets der Gerätesignierungsabfrage; Verfügbarkeit hängt von Gerät und Unterstützung ab. Eine Watch-only-Wallet ohne Signiergerät erzeugt keine Signatur. Adresstyp und vom Prüfer unterstütztes Signaturformat müssen ebenfalls kompatibel sein.
+Folge bei Hardware-Wallets der Gerätesignierungsabfrage; Verfügbarkeit hängt von Gerät und Unterstützung ab. Eine beobachtende Wallet ohne Signiergerät erzeugt keine Signatur. Adresstyp und vom Prüfer unterstütztes Signaturformat müssen ebenfalls kompatibel sein.
 
 Lies die Nachricht so sorgfältig wie eine Autorisierung. Bevorzuge eng begrenzten Text mit Empfänger, Zweck sowie Datum oder Challenge. Signiere keine leere Erklärung oder eine mit unklaren Folgen. Nach Weitergabe kann eine Signatur kopiert und anderen gezeigt werden.
 

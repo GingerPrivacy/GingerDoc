@@ -10,4 +10,6 @@ The manual explains user tasks. Source review notes and development plans belong
 
 Prepare translations in a separate directory with the same English page paths and a `locale.json` containing the language label, site title, header, sidebar and search copy. Keep English application control names and code examples unchanged. Run `node scripts/import-translation.mjs de /path/to/translation` to add the localized pages and dictionary. The importer prefixes documentation links and adds aliases for English heading anchors; shared asset URLs and external URLs stay unchanged. Use lowercase locale directory names, including `pt-br` with `lang: pt-BR` in its dictionary and pages.
 
+Check translated Bitcoin terms against the [terminology references](../locales/README.md), including their original message context and the distinctions between amounts, fee rates, recovery secrets and signing roles.
+
 Run `node scripts/check-translations.mjs`, `npm run check`, `npm run build`, `python scripts/check-doc-links.py` and `npm run test:search` before publishing a translation. The browser checks cover language switching, mobile homepage controls and language-specific search results. Translation checks preserve structure and references; review wording against the English source separately when updating a guide.

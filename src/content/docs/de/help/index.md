@@ -110,7 +110,7 @@ Eine Adresse kann nach Zahlung oder Ausblenden die Warteliste verlassen, ohne ih
 
 ### Warum fehlen Receive oder Send?
 
-Laufende Wiederherstellung kann normale Aktionen bis zum Suchabschluss verbergen. Watch-only benötigt zum Ausgeben sein Signiergerät oder einen anderen unterstützten Weg. Prüfe Typ und Fortschritt vor Neuinstallation oder neuen Ersatzwörtern.
+Laufende Wiederherstellung kann normale Aktionen bis zum Suchabschluss verbergen. Eine beobachtende Wallet benötigt zum Ausgeben ihr Signiergerät oder einen anderen unterstützten Weg. Prüfe Typ und Fortschritt vor Neuinstallation oder neuen Ersatzwörtern.
 
 <span id="i-lost-my-authenticator-or-my-2fa-code-is-rejected-what-now" data-ginger-heading="authenticator-verloren-oder-2fa-code-abgelehnt-was-nun" aria-hidden="true"></span>
 

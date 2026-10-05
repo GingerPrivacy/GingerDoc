@@ -50,4 +50,4 @@ Optionale weiterführende Referenz: [Eigene Gebührenraten und Wechselgeld](/de/
 
 Unzureichendes Guthaben kann bedeuten, dass nach Gebühren nicht genug ausgebbarer Wert vorhanden ist, obwohl der angezeigte Gesamtkontostand ausreichend aussieht. Guthaben kann außerdem unbestätigt, in einer kritischen CoinJoin-Phase gebunden oder Teil einer derzeit nicht erweiterbaren unbestätigten Transaktionskette sein.
 
-Eine fehlende Sendeaktion während der Wiederherstellung ist normal. Eine Watch-only-Wallet kann allein nicht signieren. Diese Version unterstützt keine Lightning-Adressen oder -Rechnungen; fordere eine On-Chain-Bitcoin-Adresse an.
+Eine fehlende Sendeaktion während der Wiederherstellung ist normal. Eine beobachtende Wallet kann allein nicht signieren. Diese Version unterstützt keine Lightning-Adressen oder -Rechnungen; fordere eine On-Chain-Bitcoin-Adresse an.

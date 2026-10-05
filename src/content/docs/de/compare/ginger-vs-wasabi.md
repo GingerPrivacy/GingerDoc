@@ -11,7 +11,7 @@ next: false
 
 Ginger Wallet und Wasabi Wallet sind quelloffene Bitcoin-Desktop-Wallets, mit denen du eigene Schlüssel hältst und CoinJoin nutzt. Die wichtigsten praktischen Unterschiede beim CoinJoin-Einstieg betreffen Koordinator-Einrichtung und Koordinatorgebühren.
 
-**Ginger liefert eine konfigurierte Koordinatorverbindung. Wasabi verlangt vor CoinJoin die Konfiguration eines Koordinators.** Gingers Koordinator berechnet normalerweise 0.3 % auf geeignete Inputs über 0.03 BTC, mit den unten beschriebenen Ausnahmen. Aktuelles Wasabi akzeptiert nur Runden ohne Koordinatorgebühr. Beide verursachen Mining-Kosten.
+**Ginger liefert eine konfigurierte Koordinatorverbindung. Wasabi verlangt vor CoinJoin die Konfiguration eines Koordinators.** Gingers Koordinator berechnet normalerweise 0.3 % auf geeignete Inputs über 0.03 BTC, mit den unten beschriebenen Ausnahmen. Aktuelles Wasabi akzeptiert nur Runden ohne Koordinatorgebühr. Beide verursachen Mining-Gebühren.
 
 Zuletzt geprüft: **7. September 2026**. Versionsumfang: [Ginger v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) und [Wasabi v2.8.2](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.2). Dieser Vergleich behandelt dokumentierte Abläufe, keinen Geschwindigkeitstest, Zuverlässigkeitsvergleich oder Anonymitätsnachweis.
 
@@ -89,7 +89,7 @@ Wasabi akzeptiert seit Version 2.2.0.0 nur Runden ohne Koordinatorgebühr. Minin
 
 Auch Ginger kann einen kleinen Rest bei der Outputverteilung hinterlassen. Vergleiche bei beiden den Wert deiner teilnehmenden Inputs mit **allen eigenen Outputs** aus der abgeschlossenen Transaktion, einschließlich anderer Wallets. Wiederholte Runden und spätere Transfers können zusätzliche Kosten verursachen.
 
-Null Koordinatorgebühr ist eine Vergleichskomponente. Transaktionsgröße, Mining-Raten, Outputverteilung und abgeschlossene Rundenzahl beeinflussen tatsächliche Ausgaben. Gingers [Kostenanleitung](/de/using-ginger/annonset/) erklärt den Betragsabgleich.
+Null Koordinatorgebühr ist eine Vergleichskomponente. Transaktionsgröße, Gebührenraten, Outputverteilung und abgeschlossene Rundenzahl beeinflussen tatsächliche Ausgaben. Gingers [Kostenanleitung](/de/using-ginger/annonset/) erklärt den Betragsabgleich.
 
 <span id="hardware-wallets-signing-inputs-and-receiving-outputs-are-different" data-ginger-heading="hardware-inputs-signieren-und-outputs-empfangen-sind-verschieden" aria-hidden="true"></span>
 
