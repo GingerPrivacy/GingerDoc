@@ -1,8 +1,17 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { document, localizeLinks, formatTranslatedAmounts } from './translation-utils.mjs'
+import { document, localizeLinks, formatTranslatedAmounts, localizeHomeImport } from './translation-utils.mjs'
 
 const pages = ['index.mdx', 'help/index.md', 'payments/send.md', 'why-ginger/index.md']
+
+test('rebases the homepage import while retaining code examples and imported paths', () => {
+  for (const quote of ["'", '"']) {
+    const body = `\nimport ManualHome from ${quote}../../components/ManualHome.astro${quote}\n\n<ManualHome />\n\n\`\`\`js\nimport ManualHome from '../../components/ManualHome.astro'\n\`\`\`\n`
+    const translated = localizeHomeImport(body)
+    assert.equal(translated, body.replace(`${quote}../../components/ManualHome.astro${quote}`, `${quote}../../../components/ManualHome.astro${quote}`))
+    assert.equal(localizeHomeImport(translated), translated)
+  }
+})
 
 test('localizes link destinations without changing glossary separators or code', () => {
   const source = [

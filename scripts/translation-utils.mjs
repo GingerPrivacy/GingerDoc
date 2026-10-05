@@ -8,6 +8,11 @@ export const docsRoot = new URL('../src/content/docs/', import.meta.url)
 export const copiesRoot = new URL('../src/locales/', import.meta.url)
 export const localeCodes = readdirSync(copiesRoot).filter((name) => name.endsWith('.json') && name !== 'en.json').map((name) => name.slice(0, -5))
 
+export function localizeHomeImport(body) {
+  // A translated homepage lives one directory deeper than the English page.
+  return body.replace(/^(\s*import ManualHome from ['"])\.\.\/\.\.\/components\/ManualHome\.astro(?=['"])/, '$1../../../components/ManualHome.astro')
+}
+
 export function pages(root, excluded = []) {
   const found = []
   function walk(directory) {

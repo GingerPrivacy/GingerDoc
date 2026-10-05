@@ -1,9 +1,11 @@
 ---
 import { Icon } from '@astrojs/starlight/components'
 import { searchLabels } from '../search-labels'
+import { pagefindLabels } from '../pagefind-labels'
 
 const labels = searchLabels(Astro.locals.starlightRoute.lang)
 const translations = {
+  ...pagefindLabels(Astro.locals.starlightRoute.lang),
   placeholder: Astro.locals.t('search.label'),
   ...Object.fromEntries(Object.entries(Astro.locals.t.all())
     .filter(([key]) => key.startsWith('pagefind.'))
