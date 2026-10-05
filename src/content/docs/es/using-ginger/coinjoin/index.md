@@ -21,9 +21,9 @@ CoinJoin crea una transacción de Bitcoin con otros participantes para que sea m
 
 ## Antes de empezar
 
-Abre una cartera de software de la que tengas una copia de seguridad y deja que se sincronice. Debes disponer de bitcoin confirmado, mantener el ordenador conectado y revisar el coste previsto antes de empezar. Las rondas completadas tienen comisiones de minería y también pueden tener una comisión del coordinador; repetir rondas puede añadir costes. La [referencia avanzada sobre costes](/es/using-ginger/annonset/), de consulta opcional, explica el cálculo. Una cartera física puede recibir y enviar pagos normales, pero no puede ser la cartera que firma en el proceso automático de CoinJoin de Ginger.
+Abre una cartera de software de la que tengas una copia de seguridad y deja que se sincronice. Debes disponer de bitcoin confirmado, mantener el ordenador conectado y revisar el coste previsto antes de empezar. Las rondas completadas tienen comisiones de minería y también pueden tener una comisión del coordinador; repetir rondas puede añadir costes. La [referencia avanzada sobre costes](/es/using-ginger/annonset/), de consulta opcional, explica el cálculo. Una cartera de hardware puede recibir y enviar pagos normales, pero no puede ser la cartera que firma en el proceso automático de CoinJoin de Ginger.
 
-La comisión del coordinador se comprueba para cada moneda utilizada como entrada en la ronda. Las monedas con un valor de 0.03 BTC (3,000,000 satoshis) o menos no pagan comisión del coordinador. Las monedas de mayor valor normalmente pagan un 0.3% de su valor total, aunque las remezclas que cumplan los requisitos también pueden estar exentas. Las comisiones de minería siguen aplicándose, incluso cuando la comisión del coordinador es cero.
+La comisión del coordinador se comprueba para cada moneda utilizada como entrada en la ronda. Las monedas con un valor de 0.03 BTC (3 000 000 satoshis) o menos no pagan comisión del coordinador. Las monedas de mayor valor normalmente pagan un 0.3% de su valor total, aunque las remezclas que cumplan los requisitos también pueden estar exentas. Las comisiones de minería siguen aplicándose, incluso cuando la comisión del coordinador es cero.
 
 La cartera necesita fondos confirmados y utilizables, además de unas condiciones de ronda adecuadas. Ningún saldo ni tiempo de espera garantiza un inicio inmediato. Lee el estado actual antes de cambiar los ajustes.
 
@@ -53,7 +53,7 @@ No envíes bitcoin a una dirección facilitada por alguien que afirme que debe �
 | **Awaiting the blame round** | El intento anterior no pudo completarse; el protocolo vuelve a intentarlo con los participantes aptos. No te está pidiendo que identifiques a nadie. |
 | **Insufficient participants, retrying...** | El intento no alcanzó la participación necesaria. Espera otra ronda. |
 | **Awaiting closure of send dialog** | Termina o cierra el proceso de pago antes de esperar que CoinJoin se reanude. |
-| **Coinjoin may be uneconomical** | El umbral de parada está influyendo. Añadir fondos o anularlo manualmente es una decisión con costes, no una reparación obligatoria. |
+| **Coinjoin may be uneconomical** | Ten en cuenta el umbral de parada. Añadir fondos o anularlo manualmente es una decisión con costes, no una reparación obligatoria. |
 | **Coinjoin successful! Continuing...** | Una ronda se completó correctamente. Pueden seguir otras rondas si a la cartera todavía le queda trabajo por hacer. |
 
 Si aparecen mensajes de rechazo, conexión o admisibilidad, conserva el texto exacto del error. Reinstalar Ginger o crear nuevas palabras de recuperación no es una respuesta habitual a un estado de espera.

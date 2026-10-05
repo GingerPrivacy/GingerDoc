@@ -17,14 +17,14 @@ next: false
 
 | Término | Significado para quien usa una cartera |
 | --- | --- |
-| Bitcoin /es/ BTC | La red y su unidad monetaria. Una cartera gestiona claves y transacciones en vez de almacenar monedas físicas. |
-| Satoshi /es/ sat | Una cienmillonésima de bitcoin: 100,000,000 sats = 1 BTC. |
+| Bitcoin / BTC | La red y su unidad monetaria. Una cartera gestiona claves y transacciones en vez de almacenar monedas físicas. |
+| Satoshi / sat | Una cienmillonésima de bitcoin: 100 000 000 sats = 1 BTC. |
 | Dirección | Un destino de pago derivado de condiciones de gasto. Usa una nueva para cada recepción. |
-| UTXO /es/ moneda | Una salida de transacción sin gastar, disponible para gastarse como una entrada completa. |
+| UTXO / moneda | Una salida de transacción sin gastar, disponible para gastarse como una entrada completa. |
 | Entrada | Una referencia a una salida anterior que se está gastando. Varias entradas pueden financiar una transacción. |
 | Salida | Un nuevo destino y valor creados por una transacción. |
 | Cambio | El valor devuelto a tu cartera cuando las entradas seleccionadas superan el pago más la comisión. |
-| Identificador de transacción /es/ txid | Un identificador de una transacción. Compartirlo revela a qué transacción pública te refieres. |
+| Identificador de transacción / txid | Un identificador de una transacción. Compartirlo revela a qué transacción pública te refieres. |
 | Mempool | La colección de transacciones sin confirmar de un nodo. Los distintos nodos pueden tener visiones diferentes. |
 | Confirmación | La inclusión en un bloque, seguida por otros bloques que se construyen sobre él. |
 | Tasa de comisión | Los satoshis pagados por byte virtual del tamaño de una transacción; es distinta de la comisión total. |
@@ -39,12 +39,12 @@ next: false
 
 | Término | Significado para quien usa una cartera |
 | --- | --- |
-| Bloque /es/ cadena de bloques | Un conjunto de transacciones y la cadena de bloques que se construye sobre el historial anterior. |
-| Minero /es/ prueba de trabajo | Un participante que construye bloques candidatos y realiza el trabajo utilizado por las reglas de selección de cadena de Bitcoin. |
+| Bloque / cadena de bloques | Un conjunto de transacciones y la cadena de bloques que se construye sobre el historial anterior. |
+| Minero / prueba de trabajo | Un participante que construye bloques candidatos y realiza el trabajo utilizado por las reglas de selección de cadena de Bitcoin. |
 | Transacción coinbase | La primera transacción de un bloque, que crea su recompensa de minería permitida; no está relacionada con una cuenta de un exchange concreto. Sus salidas requieren madurez antes de gastarse. |
 | Reglas de consenso | Las reglas que aplica un nodo validador para decidir si los bloques y transacciones son válidos. |
 | Dificultad | Una medida que regula la prueba de trabajo necesaria para un bloque; no determina el saldo de tu cartera. |
-| Mainnet /es/ RegTest | Respectivamente, la red real de Bitcoin y un modo local de pruebas independiente. Las monedas no se mueven entre ellos. |
+| Mainnet / RegTest | Respectivamente, la red real de Bitcoin y un modo local de pruebas independiente. Las monedas no se mueven entre ellos. |
 | BIP | Una propuesta de mejora de Bitcoin que documenta un estándar o proceso propuesto. Que un BIP esté publicado no significa que todas las carteras lo implementen. |
 | Cartera HD | Una cartera determinista jerárquica que deriva muchas claves a partir de material secreto inicial y convenciones. |
 | Hash | Un identificador compacto calculado a partir de datos. Un identificador de transacción identifica datos, no el nombre de cuenta de una persona. |
@@ -60,17 +60,17 @@ Lightning, los canales de pago, la construcción de multifirma, la configuració
 | --- | --- |
 | Clave privada | La información secreta que autoriza el gasto. Nunca la compartas con soporte. |
 | Clave pública | La información usada para verificar firmas; no es un secreto de gasto, pero puede seguir siendo sensible para la privacidad. |
-| Palabras de recuperación /es/ frase mnemónica /es/ frase semilla | La copia ordenada de palabras a partir de la cual se pueden recrear las claves de cartera con la frase de contraseña y las convenciones de cartera correctas. |
+| Palabras de recuperación / frase mnemónica / frase semilla | La copia ordenada de palabras a partir de la cual se pueden recrear las claves de cartera con la frase de contraseña y las convenciones de cartera correctas. |
 | Frase de contraseña BIP39 | Texto adicional usado con las palabras de recuperación para derivar una cartera. Cada frase de contraseña distinta selecciona claves diferentes. |
-| PIN del dispositivo | Un control de acceso de la cartera física. No es lo mismo que una frase de contraseña BIP39. |
+| PIN del dispositivo | Un control de acceso de la cartera de hardware. No es lo mismo que una frase de contraseña BIP39. |
 | 2FA | Un segundo factor de autenticación. Ginger usa un autenticador y un cifrado local de archivos de cartera dependiente de un servicio al iniciar. |
-| xpub /es/ clave pública extendida | Información que permite derivar muchas direcciones públicas relacionadas. No puede firmar directamente, pero puede exponer la actividad de una cartera. |
-| Ruta de derivación /es/ cuenta | Una convención que identifica una rama de las claves de una cartera. Las herramientas de recuperación necesitan convenciones compatibles. |
+| xpub / clave pública extendida | Información que permite derivar muchas direcciones públicas relacionadas. No puede firmar directamente, pero puede exponer la actividad de una cartera. |
+| Ruta de derivación / cuenta | Una convención que identifica una rama de las claves de una cartera. Las herramientas de recuperación necesitan convenciones compatibles. |
 | Límite de direcciones sin usar | La secuencia de direcciones sin usar que una exploración de recuperación tolera antes de dejar de buscar en una rama. |
-| Cartera de solo observación | Un registro de cartera que puede observar la actividad pero carece de las claves locales de firma. Un dispositivo físico puede aportar la firma por separado. |
-| Cartera física | Un dispositivo independiente diseñado para proteger claves y aprobar transacciones compatibles. |
+| Cartera de solo observación | Un registro de cartera que puede observar la actividad pero carece de las claves locales de firma. Un dispositivo de hardware puede aportar la firma por separado. |
+| Cartera de hardware | Un dispositivo independiente diseñado para proteger claves y aprobar transacciones compatibles. |
 | PSBT | Un archivo de transacción de Bitcoin parcialmente firmada que contiene una transacción propuesta e información de firma. |
-| SegWit /es/ Taproot | Formatos de salida y gasto de Bitcoin. Las direcciones nativas de recepción de mainnet suelen comenzar por `bc1q` y `bc1p`, respectivamente. |
+| SegWit / Taproot | Formatos de salida y gasto de Bitcoin. Las direcciones nativas de recepción de mainnet suelen comenzar por `bc1q` y `bc1p`, respectivamente. |
 
 <span id="privacy-and-ginger" data-ginger-heading="privacidad-y-ginger" aria-hidden="true"></span>
 
@@ -90,7 +90,7 @@ Lightning, los canales de pago, la construcción de multifirma, la configuració
 | Tor | Un sistema de retransmisión de red que ayuda a separar las conexiones de una aplicación de la dirección IP del usuario. |
 | Filtro de bloques | Un resumen compacto usado para identificar bloques que puedan contener transacciones relevantes para la cartera antes de procesar esos bloques localmente. |
 | Nodo completo | Software que valida datos de Bitcoin según sus reglas de consenso. Cumple una función distinta de la de un coordinador de CoinJoin. |
-| PayJoin | Un pago colaborativo en el que el receptor puede aportar una entrada. El procedimiento de envío publicado de Ginger tiene límites de compatibilidad y un pago alternativo. |
+| PayJoin | Un pago colaborativo en el que el receptor puede aportar una entrada. El procedimiento de envío publicado de Ginger tiene límites de compatibilidad e incluye un mecanismo para recurrir a un pago normal. |
 | Discreet Mode | La ocultación de campos sensibles compatibles en pantalla, no cifrado ni un bloqueo de cartera. |
 | KYC | El proceso de verificación de identidad de un proveedor. Tor no oculta la información que se le envía directamente. |
 | Moneda fiduciaria | La moneda emitida por un gobierno, usada para cotizaciones o estimaciones visualizadas; es distinta de los BTC liquidados en cadena. |

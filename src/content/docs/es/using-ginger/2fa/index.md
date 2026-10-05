@@ -55,7 +55,7 @@ No des por hecho que los archivos copiados antes de la configuración o antes de
 
 ## Uso cotidiano y desactivación
 
-Al iniciar, introduce el código actual del autenticador. Una vez cargada la aplicación, las frases de contraseña de las carteras individuales y las aprobaciones de los dispositivos físicos siguen cumpliendo sus propias funciones. Un ordenador que ya esté desbloqueado sigue siendo un riesgo de seguridad.
+Al iniciar, introduce el código actual del autenticador. Una vez cargada la aplicación, las frases de contraseña de las carteras individuales y las aprobaciones de los dispositivos de hardware siguen cumpliendo sus propias funciones. Un ordenador que ya esté desbloqueado sigue siendo un riesgo de seguridad.
 
 Para desactivar 2FA mientras tienes acceso, abre **Settings** → **Security** y desactiva **Two-factor authentication**. Ginger elimina el cifrado adicional de los archivos de cartera y su asociación local con 2FA. La protección habitual mediante la frase de contraseña de las carteras de software es independiente y sigue siendo relevante. Haz una copia de los archivos resultantes si tu procedimiento de copia de seguridad depende de su estado de cifrado actual.
 

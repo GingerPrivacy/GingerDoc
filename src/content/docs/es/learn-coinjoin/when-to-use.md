@@ -19,11 +19,11 @@ CoinJoin es útil cuando reducir la información sobre vínculos entre transacci
 
 Por ejemplo, quizá quieras que un futuro destinatario de un pago tenga menos visibilidad directa del historial de una recepción identificada anteriormente. Anota quién ya conoce esa recepción y qué revelará tu próximo pago. CoinJoin puede cambiar el problema de vínculos entre transacciones entre ambos momentos, pero no puede deshacer la primera divulgación ni impedir la segunda.
 
-Si tu objetivo es simplemente proteger las claves mientras conservas bitcoin, una copia recuperable y un procedimiento adecuado de cartera física abordan ese problema más directamente. Si te preocupa una dirección pública de recepción reutilizada para todas las facturas, deja primero de reutilizarla; usar CoinJoin después no hace privadas las recepciones antiguas.
+Si tu objetivo es simplemente proteger las claves mientras conservas bitcoin, una copia recuperable y un procedimiento adecuado de cartera de hardware abordan ese problema más directamente. Si te preocupa una dirección pública de recepción reutilizada para todas las facturas, deja primero de reutilizarla; usar CoinJoin después no hace privadas las recepciones antiguas.
 
-<span id="compare-the-tradeoffs" data-ginger-heading="compara-los-compromisos" aria-hidden="true"></span>
+<span id="compare-the-tradeoffs" data-ginger-heading="compara-las-ventajas-e-inconvenientes" aria-hidden="true"></span>
 
-## Compara los compromisos
+## Compara las ventajas e inconvenientes
 
 | Situación | Decisión que considerar |
 | --- | --- |
@@ -31,10 +31,10 @@ Si tu objetivo es simplemente proteger las claves mientras conservas bitcoin, un
 | Un pago vence inmediatamente | La finalización de CoinJoin no está programada; evita depender de una ronda para cumplir un plazo exacto |
 | Gastos a largo plazo desde una fuente identificada | Considera cómo funcionan conjuntamente CoinJoin, las direcciones de recepción separadas y la selección posterior de monedas |
 | Un proveedor requiere identidad y prueba de dirección | Esa divulgación directa permanece; comprueba si CoinJoin cambia la información que te importa |
-| El destino es una cartera física | Verifica la cuenta receptora y el procedimiento de destino publicado; no importes las palabras de recuperación del dispositivo en una cartera conectada |
+| El destino es una cartera de hardware | Verifica la cuenta receptora y el procedimiento de destino publicado; no importes las palabras de recuperación del dispositivo en una cartera conectada |
 | No puedes mantener disponible el ordenador | La participación automática necesita conectividad y capacidad de firma desbloqueada durante la ronda |
 
-Son compromisos, no una recomendación de mover un importe concreto ni una garantía de resultado financiero. Usa un importe pequeño y manejable para aprender el procedimiento y conciliar las comisiones antes de aumentar la exposición.
+Son ventajas e inconvenientes que sopesar, no una recomendación de mover un importe concreto ni una garantía de resultado financiero. Usa un importe pequeño y manejable para aprender el procedimiento y conciliar las comisiones antes de aumentar la exposición.
 
 <span id="set-a-cost-and-attention-budget" data-ginger-heading="establece-un-presupuesto-de-coste-y-atención" aria-hidden="true"></span>
 

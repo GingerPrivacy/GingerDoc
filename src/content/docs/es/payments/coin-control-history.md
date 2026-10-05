@@ -27,11 +27,11 @@ Mantén etiquetas que expliquen de dónde proceden los fondos o quién ya los co
 
 ## Consolidación y monedas pequeñas
 
-La consolidación gasta varias monedas pequeñas en un número menor de salidas, normalmente hacia una cartera que controlas. Cuesta una comisión ahora y puede reducir el número de entradas necesarias para un pago posterior. También asocia públicamente las entradas seleccionadas. Unas condiciones de comisiones bajas pueden abaratar la consolidación, pero no eliminan ese compromiso de privacidad.
+La consolidación gasta varias monedas pequeñas en un número menor de salidas, normalmente hacia una cartera que controlas. Cuesta una comisión ahora y puede reducir el número de entradas necesarias para un pago posterior. También asocia públicamente las entradas seleccionadas. Unas condiciones de comisiones bajas pueden abaratar la consolidación, pero no eliminan ese coste en privacidad.
 
 No combines automáticamente monedas sin relación solo para tener una lista ordenada. Gastar salidas entrantes muy pequeñas puede resultar antieconómico. El umbral de polvo de Ginger y las exclusiones de CoinJoin abordan situaciones diferentes; excluir una moneda de CoinJoin no impide que la selecciones para un pago normal.
 
-Enviar fondos a tu cartera física mediante **Send** es una transacción normal en cadena. Obtén y verifica una dirección de recepción nueva del dispositivo físico y después revisa la comisión y las monedas seleccionadas de la cartera de software. La propia transferencia sigue siendo visible en la cadena de bloques.
+Enviar fondos a tu cartera de hardware mediante **Send** es una transacción normal en cadena. Obtén y verifica una dirección de recepción nueva del dispositivo de hardware y después revisa la comisión y las monedas seleccionadas de la cartera de software. La propia transferencia sigue siendo visible en la cadena de bloques.
 
 <span id="read-transaction-history" data-ginger-heading="lee-el-historial-de-transacciones" aria-hidden="true"></span>
 

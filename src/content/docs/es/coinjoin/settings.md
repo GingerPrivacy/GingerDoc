@@ -25,7 +25,7 @@ next: false
 | **Ignore coinjoin time preference below** | Permite participar por debajo de este umbral de tasa de comisión incluso cuando la comparación de preferencia temporal indicaría esperar. |
 | **Random Skip** | Selecciona con qué frecuencia se omiten rondas adecuadas. Las opciones son **Disabled**, **Rarely**, **Sometimes** y **Often**. Omitir más rondas generalmente implica esperar más. |
 
-Cuando el reproductor informa de un saldo antieconómico, pulsar reproducción puede eludir el umbral de parada. Eso no elimina las comisiones de transacción. Considera el tamaño de las monedas disponibles y los costes previstos antes de anularlo.
+Cuando el reproductor informa de un saldo antieconómico, pulsar el botón de inicio puede eludir el umbral de parada. Eso no elimina las comisiones de transacción. Considera los importes de las monedas disponibles y los costes previstos antes de anularlo.
 
 <span id="privacy-settings" data-ginger-heading="ajustes-de-privacidad" aria-hidden="true"></span>
 
@@ -43,7 +43,7 @@ Bajar el objetivo puede cambiar inmediatamente lo que la interfaz llama privado 
 
 Abre **Exclude Coins** desde el menú del reproductor de CoinJoin. Revisa la lista de monedas y marca las que quieras excluir de CoinJoin. Vuelve a esta lista para que sean aptas otra vez. La exclusión se aplica a esas monedas; no es una regla permanente para todos los pagos futuros a la misma dirección.
 
-Excluir una moneda de CoinJoin no la bloquea para el gasto normal ni sustituye al almacenamiento en un dispositivo físico. Si todas las monedas disponibles están excluidas, el reproductor puede mostrar **Only excluded funds are available**. Comprueba esta lista antes de cambiar los ajustes de comisiones o privacidad.
+Excluir una moneda de CoinJoin no la bloquea para el gasto normal ni sustituye al almacenamiento en una cartera de hardware. Si todas las monedas disponibles están excluidas, el reproductor puede mostrar **Only excluded funds are available**. Comprueba esta lista antes de cambiar los ajustes de comisiones o privacidad.
 
 <span id="receive-outputs-in-another-wallet" data-ginger-heading="recibe-salidas-en-otra-cartera" aria-hidden="true"></span>
 
@@ -58,7 +58,7 @@ Excluir una moneda de CoinJoin no la bloquea para el gasto normal ni sustituye a
 
 El destino no puede cambiarse durante un CoinJoin activo. **Esta selección se restablece después de reiniciar Ginger**, así que compruébala de nuevo antes de cada sesión en la que importe el destino. Evita configurar dos carteras para enviarse salidas de CoinJoin entre sí; las opciones disponibles restringen las configuraciones recursivas.
 
-La selección de destino de la versión publicada puede incluir una cartera física cargada. El origen sigue siendo la cartera de software que firma el CoinJoin; un destino físico no convierte ese origen en una cartera fría ni permite que la cartera física ejecute CoinJoin por sí misma. Usa únicamente un destino que la aplicación ofrezca realmente y verifica su copia de seguridad y el control de sus direcciones antes de confiar en esta vía.
+La selección de destino de la versión publicada puede incluir una cartera de hardware cargada. El origen sigue siendo la cartera de software que firma el CoinJoin; un destino de hardware no convierte ese origen en una cartera fría ni permite que la cartera de hardware ejecute CoinJoin por sí misma. Usa únicamente un destino que la aplicación ofrezca realmente y verifica su copia de seguridad y el control de sus direcciones antes de confiar en esta vía.
 
 <span id="experimental-coin-selection" data-ginger-heading="selección-experimental-de-monedas" aria-hidden="true"></span>
 
@@ -72,10 +72,10 @@ La versión ofrece **(EXPERIMENTAL) Improved Coin Selection**. Su configuración
 | **Can select already private coins** | Permite que el selector utilice monedas que ya estén por encima del objetivo de privacidad. Esa participación todavía puede generar comisiones de minería. |
 | **Coin privacy difference normalization for score calculation** | Los valores menores favorecen selecciones con puntuaciones de privacidad más próximas entre sí. |
 | **Amount loss normalization for score calculation** | Los valores menores favorecen selecciones con una pérdida relativa de importe menor. |
-| **Target coin number per wallet bucket** | Influye en la selección desde grupos sobrerrepresentados de tamaños de moneda. |
+| **Target coin number per wallet bucket** | Influye en la selección desde grupos sobrerrepresentados de importes de moneda. |
 | **Use the Old Coin Selector for fallback** | Compara los resultados de la selección antigua y la nueva y elige entre ellos. |
 
-Mantén los valores iniciales salvo que comprendas el compromiso que estés cambiando. Son preferencias de selección; no constituyen un límite exacto de la comisión total ni una promesa sobre el número de salidas que producirá una ronda.
+Mantén los valores iniciales salvo que comprendas las ventajas e inconvenientes del cambio. Son preferencias de selección; no constituyen un límite exacto de la comisión total ni una promesa sobre el número de salidas que producirá una ronda.
 
 <span id="when-another-round-cannot-start" data-ginger-heading="cuando-otra-ronda-no-puede-empezar" aria-hidden="true"></span>
 

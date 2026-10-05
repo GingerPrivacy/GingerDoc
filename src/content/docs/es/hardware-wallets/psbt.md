@@ -1,7 +1,7 @@
 ---
 doc_id: "hardware-wallets.psbt"
 title: "Usa el procedimiento PSBT"
-description: "Prepara una transacción de Bitcoin en Ginger, fírmala con una cartera física mediante un archivo e importa el resultado para difundirlo."
+description: "Prepara una transacción de Bitcoin en Ginger, fírmala con una cartera de hardware mediante un archivo e importa el resultado para difundirlo."
 lang: "es"
 verified_release: "v2.0.26"
 reader_level: "advanced"
@@ -9,15 +9,15 @@ prev: false
 next: false
 ---
 
-> Nivel de lectura: Guía avanzada. Establece primero una cartera física verificada y su copia de seguridad independiente.
+> Nivel de lectura: Guía avanzada. Establece primero una cartera de hardware verificada y su copia de seguridad independiente.
 
-Una transacción de Bitcoin parcialmente firmada (PSBT) es un archivo que contiene una transacción y la información necesaria para un firmante. Permite separar la preparación en el ordenador de la firma en una cartera física. Una PSBT puede revelar direcciones, importes e información de cartera, así que trátala como privada incluso antes de que pueda gastar nada.
+Una transacción de Bitcoin parcialmente firmada (PSBT) es un archivo que contiene una transacción y la información necesaria para un firmante. Permite separar la preparación en el ordenador de la firma en una cartera de hardware. Una PSBT puede revelar direcciones, importes e información de cartera, así que trátala como privada incluso antes de que pueda gastar nada.
 
 <span id="prepare-the-wallet-connection" data-ginger-heading="prepara-la-conexión-de-la-cartera" aria-hidden="true"></span>
 
 ## Prepara la conexión de la cartera
 
-Necesitas un registro de cartera física compatible en Ginger, vinculado a las claves del dispositivo de firma. Para una exportación JSON de cartera Coldcard compatible, añade el archivo mediante **Import File**. Usa las instrucciones actuales de exportación del fabricante para ese firmware; un archivo de transacción PSBT no es un archivo de importación de cartera.
+Necesitas un registro de cartera de hardware compatible en Ginger, vinculado a las claves del dispositivo de firma. Para una exportación JSON de cartera Coldcard compatible, añade el archivo mediante **Import File**. Usa las instrucciones actuales de exportación del fabricante para ese firmware; un archivo de transacción PSBT no es un archivo de importación de cartera.
 
 La exportación contiene información pública de cuenta y una huella del dispositivo, no las palabras de recuperación. Verifica que la dirección de recepción de Ginger coincida con la del dispositivo antes de añadir fondos a la cartera. Una cuenta importada con una ruta de derivación o frase de contraseña diferente puede ser una cartera distinta aunque el dispositivo sea el mismo.
 
@@ -25,7 +25,7 @@ La exportación contiene información pública de cuenta y una huella del dispos
 
 ## Exporta una transacción
 
-1. Abre la cartera física en Ginger. En **Wallet Settings** → **General**, activa **PSBT workflow**.
+1. Abre la cartera de hardware en Ginger. En **Wallet Settings** → **General**, activa **PSBT workflow**.
 2. Elige **Send** y prepara el destino y el importe como de costumbre. Revisa las entradas seleccionadas, el cambio y la comisión.
 3. En la vista previa, elige **Save PSBT file** y guarda la transacción propuesta. La alternativa **Send Now** sigue el proceso de firma inmediata en vez de guardar para el procedimiento mediante archivos.
 4. Transfiere el archivo al dispositivo de firma mediante el método que admita, como un medio extraíble. Sigue las instrucciones de ese dispositivo e inspecciona el destino, el importe, la comisión y el cambio en su pantalla de confianza.
@@ -37,7 +37,7 @@ No apruebes una transacción únicamente porque Ginger la haya preparado. El dis
 
 ## Importa y difunde
 
-Vuelve a la cartera física en Ginger y elige **Broadcast**, visible con el procedimiento PSBT. El diálogo de archivos **Import Transaction** acepta archivos de transacción compatibles, incluidos archivos PSBT y de transacciones. Selecciona el resultado firmado e inspecciona la pantalla de difusión antes de enviarlo a la red.
+Vuelve a la cartera de hardware en Ginger y elige **Broadcast**, visible con el procedimiento PSBT. El diálogo de archivos **Import Transaction** acepta archivos de transacción compatibles, incluidos archivos PSBT y de transacciones. Selecciona el resultado firmado e inspecciona la pantalla de difusión antes de enviarlo a la red.
 
 Una PSBT sin firmar o firmada de manera incompleta no puede difundirse como un pago válido. Una firma correcta tampoco garantiza la aceptación si sus entradas ya se han gastado o su comisión ya no cumple las condiciones de la red. Mantén disponible la cartera original, sincroniza y comprueba el historial antes de crear otro pago.
 
@@ -49,4 +49,4 @@ Una vez difundida una transacción, el dispositivo de firma ya no tiene que perm
 
 Usa nombres de archivo que permitan distinguir las propuestas de los resultados firmados. No envíes PSBTs por correo ni las subas a un decodificador en línea para inspeccionar tu propia transacción. Protege también las exportaciones sensibles de cuenta: una clave pública extendida puede revelar muchas direcciones aunque no pueda firmar directamente un gasto.
 
-Este procedimiento documenta la interfaz de carteras físicas de la versión publicada. No establece un coordinador general de multifirma, una API de firma para desarrolladores ni compatibilidad con todos los formatos PSBT producidos por otras aplicaciones.
+Este procedimiento documenta la interfaz de carteras de hardware de la versión publicada. No establece un coordinador general de multifirma, una API de firma para desarrolladores ni compatibilidad con todos los formatos PSBT producidos por otras aplicaciones.

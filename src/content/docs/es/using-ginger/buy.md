@@ -34,7 +34,7 @@ next: false
 
 ## Solicita y compara ofertas
 
-1. Abre la cartera que debe recibir el bitcoin y termina cualquier exploración de recuperación. Elige **Buy**. La acción puede estar disponible aunque la cartera no tenga saldo, incluso en una cartera física.
+1. Abre la cartera que debe recibir el bitcoin y termina cualquier exploración de recuperación. Elige **Buy**. La acción puede estar disponible aunque la cartera no tenga saldo, incluso en una cartera de hardware.
 2. Selecciona tu país y, cuando se solicite, el estado o la región. El servicio determina la disponibilidad, así que usa información exacta en vez de suponer que elegir un país solo sirve para expresar una preferencia de moneda.
 3. En **Buy Bitcoin**, introduce el importe de compra en la moneda seleccionada. Comprueba el símbolo de la moneda y el mínimo o máximo que se muestra para la oferta concreta.
 4. Elige **Continue** para ver **Offers**. Si lo necesitas, filtra por método de pago. Compara el bitcoin estimado que recibirás, el coste total en moneda fiduciaria, las comisiones, el proveedor y el método de pago.

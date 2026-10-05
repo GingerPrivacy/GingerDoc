@@ -36,7 +36,7 @@ Una vez que alguien asocia una dirección con una persona, puede investigar la a
 | Un servicio de red contactado | Contenido de solicitudes y posiblemente metadatos de conexión | Mantén Tor donde sea compatible y comprende las revelaciones específicas de cada función |
 | Alguien con acceso a tu ordenador o respaldos | Archivos, etiquetas, direcciones, registros y posiblemente claves | Protege el dispositivo, el respaldo de recuperación y los metadatos locales |
 
-Ningún ajuste único de cartera aborda todas las filas. Hardware ayuda a proteger las claves, pero no oculta una dirección pública. Tor ayuda con los metadatos de conexión, pero no oculta información escrita en un formulario del proveedor.
+Ningún ajuste único de cartera aborda todas las filas. Una cartera de hardware ayuda a proteger las claves, pero no oculta una dirección pública. Tor ayuda con los metadatos de conexión, pero no oculta información escrita en un formulario del proveedor.
 
 <span id="why-this-matters-in-ordinary-life" data-ginger-heading="por-qué-importa-en-la-vida-cotidiana" aria-hidden="true"></span>
 

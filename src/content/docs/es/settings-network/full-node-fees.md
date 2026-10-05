@@ -44,7 +44,7 @@ La conexión con un nodo remoto tiene su propia exposición de red. Usa un nodo 
 
 **Fee Rate Provider** ofrece **Mempool Space**, **Blockstream Info** y **Full Node**. Los proveedores públicos suministran estimaciones basadas en su visión de las condiciones de la red. La opción del nodo completo necesita una integración operativa entre Ginger y el nodo/RPC; introducir únicamente un punto de conexión P2P no demuestra que esté configurada la estimación de comisiones mediante RPC.
 
-Cuando se selecciona **Full Node** pero el nodo no está disponible, v2.0.26 informa de que la estimación de comisiones no está disponible y sigue permitiendo introducirlas manualmente durante el pago. Puedes esperar al nodo, seleccionar un proveedor de estimaciones que funcione o introducir una tasa en la que tengas motivos para confiar. No uses una comisión enorme como reparación genérica de una conexión.
+Cuando se selecciona **Full Node** pero el nodo no está disponible, v2.0.26 informa de que la estimación de comisiones no está disponible y sigue permitiendo introducir una tasa de comisión manualmente durante el pago. Puedes esperar al nodo, seleccionar un proveedor de estimaciones que funcione o introducir una tasa en la que tengas motivos para confiar. No uses una comisión enorme como reparación genérica de una conexión.
 
 Las estimaciones de comisiones son predicciones, no reservas de espacio en un bloque. Las diferencias entre proveedores pueden reflejar distintas observaciones de la mempool. Revisa la comisión total de la transacción además de la tasa mostrada.
 

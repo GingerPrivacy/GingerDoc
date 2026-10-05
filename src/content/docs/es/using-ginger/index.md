@@ -26,7 +26,7 @@ Empieza con una cartera de la que tengas una copia de seguridad y deja que termi
 | Qué quieres hacer | Guía |
 | --- | --- |
 | Reducir los vínculos entre entradas y salidas de las transacciones | [Usa CoinJoin](/es/using-ginger/coinjoin/) |
-| Mantener las claves de firma en un dispositivo independiente | [Usa una cartera física](/es/using-ginger/hardware-wallet/) |
+| Mantener las claves de firma en un dispositivo independiente | [Usa una cartera de hardware](/es/using-ginger/hardware-wallet/) |
 | Comprender las conexiones de red de la cartera | [Tor y sincronización](/es/using-ginger/tor/) |
 | Comparar ofertas de compra | [Compra bitcoin](/es/using-ginger/buy/) |
 | Intercambiar bitcoin mediante un proveedor | [Vende bitcoin](/es/using-ginger/sell/) |

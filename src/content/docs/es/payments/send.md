@@ -38,7 +38,7 @@ Utiliza una estimación disponible que entiendas. Si no hay estimaciones y no sa
 
 ## El dinero sobrante es cambio
 
-El pago puede utilizar una porción de bitcoin mayor que el importe del destinatario más comisión. El sobrante vuelve a tu cartera como cambio, a veces a una dirección desconocida para ti. Sigues controlándolo; no debes reenviar nada manualmente.
+El pago puede utilizar una porción de bitcoin mayor que el importe del destinatario más comisión. El sobrante vuelve a tu cartera como cambio, a veces a una dirección desconocida para ti. Sigues controlándolo; no necesitas reenviar nada manualmente.
 
 Una sugerencia de privacidad puede modificar el importe propuesto. Acéptala solo si sigue cumpliendo la solicitud del destinatario. En particular, no pagues menos de una factura fija para evitar cambio.
 

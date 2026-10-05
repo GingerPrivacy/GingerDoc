@@ -23,7 +23,7 @@ Si utilizaste un número inusualmente grande de direcciones de recepción sin us
 
 Una cartera creada originalmente por otra aplicación puede utilizar distintos tipos de dirección, cuentas o rutas de derivación. Las palabras BIP39 no garantizan que todas las carteras descubran todas las cuentas. Para las cuentas mainnet estándar de Ginger, SegWit nativo utiliza `m/84'/0'/0'` y Taproot `m/86'/0'/0'`. La recuperación avanzada en otra aplicación debe admitir la cuenta y el tipo de dirección correspondientes. Mantén la recuperación de hardware en un dispositivo de hardware siempre que sea posible.
 
-Ginger no ofrece recuperación de participaciones SLIP39 en esta versión. No introduzcas una colección de participaciones como si fuera una sola lista BIP39.
+Ginger no ofrece recuperación mediante fragmentos de recuperación SLIP39 en esta versión. No introduzcas un conjunto de esos fragmentos como si fuera una sola lista BIP39.
 
 <span id="import-a-file" data-ginger-heading="importa-un-archivo" aria-hidden="true"></span>
 

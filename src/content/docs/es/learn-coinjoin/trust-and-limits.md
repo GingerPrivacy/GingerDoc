@@ -22,7 +22,7 @@ Antes de participar, identifica tu objetivo: quizá quieras que un destinatario 
 | Pregunta | Protección y supuesto | Qué no demuestra |
 | --- | --- | --- |
 | ¿Quién puede gastar? | Tu cartera firma sus entradas después de comprobar la transacción propuesta. El coordinador no necesita tus palabras de recuperación. | Protección frente a claves robadas, malware o una transacción que autorices conscientemente al destino equivocado |
-| ¿Quién puede vincular las entradas y salidas? | WabiSabi usa credenciales anónimas para dificultar las relaciones entre registros. Los datos públicos de la transacción y otras observaciones siguen existiendo. | Una garantía incondicional frente a un coordinador malicioso, participantes que colaboren contra ti o información externa |
+| ¿Quién puede vincular las entradas y salidas? | WabiSabi usa credenciales anónimas para ocultar las relaciones entre registros. Los datos públicos de la transacción y otras observaciones siguen existiendo. | Una garantía incondicional frente a un coordinador malicioso, participantes que colaboren contra ti o información externa |
 | ¿Quién puede detener el progreso? | Una participación correcta necesita que el coordinador, la red y suficientes participantes que cooperen completen la ronda. | Un tiempo de finalización reservado o un derecho a participar en todas las rondas ofrecidas |
 | ¿Qué software estoy ejecutando? | El código abierto permite inspeccionar; verificar la descarga ayuda a establecer el origen y la integridad del archivo que obtuviste. | Una prueba de que todas las compilaciones estén libres de errores, que tu ordenador no esté comprometido o que un servicio remoto ejecute exactamente el código publicado |
 
@@ -66,6 +66,6 @@ Un rechazo o una ronda fallida no son, por sí solos, pruebas de un ataque ni un
 4. Conserva material de recuperación independiente. Nunca entregues a un coordinador o contacto de soporte tus palabras, frase de contraseña o claves privadas para «desbloquear» una ronda.
 5. Revisa el resultado y los gastos posteriores. Una dirección nueva y una puntuación alta no pueden deshacer una nueva divulgación a un destinatario identificado.
 
-Un nodo propio de Bitcoin es útil para las funciones que realmente realiza, como suministrar bloques o estimaciones de comisiones cuando está configurado. No sustituye al coordinador de CoinJoin ni demuestra que los participantes sean independientes. Una cartera física aísla las claves, pero no hace privado el grafo de transacciones.
+Un nodo propio de Bitcoin es útil para las funciones que realmente realiza, como suministrar bloques o estimaciones de comisiones cuando está configurado. No sustituye al coordinador de CoinJoin ni demuestra que los participantes sean independientes. Una cartera de hardware aísla las claves, pero no hace privado el grafo de transacciones.
 
 Para el modelo básico de transacción, lee [CoinJoin explicado](/es/learn-coinjoin/explained/). Para decidir si encaja con un propósito concreto, lee [Cuándo es útil CoinJoin](/es/learn-coinjoin/when-to-use/). Trata las afirmaciones contundentes sobre productos como preguntas que investigar: ¿qué observador, qué supuestos, qué versión del software y qué pruebas?

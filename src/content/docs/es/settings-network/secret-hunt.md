@@ -21,7 +21,7 @@ Abre el menú de una cartera de software y elige **Secret Hunt**. El diálogo mu
 
 Usa **Enable/disable the use of this wallet for Secret Hunt.** para controlar la participación de esa cartera. El valor predeterminado de la versión publicada es activado. Desactivarlo vacía el árbol mostrado en la vista desactivada y evita que el actualizador seleccione esa cartera para las comprobaciones de admisibilidad de eventos. No cancela CoinJoin, borra transacciones de la cadena de bloques ni elimina información ya enviada a un servicio.
 
-La entrada no se ofrece para carteras de solo observación. No es una función de CoinJoin de carteras físicas y no requiere introducir palabras de recuperación en un sitio web de eventos.
+La entrada no se ofrece para carteras de solo observación. No es una función de CoinJoin de carteras de hardware y no requiere introducir palabras de recuperación en un sitio web de eventos.
 
 <span id="what-is-shared" data-ginger-heading="qué-se-comparte" aria-hidden="true"></span>
 

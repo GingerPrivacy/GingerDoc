@@ -44,7 +44,7 @@ Las palabras restauran las claves, no todas las notas privadas ni cada elemento 
 
 ### ¿Puedo utilizar las mismas palabras de recuperación en dos aplicaciones?
 
-Las aplicaciones compatibles pueden controlar las mismas claves, pero eso no crea una cartera nueva ni revoca la información compartida con la aplicación anterior. La segunda aplicación puede revelar direcciones o una clave pública extendida a sus servicios, y gastar simultáneamente desde ambas puede generar confusión sobre qué monedas siguen disponibles. No escribas palabras de recuperación de un dispositivo físico en el ordenador simplemente para conectar un dispositivo.
+Las aplicaciones compatibles pueden controlar las mismas claves, pero eso no crea una cartera nueva ni revoca la información compartida con la aplicación anterior. La segunda aplicación puede revelar direcciones o una clave pública extendida a sus servicios, y gastar simultáneamente desde ambas puede generar confusión sobre qué monedas siguen disponibles. No escribas palabras de recuperación de un dispositivo de hardware en el ordenador simplemente para conectar un dispositivo.
 
 <span id="what-does-an-exposed-address-or-xpub-allow-someone-to-do" data-ginger-heading="qué-permite-hacer-a-alguien-una-dirección-o-un-xpub-expuestos" aria-hidden="true"></span>
 
@@ -164,7 +164,7 @@ Una cartera de software elegible puede seleccionar una cartera de hardware ofrec
 
 ### ¿Un nodo propio sustituye todos los servicios de Ginger o hace innecesario Tor?
 
-No. Un nodo configurado cumple funciones concretas, como suministrar bloques o estimaciones de comisión, mientras CoinJoin y los flujos opcionales de proveedores o 2FA siguen contactando sus servicios. Tor aborda la exposición de conexión, mientras un servicio receptor sigue viendo el contenido de la solicitud. Revisa el flujo específico en lugar de suponer que configurar un nodo implica ausencia de solicitudes externas.
+No. Un nodo configurado puede cumplir funciones concretas, como suministrar bloques o estimaciones de comisión, mientras CoinJoin y los flujos opcionales de proveedores o 2FA pueden seguir contactando sus servicios. Tor aborda la exposición de conexión, mientras un servicio receptor sigue viendo el contenido de la solicitud. Revisa el flujo específico en lugar de suponer que configurar un nodo implica ausencia de solicitudes externas.
 
 <span id="does-payjoin-hide-my-payment-from-its-recipient" data-ginger-heading="payjoin-oculta-mi-pago-al-destinatario" aria-hidden="true"></span>
 

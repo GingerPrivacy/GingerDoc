@@ -1,6 +1,6 @@
 ---
-title: "Ginger Wallet frente a Wasabi Wallet: configuración, comisiones y compromisos"
-description: "Compara la configuración del coordinador, los costes de CoinJoin, los procedimientos de carteras físicas y los límites de privacidad de Ginger y Wasabi para elegir lo que mejor se adapte a ti."
+title: "Ginger Wallet frente a Wasabi Wallet: configuración, comisiones y ventajas e inconvenientes"
+description: "Compara la configuración del coordinador, los costes de CoinJoin, los procedimientos de carteras de hardware y los límites de privacidad de Ginger y Wasabi para elegir lo que mejor se adapte a ti."
 doc_id: "compare.ginger-vs-wasabi"
 lang: "es"
 verified_release: "v2.0.26"
@@ -25,8 +25,8 @@ Ginger Wallet y Wasabi Wallet son carteras de escritorio de Bitcoin de código a
 | ¿Qué debo configurar para CoinJoin? | La conexión con el coordinador está incluida; revisa los ajustes de cartera antes de empezar. | Elige y configura un coordinador compatible y después revisa los ajustes de cartera. |
 | ¿Hay comisión del coordinador? | Normalmente el 0.3% del valor total de cada entrada sujeta a comisión; las entradas de 0.03 BTC o menos y las remezclas aptas están exentas. | El cliente actual acepta rondas sin comisión del coordinador. |
 | ¿Puede haber otros costes? | Sí: comisiones de minería y posibles pequeños remanentes no devueltos. | Sí: comisiones de minería y posibles pequeños remanentes no devueltos. |
-| ¿Pueden las claves guardadas en un dispositivo físico firmar entradas de CoinJoin? | No mediante el procedimiento habitual de carteras físicas de esta versión. | No mediante el procedimiento actual de carteras físicas. |
-| ¿Pueden ir las salidas de CoinJoin a un dispositivo físico? | Sí, mediante una cartera física compatible cargada como destino de las salidas. | Sí, mediante CoinJoin-to-wallet con una cartera compatible cargada. |
+| ¿Pueden las claves guardadas en un dispositivo de hardware firmar entradas de CoinJoin? | No mediante el procedimiento habitual de carteras de hardware de esta versión. | No mediante el procedimiento actual de carteras de hardware. |
+| ¿Pueden ir las salidas de CoinJoin a un dispositivo de hardware? | Sí, mediante una cartera de hardware compatible cargada como destino de las salidas. | Sí, mediante CoinJoin-to-wallet con una cartera compatible cargada. |
 
 Las secciones siguientes explican las condiciones que hay detrás de estas diferencias y enlazan la documentación pertinente.
 
@@ -73,7 +73,7 @@ Para una entrada sin otra exención:
 | Valor de la entrada | Comisión del coordinador | Comisión de minería |
 | --- | --- | --- |
 | 0.03 BTC | 0 satoshis | Adicional |
-| 0.10 BTC | 0.0003 BTC, o 30,000 satoshis | Adicional |
+| 0.10 BTC | 0.0003 BTC, o 30 000 satoshis | Adicional |
 
 Estos ejemplos explican el cálculo; no son cotizaciones para rondas futuras. Las reglas completas y más ejemplos están en [Comisiones de CoinJoin y progreso de privacidad](/es/using-ginger/annonset/).
 
@@ -81,7 +81,7 @@ Estos ejemplos explican el cálculo; no son cotizaciones para rondas futuras. La
 
 ### Política de comisiones del coordinador de Wasabi
 
-Wasabi acepta únicamente rondas sin comisión del coordinador desde la versión 2.2.0.0. Las comisiones de minería siguen pagándose. Su documentación también describe remanentes poco frecuentes de distribución de salidas de hasta 10,000 satoshis por CoinJoin que recibe el coordinador. Consulta la [explicación de comisiones de Wasabi](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
+Wasabi acepta únicamente rondas sin comisión del coordinador desde la versión 2.2.0.0. Las comisiones de minería siguen pagándose. Su documentación también describe remanentes poco frecuentes de distribución de salidas de hasta 10 000 satoshis por CoinJoin que recibe el coordinador. Consulta la [explicación de comisiones de Wasabi](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
 
 <span id="budget-beyond-the-headline-percentage" data-ginger-heading="presupuesta-más-allá-del-porcentaje-anunciado" aria-hidden="true"></span>
 
@@ -91,15 +91,15 @@ Ginger también puede dejar un pequeño remanente al distribuir los importes de 
 
 Una comisión del coordinador de cero es uno de los componentes de la comparación. El tamaño de la transacción, las tasas de comisiones de minería, la distribución de salidas y el número de rondas completadas afectan a lo que gastas finalmente. La [guía de costes](/es/using-ginger/annonset/) explica cómo conciliar esos importes.
 
-<span id="hardware-wallets-signing-inputs-and-receiving-outputs-are-different" data-ginger-heading="carteras-físicas-firmar-entradas-y-recibir-salidas-son-cosas-diferentes" aria-hidden="true"></span>
+<span id="hardware-wallets-signing-inputs-and-receiving-outputs-are-different" data-ginger-heading="carteras-de-hardware-firmar-entradas-y-recibir-salidas-son-cosas-diferentes" aria-hidden="true"></span>
 
-## Carteras físicas: firmar entradas y recibir salidas son cosas diferentes
+## Carteras de hardware: firmar entradas y recibir salidas son cosas diferentes
 
-Ambas aplicaciones admiten carteras físicas para recibir y firmar pagos normales. Sus procedimientos documentados de CoinJoin requieren una cartera de software para firmar las entradas participantes; el dispositivo físico no puede ser ese origen de firma. Consulta la [compatibilidad de Ginger con carteras físicas](/es/using-ginger/hardware-wallet/) y la [guía de carteras físicas de Wasabi](https://docs.wasabiwallet.io/using-wasabi/ColdWasabi.html).
+Ambas aplicaciones admiten carteras de hardware para recibir y firmar pagos normales. Sus procedimientos documentados de CoinJoin requieren una cartera de software para firmar las entradas participantes; el dispositivo de hardware no puede ser ese origen de firma. Consulta la [compatibilidad de Ginger con carteras de hardware](/es/using-ginger/hardware-wallet/) y la [guía de carteras de hardware de Wasabi](https://docs.wasabiwallet.io/using-wasabi/ColdWasabi.html).
 
-Recibir las monedas resultantes es una operación independiente. Ambas permiten seleccionar otra cartera compatible y cargada como destino de las salidas de CoinJoin, incluida una cartera física. Esto puede evitar una transferencia independiente después de la ronda. **No** significa que el dispositivo físico haya firmado las entradas de CoinJoin ni que las salidas hayan alcanzado necesariamente tu objetivo de privacidad antes de llegar allí.
+Recibir las monedas resultantes es una operación independiente. Ambas permiten seleccionar otra cartera compatible y cargada como destino de las salidas de CoinJoin, incluida una cartera de hardware. Esto puede evitar una transferencia independiente después de la ronda. **No** significa que el dispositivo de hardware haya firmado las entradas de CoinJoin ni que las salidas hayan alcanzado necesariamente tu objetivo de privacidad antes de llegar allí.
 
-En Ginger, revisa de nuevo el destino después de reiniciar porque la selección se restablece. Mantén copias de seguridad independientes para el origen de software y el destino físico. Nunca introduzcas las palabras de recuperación de una cartera física en la aplicación de escritorio para activar CoinJoin.
+En Ginger, revisa de nuevo el destino después de reiniciar porque la selección se restablece. Mantén copias de seguridad independientes para el origen de software y el destino de hardware. Nunca introduzcas las palabras de recuperación de una cartera de hardware en la aplicación de escritorio para activar CoinJoin.
 
 Sigue la [guía de almacenamiento en frío de Ginger](/es/hardware-wallets/exchange-to-cold-storage/) o la [explicación de CoinJoin-to-wallet de Wasabi](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#can-i-coinjoin-to-another-wallet) para conocer el procedimiento compatible y sus condiciones.
 
@@ -119,4 +119,4 @@ El operador de Ginger, InvisibleBit LLC, publica restricciones del servicio, inc
 
 **Merece la pena considerar Wasabi si prefieres elegir un coordinador y necesitas rondas sin comisión del coordinador.** Comprueba el operador y los costes completos de transacción antes de empezar.
 
-Si tu necesidad principal es recibir, conservar y enviar bitcoin con una cartera física, compara primero los dispositivos compatibles y los procedimientos normales de pago. CoinJoin es opcional; su utilidad depende de qué información quieras proteger y de cómo gastarás las monedas resultantes.
+Si tu necesidad principal es recibir, conservar y enviar bitcoin con una cartera de hardware, compara primero los dispositivos compatibles y los procedimientos normales de pago. CoinJoin es opcional; su utilidad depende de qué información quieras proteger y de cómo gastarás las monedas resultantes.

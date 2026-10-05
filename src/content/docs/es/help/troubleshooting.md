@@ -1,7 +1,7 @@
 ---
 doc_id: "help.troubleshooting"
 title: "Resuelve problemas de Ginger Wallet"
-description: "Diagnostica saldos ausentes, problemas de conexión, estados de espera de CoinJoin, fallos de 2FA y problemas de dispositivos físicos conservando los datos de recuperación."
+description: "Diagnostica saldos ausentes, problemas de conexión, estados de espera de CoinJoin, fallos de 2FA y problemas de dispositivos de hardware conservando los datos de recuperación."
 lang: "es"
 verified_release: "v2.0.26"
 reader_level: "everyday"
@@ -44,7 +44,7 @@ Si usas **Wallet Settings** → **Tools** → **Resync**, conserva primero las c
 
 | Mensaje o condición | Acción probable |
 | --- | --- |
-| **Insufficient funds eligible for coinjoin** | Inspecciona las confirmaciones, los tamaños de las monedas, las comisiones y las exclusiones; el saldo total por sí solo no demuestra admisibilidad |
+| **Insufficient funds eligible for coinjoin** | Inspecciona las confirmaciones, los importes de las monedas, las comisiones y las exclusiones; el saldo total por sí solo no demuestra admisibilidad |
 | **Only excluded funds are available** | Revisa **Exclude Coins** si quieres que participen algunas monedas |
 | **Only immature funds are available** | Espera la madurez requerida; las salidas recién minadas tienen reglas especiales de gasto |
 | **Some funds are rejected from coinjoining** | Lee el motivo correspondiente y las condiciones actuales del servicio; un rechazo no transfiere la propiedad de tus fondos |
@@ -53,7 +53,7 @@ Si usas **Wallet Settings** → **Tools** → **Resync**, conserva primero las c
 | **Awaiting the blame round** | Espera el reintento del protocolo; no es una instrucción para culpar a otro usuario |
 | **Awaiting closure of send dialog** | Termina o cierra el proceso de envío |
 | **Mining fee rate was too high** o **Coordination fee rate was too high** | Espera o investiga las condiciones ofrecidas; no subas los límites sin examinarlos |
-| Una cartera física como origen | La firma de CoinJoin automático requiere una cartera de software apta |
+| Una cartera de hardware como origen | La firma de CoinJoin automático requiere una cartera de software apta |
 
 Los participantes de una ronda pueden no terminar, o una moneda puede quedar temporalmente no disponible después de una participación interrumpida. Los reintentos repetidos, las importaciones o los intentos de eludir un rechazo del coordinador no son una reparación. Usa el motivo y el estado actual para decidir si debes esperar o contactar con el soporte oficial.
 
@@ -65,18 +65,18 @@ Cuando las estimaciones de comisiones no estén disponibles, espera, repara la c
 
 Usa **Speed Up Transaction** o **Cancel Transaction** únicamente cuando Ginger lo ofrezca y después de revisar la comisión. La cancelación es un intento de sustituir un pago pendiente, no una reversión de un pago confirmado. Después de un resultado incierto de difusión, comprueba el historial antes de pagar dos veces.
 
-<span id="2fa-and-hardware" data-ginger-heading="2fa-y-dispositivos-físicos" aria-hidden="true"></span>
+<span id="2fa-and-hardware" data-ginger-heading="2fa-y-dispositivos-de-hardware" aria-hidden="true"></span>
 
-## 2FA y dispositivos físicos
+## 2FA y dispositivos de hardware
 
 Si se rechaza un código del autenticador, comprueba la hora del teléfono, la entrada seleccionada, la compatibilidad del autenticador con Ginger y la conectividad de Tor y del servicio. Conserva los archivos existentes de cartera y 2FA. Si no se puede restablecer el inicio habitual, las palabras de recuperación junto con la frase de contraseña original son la copia independiente de las claves; reinstalar sobre los mismos datos no recrea un autenticador perdido. Las [preguntas frecuentes avanzadas](/es/help/advanced-faq/#does-the-2fa-file-recover-the-wallet-without-the-service) explican la dependencia del archivo.
 
-Para la detección del dispositivo, usa una sola cartera física desbloqueada, un cable de datos y un puerto USB directo, con las aplicaciones que compitan por el dispositivo cerradas. Completa los pasos requeridos de aplicación de Bitcoin, PIN o frase de contraseña en el propio dispositivo. En Linux, comprueba los permisos USB del fabricante. Mantén la semilla del dispositivo fuera del ordenador.
+Para la detección del dispositivo, usa una sola cartera de hardware desbloqueada, un cable de datos y un puerto USB directo, con las aplicaciones que compitan por el dispositivo cerradas. Completa los pasos requeridos de aplicación de Bitcoin, PIN o frase de contraseña en el propio dispositivo. En Linux, comprueba los permisos USB del fabricante. Mantén la semilla del dispositivo fuera del ordenador.
 
 <span id="report-a-useful-issue" data-ginger-heading="informa-de-un-problema-de-forma-útil" aria-hidden="true"></span>
 
 ## Informa de un problema de forma útil
 
-Usa los enlaces del [repositorio oficial de Ginger](https://github.com/GingerPrivacy/GingerWallet/issues). Incluye la versión publicada, el sistema operativo y el procesador, el error exacto, el resultado esperado y los pasos más breves que lo reproduzcan sin secretos. Menciona el modelo y el firmware del dispositivo físico cuando sean relevantes.
+Usa los enlaces del [repositorio oficial de Ginger](https://github.com/GingerPrivacy/GingerWallet/issues). Incluye la versión publicada, el sistema operativo y el procesador, el error exacto, el resultado esperado y los pasos más breves que lo reproduzcan sin secretos. Menciona el modelo y el firmware del dispositivo de hardware cuando sean relevantes.
 
 La acción de búsqueda **Logs** de Ginger abre los registros de diagnóstico. Inspecciona y oculta datos antes de compartir: las rutas, direcciones, identificadores de transacción, etiquetas e información de órdenes pueden ser sensibles. Comparte un fragmento pertinente mínimo, no toda la carpeta de datos. Una incidencia pública es pública; ninguna solicitud de soporte debería requerir tus palabras de recuperación o tu frase de contraseña.

@@ -1,7 +1,7 @@
 ---
 doc_id: "hardware-wallets.connect"
-title: "Conecta y usa una cartera física"
-description: "Conecta una cartera física compatible con Ginger, verifica las direcciones de recepción en el dispositivo y aprueba los pagos de forma segura."
+title: "Conecta y usa una cartera de hardware"
+description: "Conecta una cartera de hardware compatible con Ginger, verifica las direcciones de recepción en el dispositivo y aprueba los pagos de forma segura."
 lang: "es"
 verified_release: "v2.0.26"
 reader_level: "everyday"
@@ -13,7 +13,7 @@ next: false
 
 > Nivel de lectura: Uso cotidiano. Elige esta guía cuando necesites realizar la tarea que describe.
 
-Una cartera física conserva las claves de firma en un dispositivo independiente. Ginger puede mostrar su saldo y preparar transacciones, mientras que el dispositivo autoriza las operaciones de firma compatibles. El ordenador sigue manejando información pública sensible, por lo que guardar las claves en un dispositivo físico no hace que la actividad de la cartera sea anónima.
+Una cartera de hardware conserva las claves de firma en un dispositivo independiente. Ginger puede mostrar su saldo y preparar transacciones, mientras que el dispositivo autoriza las operaciones de firma compatibles. El ordenador sigue manejando información pública sensible, por lo que guardar las claves en un dispositivo de hardware no hace que la actividad de la cartera sea anónima.
 
 <span id="compatibility-in-this-release" data-ginger-heading="compatibilidad-en-esta-versión" aria-hidden="true"></span>
 
@@ -29,7 +29,7 @@ Antes de mover una cantidad considerable de fondos, confirma que tu dispositivo 
 
 ## Añade el dispositivo
 
-1. Inicializa la cartera física y haz una copia de seguridad siguiendo las instrucciones del fabricante. Usa un firmware de confianza y un cable USB capaz de transmitir datos.
+1. Inicializa la cartera de hardware y haz una copia de seguridad siguiendo las instrucciones del fabricante. Usa un firmware de confianza y un cable USB capaz de transmitir datos.
 2. Conecta un solo dispositivo cada vez, desbloquéalo y abre su aplicación de Bitcoin si la necesita. Cierra las demás aplicaciones de cartera que puedan estar ocupando la conexión USB.
 3. En la pantalla de Ginger para añadir carteras, elige **Hardware Wallet** y proporciona un nombre para la cartera si se te solicita.
 4. Sigue las indicaciones de detección y del dispositivo. Ginger puede reconocer una cartera que ya añadiste y ofrecerte abrirla en vez de crear un duplicado.
@@ -49,7 +49,7 @@ El ordenador puede mostrar una dirección aparentemente válida aunque esté com
 
 ## Envía y aprueba
 
-Prepara un pago en Ginger y revisa el destinatario, el importe, el cambio y la comisión. En la cartera física, examina lo que se te pide firmar. Rechaza la solicitud si el destino o el importe difieren de lo que querías, o si el dispositivo informa de una condición relativa al cambio o a las salidas que no puedas explicar.
+Prepara un pago en Ginger y revisa el destinatario, el importe, el cambio y la comisión. En la cartera de hardware, examina lo que se te pide firmar. Rechaza la solicitud si el destino o el importe difieren de lo que querías, o si el dispositivo informa de una condición relativa al cambio o a las salidas que no puedas explicar.
 
 Mantén el dispositivo conectado hasta que termine la firma. Después, comprueba la difusión y la confirmación en el historial de transacciones de Ginger. Retirar un dispositivo no cancela una transacción que ya se haya difundido.
 
@@ -57,11 +57,11 @@ Mantén el dispositivo conectado hasta que termine la firma. Después, comprueba
 
 ## CoinJoin y otras limitaciones
 
-Una cartera física no puede ser la cartera de origen que firma para el CoinJoin automático de Ginger. Una cartera física cargada puede aparecer como destino de las salidas de CoinJoin de una cartera de software; esa es una función de recepción, y su selección se restablece al reiniciar. Usa únicamente el destino que Ginger ofrezca realmente y verifica que lo controlas antes de confiar en él.
+Una cartera de hardware no puede ser la cartera de origen que firma para el CoinJoin automático de Ginger. Una cartera de hardware cargada puede aparecer como destino de las salidas de CoinJoin de una cartera de software; esa es una función de recepción, y su selección se restablece al reiniciar. Usa únicamente el destino que Ginger ofrezca realmente y verifica que lo controlas antes de confiar en él.
 
 La [guía del exchange al almacenamiento en frío](/es/hardware-wallets/exchange-to-cold-storage/) compara la recepción directa de las salidas aptas de CoinJoin con una transferencia normal posterior. Incluye la restricción de inicio para carteras que solo tienen monedas privadas y las comprobaciones para conciliar las dos carteras.
 
-En esta versión se rechaza el envío de PayJoin desde carteras físicas. La firma de mensajes depende de la compatibilidad del dispositivo y del verificador. Ni el dispositivo ni Ginger pueden revertir un pago confirmado. Para firmar mediante archivos, lee [Usa el procedimiento PSBT](/es/hardware-wallets/psbt/).
+En esta versión se rechaza el envío de PayJoin desde carteras de hardware. La firma de mensajes depende de la compatibilidad del dispositivo y del verificador. Ni el dispositivo ni Ginger pueden revertir un pago confirmado. Para firmar mediante archivos, lee [Usa el procedimiento PSBT](/es/hardware-wallets/psbt/).
 
 <span id="connection-problems" data-ginger-heading="problemas-de-conexión" aria-hidden="true"></span>
 

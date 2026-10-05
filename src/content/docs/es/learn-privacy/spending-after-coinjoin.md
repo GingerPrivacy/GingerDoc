@@ -27,14 +27,14 @@ La selección automática y las sugerencias de Ginger también pueden ayudar. El
 
 ## Ejemplo 1: una moneda cubre una compra
 
-Alex tiene una moneda de 120,000 satoshis procedente de CoinJoin y quiere pagar 70,000 satoshis. Supongamos que la comisión es de 1,000 satoshis.
+Alex tiene una moneda de 120 000 satoshis procedente de CoinJoin y quiere pagar 70 000 satoshis. Supongamos que la comisión es de 1 000 satoshis.
 
 | Parte de la transacción | Importe |
 | --- | --- |
-| Entrada gastada | 120,000 sats |
-| El comerciante recibe | 70,000 sats |
-| El cambio vuelve a Alex | 49,000 sats |
-| Comisión de minería | 1,000 sats |
+| Entrada gastada | 120 000 sats |
+| El comerciante recibe | 70 000 sats |
+| El cambio vuelve a Alex | 49 000 sats |
+| Comisión de minería | 1 000 sats |
 
 El comerciante conoce su dirección de pago y el importe. Puede inspeccionar la transacción e inferir que la otra salida es el cambio de Alex. El comerciante no conoce todo el saldo de la cartera de Alex solo por esta transacción, pero puede ver la entrada y seguir el gasto posterior del probable cambio.
 
@@ -44,7 +44,7 @@ Alex no necesita devolver ese cambio manualmente: ya pertenece a su cartera. El 
 
 ## Ejemplo 2: se combinan dos recepciones sin relación
 
-Blair tiene una moneda de 90,000 satoshis asociada a trabajo autónomo y una moneda de 80,000 satoshis asociada a una dirección pública de donaciones. Un pago de 150,000 satoshis con una comisión de 2,000 satoshis necesita más valor que cualquiera de las monedas por separado; usar ambas devuelve 18,000 satoshis de cambio.
+Blair tiene una moneda de 90 000 satoshis asociada a trabajo autónomo y una moneda de 80 000 satoshis asociada a una dirección pública de donaciones. Un pago de 150 000 satoshis con una comisión de 2 000 satoshis necesita más valor que cualquiera de las monedas por separado; usar ambas devuelve 18 000 satoshis de cambio.
 
 Un gasto conjunto normal puede sugerir que ambas entradas tienen el mismo propietario. Alguien que ya reconozca la moneda de las donaciones puede obtener una nueva pista sobre la moneda del trabajo autónomo. Es una inferencia a partir de la transacción y de otros conocimientos, no una prueba automática de la identidad de una persona.
 
@@ -56,19 +56,19 @@ CoinJoin y PayJoin implican colaboración, por lo que la suposición de que toda
 
 ## Ejemplo 3: el cambio arrastra una conexión
 
-Más adelante, Alex combina los 49,000 satoshis de cambio del Ejemplo 1 con una moneda de 60,000 satoshis sin relación para pagar 100,000 satoshis. Con una comisión supuesta de 1,000 satoshis, recibe 8,000 satoshis como nuevo cambio.
+Más adelante, Alex combina los 49 000 satoshis de cambio del Ejemplo 1 con una moneda de 60 000 satoshis sin relación para pagar 100 000 satoshis. Con una comisión supuesta de 1 000 satoshis, recibe 8 000 satoshis como nuevo cambio.
 
-El primer comerciante puede observar que la salida que probablemente era cambio de su pago se gastó junto con la entrada de 60,000 satoshis. Aunque la dirección del nuevo destinatario sea nueva, la asociación entre las entradas permanece. Una dirección de salida nueva no deshace la decisión de gastar ambas entradas juntas.
+El primer comerciante puede observar que la salida que probablemente era cambio de su pago se gastó junto con la entrada de 60 000 satoshis. Aunque la dirección del nuevo destinatario sea nueva, la asociación entre las entradas permanece. Una dirección de salida nueva no deshace la decisión de gastar ambas entradas juntas.
 
 Usa etiquetas para conservar el contexto de futuras decisiones. Las etiquetas son notas locales; no publican un nombre en la cadena de bloques ni impiden que un observador haga inferencias.
 
-<span id="example-4-moving-the-entire-balance-to-hardware" data-ginger-heading="ejemplo-4-mover-todo-el-saldo-a-un-dispositivo-físico" aria-hidden="true"></span>
+<span id="example-4-moving-the-entire-balance-to-hardware" data-ginger-heading="ejemplo-4-mover-todo-el-saldo-a-un-dispositivo-de-hardware" aria-hidden="true"></span>
 
-## Ejemplo 4: mover todo el saldo a un dispositivo físico
+## Ejemplo 4: mover todo el saldo a un dispositivo de hardware
 
-Casey tiene cuatro monedas de 200,000 satoshis cada una. Enviar las cuatro a una única dirección de recepción de una cartera física gasta 800,000 satoshis de entradas en una transacción. Con una comisión supuesta de 2,000 satoshis, la cartera física recibe 798,000 satoshis.
+Casey tiene cuatro monedas de 200 000 satoshis cada una. Enviar las cuatro a una única dirección de recepción de una cartera de hardware gasta 800 000 satoshis de entradas en una transacción. Con una comisión supuesta de 2 000 satoshis, la cartera de hardware recibe 798 000 satoshis.
 
-La cartera física mejora el aislamiento de las claves, pero la transferencia expone un gasto conjunto de las cuatro entradas. Las transferencias separadas podrían evitar esa asociación concreta, a cambio de añadir comisiones y otros patrones observables de tiempos e importes. Recibir salidas directamente en una cartera física durante un CoinJoin apto puede evitar una transferencia posterior, pero tiene comprobaciones de admisibilidad y destino específicas de la versión; no es una forma general de remezclar monedas guardadas en un dispositivo físico.
+La cartera de hardware mejora el aislamiento de las claves, pero la transferencia expone un gasto conjunto de las cuatro entradas. Las transferencias separadas podrían evitar esa asociación concreta, a cambio de añadir comisiones y otros patrones observables de tiempos e importes. Recibir salidas directamente en una cartera de hardware durante un CoinJoin apto puede evitar una transferencia posterior, pero tiene comprobaciones de admisibilidad y destino específicas de la versión; no es una forma general de remezclar monedas guardadas en un dispositivo de hardware.
 
 No gastes todo un saldo simplemente porque la lista de monedas parezca desordenada. La consolidación puede reducir el número de entradas futuras, pero una tasa de comisión baja solo cambia el coste; no elimina la divulgación de información.
 
@@ -88,6 +88,6 @@ No hay un número universal de rondas ni un período de espera que garantice la 
 2. Inspecciona las entradas finales y pregúntate quién ya conoce cada una de ellas.
 3. Comprueba si la selección combina actividades que querías mantener separadas.
 4. Inspecciona el cambio y recuerda su conexión cuando lo gastes más adelante.
-5. Acepta únicamente una comisión y un compromiso de privacidad adecuados para el pago; comprueba el historial antes de repetir un pago después de un resultado incierto.
+5. Acepta únicamente un equilibrio entre comisión y privacidad adecuado para el pago; comprueba el historial antes de repetir un pago después de un resultado incierto.
 
 Para las decisiones relacionadas con la cartera y el navegador, continúa con los [hábitos de privacidad](/es/using-ginger/address-reuse/) y [adónde va la información de la cartera](/es/learn-privacy/information-sharing/).

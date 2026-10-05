@@ -1,7 +1,7 @@
 ---
 doc_id: "help.faq"
 title: "Preguntas frecuentes de Ginger Wallet: empieza aquí"
-description: "Encuentra respuestas breves sobre fondos ausentes, copias de seguridad, recuperación, espera y comisiones de CoinJoin, pagos pendientes, carteras físicas y soporte seguro."
+description: "Encuentra respuestas breves sobre fondos ausentes, copias de seguridad, recuperación, espera y comisiones de CoinJoin, pagos pendientes, carteras de hardware y soporte seguro."
 lang: "es"
 verified_release: "v2.0.26"
 reader_level: "beginner"
@@ -17,7 +17,7 @@ Empieza por la pregunta más cercana a lo que ves. Estas respuestas cubren el us
 - [Recuperación y fondos ausentes](#recovery-and-missing-funds)
 - [Conexión y actualizaciones](#connection-and-updates)
 - [Conceptos básicos de CoinJoin](#coinjoin-basics)
-- [Pagos y dispositivos físicos](#payments-and-hardware)
+- [Pagos y dispositivos de hardware](#payments-and-hardware)
 - [Obtén ayuda de forma segura](#getting-help-safely)
 
 <span id="start-here" data-ginger-heading="empieza-aquí" aria-hidden="true"></span>
@@ -36,11 +36,11 @@ Ginger es una aplicación de escritorio para recibir y enviar Bitcoin en cadena,
 
 La versión v2.0.26 proporciona software de escritorio para ordenadores compatibles con Windows, macOS y Linux. No proporciona una cartera Android, iOS o de navegador, pagos Lightning ni otras criptomonedas. Empieza por el [sitio web oficial de Ginger](https://gingerwallet.io/) y sus enlaces de versiones; no introduzcas palabras de recuperación en una aplicación o sitio web solo porque use el nombre Ginger.
 
-<span id="do-i-need-an-account-my-own-node-or-a-hardware-wallet" data-ginger-heading="necesito-una-cuenta-un-nodo-propio-o-una-cartera-física" aria-hidden="true"></span>
+<span id="do-i-need-an-account-my-own-node-or-a-hardware-wallet" data-ginger-heading="necesito-una-cuenta-un-nodo-propio-o-una-cartera-de-hardware" aria-hidden="true"></span>
 
-### ¿Necesito una cuenta, un nodo propio o una cartera física?
+### ¿Necesito una cuenta, un nodo propio o una cartera de hardware?
 
-No. La creación normal de una cartera de software utiliza información local de recuperación y no requiere una cuenta de cliente, un nodo propio de Bitcoin ni un dispositivo físico. El 2FA opcional utiliza un servicio y los proveedores de compra y venta pueden exigir cuentas o información de identidad, así que esas funciones tienen requisitos adicionales.
+No. La creación normal de una cartera de software utiliza información local de recuperación y no requiere una cuenta de cliente, un nodo propio de Bitcoin ni un dispositivo de hardware. El 2FA opcional utiliza un servicio y los proveedores de compra y venta pueden exigir cuentas o información de identidad, así que esas funciones tienen requisitos adicionales.
 
 <span id="do-i-have-to-use-coinjoin-before-receiving-or-sending" data-ginger-heading="tengo-que-usar-coinjoin-antes-de-recibir-o-enviar" aria-hidden="true"></span>
 
@@ -68,7 +68,7 @@ Conserva las palabras de recuperación en su orden original y la frase de contra
 
 ### ¿Mi frase de contraseña es simplemente una contraseña que puedo restablecer?
 
-No. En una cartera de software de Ginger, la frase de contraseña original ayuda a determinar qué claves de Bitcoin se recuperan, además de proteger el secreto almacenado. Otras palabras o una frase de contraseña distinta pueden producir una cartera diferente y válida. Un nombre de cartera, el PIN de un dispositivo físico o un código de autenticador no la sustituyen.
+No. En una cartera de software de Ginger, la frase de contraseña original ayuda a determinar qué claves de Bitcoin se recuperan, además de proteger el secreto almacenado. Otras palabras o una frase de contraseña distinta pueden producir una cartera diferente y válida. Un nombre de cartera, el PIN de un dispositivo de hardware o un código de autenticador no la sustituyen.
 
 <span id="i-have-the-words-but-forgot-the-passphrase-can-ginger-reset-it" data-ginger-heading="tengo-las-palabras-pero-olvidé-la-frase-de-contraseña-puede-ginger-restablecerla" aria-hidden="true"></span>
 
@@ -172,7 +172,7 @@ Una exención de la comisión del coordinador no elimina las comisiones de miner
 
 ### ¿Qué comisión del coordinador anuncia Ginger actualmente?
 
-Con los ajustes actuales, cada entrada de 0.03 BTC (3,000,000 satoshis) o menos no paga comisión del coordinador, incluida una entrada de exactamente 0.03 BTC. Por encima de ese umbral, la comisión es el 0.3% del valor total de la entrada salvo que se aplique otra exención, como una remezcla apta. El umbral se aplica por separado a cada entrada, no al saldo total de la cartera. Las comisiones de minería siguen aplicándose. Vuelve a consultar la [explicación actual de comisiones de Ginger](https://gingerwallet.io/) y la ronda ofrecida antes de participar.
+Con los ajustes actuales, cada entrada de 0.03 BTC (3 000 000 satoshis) o menos no paga comisión del coordinador, incluida una entrada de exactamente 0.03 BTC. Por encima de ese umbral, la comisión es el 0.3% del valor total de la entrada salvo que se aplique otra exención, como una remezcla apta. El umbral se aplica por separado a cada entrada, no al saldo total de la cartera. Las comisiones de minería siguen aplicándose. Vuelve a consultar la [explicación actual de comisiones de Ginger](https://gingerwallet.io/) y la ronda ofrecida antes de participar.
 
 <span id="can-i-stop-coinjoin-or-turn-off-the-computer" data-ginger-heading="puedo-detener-coinjoin-o-apagar-el-ordenador" aria-hidden="true"></span>
 
@@ -198,9 +198,9 @@ Puedes hacer un pago normal cuando los fondos se puedan gastar y el proceso de e
 
 El reproductor manual habitual puede ocultar la reproducción cuando todos los fondos cumplen el objetivo de privacidad de la cartera. El inicio normal también rechaza un conjunto disponible de monedas exclusivamente privadas, así que elegir otro destino no fuerza otra ronda. Si solo quieres mover esos fondos, considera un pago normal.
 
-<span id="payments-and-hardware" data-ginger-heading="pagos-y-dispositivos-físicos" aria-hidden="true"></span>
+<span id="payments-and-hardware" data-ginger-heading="pagos-y-dispositivos-de-hardware" aria-hidden="true"></span>
 
-## Pagos y dispositivos físicos
+## Pagos y dispositivos de hardware
 
 <span id="why-is-a-payment-still-pending-after-the-estimated-time" data-ginger-heading="por-qué-un-pago-sigue-pendiente-después-del-tiempo-estimado" aria-hidden="true"></span>
 
@@ -226,11 +226,11 @@ El total mostrado no siempre está íntegramente disponible para gastar: los fon
 
 Un pago puede gastar una parte mayor de bitcoin y devolver el valor sobrante a tu propia cartera como cambio. Una dirección de cambio nueva es normal y no significa que se enviara dinero a un desconocido. No necesitas devolverlo manualmente; revisa la transacción completa si algún importe sigue sin explicación.
 
-<span id="can-i-use-a-hardware-wallet-including-after-coinjoin" data-ginger-heading="puedo-usar-una-cartera-física-incluso-después-de-coinjoin" aria-hidden="true"></span>
+<span id="can-i-use-a-hardware-wallet-including-after-coinjoin" data-ginger-heading="puedo-usar-una-cartera-de-hardware-incluso-después-de-coinjoin" aria-hidden="true"></span>
 
-### ¿Puedo usar una cartera física, incluso después de CoinJoin?
+### ¿Puedo usar una cartera de hardware, incluso después de CoinJoin?
 
-Ginger admite los procedimientos documentados de recepción y firma de carteras físicas compatibles. Mantén las palabras de recuperación del dispositivo en su vía de recuperación, fuera del ordenador. Una cartera física puede recibir salidas aptas de CoinJoin, pero no es el origen de firma del CoinJoin habitual de Ginger; ese encaminamiento opcional es una [pregunta avanzada](/es/help/advanced-faq/#can-coinjoin-send-directly-to-my-hardware-wallet).
+Ginger admite los procedimientos documentados de recepción y firma de carteras de hardware compatibles. Mantén las palabras de recuperación del dispositivo en su vía de recuperación, fuera del ordenador. Una cartera de hardware puede recibir salidas aptas de CoinJoin, pero no es el origen de firma del CoinJoin habitual de Ginger; ese encaminamiento opcional es una [pregunta avanzada](/es/help/advanced-faq/#can-coinjoin-send-directly-to-my-hardware-wallet).
 
 <span id="will-an-exchange-accept-my-bitcoin-after-coinjoin" data-ginger-heading="aceptará-un-exchange-mi-bitcoin-después-de-coinjoin" aria-hidden="true"></span>
 

@@ -13,7 +13,7 @@ next: false
 
 > Nivel de lectura: Empieza aquí. Esta guía cubre carteras de software en Ginger v2.0.26. Para hardware, sigue las instrucciones de recuperación del fabricante y mantén sus palabras fuera del ordenador.
 
-Una frase de contraseña es un secreto opcional que eliges al crear una cartera. En Ginger protege el acceso al software y también forma parte de su información de recuperación. Para recuperar la misma cartera necesitas las palabras originales y la frase original exacta, si utilizaste una. Ginger no puede restablecer una frase olvidada.
+Una frase de contraseña es un secreto opcional que eliges al crear una cartera. En Ginger protege el acceso a la cartera de software y también forma parte de su información de recuperación. Para recuperar la misma cartera necesitas las palabras originales y la frase original exacta, si utilizaste una. Ginger no puede restablecer una frase olvidada.
 
 <span id="do-i-have-to-use-a-passphrase" data-ginger-heading="tengo-que-utilizar-una-frase-de-contraseña" aria-hidden="true"></span>
 
@@ -29,7 +29,7 @@ Sin frase, quien obtenga tus palabras puede recuperar y gastar tus bitcoin. Una 
 
 No. Ginger genera doce **Recovery Words** para una cartera de software nueva. Tú eliges la frase por separado. Mantenla fuera de la lista numerada; no la introduzcas como una palabra adicional.
 
-El nombre de tu cartera es solo una etiqueta local. Un código del autenticador 2FA es una comprobación separada de inicio. Ninguno sustituye a palabras y frase originales al recuperar software.
+El nombre de tu cartera es solo una etiqueta local. Un código del autenticador 2FA es una comprobación separada de inicio. Ninguno sustituye a palabras y frase originales al recuperar una cartera de software.
 
 <span id="what-should-i-back-up" data-ginger-heading="qué-debo-respaldar" aria-hidden="true"></span>
 
@@ -38,7 +38,7 @@ El nombre de tu cartera es solo una etiqueta local. Un código del autenticador 
 - Las palabras en el orden mostrado.
 - La frase original exacta, incluidas mayúsculas y caracteres, o una nota clara de que creaste sin ella.
 
-Mantén esta información privada y recuperable después de perder el ordenador. Escribe las palabras sin conexión; evita fotos, correo y notas normales en la nube. Conserva también la frase recuperable. Guardarla por separado protege frente a encontrar ambos secretos juntos, pero asegúrate de poder localizar los dos cuando los necesites. No dependas únicamente de memoria.
+Mantén esta información privada y recuperable después de perder el ordenador. Escribe las palabras sin conexión; evita fotos, correo y notas normales en la nube. Conserva también la frase recuperable. Guardarla por separado puede proteger frente a que alguien encuentre ambos secretos juntos, pero asegúrate de poder localizar los dos cuando los necesites. No dependas únicamente de memoria.
 
 Las palabras restauran acceso a bitcoin, pero no todas las etiquetas o ajustes. Conserva archivos existentes durante la investigación de un problema de recuperación. Un respaldo automático en el mismo ordenador no protege contra perderlo.
 
@@ -46,7 +46,7 @@ Las palabras restauran acceso a bitcoin, pero no todas las etiquetas o ajustes. 
 
 ## ¿Cómo compruebo mi respaldo?
 
-Mientras el software sea accesible, abre **Wallet Settings** → **Tools**. Busca **Verify Recovery Words** y elige **Verify**; introduce después las palabras del respaldo y completa la comprobación.
+Mientras tu cartera de software sea accesible, abre **Wallet Settings** → **Tools**. Busca **Verify Recovery Words** y elige **Verify**; introduce después las palabras del respaldo y completa la comprobación.
 
 Comprueba si esas palabras pertenecen a la cartera. No muestra palabras olvidadas ni restablece la frase. Asegura también que su registro sea correcto. Si falla, comprueba ortografía y orden en privado antes de confiar en el respaldo.
 
@@ -54,12 +54,12 @@ Comprueba si esas palabras pertenecen a la cartera. No muestra palabras olvidada
 
 ## ¿Cómo utilizo la frase durante la recuperación?
 
-Estos pasos recuperan software Ginger mediante palabras. Conserva los archivos existentes hasta confirmar la recuperación.
+Estos pasos sirven para recuperar una cartera de software Ginger mediante sus palabras. Conserva los archivos existentes hasta confirmar la recuperación.
 
 1. Abre Ginger en un ordenador fiable. En la pantalla para añadir una cartera, elige **Recover**.
 2. Introduce un **Wallet Name** diferente si se solicita, para distinguirla de las existentes.
 3. Introduce las **Recovery Words** originales en orden.
-4. En **Enter Passphrase**, introduce y confirma la original. Deja vacíos solo si la original no tenía frase. Aquí no eliges una contraseña nueva.
+4. En **Enter Passphrase**, introduce y confirma la frase de contraseña original. Deja los campos vacíos solo si la cartera original no tenía frase de contraseña. Aquí no eliges una contraseña nueva.
 5. Deja terminar recuperación y sincronización y comprueba tu historial conocido. Sincronizar significa consultar la red en busca de transacciones de la cartera.
 
 <span id="why-is-my-recovered-wallet-empty" data-ginger-heading="por-qué-está-vacía-mi-cartera-recuperada" aria-hidden="true"></span>

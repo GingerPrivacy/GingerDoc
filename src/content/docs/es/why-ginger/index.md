@@ -15,7 +15,7 @@ Ginger es una cartera de escritorio de código abierto para Bitcoin en cadena. T
 
 ## Empieza por lo que quieras proteger
 
-- **Tus claves para gastar:** conserva una copia de recuperación completa y protege el ordenador que firma. Una cartera física compatible puede mantener las claves de firma en un dispositivo independiente.
+- **Tus claves para gastar:** conserva una copia de recuperación completa y protege el ordenador que firma. Una cartera de hardware compatible puede mantener las claves de firma en un dispositivo independiente.
 - **Tu historial de pagos:** usa direcciones de recepción nuevas, conserva etiquetas locales útiles y revisa qué monedas gasta un pago. [Consulta qué revela una transacción de Bitcoin](/es/using-ginger/privacy/).
 - **Tus conexiones:** mantén activada la protección habitual de Tor de Ginger. Un navegador externo tiene su propio comportamiento de red, sus cookies y sus cuentas.
 

@@ -31,7 +31,7 @@ Cuando las estimaciones automáticas no estén disponibles, Ginger todavía pued
 
 ## El cambio sigue siendo tu bitcoin
 
-Bitcoin gasta monedas completas, también llamadas UTXOs. Si las entradas seleccionadas superan el importe del destinatario más la comisión, el exceso normalmente vuelve a una dirección nueva de cambio de tu cartera. Por ejemplo, una entrada de 100,000 satoshis que financie un pago de 60,000 satoshis con una comisión de 1,000 satoshis deja 39,000 satoshis de cambio.
+Bitcoin gasta monedas completas, también llamadas UTXOs. Si las entradas seleccionadas superan el importe del destinatario más la comisión, el exceso normalmente vuelve a una dirección nueva de cambio de tu cartera. Por ejemplo, una entrada de 100 000 satoshis que financie un pago de 60 000 satoshis con una comisión de 1 000 satoshis deja 39 000 satoshis de cambio.
 
 La dirección de cambio puede ser diferente de las direcciones de recepción que ya hayas mostrado a alguien. No necesitas copiarla ni devolver el cambio manualmente. El análisis de transacciones puede vincular el cambio al pago, lo que importa si después lo combinas con otros fondos.
 

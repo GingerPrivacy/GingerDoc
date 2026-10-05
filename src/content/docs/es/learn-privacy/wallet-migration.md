@@ -1,7 +1,7 @@
 ---
 doc_id: "learn-privacy.wallet-migration"
 title: "Pásate a Ginger sin exponer más historial de cartera"
-description: "Compara restaurar las mismas claves de Bitcoin, conectar un dispositivo físico a otra aplicación y mover fondos a claves nuevas sin suponer que desaparezcan las divulgaciones anteriores."
+description: "Compara restaurar las mismas claves de Bitcoin, conectar un dispositivo de hardware a otra aplicación y mover fondos a claves nuevas sin suponer que desaparezcan las divulgaciones anteriores."
 lang: "es"
 verified_release: "v2.0.26"
 reader_level: "advanced"
@@ -20,7 +20,7 @@ Cambiar de software de cartera cambia la aplicación que utilizas. No cambia nec
 | Opción | Qué sigue igual | Qué cambia |
 | --- | --- | --- |
 | Restaurar las mismas palabras de recuperación, frase de contraseña y cuenta compatible | Las claves y direcciones correspondientes | La aplicación que las explora y gestiona; pueden faltar las notas locales |
-| Conectar la misma cuenta del dispositivo físico a Ginger | Las claves guardadas en el dispositivo y las direcciones de esa cuenta | La aplicación de escritorio que conserva su información pública de cuenta |
+| Conectar la misma cuenta del dispositivo de hardware a Ginger | Las claves guardadas en el dispositivo y las direcciones de esa cuenta | La aplicación de escritorio que conserva su información pública de cuenta |
 | Crear una cartera nueva con claves nuevas y transferir fondos | El historial existente permanece en la cadena de bloques | Las claves y direcciones futuras; se necesitan una copia de seguridad independiente y una transferencia en cadena |
 
 Restaurar la misma cartera no mueve su bitcoin, así que no hay una comisión de red únicamente por restaurarla. Una transferencia en cadena a claves nuevas sí cuesta una comisión y crea una transacción visible. Son operaciones diferentes aunque ambas terminen mostrando un saldo en Ginger.
@@ -47,9 +47,9 @@ Si no sabes qué recibió un servicio, considera que existe esa incertidumbre. N
 
 Una frase de contraseña incorrecta puede producir una cartera distinta y válida. No pruebes ajustes aleatorios de manera indiscriminada, no envíes fondos de prueba a una cuenta vacía que no puedas explicar ni entregues las palabras de recuperación a un desconocido que se presente como soporte para resolver la discrepancia.
 
-<span id="use-the-same-hardware-wallet-in-ginger" data-ginger-heading="usa-la-misma-cartera-física-en-ginger" aria-hidden="true"></span>
+<span id="use-the-same-hardware-wallet-in-ginger" data-ginger-heading="usa-la-misma-cartera-de-hardware-en-ginger" aria-hidden="true"></span>
 
-## Usa la misma cartera física en Ginger
+## Usa la misma cartera de hardware en Ginger
 
 Añade el dispositivo mediante **Hardware Wallet**, sigue sus solicitudes compatibles de PIN y frase de contraseña y verifica una dirección de recepción en su propia pantalla. Confirma que Ginger muestre la cuenta prevista. La importación habitual de dispositivos en esta versión utiliza SegWit nativo; otro software puede haber mostrado una cuenta o un tipo de dirección diferente.
 
@@ -71,6 +71,6 @@ Elige cuándo y cómo dejarás de usar las direcciones de recepción antiguas. A
 
 ## Cuando el cambio es urgente
 
-Un xpub expuesto plantea principalmente un problema de privacidad. Los secretos de firma expuestos plantean un problema inmediato de control de los fondos. Si un atacante ya puede gastar los fondos, prioriza un destino de confianza con claves nuevas frente a esperar un proceso de privacidad elaborado. Cambiar la contraseña de una aplicación o poner una semilla expuesta en un dispositivo físico nuevo no revoca las claves copiadas.
+Un xpub expuesto plantea principalmente un problema de privacidad. Los secretos de firma expuestos plantean un problema inmediato de control de los fondos. Si es posible que un atacante ya pueda gastar los fondos, prioriza un destino de confianza con claves nuevas frente a esperar un proceso de privacidad elaborado. Cambiar la contraseña de una aplicación o poner una semilla expuesta en un dispositivo de hardware nuevo no revoca las claves copiadas.
 
 Después del cambio, revisa los [ejemplos de gasto](/es/learn-privacy/spending-after-coinjoin/) y la [divulgación de información](/es/learn-privacy/information-sharing/). El objetivo sostenible es comprender qué sigue siendo conocido y evitar nuevas divulgaciones innecesarias.

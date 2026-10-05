@@ -19,7 +19,7 @@ Una rutina de seguridad útil protege frente al acceso no autorizado y deja una 
 
 Mantén un inventario privado de tus carteras, el tipo de firmante que usa cada una, dónde están las copias de seguridad y si se requiere una frase de contraseña BIP39. El inventario no necesita contener los propios secretos. Debe resultar útil cuando el ordenador o el teléfono ya no estén disponibles, no solo mientras recuerdes cómo se configuró todo.
 
-Conserva suficiente información sobre las convenciones de la cartera para reconocer la cuenta recuperada correcta, especialmente si usas dispositivos físicos o varias carteras. Guarda copias de las etiquetas y los metadatos cuando sean importantes para tus registros; la cadena de bloques no puede reconstruir las notas privadas que escribiste.
+Conserva suficiente información sobre las convenciones de la cartera para reconocer la cuenta recuperada correcta, especialmente si usas dispositivos de hardware o varias carteras. Guarda copias de las etiquetas y los metadatos cuando sean importantes para tus registros; la cadena de bloques no puede reconstruir las notas privadas que escribiste.
 
 Si quieres que otra persona recupere los fondos en caso de incapacidad o fallecimiento, organiza un plan de acceso claro y probado que se adapte a tus circunstancias. Evita compartir ahora todos los secretos de manera informal o suponer que esa persona adivinará a qué contraseña te referías. Los acuerdos de sucesión y acceso pueden tener implicaciones legales que requieran asesoramiento profesional local; esta página no prescribe una estructura jurídica.
 
@@ -27,7 +27,7 @@ Si quieres que otra persona recupere los fondos en caso de incapacidad o falleci
 
 ## Comprueba antes de añadir fondos y antes de firmar
 
-Verifica la descarga de la aplicación, confirma que la cartera se abre y comprueba la copia de seguridad. En una cartera física, compara las direcciones de recepción en el dispositivo e inspecciona el destino y el importe de cada pago antes de firmarlo.
+Verifica la descarga de la aplicación, confirma que la cartera se abre y comprueba la copia de seguridad. En una cartera de hardware, compara las direcciones de recepción en el dispositivo e inspecciona el destino y el importe de cada pago antes de firmarlo.
 
 Usa un importe pequeño para aprender un procedimiento nuevo. Concilia lo que se envió, lo que llegó y las comisiones pagadas. Aumentar el importe no hace que un procedimiento desconocido sea más fácil de diagnosticar.
 
@@ -68,7 +68,7 @@ Cambiar la contraseña del ordenador, desactivar 2FA o reinstalar Ginger no revo
 
 1. Usa un dispositivo en el que tengas motivos para confiar. Si el ordenador original puede estar comprometido, no generes allí la cartera de sustitución.
 2. Crea una cartera con información de recuperación nueva y protege su copia de seguridad. No restaures las palabras expuestas y consideres que la cartera restaurada establece una nueva barrera de seguridad.
-3. Obtén y verifica una dirección de recepción. Con un dispositivo físico, verifícala en el dispositivo de firma; nunca introduzcas sus nuevas palabras de recuperación en el ordenador sospechoso.
+3. Obtén y verifica una dirección de recepción. Con un dispositivo de hardware, verifícala en el dispositivo de firma; nunca introduzcas sus nuevas palabras de recuperación en el ordenador sospechoso.
 4. Transfiere los fondos restantes que aún puedas controlar, revisando cuidadosamente el destino y la comisión. Un atacante con las mismas claves puede competir contigo; evita añadir una espera opcional de CoinJoin antes de proteger los fondos.
 5. Comprueba el resultado en la cartera de confianza y supervisa la confirmación. Sustituye las instrucciones de depósito recurrente y los datos públicos antiguos de recepción para que los pagos futuros no sigan llegando a las claves comprometidas.
 
@@ -92,4 +92,4 @@ Si se filtraron registros, restringe el acceso adicional y evalúa lo que revela
 
 Que un observador conozca una transacción no significa necesariamente que tenga las claves para gastarla. A la inversa, un ladrón con las claves puede gastar fondos cuyo historial de transacciones era difícil de analizar. Usa la protección de recuperación y la verificación en el dispositivo para el segundo problema, y las prácticas con direcciones, Tor, la selección de monedas y un uso meditado de CoinJoin para el primero.
 
-Revisa la rutina después de añadir una cartera, cambiar el dispositivo físico, activar 2FA o mover las copias de seguridad. Verifica las partes que cambiaron en vez de exponer repetidamente todos los secretos para un ejercicio completo de recuperación innecesario.
+Revisa la rutina después de añadir una cartera, cambiar el dispositivo de hardware, activar 2FA o mover las copias de seguridad. Verifica las partes que cambiaron en vez de exponer repetidamente todos los secretos para un ejercicio completo de recuperación innecesario.

@@ -19,7 +19,7 @@ PayJoin y la firma de mensajes son herramientas independientes. PayJoin cambia c
 
 PayJoin es un pago colaborativo en el que el receptor puede aportar una entrada. Esto puede debilitar la suposición de que todas las entradas de un pago de aspecto normal pertenecen a un único remitente. El receptor debe proporcionar una URI de pago Bitcoin compatible que contenga un punto de conexión PayJoin; una dirección normal por sí sola no lo activa. El protocolo se describe en [BIP78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
 
-1. Usa una cartera de software con fondos que puedas gastar. Esta versión rechaza las solicitudes PayJoin para enviar desde carteras físicas.
+1. Usa una cartera de software con fondos que puedas gastar. Esta versión rechaza las solicitudes PayJoin para enviar desde carteras de hardware.
 2. Pega la URI completa del pago en **Send**, en vez de copiar únicamente su dirección. Comprueba el destino y el importe mediante el mismo canal de confianza que usarías para cualquier pago.
 3. Revisa la vista previa de la transacción y el indicador de PayJoin, y autoriza el pago si el importe y las comisiones son aceptables.
 4. Comprueba la transacción resultante en el historial.
@@ -56,7 +56,7 @@ Si necesitas un pago colaborativo, acuerda un método compatible con el destinat
 
 Algunos servicios te piden demostrar que controlas una dirección de recepción. Abre el menú de la cartera y elige **Sign Message**. Introduce una dirección que pertenezca a esta cartera y la declaración exacta que quieras firmar. Ginger rechaza las direcciones que no le pertenecen. Introduce el mensaje, elige **Continue** y copia la firma resultante para el verificador previsto.
 
-En una cartera física, sigue la solicitud de firma del dispositivo; la disponibilidad depende del dispositivo y de su compatibilidad con la firma de mensajes. Una cartera de solo observación sin dispositivo de firma no puede producir una firma. El tipo de dirección y el formato de firma admitido por el verificador también deben ser compatibles.
+En una cartera de hardware, sigue la solicitud de firma del dispositivo; la disponibilidad depende del dispositivo y de su compatibilidad con la firma de mensajes. Una cartera de solo observación sin dispositivo de firma no puede producir una firma. El tipo de dirección y el formato de firma admitido por el verificador también deben ser compatibles.
 
 Lee el mensaje con tanto cuidado como una declaración de autorización. Prefiere un texto de alcance limitado que identifique al destinatario, el propósito y la fecha o el desafío. No firmes una declaración vacía ni una cuyas consecuencias no comprendas. Una firma puede copiarse y mostrarse a otros después de compartirla.
 
