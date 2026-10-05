@@ -5,8 +5,26 @@ import { searchLabels } from '../search-labels'
 const { entry, lang } = Astro.locals.starlightRoute
 const level = entry.data.reader_level ?? 'beginner'
 const scope = level === 'advanced' ? 'advanced' : 'everyday'
+const labels = searchLabels(lang)
 ---
 
 <Default />
 <meta name="ginger-guide-scope" content={scope} data-pagefind-filter="guide[content]" />
-<meta name="ginger-guide-level" content={searchLabels(lang).level[level]} data-pagefind-meta="Level[content]" />
+<meta name="ginger-guide-level" content={labels.level[level]} data-pagefind-meta={`${labels.levelLabel}[content]`} />
+
+<script>
+  // Normalize a translated table-of-contents fragment to its shared alias
+  // before Starlight carries the fragment into the selected language.
+  document.addEventListener('change', (event) => {
+    const select = event.target
+    if (!(select instanceof HTMLSelectElement) || !select.closest('starlight-lang-select') || !location.hash) return
+    let heading: string
+    try { heading = decodeURIComponent(location.hash.slice(1)) } catch { return }
+    const alias = Array.from(document.querySelectorAll<HTMLElement>('[data-ginger-heading]'))
+      .find((element) => element.dataset.gingerHeading === heading)
+    if (!alias) return
+    const url = new URL(location.href)
+    url.hash = alias.id
+    history.replaceState(history.state, '', url)
+  }, { capture: true })
+</script>

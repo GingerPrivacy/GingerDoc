@@ -1,6 +1,7 @@
 ---
 import { Icon } from '@astrojs/starlight/components'
 import ThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro'
+import LanguageSelect from '@astrojs/starlight/components/LanguageSelect.astro'
 import Shield from '../assets/icons/shield.svg'
 
 interface Link { label: string; href: string }
@@ -72,7 +73,7 @@ const withBase = (path: string) => base + path
     <button type="button" data-open-manual-search disabled aria-haspopup="dialog">{copy.searchLabel}<Icon name="right-arrow" /></button>
   </div>
   <div class="home-footer">
-    <div class="mobile-theme"><ThemeSelect /></div>
+    <div class="mobile-theme"><ThemeSelect /><LanguageSelect /></div>
     <a href={withBase(copy.advanced.href)}>{copy.advanced.label}<Icon name="right-arrow" /></a>
   </div>
 </div>
@@ -151,7 +152,7 @@ const withBase = (path: string) => base + path
     .find-guide button { margin-inline-start: 4.75rem; }
   }
   @media (max-width: 49.999rem) {
-    .mobile-theme { display: block; margin-inline-end: auto; }
+    .mobile-theme { display: flex; flex-wrap: wrap; gap: .75rem; margin-inline-end: auto; }
   }
   @media (max-width: 30rem) {
     .actions { gap: .5rem 1.5rem; }
