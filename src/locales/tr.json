@@ -1,0 +1,28 @@
+{
+  "label": "Türkçe",
+  "lang": "tr",
+  "title": "GingerWallet belgeleri",
+  "header": {
+    "Getting Started": "Başlangıç",
+    "Why Ginger?": "Neden Ginger?",
+    "Using Ginger": "Ginger kullanımı",
+    "Ginger Wallet website": "Ginger Wallet web sitesi"
+  },
+  "sidebar": {},
+  "search": {
+    "levelLabel": "Düzey",
+    "scope": "Arama kapsamı",
+    "everyday": "Başlangıç ve günlük kullanım rehberleri",
+    "advanced": "İleri düzey rehberler",
+    "all": "Tüm rehberler",
+    "hint": "Günlük kullanım rehberleriyle başlayın. Teknik ayrıntılar için ileri düzey rehberleri seçin.",
+    "loading": "Arama yükleniyor…",
+    "error": "Arama yüklenemedi. Bağlantınızı kontrol edip tekrar deneyin.",
+    "retry": "Tekrar deneyin",
+    "level": {
+      "beginner": "Başlangıç",
+      "everyday": "Günlük kullanım",
+      "advanced": "İleri düzey"
+    }
+  }
+}
