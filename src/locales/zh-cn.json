@@ -1,0 +1,43 @@
+{
+  "label": "简体中文",
+  "lang": "zh-CN",
+  "title": "GingerWallet 文档",
+  "header": {
+    "Getting Started": "入门",
+    "Why Ginger?": "为什么选择 Ginger？",
+    "Using Ginger": "使用 Ginger",
+    "Ginger Wallet website": "Ginger Wallet 网站"
+  },
+  "sidebar": {
+    "Getting Started": "入门",
+    "Help": "帮助",
+    "Using Ginger": "使用 Ginger",
+    "Bitcoin basics": "比特币基础知识",
+    "Advanced use": "进阶使用",
+    "First steps": "第一步",
+    "Backup and recovery": "备份与恢复",
+    "CoinJoin": "CoinJoin",
+    "Payments": "付款",
+    "Hardware wallets": "硬件钱包",
+    "Settings and network": "设置与网络",
+    "Buy and sell": "买入与卖出",
+    "Questions and troubleshooting": "问题与故障排查",
+    "Bitcoin privacy": "比特币隐私",
+    "Ginger vs Wasabi": "Ginger 与 Wasabi 对比",
+    "Ginger vs Sparrow": "Ginger 与 Sparrow 对比",
+    "Understanding CoinJoin": "了解 CoinJoin",
+    "Self-custody": "自行保管"
+  },
+  "search": {
+    "scope": "搜索范围",
+    "everyday": "入门与日常指南",
+    "advanced": "进阶指南",
+    "all": "所有指南",
+    "hint": "先阅读日常指南。需要技术细节时，选择进阶指南。",
+    "loading": "正在加载搜索…",
+    "error": "无法加载搜索。请检查网络连接后重试。",
+    "retry": "重试",
+    "level": { "beginner": "入门", "everyday": "日常使用", "advanced": "进阶" },
+    "levelLabel": "阅读级别"
+  }
+}
