@@ -1,0 +1,54 @@
+---
+doc_id: manual.home
+title: Документация GingerWallet
+description: Практические руководства по созданию первого кошелька Ginger и повседневному использованию биткоина. Научитесь создавать резервные копии, отправлять и получать биткоин и понимать защиту конфиденциальности.
+lang: ru
+reader_level: beginner
+template: splash
+hero: {}
+---
+
+import ManualHome from '../../../components/ManualHome.astro';
+
+<ManualHome
+  eyebrow="Руководство пользователя"
+  title="Освойтесь"
+  titleSecondLine="с"
+  titleAccent="Ginger."
+  description="Практические руководства по первому кошельку и повседневному использованию биткоина."
+  start={{ label: 'Начать пользоваться Ginger', href: '/ru/getting-started/' }}
+  faq={{ label: 'Частые вопросы', href: '/ru/help/' }}
+  stepsTitle="Ваши первые шаги"
+  stepsDescription="Простой путь к началу работы."
+  steps={[
+    { label: 'Установить Ginger', description: 'Загрузите приложение и настройте его на своём устройстве.', href: '/ru/getting-started/install/' },
+    { label: 'Создать кошелёк и резервную копию', description: 'Настройте кошелёк и сохраните данные для его восстановления.', href: '/ru/getting-started/first-wallet/' },
+    { label: 'Получить первый платёж', description: 'Создайте биткоин-адрес и получите первые монеты.', href: '/ru/payments/receive/' },
+  ]}
+  groups={[
+    {
+      title: 'Повседневные руководства',
+      description: 'Практические инструкции по повседневному использованию Ginger.',
+      icon: 'book',
+      links: [
+        { label: 'Отправка и получение', href: '/ru/using-ginger/' },
+        { label: 'CoinJoin', href: '/ru/using-ginger/coinjoin/' },
+        { label: 'Аппаратные кошельки', href: '/ru/using-ginger/hardware-wallet/' },
+      ],
+    },
+    {
+      title: 'Узнайте о конфиденциальности',
+      description: 'Разберитесь, как Ginger помогает защищать вашу конфиденциальность.',
+      icon: 'shield',
+      links: [
+        { label: 'Конфиденциальность биткоина', href: '/ru/using-ginger/privacy/' },
+        { label: 'Как работает CoinJoin', href: '/ru/learn-coinjoin/explained/' },
+        { label: 'Самостоятельное хранение', href: '/ru/learn-self-custody/basics/' },
+      ],
+    },
+  ]}
+  searchTitle="Ищете что-то конкретное?"
+  searchDescription="Найдите в руководстве инструкции, настройки и другую информацию."
+  searchLabel="Поиск по руководству"
+  advanced={{ label: 'Углублённые руководства', href: '/ru/help/advanced-faq/' }}
+/>
