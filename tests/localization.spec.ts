@@ -1,6 +1,5 @@
 import { expect, test } from '@playwright/test'
 import { readdirSync, readFileSync } from 'node:fs'
-import { pagefindLabels } from '../src/pagefind-labels'
 
 const locales = readdirSync(new URL('../src/locales/', import.meta.url))
   .filter((name) => name.endsWith('.json') && name !== 'en.json')
@@ -67,7 +66,9 @@ for (const locale of locales) {
     await dialog.locator('.pagefind-ui__search-input').fill('CoinJoin')
     const results = dialog.locator('.pagefind-ui__result')
     await expect(results.first()).toBeVisible()
-    const searchCopy = pagefindLabels(locale.lang)
+    const searchCopy = JSON.parse(await page.locator('ginger-search').getAttribute('data-translations') ?? '{}') as Record<string, string>
+    expect(searchCopy.language).toBe(locale.lang)
+    expect(searchCopy.load_more).not.toBe('Load more results')
     await expect(dialog.getByRole('button', { name: searchCopy.clear_search, exact: true })).toBeVisible()
     await expect(dialog.getByRole('button', { name: searchCopy.load_more, exact: true })).toBeVisible()
     await expect(dialog.locator('form')).toHaveAttribute('aria-label', searchCopy.search_label)
