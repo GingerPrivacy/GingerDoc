@@ -43,7 +43,7 @@ Erfasse die Auszahlungsgebühr der Börse separat. Der in Ginger ankommende Betr
 
 ## Weg A: CoinJoin-Ergebnisse prüfen und dann übertragen
 
-1. Lass unter **Coinjoin Settings** der Quell-Wallet **Coinjoin to this wallet** auf die Quelle eingestellt. Prüfe das Privatsphäreziel, Gebührenpräferenzen und ausgeschlossene Coins, bevor du über die Wiedergabesteuerung teilnimmst.
+1. Lass unter **Coinjoin Settings** der Quell-Wallet **Coinjoin to this wallet** auf die Quelle eingestellt. Prüfe das Privatsphäreziel, Gebührenpräferenzen und ausgeschlossene Coins, bevor du über die Starttaste des Players teilnimmst.
 2. Beobachte abgeschlossene Runden und die Privatsphäredaten der Coins. Du kannst pausieren, um Gebühren und Fortschritt zu prüfen. Befindet sich eine Runde in einer kritischen Phase, lass Ginger die erforderlichen Arbeiten abschließen, statt die Anwendung zu beenden.
 3. Beschaffe eine neue Hardware-Empfangsadresse und prüfe sie auf dem Gerät. Wähle in der Software-Wallet **Send** → **Manual Control** und das Guthaben, das du übertragen möchtest.
 4. Prüfe die tatsächlich ausgewählten Inputs, das Ziel, den Empfängerbetrag, das Wechselgeld und die Gebühr. Bestätige die Übertragung erst, wenn alles deiner Absicht entspricht.
@@ -55,7 +55,7 @@ Alle Outputs gemeinsam zu senden schafft eine sichtbare Verbindung zwischen ihne
 
 ## Weg B: Hardware als CoinJoin-Ziel wählen
 
-Verwende diesen Weg, solange die Software-Wallet noch für CoinJoin geeignetes Guthaben besitzt. Der normale Ablauf in v2.0.26 lehnt die Teilnahme ab, wenn die Wallet oder alle verfügbaren Kandidaten nach ihrem Ziel bereits privat sind. Ein anderes Ziel umgeht diese Prüfung nicht. Insbesondere ist der Ausschluss aller nicht privaten Coins kein zuverlässiger Weg, eine zusätzliche Runde nur mit bereits abgeschlossenen Coins zu erzwingen. Nutze für dieses Guthaben Weg A, statt das Ziel nur zum Umgehen der Stoppbedingung zu ändern.
+Verwende diesen Weg, solange die Software-Wallet noch für CoinJoin geeignetes Guthaben besitzt. Der normale Ablauf in v2.0.26 lehnt die Teilnahme ab, wenn die Wallet oder alle verfügbaren Kandidaten nach ihrem Ziel bereits privat sind. Ein anderes Ziel umgeht diese Prüfung nicht. Insbesondere ist der Ausschluss aller nicht privaten Coins kein zuverlässiger Weg, eine zusätzliche Runde nur mit Coins aus bereits abgeschlossenen Runden zu erzwingen. Nutze für dieses Guthaben Weg A, statt das Ziel nur zum Umgehen der Stoppbedingung zu ändern.
 
 1. Lade und prüfe die Hardware-Wallet in Ginger. Stoppe die CoinJoin-Teilnahme der Quelle und warte, bis die Zielauswahl verfügbar wird.
 2. Öffne **Coinjoin Settings** der Quell-Wallet. Stelle **Coinjoin to this wallet** auf die gewünschte Hardware-Wallet. Wähle nur ein von Ginger angebotenes Ziel.
@@ -71,8 +71,8 @@ Die Zielauswahl wird nach einem Ginger-Neustart zurückgesetzt. Prüfe sie vor j
 
 ## Kontostände abgleichen und nächste Ausgabe planen
 
-Vergleiche die Abnahme an der Quelle mit den Hardware-Outputs und dem verbleibenden Quellguthaben. Die Differenz kann CoinJoin-Kosten enthalten. Ein Quellkontostand von null bedeutet keinen Verlust, wenn das gewünschte Ziel das Guthaben empfangen hat. Umgekehrt bedeutet eine erfolgreiche Runde nicht, dass jeder Quell-Coin übertragen wurde oder das Ziel erreicht hat.
+Vergleiche die Abnahme an der Quelle mit den Hardware-Outputs und dem verbleibenden Quellguthaben. Die Differenz kann CoinJoin-Kosten enthalten. Ein Quellkontostand von null bedeutet keinen Verlust, wenn das gewünschte Ziel das Guthaben empfangen hat. Umgekehrt bedeutet eine erfolgreiche Runde nicht, dass jeder Quell-Coin übertragen wurde oder das Privatsphäreziel erreicht hat.
 
-Prüfe beim späteren Ausgeben aus Hardware die Coin-Auswahl erneut. Unverwandte Coins zu kombinieren kann Beziehungen offenlegen, unabhängig vom Speicherort ihrer Signierschlüssel. Nutze eine neue Empfängeradresse, prüfe Wechselgeld und bestätige am Gerät. Der [PSBT-Ablauf](/de/hardware-wallets/psbt/) bietet geeigneter Hardware eine unterstützte Dateisignierung; er verändert nicht die Privatsphärefolgen der signierten Transaktion.
+Prüfe beim späteren Ausgeben aus Hardware die Coin-Auswahl erneut. Nicht zusammengehörige Coins zu kombinieren kann Beziehungen offenlegen, unabhängig vom Speicherort ihrer Signierschlüssel. Nutze eine neue Empfängeradresse, prüfe Wechselgeld und bestätige am Gerät. Der [PSBT-Ablauf](/de/hardware-wallets/psbt/) bietet geeigneter Hardware eine unterstützte Dateisignierung; er verändert nicht die Privatsphärefolgen der signierten Transaktion.
 
 Vermutest du bereits kompromittierte Signierschlüssel, hat der Schutz verbleibenden Guthabens Vorrang vor einem wartenden Privatsphäreablauf. Ein neues Gerät mit demselben offengelegten Seed widerruft diesen Seed nicht.

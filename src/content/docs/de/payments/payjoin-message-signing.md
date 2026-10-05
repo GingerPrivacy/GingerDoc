@@ -17,7 +17,7 @@ PayJoin und Nachrichtensignierung sind getrennte Werkzeuge. PayJoin verändert d
 
 ## Eine PayJoin-Anforderung senden
 
-PayJoin ist eine gemeinsame Zahlung, bei der der Empfänger einen Input beitragen kann. Das schwächt die Annahme, alle Inputs einer gewöhnlich wirkenden Zahlung gehörten einem Sender. Der Empfänger muss einen kompatiblen Bitcoin-Zahlungs-URI mit PayJoin-Endpunkt bereitstellen; eine Adresse allein reicht nicht. Das Protokoll beschreibt [BIP78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
+PayJoin ist eine gemeinsame Zahlung, bei der der Empfänger einen Input beitragen kann. Das kann die Annahme schwächen, alle Inputs einer gewöhnlich wirkenden Zahlung gehörten einem Sender. Der Empfänger muss einen kompatiblen Bitcoin-Zahlungs-URI mit PayJoin-Endpunkt bereitstellen; eine Adresse allein reicht nicht. Das Protokoll beschreibt [BIP78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
 
 1. Nutze eine Software-Wallet mit ausgebbarem Guthaben. Diese Version lehnt PayJoin-Anforderungen beim Senden aus Hardware-Wallets ab.
 2. Füge den vollständigen Zahlungs-URI unter **Send** ein, statt nur die Adresse zu kopieren. Prüfe Ziel und Betrag über denselben vertrauenswürdigen Kanal wie jede Zahlung.
@@ -38,7 +38,7 @@ Der Empfänger kennt Zahlungsanforderung, Empfangsadresse und vorgesehenen Betra
 
 Externe Beobachter sehen die letztlich auf Bitcoin veröffentlichte Transaktion. Ein erfolgreicher PayJoin kann die übliche Annahme „alle Inputs gehören dem Sender“ unzuverlässig machen. Der Nutzen hängt von Transaktion und zusätzlichen Informationen ab; er garantiert keine Ununterscheidbarkeit von jeder normalen Zahlung.
 
-Unterscheide diese Zielgruppen. Der Empfänger kann über Bestellung oder Aushandlung Details erfahren, obwohl ein unabhängiger Beobachter Inputs nicht sicher zuordnen kann. Ein öffentlicher Explorer schafft eine weitere Offenlegung, wenn du die Zahlung über eine identifizierte Browsersitzung abfragst.
+Unterscheide diese Zielgruppen. Der Empfänger kann über Bestellung oder Aushandlung Details erfahren, obwohl ein unbeteiligter Beobachter Inputs nicht sicher zuordnen kann. Ein öffentlicher Explorer kann eine weitere Offenlegung verursachen, wenn du die Zahlung über eine identifizierte Browsersitzung abfragst.
 
 <span id="wallet-fingerprints-and-the-ordinary-payment-fallback" data-ginger-heading="wallet-fingerabdrücke-und-rückfall-auf-normale-zahlungen" aria-hidden="true"></span>
 

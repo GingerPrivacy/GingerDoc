@@ -32,7 +32,7 @@ Die ursprüngliche Passphrase wirkt bei der Schlüsselableitung mit; eine andere
 
 ### Wann sollte ich das Gap Limit erhöhen?
 
-Erwäge es bei Belegen vieler ungenutzter Adressen vor einer bezahlten Adresse, etwa aus einer anderen Anwendung. **Advanced Recovery Options** → **Minimum Gap Limit:** erweitert die Suche und kann Aufwand und Dauer erhöhen; v2.0.26 beginnt den Wiederherstellungsbildschirm mit 114. Es repariert weder falsche Wörter noch falsche Passphrasen oder inkompatible Konten.
+Erwäge es bei Belegen vieler ungenutzter Adressen vor einer Adresse mit Zahlungseingang, etwa aus einer anderen Anwendung. **Advanced Recovery Options** → **Minimum Gap Limit:** erweitert die Suche und kann Aufwand und Dauer erhöhen; v2.0.26 beginnt den Wiederherstellungsbildschirm mit 114. Es repariert weder falsche Wörter noch falsche Passphrasen oder inkompatible Konten.
 
 <span id="why-did-labels-or-privacy-information-change-after-recovery" data-ginger-heading="warum-änderten-sich-bezeichnungen-oder-privatsphäredaten-nach-wiederherstellung" aria-hidden="true"></span>
 
@@ -72,13 +72,13 @@ Sichere zuerst, nutze dann **Wallet Settings** → **Tools** → **Delete Wallet
 
 ### Was unterscheidet Coin, Adresse und Wallet?
 
-Ein Coin oder UTXO ist ein unverbrauchter Output einer früheren Transaktion. Eine Adresse kann mehrere Coins empfangen haben; eine Wallet verwaltet viele Adressen und Coins. Ausgabe- und CoinJoin-Entscheidungen betreffen verfügbare Coins, nicht bloß den Gesamtkontostand. Das [Glossar](/de/help/glossary/) erklärt die Begriffe.
+Ein Coin oder UTXO ist ein noch nicht ausgegebener Output einer früheren Transaktion. Eine Adresse kann mehrere Coins empfangen haben; eine Wallet verwaltet viele Adressen und Coins. Ausgabe- und CoinJoin-Entscheidungen betreffen verfügbare Coins, nicht bloß den Gesamtkontostand. Das [Glossar](/de/help/glossary/) erklärt die Begriffe.
 
 <span id="does-combining-coinjoined-coins-always-destroy-all-privacy" data-ginger-heading="zerstört-die-kombination-von-coinjoin-coins-immer-jede-privatsphäre" aria-hidden="true"></span>
 
 ### Zerstört die Kombination von CoinJoin-Coins immer jede Privatsphäre?
 
-Keine einzelne Regel beschreibt jeden Beobachter oder jede Zahlung. Normale gemeinsame Ausgabe kann Inputs verbinden, besonders wenn einer bereits identifiziert ist, verrät aber nicht automatisch jede frühere Eigentumsbeziehung. Prüfe Inputs und Wechselgeld deiner tatsächlichen Zahlung, statt immer oder nie kombinieren als Garantie anzusehen.
+Keine einzelne Regel beschreibt jeden Beobachter oder jede Zahlung. Normale gemeinsame Ausgabe kann Inputs verbinden, besonders wenn einer bereits mit einer Identität verknüpft ist, verrät aber nicht automatisch jede frühere Eigentumsbeziehung. Prüfe Inputs und Wechselgeld deiner tatsächlichen Zahlung, statt immer oder nie kombinieren als Garantie anzusehen.
 
 <span id="does-a-reused-address-automatically-publish-my-entire-wallet" data-ginger-heading="veröffentlicht-eine-wiederverwendete-adresse-automatisch-meine-ganze-wallet" aria-hidden="true"></span>
 
@@ -96,7 +96,7 @@ Nein, aber ihre Eingänge sind gemeinsam prüfbar und mit der veröffentlichende
 
 ### Sollte ich bei niedrigen Gebühren viele kleine Coins zusammenführen?
 
-Zusammenführung kann spätere Inputzahlen reduzieren, kostet aber selbst Gebühren und verknüpft zuvor getrennte Aktivität. Eine niedrigere Rate verändert Kosten, nicht Offenlegung. Bedenke Zweck, Wert und bekannte Geschichte vor der Kombination.
+Zusammenführung kann spätere Inputzahlen reduzieren, kostet aber selbst Gebühren und kann zuvor getrennte Aktivität verknüpfen. Eine niedrigere Rate verändert Kosten, nicht Offenlegung. Bedenke Zweck, Wert und bekannte Geschichte vor der Kombination.
 
 <span id="why-is-a-tiny-payment-missing-and-does-exclude-coins-freeze-it" data-ginger-heading="warum-fehlt-eine-kleinstzahlung-und-friert-exclude-coins-sie-ein" aria-hidden="true"></span>
 
@@ -118,7 +118,7 @@ Nein. Der veröffentlichte Editor lehnt unter 1 sat/vByte ab; Netzwerkregeln kö
 
 ### Warum unterscheiden sich Privatanteil und Gesamtfortschritt?
 
-Es sind verschiedene lokale Messungen. Gesamtfortschritt gewichtet den Coin-Scorefortschritt nach Wert; die farbige private Guthabenanzeige zählt bereits ausreichenden Wert. Keines misst fremde Identifizierungswahrscheinlichkeit. Beide können korrekt sein und sich trotzdem unterscheiden.
+Es sind verschiedene lokale Messungen. Der Gesamtfortschritt gewichtet den Score jedes Coins im Verhältnis zum Ziel nach seinem Wert; die farbige Anzeige des privaten Guthabens zählt den Wert der Coins, die dieses Ziel bereits erreichen. Keine der beiden Anzeigen misst die Wahrscheinlichkeit, mit der ein externer Beobachter dich identifizieren kann. Beide können korrekt sein und sich trotzdem unterscheiden.
 
 <span id="why-can-progress-fall-or-change-when-i-adjust-the-target" data-ginger-heading="warum-fällt-fortschritt-oder-verändert-sich-mit-dem-ziel" aria-hidden="true"></span>
 
@@ -136,13 +136,13 @@ Der Client wählt geeignete Inputs mit veröffentlichten CoinJoin-Einstellungen.
 
 ### Was bedeuten abgelehnte Coins oder Blame-Runden?
 
-Blame ist eine Protokollwiederholung nach unvollständigem Versuch, keine Aufforderung zur Identifikation oder Beschuldigung anderer. Ablehnung oder zeitweise Sperre benötigen genauen Grund und aktuellen Status. Keine Meldung allein überträgt Kontrolle an den Koordinator; siehe [veröffentlichte Statustabelle](/de/help/troubleshooting/#coinjoin-does-not-start).
+Blame ist eine Protokollwiederholung nach unvollständigem Versuch, keine Aufforderung zur Identifikation oder Beschuldigung anderer. Ablehnung oder zeitweise Nichtverfügbarkeit benötigen genauen Grund und aktuellen Status. Keine Meldung allein überträgt Kontrolle an den Koordinator; siehe [veröffentlichte Statustabelle](/de/help/troubleshooting/#coinjoin-does-not-start).
 
 <span id="how-do-i-reconcile-the-full-cost-of-a-round" data-ginger-heading="wie-gleiche-ich-vollständige-rundenkosten-ab" aria-hidden="true"></span>
 
 ### Wie gleiche ich vollständige Rundenkosten ab?
 
-Summiere eigene ausgegebene Inputs und ziehe alle eigenen Transaktionsoutputs ab, einschließlich anderer Wallets. Die Differenz kann Koordinatorgebühren, Mining-Kosten und Outputverteilungsreste enthalten. Zähle fremde Outputs nicht als eigene und gehe nicht davon aus, ein Gebührenfeld decke zwingend die Gesamtdifferenz ab.
+Summiere den Wert deiner ausgegebenen Inputs und ziehe den Wert aller eigenen Transaktionsoutputs ab, einschließlich anderer Wallets. Die Differenz kann Koordinatorgebühren, Mining-Kosten und Outputverteilungsreste enthalten. Zähle fremde Outputs nicht als eigene und gehe nicht davon aus, ein Gebührenfeld decke zwingend die Gesamtdifferenz ab.
 
 <span id="is-a-remix-exemption-permanent-or-applied-to-my-entire-balance" data-ginger-heading="ist-remix-befreiung-dauerhaft-oder-auf-mein-ganzes-guthaben-anwendbar" aria-hidden="true"></span>
 
@@ -158,25 +158,25 @@ Nein. Sie ist eine Input-Eignungsregel der angebotenen Runde, kein dauerhafter A
 
 ### Kann CoinJoin direkt an meine Hardware-Wallet senden?
 
-Geeignete Software kann eine angebotene geladene Hardware-Wallet unter **Coinjoin to this wallet** wählen. Das Ziel erhält Rundenoutputs ohne separates Zielerreichungsereignis; normaler Start erzwingt keine Runde bereits privater Kandidaten. Prüfe das nach Neustart zurückgesetzte Ziel jedes Mal und importiere dafür niemals Hardware-Seed am Computer.
+Eine geeignete Software-Wallet kann eine angebotene geladene Hardware-Wallet unter **Coinjoin to this wallet** wählen. Das Ziel erhält Rundenoutputs ohne separates Zielerreichungsereignis; normaler Start erzwingt keine Runde bereits privater Kandidaten. Prüfe das nach Neustart zurückgesetzte Ziel jedes Mal und importiere dafür niemals Hardware-Seed am Computer.
 
 <span id="does-an-own-node-replace-every-ginger-service-or-make-tor-unnecessary" data-ginger-heading="ersetzt-ein-eigener-node-alle-dienste-oder-macht-tor-unnötig" aria-hidden="true"></span>
 
 ### Ersetzt ein eigener Node alle Dienste oder macht Tor unnötig?
 
-Nein. Ein konfigurierter Node erfüllt bestimmte Aufgaben wie Block- oder Gebührenlieferung; CoinJoin und optionale Anbieter-/2FA-Abläufe kontaktieren weiter Dienste. Tor schützt Verbindungsexposition, aber Empfängerdienste sehen Anfrageninhalte. Prüfe konkreten Datenfluss, statt externe Anfragefreiheit aus Node-Einstellungen abzuleiten.
+Nein. Ein konfigurierter Node kann bestimmte Aufgaben übernehmen, etwa Blöcke oder Gebührenschätzungen bereitstellen; CoinJoin und optionale Anbieter-/2FA-Abläufe können weiterhin ihre Dienste kontaktieren. Tor schützt vor der Offenlegung von Verbindungsdaten, aber ein Empfängerdienst sieht weiterhin den Inhalt der an ihn gesendeten Anfrage. Prüfe den konkreten Datenfluss, statt aus Node-Einstellungen abzuleiten, dass es keine externen Anfragen gibt.
 
 <span id="does-payjoin-hide-my-payment-from-its-recipient" data-ginger-heading="verbirgt-payjoin-meine-zahlung-vor-ihrem-empfänger" aria-hidden="true"></span>
 
 ### Verbirgt PayJoin meine Zahlung vor ihrem Empfänger?
 
-Nein. Der Empfänger kennt die Anforderung und sieht den Vorschlag bei Aushandlung. Erfolgreiche Zusammenarbeit schwächt mögliche fremde Eigentumsannahmen; Muster und Zusatzwissen begrenzen den Nutzen. Ginger kann bei Aufbaufehlern normal zahlen, sodass Autorisierung allein keinen finalen PayJoin garantiert.
+Nein. Der Empfänger kennt die Anforderung und sieht den Vorschlag bei Aushandlung. Erfolgreiche Zusammenarbeit kann die Eigentumsannahmen eines externen Beobachters schwächen; Transaktionsmuster und Zusatzwissen können diesen Nutzen begrenzen. Ginger kann bei Aufbaufehlern normal zahlen, sodass Autorisierung allein keinen finalen PayJoin garantiert.
 
 <span id="how-do-i-prove-control-of-an-address-without-paying" data-ginger-heading="wie-beweise-ich-adresskontrolle-ohne-zahlung" aria-hidden="true"></span>
 
 ### Wie beweise ich Adresskontrolle ohne Zahlung?
 
-Nutze **Sign Message** für eine Wallet-Adresse, lies die exakte Erklärung und teile die Signatur nur mit dem vorgesehenen Prüfer. Geräte-, Adresstyp- und Prüferkompatibilität bleiben wichtig. Signierung überträgt keine Bitcoin und beweist nicht jede Wallet-Adresse; sie verknüpft möglicherweise die Adresse mit der dem Prüfer bekannten Identität.
+Nutze **Sign Message** für eine Wallet-Adresse, lies die exakte Erklärung und teile die Signatur nur mit dem vorgesehenen Prüfer. Geräte-, Adresstyp- und Prüferkompatibilität bleiben wichtig. Signierung überträgt keine Bitcoin und beweist nicht die Kontrolle über jede Wallet-Adresse; sie verknüpft möglicherweise die Adresse mit der dem Prüfer bekannten Identität.
 
 <span id="what-information-do-secret-hunt-and-buysell-services-receive" data-ginger-heading="welche-informationen-erhalten-secret-hunt-und-kauf-verkaufsdienste" aria-hidden="true"></span>
 

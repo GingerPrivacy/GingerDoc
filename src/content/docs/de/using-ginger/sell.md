@@ -39,7 +39,7 @@ Ein Verkauf tauscht Bitcoin gegen die von einem Anbieter angebotene Zahlungsmeth
 2. Wähle bei Aufforderung Land oder Region. Gib den Verkaufsbetrag und die gewünschte Auszahlungswährung ein. Prüfe angezeigte Einheiten und Grenzen.
 3. Wähle **Continue**, filtere **Offers** nach Zahlungsmethode und vergleiche Nettoauszahlung und Entgelte des Anbieters.
 4. Wähle **Accept**. Erledige die Browser-Schritte des Anbieters, bis du exaktes Bitcoin-Ziel, Betrag und etwaige Zahlungsfrist erhältst.
-5. Kehre zu Gingers Verkaufsdialog zurück und wähle **Send**. Gib oder prüfe das exakte Ziel und den gelieferten Betrag. Gehe nicht davon aus, dass der Browser automatisch jedes Feld korrekt ausgefüllt hat.
+5. Kehre zu Gingers Verkaufsdialog zurück und wähle **Send**. Gib das vom Anbieter übermittelte Ziel und den exakten Betrag ein oder prüfe diese Angaben. Gehe nicht davon aus, dass der Browser automatisch jedes Feld korrekt ausgefüllt hat.
 6. Prüfe Transaktionsgebühr und Empfängerbetrag vor Bestätigung. Der angeforderte Betrag muss nach etwaigem Gebührenabzug ankommen; behandle „alles senden“ nicht versehentlich als Bezahlung einer festen Rechnung.
 7. Prüfe Transaktionsverlauf und **Previous Orders** auf Fortschritt. Halte Anbieter-Bestell-ID und Transaktions-ID für deine Aufzeichnungen bereit.
 

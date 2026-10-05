@@ -24,7 +24,7 @@ Ginger kann eine bestätigte Bitcoin-Zahlung nicht zurückrufen. Prüfe vor der 
 5. Prüfe Gebühr und geschätzte Bestätigungszeit. Wähle bei korrekten Details **Confirm** und erledige gegebenenfalls Passphrase- oder Hardware-Autorisierung.
 6. Prüfe die veröffentlichte Transaktion im Verlauf. Ist das Ergebnis nach einem Netzwerkfehler unklar, prüfe den Verlauf vor einer weiteren Zahlung.
 
-Beim Senden des gesamten Guthabens kann die Gebühr vom Empfängerbetrag abgezogen werden. Festbetragsanfragen und PayJoin haben andere Einschränkungen. Prüfe den tatsächlichen Empfängerbetrag in der Vorschau, statt anzunehmen, der gesamte Kontostand komme an.
+Beim Senden des gesamten verfügbaren Guthabens kann die Gebühr vom Empfängerbetrag abgezogen werden. Festbetragsanfragen und PayJoin haben andere Einschränkungen. Prüfe den tatsächlichen Empfängerbetrag in der Vorschau, statt anzunehmen, der gesamte Kontostand komme an.
 
 <span id="check-the-fee-without-custom-settings" data-ginger-heading="gebühren-ohne-eigene-einstellungen-prüfen" aria-hidden="true"></span>
 
@@ -48,6 +48,6 @@ Optionale weiterführende Referenz: [Eigene Gebührenraten und Wechselgeld](/de/
 
 ## Wenn sich keine Zahlung vorbereiten lässt
 
-Unzureichendes Guthaben kann bedeuten, dass nach Gebühren nicht genug ausgebbarer Wert vorhanden ist, obwohl der Gesamtkontostand ausreicht. Guthaben kann außerdem unbestätigt, in einer kritischen CoinJoin-Phase gebunden oder Teil einer derzeit nicht erweiterbaren unbestätigten Transaktionskette sein.
+Unzureichendes Guthaben kann bedeuten, dass nach Gebühren nicht genug ausgebbarer Wert vorhanden ist, obwohl der angezeigte Gesamtkontostand ausreichend aussieht. Guthaben kann außerdem unbestätigt, in einer kritischen CoinJoin-Phase gebunden oder Teil einer derzeit nicht erweiterbaren unbestätigten Transaktionskette sein.
 
 Eine fehlende Sendeaktion während der Wiederherstellung ist normal. Eine Watch-only-Wallet kann allein nicht signieren. Diese Version unterstützt keine Lightning-Adressen oder -Rechnungen; fordere eine On-Chain-Bitcoin-Adresse an.

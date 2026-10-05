@@ -11,7 +11,7 @@ next: false
 
 > Schwierigkeitsgrad: Alltagsnutzung. Wähle diese Anleitung, wenn du die beschriebene Aufgabe erledigen möchtest.
 
-Öffentlicher Bitcoin-Empfang erfordert nicht, alle Wallet-Adressen zu veröffentlichen. Er erfordert eine Entscheidung darüber, was jeder Zahler oder Websitebesucher sieht, und eine sinnvolle Trennung unverwandter Eingänge. Ginger unterstützt normalen On-Chain-Empfang und lokale Bezeichnungen; es ist kein Rechnungsserver oder automatischer Adressrotationsdienst für Websites.
+Öffentlicher Bitcoin-Empfang erfordert nicht, alle Wallet-Adressen zu veröffentlichen. Er erfordert eine Entscheidung darüber, was jeder Zahler oder Websitebesucher sieht, und eine sinnvolle Trennung nicht zusammengehöriger Zahlungseingänge. Ginger unterstützt normalen On-Chain-Empfang und lokale Bezeichnungen; es ist kein Rechnungsserver oder automatischer Adressrotationsdienst für Websites.
 
 <span id="choose-how-to-give-out-addresses" data-ginger-heading="wählen-wie-du-adressen-weitergibst" aria-hidden="true"></span>
 
@@ -20,7 +20,7 @@ next: false
 | Ansatz | Was er erleichtert | Was sichtbar wird |
 | --- | --- | --- |
 | Permanente Adresse auf Website oder Profil | Jeder kann ohne Kontaktaufnahme zahlen. | Eingänge und spätere Ausgaben dieser Adresse sind gemeinsam prüfbar; die Seite verknüpft sie mit dem Besitzer. |
-| Neue Adresse für jeden Zahler | Jede Zahlungsanforderung hat ein separates Ziel. | Zahler und Kommunikationsdienst kennen möglicherweise Adresse und Identität; spätere Transaktionen schaffen Verbindungen. |
+| Neue Adresse für jeden Zahler | Jede Zahlungsanforderung hat ein separates Ziel. | Zahler und Kommunikationsdienst kennen möglicherweise Adresse und Identität; spätere Transaktionen können Verknüpfungen schaffen. |
 | Neue Adresse für jede regelmäßige Rate | Private Aufzeichnungen je Zahlung sind möglich. | Neue Anweisungen müssen mitgeteilt werden; der Zahler kann trotzdem alte Adressen wiederverwenden. |
 
 Eingänge einer öffentlichen Adresse entsprechen nicht zwingend dem gesamten Guthaben, Einkommen oder der Spenderzahl. Eigenzahlungen, wiederholte Spenden und weitere Adressen sind möglich. Ziehe keine stärkeren Schlüsse als die sichtbaren Transaktionen stützen.
@@ -41,7 +41,7 @@ Bezeichnungen gehören in lokale Aufzeichnungen; sie erscheinen nicht als Namen 
 
 ## Mit einer dauerhaft veröffentlichten Adresse umgehen
 
-Verwendest du eine permanente Spendenadresse, gehe von prüfbarem Empfangsverlauf aus. Websiteaustausch löscht die frühere Adresse nicht und verhindert keine künftigen Zahlungen. Halte Wiederherstellungsdaten und Kontext zum Erkennen verspäteter Eingänge bereit.
+Verwendest du eine permanente Spendenadresse, gehe von prüfbarem Empfangsverlauf aus. Die Adresse auf einer Website zu ersetzen löscht die frühere Adresse nicht und verhindert nicht, dass sie weitere Zahlungen empfängt. Halte Wiederherstellungsdaten und Kontext zum Erkennen verspäteter Eingänge bereit.
 
 CoinJoin kann unter seinen Annahmen Verknüpfungen zu späteren Ausgaben reduzieren; öffentliche Spenden verschwinden dadurch nicht. Alle Eingänge gemeinsam normal zu übertragen kann eine neue Zuordnung schaffen. Plane die nächste Ausgabe so sorgfältig wie den ersten Empfang.
 
@@ -66,7 +66,7 @@ Eine Erstattung ist eine neue On-Chain-Zahlung. Sie macht den ursprünglichen Em
 
 Öffne **Wallet Coins**, um resultierende Coins zu prüfen. **Send** → **Manual Control** hilft bei der Wahl von Guthaben, das bereits der betreffenden Aktivität zugeordnet ist. Prüfe die Endtransaktion, statt von einer automatisch durch Bezeichnungen erzwungenen Trennung auszugehen.
 
-Unerwartete Kleinstzahlungen benötigen keine sofortige Antwort. Ihre Ausgabe kann einen großen Wertanteil kosten und sie mit anderen Inputs verknüpfen. **Exclude Coins** betrifft nur CoinJoin und sperrt normale Ausgaben nicht. Folge keinen unerbetenen Zahlungsanweisungen oder Kontakten, die Geld zum angeblichen Entsperren verlangen.
+Unerwartete Kleinstzahlungen benötigen keine sofortige Reaktion. Ihre Ausgabe kann einen großen Wertanteil kosten und sie mit anderen Inputs verknüpfen. **Exclude Coins** betrifft nur CoinJoin und sperrt normale Ausgaben nicht. Folge keinen unerbetenen Zahlungsanweisungen oder Kontakten, die Geld zum angeblichen Entsperren verlangen.
 
 Leitest du geeignete CoinJoin-Outputs zur Verwahrung an eine andere geladene Wallet, prüfe diese Wahl vor jeder Sitzung. Sie wird nach Neustart zurückgesetzt; der normale Ablauf erzwingt keine weitere Runde bereits privater geeigneter Coins. Regelmäßiger Empfang darf nicht auf ungeprüfter dauerhafter Hardware-Weiterleitung beruhen.
 

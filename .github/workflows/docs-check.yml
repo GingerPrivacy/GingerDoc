@@ -24,7 +24,9 @@ jobs:
       - name: Check content and types
         run: npm run check
       - name: Check translation coverage and preserved references
-        run: node scripts/check-translations.mjs
+        run: |
+          node scripts/translation-utils.test.mjs
+          node scripts/check-translations.mjs
       - name: Build site and search index
         run: npm run build
       - name: Check local links and heading anchors

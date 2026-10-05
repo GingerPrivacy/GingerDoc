@@ -1,7 +1,7 @@
 ---
 doc_id: "payments.coin-control-history"
 title: "Coin-Kontrolle, Verlauf und festhängende Transaktionen"
-description: "Prüfe Ginger-UTXOs und Zahlungsanzeige, wähle Coins bewusst und verstehe Möglichkeiten zur Beschleunigung oder Stornierung."
+description: "Prüfe Ginger-UTXOs und Zahlungsverlauf, wähle Coins bewusst und verstehe Möglichkeiten zur Beschleunigung oder Stornierung."
 lang: "de"
 verified_release: "v2.0.26"
 reader_level: "advanced"
@@ -21,7 +21,7 @@ Wähle **Wallet Coins** im Wallet-Menü. Prüfe Betrag, Bezeichnungen, Bestätig
 
 Wähle **Send** → **Manual Control**, um einzelne Coins im Zahlungsablauf zu bearbeiten. Wähle genug Wert für Zahlung und Gebühr. Prüfe Inputs und Wechselgeld vor der Bestätigung. Ausgewählte Coins stehen dem Transaktionsgenerator zur Verfügung; erst die endgültige Vorschau zeigt, welche tatsächlich verwendet werden.
 
-Behalte Bezeichnungen zur Herkunft oder dazu, wer Guthaben bereits kennt. Coins zu verwenden, die demselben Empfänger bereits zugeordnet sind, kann weniger neue Informationen offenlegen als unverwandte Quellen zu kombinieren. Eine Bezeichnung belegt keine Anonymität und verhindert keine fremde Blockchain-Analyse.
+Behalte Bezeichnungen zur Herkunft oder dazu, wer Guthaben bereits kennt. Coins zu verwenden, die demselben Empfänger bereits zugeordnet sind, kann weniger neue Informationen offenlegen als nicht zusammengehörige Quellen zu kombinieren. Eine Bezeichnung belegt keine Anonymität und verhindert keine fremde Blockchain-Analyse.
 
 <span id="consolidation-and-small-coins" data-ginger-heading="zusammenführung-und-kleine-coins" aria-hidden="true"></span>
 
@@ -29,7 +29,7 @@ Behalte Bezeichnungen zur Herkunft oder dazu, wer Guthaben bereits kennt. Coins 
 
 Eine Zusammenführung gibt mehrere kleine Coins in weniger Outputs aus, meist an eine eigene Wallet. Sie kostet jetzt Gebühren und kann die spätere Inputzahl verringern. Gleichzeitig verknüpft sie ausgewählte Inputs öffentlich. Niedrige Gebühren machen sie günstiger, beseitigen aber nicht diesen Privatsphärekompromiss.
 
-Kombiniere unverwandte Coins nicht automatisch für eine ordentliche Liste. Sehr kleine eingehende Outputs können unwirtschaftlich auszugeben sein. Gingers Dust-Schwelle und CoinJoin-Ausschlüsse betreffen verschiedene Situationen; ein CoinJoin-Ausschluss verhindert keine Auswahl für normale Zahlungen.
+Kombiniere nicht zusammengehörige Coins nicht automatisch für eine ordentliche Liste. Sehr kleine eingehende Outputs können unwirtschaftlich auszugeben sein. Gingers Dust-Schwelle und CoinJoin-Ausschlüsse betreffen verschiedene Situationen; ein CoinJoin-Ausschluss verhindert keine Auswahl für normale Zahlungen.
 
 Eine Übertragung an deine Hardware-Wallet mit **Send** ist eine normale On-Chain-Transaktion. Beschaffe und prüfe eine neue Hardware-Empfangsadresse und kontrolliere dann Gebühr und ausgewählte Coins der Software-Wallet. Die Übertragung bleibt auf der Blockchain sichtbar.
 
@@ -47,7 +47,7 @@ Du kannst den Verlauf prüfen, sortieren, gruppieren und IDs kopieren. Diese Ver
 
 ## Eine unbestätigte Transaktion beschleunigen
 
-Bietet Ginger **Speed Up Transaction** für einen Verlaufseintrag an, öffne die Aktion und prüfe die zusätzliche Gebühr vor der Bestätigung. Je nach Transaktion und verfügbaren Outputs ersetzt sie eine Transaktion durch eine Version mit höherer Gebühr oder gibt einen Output in einer Kindtransaktion aus, deren Gebühr beide bezahlt.
+Bietet Ginger **Speed Up Transaction** für einen Verlaufseintrag an, öffne die Aktion und prüfe die zusätzliche Gebühr vor der Bestätigung. Je nach Transaktion und verfügbaren Outputs ersetzt sie eine Transaktion durch eine Version mit höherer Gebühr oder gibt einen Output in einer Kindtransaktion aus, deren Gebühr für beide Transaktionen ausreicht.
 
 Nicht jede Transaktion kann deine Wallet beschleunigen. Nötig sind unterstützte Struktur und Zugriff auf relevante Schlüssel und Guthaben. Eine höhere Gebühr erhöht den Miner-Anreiz, garantiert aber keine sofortige Bestätigung. Eine Ersetzung kann die ID ändern; prüfe den aktualisierten Verlauf bei Empfängerabsprachen.
 
