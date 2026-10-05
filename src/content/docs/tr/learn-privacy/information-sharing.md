@@ -1,7 +1,7 @@
 ---
 doc_id: "learn-privacy.information-sharing"
 title: "Cüzdan bilgileriniz nereye gider?"
-description: "Ginger eşitlemesinin, CoinJoin’in, sağlayıcıların, gezginlerin, 2FA’nın, Secret Hunt’ın ve diğer cüzdan uygulamalarının neleri açıklayabileceğini ve Tor’un neyi değiştirdiğini anlayın."
+description: "Ginger eşitlemesinin, CoinJoin’in, sağlayıcıların, blok gezginlerinin, 2FA’nın, Secret Hunt’ın ve diğer cüzdan uygulamalarının neleri açıklayabileceğini ve Tor’un neyi değiştirdiğini anlayın."
 lang: tr
 verified_release: "v2.0.26"
 reader_level: "advanced"
@@ -13,7 +13,7 @@ next: false
 
 Farklı cüzdan eylemleri farklı bilgiler açıklar. Halka açık blok filtrelerini kontrol etmek, CoinJoin girdisi göndermek ve satın alma sayfası açmak aynı gizlilik olayı değildir. Geri alamayacağınız bir şeyi paylaşmadan önce bu kaynağı kullanın.
 
-Tor üzerinden yönlendirilen bağlantılarda doğrudan IP ifşasını azaltır. İsteği alan hizmetten gizlemez, işlemi blok zincirinden kaldırmaz, kilidi açılmış bilgisayarı korumaz veya harici tarayıcınızı otomatik değiştirmez. Yapılandırılmış yerel düğüm kontrol ettiğiniz makineye ayrı bir bağlantıdır.
+Tor, üzerinden yönlendirilen bağlantılarda doğrudan IP ifşasını azaltır. İsteği alan hizmetten gizlemez, işlemi blok zincirinden kaldırmaz, kilidi açılmış bilgisayarı korumaz veya harici tarayıcınızı otomatik değiştirmez. Yapılandırılmış yerel düğüm kontrol ettiğiniz makineye ayrı bir bağlantıdır.
 
 <span id="synchronization-and-bitcoin-network-activity" data-ginger-heading="eşitleme-ve-bitcoin-ağ-faaliyeti" aria-hidden="true"></span>
 
@@ -26,7 +26,7 @@ Tor üzerinden yönlendirilen bağlantılarda doğrudan IP ifşasını azaltır.
 | Ücret tahmini istemek | Yapılandırılmış sağlayıcı halka açık ücret bilgisi isteği alır. Bu istek işlem veya cüzdan bakiyenizi sorgulamaktan farklıdır. | **Fee Rate Provider** bölümünde yayımlanan kaynaklardan uygununu seçin; kendi düğümü seçeneği çalışan yapılandırılmış düğüm gerektirir. |
 | Ödeme yayınlamak | Eş veya yedek yayın hizmeti imzalı işlemi alır. Yayıldıkça girdileri, çıktıları ve tutarları görünür olur. | İmzalamadan önce inceleyin. Tor bağlantı ifşasını değiştirir, ödeme içeriğini değil. Önceki girişim başarısızsa Ginger yedek yayın yolları kullanabilir. |
 
-İşlettiğiniz Bitcoin düğümü için makineye erişimi ve uzak bağlantıları koruyun. İşleticisi istekleri görebilir; başkası yönetiyorsa sadece “sizin düğümünüz” denilen sunucu mutlaka gizli değildir. Normal internet erişimi, eş keşfi ve hizmet kullanılabilirliği yine önemlidir.
+İşlettiğiniz Bitcoin düğümü için makineye erişimi ve uzak bağlantıları koruyun. İşleticisi istekleri görebilir; başkası yönetiyorsa sadece “sizin düğümünüz” denilen sunucunun gizliliği garanti değildir. Normal internet erişimi, eş keşfi ve hizmet kullanılabilirliği yine önemlidir.
 
 <span id="coinjoin-and-optional-services" data-ginger-heading="coinjoin-ve-isteğe-bağlı-hizmetler" aria-hidden="true"></span>
 
@@ -35,8 +35,8 @@ Tor üzerinden yönlendirilen bağlantılarda doğrudan IP ifşasını azaltır.
 | Eylem ve alıcı | İlgili bilgiler | Seçebilecekleriniz |
 | --- | --- | --- |
 | CoinJoin koordinatörüyle katılmak | Gönderilen girdiler ve sahiplik kanıtları, çıktı kayıtları, protokol mesajları ve zamanlama. WabiSabi varsayımları altında girdilerle çıktıların eşleştirilmesini gizlemeyi amaçlar. | Katılımı, maliyetleri ve hedefi inceleyin; Tor’u açık tutun. Anahtarların kullanıcıda kalmasını her etkin gözlemciden korunmayla eşitlemeyin. |
-| Alım/satım teklifleri istemek ve adres doğrulamak | Teklif parametreleri, geçerliyse seçilen ülkeyi, para birimini, tutarı ve ödeme yöntemini içerir. Adres doğrulama sipariş tamamlanmadan önerilen adresi alım/satım hizmetine gönderir. | Sonra alım veya satımdan vazgeçseniz bile devam etmeden önce bu ifşayı düşünün. |
-| Alım/satım siparişi oluşturmak veya sürdürmek | Entegrasyon sipariş ayrıntıları ve alım veya iade adresini gönderip sağlayıcı sürecini açar. Sağlayıcı kendi koşulları altında ödeme, iletişim veya kimlik bilgileri isteyebilir. | Seçilen sağlayıcının güncel koşullarını okuyun ve yalnızca vermek istediğiniz bilgileri sunun. Ginger kimliği belirli alımı anonim hale getirmez. |
+| Alım/satım teklifleri istemek ve adres doğrulamak | Teklif parametreleri seçilen ülkeyi, para birimini, tutarı ve geçerliyse ödeme yöntemini içerir. Adres doğrulama sipariş tamamlanmadan önerilen adresi alım/satım hizmetine gönderir. | Sonra alım veya satımdan vazgeçseniz bile devam etmeden önce bu ifşayı düşünün. |
+| Alım/satım siparişi oluşturmak veya sürdürmek | Entegrasyon sipariş ayrıntıları ve alım veya iade adresini gönderip sağlayıcı sürecini açar. Sağlayıcı kendi koşulları altında ödeme, iletişim veya kimlik bilgileri isteyebilir. | Seçilen sağlayıcının güncel koşullarını okuyun ve yalnızca vermek istediğiniz bilgileri sunun. Ginger kimlikle ilişkilendirilmiş bir satın alımı anonim hale getirmez. |
 | İsteğe bağlı Ginger 2FA kullanmak | Normal başlangıç doğrulaması kurulum tanımlayıcısıyla kimlik doğrulama kodu gönderir. Hizmet ek cüzdan dosyası şifreleme katmanının anahtarını döndürür. | Erişim koruması ve hizmet bağımlılığının size uygun olup olmadığına karar verin. Kurtarma kelimeleri ve varsa asıl parolayı bağımsız erişilebilir tutun. |
 | Secret Hunt kontrollerine katılmak | Uygun etkinlik kontrolleri tur kimliği, işlem kimliği, girdi outpoint’i ve girdinin kontrol kanıtını gönderebilir. Outpoint önceki işlemin belirli çıktısını tanımlar. | **Secret Hunt** açıp **Enable/disable the use of this wallet for Secret Hunt.** olarak açıklanan seçeneği inceleyin. İlgili etkinlikler aktif olmak zorunda olmasa da varsayılanı açıktır. Kapatmak önceki istekleri geri çekmez. |
 
@@ -50,7 +50,7 @@ Tor, doğrulama için gönderilen adresi, sipariş ayrıntılarını, 2FA tanım
 
 | Eylem | Açıklanabilecekler | Yararlı alışkanlık |
 | --- | --- | --- |
-| Halka açık gezgin açmak | Sorgulanan işlem/adres ve tarayıcının ağ ve oturum bilgileri | Ginger’ın yerel geçmişiyle başlayın; yalnızca ek bilgi gerekince gezgin açın. |
+| Halka açık blok gezgini açmak | Sorgulanan işlem/adres ve tarayıcının ağ ve oturum bilgileri | Ginger’ın yerel geçmişiyle başlayın; yalnızca ek bilgi gerekince blok gezgini açın. |
 | Sağlayıcı web sitesini kullanmak | Sipariş ayrıntıları, giriş/ödeme bilgileri, çerezler ve siteye özgü tarayıcı gözlemleri | Tarayıcı oturumunu Ginger’ın Tor ayarından ayrı ele alın. |
 | xpub içe aktarmak veya başka uygulamada aynı hesabı kullanmak | Uygulamaya bağlı olarak açık adres dalı veya cüzdandan türetilen sorgular | İçe aktarmadan önce eşitleme ve veri paylaşma davranışını kontrol edin. “Yalnızca izleme” harcama yetkisini tanımlar, gizliliği değil. |
 | Mesajda veya halka açık gönderide adres paylaşmak | Adres ile onu gönderen kişi veya hesap arasındaki bağlantı | Amaçlanan ödeme yapanla güvenilir kanaldan yeni adres paylaşın. |

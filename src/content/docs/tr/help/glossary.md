@@ -31,7 +31,7 @@ next: false
 | vByte | Farklı tanık verili işlemlerin ücret oranlarını karşılaştırmak için kullanılan boyut birimi. |
 | RBF | Replace-by-fee: bekleyen işlem düğüm politikası altında, çoğunlukla ücretini artırmak için değiştirilebilir. |
 | CPFP | Child-pays-for-parent: çıktıyı yüksek ücretli alt işlemle harcamak, onaylanmamış üst işleminin onayını da teşvik edebilir. |
-| Toz | Belirli politika veya maliyet varsayımı altında yararlı olamayacak kadar küçük tutar. Cüzdan eşiği ve ağ politikası mutlaka aynı değildir. |
+| Toz | Belirli politika veya maliyet varsayımı altında yararlı olamayacak kadar küçük tutar. Cüzdan eşiği ve ağ politikası aynı olmak zorunda değildir. |
 
 <span id="the-network-in-context" data-ginger-heading="ağın-bağlamı" aria-hidden="true"></span>
 
@@ -84,7 +84,7 @@ Lightning, ödeme kanalları, çoklu imza oluşturma, halka açık testnet/Signe
 | Yeniden karıştırma (remix) | Hizmetin yeniden karıştırma koşullarını karşılayan fonlarla ek CoinJoin katılımı; madencilik ücreti yine geçerli olabilir. |
 | Anonimlik puanı | Ginger’ın coin gizliliğini sınıflandırmak için kullandığı yerel tahmin; bağımsız kişilerin doğrulanmış sayısı değildir. |
 | Anonimlik kümesi | Makul alternatiflerden oluşan kavramsal grup. Cüzdanın hesaplanan puanıyla otomatik aynı değildir. |
-| Küme (cluster) | Gözlemcinin birlikte ait olduğunu çıkardığı adresler veya coinler. Bazı ilişkiler gerçektir; diğerleri yanılabilir sezgisel kurallardır. |
+| Küme (cluster) | Gözlemcinin birbiriyle ilişkili olduğu sonucuna vardığı adresler veya coinler. Bazı ilişkiler gerçektir; diğerleri yanılabilir sezgisel kurallardır. |
 | Adresin tekrar kullanımı | Aynı adreste birden fazla alım yapmak ve alımları doğrudan bağlamak. |
 | Coin kontrolü | Ödeme için coinlerin bilinçli incelemesi ve seçimi. |
 | Tor | Uygulama bağlantılarını kullanıcının IP adresinden ayırmaya yardımcı ağ aktarma sistemi. |

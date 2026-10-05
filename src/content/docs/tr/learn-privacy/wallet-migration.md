@@ -71,6 +71,6 @@ Eski alım adreslerini ne zaman ve nasıl kullanmayı bırakacağınızı seçin
 
 ## Geçiş acil olduğunda
 
-Açığa çıkmış xpub öncelikle gizlilik sorunu doğurur. Açığa çıkmış imzalama sırları anında fon kontrolü sorunu doğurur. Saldırgan fonları zaten harcayabiliyorsa karmaşık gizlilik sürecini beklemek yerine yeni anahtarlı güvenilir hedefi önceliklendirin. Uygulama şifresini değiştirmek veya açığa çıkmış tohumu yeni donanım cihazına koymak kopyalanmış anahtarları iptal etmez.
+Açığa çıkmış xpub öncelikle gizlilik sorunu doğurur. Açığa çıkmış imzalama sırları anında fon kontrolü sorunu doğurur. Saldırganın fonları zaten harcayabiliyor olma ihtimali varsa karmaşık gizlilik sürecini beklemek yerine yeni anahtarlı güvenilir hedefi önceliklendirin. Uygulama şifresini değiştirmek veya açığa çıkmış tohumu yeni donanım cihazına koymak kopyalanmış anahtarları iptal etmez.
 
 Geçişten sonra [harcama örneklerini](/tr/learn-privacy/spending-after-coinjoin/) ve [bilgi paylaşımını](/tr/learn-privacy/information-sharing/) inceleyin. Sürdürülebilir amaç, nelerin bilinmeye devam ettiğini anlamak ve gereksiz yeni ifşalardan kaçınmaktır.

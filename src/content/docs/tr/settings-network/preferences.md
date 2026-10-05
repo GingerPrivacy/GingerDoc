@@ -17,7 +17,7 @@ Uygulama genelindeki tercihler için **Settings**, seçili cüzdanın adı, Coin
 
 ## Dil ve tutarlar
 
-**Settings** → **Appearance** bölümünde **Language** arayüz dilini seçer. 2.0.26 sürümü İngilizce, İspanyolca, Macarca, Fransızca, Çince, Almanca, Portekizce, Türkçe ve İtalyanca sunar. Yeniden başlatma istemlerini izleyin. Bu kılavuzun İngilizce aslı, yayımlanan İngilizce etiketleri kullanır; çevrilmiş etiketler farklı olabilir.
+**Settings** → **Appearance** bölümünde **Language** arayüz dilini seçer. 2.0.26 sürümü İngilizce, İspanyolca, Macarca, Fransızca, Çince, Almanca, Portekizce, Türkçe ve İtalyanca sunar. Yeniden başlatma istemlerini izleyin. Bu kılavuz, yayımlanan İngilizce arayüz etiketlerini korur; çevrilmiş etiketler farklı olabilir.
 
 **Dark mode** görünümü değiştirir. **Exchange currency** referans itibari para görüntüsünü değiştirir; ondalık ve grup ayırıcıları, Bitcoin kesir gruplaması ve **Fee display unit** sayı sunumunu kontrol eder. Bunlar alttaki BTC tutarını veya ağın işlem ücretini değiştirmez. Bilmediğiniz biçimde tutar girmeden önce ayarlardaki örnekleri okuyun.
 

@@ -60,7 +60,7 @@ Wasabi’de benzer taramanın uygulanması seçtiğiniz koordinatöre bağlıdı
 
 ### Ginger’ın koordinatör ücreti
 
-Muafiyet eşiği coin veya UTXO da denen **girdi başınadır**. Cüzdan bakiyenizin veya kaydettiğiniz birleşik tutarın sınırı değildir.
+Muafiyet eşiği coin veya UTXO da denen **girdi başınadır**. Cüzdan bakiyenizin veya tura kaydettiğiniz girdilerin toplam tutarının sınırı değildir.
 
 Güncel koordinatör ayarları altında:
 

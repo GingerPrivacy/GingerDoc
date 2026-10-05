@@ -39,7 +39,7 @@ Yalnızca düzenli coin listesi elde etmek için ilişkisiz coinleri otomatik bi
 
 Cüzdan ana ekranı gelen, giden ve CoinJoin faaliyetlerini gösterir. Tek tek turları incelemek gerektiğinde gruplanmış CoinJoin kayıtlarını genişletin. Sıralama kontrolleri tarih, tutar, etiket ve durumu karşılaştırmaya yardımcı olur. İşlem kimliğini ve mevcut onay veya ücret bilgisini incelemek için işlem ayrıntılarını açın.
 
-Belirli bir işlemi tanımlamak gerektiğinde **Copy Transaction ID** kullanın. Mümkün olduğunca işlem kimliklerini gizli tutun: birini paylaşmak adresleri, tutarları ve diğer faaliyetlerle bağlantıları açıklayabilir. Halka açık gezgin yaptığınız sorguları da öğrenir. Kendi ödemelerinizi kontrol edeceğiniz ilk yer Ginger’ın yerel geçmişidir.
+Belirli bir işlemi tanımlamak gerektiğinde **Copy Transaction ID** kullanın. Mümkün olduğunca işlem kimliklerini gizli tutun: birini paylaşmak adresleri, tutarları ve diğer faaliyetlerle bağlantıları açıklayabilir. Halka açık blok gezgini yaptığınız sorguları da öğrenir. Kendi ödemelerinizi kontrol edeceğiniz ilk yer Ginger’ın yerel geçmişidir.
 
 Geçmişi inceleyebilir, sıralayıp gruplayabilir ve işlem kimliklerini kopyalayabilirsiniz. Bu sürüm bu geçmiş sürecinde işlem arama veya CSV dışa aktarma kontrolü sunmaz.
 

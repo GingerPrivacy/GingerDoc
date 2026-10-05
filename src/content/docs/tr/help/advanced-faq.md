@@ -158,7 +158,7 @@ Hayır. Sunulan tur politikası altında girdi uygunluk kuralıdır; cüzdandaki
 
 ### CoinJoin doğrudan donanım cüzdanıma gönderebilir mi?
 
-Uygun yazılım cüzdanı, **Coinjoin to this wallet** içinde sunulan yüklü donanım cüzdanını seçebilir. Hedef ayrı hedefe ulaşma olayı beklemeden turun çıktılarını alır; normal başlangıç zaten gizli adayların turunu zorlamaz. Seçim sıfırlandığı için her yeniden başlatmadan sonra hedefi kontrol edin; çalışsın diye donanım tohumunu bilgisayara asla aktarmayın.
+Uygun yazılım cüzdanı, **Coinjoin to this wallet** içinde sunulan yüklü donanım cüzdanını seçebilir. Hedef cüzdan, ayrı bir gizlilik hedefine ulaşma olayı beklemeden turun çıktılarını alır; normal başlangıç zaten gizli adayların turunu zorlamaz. Seçim sıfırlandığı için her yeniden başlatmadan sonra hedef cüzdanı kontrol edin; çalışsın diye donanım tohumunu bilgisayara asla aktarmayın.
 
 <span id="does-an-own-node-replace-every-ginger-service-or-make-tor-unnecessary" data-ginger-heading="kendi-düğümüm-her-ginger-hizmetinin-yerini-alır-veya-toru-gereksiz-yapar-mı" aria-hidden="true"></span>
 

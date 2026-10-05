@@ -23,7 +23,7 @@ Ginger işlemlerinizi bulmak, ödemeleri yayınlamak ve CoinJoin’e katılmak i
 
 Tor’u kapatmak, iletişim kurulan hizmetlere ve eşlere açıklanan bilgiyi değiştirir. Zararsız bir performans ayarı değildir. Özellikle koordinatöre veya işlem yayın eşine bağlantılar ağ adresinizle ilişkilendirilebilir. Bekleyen CoinJoin’e rutin yanıt olarak kapatmayın.
 
-Ginger’ın Tor bağlantısı harici tarayıcıyı Tor Browser yapmaz. Sağlayıcı sayfaları, gezginler ve diğer bağlantılar yapılandırılmış tarayıcıyı kullanır. İsteklerinin cüzdan ağ korumasını devraldığını varsaymadan önce tarayıcıyı ayrı inceleyin.
+Ginger’ın Tor bağlantısı harici tarayıcıyı Tor Browser yapmaz. Sağlayıcı sayfaları, blok gezginleri ve diğer bağlantılar yapılandırılmış tarayıcıyı kullanır. İsteklerinin cüzdan ağ korumasını devraldığını varsaymadan önce tarayıcıyı ayrı inceleyin.
 
 <span id="what-synchronization-does" data-ginger-heading="eşitleme-ne-yapar" aria-hidden="true"></span>
 

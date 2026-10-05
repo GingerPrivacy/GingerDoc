@@ -8,7 +8,26 @@
     "Using Ginger": "Ginger kullanımı",
     "Ginger Wallet website": "Ginger Wallet web sitesi"
   },
-  "sidebar": {},
+  "sidebar": {
+    "Getting Started": "Başlangıç",
+    "First steps": "İlk adımlar",
+    "Backup and recovery": "Yedekleme ve kurtarma",
+    "Help": "Yardım",
+    "Questions and troubleshooting": "Sorular ve sorun giderme",
+    "Using Ginger": "Ginger kullanımı",
+    "CoinJoin": "CoinJoin",
+    "Payments": "Ödemeler",
+    "Hardware wallets": "Donanım cüzdanları",
+    "Settings and network": "Ayarlar ve ağ",
+    "Buy and sell": "Alım ve satım",
+    "Bitcoin basics": "Bitcoin temelleri",
+    "Bitcoin privacy": "Bitcoin gizliliği",
+    "Ginger vs Wasabi": "Ginger ve Wasabi karşılaştırması",
+    "Ginger vs Sparrow": "Ginger ve Sparrow karşılaştırması",
+    "Understanding CoinJoin": "CoinJoin’i anlamak",
+    "Self-custody": "Anahtarları kendiniz saklamak",
+    "Advanced use": "İleri düzey kullanım"
+  },
   "search": {
     "levelLabel": "Düzey",
     "scope": "Arama kapsamı",

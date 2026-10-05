@@ -34,7 +34,7 @@ Bu rehber alıcının sağladığı isteğin gönderilmesini kapsar. Ginger’ı
 
 ## Alıcının ve gözlemcinin öğrendikleri
 
-Alıcı ödeme isteğini, alım adresini ve amaçlanan tutarı zaten bilir. İstek kimliği belirli bir siparişe bağlıysa PayJoin o kimliği silmez. Görüşme sırasında alım hizmeti, gönderenin önerilen girdileri dahil önerilen ödeme işlemini de görür. Ödemenin kendisinin gizlendiği biri olarak görülmemelidir.
+Alıcı ödeme isteğini, alım adresini ve amaçlanan tutarı zaten bilir. İstek, kimliğinizle ilişkilendirilmiş bir siparişe bağlıysa PayJoin bu kimlik bağlantısını silmez. Görüşme sırasında alım hizmeti, gönderenin önerilen girdileri dahil önerilen ödeme işlemini de görür. Ödemenin kendisinin gizlendiği biri olarak görülmemelidir.
 
 Dış gözlemci sonunda Bitcoin’de yayımlanan işlemi görür. Başarılı PayJoin, alışılmış “tüm girdiler gönderene aittir” varsayımını güvenilmez kılabilir. Fayda, işleme ve gözlemcinin başka hangi bilgilere sahip olduğuna bağlıdır; işlemin her normal ödemeden ayırt edilemez olmasını garanti etmez.
 
@@ -58,6 +58,6 @@ Bazı hizmetler bir alım adresini kontrol ettiğinizi göstermenizi ister. Cüz
 
 Donanım cüzdanında cihazın imzalama istemini izleyin; kullanılabilirlik cihaza ve mesaj imzalama desteğine bağlıdır. İmzalama cihazı olmayan yalnızca izleme cüzdanı imza üretemez. Adres türü ile doğrulayıcının desteklediği imza biçimi de uyumlu olmalıdır.
 
-Mesajı bir yetkilendirme ifadesi kadar dikkatli okuyun. Alıcıyı, amacı ve tarihi veya sorguyu belirten dar kapsamlı metin tercih edin. Boş ifadeyi veya sonuçlarını anlamadığınız metni imzalamayın. Paylaştıktan sonra imza kopyalanıp başkalarına gösterilebilir.
+Mesajı bir yetkilendirme ifadesi kadar dikkatli okuyun. Alıcıyı, amacı ve tarihi veya doğrulama isteğini belirten dar kapsamlı metin tercih edin. Boş ifadeyi veya sonuçlarını anlamadığınız metni imzalamayın. Paylaştıktan sonra imza kopyalanıp başkalarına gösterilebilir.
 
 Mesaj imzalama bitcoin aktarmaz veya cüzdanınızdaki her adresin sahipliğini kanıtlamaz. İmzalanan adres ile doğrulayıcının siz olarak tanımladığı kişi arasında bağlantı da oluşturur. Borsa bunu isterse sonradan CoinJoin kullansanız bile o ifşa kalır.

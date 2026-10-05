@@ -47,6 +47,6 @@ Ginger, uygulama kapalıyken ödeme alabilir. Ödeme yapanın çevrimiçi cüzda
 
 ## Ödeme görünmüyorsa
 
-Gönderenden işlem kimliğini isteyin ve mevcut iletişim kanalınızdan hedefi doğrulayın. Seçili cüzdanı, ana ağ ile test ağı ayrımını, eşitleme durumunu ve gönderenin gerçekten işlem yayınlayıp yayınlamadığını kontrol edin. Her adresi halka açık gezgine yapıştırmaktan kaçının: gezgin neyi sorguladığınızı öğrenir.
+Gönderenden işlem kimliğini isteyin ve mevcut iletişim kanalınızdan hedefi doğrulayın. Seçili cüzdanı, ana ağ ile test ağı ayrımını, eşitleme durumunu ve gönderenin gerçekten işlem yayınlayıp yayınlamadığını kontrol edin. Her adresi halka açık blok gezginine yapıştırmaktan kaçının: blok gezgini neyi sorguladığınızı öğrenir.
 
 Kelimelerden geri yüklediyseniz ve geçmişte çok sayıda kullanılmamış adres oluşturduysanız kurtarma boşluk sınırı önemli olabilir. Yeni alım isteği tek başına eksik geçmiş taramasını düzeltmez. Yeniden tarama veya kurtarma denemeden önce yedekleri koruyun.

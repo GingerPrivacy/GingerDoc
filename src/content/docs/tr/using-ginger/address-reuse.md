@@ -43,7 +43,7 @@ Analist işlemler arasındaki zamanları ve tutarları da karşılaştırabilir.
 
 Cüzdanın amaçlanan gizli ağ kullanımı için Tor’u açık tutun. Doğrudan IP ifşasını azaltmak için bağlantıları aktarıcılardan geçirir; [Tor Projesi açıklaması](https://support.torproject.org/about-tor/introduction/what-is-tor/) rolünü anlatır. Tor, diğer uçtaki hizmete açıkça gönderdiğiniz bilgileri gizlemez.
 
-Sağlayıcı ve gezgin bağlantıları için kullanılan tarayıcıyı kontrol edin. Normal tarayıcınız oturum açılmış hesaplar ve tanımlayıcı çerezler taşıyabilir. Ginger’ın tarayıcı tercihi ve kendi Tor ayarı ayrıdır. Kendi adresleriniz için tekrarlanan halka açık gezgin aramaları yerine yerel cüzdan geçmişini tercih edin.
+Sağlayıcı ve blok gezgini bağlantıları için kullanılan tarayıcıyı kontrol edin. Normal tarayıcınız oturum açılmış hesaplar ve tanımlayıcı çerezler taşıyabilir. Ginger’ın tarayıcı tercihi ve kendi Tor ayarı ayrıdır. Kendi adresleriniz için tekrarlanan halka açık blok gezgini aramaları yerine yerel cüzdan geçmişini tercih edin.
 
 Biri ekranınızı görebiliyorsa desteklenen ekran alanlarında **Discreet Mode** kullanın; uzaklaşırken işletim sistemi kilidini kullanın. Yedek ortamlarını ve yerel etiketleri koruyun. Yalnızca izleme cüzdanı, imzalama anahtarlarını açığa çıkarmadan da finansal faaliyetleri sızdırabilir.
 

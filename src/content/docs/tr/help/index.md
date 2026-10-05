@@ -48,9 +48,9 @@ Hayır. Normal yazılım cüzdanı oluşturma yerel kurtarma bilgisi kullanır; 
 
 Hayır. Alma, normal gönderme ve CoinJoin ayrı eylemlerdir. Öğrenirken gözetimsiz katılım istemiyorsanız **Coinjoin Settings** içindeki **Automatically start coinjoin** inceleyin; tur zaten etkinse duraklatıp kritik işin bitmesine izin verin.
 
-<span id="can-i-buy-bitcoin-in-ginger-or-receive-an-exchange-withdrawal" data-ginger-heading="gingerda-bitcoin-alabilir-veya-borsa-çekimi-alabilir-miyim" aria-hidden="true"></span>
+<span id="can-i-buy-bitcoin-in-ginger-or-receive-an-exchange-withdrawal" data-ginger-heading="gingerda-bitcoin-satın-alabilir-veya-borsa-çekimi-alabilir-miyim" aria-hidden="true"></span>
 
-### Ginger’da bitcoin alabilir veya borsa çekimi alabilir miyim?
+### Ginger’da bitcoin satın alabilir veya borsa çekimi alabilir miyim?
 
 Zincir üstü Bitcoin çekimi için **Receive** bölümünden yeni adres kullanabilir, borsada yetkilendirmeden önce adresi ve ağı kontrol edebilirsiniz. Ginger’da mevcut olduğunda **Buy** ve **Sell** sağlayıcı süreçleri de vardır. Seçili sağlayıcının güncel koşullarını, teklifini ve sipariş durumunu kontrol edin; satın alma onayı, onaylanmış Bitcoin alımıyla aynı değildir.
 
@@ -196,7 +196,7 @@ Fonlar harcanabilir ve gönderme süreci kullanılabilirken normal ödeme yapabi
 
 ### Tüm fonlar gizliyken başlatma kontrolü neden yok?
 
-Normal elle kontrol paneli tüm fonlar cüzdanın gizlilik hedefini karşıladığında başlatmayı gizleyebilir. Normal başlangıç yalnızca gizli mevcut coin kümesini de reddeder; başka hedef seçmek turu zorlamaz. Yalnızca fonları taşımak istiyorsanız normal ödemeyi inceleyin.
+Normal elle kontrol paneli tüm fonlar cüzdanın gizlilik hedefini karşıladığında başlatmayı gizleyebilir. Normal başlangıç yalnızca gizli mevcut coin kümesini de reddeder; başka bir çıktı cüzdanı seçmek turu zorlamaz. Yalnızca fonları taşımak istiyorsanız normal ödemeyi inceleyin.
 
 <span id="payments-and-hardware" data-ginger-heading="ödemeler-ve-donanım" aria-hidden="true"></span>
 
@@ -252,4 +252,4 @@ Ginger normal Bitcoin ödemesi hazırlayabilir; sağlayıcının kabulünü veya
 
 ## Bu kılavuz hakkında
 
-Bu kılavuzun İngilizce aslı Ginger v2.0.26’yı anlatır ve İngilizce arayüz etiketlerini kullanır. Belgeler ve çeviriler hata içerebilir. Ginger doğruluklarını garanti etmez; devam etmeden önce kritik ayrıntıları uygulamada doğrulayın. Hata bulursanız cüzdan sırlarını eklemeden [belge deposunda bildirin](https://github.com/GingerPrivacy/GingerDoc/issues).
+Bu kılavuz Ginger v2.0.26’yı anlatır ve İngilizce arayüz etiketlerini kullanır. Belgeler ve çeviriler hata içerebilir. Ginger doğruluklarını garanti etmez; devam etmeden önce kritik ayrıntıları uygulamada doğrulayın. Hata bulursanız cüzdan sırlarını eklemeden [belge deposunda bildirin](https://github.com/GingerPrivacy/GingerDoc/issues).

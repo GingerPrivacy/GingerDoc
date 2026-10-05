@@ -13,7 +13,7 @@ next: false
 
 Bitcoin işlemleri herkese açıktır, ancak cüzdan sahibinin adı her adresin yanına otomatik yazılmaz. Pratik soru, bir adresi veya işlemi sizinle kimin ilişkilendirebildiği ve bu bağlantıdan başka neler çıkarabildiğidir.
 
-Bir müşteri verdiğiniz fatura adresini bilebilir. Borsa, çekim adresinizi ve doğrulanmış kimliğinizi bilebilir. Halka açık bağış adresini izleyen biri gelen ödemeleri gözlemleyebilir. Bu gözlemciler farklı bilgilerle başlar; bu nedenle gizliliği tek bir anonim/anonim değil ayarı yerine kontrollü bilgi açıklama olarak düşünmek daha yararlıdır.
+Bir müşteri, faturada verdiğiniz Bitcoin alım adresini bilebilir. Borsa, çekim adresinizi ve doğrulanmış kimliğinizi bilebilir. Halka açık bağış adresini izleyen biri gelen ödemeleri gözlemleyebilir. Bu gözlemciler farklı bilgilerle başlar; bu nedenle gizliliği tek bir anonim/anonim değil ayarı yerine kontrollü bilgi açıklama olarak düşünmek daha yararlıdır.
 
 <span id="what-the-blockchain-reveals" data-ginger-heading="blok-zincirinin-açığa-çıkardıkları" aria-hidden="true"></span>
 

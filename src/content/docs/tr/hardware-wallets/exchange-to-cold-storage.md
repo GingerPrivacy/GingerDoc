@@ -37,7 +37,7 @@ CoinJoin çalışsın diye donanım cüzdanının kurtarma kelimelerini Ginger�
 
 Yazılım cüzdanında **Receive** seçeneğini seçin, yararlı etiket ekleyin ve yeni adres oluşturun. Adresi borsanın Bitcoin çekme sürecine kopyalayın; orada çekimi yetkilendirmeden önce tam adresi ve ağı doğrulayın. Ginger zincir üstü Bitcoin kullanır; Lightning faturası veya başka varlığın ağı bunun yerine geçmez.
 
-Borsa çekim ücretini ayrı kaydedin. Ginger’a ulaşan tutar borsanın düşürdüğü tutardan az olabilir. CoinJoin’e katılmasını beklemeden önce cüzdanın eşitlenmesini ve gelen fonların onaylanmasını bekleyin. İşlem kimliği uzlaştırma için yararlıdır; ancak yayımlamaktan veya halka açık gezginlerde sürekli aramaktan kaçının.
+Borsa çekim ücretini ayrı kaydedin. Ginger’a ulaşan tutar borsanın düşürdüğü tutardan az olabilir. CoinJoin’e katılmasını beklemeden önce cüzdanın eşitlenmesini ve gelen fonların onaylanmasını bekleyin. İşlem kimliği uzlaştırma için yararlıdır; ancak yayımlamaktan veya halka açık blok gezginlerinde sürekli aramaktan kaçının.
 
 <span id="route-a-review-coinjoin-results-then-transfer" data-ginger-heading="yol-a-coinjoin-sonuçlarını-inceleyin-sonra-aktarın" aria-hidden="true"></span>
 
@@ -55,7 +55,7 @@ Her çıktıyı birlikte göndermek aralarında görünür ilişki oluşturur. T
 
 ## Yol B: CoinJoin hedefi olarak donanımı seçin
 
-Bu yolu yazılım cüzdanında CoinJoin için uygun fonlar varken kullanın. Normal v2.0.26 süreci cüzdan veya tüm mevcut adaylar hedef altında zaten gizliyse katılımı reddeder. Başka hedef seçmek kontrolü aşmaz. Özellikle gizli olmayan her coini hariç tutmak, yalnızca tamamlanmış coinleri içeren ek turu zorlamanın güvenilir yolu değildir. Sırf durdurma koşulunu aşmak için hedefi değiştirmek yerine o fonlarda Yol A’yı kullanın.
+Bu yolu yazılım cüzdanında CoinJoin için uygun fonlar varken kullanın. Normal v2.0.26 süreci cüzdan veya tüm mevcut adaylar seçili gizlilik hedefine göre zaten gizli sayılıyorsa katılımı reddeder. Başka bir çıktı cüzdanı seçmek kontrolü aşmaz. Özellikle gizli olmayan her coini hariç tutmak, yalnızca tamamlanmış coinleri içeren ek turu zorlamanın güvenilir yolu değildir. Sırf durdurma koşulunu aşmak için gizlilik hedefini değiştirmek yerine o fonlarda Yol A’yı kullanın.
 
 1. Donanım cüzdanını Ginger’a yükleyip doğrulayın. Kaynakta CoinJoin katılımını durdurun ve hedef seçici kullanılabilir olana kadar bekleyin.
 2. Kaynak cüzdanın **Coinjoin Settings** bölümünü açın. **Coinjoin to this wallet** seçimini amaçlanan donanım cüzdanına ayarlayın. Yalnızca Ginger’ın sunduğu hedefi seçin.
@@ -73,6 +73,6 @@ Hedef seçimi Ginger yeniden başlatılınca sıfırlanır. Her oturumdan önce 
 
 Kaynak azalışını donanımda alınan çıktılar ve kaynakta kalan fonlarla karşılaştırın. Fark CoinJoin maliyetlerini içerebilir. Amaçlanan hedef aldıysa sıfır kaynak bakiyesi fonların kaybolduğu anlamına gelmez. Tersine, başarılı tur her kaynak coinin taşındığı veya hedefe ulaştığı anlamına gelmez.
 
-Donanımdan sonra harcarken coin seçimini yeniden inceleyin. İlişkisiz coinleri birleştirmek, imzalama anahtarları nerede saklanırsa saklansın ilişkileri açığa çıkarabilir. Yeni alıcı adresi kullanın, para üstünü inceleyin ve ödemeyi cihazda onaylayın. [PSBT süreci](/tr/hardware-wallets/psbt/) uygun donanım için desteklenen dosyayla imzalama yolu sunar; imzaladığınız işlemin gizlilik sonuçlarını değiştirmez.
+Daha sonra donanım cüzdanından harcarken coin seçimini yeniden inceleyin. İlişkisiz coinleri birleştirmek, imzalama anahtarları nerede saklanırsa saklansın ilişkileri açığa çıkarabilir. Yeni alıcı adresi kullanın, para üstünü inceleyin ve ödemeyi cihazda onaylayın. [PSBT süreci](/tr/hardware-wallets/psbt/) uygun donanım için desteklenen dosyayla imzalama yolu sunar; imzaladığınız işlemin gizlilik sonuçlarını değiştirmez.
 
 İmzalama anahtarlarının zaten ele geçirildiğinden şüpheleniyorsanız kalan fonları korumak gizlilik sürecini beklemekten önceliklidir. Aynı açığa çıkmış tohumu içeren yeni cihaz o tohumu iptal etmez.

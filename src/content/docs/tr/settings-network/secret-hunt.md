@@ -37,4 +37,4 @@ Tor ağ düzeyindeki ifşayı ele alır; istek içeriğini alıcıdan kaldırmaz
 
 Sonuçlar etkinlik tarihlerine, uygun onaylanmış faaliyete, hizmet kullanılabilirliğine ve dönemsel güncellemelere bağlıdır. Tur yeni sır açıklamadan başarıyla tamamlanabilir. Sonuç beklemek bitcoinin eksik olduğunun kanıtı değildir.
 
-Ödülün sizi karşılayacağı varsayımıyla ek ücretli işlemler üretmeyin. Katılmaya karar vermeden önce etkinliğin gerçek koşullarını kimliği doğrulanmış kaynaktan okuyun. Cüzdan dosyası yüklemenizi veya istenmeyen destek adresine ayrı “ödül alma ücreti” göndermenizi isteyenleri dikkate almayın.
+Ödülün maliyetinizi karşılayacağı varsayımıyla ek ücretli işlemler üretmeyin. Katılmaya karar vermeden önce etkinliğin gerçek koşullarını kimliği doğrulanmış kaynaktan okuyun. Cüzdan dosyası yüklemenizi veya istenmeyen destek adresine ayrı “ödül alma ücreti” göndermenizi isteyenleri dikkate almayın.

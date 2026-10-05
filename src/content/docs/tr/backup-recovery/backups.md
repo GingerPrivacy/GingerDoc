@@ -50,7 +50,7 @@ Açık bir yazılım cüzdanı için **Wallet Settings** → **Tools** → **Ver
 
 Kelimeler doğrulanmazsa yazımı ve sırayı gizlilik içinde kontrol edin. Hâlâ harcama erişiminiz varsa ancak kullanılabilir bir kurtarma yedeği oluşturamıyorsanız doğrulanmış yedeği olan yeni bir cüzdan oluşturup fonları dikkatle aktarın. İnceleme sırasında eski cüzdanı silmeyin.
 
-Önemli etiket veya ayar değişikliklerinden sonra yerel üst verileri yeniden yedekleyin. Daha fazla bitcoin almak normalde yeni kurtarma kelimeleri gerektirmez; ancak yeni bir cüzdan veya farklı bir parola gerektirir.
+Önemli etiket veya ayar değişikliklerinden sonra yerel üst verileri yeniden yedekleyin. Daha fazla bitcoin almak normalde yeni kurtarma kelimeleri gerektirmez; yeni bir cüzdan veya farklı bir parola için ise kurtarma bilgilerini yeniden yedeklemeniz gerekir.
 
 <span id="what-about-labels-and-computer-files" data-ginger-heading="etiketler-ve-bilgisayar-dosyaları-ne-olacak" aria-hidden="true"></span>
 

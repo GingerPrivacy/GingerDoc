@@ -21,7 +21,7 @@ Cüzdanlarınızın, her birinin kullandığı imzalayan türünün, yedeklerin 
 
 Özellikle donanım cihazları veya birkaç cüzdan kullanırken doğru kurtarılmış hesabı tanımaya yeterli cüzdan düzeni bilgisi saklayın. Kayıtlar için önemliyse etiket ve üst veri yedeklerini tutun; blok zinciri yazdığınız özel notları yeniden oluşturamaz.
 
-Yetersizlik veya ölüm sonrası başka birinin fonları kurtarmasını istiyorsanız koşullarınıza uygun, açık ve denenmiş erişim planı düzenleyin. Tüm sırları şimdi gelişigüzel paylaşmayın veya kişinin hangi şifreyi kastettiğinizi tahmin edeceğini varsaymayın. Miras ve erişim düzenleri yerel uzman danışmanlığı gerektiren hukuki sonuçlar doğurabilir; bu sayfa hukuki yapı önermez.
+Kendi işlerinizi yönetememeniz veya ölümünüz sonrasında başka birinin fonları kurtarmasını istiyorsanız koşullarınıza uygun, açık ve denenmiş erişim planı düzenleyin. Tüm sırları şimdi gelişigüzel paylaşmayın veya kişinin hangi şifreyi kastettiğinizi tahmin edeceğini varsaymayın. Miras ve erişim düzenleri yerel uzman danışmanlığı gerektiren hukuki sonuçlar doğurabilir; bu sayfa hukuki yapı önermez.
 
 <span id="check-before-funding-and-before-signing" data-ginger-heading="fonlamadan-ve-imzalamadan-önce-kontrol-edin" aria-hidden="true"></span>
 
@@ -56,7 +56,7 @@ Adres ifşası ile kurtarma kelimelerinin ifşası farklı yanıt gerektirir. Te
 | Kurtarma kelimeleri ve gereken parola veya kullanılabilir özel anahtarlar | Fon harcamak ve ele geçirilmiş kapsamda daha fazla anahtar türetmek | Güvenilir cihazda yeni anahtarlı yeni cüzdan hazırlayıp hâlâ kontrol ettiğiniz fonları taşıyın |
 | Çalınmış bilgisayar, kilidi açık uygulama veya uzaktan kontrol oturumu | Durumuna göre cüzdan verisine, imzalamaya ve diğer hesaplara erişim | Yetkisiz erişimi sonlandırın; kalan fonları değerlendirmek ve korumak için güvenilir cihaz kullanın |
 
-Genişletilmiş açık anahtar cihazdaki her hesabın görünümü değildir; türetme kapsamı önemlidir. Ancak açıklanmış açık dal altında başka alım adresi oluşturmak normalde o dalın sürekli izlenmesini önlemez. [BIP32 bu açık anahtar türetme sınırlarını açıklar](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki).
+Genişletilmiş açık anahtar, cihazdaki tüm hesapların görülebileceği anlamına gelmez; türetme kapsamı önemlidir. Ancak açıklanmış açık dal altında başka alım adresi oluşturmak normalde o dalın sürekli izlenmesini önlemez. [BIP32 bu açık anahtar türetme sınırlarını açıklar](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki).
 
 Yalnızca kurtarma kelimeleri açıklanmışsa ve ayrı parola kullandıysanız risk, parolanın hâlâ gizli kalıp kalmadığına ve tahmin zorluğuna da bağlıdır. Bilinmeyen veya zayıf parolanın açığa çıkmış yedeği süresiz güvenli kıldığını varsaymayın. Kanıt eksikse ve maruziyet harcamayı yetkilendirebilecekse anahtar maruziyeti yanıtını kullanın.
 
@@ -90,6 +90,6 @@ Sızan kayıtlar için ek erişimi kısıtlayın ve kayıtların birlikte neyi a
 
 ## Gizliliği anahtar korumasından ayrı tutun
 
-İşlemi bilen gözlemcinin onu harcayacak anahtarları mutlaka yoktur. Tersine, anahtarlı hırsız işlem geçmişi analizi zor olan fonları harcayabilir. İkinci sorun için kurtarma koruması ve cihaz doğrulamasını; ilki için adres alışkanlıklarını, Tor’u, coin seçimini ve düşünülmüş CoinJoin kullanımını uygulayın.
+İşlemi bilmek, onu harcayacak anahtarlara da sahip olmak anlamına gelmez. Tersine, anahtarlı hırsız işlem geçmişi analizi zor olan fonları harcayabilir. İkinci sorun için kurtarma koruması ve cihaz doğrulamasını; ilki için adres alışkanlıklarını, Tor’u, coin seçimini ve düşünülmüş CoinJoin kullanımını uygulayın.
 
 Cüzdan ekledikten, donanım değiştirdikten, 2FA açtıktan veya yedekleri taşıdıktan sonra rutini inceleyin. Gereksiz tam kurtarma alıştırması için her sırrı tekrar tekrar açığa çıkarmak yerine değişen parçaları doğrulayın.

@@ -23,7 +23,7 @@ Herkese açık bitcoin almak cüzdanınızdaki her adresi yayımlamayı gerektir
 | Her ödeme yapana verilen yeni adres | Her ödeme isteğinin ayrı hedefi olur | Ödeme yapan ve iletişim hizmeti adresi ve kimliğinizi bilebilir; sonraki işlemler bağlantı kurabilir |
 | Her tekrarlanan taksit için yeni adres | Ödeme başına özel kayıt tutabilirsiniz | Yeni talimatın iletilmesini gerektirir; ödeme yapan eski adresi yine kullanabilir |
 
-Halka açık adresin alımları mutlaka sahibinin tam bakiyesi, geliri veya bağışçı sayısı değildir. Biri kendisine bitcoin gönderebilir, bağışçılar tekrar ödeme yapabilir ve başka adresler olabilir. Görünen işlemlerin desteklediğinden güçlü sonuçlar çıkarmayın.
+Halka açık bir adresin alımları, sahibinin tam bakiyesini, gelirini veya bağışçı sayısını tek başına göstermez. Biri kendisine bitcoin gönderebilir, bağışçılar tekrar ödeme yapabilir ve başka adresler olabilir. Görünen işlemlerin desteklediğinden güçlü sonuçlar çıkarmayın.
 
 <span id="receive-and-keep-useful-records" data-ginger-heading="alın-ve-yararlı-kayıtlar-tutun" aria-hidden="true"></span>
 
@@ -70,4 +70,4 @@ Beklenmeyen çok küçük ödemeler anında yanıt gerektirmez. Küçük çıkt�
 
 Saklamak için uygun CoinJoin çıktılarınızı başka yüklü cüzdana yönlendiriyorsanız her oturumdan önce seçimi kontrol edin. Yeniden başlatmada sıfırlanır; normal sürüm süreci, tüm uygun fonlar zaten gizliyse ek turu zorlamaz. Tekrarlanan alım düzeni, her şeyin sürekli donanıma aktarıldığına ilişkin doğrulanmamış varsayıma dayanmamalıdır.
 
-Somut örnekler için [CoinJoin sonrası harcamayla](/tr/learn-privacy/spending-after-coinjoin/); web sitelerinin, gezginlerin ve diğer uygulamaların öğrenebilecekleri için [bilgi paylaşımıyla](/tr/learn-privacy/information-sharing/) devam edin.
+Somut örnekler için [CoinJoin sonrası harcamayla](/tr/learn-privacy/spending-after-coinjoin/); web sitelerinin, blok gezginlerinin ve diğer uygulamaların öğrenebilecekleri için [bilgi paylaşımıyla](/tr/learn-privacy/information-sharing/) devam edin.

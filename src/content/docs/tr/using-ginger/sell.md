@@ -43,7 +43,7 @@ Satış bitcoini sağlayıcının sunduğu ödeme yöntemi karşılığında boz
 6. Onaylamadan önce işlem ücretini ve alıcı tutarını inceleyin. Sağlayıcının istediği tutar ücret kesintisinden sonra ulaşmalıdır; “tümünü gönder” eylemini yanlışlıkla sabit faturanın ödemesi saymayın.
 7. İlerleme için geçmişi ve **Previous Orders** bölümünü kontrol edin. Sağlayıcı sipariş kimliğini ve işlem kimliğini kayıtlarınız için saklayın.
 
-Satış penceresi sağlayıcı bağlamını korur; ödeme isteğini önizlemeyle karşılaştırma sorumluluğunuzu kaldırmaz. Teklif göndermeden önce sona ererse eski adrese tahminen ödeme yapmak yerine sağlayıcıdan güncel talimat alın.
+Satış penceresi sağlayıcı bağlamını korur; ödeme isteğini önizlemeyle karşılaştırma sorumluluğunuzu kaldırmaz. Bitcoin göndermeden önce teklifin süresi dolarsa eski adrese tahminen ödeme yapmak yerine sağlayıcıdan güncel talimat alın.
 
 <span id="understand-status" data-ginger-heading="durumu-anlayın" aria-hidden="true"></span>
 
@@ -53,7 +53,7 @@ Satış penceresi sağlayıcı bağlamını korur; ödeme isteğini önizlemeyle
 | --- | --- |
 | **Created** | Sipariş var; yeniden ödemeden önce kalan sağlayıcı adımlarını kontrol edin. |
 | **Pending** | İşleme sürüyor. Sağlayıcı durumunu ve cüzdan geçmişini karşılaştırın. |
-| **Your transaction is on hold. Please contact Support.** | Sipariş kimliğiyle seçili sağlayıcıya başvurun. Ginger incelemesini kaldıramaz. |
+| **Your transaction is on hold. Please contact Support.** | Sipariş kimliğiyle seçili sağlayıcıya başvurun. Ginger sağlayıcının incelemesini kaldıramaz. |
 | **Expired** | Eski teklif veya ödeme adresinin kullanılabilir kaldığını varsaymayın. Fonlar zaten gönderildiyse sağlayıcıya sorun. |
 | **Failed** | Yeni sipariş denemeden önce ödeme veya bitcoin aktarılıp aktarılmadığını kontrol edin. |
 | **Refunded** | Sağlayıcıyla iade yöntemini, hedefini ve gerçekleşmesini doğrulayın. |

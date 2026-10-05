@@ -35,7 +35,7 @@ CoinJoin bu bağlantılara yardımcı olabilir. Borsanın çekim kaydını silem
 
 ## Maliyeti ne olur?
 
-Başarılı tur Bitcoin madencilik ücretlerini öder ve koordinatör ücreti de alabilir. Koordinatör ücreti muafiyeti madencilik maliyetini kaldırmaz. Birkaç tur birkaç maliyet anlamına gelebilir.
+Başarılı bir turda Bitcoin madencilik ücretleri ödenir ve koordinatör ücreti de bulunabilir. Koordinatör ücreti muafiyeti madencilik maliyetini kaldırmaz. Birkaç tur birkaç maliyet anlamına gelebilir.
 
 Sabit tamamlanma süresi yoktur. Ginger onayları, kabul edilebilir ücretleri veya diğer katılımcıları bekleyebilir. Tekrarlanan katılımı gözetimsiz bırakmadan önce durumu okuyup sonucu inceleyin.
 
