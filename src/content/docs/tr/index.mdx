@@ -1,0 +1,54 @@
+---
+doc_id: manual.home
+title: GingerWallet belgeleri
+description: İlk Ginger cüzdanınız ve günlük bitcoin kullanımı için pratik rehberler. Cüzdanınızı yedeklemeyi, bitcoin alıp göndermeyi ve gizliliği anlamayı öğrenin.
+lang: tr
+reader_level: beginner
+template: splash
+hero: {}
+---
+
+import ManualHome from '../../../components/ManualHome.astro';
+
+<ManualHome
+  eyebrow="Kullanım kılavuzu"
+  title="Ginger ile"
+  titleSecondLine="rahatça"
+  titleAccent="başlayın."
+  description="İlk cüzdanınız ve günlük bitcoin kullanımı için pratik rehberler."
+  start={{ label: 'Ginger kullanmaya başlayın', href: '/tr/getting-started/' }}
+  faq={{ label: 'Sık sorulan sorulara göz atın', href: '/tr/help/' }}
+  stepsTitle="İlk adımlarınız"
+  stepsDescription="Başlamak için basit bir yol."
+  steps={[
+    { label: 'Ginger’ı kurun', description: 'Uygulamayı indirin ve cihazınızda kurun.', href: '/tr/getting-started/install/' },
+    { label: 'Cüzdanınızı oluşturup yedekleyin', description: 'Cüzdanınızı oluşturun ve kurtarma bilgilerini güvene alın.', href: '/tr/getting-started/first-wallet/' },
+    { label: 'İlk ödemenizi alın', description: 'Bir bitcoin adresi oluşturun ve ilk bitcoinlerinizi alın.', href: '/tr/payments/receive/' },
+  ]}
+  groups={[
+    {
+      title: 'Günlük kullanım rehberleri',
+      description: 'Ginger’ı günlük hayatta kullanmak için pratik uygulama rehberleri.',
+      icon: 'book',
+      links: [
+        { label: 'Gönderin ve alın', href: '/tr/using-ginger/' },
+        { label: 'CoinJoin', href: '/tr/using-ginger/coinjoin/' },
+        { label: 'Donanım cüzdanları', href: '/tr/using-ginger/hardware-wallet/' },
+      ],
+    },
+    {
+      title: 'Gizliliği öğrenin',
+      description: 'Ginger’ın gizliliğinizi korumaya nasıl yardımcı olduğunu anlayın.',
+      icon: 'shield',
+      links: [
+        { label: 'Bitcoin gizliliği', href: '/tr/using-ginger/privacy/' },
+        { label: 'CoinJoin nasıl çalışır', href: '/tr/learn-coinjoin/explained/' },
+        { label: 'Anahtarları kendiniz saklayın', href: '/tr/learn-self-custody/basics/' },
+      ],
+    },
+  ]}
+  searchTitle="Belirli bir şey mi arıyorsunuz?"
+  searchDescription="Rehberleri, ayarları ve daha fazlasını bulmak için kılavuzda arayın."
+  searchLabel="Kılavuzda arayın"
+  advanced={{ label: 'İleri düzey rehberler', href: '/tr/help/advanced-faq/' }}
+/>
