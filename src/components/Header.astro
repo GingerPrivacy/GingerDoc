@@ -7,4 +7,12 @@ import Header from '@astrojs/starlight/components/Header.astro'
 <style is:global>
   /* The language menu is next to the logo at every screen size. */
   .header .right-group > starlight-lang-select { display: none; }
+  @media (max-width: 30rem) {
+    .header { gap: .5rem; }
+    .header .title-wrapper { flex-shrink: 0; }
+    .header .title-wrapper .site-title { flex-shrink: 0; }
+    .header .title-wrapper .site-title img { width: 5.25rem; height: auto; }
+    .header .social-icons { gap: .5rem; font-size: .875rem; }
+    .header .right-group .social-icons a { font-size: .875rem; padding: .375rem; margin: -.375rem; }
+  }
 </style>

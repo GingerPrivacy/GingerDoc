@@ -15,6 +15,8 @@ test('language menu is beside the logo on mobile home and guide pages', async ({
       await expect(page.locator('header .current-language')).toHaveText('EN')
       const bounds = await picker.boundingBox()
       expect(bounds?.y).toBeLessThan(80)
+      const logo = await page.locator('header .site-title img:visible').boundingBox()
+      expect(logo?.width).toBeGreaterThanOrEqual(80)
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width)
     }
   }
