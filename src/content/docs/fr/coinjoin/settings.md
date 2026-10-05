@@ -43,13 +43,13 @@ Abaisser l'objectif peut immédiatement modifier ce que l'interface appelle priv
 
 Ouvrez **Exclude Coins** dans le menu du lecteur CoinJoin. Examinez la liste et marquez les coins à exclure de CoinJoin. Revenez dans cette liste pour les rendre à nouveau admissibles. L'exclusion s'applique à ces coins ; ce n'est pas une règle permanente pour chaque paiement futur à la même adresse.
 
-Exclure un coin de CoinJoin ne bloque pas sa dépense ordinaire et ne remplace pas le stockage matériel. Si tous les coins disponibles sont exclus, le lecteur peut afficher **Only excluded funds are available**. Vérifiez cette liste avant de changer les frais ou les paramètres de confidentialité.
+Exclure un coin de CoinJoin ne bloque pas sa dépense ordinaire et ne remplace pas la conservation dans un portefeuille matériel. Si tous les coins disponibles sont exclus, le lecteur peut afficher **Only excluded funds are available**. Vérifiez cette liste avant de changer les frais ou les paramètres de confidentialité.
 
 <span id="receive-outputs-in-another-wallet" data-ginger-heading="recevoir-les-sorties-dans-un-autre-portefeuille" aria-hidden="true"></span>
 
 ## Recevoir les sorties dans un autre portefeuille
 
-**Coinjoin to this wallet** choisit où le portefeuille source reçoit ses sorties CoinJoin. Par défaut, il s'agit du portefeuille source lui-même.
+**Coinjoin to this wallet** choisit où sont reçues les sorties CoinJoin du portefeuille source. Par défaut, il s'agit du portefeuille source lui-même.
 
 1. Chargez le portefeuille de destination voulu dans Ginger. Sauvegardez-le et vérifiez que vous contrôlez ses adresses de réception.
 2. Sans CoinJoin en cours, ouvrez **Coinjoin Settings** du portefeuille source et choisissez la destination dans **Coinjoin to this wallet**.

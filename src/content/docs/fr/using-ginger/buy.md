@@ -50,7 +50,7 @@ Vérifiez que la page appartient au prestataire choisi. Lisez montant final, cou
 
 L'infobulle décrit les frais affichés comme inclus dans le total annoncé. Vérifiez le paiement final et les conditions de votre établissement pour d'autres frais ; le portefeuille ne garantit pas tous les frais bancaires ou de carte.
 
-Le prestataire reçoit destination et informations de commande. Il peut les associer au moyen de paiement ou à l'identité. Même une offre annoncée sans téléchargement de document ne prouve pas l'absence de collecte ni l'impossibilité d'une vérification ultérieure. La politique réelle du paiement fait autorité pour cette commande.
+Le prestataire reçoit destination et informations de commande. Il peut les associer au moyen de paiement ou à l'identité. Même une offre annoncée sans envoi de documents ne prouve pas l'absence de collecte de données ni l'impossibilité d'une demande de vérification ultérieure. La politique réelle du paiement fait autorité pour cette commande.
 
 Ne donnez pas mots, clés privées ou phrase du portefeuille pour l'achat. Il faut une adresse pour livrer le bitcoin, pas un accès au portefeuille.
 

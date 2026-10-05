@@ -1,7 +1,7 @@
 ---
 doc_id: "hardware-wallets.connect"
 title: "Connecter et utiliser un portefeuille matériel"
-description: "Connecter un matériel compatible à Ginger, vérifier les adresses sur l'appareil et approuver les paiements en sécurité."
+description: "Connecter un portefeuille matériel compatible à Ginger, vérifier les adresses de réception sur l'appareil et approuver les paiements en sécurité."
 lang: fr
 verified_release: "v2.0.26"
 reader_level: "everyday"
@@ -23,7 +23,7 @@ Ginger 2.0.26 intègre Hardware Wallet Interface (HWI) 3.2.0. La reconnaissance 
 
 La [matrice HWI 3.2.0](https://github.com/bitcoin-core/HWI/blob/3.2.0/docs/devices/index.rst) décrit les capacités du transport sous-jacent. Ginger en expose un sous-ensemble : sa connexion normale importe par exemple le compte SegWit natif. HWI compatible multisig ou Taproot ne crée pas à lui seul un parcours Ginger correspondant.
 
-Avant des fonds importants, vérifiez que votre appareil exact se connecte, affiche une adresse et signe un petit paiement test. Si Ginger ne peut terminer la méthode de saisie PIN ou phrase, terminez le parcours compatible sur l'appareil ou consultez son fabricant. Ne saisissez pas les mots dans Ginger comme contournement.
+Avant de déplacer des fonds importants, vérifiez que votre appareil exact se connecte, affiche une adresse de réception et signe un petit paiement test. Si Ginger ne peut terminer la méthode de saisie du PIN ou de la phrase secrète, terminez le parcours compatible sur l'appareil ou consultez son fabricant. Ne saisissez pas les mots de récupération de l'appareil dans Ginger comme contournement.
 
 <span id="add-the-device" data-ginger-heading="ajouter-lappareil" aria-hidden="true"></span>
 
@@ -51,17 +51,17 @@ Un ordinateur compromis peut afficher une adresse crédible. L'écran matériel 
 
 Préparez le paiement dans Ginger et vérifiez destinataire, montant, rendu et frais. Inspectez la demande de signature sur le matériel. Rejetez-la si destination ou montant diffèrent, ou si une condition de sortie ou de rendu reste inexplicable.
 
-Gardez connecté jusqu'à la fin de signature. Vérifiez ensuite diffusion et confirmation dans l'historique. Retirer l'appareil n'annule pas le déjà diffusé.
+Gardez l'appareil connecté jusqu'à la fin de la signature. Vérifiez ensuite diffusion et confirmation dans l'historique. Retirer l'appareil n'annule pas une transaction déjà diffusée.
 
 <span id="coinjoin-and-other-limits" data-ginger-heading="coinjoin-et-autres-limites" aria-hidden="true"></span>
 
 ## CoinJoin et autres limites
 
-Le matériel ne peut être source signataire du CoinJoin automatique. Chargé, il peut apparaître comme destination de sorties logicielles : c'est un rôle de réception, réinitialisé au redémarrage. Utilisez uniquement la destination réellement proposée et vérifiez le contrôle avant de compter dessus.
+Un portefeuille matériel ne peut être le portefeuille source signataire du CoinJoin automatique de Ginger. Lorsqu'il est chargé, il peut apparaître comme destination des sorties CoinJoin d'un portefeuille logiciel : c'est un rôle de réception, et la sélection de cette destination est réinitialisée au redémarrage. Utilisez uniquement la destination réellement proposée et vérifiez que vous la contrôlez avant de compter dessus.
 
-Le [parcours plateforme vers stockage à froid](/fr/hardware-wallets/exchange-to-cold-storage/) compare réception directe de sorties admissibles et transfert ultérieur. Il comprend la restriction de démarrage privé seul et les contrôles de rapprochement des deux portefeuilles.
+Le [parcours plateforme vers stockage à froid](/fr/hardware-wallets/exchange-to-cold-storage/) compare réception directe de sorties admissibles et transfert ultérieur. Il comprend la restriction empêchant le démarrage avec uniquement des coins privés et les contrôles de rapprochement des deux portefeuilles.
 
-PayJoin matériel est rejeté dans cette version. La signature de message dépend de la compatibilité appareil/vérificateur. Ni appareil ni Ginger ne renverse un paiement confirmé. Pour la signature par fichier, lisez [le parcours PSBT](/fr/hardware-wallets/psbt/).
+L'envoi PayJoin depuis un portefeuille matériel est rejeté dans cette version. La signature de message dépend de la compatibilité appareil/vérificateur. Ni l'appareil ni Ginger ne peut annuler un paiement confirmé. Pour la signature par fichier, lisez [le parcours PSBT](/fr/hardware-wallets/psbt/).
 
 <span id="connection-problems" data-ginger-heading="problèmes-de-connexion" aria-hidden="true"></span>
 

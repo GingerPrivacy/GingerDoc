@@ -34,13 +34,13 @@ Ginger est une application pour ordinateur permettant de recevoir et d'envoyer d
 
 ### Existe-t-il un portefeuille mobile ou web officiel ?
 
-La v2.0.26 fournit un logiciel pour les ordinateurs Windows, macOS et Linux compatibles. Elle ne propose ni Android, ni iOS, ni navigateur, ni paiements Lightning, ni autres cryptomonnaies. Partez du [site Ginger officiel](https://gingerwallet.io/) et de ses liens de versions ; ne saisissez pas les mots dans une application ou un site simplement parce qu'il porte le nom Ginger.
+La v2.0.26 fournit un logiciel pour les ordinateurs Windows, macOS et Linux compatibles. Elle ne propose ni portefeuille Android, iOS ou dans le navigateur, ni paiements Lightning, ni autres cryptomonnaies. Partez du [site Ginger officiel](https://gingerwallet.io/) et de ses liens de versions ; ne saisissez pas les mots de récupération dans une application ou un site simplement parce qu'il porte le nom Ginger.
 
 <span id="do-i-need-an-account-my-own-node-or-a-hardware-wallet" data-ginger-heading="ai-je-besoin-dun-compte-dun-nœud-personnel-ou-dun-portefeuille-matériel-" aria-hidden="true"></span>
 
 ### Ai-je besoin d'un compte, d'un nœud personnel ou d'un portefeuille matériel ?
 
-Non. La création logicielle normale utilise des informations de récupération locales et n'exige ni compte client, ni votre propre nœud Bitcoin, ni appareil matériel. La 2FA facultative utilise un service, et les prestataires d'achat/vente peuvent demander un compte ou l'identité ; ces fonctions ont donc des exigences supplémentaires.
+Non. La création normale d'un portefeuille logiciel utilise des informations de récupération locales et n'exige ni compte client, ni votre propre nœud Bitcoin, ni appareil matériel. La 2FA facultative utilise un service, et les prestataires d'achat/vente peuvent demander un compte ou l'identité ; ces fonctions ont donc des exigences supplémentaires.
 
 <span id="do-i-have-to-use-coinjoin-before-receiving-or-sending" data-ginger-heading="dois-je-utiliser-coinjoin-avant-de-recevoir-ou-denvoyer-" aria-hidden="true"></span>
 
@@ -68,13 +68,13 @@ Conservez les mots dans l'ordre d'origine et la phrase secrète exacte si utilis
 
 ### Ma phrase secrète est-elle simplement un mot de passe réinitialisable ?
 
-Non. Pour le logiciel Ginger, elle détermine les clés Bitcoin récupérées en plus de protéger le secret enregistré. Des mots ou une phrase différents peuvent conduire à un autre portefeuille valide. Le nom, le PIN matériel et le code d'authentification ne les remplacent pas.
+Non. Pour un portefeuille logiciel Ginger, la phrase secrète d'origine aide à déterminer les clés Bitcoin récupérées en plus de protéger le secret enregistré. Des mots ou une phrase secrète différents peuvent conduire à un autre portefeuille valide. Le nom du portefeuille, le PIN matériel et le code d'authentification ne les remplacent pas.
 
 <span id="i-have-the-words-but-forgot-the-passphrase-can-ginger-reset-it" data-ginger-heading="jai-les-mots-mais-oublié-la-phrase-ginger-peut-il-la-réinitialiser-" aria-hidden="true"></span>
 
 ### J'ai les mots mais oublié la phrase. Ginger peut-il la réinitialiser ?
 
-Ginger ne peut pas réinitialiser l'original en conservant les mêmes clés. Vérifiez vos sauvegardes privées et préservez toute installation encore capable de dépenser. Si vous pouvez dépenser mais pas établir une sauvegarde complète, créez et vérifiez une nouvelle sauvegarde puis transférez soigneusement les fonds ; n'envoyez jamais les mots à une prétendue aide à la récupération.
+Ginger ne peut pas réinitialiser la phrase secrète d'origine en conservant les mêmes clés. Vérifiez vos sauvegardes privées et préservez toute installation encore capable de dépenser. Si vous pouvez dépenser mais pas établir une sauvegarde complète, créez un nouveau portefeuille, vérifiez sa sauvegarde puis transférez soigneusement les fonds ; n'envoyez jamais les mots de récupération à une prétendue aide à la récupération.
 
 <span id="can-ginger-show-my-recovery-words-again" data-ginger-heading="ginger-peut-il-réafficher-mes-mots-" aria-hidden="true"></span>
 
@@ -92,7 +92,7 @@ Vérifiez portefeuille choisi, mots d'origine, phrase exacte et fin de synchroni
 
 ### L'expéditeur dit avoir payé. Pourquoi n'ai-je rien reçu ?
 
-Demandez l'identifiant Bitcoin et vérifiez l'adresse de réception prévue et le réseau. Un service peut marquer une commande payée avant de diffuser sa transaction, et Ginger doit aussi se synchroniser pour l'afficher. Vérifiez transaction et progression locale avant de demander un autre paiement ; voyez [le dépannage de réception](/fr/help/troubleshooting/#balance-recovery-and-receiving).
+Demandez l'identifiant de la transaction Bitcoin et vérifiez l'adresse de réception prévue et le réseau. Un service peut marquer une commande payée avant de diffuser sa transaction, et Ginger doit aussi se synchroniser pour l'afficher. Vérifiez transaction et progression locale avant de demander un autre paiement ; voyez [le dépannage de réception](/fr/help/troubleshooting/#balance-recovery-and-receiving).
 
 <span id="will-changing-the-network-make-missing-bitcoin-appear" data-ginger-heading="changer-de-réseau-fera-t-il-apparaître-le-bitcoin-manquant-" aria-hidden="true"></span>
 
@@ -112,11 +112,11 @@ Une adresse peut quitter la liste d'attente après paiement ou masquage ; cela n
 
 La récupération peut encore analyser et masquer les actions ordinaires jusqu'à son achèvement. Un portefeuille en lecture seule a aussi besoin de son appareil signataire ou d'une autre voie compatible pour dépenser. Vérifiez type et progression avant de réinstaller ou créer des mots de remplacement.
 
-<span id="i-lost-my-authenticator-or-my-2fa-code-is-rejected-what-now" data-ginger-heading="authentificateur-perdu-ou-code-rejeté--que-faire-" aria-hidden="true"></span>
+<span id="i-lost-my-authenticator-or-my-2fa-code-is-rejected-what-now" data-ginger-heading="jai-perdu-mon-authentificateur-ou-mon-code-2fa-est-rejeté--que-faire-" aria-hidden="true"></span>
 
-### Authentificateur perdu ou code rejeté : que faire ?
+### J'ai perdu mon authentificateur ou mon code 2FA est rejeté : que faire ?
 
-Vérifiez l'entrée correcte, l'heure du téléphone et la connexion Tor/service de Ginger. Préservez les fichiers de portefeuille et 2FA ; réinstaller ne recrée pas le secret d'authentification perdu. Mots et phrase exacte offrent une récupération indépendante des clés ; utilisez [le dépannage 2FA](/fr/help/troubleshooting/#2fa-and-hardware) avant de modifier les fichiers.
+Vérifiez la bonne entrée dans l'authentificateur, l'heure du téléphone et la connexion Tor/service de Ginger. Préservez les fichiers de portefeuille et 2FA ; réinstaller ne recrée pas le secret d'authentification perdu. Les mots de récupération et la phrase secrète d'origine exacte offrent une récupération indépendante des clés ; utilisez [le dépannage 2FA](/fr/help/troubleshooting/#2fa-and-hardware) avant de modifier les fichiers.
 
 <span id="connection-and-updates" data-ginger-heading="connexion-et-mises-à-jour" aria-hidden="true"></span>
 
@@ -166,13 +166,13 @@ Il n'y a ni durée garantie ni nombre universel de tours. Confirmations, frais, 
 
 ### Pourquoi mon solde baisse-t-il si CoinJoin était dit gratuit ?
 
-L'exonération du coordinateur ne supprime pas le minage Bitcoin, et chaque tour terminé répété peut coûter. Vérifiez aussi si les sorties vont à un autre portefeuille et si les deux sont synchronisés. Mettez en pause et rapprochez les transactions si la variation reste inexpliquée ; ne supposez pas que toute baisse inattendue est un frais normal.
+L'exonération des frais de coordinateur ne supprime pas les frais de minage Bitcoin, et chaque tour terminé peut entraîner de nouveaux coûts. Vérifiez aussi si les sorties vont à un autre portefeuille et si les deux sont synchronisés. Mettez en pause et rapprochez les transactions si la variation reste inexpliquée ; ne supposez pas que toute baisse inattendue correspond à des frais normaux.
 
 <span id="what-coordinator-fee-does-ginger-currently-advertise" data-ginger-heading="quels-frais-de-coordinateur-ginger-annonce-t-il-actuellement-" aria-hidden="true"></span>
 
 ### Quels frais de coordinateur Ginger annonce-t-il actuellement ?
 
-Avec les réglages actuels, chaque entrée de 0.03 BTC (3,000,000 satoshis) ou moins est exonérée, seuil exact compris. Au-dessus, les frais sont 0.3 % de toute la valeur sauf autre exonération, comme un remix admissible. Le seuil s'applique séparément par entrée, pas au solde total. Le minage reste dû. Revérifiez [l'explication actuelle Ginger](https://gingerwallet.io/) et le tour proposé avant participation.
+Avec les réglages actuels, chaque entrée de 0.03 BTC (3 000 000 satoshis) ou moins est exonérée des frais de coordinateur, y compris une entrée valant exactement 0.03 BTC. Au-dessus, les frais sont 0.3 % de toute la valeur sauf autre exonération, comme un remix admissible. Le seuil s'applique séparément par entrée, pas au solde total. Les frais de minage restent dus. Revérifiez [l'explication actuelle Ginger](https://gingerwallet.io/) et le tour proposé avant participation.
 
 <span id="can-i-stop-coinjoin-or-turn-off-the-computer" data-ginger-heading="puis-je-arrêter-coinjoin-ou-éteindre-lordinateur-" aria-hidden="true"></span>
 
@@ -192,11 +192,11 @@ CoinJoin automatique peut créer des transactions communes après activation, sa
 
 Un paiement ordinaire est possible si les fonds sont dépensables et l'envoi disponible ; le pourcentage n'est pas une exigence Bitcoin. C'est une estimation locale selon l'objectif choisi, pas une garantie des connaissances d'autrui. Paiement, réutilisation ou plateforme identifiée peut encore créer un lien.
 
-<span id="why-is-the-play-control-missing-when-all-funds-are-private" data-ginger-heading="pourquoi-la-lecture-manque-t-elle-lorsque-tous-les-fonds-sont-privés-" aria-hidden="true"></span>
+<span id="why-is-the-play-control-missing-when-all-funds-are-private" data-ginger-heading="pourquoi-la-commande-de-lecture-manque-t-elle-lorsque-tous-les-fonds-sont-privés-" aria-hidden="true"></span>
 
-### Pourquoi la lecture manque-t-elle lorsque tous les fonds sont privés ?
+### Pourquoi la commande de lecture manque-t-elle lorsque tous les fonds sont privés ?
 
-Le lecteur manuel peut masquer lecture lorsque tous atteignent l'objectif. Le démarrage normal rejette aussi un ensemble disponible uniquement privé : une autre destination ne force pas un tour. Si vous voulez seulement déplacer ces fonds, examinez plutôt un paiement ordinaire.
+Le lecteur manuel ordinaire peut masquer la commande de lecture lorsque tous les fonds atteignent l'objectif de confidentialité du portefeuille. Le démarrage normal rejette aussi un ensemble de coins disponibles uniquement privés : une autre destination ne force pas un tour. Si vous voulez seulement déplacer ces fonds, examinez plutôt un paiement ordinaire.
 
 <span id="payments-and-hardware" data-ginger-heading="paiements-et-matériel" aria-hidden="true"></span>
 
@@ -230,7 +230,7 @@ Il peut dépenser un morceau plus grand et retourner l'excès comme monnaie rend
 
 ### Puis-je utiliser du matériel, y compris après CoinJoin ?
 
-Ginger prend en charge les parcours documentés de réception et signature pour matériel compatible. Gardez ses mots dans sa voie de récupération matérielle, pas l'ordinateur. Le matériel reçoit éventuellement les sorties admissibles sans être source signataire du CoinJoin ordinaire ; ce routage facultatif est [une question avancée](/fr/help/advanced-faq/#can-coinjoin-send-directly-to-my-hardware-wallet).
+Ginger prend en charge les parcours documentés de réception et de signature pour les portefeuilles matériels compatibles. Conservez leurs mots de récupération selon la procédure de récupération de l'appareil, hors de l'ordinateur. Un portefeuille matériel peut recevoir les sorties CoinJoin admissibles sans être la source signataire du CoinJoin ordinaire de Ginger ; ce routage facultatif est [une question avancée](/fr/help/advanced-faq/#can-coinjoin-send-directly-to-my-hardware-wallet).
 
 <span id="will-an-exchange-accept-my-bitcoin-after-coinjoin" data-ginger-heading="une-plateforme-acceptera-t-elle-mon-bitcoin-après-coinjoin-" aria-hidden="true"></span>
 
@@ -246,7 +246,7 @@ Ginger prépare un paiement ordinaire sans garantir acceptation ou politique de 
 
 ### Que partager avec l'assistance et où signaler un bug ?
 
-Utilisez les liens du [dépôt Ginger officiel](https://github.com/GingerPrivacy/GingerWallet/issues), avec version, système, erreur exacte et étapes non secrètes. Examinez l'extrait de journal avant partage ; jamais mots, phrases, codes ou dossier complet. L'assistance ne nécessite ni validation web ni paiement d'activation ; voyez [signaler utilement](/fr/help/troubleshooting/#report-a-useful-issue).
+Utilisez les liens du [dépôt Ginger officiel](https://github.com/GingerPrivacy/GingerWallet/issues), avec version, système, erreur exacte et étapes non secrètes. Examinez l'extrait de journal avant partage ; n'envoyez jamais de mots de récupération, de phrases secrètes, de codes d'authentification ou de dossier complet de données du portefeuille. L'assistance ne nécessite ni validation du portefeuille sur un site web ni paiement d'activation ; voyez [signaler utilement](/fr/help/troubleshooting/#report-a-useful-issue).
 
 <span id="about-this-manual" data-ginger-heading="à-propos-de-ce-manuel" aria-hidden="true"></span>
 

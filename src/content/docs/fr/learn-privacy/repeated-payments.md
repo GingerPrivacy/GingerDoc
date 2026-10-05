@@ -51,7 +51,7 @@ Pour abonnement ou paiements clients répétés, communiquez si possible une nou
 
 ## Rembourser vers une destination vérifiée
 
-N'envoyez pas automatiquement le remboursement vers une entrée du paiement d'origine. Le payeur peut avoir utilisé retrait de plateforme, service custodial ou transaction collaborative, et ne pas contrôler cette adresse.
+N'envoyez pas automatiquement le remboursement vers l'une des adresses des entrées du paiement d'origine. Le payeur peut avoir utilisé un retrait de plateforme, un service de garde ou une transaction collaborative, et ne pas contrôler cette adresse.
 
 1. Confirmez paiement et demande via vos données privées et un canal fiable.
 2. Convenez du montant et de qui supporte les frais. Obtenez une nouvelle adresse de remboursement du destinataire voulu et vérifiez-la via ce canal.

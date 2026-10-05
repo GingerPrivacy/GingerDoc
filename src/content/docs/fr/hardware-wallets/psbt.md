@@ -17,7 +17,7 @@ Une transaction Bitcoin partiellement signée (PSBT) est un fichier contenant un
 
 ## Préparer la connexion du portefeuille
 
-Il faut dans Ginger un enregistrement matériel compatible, lié aux clés de l'appareil signataire. Pour un export JSON Coldcard pris en charge, ajoutez le fichier avec **Import File**. Suivez les instructions actuelles du fabricant pour ce firmware ; un fichier de transaction PSBT n'est pas un fichier d'importation de portefeuille.
+Il faut dans Ginger un portefeuille matériel enregistré compatible, lié aux clés de l'appareil signataire. Pour un export JSON Coldcard pris en charge, ajoutez le fichier avec **Import File**. Suivez les instructions actuelles du fabricant pour ce firmware ; un fichier de transaction PSBT n'est pas un fichier d'importation de portefeuille.
 
 L'export contient les informations publiques du compte et l'empreinte de l'appareil, pas les mots de récupération. Vérifiez la correspondance des adresses sur Ginger et l'appareil avant de financer le portefeuille. Un compte importé avec un autre chemin de dérivation ou une autre phrase secrète peut être un autre portefeuille malgré le même appareil.
 
@@ -47,6 +47,6 @@ Une fois la transaction diffusée, l'appareil n'a plus besoin de rester connect�
 
 ## Manipuler les fichiers avec soin
 
-Utilisez des noms distincts pour propositions et résultats signés. N'envoyez pas de PSBT par e-mail et ne les chargez pas dans un décodeur en ligne pour examiner votre transaction. Protégez aussi les exports de compte : une clé publique étendue révèle de nombreuses adresses même si elle ne peut pas directement signer une dépense.
+Utilisez des noms distincts pour propositions et résultats signés. N'envoyez pas de PSBT par e-mail et ne les chargez pas dans un décodeur en ligne pour examiner votre transaction. Protégez aussi les exports de compte : une clé publique étendue peut révéler de nombreuses adresses même si elle ne peut pas directement signer une dépense.
 
 Ce parcours décrit l'interface matérielle publiée. Il n'établit ni coordinateur multisignature général, ni API de signature pour développeurs, ni compatibilité avec tous les formats PSBT d'autres applications.

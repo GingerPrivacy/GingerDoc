@@ -21,10 +21,10 @@ Avant de participer, définissez l'objectif : qu'un destinataire sache moins sur
 
 | Question | Protection et hypothèse | Ce qu'elle n'établit pas |
 | --- | --- | --- |
-| Qui peut dépenser ? | Votre portefeuille signe ses entrées après vérification de la proposition. Le coordinateur n'a pas besoin de vos mots. | Protection contre les clés volées, logiciels malveillants ou transaction autorisée volontairement vers une mauvaise destination |
+| Qui peut dépenser ? | Votre portefeuille signe ses entrées après vérification de la transaction proposée. Le coordinateur n'a pas besoin de vos mots de récupération. | Protection contre les clés volées, logiciels malveillants ou transaction autorisée volontairement vers une mauvaise destination |
 | Qui peut relier entrées et sorties ? | WabiSabi utilise des justificatifs anonymes pour masquer les relations entre enregistrements. Les données publiques et autres observations restent. | Garantie inconditionnelle contre un coordinateur malveillant, des participants complices ou des informations extérieures |
 | Qui peut empêcher la progression ? | Une participation réussie exige coordinateur, réseau et assez de participants coopératifs pour terminer. | Heure d'achèvement réservée ou droit de participer à chaque tour proposé |
-| Quel logiciel utilise-je ? | L'open source permet l'inspection ; vérifier le téléchargement aide à établir origine et intégrité du fichier obtenu. | Preuve que chaque compilation est sans bugs, que l'ordinateur est intact ou qu'un service distant exécute exactement le code publié |
+| Quel logiciel est-ce que j'utilise ? | L'open source permet l'inspection ; vérifier le téléchargement aide à établir origine et intégrité du fichier obtenu. | Preuve que chaque compilation est sans bugs, que l'ordinateur n'est pas compromis ou qu'un service distant exécute exactement le code publié |
 
 L'[article WabiSabi, section 7](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3) distingue confidentialité, attaques actives et prévention du vol. Ce guide applique cette distinction aux décisions utilisateur ; ce n'est pas un audit de sécurité du portefeuille ou coordinateur installé.
 
@@ -34,7 +34,7 @@ L'[article WabiSabi, section 7](https://cryptoeconomicsystems.pubpub.org/pub/fic
 
 Un observateur passif de blockchain voit entrées, sorties, montants et dépenses ultérieures. Il peut appliquer des heuristiques et combiner ces données avec d'autres informations. Un marchand connaît aussi sa facture et son client. Une plateforme connaît le retrait ou dépôt qu'elle traite.
 
-Un participant connaît ses propres entrées et sorties, éliminant certaines possibilités. Un coordinateur traite les enregistrements et observe les horaires du protocole ; s'il est activement malveillant, il peut influencer les participants et l'achèvement des tours. Ce sont des capacités différentes : une protection limitée à l'observation de la chaîne publique ne protège pas nécessairement contre toutes.
+Un participant connaît ses propres entrées et sorties, éliminant certaines possibilités. Un coordinateur traite les enregistrements et peut observer la chronologie des échanges du protocole ; s'il est activement malveillant, il peut influencer qui participe et si les tours aboutissent. Ce sont des capacités différentes : une protection limitée à l'observation de la chaîne publique ne protège pas nécessairement contre toutes.
 
 <span id="apparent-participants-are-not-independent-people" data-ginger-heading="les-participants-apparents-ne-sont-pas-des-personnes-indépendantes" aria-hidden="true"></span>
 
@@ -52,7 +52,7 @@ Les grands tours peuvent offrir plus de possibilités, mais montants, connaissan
 
 Les coins contrôlés par vos clés ne deviennent pas une dette du coordinateur envers vous. Une tentative échouée avant diffusion ne les lui transfère pas à elle seule. Pendant un tour actif, Ginger peut cependant devoir finir un travail critique avant de rendre les coins disponibles pour une autre action ; utilisez pause et suivez l'état actuel.
 
-Si CoinJoin ne peut continuer, mettez en pause et examinez la cause. Un envoi ordinaire exige toujours une voie de signature disponible, des coins dépensables, des informations synchronisées et un moyen de diffuser. Une panne du coordinateur ne justifie pas de jeter les sauvegardes ou d'envoyer les mots à un service de remplacement. La 2FA facultative de Ginger a sa propre dépendance au service au démarrage normal ; gardez mots et phrase d'origine récupérables indépendamment.
+Si CoinJoin ne peut continuer, mettez en pause et examinez la cause. Un envoi ordinaire exige toujours un moyen de signature disponible, des coins dépensables, des informations synchronisées et un moyen de diffuser. Une panne du coordinateur ne justifie pas de jeter les sauvegardes ou d'envoyer les mots de récupération à un service de remplacement. La 2FA facultative de Ginger a sa propre dépendance au service au démarrage normal ; conservez les mots de récupération et la phrase secrète d'origine de façon à pouvoir les récupérer indépendamment du service.
 
 Un refus ou un tour échoué n'est pas en soi une preuve d'attaque ou un jugement sur votre identité. Inversement, un tour réussi ne certifie pas l'honnêteté du coordinateur. Préservez les données privées pertinentes si un problème concret doit être étudié.
 

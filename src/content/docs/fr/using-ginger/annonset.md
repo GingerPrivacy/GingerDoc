@@ -17,7 +17,7 @@ CoinJoin a un coût et un objectif de confidentialité. Examinez les deux avant 
 
 ## Frais de coordinateur et frais de minage
 
-Avec les paramètres actuels des frais de coordinateur de Ginger, chaque entrée d'une valeur inférieure ou égale à 3,000,000 satoshis (0.03 BTC) ne paie pas de frais de coordinateur. Le seuil inclut exactement 0.03 BTC. Une entrée supérieure à ce seuil paie normalement 0.3% de sa valeur totale, et non uniquement de la partie supérieure à 0.03 BTC. Le taux sous forme décimale est 0.003, et les fractions de satoshi dans le montant calculé des frais sont arrondies à l'entier inférieur.
+Avec les paramètres actuels des frais de coordinateur de Ginger, chaque entrée d'une valeur inférieure ou égale à 3 000 000 satoshis (0.03 BTC) ne paie pas de frais de coordinateur. Le seuil inclut exactement 0.03 BTC. Une entrée supérieure à ce seuil paie normalement 0.3% de sa valeur totale, et non uniquement de la partie supérieure à 0.03 BTC. Le taux sous forme décimale est 0.003, et les fractions de satoshi dans le montant calculé des frais sont arrondies à l'entier inférieur.
 
 Le seuil est vérifié séparément pour chaque entrée, et non par rapport au solde total de votre portefeuille ou à la somme des entrées que vous inscrivez au tour. Les remix qui remplissent les conditions requises peuvent également être exonérés ; l'exonération annoncée par Ginger inclut la dépense directe de fonds issus de CoinJoin au moyen d'une seule transaction. Ces exonérations supplémentaires dépendent du tour proposé et de l'admissibilité de l'entrée. Consultez à nouveau les [explications actuelles de Ginger sur les frais](https://gingerwallet.io/) avant de participer.
 
@@ -25,12 +25,12 @@ Pour les entrées qui ne bénéficient d'aucune autre exonération des frais de 
 
 | Valeur de l'entrée | Valeur en BTC | Frais de coordinateur |
 | --- | --- | --- |
-| 2,999,999 satoshis | 0.02999999 BTC | 0 satoshis |
-| 3,000,000 satoshis | 0.03 BTC | 0 satoshis |
-| 3,000,001 satoshis | 0.03000001 BTC | 9,000 satoshis |
-| 4,000,000 satoshis | 0.04 BTC | 12,000 satoshis |
+| 2 999 999 satoshis | 0.02999999 BTC | 0 satoshis |
+| 3 000 000 satoshis | 0.03 BTC | 0 satoshis |
+| 3 000 001 satoshis | 0.03000001 BTC | 9 000 satoshis |
+| 4 000 000 satoshis | 0.04 BTC | 12 000 satoshis |
 
-Par exemple, l'entrée de 0.04 BTC paie 0.00012 BTC (12,000 satoshis), et non 0.3% des seuls 0.01 BTC au-dessus du seuil. Les frais de minage s'ajoutent à ce montant, y compris pour les entrées dont les frais de coordinateur sont nuls. Ces exemples expliquent le calcul configuré ; ils ne constituent pas un devis pour un tour futur.
+Par exemple, l'entrée de 0.04 BTC paie 0.00012 BTC (12 000 satoshis), et non 0.3% des seuls 0.01 BTC au-dessus du seuil. Les frais de minage s'ajoutent à ce montant, y compris pour les entrées dont les frais de coordinateur sont nuls. Ces exemples expliquent le calcul configuré ; ils ne constituent pas un devis pour un tour futur.
 
 Les frais de minage rémunèrent les mineurs pour l'espace occupé par la transaction. Ils dépendent du taux de frais ainsi que des entrées et des sorties de la transaction. La dépense d'un coin de faible valeur peut coûter un pourcentage important de sa valeur. Des participations répétées à CoinJoin peuvent chacune entraîner de nouveaux frais de minage, même lorsqu'elles bénéficient d'une exonération des frais de coordinateur.
 
@@ -48,14 +48,14 @@ L'exemple comptable suivant sert d'illustration ; il ne prédit pas les montants
 
 | Poste | Satoshis |
 | --- | ---: |
-| Votre entrée soumise aux frais | 5,000,000 |
-| Total de vos sorties dans vos deux portefeuilles | 4,980,800 |
-| Différence de valeur | 19,200 |
-| Frais de coordinateur supposés pour cet exemple : 0.3% de l'entrée | 15,000 |
-| Frais de minage attribués à votre participation dans cet exemple | 3,600 |
+| Votre entrée soumise aux frais | 5 000 000 |
+| Total de vos sorties dans vos deux portefeuilles | 4 980 800 |
+| Différence de valeur | 19 200 |
+| Frais de coordinateur supposés pour cet exemple : 0.3% de l'entrée | 15 000 |
+| Frais de minage attribués à votre participation dans cet exemple | 3 600 |
 | Différence de répartition restante dans cet exemple | 600 |
 
-Ici, 15,000 + 3,600 + 600 = 19,200 satoshis. Les trois dernières lignes expliquent la même différence ; ne rajoutez pas cette différence comme s'il s'agissait de frais supplémentaires. Les frais de minage de l'ensemble du tour ne sont pas non plus des frais que chaque participant paie intégralement. Ne supposez pas qu'un champ de frais particulier ou une ligne de journal représente toutes les composantes de votre différence de valeur.
+Ici, 15 000 + 3 600 + 600 = 19 200 satoshis. Les trois dernières lignes expliquent la même différence ; ne rajoutez pas cette différence comme s'il s'agissait de frais supplémentaires. Les frais de minage de l'ensemble du tour ne sont pas non plus des frais que chaque participant paie intégralement. Ne supposez pas qu'un champ de frais particulier ou une ligne de journal représente toutes les composantes de votre différence de valeur.
 
 Si les sorties ont été envoyées à un portefeuille matériel, leur disparition du solde du portefeuille logiciel correspond à un transfert de valeur qui vous appartient toujours. Attendez que les deux portefeuilles soient synchronisés avant de faire le rapprochement. Des transactions non confirmées, des paiements simultanés et des fonds entrants peuvent rendre trompeuse une simple comparaison du solde du portefeuille avant et après.
 
@@ -72,7 +72,7 @@ Incluez les étapes qui entourent CoinJoin lorsque vous décidez si le résultat
 | Déplacer les fonds vers un autre portefeuille | De nouveaux frais de minage si vous effectuez un transfert ordinaire |
 | Dépenser ensuite les coins obtenus | Les frais liés aux entrées et aux sorties de ce paiement ultérieur |
 
-Par exemple, une participation coûtant 19,200 satoshis suivie d'un transfert coûtant 1,200 satoshis revient à 20,400 satoshis pour ces deux étapes. Un paiement ultérieur constitue une dépense distincte. Un plus grand nombre de sorties peut vous donner de plus petites sommes à dépenser séparément, mais dépenser ces sommes consomme aussi de l'espace dans une transaction. Ce coût futur n'a pas déjà été payé lors de la création des sorties.
+Par exemple, une participation coûtant 19 200 satoshis suivie d'un transfert coûtant 1 200 satoshis revient à 20 400 satoshis pour ces deux étapes. Un paiement ultérieur constitue une dépense distincte. Un plus grand nombre de sorties peut vous donner de plus petites sommes à dépenser séparément, mais dépenser ces sommes consomme aussi de l'espace dans une transaction. Ce coût futur n'a pas déjà été payé lors de la création des sorties.
 
 Choisissez un montant que vous pouvez vous permettre de consacrer à l'apprentissage et examinez le premier résultat terminé avant de laisser se poursuivre les tours répétés. Fixez-vous un budget personnel pour les frais ; une préférence de délai CoinJoin ou un paramètre de sélection des coins ne garantit pas un plafond pour le coût total de l'ensemble du parcours.
 
@@ -98,10 +98,10 @@ Dans un exemple simplifié, supposons que l'objectif soit de 5 et que le portefe
 
 | Coin | Valeur | Score local | Atteint l'objectif ? |
 | --- | ---: | ---: | --- |
-| A | 1,000,000 satoshis | 5 | Oui |
-| B | 3,000,000 satoshis | 3 | Non |
+| A | 1 000 000 satoshis | 5 | Oui |
+| B | 3 000 000 satoshis | 3 | Non |
 
-Seuls 25% de la valeur atteignent l'objectif. Pour la progression globale, cette version pondère la progression au-dessus du score 1 : le coin A contribue à hauteur de 1,000,000 × 4 et le coin B à hauteur de 3,000,000 × 2, pour un maximum de 4,000,000 × 4. Cela donne 62.5%, affiché sous la forme du nombre entier 62%. Voir des pourcentages différents dans ces deux vues ne constitue donc pas, en soi, une erreur.
+Seuls 25% de la valeur atteignent l'objectif. Pour la progression globale, cette version pondère la progression au-dessus du score 1 : le coin A contribue à hauteur de 1 000 000 × 4 et le coin B à hauteur de 3 000 000 × 2, pour un maximum de 4 000 000 × 4. Cela donne 62.5%, affiché sous la forme du nombre entier 62%. Voir des pourcentages différents dans ces deux vues ne constitue donc pas, en soi, une erreur.
 
 Le message **Hurray! All your funds are private!** signifie que le portefeuille considère les fonds comme privés selon son objectif actuel et sa méthode de calcul. Il ne signifie pas que l'historique a disparu, que vous êtes anonyme sur Internet ou qu'un paiement ultérieur ne peut pas créer de lien.
 

@@ -8,7 +8,7 @@ reader_level: "beginner"
 sidebar:
   label: Créer votre premier portefeuille
 prev:
-  link: /fr/getting-started/install/
+  link: /getting-started/install/
   label: Installer Ginger Wallet
 next: false
 ---

@@ -29,7 +29,7 @@ La connexion Tor de Ginger ne transforme pas non plus le navigateur externe en T
 
 ## Ce que fait la synchronisation
 
-Ginger utilise des filtres de blocs compacts pour repérer les blocs potentiellement pertinents, puis traite localement les blocs téléchargés pour son portefeuille. Cela réduit le besoin d'envoyer toutes vos adresses à un serveur public. Il dépend toujours des services et pairs pour les données et de la correction de son logiciel local.
+Ginger utilise des filtres de blocs compacts pour repérer les blocs potentiellement pertinents, puis traite localement les blocs téléchargés pour son portefeuille. Cela réduit le besoin d'envoyer toutes vos adresses à un serveur public de portefeuille. Il dépend toujours des services et pairs pour les données et du bon fonctionnement de son logiciel local.
 
 La première utilisation et la récupération peuvent prendre davantage de temps que la réouverture récente. La progression peut comprendre connexion, obtention des filtres, téléchargement des blocs et traitement du portefeuille. Un portefeuille récupéré peut temporairement montrer un historique incomplet ou masquer des actions jusqu'à la fin de l'analyse.
 

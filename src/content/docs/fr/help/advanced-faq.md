@@ -44,7 +44,7 @@ Les mots restaurent les clés, pas toutes les notes privées ni chaque élément
 
 ### Puis-je utiliser les mêmes mots dans deux applications ?
 
-Des applications compatibles peuvent contrôler les mêmes clés, mais cela ne crée pas un nouveau portefeuille ni ne révoque les informations partagées avec l'ancienne application. La seconde peut divulguer les adresses ou une clé publique étendue à ses services, et les dépenses simultanées peuvent créer une confusion sur les coins disponibles. Ne saisissez pas les mots matériels sur l'ordinateur simplement pour connecter un appareil.
+Des applications compatibles peuvent contrôler les mêmes clés, mais cela ne crée pas un nouveau portefeuille ni ne révoque les informations partagées avec l'ancienne application. La seconde peut divulguer les adresses ou une clé publique étendue à ses services, et les dépenses simultanées peuvent créer une confusion sur les coins disponibles. Ne saisissez pas les mots de récupération du portefeuille matériel sur l'ordinateur simplement pour connecter un appareil.
 
 <span id="what-does-an-exposed-address-or-xpub-allow-someone-to-do" data-ginger-heading="que-permet-une-adresse-ou-une-xpub-exposée-" aria-hidden="true"></span>
 
@@ -142,7 +142,7 @@ Un blame round est une reprise du protocole après une tentative inachevée ; ce
 
 ### Comment rapprocher le coût complet d'un tour ?
 
-Additionnez vos entrées dépensées et soustrayez toutes vos sorties de cette transaction, dont celles envoyées dans un autre portefeuille. La différence peut inclure coordinateur, minage et un reste d'allocation de sorties. Ne comptez pas les sorties d'autrui comme les vôtres et ne supposez pas qu'un seul libellé de frais couvre toute la différence.
+Additionnez la valeur de vos entrées dépensées et soustrayez la valeur de toutes les sorties de cette transaction qui vous appartiennent, dont celles envoyées dans un autre portefeuille. La différence peut inclure des frais de coordinateur, des frais de minage et une différence restante d'allocation des sorties. Ne comptez pas les sorties d'autrui comme les vôtres et ne supposez pas qu'un seul libellé de frais couvre toute la différence.
 
 <span id="is-a-remix-exemption-permanent-or-applied-to-my-entire-balance" data-ginger-heading="lexonération-remix-est-elle-permanente-ou-appliquée-au-solde-entier-" aria-hidden="true"></span>
 
@@ -158,7 +158,7 @@ Non. C'est une règle d'admissibilité d'entrée selon la politique du tour prop
 
 ### CoinJoin peut-il envoyer directement à mon portefeuille matériel ?
 
-Un logiciel admissible peut sélectionner un matériel proposé et chargé dans **Coinjoin to this wallet**. La destination reçoit les sorties du tour sans attendre un événement distinct d'atteinte d'objectif ; le démarrage normal ne force pas un tour de candidats déjà privés. Vérifiez après chaque redémarrage, car la sélection est réinitialisée, et n'importez jamais la seed matérielle sur ordinateur pour cela.
+Un portefeuille logiciel admissible peut sélectionner un portefeuille matériel proposé et chargé dans **Coinjoin to this wallet**. La destination reçoit les sorties du tour sans attendre un événement distinct d'atteinte d'objectif ; le démarrage normal ne force pas un tour de candidats déjà privés. Vérifiez la destination après chaque redémarrage, car la sélection est réinitialisée, et n'importez jamais la seed du portefeuille matériel sur l'ordinateur pour cela.
 
 <span id="does-an-own-node-replace-every-ginger-service-or-make-tor-unnecessary" data-ginger-heading="un-nœud-personnel-remplace-t-il-tous-les-services-ou-rend-il-tor-inutile-" aria-hidden="true"></span>
 
@@ -172,11 +172,11 @@ Non. Un nœud configuré remplit des rôles précis, comme fournir blocs ou esti
 
 Non. Le destinataire connaît sa demande et voit la proposition pendant négociation. Une collaboration réussie peut affaiblir les hypothèses de propriété d'un tiers, mais motifs transactionnels et autres données limitent le bénéfice. Ginger peut revenir à un paiement ordinaire si la construction échoue : l'autorisation seule ne garantit pas PayJoin final.
 
-<span id="how-do-i-prove-control-of-an-address-without-paying" data-ginger-heading="comment-prouver-une-adresse-sans-payer-" aria-hidden="true"></span>
+<span id="how-do-i-prove-control-of-an-address-without-paying" data-ginger-heading="comment-prouver-le-contrôle-dune-adresse-sans-payer-" aria-hidden="true"></span>
 
-### Comment prouver une adresse sans payer ?
+### Comment prouver le contrôle d'une adresse sans payer ?
 
-Utilisez **Sign Message** pour une adresse du portefeuille, lisez la déclaration exacte et partagez la signature seulement avec le vérificateur prévu. Compatibilité appareil, type d'adresse et vérificateur restent importants. Cela ne transfère pas de bitcoin ni ne prouve toutes les adresses ; cela peut lier l'adresse à l'identité connue du vérificateur.
+Utilisez **Sign Message** pour une adresse du portefeuille, lisez la déclaration exacte et partagez la signature seulement avec le vérificateur prévu. La compatibilité de l'appareil, du type d'adresse et du vérificateur reste importante. Cela ne transfère pas de bitcoin et ne prouve pas la propriété de toutes les adresses du portefeuille ; cela peut lier l'adresse signée à l'identité connue du vérificateur.
 
 <span id="what-information-do-secret-hunt-and-buysell-services-receive" data-ginger-heading="quelles-informations-reçoivent-secret-hunt-et-les-services-dachatvente-" aria-hidden="true"></span>
 

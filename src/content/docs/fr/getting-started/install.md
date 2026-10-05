@@ -8,10 +8,10 @@ reader_level: "beginner"
 sidebar:
   label: Installer Ginger
 prev:
-  link: /fr/getting-started/
+  link: /getting-started/
   label: Commencer ici
 next:
-  link: /fr/getting-started/first-wallet/
+  link: /getting-started/first-wallet/
   label: Créer votre premier portefeuille
 ---
 

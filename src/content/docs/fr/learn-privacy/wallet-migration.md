@@ -29,9 +29,9 @@ Restaurer le même portefeuille ne déplace pas le bitcoin, donc ne coûte pas d
 
 ## Comprendre ce qu'expose une xpub
 
-Une clé publique étendue, souvent appelée xpub, permet de dériver une branche d'adresses publiques sans disposer de leur pouvoir normal de signature. Une xpub de compte révèle généralement plus d'une adresse de réception, dont les adresses futures dérivées. Sa portée dépend de sa place dans l'arbre ; elle ne révèle pas tous les autres comptes renforcés. [BIP32 : portefeuilles déterministes hiérarchiques](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
+Une clé publique étendue, souvent appelée xpub, permet de dériver une branche d'adresses publiques sans disposer de leur pouvoir normal de signature. Une xpub de compte révèle généralement plus d'une adresse de réception, dont les adresses futures dérivées. Sa portée dépend de sa place dans l'arbre ; elle ne révèle pas tous les autres comptes à dérivation renforcée. [BIP32 : portefeuilles déterministes hiérarchiques](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 
-Une ancienne application, un service de portefeuille de placements ou de comptabilité a pu recevoir une xpub ou des requêtes d'adresses. Supprimer l'application ne révoque pas les copies ailleurs. Garder le même compte permet parfois de reconnaître l'activité future. Tor masque la connexion IP directe, pas les informations déjà soumises au destinataire.
+Une ancienne application de portefeuille, un service de suivi de placements ou un outil de comptabilité a pu recevoir une xpub ou des requêtes d'adresses. Supprimer l'application ne révoque pas les copies ailleurs. Garder le même compte peut permettre à cet observateur de reconnaître aussi l'activité future. Tor peut masquer une connexion IP directe ; il ne peut pas faire oublier au service destinataire les informations de portefeuille que vous lui avez soumises.
 
 Si vous ignorez ce qu'un service a reçu, considérez cela comme incertain. Ne chargez pas une xpub dans un « vérificateur de confidentialité » en ligne pour l'étudier.
 
@@ -55,7 +55,7 @@ Ajoutez l'appareil via **Hardware Wallet**, suivez les demandes PIN/phrase prise
 
 La connexion donne à Ginger les données publiques tandis que les clés restent sur l'appareil. Elle n'annule pas les données partagées par l'application compagnon du fabricant. Ouvrir le compte dans une autre application en lecture seule révèle parfois plus d'historique même si aucune ne peut dépenser sans matériel.
 
-N'importez pas les mots matériels sur l'ordinateur pour contourner une connexion ou un compte non pris en charge. Consultez le parcours du fabricant si le compte ne peut pas être représenté correctement.
+N'importez pas les mots de récupération du portefeuille matériel sur l'ordinateur pour contourner une connexion ou un compte non pris en charge. Consultez la procédure prise en charge par l'appareil si le compte ne peut pas être représenté correctement.
 
 <span id="create-a-new-separation-for-future-activity" data-ginger-heading="créer-une-nouvelle-séparation-future" aria-hidden="true"></span>
 
@@ -63,7 +63,7 @@ N'importez pas les mots matériels sur l'ordinateur pour contourner une connexio
 
 Si l'objectif exige de nouvelles clés, créez et vérifiez portefeuille et sauvegarde nouveaux. Obtenez une nouvelle destination et testez avec un petit montant si ce n'est pas urgent. Confirmez réception et signature ou récupération avant de déplacer le reste prévu.
 
-Examinez les entrées de chaque transfert. Dépenser tous les anciens coins ensemble peut relier des activités séparées. Un transfert ordinaire relie aussi historiques des entrées et sorties. De nouvelles clés seules ne le cachent pas ; un parcours CoinJoin réfléchi répond à certains objectifs de liens transactionnels, sous réserve de frais, admissibilité et dépenses ultérieures.
+Examinez les entrées de chaque transfert. Dépenser tous les anciens coins ensemble peut relier des activités séparées. Un transfert ordinaire relie aussi les historiques des entrées et sorties. De nouvelles clés seules ne cachent pas ce lien ; une procédure CoinJoin réfléchie peut répondre à certains objectifs de confidentialité des liens entre transactions, sous réserve de frais, d'admissibilité et de dépenses ultérieures.
 
 Décidez quand et comment cesser les anciennes adresses. Mettez à jour vos instructions, gardez des données pour les paiements tardifs et ne supposez pas une adresse inactive parce qu'elle a été retirée d'un site. Gardez les informations de récupération des portefeuilles pouvant encore recevoir.
 

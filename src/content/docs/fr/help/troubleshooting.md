@@ -20,7 +20,7 @@ Commencez par l'erreur exacte, le portefeuille choisi, le réseau et la version.
 | Symptôme | Premier contrôle | Étape suivante |
 | --- | --- | --- |
 | Portefeuille récupéré vide | Mots d'origine, phrase exacte, réseau et progression | Comparez adresses ou historique connus après synchronisation ; utilisez les contrôles avancés seulement si les contrôles ordinaires ne suffisent pas |
-| Paiement entrant manquant | Adresse correcte, identifiant expéditeur, portefeuille choisi | Vérifiez diffusion et confirmation, puis synchronisation locale |
+| Paiement entrant manquant | Adresse correcte, identifiant de transaction fourni par l'expéditeur, portefeuille choisi | Vérifiez diffusion et confirmation, puis synchronisation locale |
 | Receive ou Send absent | Récupération encore active ? Portefeuille en lecture seule ? | Attendez la récupération ou utilisez le signataire nécessaire |
 | Ancienne adresse disparue de la liste | A-t-elle été payée ou masquée ? | Vérifiez l'historique ; sa visibilité n'invalide pas les clés |
 | Seul un très petit paiement manque | Seuil de poussière et synchronisation | Comparez le seuil configuré avant de supposer un vol |
@@ -46,7 +46,7 @@ Si vous utilisez **Wallet Settings** → **Tools** → **Resync**, sauvegardez d
 | --- | --- |
 | **Insufficient funds eligible for coinjoin** | Examinez confirmations, tailles, frais et exclusions ; le total ne suffit pas à établir l'admissibilité |
 | **Only excluded funds are available** | Examinez **Exclude Coins** si vous souhaitez faire participer certains coins |
-| **Only immature funds are available** | Attendez la maturité requise ; les sorties nouvellement minées ont des règles spéciales |
+| **Only immature funds are available** | Attendez le nombre requis de confirmations ; les sorties nouvellement minées ont des règles de dépense spéciales |
 | **Some funds are rejected from coinjoining** | Lisez la raison et les conditions actuelles ; le refus ne transfère pas la propriété |
 | **Awaiting cheaper coinjoins** | Examinez les préférences de coût et décidez si attendre correspond au but |
 | **Coinjoin may be uneconomical** | Examinez seuil d'arrêt et coûts relatifs avant de contourner manuellement |
@@ -63,13 +63,13 @@ Des participants peuvent ne pas terminer, ou un coin devenir temporairement indi
 
 Si les estimations manquent, attendez, réparez la connexion prestataire/nœud ou utilisez un taux manuel que vous comprenez. Le montant final plus les frais doit tenir dans les fonds dépensables. Une longue chaîne non confirmée peut exiger d'attendre les confirmations antérieures.
 
-Utilisez **Speed Up Transaction** ou **Cancel Transaction** seulement si proposé et après vérification des frais. Annuler tente un remplacement, pas un renversement confirmé. Après une diffusion incertaine, vérifiez l'historique avant un double paiement.
+Utilisez **Speed Up Transaction** ou **Cancel Transaction** seulement si proposé et après vérification des frais. L'annulation tente de remplacer un paiement en attente ; elle ne peut pas annuler un paiement confirmé. Après une diffusion incertaine, vérifiez l'historique avant un double paiement.
 
 <span id="2fa-and-hardware" data-ginger-heading="2fa-et-matériel" aria-hidden="true"></span>
 
 ## 2FA et matériel
 
-Pour un code rejeté, vérifiez heure du téléphone, entrée choisie, compatibilité avec Ginger et Tor/service. Préservez les fichiers existants. Si le démarrage normal ne revient pas, mots et phrase d'origine constituent la sauvegarde indépendante ; réinstaller sur les mêmes données ne recrée pas l'authentificateur perdu. La [FAQ avancée](/fr/help/advanced-faq/#does-the-2fa-file-recover-the-wallet-without-the-service) explique la dépendance.
+Pour un code d'authentification rejeté, vérifiez l'heure du téléphone, l'entrée choisie, la compatibilité de l'authentificateur avec Ginger et la connexion à Tor et au service. Préservez les fichiers du portefeuille et de 2FA existants. Si le démarrage normal ne revient pas, les mots de récupération et la phrase secrète d'origine constituent la sauvegarde indépendante des clés ; réinstaller sur les mêmes données ne recrée pas l'authentificateur perdu. La [FAQ avancée](/fr/help/advanced-faq/#does-the-2fa-file-recover-the-wallet-without-the-service) explique la dépendance.
 
 Pour la détection, utilisez un seul matériel déverrouillé, un câble de données et un port direct, avec applications concurrentes fermées. Terminez les étapes requises de Bitcoin, PIN ou phrase sur l'appareil. Sous Linux, vérifiez les permissions du fabricant. Gardez la seed hors ordinateur.
 

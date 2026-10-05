@@ -29,7 +29,7 @@ next: false
 
 > Niveau de lecture : utilisation courante. Choisissez ce guide lorsque vous avez besoin de la tâche qu'il décrit.
 
-Une vente échange du bitcoin contre la méthode de paiement offerte par un prestataire. Ginger obtient les offres et prépare l'on-chain, mais le prestataire contrôle le versement fiat et l'examen de commande. Lisez ses exigences avant d'engager les fonds.
+Une vente échange du bitcoin contre le paiement proposé par un prestataire. Ginger aide à obtenir les offres et à préparer le paiement sur la blockchain, mais le prestataire contrôle le versement en monnaie fiduciaire et l'examen de la commande. Lisez ses exigences avant d'engager les fonds.
 
 <span id="create-and-fund-a-sale" data-ginger-heading="créer-et-financer-une-vente" aria-hidden="true"></span>
 
@@ -38,9 +38,9 @@ Une vente échange du bitcoin contre la méthode de paiement offerte par un pres
 1. Ouvrez un portefeuille synchronisé avec du bitcoin dépensable et choisissez **Sell**. Si absent, vérifiez la progression de récupération et la capacité d'envoi.
 2. Sélectionnez pays ou région si demandé. Saisissez le montant à vendre et la devise de réception souhaitée. Vérifiez unités et limites affichées.
 3. Choisissez **Continue**, filtrez **Offers** par méthode et comparez versement net et frais.
-4. Choisissez **Accept**. Terminez le navigateur jusqu'à destination Bitcoin exacte, montant et éventuelle échéance.
+4. Choisissez **Accept**. Terminez les étapes du prestataire dans le navigateur jusqu'à recevoir sa destination Bitcoin exacte, son montant et son éventuelle échéance de paiement.
 5. Revenez au dialogue de vente Ginger et **Send**. Saisissez ou vérifiez destination et montant exacts fournis. Ne supposez pas que le navigateur a correctement rempli tous les champs.
-6. Vérifiez frais et réception avant confirmation. Le montant demandé doit arriver après éventuelle soustraction de frais ; ne confondez pas « tout envoyer » avec payer une facture fixe.
+6. Vérifiez les frais de transaction et le montant reçu par le destinataire avant confirmation. Le montant demandé doit arriver après éventuelle soustraction de frais ; ne confondez pas « tout envoyer » avec payer une facture fixe.
 7. Consultez historique et **Previous Orders** pour la progression. Gardez identifiants de commande et transaction.
 
 Le dialogue conserve le contexte sans supprimer votre responsabilité de comparer demande et aperçu. Si le devis expire avant envoi, obtenez une instruction actualisée plutôt que de payer spéculativement une ancienne adresse.
@@ -59,7 +59,7 @@ Le dialogue conserve le contexte sans supprimer votre responsabilité de compare
 | **Refunded** | Confirmez méthode, destination et règlement du remboursement avec le prestataire. |
 | **Completed** | Vérifiez réception Bitcoin ou versement fiat attendu dans le portefeuille ou compte concerné. |
 
-Les états reflètent la dernière information de l'intégration et peuvent retarder les événements. Une indication d'attente sur **Buy** ou **Sell** signale une commande nécessitant attention ; pas une clé perdue.
+Les états reflètent la dernière information de l'intégration du prestataire et peuvent avoir du retard sur les événements. Une indication de mise en attente sur **Buy** ou **Sell** signale une commande nécessitant attention ; pas une clé perdue.
 
 <span id="which-support-channel-to-use" data-ginger-heading="quelle-assistance-contacter" aria-hidden="true"></span>
 
@@ -73,6 +73,6 @@ Pour crash Ginger, navigateur qui ne s'ouvre pas ou commande mal affichée, sign
 
 ## Confidentialité et frais
 
-Le prestataire relie la demande à l'identité ou méthode fournie. Dépenser des fonds CoinJoined ne supprime pas cet enregistrement, et il peut appliquer sa propre politique. Ginger ne garantit pas l'acceptation de tous les historiques par chaque plateforme.
+Le prestataire peut relier sa demande de paiement à l'identité ou à la méthode de paiement fournie. Dépenser des fonds issus de CoinJoin ne supprime pas cet enregistrement, et il peut appliquer sa propre politique d'acceptation. Ginger ne garantit pas l'acceptation de tous les historiques par chaque plateforme.
 
 Comparez versement annoncé au bitcoin, frais prestataire et minage séparé de votre paiement. Gardez assez de valeur dépensable pour ce dernier. Solde bas, hausse de frais ou phase CoinJoin critique peut empêcher le paiement immédiat d'une commande valide.

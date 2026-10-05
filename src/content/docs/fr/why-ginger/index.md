@@ -9,13 +9,13 @@ prev: false
 next: false
 ---
 
-Ginger est un portefeuille open source pour Bitcoin on-chain sur ordinateur. Vous contrôlez les clés, pouvez recevoir à de nouvelles adresses et vérifier les paiements avant signature. CoinJoin facultatif complique les liens de propriété, tandis que Tor intégré réduit l'exposition directe de l'IP pour les connexions qui le traversent.
+Ginger est un portefeuille open source pour les transactions Bitcoin sur la blockchain, utilisable sur ordinateur. Vous contrôlez les clés, pouvez recevoir à de nouvelles adresses et vérifier les paiements avant signature. CoinJoin, facultatif, aide à rendre plus difficile la déduction des liens entre transactions et propriétaires, tandis que Tor intégré aide à réduire l'exposition directe de l'adresse IP pour les connexions qui le traversent.
 
 <span id="start-with-what-you-want-to-protect" data-ginger-heading="commencer-par-ce-que-vous-voulez-protéger" aria-hidden="true"></span>
 
 ## Commencer par ce que vous voulez protéger
 
-- **Vos clés de dépense :** gardez une sauvegarde complète de récupération et protégez l'ordinateur signataire. Un matériel compatible peut conserver les clés sur un appareil séparé.
+- **Vos clés de dépense :** gardez une sauvegarde complète de récupération et protégez l'ordinateur utilisé pour signer. Un portefeuille matériel compatible peut conserver les clés de signature sur un appareil séparé.
 - **Votre historique de paiements :** utilisez de nouvelles adresses, des étiquettes locales utiles et examinez quels coins sont dépensés. [Découvrez ce que révèle une transaction Bitcoin](/fr/using-ginger/privacy/).
 - **Vos connexions :** gardez la protection Tor normale. Le navigateur externe a son propre comportement réseau, ses cookies et ses comptes.
 

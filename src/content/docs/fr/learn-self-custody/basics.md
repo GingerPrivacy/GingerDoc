@@ -1,6 +1,6 @@
 ---
 doc_id: "learn-self-custody.basics"
-title: "Garder ses clés Bitcoin : sauvegardes, phrases secrètes et matériel"
+title: "Garder ses clés Bitcoin : sauvegardes, phrases secrètes et portefeuilles matériels"
 description: "Comprendre qui peut dépenser votre bitcoin, ce qui rend une sauvegarde complète et les différences entre les portefeuilles logiciels et matériels Ginger."
 lang: fr
 verified_release: "v2.0.26"
@@ -19,7 +19,7 @@ La garde de vos propres clés signifie détenir les informations nécessaires po
 
 Le réseau Bitcoin conserve un registre public des transactions. Votre portefeuille utilise des clés secrètes pour autoriser les dépenses des parts que vous contrôlez. Installer l'application sur un ordinateur de remplacement ne recrée pas ces secrets ; d'où l'importance de la sauvegarde.
 
-Pour un portefeuille logiciel Ginger, mots et phrase d'origine recréent les clés. Les fichiers locaux préservent aussi le contexte, comme étiquettes et paramètres. Authentificateur, PIN matériel et fichier copié ont des rôles différents ; aucun ne doit être supposé remplacer les mots.
+Pour un portefeuille logiciel Ginger, les mots de récupération et la phrase secrète d'origine recréent les clés. Les fichiers locaux peuvent préserver un contexte supplémentaire, comme les étiquettes et les paramètres. Authentificateur, PIN matériel et fichier copié ont des rôles différents ; aucun ne doit être supposé remplacer la sauvegarde des mots de récupération.
 
 <span id="the-passphrase-changes-the-wallet" data-ginger-heading="la-phrase-secrète-change-le-portefeuille" aria-hidden="true"></span>
 
@@ -39,13 +39,13 @@ Notez si vous en avez utilisé une et conservez-la exactement. Choisissez une pr
 | Portefeuille matériel via Ginger | Sur l'appareil pour les opérations prises en charge | Vérifier les détails sur l'appareil et préserver sa sauvegarde fabricant |
 | Enregistrement en lecture seule sans signataire | Ne peut autoriser seul une dépense | Protéger les données publiques sensibles et garder accès à un signataire distinct |
 
-Le matériel réduit l'exposition aux logiciels malveillants de l'ordinateur, mais vous pouvez approuver un paiement malveillant sans vérifier son écran. Importer sa seed sur ordinateur change la sécurité : les clés y sont désormais exposées.
+Un portefeuille matériel peut réduire l'exposition des clés aux logiciels malveillants de l'ordinateur, mais vous pouvez toujours approuver un paiement malveillant si vous ne vérifiez pas l'écran de l'appareil. Importer sa seed dans un portefeuille sur ordinateur change la sécurité : les clés y sont désormais exposées.
 
 <span id="recovery-is-part-of-the-setup" data-ginger-heading="la-récupération-fait-partie-de-la-configuration" aria-hidden="true"></span>
 
 ## La récupération fait partie de la configuration
 
-Avant de compter sur le portefeuille, vérifiez que vous trouvez et comprenez sa sauvegarde. Pour un logiciel Ginger accessible, **Verify Recovery Words** vérifie les mots fournis. Gardez aussi la phrase d'origine. Sur matériel, utilisez la vérification appropriée du fabricant sans saisir la seed sur l'ordinateur.
+Avant de compter sur le portefeuille, vérifiez que vous trouvez et comprenez sa sauvegarde. Pour un portefeuille logiciel Ginger accessible, **Verify Recovery Words** vérifie les mots fournis. Gardez aussi la phrase secrète d'origine. Pour un portefeuille matériel, utilisez la vérification appropriée du fabricant sans saisir la seed sur l'ordinateur.
 
 Gardez davantage que les fichiers de l'application. L'installateur se télécharge à nouveau ; un secret manquant ne se retrouve pas sur le site du projet. Envisagez panne de disque, appareil perdu et accès au lieu de sauvegarde. Les [conseils de sécurité de Bitcoin.org](https://bitcoin.org/en/secure-your-wallet) traitent sauvegarde et protection d'appareil comme complémentaires.
 

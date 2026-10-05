@@ -27,14 +27,14 @@ La sélection automatique et les suggestions peuvent aussi aider. Le contrôle m
 
 ## Exemple 1 : un coin couvre un achat
 
-Alex possède un coin de 120,000 satoshis issu de CoinJoin et veut payer 70,000 satoshis. Supposons des frais de 1,000 satoshis.
+Alex possède un coin de 120 000 satoshis issu de CoinJoin et veut payer 70 000 satoshis. Supposons des frais de 1 000 satoshis.
 
 | Partie de la transaction | Montant |
 | --- | --- |
-| Entrée dépensée | 120,000 sats |
-| Le marchand reçoit | 70,000 sats |
-| Monnaie rendue à Alex | 49,000 sats |
-| Frais de minage | 1,000 sats |
+| Entrée dépensée | 120 000 sats |
+| Le marchand reçoit | 70 000 sats |
+| Monnaie rendue à Alex | 49 000 sats |
+| Frais de minage | 1 000 sats |
 
 Le marchand connaît adresse et montant du paiement. Il peut examiner la transaction et déduire que l'autre sortie est la monnaie rendue d'Alex. Il n'apprend pas tout son solde par cette transaction seule, mais voit l'entrée et peut suivre la dépense ultérieure du probable rendu.
 
@@ -44,9 +44,9 @@ Alex n'a pas à renvoyer ce rendu manuellement : il appartient déjà au portefe
 
 ## Exemple 2 : deux réceptions sans rapport sont combinées
 
-Blair a un coin de 90,000 satoshis lié à son travail indépendant et un de 80,000 lié à une adresse de dons publique. Payer 150,000 avec 2,000 de frais exige plus que chacun seul ; utiliser les deux rend 18,000 satoshis.
+Blair a un coin de 90 000 satoshis lié à son travail indépendant et un de 80 000 lié à une adresse de dons publique. Payer 150 000 avec 2 000 de frais exige plus que chacun seul ; utiliser les deux rend 18 000 satoshis.
 
-Une dépense commune ordinaire suggère que les entrées ont le même propriétaire. Celui qui reconnaît le coin des dons peut obtenir un indice sur celui du travail. C'est une déduction de la transaction et d'autres connaissances, pas une preuve automatique d'identité.
+Une dépense commune ordinaire peut suggérer que les entrées ont le même propriétaire. Celui qui reconnaît le coin des dons peut obtenir un indice sur celui du travail. C'est une déduction de la transaction et d'autres connaissances, pas une preuve automatique d'identité.
 
 Si Blair a un autre coin suffisant déjà lié à la même activité, il peut révéler moins d'informations nouvelles. Si les deux entrées sont le seul moyen pratique, c'est un compromis coût/confidentialité. Ne sous-payez pas une facture et ne faites pas de « ne jamais combiner » une règle absolue.
 
@@ -56,9 +56,9 @@ CoinJoin et PayJoin sont collaboratifs : supposer un seul propriétaire de toute
 
 ## Exemple 3 : le rendu prolonge un lien
 
-Alex combine ensuite les 49,000 satoshis de l'exemple 1 à un coin sans rapport de 60,000 pour payer 100,000. Avec 1,000 de frais supposés, 8,000 reviennent en nouveau rendu.
+Alex combine ensuite les 49 000 satoshis de l'exemple 1 à un coin sans rapport de 60 000 pour payer 100 000. Avec 1 000 de frais supposés, 8 000 reviennent en nouveau rendu.
 
-Le premier marchand voit son probable rendu dépensé avec l'entrée de 60,000. Même avec une nouvelle adresse destinataire, le lien entre entrées demeure. Une adresse de sortie neuve n'annule pas la dépense commune.
+Le premier marchand peut observer que la sortie probable de monnaie rendue du premier paiement a été dépensée avec l'entrée de 60 000 satoshis. Même avec une nouvelle adresse destinataire, le lien entre entrées demeure. Une adresse de sortie neuve n'annule pas la dépense commune.
 
 Gardez le contexte par des étiquettes pour vos décisions futures. Ces notes locales ne publient pas un nom dans la blockchain et n'empêchent pas les déductions.
 
@@ -66,9 +66,9 @@ Gardez le contexte par des étiquettes pour vos décisions futures. Ces notes lo
 
 ## Exemple 4 : déplacer tout le solde vers le matériel
 
-Casey a quatre coins de 200,000 satoshis chacun. Tous les envoyer à une adresse matérielle dépense 800,000 satoshis d'entrées dans une transaction. Avec 2,000 de frais supposés, le matériel reçoit 798,000.
+Casey a quatre coins de 200 000 satoshis chacun. Tous les envoyer à une adresse matérielle dépense 800 000 satoshis d'entrées dans une transaction. Avec 2 000 de frais supposés, le matériel reçoit 798 000.
 
-Le matériel isole mieux les clés, mais le transfert expose une dépense commune des quatre entrées. Des transferts séparés évitent ce lien particulier en ajoutant frais et autres motifs observables de temps/montant. Recevoir directement les sorties d'un CoinJoin admissible peut éviter un transfert ultérieur, mais dépend des contrôles d'admissibilité et de destination de la version ; ce n'est pas une méthode générale de remixage des coins détenus sur matériel.
+Le portefeuille matériel isole mieux les clés, mais le transfert expose une dépense commune des quatre entrées. Des transferts séparés pourraient éviter ce lien particulier en ajoutant frais et autres motifs observables de temps/montant. Recevoir directement les sorties d'un CoinJoin admissible dans un portefeuille matériel peut éviter un transfert ultérieur, mais dépend des contrôles d'admissibilité et de destination de la version ; ce n'est pas une méthode générale de remixage des coins détenus sur matériel.
 
 Ne dépensez pas tout simplement parce que la liste paraît désordonnée. La consolidation réduit parfois le nombre d'entrées futures, mais un faible taux de frais change le coût, pas la divulgation.
 

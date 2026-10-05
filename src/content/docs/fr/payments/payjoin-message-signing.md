@@ -58,6 +58,6 @@ Certains services vous demandent de démontrer que vous contrôlez une adresse d
 
 Avec un portefeuille matériel, suivez la demande de signature de l'appareil ; la disponibilité dépend de l'appareil et de sa prise en charge de la signature de messages. Un portefeuille en lecture seule sans appareil de signature ne peut pas produire de signature. Le type d'adresse et le format de signature accepté par le vérificateur doivent également être compatibles.
 
-Lisez le message aussi attentivement qu'une déclaration d'autorisation. Préférez un texte au périmètre précis indiquant le destinataire, l'objet et la date ou le défi à relever. Ne signez pas une déclaration vide ou dont vous ne comprenez pas les conséquences. Une signature peut être copiée et montrée à d'autres après son partage.
+Lisez le message aussi attentivement qu'une déclaration d'autorisation. Préférez un texte au périmètre précis indiquant le destinataire, l'objet et la date ou le défi de vérification. Ne signez pas une déclaration vide ou dont vous ne comprenez pas les conséquences. Une signature peut être copiée et montrée à d'autres après son partage.
 
 La signature d'un message ne transfère pas de bitcoins et ne démontre pas que vous possédez toutes les adresses du portefeuille. Elle crée également un lien entre l'adresse signée et la personne que le vérificateur identifie comme vous. Si une plateforme d'échange la demande, cette divulgation demeure même après une utilisation ultérieure de CoinJoin.

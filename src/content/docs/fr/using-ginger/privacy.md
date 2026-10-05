@@ -30,13 +30,13 @@ Une fois l'adresse associée à une personne, l'activité reliée peut être ét
 | Observateur | Informations initiales possibles | Ce que vous contrôlez |
 | --- | --- | --- |
 | Payeur | Adresse fournie et son paiement | Donnez une adresse neuve à chaque réception |
-| Destinataire | Transaction et informations de l'achat | Examinez les entrées et évitez l'identité inutile |
+| Destinataire | Transaction et informations de l'achat | Examinez les entrées et évitez de divulguer inutilement votre identité |
 | Plateforme ou prestataire d'achat | Compte, détails de paiement, adresses de dépôt/retrait | Comprenez ses registres avant utilisation |
-| Analyste public | Transactions et étiquettes obtenues ailleurs | Évitez les liens faciles ; évaluez CoinJoin et les dépenses ultérieures |
+| Analyste de la blockchain publique | Transactions et étiquettes obtenues ailleurs | Évitez les liens faciles ; évaluez CoinJoin et les dépenses ultérieures |
 | Service réseau contacté | Contenu des requêtes et parfois métadonnées de connexion | Gardez Tor si pris en charge et comprenez les divulgations de chaque fonction |
 | Personne accédant à l'ordinateur ou sauvegardes | Fichiers, étiquettes, adresses, journaux et parfois clés | Protégez appareil, sauvegarde et métadonnées |
 
-Aucun paramètre unique ne traite toutes les lignes. Le matériel protège les clés sans cacher une adresse publique. Tor protège la connexion sans cacher ce que vous saisissez dans le formulaire d'un prestataire.
+Aucun paramètre unique ne traite toutes les lignes. Un portefeuille matériel aide à protéger les clés sans cacher une adresse publique. Tor aide à protéger les métadonnées de connexion sans cacher ce que vous saisissez dans le formulaire d'un prestataire.
 
 <span id="why-this-matters-in-ordinary-life" data-ginger-heading="pourquoi-cela-compte-dans-la-vie-courante" aria-hidden="true"></span>
 
@@ -54,7 +54,7 @@ La confidentialité financière peut protéger les clients, les informations com
 
 La fongibilité signifie échanger les unités selon des conditions équivalentes. Les règles Bitcoin comptabilisent les valeurs, mais les personnes et services peuvent classer différemment les sorties selon leurs historiques apparents. Ces jugements créent parfois des frictions même si une sortie est valide selon Bitcoin.
 
-Les outils de confidentialité rendent certaines classifications historiques plus difficiles à établir avec certitude. Ils ne peuvent imposer l'acceptation ou effacer les registres déjà détenus. Prudence avec les « coins propres » ou l'acceptation garantie : estimation du portefeuille et politique du service sont deux choses distinctes.
+Les outils de confidentialité peuvent rendre certaines classifications historiques plus difficiles à établir avec certitude. Ils ne peuvent imposer l'acceptation ou effacer les registres déjà détenus. Prudence avec les « coins propres » ou l'acceptation garantie : estimation du portefeuille et politique du service sont deux choses distinctes.
 
 <span id="where-ginger-fits" data-ginger-heading="la-place-de-ginger" aria-hidden="true"></span>
 

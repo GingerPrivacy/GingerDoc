@@ -31,7 +31,7 @@ Lorsque les estimations automatiques sont indisponibles, Ginger peut tout de mê
 
 ## La monnaie rendue reste vos bitcoins
 
-Bitcoin dépense des coins entiers, également appelés UTXO. Si les entrées sélectionnées dépassent le montant destiné au bénéficiaire plus les frais, l'excédent revient généralement à une nouvelle adresse de monnaie rendue dans votre portefeuille. Par exemple, une entrée de 100,000 satoshis qui finance un paiement de 60,000 satoshis avec des frais de 1,000 satoshis laisse 39,000 satoshis de monnaie rendue.
+Bitcoin dépense des coins entiers, également appelés UTXO. Si les entrées sélectionnées dépassent le montant destiné au bénéficiaire plus les frais, l'excédent revient généralement à une nouvelle adresse de monnaie rendue dans votre portefeuille. Par exemple, une entrée de 100 000 satoshis qui finance un paiement de 60 000 satoshis avec des frais de 1 000 satoshis laisse 39 000 satoshis de monnaie rendue.
 
 L'adresse de monnaie rendue peut être différente des adresses de réception que vous avez déjà montrées à quelqu'un. Vous n'avez pas besoin de la copier ailleurs ni de renvoyer manuellement les fonds à votre portefeuille. L'analyse des transactions peut établir un lien entre la monnaie rendue et le paiement, ce qui importe lorsque vous la combinez ensuite avec d'autres fonds.
 

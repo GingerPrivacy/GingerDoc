@@ -17,14 +17,14 @@ next: false
 
 | Terme | Signification pour l'utilisateur d'un portefeuille |
 | --- | --- |
-| Bitcoin /fr/ BTC | Le réseau et son unité monétaire. Un portefeuille gère clés et transactions plutôt que des pièces physiques. |
-| Satoshi /fr/ sat | Un cent millionième de bitcoin : 100,000,000 sats = 1 BTC. |
+| Bitcoin / BTC | Le réseau et son unité monétaire. Un portefeuille gère clés et transactions plutôt que des pièces physiques. |
+| Satoshi / sat | Un cent millionième de bitcoin : 100 000 000 sats = 1 BTC. |
 | Adresse | Une destination de paiement dérivée des conditions de dépense. Utilisez-en une nouvelle à chaque réception. |
-| UTXO /fr/ coin | Une sortie non dépensée disponible pour être dépensée comme entrée entière. |
+| UTXO / coin | Une sortie non dépensée disponible pour être dépensée comme entrée entière. |
 | Entrée | Une référence à une sortie antérieure que l'on dépense. Plusieurs entrées peuvent financer une transaction. |
 | Sortie | Une nouvelle destination et valeur créées par une transaction. |
 | Monnaie rendue | La valeur retournée au portefeuille lorsque les entrées choisies dépassent le paiement et les frais. |
-| Identifiant de transaction /fr/ txid | L'identifiant d'une transaction. Le partager révèle quelle transaction publique vous discutez. |
+| Identifiant de transaction / txid | L'identifiant d'une transaction. Le partager révèle quelle transaction publique vous discutez. |
 | Mempool | L'ensemble des transactions non confirmées d'un nœud. Différents nœuds peuvent avoir différentes vues. |
 | Confirmation | L'inclusion dans un bloc, suivie de blocs supplémentaires construits au-dessus. |
 | Taux de frais | Les satoshis payés par octet virtuel de taille transactionnelle ; ce n'est pas le total des frais. |
@@ -39,12 +39,12 @@ next: false
 
 | Terme | Signification pour l'utilisateur d'un portefeuille |
 | --- | --- |
-| Bloc /fr/ blockchain | Un lot de transactions et la chaîne de blocs construite sur l'historique antérieur. |
-| Mineur /fr/ preuve de travail | Un participant assemblant des blocs candidats et réalisant le travail utilisé par les règles Bitcoin de sélection de chaîne. |
-| Transaction coinbase | La première transaction d'un bloc, créant sa récompense de minage autorisée ; sans rapport avec un compte sur une plateforme particulière. Ses sorties exigent une maturité avant dépense. |
+| Bloc / blockchain | Un lot de transactions et la chaîne de blocs construite sur l'historique antérieur. |
+| Mineur / preuve de travail | Un participant assemblant des blocs candidats et réalisant le travail utilisé par les règles Bitcoin de sélection de chaîne. |
+| Transaction coinbase | La première transaction d'un bloc, créant sa récompense de minage autorisée ; sans rapport avec un compte sur une plateforme particulière. Ses sorties doivent atteindre le nombre requis de confirmations avant de pouvoir être dépensées. |
 | Règles de consensus | Les règles qu'un nœud validateur applique pour juger valides les blocs et transactions. |
 | Difficulté | Une mesure régissant la preuve de travail nécessaire pour un bloc ; elle ne détermine pas votre solde. |
-| Mainnet /fr/ RegTest | Respectivement le véritable réseau Bitcoin et un mode local de test séparé. Les coins ne se déplacent pas entre eux. |
+| Mainnet / RegTest | Respectivement le véritable réseau Bitcoin et un mode local de test séparé. Les coins ne se déplacent pas entre eux. |
 | BIP | Une proposition d'amélioration Bitcoin documentant un standard ou processus proposé. Sa publication ne signifie pas que chaque portefeuille l'implémente. |
 | Portefeuille HD | Un portefeuille déterministe hiérarchique dérivant de nombreuses clés depuis les secrets initiaux et des conventions. |
 | Hash | Un identifiant compact calculé à partir de données. Le txid identifie des données, pas le nom d'un compte personnel. |
@@ -59,18 +59,18 @@ Lightning, canaux de paiement, construction multisignature, configuration testne
 | Terme | Signification pour l'utilisateur d'un portefeuille |
 | --- | --- |
 | Clé privée | Une information secrète autorisant les dépenses. Ne la partagez jamais avec l'assistance. |
-| Clé publique | Une information vérifiant les signatures ; ce n'est pas un secret de dépense, mais elle peut rester sensible pour la confidentialité. |
-| Mots de récupération /fr/ mnémonique /fr/ seed phrase | La sauvegarde ordonnée permettant de recréer les clés avec la bonne phrase secrète et les conventions du portefeuille. |
+| Clé publique | Une information utilisée pour vérifier les signatures ; ce n'est pas un secret de dépense, mais elle peut rester sensible pour la confidentialité. |
+| Mots de récupération / mnémonique / seed phrase | La sauvegarde ordonnée permettant de recréer les clés avec la bonne phrase secrète et les conventions du portefeuille. |
 | Phrase secrète BIP39 | Un texte supplémentaire utilisé avec les mots pour dériver un portefeuille. Chaque phrase différente sélectionne d'autres clés. |
 | PIN d'appareil | Un contrôle d'accès au matériel. Ce n'est pas la même chose qu'une phrase BIP39. |
 | 2FA | Un second facteur d'authentification. Ginger utilise au démarrage un authentificateur et un chiffrement des fichiers locaux dépendant d'un service. |
-| xpub /fr/ clé publique étendue | Une information dérivant de nombreuses adresses liées. Elle ne signe pas directement, mais peut exposer l'activité du portefeuille. |
-| Chemin de dérivation /fr/ compte | Une convention identifiant une branche de clés. Les outils de récupération ont besoin de conventions compatibles. |
-| Gap limit | La série d'adresses inutilisées tolérée par l'analyse avant d'arrêter la recherche sur une branche. |
+| xpub / clé publique étendue | Une information dérivant de nombreuses adresses liées. Elle ne signe pas directement, mais peut exposer l'activité du portefeuille. |
+| Chemin de dérivation / compte | Une convention identifiant une branche de clés. Les outils de récupération ont besoin de conventions compatibles. |
+| Gap limit | Le nombre d'adresses inutilisées consécutives toléré par l'analyse de récupération avant d'arrêter la recherche sur une branche. |
 | Portefeuille en lecture seule | Un enregistrement observant l'activité mais sans clés locales de signature. Un appareil matériel peut fournir la signature séparément. |
 | Portefeuille matériel | Un appareil séparé conçu pour protéger les clés et approuver les transactions prises en charge. |
 | PSBT | Un fichier de transaction Bitcoin partiellement signée contenant une proposition et les informations de signature. |
-| SegWit /fr/ Taproot | Des formats de sorties et de dépenses Bitcoin. Sur mainnet, les adresses natives commencent souvent par `bc1q` et `bc1p`, respectivement. |
+| SegWit / Taproot | Des formats de sorties et de dépenses Bitcoin. Sur mainnet, les adresses natives commencent souvent par `bc1q` et `bc1p`, respectivement. |
 
 <span id="privacy-and-ginger" data-ginger-heading="confidentialité-et-ginger" aria-hidden="true"></span>
 
@@ -90,7 +90,7 @@ Lightning, canaux de paiement, construction multisignature, configuration testne
 | Tor | Un système de relais aidant à séparer les connexions d'une application de l'IP de l'utilisateur. |
 | Filtre de bloc | Un résumé compact identifiant les blocs potentiellement pertinents avant leur traitement local. |
 | Nœud complet | Un logiciel validant les données Bitcoin selon le consensus. Son rôle diffère de celui du coordinateur CoinJoin. |
-| PayJoin | Un paiement collaboratif où le destinataire contribue une entrée. L'envoi Ginger publié comporte des limites de repli et de compatibilité. |
+| PayJoin | Un paiement collaboratif où le destinataire peut contribuer une entrée. L'envoi Ginger publié comporte des limites de repli et de compatibilité. |
 | Discreet Mode | Le masquage de champs d'affichage sensibles pris en charge, sans chiffrement ni verrouillage. |
 | KYC | Le processus de vérification d'identité d'un prestataire. Tor ne cache pas les informations directement soumises. |
 | Fiat | Une monnaie émise par un gouvernement, pour devis ou estimations ; distincte des BTC réglés on-chain. |

@@ -24,12 +24,12 @@ Deux parcours différents existent. Choisissez-en un avant de commencer pour sav
 
 ## Préparer les deux portefeuilles
 
-1. Utilisez une installation Ginger vérifiée. Créez et sauvegardez le portefeuille logiciel avec ses mots et sa phrase secrète d'origine. N'y conservez que le montant à traiter.
+1. Utilisez une installation Ginger vérifiée. Créez et sauvegardez le portefeuille logiciel avec ses mots de récupération et sa phrase secrète d'origine. N'y conservez que le montant à traiter.
 2. Initialisez et sauvegardez le portefeuille matériel selon la procédure prise en charge par son fabricant. [Connectez-le à Ginger](/fr/using-ginger/hardware-wallet/) et laissez-le se synchroniser.
 3. Dans le portefeuille matériel, choisissez **Receive** et utilisez **Show on the hardware wallet** si disponible. Comparez l'adresse entière sur l'appareil et l'ordinateur. Effectuez un petit test de réception et de signature avant de confier un montant plus élevé à une nouvelle configuration.
-4. Donnez des noms distincts aux portefeuilles pour reconnaître source et destination. Gardez une sauvegarde récupérable pour chacun ; sauvegarder le logiciel ne récupère pas un portefeuille matériel utilisant d'autres clés.
+4. Donnez des noms distincts aux portefeuilles pour reconnaître source et destination. Gardez une sauvegarde récupérable pour chacun ; une sauvegarde du portefeuille logiciel ne permet pas de récupérer un portefeuille matériel utilisant d'autres clés.
 
-Ne saisissez jamais les mots du portefeuille matériel dans Ginger pour faire fonctionner CoinJoin. Cela donnerait à l'ordinateur accès à ses clés de signature.
+Ne saisissez jamais les mots de récupération du portefeuille matériel dans Ginger pour faire fonctionner CoinJoin. Cela donnerait à l'ordinateur accès à ses clés de signature.
 
 <span id="withdraw-from-the-exchange" data-ginger-heading="retirer-depuis-la-plateforme" aria-hidden="true"></span>
 
@@ -37,17 +37,17 @@ Ne saisissez jamais les mots du portefeuille matériel dans Ginger pour faire fo
 
 Dans le portefeuille logiciel, choisissez **Receive**, ajoutez une étiquette utile et créez une nouvelle adresse. Copiez-la dans le retrait Bitcoin de la plateforme et vérifiez adresse complète et réseau avant d'y autoriser le retrait. Ginger utilise Bitcoin on-chain ; une facture Lightning ou le réseau d'un autre actif n'est pas interchangeable.
 
-Notez séparément les frais de retrait. Le montant reçu dans Ginger peut être inférieur au montant débité par la plateforme. Attendez la synchronisation et la confirmation des fonds avant de les attendre dans CoinJoin. Un identifiant de transaction aide à rapprocher les montants, mais évitez de le publier ou de le rechercher répétitivement dans des explorateurs publics.
+Notez séparément les frais de retrait. Le montant reçu dans Ginger peut être inférieur au montant débité par la plateforme. Attendez la synchronisation et la confirmation des fonds avant de vous attendre à leur participation à CoinJoin. Un identifiant de transaction aide à rapprocher les montants, mais évitez de le publier ou de le rechercher répétitivement dans des explorateurs publics.
 
 <span id="route-a-review-coinjoin-results-then-transfer" data-ginger-heading="parcours-a--examiner-coinjoin-puis-transférer" aria-hidden="true"></span>
 
 ## Parcours A : examiner CoinJoin, puis transférer
 
-1. Dans **Coinjoin Settings** de la source, laissez **Coinjoin to this wallet** sur la source. Examinez objectif, préférences de frais et coins exclus avant de démarrer par la commande lecture.
+1. Dans **Coinjoin Settings** de la source, laissez **Coinjoin to this wallet** sur la source. Examinez objectif, préférences de frais et coins exclus avant de démarrer par la commande de lecture.
 2. Surveillez les tours terminés et les informations de confidentialité. Vous pouvez mettre en pause pour examiner frais et progression. Dans une phase critique, laissez Ginger finir le travail requis au lieu de terminer l'application.
-3. Obtenez une nouvelle adresse matérielle et vérifiez-la sur l'appareil. Dans le logiciel, choisissez **Send** → **Manual Control** et les fonds à déplacer.
+3. Obtenez une nouvelle adresse matérielle et vérifiez-la sur l'appareil. Dans le portefeuille logiciel, choisissez **Send** → **Manual Control** et les fonds à déplacer.
 4. Vérifiez entrées réellement sélectionnées, destination, montant reçu, monnaie rendue et frais. Confirmez uniquement si tout correspond à votre intention.
-5. Vérifiez l'historique synchronisé du matériel et les coins restants de la source. Attendez la confirmation avant de considérer le transfert terminé.
+5. Vérifiez l'historique synchronisé du portefeuille matériel et les coins restants de la source. Attendez la confirmation avant de considérer le transfert terminé.
 
 Envoyer toutes les sorties ensemble crée un lien visible entre elles. Déplacer les coins individuellement évite ce lien particulier à plusieurs entrées, mais coûte davantage de frais et révèle toujours une transaction par transfert. Montants, horaires et informations détenues par un observateur peuvent fournir d'autres liens. Choisissez un plan réalisable ; aucune des deux approches ne garantit l'anonymat.
 
@@ -55,7 +55,7 @@ Envoyer toutes les sorties ensemble crée un lien visible entre elles. Déplacer
 
 ## Parcours B : choisir le matériel comme destination CoinJoin
 
-Utilisez ce parcours tant que le logiciel contient encore des fonds admissibles. Le parcours normal v2.0.26 rejette la participation si le portefeuille ou tous les candidats disponibles sont déjà privés selon son objectif. Une autre destination ne contourne pas cette vérification. En particulier, exclure tous les coins non privés n'est pas un moyen fiable de forcer un tour supplémentaire contenant uniquement des coins déjà traités. Utilisez le parcours A pour ces fonds au lieu de changer l'objectif pour contourner l'arrêt.
+Utilisez ce parcours tant que le portefeuille logiciel contient encore des fonds admissibles. Le parcours normal v2.0.26 rejette la participation si le portefeuille ou tous les candidats disponibles sont déjà privés selon son objectif. Une autre destination ne contourne pas cette vérification. En particulier, exclure tous les coins non privés n'est pas un moyen fiable de forcer un tour supplémentaire contenant uniquement des coins déjà traités. Utilisez le parcours A pour ces fonds au lieu de changer l'objectif pour contourner l'arrêt.
 
 1. Chargez et vérifiez le portefeuille matériel dans Ginger. Arrêtez la participation de la source et attendez la disponibilité du sélecteur de destination.
 2. Ouvrez **Coinjoin Settings** de la source. Réglez **Coinjoin to this wallet** sur le matériel voulu. Ne choisissez qu'une destination proposée par Ginger.

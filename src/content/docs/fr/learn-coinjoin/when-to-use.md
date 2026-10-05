@@ -11,7 +11,7 @@ next: false
 
 > Niveau de lecture : utilisation courante. Choisissez ce guide lorsque vous avez besoin de la tâche qu'il décrit.
 
-CoinJoin est utile lorsque réduire les liens transactionnels répond à une préoccupation réelle. Il l'est moins si le problème principal est une phrase volée, un ordinateur compromis ou une information que vous allez divulguer directement à un prestataire.
+CoinJoin est utile lorsque réduire les informations sur les liens entre transactions répond à une préoccupation réelle. Il l'est moins si le problème principal est une phrase de récupération volée, un ordinateur compromis ou une information que vous allez divulguer directement à un prestataire.
 
 <span id="start-with-a-concrete-objective" data-ginger-heading="commencer-par-un-objectif-concret" aria-hidden="true"></span>
 
@@ -19,7 +19,7 @@ CoinJoin est utile lorsque réduire les liens transactionnels répond à une pr�
 
 Vous pouvez vouloir qu'un futur destinataire voie moins directement l'historique d'une réception déjà identifiée. Notez qui connaît cette réception et ce que le prochain paiement révélera. CoinJoin peut modifier le problème de liens entre les deux, mais ne peut annuler la première divulgation ni empêcher la seconde.
 
-Si votre objectif est simplement de protéger les clés pendant la détention de bitcoin, une sauvegarde récupérable et un parcours matériel adapté y répondent plus directement. Si votre souci est une adresse publique réutilisée pour chaque facture, arrêtez d'abord la réutilisation ; CoinJoin ultérieur ne rend pas les anciennes réceptions privées.
+Si votre objectif est simplement de protéger les clés pendant la détention de bitcoin, une sauvegarde permettant la récupération et une procédure adaptée à un portefeuille matériel y répondent plus directement. Si votre souci est une adresse publique réutilisée pour chaque facture, arrêtez d'abord la réutilisation ; CoinJoin ultérieur ne rend pas les anciennes réceptions privées.
 
 <span id="compare-the-tradeoffs" data-ginger-heading="comparer-les-compromis" aria-hidden="true"></span>
 
@@ -31,7 +31,7 @@ Si votre objectif est simplement de protéger les clés pendant la détention de
 | Un paiement est dû immédiatement | L'achèvement CoinJoin n'est pas programmé ; évitez de compter sur un tour pour une échéance exacte |
 | Dépenses à long terme depuis une source identifiée | Examinez l'articulation entre CoinJoin, adresses distinctes et sélection ultérieure |
 | Un prestataire exige identité et preuve d'adresse | Cette divulgation directe reste ; vérifiez si CoinJoin change les informations qui vous importent |
-| La destination est matérielle | Vérifiez compte de réception et parcours publié ; n'importez pas les mots matériels dans un portefeuille chaud |
+| La destination est un portefeuille matériel | Vérifiez le compte de réception et la procédure de destination de la version publiée ; n'importez pas les mots de récupération du portefeuille matériel dans un portefeuille chaud |
 | Vous ne pouvez garder l'ordinateur disponible | La participation automatique exige connexion et capacité de signature déverrouillée pendant le tour |
 
 Ce sont des compromis, pas une recommandation de déplacer un montant précis ni une assurance financière. Apprenez avec un montant petit et gérable et rapprochez les frais avant d'accroître votre exposition.

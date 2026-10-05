@@ -62,6 +62,6 @@ La recherche sur les paiements web montre pourquoi observations du navigateur et
 
 ## Les informations locales doivent aussi être protégées
 
-Étiquettes, comptabilité de confidentialité et commandes peuvent résider dans les métadonnées. Elles servent aux décisions futures et à la récupération, mais ne sont pas toutes protégées comme les clés de signature. Protégez ordinateur, sauvegardes et comptes qui y accèdent. **Discreet Mode** aide pour les champs d'écran pris en charge ; le verrouillage du système protège plus largement un accès sans surveillance.
+Étiquettes, calculs de confidentialité et enregistrements des commandes auprès des prestataires peuvent résider dans les métadonnées du portefeuille. Ces données servent aux décisions futures et à la récupération, mais ne sont pas toutes protégées comme les clés de signature. Protégez ordinateur, sauvegardes et comptes qui y accèdent. **Discreet Mode** aide pour les champs d'écran pris en charge ; le verrouillage du système protège plus largement contre l'accès à un ordinateur laissé sans surveillance.
 
 Restaurer depuis les mots récupère les clés sans toutes les notes privées. Supprimer ces notes n'efface pas ce qu'un destinataire ou service sait déjà. Avant de changer d'installation, lisez [la migration de portefeuille](/fr/learn-privacy/wallet-migration/) ; avant de payer, vérifiez [les habitudes de confidentialité](/fr/using-ginger/address-reuse/).

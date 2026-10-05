@@ -35,7 +35,7 @@ CoinJoin peut aider sur ces liens. Il ne supprime pas le registre de retrait d'u
 
 ## Combien cela coûte-t-il ?
 
-Un tour réussi paie des frais de minage Bitcoin et peut aussi facturer des frais de coordinateur. Une exonération du coordinateur ne supprime pas les coûts de minage. Plusieurs tours peuvent entraîner plusieurs coûts.
+Un tour réussi entraîne des frais de minage Bitcoin et peut aussi entraîner des frais de coordinateur. Une exonération des frais de coordinateur ne supprime pas les coûts de minage. Plusieurs tours peuvent entraîner plusieurs coûts.
 
 Il n'y a pas de délai fixe. Ginger peut attendre confirmations, frais acceptables ou autres participants. Lisez l'état et examinez le résultat avant de laisser des participations répétées sans surveillance.
 

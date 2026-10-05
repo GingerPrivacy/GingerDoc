@@ -73,7 +73,7 @@ Pour une entrée sans autre exonération :
 | Valeur de l'entrée | Frais de coordinateur | Frais de minage |
 | --- | --- | --- |
 | 0.03 BTC | 0 satoshi | Supplémentaires |
-| 0.10 BTC | 0.0003 BTC, soit 30,000 satoshis | Supplémentaires |
+| 0.10 BTC | 0.0003 BTC, soit 30 000 satoshis | Supplémentaires |
 
 Ces exemples expliquent le calcul ; ce ne sont pas des devis pour des tours futurs. Les règles complètes et d'autres exemples figurent dans [frais CoinJoin et progression de confidentialité](/fr/using-ginger/annonset/).
 
@@ -81,15 +81,15 @@ Ces exemples expliquent le calcul ; ce ne sont pas des devis pour des tours futu
 
 ### La politique de frais de coordinateur de Wasabi
 
-Depuis la version 2.2.0.0, Wasabi n'accepte que les tours sans frais de coordinateur. Les frais de minage restent dus. Sa documentation décrit aussi de rares restes d'allocation de sorties pouvant atteindre 10,000 satoshis par CoinJoin, qui reviennent au coordinateur. Consultez [l'explication des frais de Wasabi](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
+Depuis la version 2.2.0.0, Wasabi n'accepte que les tours sans frais de coordinateur. Les frais de minage restent dus. Sa documentation décrit aussi de rares restes d'allocation de sorties pouvant atteindre 10 000 satoshis par CoinJoin, qui reviennent au coordinateur. Consultez [l'explication des frais de Wasabi](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
 
 <span id="budget-beyond-the-headline-percentage" data-ginger-heading="budgéter-au-delà-du-pourcentage-annoncé" aria-hidden="true"></span>
 
 ### Budgéter au-delà du pourcentage annoncé
 
-Ginger peut aussi laisser un petit reste lors de l'allocation des montants des sorties. Pour chaque portefeuille, comparez la valeur de vos entrées participantes à **toutes les sorties que vous possédez** dans la transaction terminée, y compris celles reçues dans un autre portefeuille. Les tours répétés et les transferts ultérieurs peuvent ajouter des coûts.
+Ginger peut aussi laisser un petit reste lors de l'allocation des montants des sorties. Quel que soit le portefeuille choisi, comparez la valeur de vos entrées participantes à **toutes les sorties que vous possédez** dans la transaction terminée, y compris celles reçues dans un autre portefeuille. Les tours répétés et les transferts ultérieurs peuvent ajouter des coûts.
 
-Des frais de coordinateur nuls ne constituent qu'une composante de la comparaison. La taille des transactions, les taux de minage, l'allocation des sorties et le nombre de tours terminés influencent la dépense finale. Le [guide des coûts Ginger](/fr/using-ginger/annonset/) explique comment rapprocher ces montants.
+Des frais de coordinateur nuls ne constituent qu'une composante de la comparaison. La taille des transactions, les taux de frais de minage, l'allocation des sorties et le nombre de tours terminés influencent la dépense finale. Le [guide des coûts Ginger](/fr/using-ginger/annonset/) explique comment rapprocher ces montants.
 
 <span id="hardware-wallets-signing-inputs-and-receiving-outputs-are-different" data-ginger-heading="matériel--signer-les-entrées-et-recevoir-les-sorties-sont-deux-opérations-différentes" aria-hidden="true"></span>
 
@@ -107,9 +107,9 @@ Suivez [le guide de stockage à froid Ginger](/fr/hardware-wallets/exchange-to-c
 
 ## Confidentialité et politiques des services
 
-La garde de vos propres clés répond à la question de qui peut autoriser la dépense. Elle ne résout pas toutes les questions de confidentialité ou de disponibilité. CoinJoin complique certains liens de propriété, mais les transactions restent publiques. Une plateforme conserve ses registres ; combinaisons ultérieures, réutilisation d'adresses ou divulgations à un destinataire peuvent créer de nouveaux liens. Le score de confidentialité ne garantit ni anonymat ni acceptation. Consultez [confiance et limites CoinJoin](/fr/learn-coinjoin/trust-and-limits/).
+La garde de vos propres clés répond à la question de qui peut autoriser la dépense. Elle ne résout pas toutes les questions de confidentialité ou de disponibilité. CoinJoin rend certains liens de propriété plus difficiles à déduire, mais les transactions restent publiques. Une plateforme conserve ses registres ; combinaisons ultérieures, réutilisation d'adresses ou divulgations à un destinataire peuvent créer de nouveaux liens. Le score de confidentialité ne garantit ni anonymat ni acceptation par une plateforme d'échange. Consultez [confiance et limites CoinJoin](/fr/learn-coinjoin/trust-and-limits/).
 
-L'opérateur de Ginger, InvisibleBit LLC, publie des restrictions de service, notamment concernant les lieux et la nationalité américains. Ses conditions autorisent aussi des contrôles tiers et le refus de certaines entrées. Lisez [les conditions actuelles de Ginger](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt) avant utilisation. Avec Wasabi, examinez les politiques du coordinateur configuré ; la politique de frais du portefeuille n'établit pas les pratiques d'admission ou de traitement des données de cet opérateur.
+L'opérateur de Ginger, InvisibleBit LLC, publie des restrictions de service, notamment concernant la localisation aux États-Unis et la nationalité américaine. Ses conditions autorisent aussi des contrôles par des tiers et le refus de certaines entrées. Lisez [les conditions actuelles de Ginger](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt) avant utilisation. Avec Wasabi, examinez les politiques du coordinateur configuré ; la politique de frais du portefeuille n'établit pas les pratiques d'admission ou de traitement des données de cet opérateur.
 
 <span id="which-fits-your-needs" data-ginger-heading="lequel-correspond-à-vos-besoins-" aria-hidden="true"></span>
 
