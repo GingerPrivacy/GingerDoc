@@ -11,7 +11,7 @@ next: false
 
 Ginger Wallet e Wasabi Wallet são carteiras Bitcoin de código aberto para computador que permitem manter suas próprias chaves e usar CoinJoin. As principais diferenças práticas para quem está começando com CoinJoin são a configuração do coordenador e suas taxas.
 
-**O Ginger já vem com a conexão ao coordenador configurada. O Wasabi exige que você configure um coordenador antes de iniciar CoinJoin.** O coordenador do Ginger normalmente cobra 0.3% sobre entradas elegíveis acima de 0.03 BTC, com as isenções descritas abaixo. O Wasabi atual aceita apenas rodadas sem taxa de coordenador. Ambos têm custos de mineração.
+**O Ginger já vem com a conexão ao coordenador configurada. O Wasabi exige que você configure um coordenador antes de iniciar CoinJoin.** O coordenador do Ginger normalmente cobra 0.3% sobre entradas elegíveis acima de 0.03 BTC, com as isenções descritas abaixo. O Wasabi atual aceita apenas rodadas sem taxa de coordenador. Ambos têm taxas de mineração.
 
 Última verificação: **7 de setembro de 2026**. Versões abrangidas: [Ginger v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) e [Wasabi v2.8.2](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.2). Esta comparação trata dos fluxos documentados, não de uma avaliação de velocidade, confiabilidade ou anonimato.
 

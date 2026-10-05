@@ -31,7 +31,7 @@ next: false
 | vByte | A unidade de tamanho usada para comparar taxas por byte virtual entre transações com dados de witness diferentes. |
 | RBF | Replace-by-fee: uma transação pendente pode ser substituída segundo a política dos nós, geralmente para aumentar sua taxa. |
 | CPFP | Child-pays-for-parent: gastar uma saída com uma transação filha de taxa mais alta pode incentivar também a confirmação de sua transação pai não confirmada. |
-| Dust | Um valor pequeno demais para ser útil sob uma política ou uma hipótese de custo específica. O limite da carteira e a política da rede não são necessariamente iguais. |
+| Poeira | Um valor pequeno demais para ser útil sob uma política ou uma hipótese de custo específica. O limite da carteira e a política da rede não são necessariamente iguais. |
 
 <span id="the-network-in-context" data-ginger-heading="a-rede-em-contexto" aria-hidden="true"></span>
 
@@ -60,13 +60,13 @@ Lightning, canais de pagamento, construção de transações com múltiplas assi
 | --- | --- |
 | Chave privada | Informações secretas que autorizam gastos. Nunca as compartilhe com o suporte. |
 | Chave pública | Informações usadas para verificar assinaturas; não são um segredo de gasto, mas ainda podem ser sensíveis para a privacidade. |
-| Palavras de recuperação / mnemônico / seed phrase | O backup ordenado de palavras a partir do qual as chaves da carteira podem ser recriadas com a frase-senha correta e as convenções da carteira. |
+| Palavras de recuperação / frase mnemônica / seed phrase | O backup ordenado de palavras a partir do qual as chaves da carteira podem ser recriadas com a frase-senha correta e as convenções da carteira. |
 | Frase-senha BIP39 | Texto adicional usado com as palavras de recuperação para derivar uma carteira. Cada frase-senha diferente seleciona chaves diferentes. |
 | PIN do dispositivo | Um controle de acesso de carteira de hardware. Não é o mesmo que uma frase-senha BIP39. |
 | 2FA | Um segundo fator de autenticação. O Ginger usa um autenticador e criptografia local de arquivos da carteira dependente de um serviço na inicialização. |
 | xpub / chave pública estendida | Informações que podem derivar muitos endereços públicos relacionados. Não podem assinar diretamente, mas podem expor a atividade de uma carteira. |
 | Caminho de derivação / conta | Uma convenção que identifica um ramo das chaves de uma carteira. Ferramentas de recuperação precisam de convenções compatíveis. |
-| Limite de lacuna | A sequência de endereços não utilizados que uma varredura de recuperação tolera antes de encerrar a busca ao longo de um ramo. |
+| Limite de endereços não utilizados | A sequência de endereços não utilizados que uma varredura de recuperação tolera antes de encerrar a busca ao longo de um ramo. |
 | Carteira somente de observação | Um registro de carteira que pode observar a atividade, mas não possui as chaves locais de assinatura. Um dispositivo de hardware pode fornecer a assinatura separadamente. |
 | Carteira de hardware | Um dispositivo separado projetado para proteger chaves e aprovar transações compatíveis. |
 | PSBT | Um arquivo de transação Bitcoin parcialmente assinada que contém uma transação proposta e informações de assinatura. |

@@ -49,4 +49,4 @@ O Ginger pode receber enquanto o aplicativo estiver fechado. O pagador precisa d
 
 Peça ao remetente o identificador da transação e verifique o destino pelo canal de comunicação já utilizado. Confira a carteira selecionada, mainnet ou testnet, o estado da sincronização e se o remetente realmente transmitiu uma transação. Evite colar todos os endereços em um explorador público: ele fica sabendo o que você consulta.
 
-Se você restaurou pelas palavras e gerou muitos endereços não utilizados no passado, o gap limit de recuperação pode ser relevante. Uma nova solicitação de recebimento, por si só, não corrige uma busca histórica incompleta. Preserve os backups antes de tentar uma nova busca ou recuperação.
+Se você restaurou pelas palavras e gerou muitos endereços não utilizados no passado, o limite de endereços não utilizados na recuperação pode ser relevante. Uma nova solicitação de recebimento, por si só, não corrige uma busca histórica incompleta. Preserve os backups antes de tentar uma nova busca ou recuperação.

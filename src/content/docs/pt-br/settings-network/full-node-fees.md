@@ -24,7 +24,7 @@ Em **Settings** → **Bitcoin**, a opção se chama **(EXPERIMENTAL) Run Bitcoin
 3. Permita que a sincronização inicial do nó prossiga. Acompanhe o estado da conexão e do download; a primeira sincronização pode levar muito tempo.
 4. Defina **Stop Bitcoin Core on shutdown** de acordo com sua intenção de manter ou não o nó em execução após sair do Ginger.
 
-Não ative essa opção apenas para corrigir um saldo ausente da carteira. Um nó não pode recuperar uma frase de senha desconhecida nem restaurar rótulos. Um diretório de nó existente pode conter configurações importantes e suas próprias carteiras; preserve seu backup antes de alterar qual aplicativo o gerencia.
+Não ative essa opção apenas para corrigir um saldo ausente da carteira. Um nó não pode recuperar uma frase-senha desconhecida nem restaurar rótulos. Um diretório de nó existente pode conter configurações importantes e suas próprias carteiras; preserve seu backup antes de alterar qual aplicativo o gerencia.
 
 O nó completo pode verificar blocos localmente, mas isso não elimina as dependências do Ginger de coordenador, 2FA, compra e venda ou outros serviços. Também não oculta uma transação que você divulga voluntariamente a uma corretora.
 
@@ -46,10 +46,10 @@ Uma conexão com um nó remoto tem sua própria exposição de rede. Use um nó 
 
 Quando **Full Node** é selecionado, mas o nó está indisponível, a v2.0.26 informa que a estimativa de taxas está indisponível e ainda permite a entrada manual de uma taxa por byte virtual no processo de pagamento. Você pode aguardar o nó, selecionar um provedor de estimativas funcional ou inserir uma taxa por byte virtual em que tenha motivos para confiar. Não use uma taxa enorme como uma correção genérica de conexão.
 
-Estimativas de taxas são previsões, não reservas de espaço em blocos. Uma diferença entre provedores pode refletir observações diferentes da mempool. Confira a taxa total da transação, além da taxa por byte virtual exibida.
+Estimativas de taxas são previsões, não reservas de espaço em blocos. Uma diferença entre provedores pode refletir observações diferentes do mempool. Confira a taxa total da transação, além da taxa por byte virtual exibida.
 
-<span id="dust-threshold" data-ginger-heading="limite-de-dust" aria-hidden="true"></span>
+<span id="dust-threshold" data-ginger-heading="limite-de-poeira" aria-hidden="true"></span>
 
-## Limite de dust
+## Limite de poeira
 
 **Dust Threshold**, também em **Settings** → **Bitcoin**, controla como a carteira trata valores recebidos muito pequenos. É diferente da política de retransmissão da rede, do limite de parada do CoinJoin e do valor mínimo de entrada de um coordenador. Aumentá-lo pode afetar quais pagamentos pequenos a carteira processa; não exclui suas saídas da blockchain nem impede que alguém os envie. Preserve sua configuração anterior ao investigar um pagamento pequeno inesperadamente ausente.

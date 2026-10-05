@@ -44,9 +44,9 @@ Mantenha as verificações de download indicadas nesse guia. A [referência avan
 
 Siga [Crie sua primeira carteira](/pt-br/getting-started/first-wallet/). Escolha **New**, anote as doze **Recovery Words** na ordem correta e conclua **Confirm Recovery Words**. Mantenha o backup escrito em sigilo e disponível mesmo se perder o computador.
 
-Na etapa **Add Passphrase**, entenda a escolha antes de continuar. Se usar uma frase de senha, as palavras originais e essa frase de senha exata serão necessárias para a recuperação. A frase de senha também protege o acesso à carteira no computador. O Ginger não pode redefini-la. Deixar os campos vazios cria uma carteira sem essa frase de senha adicional; anote qual opção você escolheu.
+Na etapa **Add Passphrase**, entenda a escolha antes de continuar. Se usar uma frase-senha, as palavras originais e essa frase-senha exata serão necessárias para a recuperação. A frase-senha também protege o acesso à carteira no computador. O Ginger não pode redefini-la. Deixar os campos vazios cria uma carteira sem essa frase-senha adicional; anote qual opção você escolheu.
 
-Não prossiga com um saldo significativo até que o backup esteja legível e você consiga abrir a carteira pretendida. Nunca compartilhe as palavras ou a frase de senha com o suporte.
+Não prossiga com um saldo significativo até que o backup esteja legível e você consiga abrir a carteira pretendida. Nunca compartilhe as palavras ou a frase-senha com o suporte.
 
 <span id="why-is-it-important-to-use-a-new-address-for-every-payment" aria-hidden="true"></span>
 

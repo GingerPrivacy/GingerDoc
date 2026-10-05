@@ -17,7 +17,7 @@ Uma rotina de segurança útil protege contra acesso não autorizado e mantém u
 
 ## Registre o plano de recuperação
 
-Mantenha um inventário privado de suas carteiras, do tipo de assinador usado por cada uma, dos locais dos backups e de quais exigem uma frase de senha BIP39. O inventário não precisa conter os próprios segredos. Ele deve ser útil após a perda do computador ou celular, não apenas enquanto você lembra como tudo foi configurado.
+Mantenha um inventário privado de suas carteiras, do tipo de assinador usado por cada uma, dos locais dos backups e de quais exigem uma frase-senha BIP39. O inventário não precisa conter os próprios segredos. Ele deve ser útil após a perda do computador ou celular, não apenas enquanto você lembra como tudo foi configurado.
 
 Preserve informações suficientes sobre as convenções da carteira para reconhecer a conta correta após a recuperação, especialmente ao usar dispositivos de hardware ou várias carteiras. Mantenha backups de rótulos e metadados quando forem importantes para os registros; a blockchain não pode reconstruir as anotações privadas que você escreveu.
 
@@ -39,7 +39,7 @@ Mantenha o computador e o dispositivo de assinatura atualizados por fontes auten
 
 A 2FA opcional do Ginger acrescenta criptografia dos arquivos locais da carteira e uma verificação de inicialização com um serviço. Ela pode ser útil contra algumas formas de acesso a arquivos locais, mas introduz uma dependência do autenticador e do serviço na inicialização normal.
 
-Mantenha as palavras de recuperação e a frase de senha original disponíveis de forma independente. Não presuma que `2fa_info.gws` seja uma chave mestra de recuperação offline. Tampouco presuma que a 2FA impedirá um invasor que já tenha as palavras e a frase de senha ou que impedirá uma transação autorizada em um aplicativo desbloqueado.
+Mantenha as palavras de recuperação e a frase-senha original disponíveis de forma independente. Não presuma que `2fa_info.gws` seja uma chave mestra de recuperação offline. Tampouco presuma que a 2FA impedirá um invasor que já tenha as palavras e a frase-senha ou que impedirá uma transação autorizada em um aplicativo desbloqueado.
 
 <span id="first-identify-what-was-exposed" data-ginger-heading="primeiro-identifique-o-que-foi-exposto" aria-hidden="true"></span>
 
@@ -53,12 +53,12 @@ Uma exposição de endereço e uma exposição de palavras de recuperação exig
 | Rótulos, registros de pedidos ou exportação de histórico da carteira | Associar transações que estariam separadas a pessoas, finalidades ou saldos | Restrinja o acesso, preserve uma cópia privada se necessário e altere a forma de compartilhar os registros |
 | Uma chave pública estendida, frequentemente chamada xpub | Monitorar endereços no escopo de derivação coberto, potencialmente incluindo futuros; normalmente não autoriza gastos por si só | Identifique a conta ou ramo afetado e considere uma nova carteira se o monitoramento contínuo for inaceitável |
 | Um arquivo de carteira ou uma cópia de todos os dados do aplicativo | A exposição depende da criptografia, das senhas disponíveis e dos outros arquivos copiados; pode incluir chaves e metadados privados | Trate a incerteza com seriedade e avalie a exposição das chaves de assinatura em um ambiente confiável |
-| Palavras de recuperação e qualquer frase de senha exigida, ou chaves privadas utilizáveis | Gastar fundos e derivar mais chaves no escopo comprometido | Prepare uma nova carteira com novas chaves em um dispositivo confiável e mova os fundos que ainda controla |
+| Palavras de recuperação e qualquer frase-senha exigida, ou chaves privadas utilizáveis | Gastar fundos e derivar mais chaves no escopo comprometido | Prepare uma nova carteira com novas chaves em um dispositivo confiável e mova os fundos que ainda controla |
 | Um computador roubado, aplicativo desbloqueado ou sessão de controle remoto | Dependendo do estado, acesso aos dados da carteira, operações de assinatura e outras contas | Encerre o acesso não autorizado e use um dispositivo confiável para avaliar e proteger os fundos restantes |
 
 Uma chave pública estendida não necessariamente mostra todas as contas de um dispositivo; seu escopo de derivação importa. Porém, gerar outro endereço de recebimento em um ramo público divulgado normalmente não impede que o monitoramento desse ramo continue. [A BIP32 descreve esses limites de derivação de chaves públicas](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki).
 
-Se apenas as palavras de recuperação foram divulgadas e você usava uma frase de senha separada, o risco também depende de ela continuar secreta e de sua dificuldade de adivinhação. Não presuma que uma frase de senha desconhecida ou fraca torne o backup exposto seguro indefinidamente. Se as evidências forem incompletas e a exposição puder autorizar gastos, use a resposta à exposição de chaves.
+Se apenas as palavras de recuperação foram divulgadas e você usava uma frase-senha separada, o risco também depende de ela continuar secreta e de sua dificuldade de adivinhação. Não presuma que uma frase-senha desconhecida ou fraca torne o backup exposto seguro indefinidamente. Se as evidências forem incompletas e a exposição puder autorizar gastos, use a resposta à exposição de chaves.
 
 <span id="respond-to-exposed-signing-keys" data-ginger-heading="responda-à-exposição-de-chaves-de-assinatura" aria-hidden="true"></span>
 
@@ -74,7 +74,7 @@ Alterar a senha do computador, desativar a 2FA ou reinstalar o Ginger não revog
 
 Mover fundos pode criar uma ligação observável on-chain. Preservar o controle dos fundos é a prioridade durante um comprometimento de chaves; a privacidade pode ser considerada novamente após conter o problema imediato de acesso. Um destino novo não garante que a transferência não possa ser vinculada.
 
-Mantenha os registros necessários privados durante a investigação. Nunca forneça a um suposto agente de suporte palavras de recuperação, frase de senha, uma cópia irrestrita dos arquivos da carteira ou acesso ao dispositivo substituto. Não é necessário “validar” novas palavras de recuperação em um site.
+Mantenha os registros necessários privados durante a investigação. Nunca forneça a um suposto agente de suporte palavras de recuperação, frase-senha, uma cópia irrestrita dos arquivos da carteira ou acesso ao dispositivo substituto. Não é necessário “validar” novas palavras de recuperação em um site.
 
 <span id="respond-to-a-privacy-only-disclosure" data-ginger-heading="responda-a-uma-exposição-apenas-de-privacidade" aria-hidden="true"></span>
 

@@ -39,13 +39,13 @@ Registre se você usou uma frase-senha e preserve-a com exatidão. Escolha uma p
 | Carteira de hardware usada pelo Ginger | No dispositivo, para as operações compatíveis | Confira os detalhes no dispositivo e preserve o backup de recuperação do fabricante |
 | Registro somente de observação sem assinador | Não pode autorizar um gasto sozinho | Proteja seus dados públicos sensíveis à privacidade e mantenha acesso a um assinador separado |
 
-Uma carteira de hardware pode reduzir a exposição das chaves ao malware do computador, mas você ainda pode autorizar um pagamento malicioso se não examinar a tela do dispositivo. Importar sua seed para uma carteira de computador altera a configuração de segurança: essas chaves passam a ficar expostas a esse computador.
+Uma carteira de hardware pode reduzir a exposição das chaves ao malware do computador, mas você ainda pode autorizar um pagamento malicioso se não examinar a tela do dispositivo. Importar sua semente para uma carteira de computador altera a configuração de segurança: essas chaves passam a ficar expostas a esse computador.
 
 <span id="recovery-is-part-of-the-setup" data-ginger-heading="a-recuperação-faz-parte-da-configuração" aria-hidden="true"></span>
 
 ## A recuperação faz parte da configuração
 
-Antes de confiar em uma carteira, confirme que consegue encontrar e entender seu backup. Para uma carteira de software do Ginger acessível, **Verify Recovery Words** confere as palavras que você fornece. Mantenha também a frase-senha original disponível. Para uma carteira de hardware, use o procedimento adequado de verificação de backup do fabricante sem digitar a seed no computador.
+Antes de confiar em uma carteira, confirme que consegue encontrar e entender seu backup. Para uma carteira de software do Ginger acessível, **Verify Recovery Words** confere as palavras que você fornece. Mantenha também a frase-senha original disponível. Para uma carteira de hardware, use o procedimento adequado de verificação de backup do fabricante sem digitar a semente no computador.
 
 Guarde mais do que os arquivos do aplicativo. Os instaladores baixados podem ser obtidos novamente; um segredo perdido não pode ser buscado no site do projeto. Pense em falhas de disco, perda de dispositivo e acesso ao local do backup. As [orientações de segurança de carteiras](https://bitcoin.org/en/secure-your-wallet) do Bitcoin.org abordam backups e proteção de dispositivos como práticas complementares.
 

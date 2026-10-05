@@ -23,8 +23,8 @@ Comece pelo erro exato, pela carteira selecionada, pela rede e pela versão do a
 | Um pagamento recebido não aparece | Endereço correto, identificador de transação do remetente e carteira selecionada | Confira a transmissão e a confirmação, depois a sincronização local |
 | Receive ou Send não aparecem | A recuperação ainda está ativa? A carteira é somente de observação? | Aguarde a recuperação ou use o dispositivo de assinatura necessário |
 | Um endereço antigo sumiu da lista de recebimento | Ele recebeu pagamento ou foi ocultado? | Confira o histórico; a visibilidade na lista não invalida as chaves |
-| Apenas um pagamento minúsculo não aparece | Limite de dust e sincronização | Compare o limite configurado antes de presumir que os fundos foram roubados |
-| Os rótulos desapareceram após recuperação pela seed | O arquivo ATTR correspondente foi copiado para backup? | Preserve esse arquivo; os rótulos não podem ser reconstruídos a partir da blockchain |
+| Apenas um pagamento minúsculo não aparece | Limite de poeira e sincronização | Compare o limite configurado antes de presumir que os fundos foram roubados |
+| Os rótulos desapareceram após recuperação pela semente | O arquivo ATTR correspondente foi copiado para backup? | Preserve esse arquivo; os rótulos não podem ser reconstruídos a partir da blockchain |
 
 Não digite palavras de recuperação em um site para “ressincronizar” uma carteira. Use o fluxo de recuperação da carteira instalada e verificada somente em um computador confiável.
 
@@ -71,7 +71,7 @@ Use **Speed Up Transaction** ou **Cancel Transaction** somente quando o Ginger o
 
 Para um código de autenticador rejeitado, confira a hora do telefone, a entrada selecionada, a compatibilidade do autenticador com o Ginger e a conectividade com Tor e com o serviço. Preserve os arquivos existentes da carteira e da 2FA. Se não for possível restaurar a inicialização normal, as palavras de recuperação mais a frase-senha original são o backup independente das chaves; reinstalar sobre os mesmos dados não recria um autenticador perdido. As [perguntas frequentes avançadas](/pt-br/help/advanced-faq/#does-the-2fa-file-recover-the-wallet-without-the-service) explicam a dependência do arquivo.
 
-Para detectar o dispositivo, use uma carteira de hardware desbloqueada, um cabo de dados e uma porta USB direta, com os aplicativos concorrentes do dispositivo fechados. Conclua as etapas necessárias no dispositivo para o aplicativo Bitcoin, o PIN ou a frase-senha. No Linux, confira as permissões USB do fabricante. Mantenha a seed do dispositivo fora do computador.
+Para detectar o dispositivo, use uma carteira de hardware desbloqueada, um cabo de dados e uma porta USB direta, com os aplicativos concorrentes do dispositivo fechados. Conclua as etapas necessárias no dispositivo para o aplicativo Bitcoin, o PIN ou a frase-senha. No Linux, confira as permissões USB do fabricante. Mantenha a semente do dispositivo fora do computador.
 
 <span id="report-a-useful-issue" data-ginger-heading="relate-um-problema-de-forma-útil" aria-hidden="true"></span>
 

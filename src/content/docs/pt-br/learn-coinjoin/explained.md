@@ -35,7 +35,7 @@ O CoinJoin pode ajudar com esses vínculos. Ele não pode apagar o registro de s
 
 ## Quanto vai custar?
 
-Uma rodada bem-sucedida paga taxas de mineração do Bitcoin e também pode cobrar uma taxa de coordenador. Uma isenção da taxa de coordenador não elimina os custos de mineração. Várias rodadas podem gerar vários custos.
+Uma rodada bem-sucedida paga taxas de mineração do Bitcoin e também pode cobrar uma taxa de coordenador. Uma isenção da taxa de coordenador não elimina as taxas de mineração. Várias rodadas podem gerar vários custos.
 
 Não há um prazo fixo para a conclusão. O Ginger pode esperar por confirmações, taxas aceitáveis ou outros participantes. Leia o estado e confira o resultado antes de deixar a participação repetida funcionando sem acompanhamento.
 

@@ -42,7 +42,7 @@ Um participante também conhece suas próprias entradas e saídas, o que elimina
 
 Um ataque Sybil significa que um único agente aparece como vários participantes. Se um atacante controla a maior parte da atividade ao redor de um alvo, ele pode excluir suas próprias moedas das possibilidades que considera. Uma transação pode parecer movimentada e ainda assim oferecer menos incerteza para esse observador do que para um observador sem essas informações.
 
-Entradas reais e custos de mineração criam restrições econômicas. Eles não permitem que um usuário comum verifique a identidade independente de cada participante. Assim, o número de entradas, o número de saídas, o volume de transações e a pontuação de anonimato de uma carteira não são uma contagem de pessoas independentes.
+Entradas reais e taxas de mineração criam restrições econômicas. Elas não permitem que um usuário comum verifique a identidade independente de cada participante. Assim, o número de entradas, o número de saídas, o volume de transações e a pontuação de anonimato de uma carteira não são uma contagem de pessoas independentes.
 
 Rodadas maiores podem oferecer mais possibilidades, mas os valores, o conhecimento dos participantes e as transações posteriores continuam sendo importantes. Não há um número de rodadas nem um valor de meta que prove que um atacante não aprendeu nada.
 

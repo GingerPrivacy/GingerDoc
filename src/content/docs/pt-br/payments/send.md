@@ -21,7 +21,7 @@ O Ginger não pode desfazer um pagamento Bitcoin confirmado. Antes de confirmar,
 2. Insira o endereço Bitcoin ou URI de pagamento do destinatário em **To:**. Uma solicitação de pagamento pode incluir o valor; confira-o após colar. Se a ação **Scan QR Code** estiver disponível na sua plataforma, você pode usar a câmera e conferir o destino decodificado.
 3. Insira o valor e um rótulo informativo do destinatário. Confira se a exibição está em BTC ou moeda fiduciária. Uma estimativa em moeda fiduciária varia com a taxa de câmbio e não é o valor que a rede Bitcoin transfere.
 4. Escolha **Continue** e confira a prévia da transação, os fundos selecionados, quaisquer sugestões de privacidade e o troco esperado. Uma sugestão que altera o valor é adequada apenas se ainda atender à solicitação do destinatário.
-5. Confira a taxa e o tempo estimado de confirmação. Escolha **Confirm** quando os detalhes estiverem corretos e conclua qualquer autorização por frase de senha ou dispositivo de hardware.
+5. Confira a taxa e o tempo estimado de confirmação. Escolha **Confirm** quando os detalhes estiverem corretos e conclua qualquer autorização por frase-senha ou dispositivo de hardware.
 6. Confira no histórico a transação transmitida. Se o resultado estiver incerto após um erro de rede, inspecione o histórico antes de iniciar outro pagamento.
 
 Enviar todos os fundos disponíveis pode descontar a taxa do valor recebido pelo destinatário. Solicitações de valor fixo e PayJoin têm restrições diferentes. A prévia é o lugar para conferir o valor efetivo do destinatário, em vez de presumir que todo o saldo da carteira chegará ao destino.

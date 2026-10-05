@@ -34,10 +34,10 @@ Não há um tempo de espera fixo nem um saldo mínimo universal que garanta a pa
 
 O aplicativo gerencia essas fases; você não precisa trocar chaves nem se coordenar manualmente com desconhecidos. A rodada e a seleção de moedas determinam o número de entradas aceitas e de saídas resultantes. Não há um número fixo de entradas ou saídas que você deva esperar para todas as carteiras, e o saldo total de uma carteira não garante que ele possa participar por inteiro de uma única rodada.
 
-<span id="private-coins-and-another-output-wallet" data-ginger-heading="moedas-privadas-e-outra-carteira-de-saída" aria-hidden="true"></span>
+<span id="private-coins-and-another-output-wallet" data-ginger-heading="moedas-privadas-e-outra-carteira-de-destino" aria-hidden="true"></span>
 
-## Moedas privadas e outra carteira de saída
+## Moedas privadas e outra carteira de destino
 
-O início normal do CoinJoin na v2.0.26 recusa uma carteira ou um conjunto de candidatas disponíveis cujas moedas já tenham atingido a meta de privacidade. Selecionar outra carteira de saída não força uma rodada composta apenas por moedas privadas. Confira [as configurações da carteira de saída](/pt-br/coinjoin/settings/) antes de depender de uma rotina de encaminhamento.
+O início normal do CoinJoin na v2.0.26 recusa uma carteira ou um conjunto de candidatas disponíveis cujas moedas já tenham atingido a meta de privacidade. Selecionar outra carteira de destino não força uma rodada composta apenas por moedas privadas. Confira [as configurações da carteira de destino](/pt-br/coinjoin/settings/) antes de depender de uma rotina de encaminhamento.
 
 Para os cálculos de pontuação e a conciliação completa dos valores, consulte [taxas e progresso da privacidade](/pt-br/using-ginger/annonset/).

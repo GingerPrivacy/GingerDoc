@@ -32,7 +32,7 @@ Para entradas sem outra isenção da taxa do coordenador:
 
 Por exemplo, a entrada de 0.04 BTC paga 0.00012 BTC (12 000 satoshis), não 0.3% apenas dos 0.01 BTC acima do limite. As taxas de mineração são adicionais, inclusive para entradas cuja taxa do coordenador seja zero. Esses exemplos explicam o cálculo configurado, não são uma cotação para uma rodada futura.
 
-As taxas de mineração remuneram os mineradores pelo espaço da transação. Elas dependem da taxa por byte virtual e das entradas e saídas da transação. Gastar uma moeda de baixo valor pode custar uma grande porcentagem de seu valor. Cada CoinJoin repetido pode gerar novos custos de mineração mesmo que se qualifique para uma isenção da taxa do coordenador.
+As taxas de mineração remuneram os mineradores pelo espaço da transação. Elas dependem da taxa por byte virtual e das entradas e saídas da transação. Gastar uma moeda de baixo valor pode custar uma grande porcentagem de seu valor. Cada CoinJoin repetido pode gerar novas taxas de mineração mesmo que se qualifique para uma isenção da taxa do coordenador.
 
 Não divida moedas apenas para buscar uma isenção sem entender as transações extras, as taxas e os vínculos públicos que isso cria.
 
@@ -52,7 +52,7 @@ O exemplo a seguir ilustra a contabilização, não é uma previsão dos valores
 | Suas saídas, somadas entre suas duas carteiras | 4 980 800 |
 | Diferença de valor | 19 200 |
 | Taxa do coordenador assumida neste exemplo: 0.3% da entrada | 15 000 |
-| Custos de mineração atribuídos à sua participação neste exemplo | 3 600 |
+| Taxas de mineração atribuídas à sua participação neste exemplo | 3 600 |
 | Diferença restante de distribuição neste exemplo | 600 |
 
 Aqui, 15 000 + 3 600 + 600 = 19 200 satoshis. As três últimas linhas explicam a mesma diferença; não acrescente essa diferença novamente como outra cobrança. A taxa de mineração de toda a rodada também não é uma taxa que cada participante paga integralmente. Não presuma que um campo individual de taxa ou uma linha de log represente todos os componentes da sua diferença de valor.

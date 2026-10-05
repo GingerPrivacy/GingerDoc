@@ -28,9 +28,9 @@ Estas perguntas abrangem configurações personalizadas, escolhas mais aprofunda
 
 A frase-senha original participa da derivação das chaves, e outro aplicativo de carteira pode usar uma conta ou um tipo de endereço diferente. Um conjunto válido de palavras, por si só, não comprova que os aplicativos estejam mostrando a mesma conta. Primeiro confira a frase-senha original e o progresso da varredura; investigue a compatibilidade de contas somente depois das verificações comuns de recuperação.
 
-<span id="when-should-i-increase-the-recovery-gap-limit" data-ginger-heading="quando-devo-aumentar-o-limite-de-lacuna-de-recuperação" aria-hidden="true"></span>
+<span id="when-should-i-increase-the-recovery-gap-limit" data-ginger-heading="quando-devo-aumentar-o-limite-de-endereços-não-utilizados-na-recuperação" aria-hidden="true"></span>
 
-### Quando devo aumentar o limite de lacuna de recuperação?
+### Quando devo aumentar o limite de endereços não utilizados na recuperação?
 
 Considere isso quando houver evidências de muitos endereços não utilizados antes de um endereço que recebeu pagamento, como endereços gerados em outro aplicativo. **Advanced Recovery Options** → **Minimum Gap Limit:** amplia a varredura e pode aumentar o trabalho e sua duração; na v2.0.26, o valor inicial na tela de recuperação é 114. Isso não corrige palavras erradas, uma frase-senha incorreta ou uma conta incompatível.
 
@@ -102,7 +102,7 @@ A consolidação pode reduzir o número de entradas necessárias depois, mas a t
 
 ### Por que um pagamento minúsculo não aparece e Exclude Coins o congela?
 
-Confira a sincronização e o limite de dust configurado antes de concluir que uma saída minúscula foi perdida. **Exclude Coins** afeta a participação em CoinJoin, não os gastos comuns, e não congela uma moeda. Recebimentos minúsculos inesperados não exigem resposta imediata; avalie seu custo de gasto e possíveis associações antes de incluí-los em um pagamento.
+Confira a sincronização e o limite de poeira configurado antes de concluir que uma saída minúscula foi perdida. **Exclude Coins** afeta a participação em CoinJoin, não os gastos comuns, e não congela uma moeda. Recebimentos minúsculos inesperados não exigem resposta imediata; avalie seu custo de gasto e possíveis associações antes de incluí-los em um pagamento.
 
 <span id="can-i-set-any-custom-fee-rate-or-guarantee-a-confirmation-time" data-ginger-heading="posso-definir-qualquer-taxa-por-byte-virtual-personalizada-ou-garantir-um-tempo-de-confirmação" aria-hidden="true"></span>
 
@@ -142,7 +142,7 @@ Uma blame round é uma nova tentativa do protocolo após a tentativa anterior n�
 
 ### Como concilio o custo completo de uma rodada?
 
-Some o valor de suas entradas gastas e subtraia todas as saídas que lhe pertencem naquela transação, inclusive as enviadas a outra carteira. A diferença pode incluir cobranças do coordenador, custos de mineração e uma diferença restante na alocação das saídas. Não conte as saídas de outro participante como suas nem trate um único rótulo de taxa como se necessariamente cobrisse toda a diferença.
+Some o valor de suas entradas gastas e subtraia todas as saídas que lhe pertencem naquela transação, inclusive as enviadas a outra carteira. A diferença pode incluir cobranças do coordenador, taxas de mineração e uma diferença restante na alocação das saídas. Não conte as saídas de outro participante como suas nem trate um único rótulo de taxa como se necessariamente cobrisse toda a diferença.
 
 <span id="is-a-remix-exemption-permanent-or-applied-to-my-entire-balance" data-ginger-heading="uma-isenção-de-remix-é-permanente-ou-aplicada-ao-meu-saldo-inteiro" aria-hidden="true"></span>
 
@@ -158,7 +158,7 @@ Não. É uma regra de elegibilidade de entrada segundo a política da rodada ofe
 
 ### O CoinJoin pode enviar diretamente para minha carteira de hardware?
 
-Uma carteira de software elegível pode selecionar uma carteira de hardware oferecida e carregada em **Coinjoin to this wallet**. O destino recebe as saídas daquela rodada sem esperar um evento separado de alcance da meta; a inicialização normal não força uma rodada com moedas candidatas já privadas. Confira o destino após cada reinicialização, pois a seleção é redefinida, e nunca importe a seed do hardware para o computador para fazer isso funcionar.
+Uma carteira de software elegível pode selecionar uma carteira de hardware oferecida e carregada em **Coinjoin to this wallet**. O destino recebe as saídas daquela rodada sem esperar um evento separado de alcance da meta; a inicialização normal não força uma rodada com moedas candidatas já privadas. Confira o destino após cada reinicialização, pois a seleção é redefinida, e nunca importe a semente do hardware para o computador para fazer isso funcionar.
 
 <span id="does-an-own-node-replace-every-ginger-service-or-make-tor-unnecessary" data-ginger-heading="um-nó-próprio-substitui-todos-os-serviços-do-ginger-ou-torna-tor-desnecessário" aria-hidden="true"></span>
 

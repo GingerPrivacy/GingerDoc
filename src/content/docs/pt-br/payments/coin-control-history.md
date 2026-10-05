@@ -29,7 +29,7 @@ Mantenha rótulos que expliquem de onde vieram os fundos ou quem já sabe sobre 
 
 A consolidação gasta várias moedas pequenas em menos saídas, geralmente para uma carteira que você controla. Ela custa uma taxa agora e pode reduzir a quantidade de entradas necessárias para um pagamento posterior. Também associa publicamente as entradas selecionadas. Condições de taxas baixas podem tornar a consolidação mais barata, mas não eliminam essa contrapartida de privacidade.
 
-Não combine moedas sem relação automaticamente apenas para organizar a lista de moedas. Saídas recebidas muito pequenas podem ser antieconômicas de gastar. O limite de dust do Ginger e as exclusões de CoinJoin tratam de situações diferentes; excluir uma moeda de CoinJoin não impede sua seleção para um pagamento normal.
+Não combine moedas sem relação automaticamente apenas para organizar a lista de moedas. Saídas recebidas muito pequenas podem ser antieconômicas de gastar. O limite de poeira do Ginger e as exclusões de CoinJoin tratam de situações diferentes; excluir uma moeda de CoinJoin não impede sua seleção para um pagamento normal.
 
 Enviar fundos para sua carteira de hardware é uma transação on-chain normal se você usar **Send**. Obtenha e verifique um novo endereço de recebimento do hardware e confira a taxa e as moedas selecionadas na carteira de software. A transferência em si continua visível na blockchain.
 
@@ -59,4 +59,4 @@ Nem toda transação pode ser acelerada pela sua carteira. Ela precisa de uma es
 
 Leia a caixa de diálogo de cancelamento e a taxa, confirme apenas se essa for sua intenção e acompanhe o que realmente é confirmado. Se a transação original for confirmada primeiro, o cancelamento não poderá revertê-la. Depois que um pagamento for confirmado, peça ao destinatário um reembolso separado, se for apropriado; o Ginger não pode recuperar o valor.
 
-Não inicie um segundo pagamento nem prometa um reembolso até entender qual transação foi confirmada. Um explorador e sua carteira podem mostrar temporariamente informações diferentes de mempool porque observam nós diferentes.
+Não inicie um segundo pagamento nem prometa um reembolso até entender qual transação foi confirmada. Um explorador e sua carteira podem mostrar temporariamente informações diferentes do mempool porque observam nós diferentes.

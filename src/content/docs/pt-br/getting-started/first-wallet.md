@@ -1,7 +1,7 @@
 ---
 doc_id: "getting-started.first-wallet"
 title: "Crie e abra sua primeira carteira Ginger"
-description: "Crie uma carteira Bitcoin, registre suas palavras de recuperação e frase de senha e entenda a primeira sincronização e as configurações de CoinJoin."
+description: "Crie uma carteira Bitcoin, registre suas palavras de recuperação e frase-senha e entenda a primeira sincronização e as configurações de CoinJoin."
 lang: "pt-BR"
 verified_release: "v2.0.26"
 reader_level: "beginner"
@@ -24,7 +24,7 @@ Uma carteira Ginger contém as informações necessárias para reconhecer e gast
 1. Abra a tela de adição de carteira e escolha **New**. Se for solicitado **Wallet Name**, escolha um nome que diferencie esta carteira das outras. A primeira carteira pode receber um nome gerado automaticamente sem mostrar essa etapa.
 2. O Ginger exibe doze **Recovery Words** em inglês. Anote-as na ordem exibida e mantenha-as offline. Não tire fotos delas, não as coloque em e-mails nem as compartilhe com o suporte. O Ginger não voltará a exibi-las depois da criação.
 3. Continue em **Confirm Recovery Words** e selecione as palavras solicitadas usando seu backup escrito. Isso verifica se você registrou a sequência, em vez de apenas reconhecer as palavras na tela.
-4. Em **Add Passphrase**, insira e confirme uma frase de senha ou deixe ambos os campos vazios se escolher deliberadamente uma carteira sem ela. Registre se uma frase de senha foi usada. Uma frase de senha não vazia é necessária tanto para a recuperação quanto para abrir a carteira protegida; não é uma senha que o Ginger possa redefinir.
+4. Em **Add Passphrase**, insira e confirme uma frase-senha ou deixe ambos os campos vazios se escolher deliberadamente uma carteira sem ela. Registre se uma frase-senha foi usada. Uma frase-senha não vazia é necessária tanto para a recuperação quanto para abrir a carteira protegida; não é uma senha que o Ginger possa redefinir.
 5. Conclua qualquer solicitação de termos de serviço. Permita que a carteira se conecte e sincronize antes de confiar no saldo.
 
 O nome da carteira é um rótulo local. Não é uma credencial de recuperação e não altera as chaves. Renomear uma carteira não é o mesmo que criar uma nova.
@@ -41,7 +41,7 @@ O CoinJoin consome taxas de transação e pode levar tempo. Receber bitcoin, env
 
 ## Abra uma carteira existente
 
-Selecione seu nome na lista de carteiras do Ginger. Insira a frase de senha original se for solicitada. Se você ativou a autenticação de dois fatores do aplicativo, conclua essa solicitação de inicialização antes de abrir carteiras individuais. Uma carteira de hardware usa o processo de autorização do dispositivo em vez de um segredo de carteira de software no computador.
+Selecione seu nome na lista de carteiras do Ginger. Insira a frase-senha original se for solicitada. Se você ativou a autenticação de dois fatores do aplicativo, conclua essa solicitação de inicialização antes de abrir carteiras individuais. Uma carteira de hardware usa o processo de autorização do dispositivo em vez de um segredo de carteira de software no computador.
 
 Para adicionar uma carteira a partir de suas palavras de recuperação, escolha **Recover** na tela de adição de carteira. Para carregar um backup JSON de carteira compatível ou uma exportação de hardware aceita, escolha **Import File**. Não cole palavras de recuperação em uma caixa de diálogo de importação de arquivo nem importe as palavras de recuperação de uma carteira de hardware apenas para conectar o dispositivo.
 
@@ -51,7 +51,7 @@ Para adicionar uma carteira a partir de suas palavras de recuperação, escolha 
 
 A sincronização encontra as transações que pertencem à sua carteira. Até ela terminar, os saldos ou o histórico podem estar incompletos. Uma carteira recuperada pode ocultar as ações normais de receber ou enviar enquanto realiza a busca. Um pagamento recebido ainda não confirmado já foi observado, mas ainda não foi incluído em um bloco.
 
-Antes de receber uma quantia significativa, confira se a carteira abre, se seu backup de recuperação está legível e se você entende sua escolha de frase de senha. Use **Wallet Settings** → **Tools** → **Verify Recovery Words** com o botão **Verify** para verificar as palavras de uma carteira de software acessível. Isso verifica um backup; não revela palavras esquecidas.
+Antes de receber uma quantia significativa, confira se a carteira abre, se seu backup de recuperação está legível e se você entende sua escolha de frase-senha. Use **Wallet Settings** → **Tools** → **Verify Recovery Words** com o botão **Verify** para verificar as palavras de uma carteira de software acessível. Isso verifica um backup; não revela palavras esquecidas.
 
 <span id="close-safely" data-ginger-heading="feche-com-segurança" aria-hidden="true"></span>
 
