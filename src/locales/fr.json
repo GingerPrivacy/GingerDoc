@@ -1,0 +1,47 @@
+{
+  "label": "Français",
+  "lang": "fr",
+  "title": "Documentation GingerWallet",
+  "header": {
+    "Getting Started": "Premiers pas",
+    "Why Ginger?": "Pourquoi Ginger ?",
+    "Using Ginger": "Utiliser Ginger",
+    "Ginger Wallet website": "Site de Ginger Wallet"
+  },
+  "sidebar": {
+    "Getting Started": "Premiers pas",
+    "Help": "Aide",
+    "Using Ginger": "Utiliser Ginger",
+    "Bitcoin basics": "Les bases de Bitcoin",
+    "Advanced use": "Utilisation avancée",
+    "First steps": "Premiers pas",
+    "Backup and recovery": "Sauvegarde et récupération",
+    "CoinJoin": "CoinJoin",
+    "Payments": "Paiements",
+    "Hardware wallets": "Portefeuilles matériels",
+    "Settings and network": "Paramètres et réseau",
+    "Buy and sell": "Acheter et vendre",
+    "Questions and troubleshooting": "Questions et dépannage",
+    "Bitcoin privacy": "Confidentialité Bitcoin",
+    "Ginger vs Wasabi": "Ginger ou Wasabi",
+    "Ginger vs Sparrow": "Ginger ou Sparrow",
+    "Understanding CoinJoin": "Comprendre CoinJoin",
+    "Self-custody": "Garde de vos propres clés"
+  },
+  "search": {
+    "scope": "Rechercher dans",
+    "everyday": "Guides débutants et courants",
+    "advanced": "Guides avancés",
+    "all": "Tous les guides",
+    "hint": "Commencez par les guides courants. Choisissez les guides avancés pour les détails techniques.",
+    "loading": "Chargement de la recherche…",
+    "error": "Impossible de charger la recherche. Vérifiez votre connexion et réessayez.",
+    "retry": "Réessayer",
+    "level": {
+      "beginner": "Débutant",
+      "everyday": "Utilisation courante",
+      "advanced": "Avancé"
+    },
+    "levelLabel": "Niveau"
+  }
+}
