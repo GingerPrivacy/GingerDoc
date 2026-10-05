@@ -1,0 +1,47 @@
+{
+  "label": "Magyar",
+  "lang": "hu",
+  "title": "GingerWallet dokumentáció",
+  "header": {
+    "Getting Started": "Első lépések",
+    "Why Ginger?": "Miért Ginger?",
+    "Using Ginger": "A Ginger használata",
+    "Ginger Wallet website": "A Ginger Wallet weboldala"
+  },
+  "sidebar": {
+    "Getting Started": "Első lépések",
+    "Help": "Segítség",
+    "Using Ginger": "A Ginger használata",
+    "Bitcoin basics": "Bitcoin-alapok",
+    "Advanced use": "Haladó használat",
+    "First steps": "Első lépések",
+    "Backup and recovery": "Mentés és helyreállítás",
+    "CoinJoin": "CoinJoin",
+    "Payments": "Fizetések",
+    "Hardware wallets": "Hardverpénztárcák",
+    "Settings and network": "Beállítások és hálózat",
+    "Buy and sell": "Vétel és eladás",
+    "Questions and troubleshooting": "Kérdések és hibaelhárítás",
+    "Bitcoin privacy": "Bitcoin-adatvédelem",
+    "Ginger vs Wasabi": "Ginger és Wasabi",
+    "Ginger vs Sparrow": "Ginger és Sparrow",
+    "Understanding CoinJoin": "A CoinJoin megértése",
+    "Self-custody": "Saját kulcskezelés"
+  },
+  "search": {
+    "levelLabel": "Nehézségi szint",
+    "scope": "Keresés itt",
+    "everyday": "Kezdő és mindennapi útmutatók",
+    "advanced": "Haladó útmutatók",
+    "all": "Minden útmutató",
+    "hint": "Kezdd a mindennapi útmutatókkal. A műszaki részletekhez válaszd a haladó útmutatókat.",
+    "loading": "Kereső betöltése…",
+    "error": "A kereső nem tölthető be. Ellenőrizd a kapcsolatot, és próbáld újra.",
+    "retry": "Újrapróbálkozás",
+    "level": {
+      "beginner": "Kezdő",
+      "everyday": "Mindennapi használat",
+      "advanced": "Haladó"
+    }
+  }
+}
