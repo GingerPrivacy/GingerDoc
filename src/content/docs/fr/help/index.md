@@ -192,11 +192,11 @@ CoinJoin automatique peut créer des transactions communes après activation, sa
 
 Un paiement ordinaire est possible si les fonds sont dépensables et l'envoi disponible ; le pourcentage n'est pas une exigence Bitcoin. C'est une estimation locale selon l'objectif choisi, pas une garantie des connaissances d'autrui. Paiement, réutilisation ou plateforme identifiée peut encore créer un lien.
 
-<span id="why-is-the-play-control-missing-when-all-funds-are-private" data-ginger-heading="pourquoi-la-commande-de-lecture-manque-t-elle-lorsque-tous-les-fonds-sont-privés-" aria-hidden="true"></span>
+<span id="why-is-the-play-control-missing-when-all-funds-are-private" data-ginger-heading="pourquoi-le-bouton-de-démarrage-manque-t-il-lorsque-tous-les-fonds-sont-privés-" aria-hidden="true"></span>
 
-### Pourquoi la commande de lecture manque-t-elle lorsque tous les fonds sont privés ?
+### Pourquoi le bouton de démarrage manque-t-il lorsque tous les fonds sont privés ?
 
-Le lecteur manuel ordinaire peut masquer la commande de lecture lorsque tous les fonds atteignent l'objectif de confidentialité du portefeuille. Le démarrage normal rejette aussi un ensemble de coins disponibles uniquement privés : une autre destination ne force pas un tour. Si vous voulez seulement déplacer ces fonds, examinez plutôt un paiement ordinaire.
+Le panneau de contrôle manuel ordinaire peut masquer le bouton de démarrage lorsque tous les fonds atteignent l'objectif de confidentialité du portefeuille. Le démarrage normal rejette aussi un ensemble de coins disponibles uniquement privés : une autre destination ne force pas un tour. Si vous voulez seulement déplacer ces fonds, examinez plutôt un paiement ordinaire.
 
 <span id="payments-and-hardware" data-ginger-heading="paiements-et-matériel" aria-hidden="true"></span>
 

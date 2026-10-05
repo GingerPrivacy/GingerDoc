@@ -25,7 +25,7 @@ next: false
 | **Ignore coinjoin time preference below** | Autorise la participation sous ce seuil de taux de frais même si la comparaison de préférence temporelle imposerait sinon d'attendre. |
 | **Random Skip** | Définit la fréquence de tours adaptés ignorés. Les choix sont **Disabled**, **Rarely**, **Sometimes** et **Often**. Davantage de tours ignorés signifie généralement davantage d'attente. |
 
-Lorsque le lecteur signale un solde non économique, appuyer sur lecture peut contourner le seuil d'arrêt. Cela ne supprime pas les frais de transaction. Évaluez la taille des coins disponibles et les coûts attendus avant de le contourner.
+Lorsque le panneau de contrôle signale un solde non économique, appuyer sur le bouton de démarrage peut contourner le seuil d'arrêt. Cela ne supprime pas les frais de transaction. Évaluez les montants des coins disponibles et les coûts attendus avant de le contourner.
 
 <span id="privacy-settings" data-ginger-heading="paramètres-de-confidentialité" aria-hidden="true"></span>
 
@@ -41,9 +41,9 @@ Abaisser l'objectif peut immédiatement modifier ce que l'interface appelle priv
 
 ## Exclure certains coins
 
-Ouvrez **Exclude Coins** dans le menu du lecteur CoinJoin. Examinez la liste et marquez les coins à exclure de CoinJoin. Revenez dans cette liste pour les rendre à nouveau admissibles. L'exclusion s'applique à ces coins ; ce n'est pas une règle permanente pour chaque paiement futur à la même adresse.
+Ouvrez **Exclude Coins** dans le menu du panneau de contrôle CoinJoin. Examinez la liste et marquez les coins à exclure de CoinJoin. Revenez dans cette liste pour les rendre à nouveau admissibles. L'exclusion s'applique à ces coins ; ce n'est pas une règle permanente pour chaque paiement futur à la même adresse.
 
-Exclure un coin de CoinJoin ne bloque pas sa dépense ordinaire et ne remplace pas la conservation dans un portefeuille matériel. Si tous les coins disponibles sont exclus, le lecteur peut afficher **Only excluded funds are available**. Vérifiez cette liste avant de changer les frais ou les paramètres de confidentialité.
+Exclure un coin de CoinJoin ne bloque pas sa dépense ordinaire et ne remplace pas la conservation dans un portefeuille matériel. Si tous les coins disponibles sont exclus, le panneau de contrôle peut afficher **Only excluded funds are available**. Vérifiez cette liste avant de changer les frais ou les paramètres de confidentialité.
 
 <span id="receive-outputs-in-another-wallet" data-ginger-heading="recevoir-les-sorties-dans-un-autre-portefeuille" aria-hidden="true"></span>
 
@@ -72,7 +72,7 @@ Cette version propose **(EXPERIMENTAL) Improved Coin Selection**. Sa configurati
 | **Can select already private coins** | Autorise le sélecteur à utiliser des coins déjà au-dessus de l'objectif de confidentialité. Cette participation peut toujours entraîner des frais de minage. |
 | **Coin privacy difference normalization for score calculation** | Des valeurs faibles favorisent les sélections dont les scores sont plus proches. |
 | **Amount loss normalization for score calculation** | Des valeurs faibles favorisent une perte relative de montant plus faible. |
-| **Target coin number per wallet bucket** | Influe sur la sélection dans les groupes de tailles de coins surreprésentés. |
+| **Target coin number per wallet bucket** | Influe sur la sélection dans les groupes de montants de coins surreprésentés. |
 | **Use the Old Coin Selector for fallback** | Compare les résultats de l'ancien et du nouveau sélecteur et choisit entre eux. |
 
 Gardez les valeurs initiales à moins de comprendre le compromis que vous modifiez. Ce sont des préférences de sélection ; elles ne sont ni un plafond exact des frais totaux ni une promesse sur le nombre de sorties d'un tour.
@@ -81,6 +81,6 @@ Gardez les valeurs initiales à moins de comprendre le compromis que vous modifi
 
 ## Quand un autre tour ne peut pas démarrer
 
-Dans cette version, le démarrage normal refuse un portefeuille dont les fonds satisfont déjà l'objectif de confidentialité, ainsi qu'une sélection disponible constituée uniquement de coins privés. Choisir un autre portefeuille de sortie ne contourne pas cette règle. Le lecteur peut masquer la commande de lecture manuelle lorsque tous les fonds sont privés. Ne comptez pas sur l'exclusion de tous les coins non privés pour forcer ensuite un tour uniquement destiné à transférer les coins privés restants.
+Dans cette version, le démarrage normal refuse un portefeuille dont les fonds satisfont déjà l'objectif de confidentialité, ainsi qu'une sélection disponible constituée uniquement de coins privés. Choisir un autre portefeuille de sortie ne contourne pas cette règle. Le panneau de contrôle peut masquer le bouton de démarrage manuel lorsque tous les fonds sont privés. Ne comptez pas sur l'exclusion de tous les coins non privés pour forcer ensuite un tour uniquement destiné à transférer les coins privés restants.
 
 Choisissez la destination avant de démarrer une participation admissible, ou examinez un transfert ordinaire de fonds déjà privés. Abaisser les exigences de confidentialité ou inclure des fonds sans rapport pour lancer un tour peut modifier le résultat et le coût.

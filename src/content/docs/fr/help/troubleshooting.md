@@ -44,7 +44,7 @@ Si vous utilisez **Wallet Settings** → **Tools** → **Resync**, sauvegardez d
 
 | Message ou condition | Action probable |
 | --- | --- |
-| **Insufficient funds eligible for coinjoin** | Examinez confirmations, tailles, frais et exclusions ; le total ne suffit pas à établir l'admissibilité |
+| **Insufficient funds eligible for coinjoin** | Examinez les confirmations, les montants des coins, les frais et les exclusions ; le total ne suffit pas à établir l'admissibilité |
 | **Only excluded funds are available** | Examinez **Exclude Coins** si vous souhaitez faire participer certains coins |
 | **Only immature funds are available** | Attendez le nombre requis de confirmations ; les sorties nouvellement minées ont des règles de dépense spéciales |
 | **Some funds are rejected from coinjoining** | Lisez la raison et les conditions actuelles ; le refus ne transfère pas la propriété |

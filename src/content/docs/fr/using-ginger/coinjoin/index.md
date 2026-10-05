@@ -31,11 +31,11 @@ Le portefeuille doit disposer de fonds confirmés et utilisables, et les conditi
 
 ## Démarrer et mettre en pause
 
-1. Ouvrez **Coinjoin Settings** depuis le menu du lecteur CoinJoin, ou trouvez cette option avec la recherche de Ginger lorsque le portefeuille est ouvert.
+1. Ouvrez **Coinjoin Settings** depuis le menu du panneau de contrôle CoinJoin, ou trouvez cette option avec la recherche de Ginger lorsque le portefeuille est ouvert.
 2. Examinez les préférences de coût du portefeuille et laissez ce portefeuille comme destination des sorties pour une utilisation ordinaire. Le guide facultatif sur les paramètres avancés traite des objectifs personnalisés et de l'acheminement des sorties.
-3. Activez **Automatically start coinjoin** si vous souhaitez participer sans intervention lorsque les conditions le permettent. Pour démarrer manuellement, utilisez le bouton de lecture du lecteur. Lorsque le lecteur est arrêté, il peut afficher **Press Play to start**.
-4. Surveillez l'état affiché sous le lecteur. Le portefeuille peut attendre des confirmations, un tour approprié ou des frais moins élevés avant de participer.
-5. Utilisez le bouton de pause du lecteur lorsque vous souhaitez arrêter les participations suivantes. Laissez toute phase critique de la transaction se terminer. Désactiver le démarrage automatique modifie le comportement futur ; cela n'annule pas une transaction déjà diffusée.
+3. Activez **Automatically start coinjoin** si vous souhaitez participer sans intervention lorsque les conditions le permettent. Pour démarrer manuellement, utilisez le bouton de démarrage du panneau de contrôle. Lorsque la participation est arrêtée, le panneau de contrôle peut afficher **Press Play to start**.
+4. Surveillez l'état affiché sous le panneau de contrôle. Le portefeuille peut attendre des confirmations, un tour approprié ou des frais moins élevés avant de participer.
+5. Utilisez le bouton de pause du panneau de contrôle lorsque vous souhaitez arrêter les participations suivantes. Laissez toute phase critique de la transaction se terminer. Désactiver le démarrage automatique modifie le comportement futur ; cela n'annule pas une transaction déjà diffusée.
 
 N'envoyez pas de bitcoins à une adresse fournie par quelqu'un qui prétend « activer » CoinJoin. Il n'existe aucun paiement d'activation distinct à verser à un agent d'assistance.
 

@@ -17,7 +17,7 @@ Commencez par [le guide CoinJoin courant](/fr/using-ginger/coinjoin/). Ginger g�
 
 ## Pourquoi un solde peut ne pas être admissible
 
-Aucun délai fixe ni solde minimum universel ne garantit la participation. L'admissibilité dépend des paramètres du tour, de la taille des coins, des confirmations, des frais, des exclusions et des paramètres du portefeuille. Un solde peut dépasser la valeur minimale d'une entrée tout en ne contenant aucun coin admissible économiquement.
+Aucun délai fixe ni solde minimum universel ne garantit la participation. L'admissibilité dépend des paramètres du tour, des montants des coins, des confirmations, des frais, des exclusions et des paramètres du portefeuille. Un solde peut dépasser la valeur minimale d'une entrée tout en ne contenant aucun coin admissible économiquement.
 
 <span id="what-happens-during-a-round" data-ginger-heading="ce-qui-se-passe-pendant-un-tour" aria-hidden="true"></span>
 
