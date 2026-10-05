@@ -11,7 +11,7 @@ next: false
 
 > Schwierigkeitsgrad: Alltagsnutzung. Wähle diese Anleitung, wenn du die beschriebene Aufgabe erledigen möchtest.
 
-CoinJoin ist nützlich, wenn weniger Transaktionsverknüpfungen ein tatsächliches Problem lösen. Es hilft weniger bei gestohlenen Wiederherstellungswörtern, einem kompromittierten Computer oder Informationen, die du einem Anbieter gleich direkt offenlegst.
+CoinJoin ist nützlich, wenn weniger Informationen über Transaktionsverknüpfungen ein tatsächliches Problem lösen. Es hilft weniger bei gestohlenen Wiederherstellungswörtern, einem kompromittierten Computer oder Informationen, die du einem Anbieter gleich direkt offenlegst.
 
 <span id="start-with-a-concrete-objective" data-ginger-heading="mit-einem-konkreten-ziel-beginnen" aria-hidden="true"></span>
 

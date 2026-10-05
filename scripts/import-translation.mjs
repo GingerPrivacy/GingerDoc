@@ -3,7 +3,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
-import { copiesRoot, docsRoot, document, localeCodes, localizeLinks, pages } from './translation-utils.mjs'
+import { copiesRoot, docsRoot, document, localeCodes, localizeLinks, pages, formatTranslatedAmounts } from './translation-utils.mjs'
 
 const [locale, staging] = process.argv.slice(2)
 if (!/^[a-z]{2}(?:-[a-z]{2})?$/.test(locale ?? '') || !staging) throw new Error('Provide a locale directory name and staging directory')
@@ -13,7 +13,7 @@ const translated = pages(staging)
 if (JSON.stringify(originals) !== JSON.stringify(translated)) throw new Error('Translation must contain exactly the English page set')
 for (const file of originals) {
   const source = document(readFileSync(join(root, file), 'utf8'))
-  const text = readFileSync(join(staging, file), 'utf8')
+  const text = formatTranslatedAmounts(readFileSync(join(staging, file), 'utf8'), source.numbers)
   const target = document(text)
   if (source.headings.length !== target.headings.length || source.headings.some((heading, i) => heading.depth !== target.headings[i].depth)) throw new Error(`Heading structure differs: ${file}`)
   let body = target.body

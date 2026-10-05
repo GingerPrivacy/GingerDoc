@@ -19,7 +19,7 @@ Selbstverwahrung bedeutet, dass du die zum Ausgeben deiner Bitcoin nötigen Info
 
 Das Bitcoin-Netzwerk hält ein öffentliches Transaktionsregister. Deine Wallet genehmigt mit geheimen Schlüsseln Ausgaben der von dir kontrollierten Teile. Eine Neuinstallation auf einem Ersatzcomputer erzeugt diese Geheimnisse nicht erneut; deshalb ist das Wiederherstellungsbackup wichtig.
 
-Bei Ginger-Software-Wallets erzeugen Wörter und ursprüngliche Passphrase die Schlüssel erneut. Lokale Wallet-Dateien bewahren zusätzlichen Kontext wie Bezeichnungen und Einstellungen. Authenticator, Hardware-PIN und Dateikopie erfüllen verschiedene Zwecke; keiner ersetzt automatisch das Wörterbackup.
+Bei Ginger-Software-Wallets erzeugen Wörter und ursprüngliche Passphrase die Schlüssel erneut. Lokale Wallet-Dateien bewahren zusätzlichen Kontext wie Bezeichnungen und Einstellungen. Authenticator, Hardware-PIN und Dateikopie erfüllen verschiedene Zwecke; bei keinem dieser Hilfsmittel solltest du annehmen, dass es das Wörterbackup ersetzt.
 
 <span id="the-passphrase-changes-the-wallet" data-ginger-heading="die-passphrase-verändert-die-wallet" aria-hidden="true"></span>
 
@@ -36,10 +36,10 @@ Halte fest, ob eine verwendet wurde, und sichere sie korrekt. Wähle wiederherst
 | Einrichtung | Wo signiert wird | Praktische Verantwortung |
 | --- | --- | --- |
 | Ginger-Software-Wallet | Auf dem Desktop mit verfügbarem Geheimnis | Computer und Wiederherstellungsdaten schützen; automatische CoinJoins brauchen Signierfähigkeit |
-| Hardware-Wallet über Ginger | Auf dem Gerät für unterstützte Vorgänge | Gerätedetails prüfen und Hersteller-Wiederherstellungsbackup sichern |
+| Hardware-Wallet über Ginger | Auf dem Gerät für unterstützte Vorgänge | Transaktionsdetails auf dem Gerät prüfen und Hersteller-Wiederherstellungsbackup sichern |
 | Watch-only ohne Signierer | Kann allein keine Ausgabe autorisieren | Sensible öffentliche Daten schützen und Zugriff auf separaten Signierer behalten |
 
-Eine Hardware-Wallet reduziert Schlüsselkontakt mit Desktop-Schadsoftware; ohne Prüfung ihres Bildschirms kannst du trotzdem bösartige Zahlungen autorisieren. Ein Seed-Import in den Desktop verändert das Sicherheitsmodell: Diese Schlüssel sind dann dem Computer ausgesetzt.
+Eine Hardware-Wallet kann die Offenlegung von Schlüsseln gegenüber Desktop-Schadsoftware reduzieren; ohne Prüfung ihres Bildschirms kannst du trotzdem bösartige Zahlungen autorisieren. Ein Seed-Import in den Desktop verändert das Sicherheitsmodell: Diese Schlüssel sind dann dem Computer ausgesetzt.
 
 <span id="recovery-is-part-of-the-setup" data-ginger-heading="wiederherstellung-gehört-zur-einrichtung" aria-hidden="true"></span>
 

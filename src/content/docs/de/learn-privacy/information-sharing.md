@@ -34,7 +34,7 @@ Schütze bei einem selbst betriebenen Node den Rechnerzugriff und etwaige Fernve
 
 | Aktion und Empfänger | Beteiligte Informationen | Deine Wahl |
 | --- | --- | --- |
-| CoinJoin-Koordination | Inputs, Eigentumsnachweise, Outputregistrierungen, Protokollnachrichten und Zeiten. WabiSabi verschleiert unter seinen Annahmen die Input-Output-Zuordnung. | Teilnahme, Kosten und Ziel prüfen; Tor aktiv lassen. Selbstverwahrung schützt nicht gegen jeden aktiven Beobachter. |
+| CoinJoin-Koordination | Inputs, Eigentumsnachweise, Outputregistrierungen, Protokollnachrichten und Zeiten. WabiSabi zielt unter seinen Annahmen darauf ab, die Input-Output-Zuordnung zu verschleiern. | Teilnahme, Kosten und Ziel prüfen; Tor aktiv lassen. Selbstverwahrung schützt nicht gegen jeden aktiven Beobachter. |
 | Kauf-/Verkaufsangebote und Adressprüfung | Land, Währung, Betrag und gegebenenfalls Zahlungsmethode. Adressprüfung sendet die vorgeschlagene Adresse vor Bestellabschluss an den Kauf-/Verkaufsdienst. | Offenlegung vor Fortsetzung bedenken, auch bei späterem Abbruch. |
 | Bestellung erstellen oder fortsetzen | Integration sendet Bestelldetails und Empfangs-/Rückerstattungsadresse und öffnet Anbieterablauf. Anbieter kann Zahlungs-, Kontakt- oder Identitätsdaten nach eigenen Bedingungen verlangen. | Aktuelle Bedingungen lesen und nur beabsichtigte Daten liefern. Ginger macht identifizierte Käufe nicht anonym. |
 | Optionale Ginger-2FA | Normale Startprüfung sendet Authenticator-Code und Installationskennung. Der Dienst liefert den Schlüssel für zusätzliche Wallet-Dateiverschlüsselung. | Zugriffsschutz und Dienstabhängigkeit abwägen. Wörter und ursprüngliche Passphrase unabhängig verfügbar halten. |

@@ -40,7 +40,7 @@ Der diskrete Modus verschlüsselt keine Dateien, sperrt keine Wallet, stoppt kei
 | **Auto copy addresses** | Kann angezeigte Adressen automatisch in die Zwischenablage kopieren. |
 | **Auto paste addresses** | Kann Zwischenablageinhalte zur Adresseingabe nutzen. Prüfe immer das resultierende Ziel. |
 | **Auto download new version** | Steuert den Download verfügbarer Updates; folge der Installation separat. |
-| **Browser used by Ginger** | Wählt den Browser für externe Seiten; die eigene Option zeigt **Custom browser path**. |
+| **Browser used by Ginger** | Wählt den Browser für externe Seiten; die benutzerdefinierte Option zeigt **Custom browser path**. |
 
 Zwischenablagekomfort authentifiziert keinen Empfänger. Andere Anwendungen können Daten lesen oder ersetzen. Kopiere Wiederherstellungswörter nie beim normalen Empfangen oder Senden in die Zwischenablage.
 

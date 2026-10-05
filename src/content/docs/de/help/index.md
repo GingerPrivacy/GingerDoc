@@ -40,7 +40,7 @@ v2.0.26 liefert Desktop-Software für unterstützte Windows-, macOS- und Linux-C
 
 ### Brauche ich ein Konto, eigenen Node oder Hardware?
 
-Nein. Normale Software-Erstellung nutzt lokale Wiederherstellungsinformationen ohne Kundenkonto, eigenen Bitcoin-Node oder Hardware. Optionale 2FA nutzt einen Dienst; Kauf-/Verkaufsanbieter können Konten oder Identitätsinformationen verlangen. Diese Funktionen haben daher zusätzliche Anforderungen.
+Nein. Die normale Erstellung einer Software-Wallet nutzt lokale Wiederherstellungsinformationen ohne Kundenkonto, eigenen Bitcoin-Node oder Hardware. Optionale 2FA nutzt einen Dienst; Kauf-/Verkaufsanbieter können Konten oder Identitätsinformationen verlangen. Diese Funktionen haben daher zusätzliche Anforderungen.
 
 <span id="do-i-have-to-use-coinjoin-before-receiving-or-sending" data-ginger-heading="muss-ich-vor-empfang-oder-versand-coinjoin-verwenden" aria-hidden="true"></span>
 
@@ -132,7 +132,7 @@ Ginger enthält Tor für normale Wallet-Verbindungen; zum Betrieb musst du keine
 
 ### Warum verbindet oder synchronisiert Ginger weiterhin?
 
-Ein Erstscan oder eine wiederhergestellte Wallet benötigt möglicherweise Zeit, während Stillstand auf Verbindungs- oder lokale Probleme hinweist. Prüfe Internet, Computeruhr, freien Speicher und konfigurierten Node; notiere bei Stillstand den exakten Status. Folge [Verbindungsdiagnose](/de/help/troubleshooting/#connection-or-synchronization) statt wiederholter Neustarts oder Datenlöschung.
+Ein Erstscan oder eine wiederhergestellte Wallet benötigt möglicherweise Zeit, während Stillstand auf Verbindungs- oder lokale Probleme hinweisen kann. Prüfe Internet, Computeruhr, freien Speicher und konfigurierten Node; notiere bei Stillstand den exakten Status. Folge [Verbindungsdiagnose](/de/help/troubleshooting/#connection-or-synchronization) statt wiederholter Neustarts oder Datenlöschung.
 
 <span id="why-did-reinstalling-not-reset-a-broken-setting" data-ginger-heading="warum-setzte-neuinstallation-eine-defekte-einstellung-nicht-zurück" aria-hidden="true"></span>
 
@@ -172,13 +172,13 @@ Koordinatorgebührenbefreiung beseitigt keine Mining-Gebühren; jede abgeschloss
 
 ### Welche Koordinatorgebühr bewirbt Ginger derzeit?
 
-Aktuell zahlt jeder Input bis einschließlich 0.03 BTC (3,000,000 Satoshis) keine Koordinatorgebühr. Darüber sind es 0.3 % des gesamten Inputs, sofern keine weitere Ausnahme wie geeigneter Remix gilt. Die Schwelle gilt separat je Input, nicht für den Kontostand. Mining-Gebühren bleiben. Prüfe [aktuelle Erklärung](https://gingerwallet.io/) und angebotene Runde erneut vor Teilnahme.
+Aktuell zahlt jeder Input bis einschließlich 0.03 BTC (3 000 000 Satoshis) keine Koordinatorgebühr, auch ein Input mit einem Wert von genau 0.03 BTC. Darüber sind es 0.3 % des gesamten Inputs, sofern keine weitere Ausnahme wie geeigneter Remix gilt. Die Schwelle gilt separat je Input, nicht für den Kontostand. Mining-Gebühren bleiben. Prüfe [aktuelle Erklärung](https://gingerwallet.io/) und angebotene Runde erneut vor Teilnahme.
 
 <span id="can-i-stop-coinjoin-or-turn-off-the-computer" data-ginger-heading="kann-ich-stoppen-oder-den-computer-ausschalten" aria-hidden="true"></span>
 
 ### Kann ich stoppen oder den Computer ausschalten?
 
-Pausiere gegen weitere Teilnahme und lass kritische Phasen abschließen. Schlaf, Verbindungsverlust oder erzwungenes Beenden unterbrechen aktive Runden; nutze normales Beenden und lass die Abschaltprozedur abschließen. Bereits veröffentlichte Transaktionen laufen nach Fensterschließung auf Bitcoin weiter.
+Pausiere gegen weitere Teilnahme und lass kritische Phasen abschließen. Ruhezustand, Verbindungsverlust oder erzwungenes Beenden können aktive Runden unterbrechen; nutze normales Beenden und lass die Abschaltprozedur abschließen. Bereits veröffentlichte Transaktionen laufen nach dem Beenden der Anwendung im Bitcoin-Netzwerk weiter.
 
 <span id="why-is-there-a-transaction-when-i-never-pressed-send" data-ginger-heading="warum-gibt-es-eine-transaktion-ohne-send" aria-hidden="true"></span>
 
@@ -190,13 +190,13 @@ Automatischer CoinJoin kann nach Aktivierung gemeinsame Transaktionen ohne einze
 
 ### Kann ich bei 99 % ausgeben, und bedeutet 100 % Anonymität?
 
-Normale Zahlung geht bei ausgebbarem Guthaben und verfügbarer Sendefunktion; Privatsphäreprozente sind keine Bitcoin-Voraussetzung. Sie sind Gingers lokale Schätzung nach Ziel, keine Garantie über fremdes Wissen. Zahlung, Adressreuse oder identifizierte Börse schaffen weiterhin Verbindungen.
+Normale Zahlung geht bei ausgebbarem Guthaben und verfügbarer Sendefunktion; Privatsphäreprozente sind keine Bitcoin-Voraussetzung. Sie sind Gingers lokale Schätzung nach Ziel, keine Garantie über fremdes Wissen. Eine Zahlung, Adresswiederverwendung oder eine identifizierte Börse können weiterhin Verknüpfungen schaffen.
 
-<span id="why-is-the-play-control-missing-when-all-funds-are-private" data-ginger-heading="warum-fehlt-die-wiedergabesteuerung-wenn-alles-privat-ist" aria-hidden="true"></span>
+<span id="why-is-the-play-control-missing-when-all-funds-are-private" data-ginger-heading="warum-fehlt-die-starttaste-wenn-alles-privat-ist" aria-hidden="true"></span>
 
-### Warum fehlt die Wiedergabesteuerung, wenn alles privat ist?
+### Warum fehlt die Starttaste, wenn alles privat ist?
 
-Der normale manuelle Player kann sie verbergen, wenn alles das Wallet-Ziel erreicht. Start lehnt ebenfalls private-only Kandidaten ab; ein anderes Ziel erzwingt keine Runde. Willst du nur diese Coins bewegen, prüfe normale Zahlung.
+Der normale manuelle Player kann die Starttaste verbergen, wenn das gesamte Guthaben das Privatsphäreziel der Wallet erreicht. Der normale Start lehnt ebenfalls eine verfügbare Auswahl aus ausschließlich privaten Coins ab; eine andere Ziel-Wallet erzwingt keine weitere Runde. Willst du nur diese Coins bewegen, prüfe eine normale Zahlung.
 
 <span id="payments-and-hardware" data-ginger-heading="zahlungen-und-hardware" aria-hidden="true"></span>
 
