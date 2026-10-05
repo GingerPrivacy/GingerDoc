@@ -1,7 +1,7 @@
 ---
 doc_id: "learn-coinjoin.explained"
 title: "Was ist CoinJoin? Einfach erklärt"
-description: "Lerne verständlich, wie eine gemeinsame Bitcoin-Transaktion Privatsphäre verbessert, was sie kostet und was sie nicht verbirgt."
+description: "Lerne verständlich, wie eine gemeinsame Bitcoin-Transaktion die Privatsphäre verbessern kann, was sie kostet und was sie nicht verbirgt."
 lang: "de"
 verified_release: "v2.0.26"
 reader_level: "beginner"
@@ -11,7 +11,7 @@ next: false
 
 > Schwierigkeitsgrad: Einstieg. Die wichtigsten Schritte stehen zuerst; weiterführende Anleitungen sind optional.
 
-CoinJoin vereint die Bitcoin-Aktivität mehrerer Personen in einer gemeinsamen Transaktion. Dadurch ist im öffentlichen Verlauf schwerer erkennbar, welche resultierenden Coins welcher Person gehören.
+CoinJoin vereint die Bitcoin-Aktivität mehrerer Personen in einer gemeinsamen Transaktion. Dadurch kann im öffentlichen Verlauf schwerer erkennbar sein, welche resultierenden Coins welcher Person gehören.
 
 Stell dir mehrere Personen vor, die in eine gemeinsame Transaktion einzahlen und neue Bitcoin-Stücke zurückbekommen. Die Öffentlichkeit sieht die bewegten Beträge. Weniger klar kann sein, wessen Geld zu welchem Stück wurde. Das ist nur eine Veranschaulichung: Echte Runden haben verschiedene Beträge und komplexere Details.
 
