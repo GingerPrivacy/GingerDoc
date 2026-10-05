@@ -47,7 +47,7 @@ Você pode inspecionar, ordenar e agrupar o histórico e copiar identificadores 
 
 ## Acelere uma transação não confirmada
 
-Quando o Ginger oferecer **Speed Up Transaction** para um item do histórico, abra a opção e confira a taxa adicional antes de confirmar. Dependendo da transação e das saídas disponíveis, a aceleração de taxas pode substituir uma transação por uma versão com taxa maior ou gastar uma saída em uma transação filha que pague o suficiente pelas duas.
+Quando o Ginger oferecer **Speed Up Transaction** para um item do histórico, abra a opção e confira a taxa adicional antes de confirmar. Dependendo da transação e das saídas disponíveis, a aceleração por aumento de taxa pode substituir uma transação por uma versão com taxa maior ou gastar uma saída em uma transação filha que pague o suficiente pelas duas.
 
 Nem toda transação pode ser acelerada pela sua carteira. Ela precisa de uma estrutura de transação compatível e acesso às chaves e aos fundos relevantes. Uma taxa maior melhora o incentivo para os mineradores; não garante confirmação imediata. A substituição pode alterar o identificador da transação, portanto confira o histórico atualizado ao coordenar com um destinatário.
 

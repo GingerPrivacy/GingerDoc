@@ -9,7 +9,7 @@ sidebar:
   label: Comece aqui
 prev: false
 next:
-  link: /pt-br/getting-started/install/
+  link: /getting-started/install/
   label: Instale o Ginger Wallet
 ---
 

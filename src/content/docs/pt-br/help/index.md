@@ -160,7 +160,7 @@ Não há um saldo total da carteira que garanta participação. Cada moeda dispo
 
 ### Quanto tempo levará e de quantas rodadas preciso?
 
-Não há duração garantida nem número universal de rodadas. Confirmações, taxas, participantes disponíveis, suas moedas e a meta de privacidade selecionada são relevantes. Confira o status real e os custos já concluídos, em vez de tratar uma preferência de tempo como um prazo prometido.
+Não há duração garantida nem número universal de rodadas. Confirmações, taxas, participantes disponíveis, suas moedas e a meta de privacidade selecionada são relevantes. Confira o status real e os custos das rodadas já concluídas, em vez de tratar uma preferência de tempo como um prazo prometido.
 
 <span id="why-did-my-balance-decrease-if-coinjoin-was-described-as-free" data-ginger-heading="por-que-meu-saldo-diminuiu-se-o-coinjoin-foi-descrito-como-gratuito" aria-hidden="true"></span>
 
@@ -172,7 +172,7 @@ Uma isenção da taxa do coordenador não elimina as taxas de mineração do Bit
 
 ### Qual taxa de coordenador o Ginger anuncia atualmente?
 
-Com as configurações atuais, cada entrada de 0.03 BTC (3,000,000 satoshis) ou menos não paga taxa de coordenador, inclusive uma entrada de exatamente 0.03 BTC. Acima desse limite, a taxa é de 0.3% do valor total da entrada, a menos que outra isenção se aplique, como um remix elegível. O limite é aplicado separadamente a cada entrada, e não ao saldo total da carteira. As taxas de mineração continuam sendo cobradas. Confira novamente a [explicação atual das taxas do Ginger](https://gingerwallet.io/) e a rodada oferecida antes de participar.
+Com as configurações atuais, cada entrada de 0.03 BTC (3 000 000 satoshis) ou menos não paga taxa de coordenador, inclusive uma entrada de exatamente 0.03 BTC. Acima desse limite, a taxa é de 0.3% do valor total da entrada, a menos que outra isenção se aplique, como um remix elegível. O limite é aplicado separadamente a cada entrada, e não ao saldo total da carteira. As taxas de mineração continuam sendo cobradas. Confira novamente a [explicação atual das taxas do Ginger](https://gingerwallet.io/) e a rodada oferecida antes de participar.
 
 <span id="can-i-stop-coinjoin-or-turn-off-the-computer" data-ginger-heading="posso-parar-o-coinjoin-ou-desligar-o-computador" aria-hidden="true"></span>
 

@@ -96,7 +96,7 @@ Não, mas os recebimentos nesse endereço podem ser examinados em conjunto e lig
 
 ### Devo consolidar muitas moedas pequenas quando as taxas estão baixas?
 
-A consolidação pode reduzir o número de entradas necessárias depois, mas a transação que as combina custa uma taxa e pode associar atividades antes separadas. Uma taxa mais baixa muda esse custo, não a divulgação. Considere a finalidade, o valor e o histórico conhecido das moedas antes de combiná-las.
+A consolidação pode reduzir o número de entradas necessárias depois, mas a transação que as combina custa uma taxa e pode associar atividades antes separadas. Uma taxa por byte virtual mais baixa muda esse custo, não a divulgação. Considere a finalidade, o valor e o histórico conhecido das moedas antes de combiná-las.
 
 <span id="why-is-a-tiny-payment-missing-and-does-exclude-coins-freeze-it" data-ginger-heading="por-que-um-pagamento-minúsculo-não-aparece-e-exclude-coins-o-congela" aria-hidden="true"></span>
 
@@ -104,11 +104,11 @@ A consolidação pode reduzir o número de entradas necessárias depois, mas a t
 
 Confira a sincronização e o limite de dust configurado antes de concluir que uma saída minúscula foi perdida. **Exclude Coins** afeta a participação em CoinJoin, não os gastos comuns, e não congela uma moeda. Recebimentos minúsculos inesperados não exigem resposta imediata; avalie seu custo de gasto e possíveis associações antes de incluí-los em um pagamento.
 
-<span id="can-i-set-any-custom-fee-rate-or-guarantee-a-confirmation-time" data-ginger-heading="posso-definir-qualquer-taxa-personalizada-ou-garantir-um-tempo-de-confirmação" aria-hidden="true"></span>
+<span id="can-i-set-any-custom-fee-rate-or-guarantee-a-confirmation-time" data-ginger-heading="posso-definir-qualquer-taxa-por-byte-virtual-personalizada-ou-garantir-um-tempo-de-confirmação" aria-hidden="true"></span>
 
-### Posso definir qualquer taxa personalizada ou garantir um tempo de confirmação?
+### Posso definir qualquer taxa por byte virtual personalizada ou garantir um tempo de confirmação?
 
-Não. O editor manual de taxas desta versão rejeita valores abaixo de 1 sat/vByte, e a política da rede pode exigir mais que esse mínimo. Uma taxa personalizada ainda compete com outras transações e não pode reservar um prazo de confirmação. Confira a taxa total, não apenas a taxa por byte, antes de confirmar.
+Não. O editor manual de taxas desta versão rejeita valores abaixo de 1 sat/vByte, e a política da rede pode exigir mais que esse mínimo. Uma taxa por byte virtual personalizada ainda compete com outras transações e não pode reservar um prazo de confirmação. Confira a taxa total, não apenas a taxa por byte virtual, antes de confirmar.
 
 <span id="coinjoin-costs-and-progress" data-ginger-heading="custos-e-progresso-do-coinjoin" aria-hidden="true"></span>
 

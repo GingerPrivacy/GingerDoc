@@ -1,7 +1,7 @@
 ---
 doc_id: "payments.payjoin-message-signing"
 title: "PayJoin e assinatura de mensagens"
-description: "Envie uma solicitação de pagamento PayJoin, entenda o conhecimento do destinatário, as marcas das carteiras e o fallback e assine uma mensagem de escopo restrito sobre o controle de um endereço."
+description: "Envie uma solicitação de pagamento PayJoin, entenda o conhecimento do destinatário, os padrões identificadores das carteiras e o fallback e assine uma mensagem de escopo restrito sobre o controle de um endereço."
 lang: "pt-BR"
 verified_release: "v2.0.26"
 reader_level: "advanced"
@@ -40,11 +40,11 @@ Um observador externo vê a transação eventualmente publicada no Bitcoin. Um P
 
 Separe esses públicos. Um destinatário pode descobrir detalhes pelo pedido ou pela negociação mesmo que um observador sem relação não consiga atribuir com confiança as entradas da transação. Um explorador público de transações pode criar outra exposição se você consultar o pagamento em uma sessão de navegador identificada.
 
-<span id="wallet-fingerprints-and-the-ordinary-payment-fallback" data-ginger-heading="marcas-das-carteiras-e-o-fallback-para-pagamento-normal" aria-hidden="true"></span>
+<span id="wallet-fingerprints-and-the-ordinary-payment-fallback" data-ginger-heading="padrões-identificadores-das-carteiras-e-o-fallback-para-pagamento-normal" aria-hidden="true"></span>
 
-## Marcas das carteiras e o fallback para pagamento normal
+## Padrões identificadores das carteiras e o fallback para pagamento normal
 
-As carteiras fazem escolhas sobre os tipos de endereço das entradas, a estrutura da transação e a assinatura. Combinações dessas escolhas podem deixar padrões reconhecíveis. Uma transação pode, portanto, perder parte da ambiguidade mesmo quando suas mensagens do protocolo PayJoin são válidas. Os [exemplos publicados de identificação de carteiras por PayJoin](https://payjoin.org/blog/2026/03/25/wallet-fingerprints-payjoin-privacy/) ilustram esse problema em combinações específicas de carteiras; não estabelecem que o Ginger tenha os mesmos problemas nem quantificam sua privacidade.
+As carteiras fazem escolhas sobre os tipos de endereço das entradas, a estrutura da transação e a assinatura. Combinações dessas escolhas podem deixar padrões reconhecíveis. Uma transação pode, portanto, perder parte da ambiguidade mesmo quando suas mensagens do protocolo PayJoin são válidas. Os [exemplos publicados de padrões identificadores em PayJoin](https://payjoin.org/blog/2026/03/25/wallet-fingerprints-payjoin-privacy/) ilustram esse problema em combinações específicas de carteiras; não estabelecem que o Ginger tenha os mesmos problemas nem quantificam sua privacidade.
 
 Como usuário, escolha um serviço de recebimento atualizado e compatível, verifique a solicitação de pagamento e confira a taxa e o valor propostos. Não altere opções de transação que desconhece apenas para imitar outra carteira: uma transação de aparência plausível não comprova um bom resultado de privacidade.
 

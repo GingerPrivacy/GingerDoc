@@ -55,7 +55,7 @@ Enviar todas as saídas juntas cria uma associação visível entre elas. Mover 
 
 ## Caminho B: escolha o hardware como destino do CoinJoin
 
-Use esse caminho enquanto a carteira de software ainda tiver fundos elegíveis para o CoinJoin. O fluxo normal da v2.0.26 rejeita a participação quando a carteira, ou todos os candidatos disponíveis, já é privada segundo sua meta. Selecionar outro destino não contorna essa verificação. Em particular, excluir todas as moedas não privadas não é uma forma confiável de forçar uma rodada extra contendo apenas moedas já processadas. Use o caminho A para esses fundos em vez de alterar a meta somente para evitar a condição de parada.
+Use esse caminho enquanto a carteira de software ainda tiver fundos elegíveis para o CoinJoin. O fluxo normal da v2.0.26 rejeita a participação quando a carteira ou todas as moedas candidatas disponíveis já atingiram sua meta de privacidade. Selecionar outro destino não contorna essa verificação. Em particular, excluir todas as moedas não privadas não é uma forma confiável de forçar uma rodada extra contendo apenas moedas que já passaram por CoinJoin. Use o caminho A para esses fundos em vez de alterar a meta somente para evitar a condição de parada.
 
 1. Carregue e verifique a carteira de hardware no Ginger. Pare a participação no CoinJoin na origem e aguarde até que o seletor de destino fique disponível.
 2. Abra **Coinjoin Settings** da carteira de origem. Defina **Coinjoin to this wallet** para a carteira de hardware pretendida. Selecione somente um destino oferecido pelo Ginger.

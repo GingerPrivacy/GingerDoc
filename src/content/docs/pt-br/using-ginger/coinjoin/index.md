@@ -23,7 +23,7 @@ O CoinJoin cria uma transação de Bitcoin com outros participantes para dificul
 
 Abra uma carteira de software com backup e deixe-a sincronizar. Tenha bitcoin confirmado disponível, mantenha o computador conectado e revise o custo esperado antes de começar. As rodadas concluídas têm taxas de mineração e também podem ter uma taxa do coordenador; repetir rodadas pode acrescentar custos. A [referência avançada sobre custos](/pt-br/using-ginger/annonset/), de consulta opcional, explica o cálculo. Uma carteira de hardware pode receber e enviar pagamentos comuns, mas não pode ser a origem das assinaturas no processo automático de CoinJoin do Ginger.
 
-A taxa do coordenador é verificada para cada moeda usada como entrada na rodada. Moedas que valem 0.03 BTC (3,000,000 satoshis) ou menos não pagam taxa do coordenador. Moedas maiores normalmente pagam 0.3% de seu valor total, embora remixes elegíveis também possam ser isentos. As taxas de mineração ainda se aplicam, mesmo quando a taxa do coordenador é zero.
+A taxa do coordenador é verificada para cada moeda usada como entrada na rodada. Moedas que valem 0.03 BTC (3 000 000 satoshis) ou menos não pagam taxa do coordenador. Moedas maiores normalmente pagam 0.3% de seu valor total, embora remixes elegíveis também possam ser isentos. As taxas de mineração ainda se aplicam, mesmo quando a taxa do coordenador é zero.
 
 A carteira precisa de fundos confirmados e utilizáveis, além de condições adequadas de rodada. Nenhum saldo ou tempo de espera garante um início imediato. Leia o estado atual antes de alterar as configurações.
 
@@ -31,10 +31,10 @@ A carteira precisa de fundos confirmados e utilizáveis, além de condições ad
 
 ## Inicie e pause
 
-1. Abra **Coinjoin Settings** no menu do reprodutor de CoinJoin ou encontre-o pela pesquisa do Ginger enquanto a carteira estiver aberta.
+1. Abra **Coinjoin Settings** no menu do painel de controle de CoinJoin ou encontre-o pela pesquisa do Ginger enquanto a carteira estiver aberta.
 2. Revise as preferências de custo da carteira e deixe o destino das saídas configurado para essa mesma carteira no procedimento comum. Os objetivos personalizados e o direcionamento de saídas são abordados no guia avançado opcional de configurações.
-3. Ative **Automatically start coinjoin** se quiser participar sem supervisão quando as condições permitirem. Para iniciar manualmente, use o controle de reprodução. O reprodutor parado pode exibir **Press Play to start**.
-4. Observe o estado abaixo do reprodutor. A carteira pode esperar confirmações, uma rodada adequada ou taxas mais baixas antes de participar.
+3. Ative **Automatically start coinjoin** se quiser participar sem supervisão quando as condições permitirem. Para iniciar manualmente, use o botão de início do painel de controle. Quando parado, o painel pode exibir **Press Play to start**.
+4. Observe o estado abaixo do painel de controle. A carteira pode esperar confirmações, uma rodada adequada ou taxas mais baixas antes de participar.
 5. Use o controle de pausa quando quiser interromper as próximas participações. Deixe qualquer fase crítica da transação terminar. Desativar o início automático muda o comportamento futuro; não reverte uma transação já transmitida.
 
 Não envie bitcoin para um endereço fornecido por alguém que alegue ser necessário “ativar” o CoinJoin. Não existe um pagamento separado de ativação para um agente de suporte.
@@ -53,7 +53,7 @@ Não envie bitcoin para um endereço fornecido por alguém que alegue ser necess
 | **Awaiting the blame round** | A tentativa anterior não pôde ser concluída; o protocolo está tentando novamente com os participantes elegíveis. Não é um pedido para você identificar alguém. |
 | **Insufficient participants, retrying...** | A tentativa não atingiu a participação necessária. Espere outra rodada. |
 | **Awaiting closure of send dialog** | Conclua ou feche o procedimento de pagamento antes de esperar que o CoinJoin seja retomado. |
-| **Coinjoin may be uneconomical** | O limite de parada está influenciando a participação. Acrescentar fundos ou ignorá-lo manualmente é uma escolha com custos, não uma correção obrigatória. |
+| **Coinjoin may be uneconomical** | Considere o limite de parada. Acrescentar fundos ou ignorá-lo manualmente é uma escolha com custos, não uma correção obrigatória. |
 | **Coinjoin successful! Continuing...** | Uma rodada foi concluída. Outras rodadas podem ocorrer se a carteira ainda tiver trabalho a fazer. |
 
 Para mensagens de rejeição, conexão e elegibilidade, preserve o texto exato do erro. Reinstalar o Ginger ou criar novas palavras de recuperação não é uma resposta normal a um estado de espera.

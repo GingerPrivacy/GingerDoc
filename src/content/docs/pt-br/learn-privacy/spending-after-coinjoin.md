@@ -27,14 +27,14 @@ A seleção automática e as sugestões do Ginger também podem ajudar. O contro
 
 ## Exemplo 1: uma moeda cobre uma compra
 
-Alex tem uma moeda de 120,000 satoshis resultante de CoinJoin e quer pagar 70,000 satoshis. Suponha que a taxa seja de 1,000 satoshis.
+Alex tem uma moeda de 120 000 satoshis resultante de CoinJoin e quer pagar 70 000 satoshis. Suponha que a taxa seja de 1 000 satoshis.
 
 | Parte da transação | Valor |
 | --- | --- |
-| Entrada gasta | 120,000 sats |
-| O comerciante recebe | 70,000 sats |
-| O troco retorna para Alex | 49,000 sats |
-| Taxa de mineração | 1,000 sats |
+| Entrada gasta | 120 000 sats |
+| O comerciante recebe | 70 000 sats |
+| O troco retorna para Alex | 49 000 sats |
+| Taxa de mineração | 1 000 sats |
 
 O comerciante conhece seu endereço de pagamento e o valor. Ele pode examinar a transação e deduzir que a outra saída é o troco de Alex. O comerciante não descobre o saldo inteiro da carteira de Alex apenas com essa transação, mas pode ver a entrada e acompanhar os gastos posteriores do provável troco.
 
@@ -44,7 +44,7 @@ Alex não precisa mover esse troco de volta manualmente: ele já pertence à car
 
 ## Exemplo 2: dois recebimentos sem relação são combinados
 
-Blair tem uma moeda de 90,000 satoshis associada a um trabalho freelancer e uma moeda de 80,000 satoshis associada a um endereço público de doações. Um pagamento de 150,000 satoshis com uma taxa de 2,000 satoshis exige mais do que qualquer uma dessas moedas sozinha; usar ambas devolve 18,000 satoshis de troco.
+Blair tem uma moeda de 90 000 satoshis associada a um trabalho freelancer e uma moeda de 80 000 satoshis associada a um endereço público de doações. Um pagamento de 150 000 satoshis com uma taxa de 2 000 satoshis exige mais do que qualquer uma dessas moedas sozinha; usar ambas devolve 18 000 satoshis de troco.
 
 Um gasto conjunto comum pode sugerir que ambas as entradas têm o mesmo proprietário. Alguém que já reconhece a moeda das doações pode obter uma nova pista sobre a moeda do trabalho freelancer. Essa é uma inferência baseada na transação e em outros conhecimentos, não uma prova automática da identidade de uma pessoa.
 
@@ -56,9 +56,9 @@ O CoinJoin e o PayJoin envolvem colaboração, portanto a suposição de que tod
 
 ## Exemplo 3: o troco leva um vínculo adiante
 
-Mais tarde, Alex combina o troco de 49,000 satoshis do Exemplo 1 com uma moeda de 60,000 satoshis sem relação com ele para pagar 100,000 satoshis. Com uma taxa presumida de 1,000 satoshis, 8,000 satoshis retornam como novo troco.
+Mais tarde, Alex combina o troco de 49 000 satoshis do Exemplo 1 com uma moeda de 60 000 satoshis sem relação com esse troco para pagar 100 000 satoshis. Com uma taxa presumida de 1 000 satoshis, 8 000 satoshis retornam como novo troco.
 
-O primeiro comerciante pode observar que a provável saída de troco foi gasta com a entrada de 60,000 satoshis. Mesmo que o endereço do novo destinatário seja novo, a associação entre as entradas permanece. Um endereço de saída novo não desfaz a escolha de gastar ambas as entradas juntas.
+O primeiro comerciante pode observar que a provável saída de troco foi gasta com a entrada de 60 000 satoshis. Mesmo que o endereço do novo destinatário seja novo, a associação entre as entradas permanece. Um endereço de saída novo não desfaz a escolha de gastar ambas as entradas juntas.
 
 Use etiquetas para preservar o contexto das decisões futuras. As etiquetas são notas locais; elas não publicam um nome na blockchain nem impedem que um observador faça inferências.
 
@@ -66,7 +66,7 @@ Use etiquetas para preservar o contexto das decisões futuras. As etiquetas são
 
 ## Exemplo 4: mover o saldo inteiro para hardware
 
-Casey tem quatro moedas de 200,000 satoshis cada. Enviar todas as quatro para um único endereço de recebimento de uma carteira de hardware gasta 800,000 satoshis de entradas em uma transação. Com uma taxa presumida de 2,000 satoshis, a carteira de hardware recebe 798,000 satoshis.
+Casey tem quatro moedas de 200 000 satoshis cada. Enviar todas as quatro para um único endereço de recebimento de uma carteira de hardware gasta 800 000 satoshis de entradas em uma transação. Com uma taxa presumida de 2 000 satoshis, a carteira de hardware recebe 798 000 satoshis.
 
 A carteira de hardware melhora o isolamento das chaves, mas a transferência expõe um gasto conjunto das quatro entradas. Transferências separadas poderiam evitar essa associação específica, acrescentando taxas e outros padrões observáveis de horários e valores. Receber saídas diretamente em uma carteira de hardware durante um CoinJoin elegível pode evitar uma transferência posterior, mas exige verificações de elegibilidade e destino específicas da versão; não é uma maneira geral de remixar moedas mantidas em hardware.
 

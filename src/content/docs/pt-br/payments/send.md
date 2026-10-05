@@ -1,7 +1,7 @@
 ---
 doc_id: "payments.send"
 title: "Envie bitcoin e confira as taxas"
-description: "Prepare um pagamento no Ginger, verifique o destinatário e o valor, entenda as taxas por tamanho e o troco e autorize a transação."
+description: "Prepare um pagamento no Ginger, verifique o destinatário e o valor, entenda as taxas por byte virtual e o troco e autorize a transação."
 lang: "pt-BR"
 verified_release: "v2.0.26"
 reader_level: "beginner"
@@ -42,7 +42,7 @@ O pagamento pode usar uma parcela de bitcoin maior que o valor do destinatário 
 
 Uma sugestão de privacidade pode alterar o valor proposto para o destinatário. Aceite-a apenas se ainda atender à solicitação dele. Em particular, não pague menos do que uma fatura de valor fixo para evitar troco.
 
-Referência avançada opcional: [taxas personalizadas e troco](/pt-br/using-ginger/fee/) ou [controle manual de moedas e histórico de transações](/pt-br/payments/coin-control-history/).
+Referência avançada opcional: [taxas por byte virtual personalizadas e troco](/pt-br/using-ginger/fee/) ou [controle manual de moedas e histórico de transações](/pt-br/payments/coin-control-history/).
 
 <span id="when-a-payment-cannot-be-prepared" data-ginger-heading="quando-não-é-possível-preparar-um-pagamento" aria-hidden="true"></span>
 

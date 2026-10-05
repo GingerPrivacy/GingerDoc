@@ -25,7 +25,7 @@ Receber, enviar e participar de CoinJoin são ações distintas. Você pode apre
 
 ## Entenda os limites
 
-As transações Bitcoin continuam públicas. O Tor não oculta as informações fornecidas do serviço que as recebe. Um provedor de compras pode associar um pedido à sua identidade, e a pontuação de privacidade de uma carteira não pode garantir anonimato nem aceitação por uma corretora.
+As transações Bitcoin continuam públicas. O Tor não oculta do serviço receptor as informações que você lhe fornece. Um provedor de compras pode associar um pedido à sua identidade, e a pontuação de privacidade de uma carteira não pode garantir anonimato nem aceitação por uma corretora.
 
 Os serviços opcionais também têm fluxos de dados específicos: os pedidos de compra e venda divulgam os dados exigidos, o 2FA usa um serviço durante a inicialização normal, e o Secret Hunt pode enviar referências de transações e provas de propriedade. [Para onde vão as informações da sua carteira](/pt-br/learn-privacy/information-sharing/) é uma referência avançada opcional sobre essas escolhas.
 

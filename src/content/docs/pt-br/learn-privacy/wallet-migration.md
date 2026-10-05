@@ -71,6 +71,6 @@ Escolha quando e como parar de usar os endereços antigos de recebimento. Atuali
 
 ## Quando a mudança é urgente
 
-Um xpub exposto gera principalmente um problema de privacidade. Segredos de assinatura expostos geram um problema imediato de controle dos fundos. Se um atacante já pode gastar os fundos, dê prioridade a um destino confiável com chaves novas em vez de esperar por um processo elaborado de privacidade. Mudar a senha de um aplicativo ou colocar uma seed exposta em um dispositivo de hardware novo não revoga as chaves copiadas.
+Um xpub exposto gera principalmente um problema de privacidade. Segredos de assinatura expostos geram um problema imediato de controle dos fundos. Se for possível que um atacante já consiga gastar os fundos, dê prioridade a um destino confiável com chaves novas em vez de esperar por um processo elaborado de privacidade. Mudar a senha de um aplicativo ou colocar uma seed exposta em um dispositivo de hardware novo não revoga as chaves copiadas.
 
 Depois da mudança, confira os [exemplos de gastos](/pt-br/learn-privacy/spending-after-coinjoin/) e o [compartilhamento de informações](/pt-br/learn-privacy/information-sharing/). O objetivo sustentável é entender o que continua conhecido e evitar novas divulgações desnecessárias.

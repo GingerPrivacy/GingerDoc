@@ -8,10 +8,10 @@ reader_level: "beginner"
 sidebar:
   label: Instale o Ginger
 prev:
-  link: /pt-br/getting-started/
+  link: /getting-started/
   label: Comece aqui
 next:
-  link: /pt-br/getting-started/first-wallet/
+  link: /getting-started/first-wallet/
   label: Crie sua primeira carteira
 ---
 

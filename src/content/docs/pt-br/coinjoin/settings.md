@@ -22,10 +22,10 @@ next: false
 | **Automatically start coinjoin** | Inicia a participação quando a carteira e os fundos adequados estão disponíveis. |
 | **Stop coinjoin threshold** | Interrompe o CoinJoin automático quando o saldo da carteira está abaixo do valor em BTC selecionado. É uma regra de parada no nível da carteira. Ela não define o limite de isenção da taxa do coordenador nem a entrada mínima aceita. |
 | **Coinjoin time preference** | Compara as taxas de mineração atuais com a mediana do período selecionado. Influencia quando participar, sem prometer um prazo de conclusão. |
-| **Ignore coinjoin time preference below** | Permite a participação abaixo deste limite de taxa, mesmo quando a comparação da preferência de tempo normalmente levaria à espera. |
+| **Ignore coinjoin time preference below** | Permite a participação abaixo deste limite de taxa por byte virtual, mesmo quando a comparação da preferência de tempo normalmente levaria à espera. |
 | **Random Skip** | Seleciona a frequência com que rodadas adequadas são ignoradas. As opções são **Disabled**, **Rarely**, **Sometimes** e **Often**. Ignorar mais rodadas geralmente significa esperar mais. |
 
-Quando o painel de participação informa que o saldo não é econômico, pressionar o botão de iniciar pode contornar o limite de parada. Isso não elimina as taxas da transação. Considere o tamanho das moedas disponíveis e os custos esperados antes de ignorar esse limite.
+Quando o painel de participação informa que o saldo não é econômico, pressionar o botão de iniciar pode contornar o limite de parada. Isso não elimina as taxas da transação. Considere os valores das moedas disponíveis e os custos esperados antes de ignorar esse limite.
 
 <span id="privacy-settings" data-ginger-heading="configurações-de-privacidade" aria-hidden="true"></span>
 
@@ -72,7 +72,7 @@ Esta versão disponibiliza **(EXPERIMENTAL) Improved Coin Selection**. Sua confi
 | **Can select already private coins** | Permite que o seletor use moedas que já estão acima da meta de privacidade. Essa participação ainda pode incorrer em taxas de mineração. |
 | **Coin privacy difference normalization for score calculation** | Valores menores favorecem seleções cujas pontuações de privacidade são mais próximas entre si. |
 | **Amount loss normalization for score calculation** | Valores menores favorecem seleções com uma perda relativa de valor menor. |
-| **Target coin number per wallet bucket** | Influencia a seleção a partir de grupos de tamanhos de moedas que estão representados em excesso. |
+| **Target coin number per wallet bucket** | Influencia a seleção a partir de grupos de valores de moedas que estão representados em excesso. |
 | **Use the Old Coin Selector for fallback** | Compara os resultados dos seletores antigo e novo e escolhe entre eles. |
 
 Mantenha os valores iniciais, a menos que você entenda a relação entre vantagens e desvantagens que está alterando. Essas são preferências de seleção; não são um limite exato para a taxa total nem uma promessa sobre o número de saídas que uma rodada produzirá.

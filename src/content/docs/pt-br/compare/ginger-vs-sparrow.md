@@ -1,5 +1,5 @@
 ---
-title: "Ginger Wallet ou Sparrow Wallet: privacidade, controle e escolhas"
+title: "Ginger Wallet ou Sparrow Wallet: privacidade, controle e vantagens e desvantagens"
 description: "Compare Ginger e Sparrow em CoinJoin, privacidade de rede, carteiras de hardware, multisig, controle de transações e taxas para escolher o que atende às suas necessidades."
 doc_id: "compare.ginger-vs-sparrow"
 lang: "pt-BR"
@@ -53,7 +53,7 @@ Nenhuma dessas ferramentas apaga os registros de uma corretora nem torna a block
 
 O Ginger usa filtros compactos de blocos para identificar blocos potencialmente relevantes e depois processa localmente os dados de blocos baixados. Isso reduz a necessidade de revelar uma lista dos endereços da carteira a um servidor público de carteiras. Tor está incluído e ativado por padrão nas conexões de rede comuns. O Ginger também oferece um [nó Bitcoin Core opcional](/pt-br/settings-network/full-node-fees/). Leia [Tor e sincronização](/pt-br/using-ginger/tor/) para entender o modelo de conexão e seus limites.
 
-O Sparrow permite escolher um servidor Electrum público, seu próprio nó Bitcoin Core ou um servidor Electrum privado. Um servidor público é conveniente, mas seu operador pode associar as consultas da carteira que recebe e conhecer sua atividade. O [guia de início rápido do Sparrow](https://sparrowwallet.com/docs/quick-start.html) explica esse compromisso; seu [guia Bitcoin Core](https://sparrowwallet.com/docs/connect-node.html) aborda a conexão do seu próprio nó.
+O Sparrow permite escolher um servidor Electrum público, seu próprio nó Bitcoin Core ou um servidor Electrum privado. Um servidor público é conveniente, mas seu operador pode associar as consultas da carteira que recebe e conhecer sua atividade. O [guia de início rápido do Sparrow](https://sparrowwallet.com/docs/quick-start.html) explica essas vantagens e desvantagens; seu [guia Bitcoin Core](https://sparrowwallet.com/docs/connect-node.html) aborda a conexão do seu próprio nó.
 
 Usar uma infraestrutura sob seu controle evita divulgar essas consultas a um operador não relacionado de servidor público. O Sparrow também oferece conexões Tor, inclusive ao endereço onion de um servidor privado. Seu [guia de boas práticas](https://sparrowwallet.com/docs/best-practices.html) discute essas configurações.
 
@@ -85,13 +85,13 @@ Em qualquer carteira, confira o destinatário, as entradas selecionadas, o troco
 
 ## Taxas e condições do serviço
 
-Os pagamentos comuns na blockchain de qualquer uma das carteiras têm taxas de mineração. O tamanho da transação e a taxa por byte escolhida afetam o custo; usar saídas adicionais de privacidade do Sparrow pode tornar um pagamento maior.
+Os pagamentos comuns na blockchain de qualquer uma das carteiras têm taxas de mineração. O tamanho da transação e a taxa por byte virtual escolhida afetam o custo; usar saídas adicionais de privacidade do Sparrow pode tornar um pagamento maior.
 
 Segundo as [configurações documentadas do coordenador Ginger](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.26/WalletWasabi/WabiSabi/Backend/WabiSabiConfig.cs), uma entrada de **0.03 BTC ou menos** é isenta da taxa de coordenador. Uma entrada maior normalmente paga **0.3% de seu valor total**, com isenções para remixes elegíveis. O limite é aplicado por entrada, e não ao saldo total da carteira.
 
-Por exemplo, uma entrada de 0.10 BTC sujeita à cobrança incorre em uma taxa de coordenador de 30,000 satoshis, além dos custos de mineração. CoinJoin também pode deixar um pequeno resto não devolvido ao alocar saídas. Confira as condições reais da rodada e a [explicação do custo completo](/pt-br/using-ginger/annonset/); essas configurações não são uma cotação para rodadas futuras. Os pagamentos comuns do Sparrow não compram um serviço equivalente de mistura coordenada, portanto comparar apenas suas taxas de mineração não é comparar preços equivalentes de CoinJoin.
+Por exemplo, uma entrada de 0.10 BTC sujeita à cobrança incorre em uma taxa de coordenador de 30 000 satoshis, além dos custos de mineração. CoinJoin também pode deixar um pequeno resto não devolvido ao alocar saídas. Confira as condições reais da rodada e a [explicação do custo completo](/pt-br/using-ginger/annonset/); essas configurações não são uma cotação para rodadas futuras. Os pagamentos comuns do Sparrow não compram um serviço equivalente de mistura coordenada, portanto comparar apenas suas taxas de mineração não é comparar preços equivalentes de CoinJoin.
 
-O operador do coordenador Ginger, InvisibleBit LLC, publica restrições relativas a localização nos EUA e nacionalidade. Seus termos também permitem verificações de entradas por terceiros e a recusa de moedas específicas. Revise os [termos atuais do serviço](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt). Manter suas chaves não garante admissão a uma rodada. No Sparrow, considere a privacidade e a disponibilidade do nó ou servidor usado.
+O operador do coordenador Ginger, InvisibleBit LLC, publica restrições relativas à localização nos EUA e à nacionalidade estadunidense. Seus termos também permitem verificações de entradas por terceiros e a recusa de moedas específicas. Revise os [termos atuais do serviço](https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsGingerWallet.txt). Manter suas chaves não garante admissão a uma rodada. No Sparrow, considere a privacidade e a disponibilidade do nó ou servidor usado.
 
 <span id="which-fits-your-needs" data-ginger-heading="qual-atende-às-suas-necessidades" aria-hidden="true"></span>
 

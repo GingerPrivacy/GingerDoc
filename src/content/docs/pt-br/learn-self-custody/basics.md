@@ -37,7 +37,7 @@ Registre se você usou uma frase-senha e preserve-a com exatidão. Escolha uma p
 | --- | --- | --- |
 | Carteira de software do Ginger | No computador, usando o segredo disponível | Proteja o computador e as informações de recuperação; ele precisa conseguir assinar para o CoinJoin automático |
 | Carteira de hardware usada pelo Ginger | No dispositivo, para as operações compatíveis | Confira os detalhes no dispositivo e preserve o backup de recuperação do fabricante |
-| Registro somente de observação sem assinante | Não pode autorizar um gasto sozinho | Proteja seus dados públicos sensíveis à privacidade e mantenha acesso a um assinante separado |
+| Registro somente de observação sem assinador | Não pode autorizar um gasto sozinho | Proteja seus dados públicos sensíveis à privacidade e mantenha acesso a um assinador separado |
 
 Uma carteira de hardware pode reduzir a exposição das chaves ao malware do computador, mas você ainda pode autorizar um pagamento malicioso se não examinar a tela do dispositivo. Importar sua seed para uma carteira de computador altera a configuração de segurança: essas chaves passam a ficar expostas a esse computador.
 

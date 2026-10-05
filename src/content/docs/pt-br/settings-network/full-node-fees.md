@@ -44,9 +44,9 @@ Uma conexão com um nó remoto tem sua própria exposição de rede. Use um nó 
 
 **Fee Rate Provider** oferece **Mempool Space**, **Blockstream Info** e **Full Node**. Os provedores públicos fornecem estimativas segundo sua visão das condições da rede. A opção de nó completo exige a integração de nó/RPC funcional do Ginger; inserir apenas um endpoint P2P não comprova que a estimativa de taxas por RPC esteja configurada.
 
-Quando **Full Node** é selecionado, mas o nó está indisponível, a v2.0.26 informa que a estimativa de taxas está indisponível e ainda permite a entrada manual no processo de pagamento. Você pode aguardar o nó, selecionar um provedor de estimativas funcional ou inserir uma taxa em que tenha motivos para confiar. Não use uma taxa enorme como uma correção genérica de conexão.
+Quando **Full Node** é selecionado, mas o nó está indisponível, a v2.0.26 informa que a estimativa de taxas está indisponível e ainda permite a entrada manual de uma taxa por byte virtual no processo de pagamento. Você pode aguardar o nó, selecionar um provedor de estimativas funcional ou inserir uma taxa por byte virtual em que tenha motivos para confiar. Não use uma taxa enorme como uma correção genérica de conexão.
 
-Estimativas de taxas são previsões, não reservas de espaço em blocos. Uma diferença entre provedores pode refletir observações diferentes da mempool. Confira a taxa total da transação, além da taxa por tamanho exibida.
+Estimativas de taxas são previsões, não reservas de espaço em blocos. Uma diferença entre provedores pode refletir observações diferentes da mempool. Confira a taxa total da transação, além da taxa por byte virtual exibida.
 
 <span id="dust-threshold" data-ginger-heading="limite-de-dust" aria-hidden="true"></span>
 

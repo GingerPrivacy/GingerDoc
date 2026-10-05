@@ -17,7 +17,7 @@ O CoinJoin tem um custo e um objetivo de privacidade. Revise os dois antes de co
 
 ## Taxa do coordenador e taxa de mineração
 
-Com as configurações atuais de taxa do coordenador do Ginger, cada entrada de 3,000,000 satoshis (0.03 BTC) ou menos não paga taxa do coordenador. O limite inclui exatamente 0.03 BTC. Uma entrada acima desse limite normalmente paga 0.3% de seu valor total, não apenas da parte acima de 0.03 BTC. A taxa em forma decimal é 0.003, e as frações de satoshi da taxa calculada são arredondadas para baixo.
+Com as configurações atuais de taxa do coordenador do Ginger, cada entrada de 3 000 000 satoshis (0.03 BTC) ou menos não paga taxa do coordenador. O limite inclui exatamente 0.03 BTC. Uma entrada acima desse limite normalmente paga 0.3% de seu valor total, não apenas da parte acima de 0.03 BTC. A taxa em forma decimal é 0.003, e as frações de satoshi da taxa calculada são arredondadas para baixo.
 
 O limite é verificado separadamente para cada entrada, não em relação ao saldo total da carteira nem à soma das entradas que você registra. Remixes elegíveis também podem ser isentos; a isenção anunciada pelo Ginger inclui o gasto direto de fundos que passaram por CoinJoin por meio de uma transação. Essas isenções adicionais dependem da rodada oferecida e da elegibilidade da entrada. Consulte novamente a [explicação atual das taxas do Ginger](https://gingerwallet.io/) antes de participar.
 
@@ -25,14 +25,14 @@ Para entradas sem outra isenção da taxa do coordenador:
 
 | Valor da entrada | Valor em BTC | Taxa do coordenador |
 | --- | --- | --- |
-| 2,999,999 satoshis | 0.02999999 BTC | 0 satoshis |
-| 3,000,000 satoshis | 0.03 BTC | 0 satoshis |
-| 3,000,001 satoshis | 0.03000001 BTC | 9,000 satoshis |
-| 4,000,000 satoshis | 0.04 BTC | 12,000 satoshis |
+| 2 999 999 satoshis | 0.02999999 BTC | 0 satoshis |
+| 3 000 000 satoshis | 0.03 BTC | 0 satoshis |
+| 3 000 001 satoshis | 0.03000001 BTC | 9 000 satoshis |
+| 4 000 000 satoshis | 0.04 BTC | 12 000 satoshis |
 
-Por exemplo, a entrada de 0.04 BTC paga 0.00012 BTC (12,000 satoshis), não 0.3% apenas dos 0.01 BTC acima do limite. As taxas de mineração são adicionais, inclusive para entradas cuja taxa do coordenador seja zero. Esses exemplos explicam o cálculo configurado, não são uma cotação para uma rodada futura.
+Por exemplo, a entrada de 0.04 BTC paga 0.00012 BTC (12 000 satoshis), não 0.3% apenas dos 0.01 BTC acima do limite. As taxas de mineração são adicionais, inclusive para entradas cuja taxa do coordenador seja zero. Esses exemplos explicam o cálculo configurado, não são uma cotação para uma rodada futura.
 
-As taxas de mineração remuneram os mineradores pelo espaço da transação. Elas dependem da taxa por tamanho e das entradas e saídas da transação. Gastar uma moeda de baixo valor pode custar uma grande porcentagem de seu valor. Cada CoinJoin repetido pode gerar novos custos de mineração mesmo que se qualifique para uma isenção da taxa do coordenador.
+As taxas de mineração remuneram os mineradores pelo espaço da transação. Elas dependem da taxa por byte virtual e das entradas e saídas da transação. Gastar uma moeda de baixo valor pode custar uma grande porcentagem de seu valor. Cada CoinJoin repetido pode gerar novos custos de mineração mesmo que se qualifique para uma isenção da taxa do coordenador.
 
 Não divida moedas apenas para buscar uma isenção sem entender as transações extras, as taxas e os vínculos públicos que isso cria.
 
@@ -48,14 +48,14 @@ O exemplo a seguir ilustra a contabilização, não é uma previsão dos valores
 
 | Item | Satoshis |
 | --- | ---: |
-| Sua entrada sujeita à taxa | 5,000,000 |
-| Suas saídas, somadas entre suas duas carteiras | 4,980,800 |
-| Diferença de valor | 19,200 |
-| Taxa do coordenador assumida neste exemplo: 0.3% da entrada | 15,000 |
-| Custos de mineração atribuídos à sua participação neste exemplo | 3,600 |
+| Sua entrada sujeita à taxa | 5 000 000 |
+| Suas saídas, somadas entre suas duas carteiras | 4 980 800 |
+| Diferença de valor | 19 200 |
+| Taxa do coordenador assumida neste exemplo: 0.3% da entrada | 15 000 |
+| Custos de mineração atribuídos à sua participação neste exemplo | 3 600 |
 | Diferença restante de distribuição neste exemplo | 600 |
 
-Aqui, 15,000 + 3,600 + 600 = 19,200 satoshis. As três últimas linhas explicam a mesma diferença; não acrescente essa diferença novamente como outra cobrança. A taxa de mineração de toda a rodada também não é uma taxa que cada participante paga integralmente. Não presuma que um campo individual de taxa ou uma linha de log represente todos os componentes da sua diferença de valor.
+Aqui, 15 000 + 3 600 + 600 = 19 200 satoshis. As três últimas linhas explicam a mesma diferença; não acrescente essa diferença novamente como outra cobrança. A taxa de mineração de toda a rodada também não é uma taxa que cada participante paga integralmente. Não presuma que um campo individual de taxa ou uma linha de log represente todos os componentes da sua diferença de valor.
 
 Se as saídas foram para uma carteira de hardware, seu desaparecimento do saldo da carteira de software é uma transferência de valor que você ainda possui. Espere as duas carteiras sincronizarem antes de conciliar os valores. Transações não confirmadas, pagamentos simultâneos e fundos recebidos podem tornar enganosa uma simples comparação do saldo da carteira antes e depois.
 
@@ -72,7 +72,7 @@ Inclua os passos anteriores e posteriores ao CoinJoin ao decidir se o resultado 
 | Mover fundos para outra carteira | Outra taxa de mineração se você fizer uma transferência comum |
 | Gastar as moedas resultantes mais tarde | As taxas das entradas e saídas desse pagamento posterior |
 
-Por exemplo, uma participação que custe 19,200 satoshis seguida de uma transferência de 1,200 satoshis custa 20,400 satoshis por esses dois passos. Um pagamento posterior é uma despesa separada. Mais saídas podem fornecer partes menores para gastar separadamente, mas gastar essas partes também consome espaço de transação. Esse custo futuro não foi pago antecipadamente pela criação das saídas.
+Por exemplo, uma participação que custe 19 200 satoshis seguida de uma transferência de 1 200 satoshis custa 20 400 satoshis por esses dois passos. Um pagamento posterior é uma despesa separada. Mais saídas podem fornecer partes menores para gastar separadamente, mas gastar essas partes também consome espaço de transação. Esse custo futuro não foi pago antecipadamente pela criação das saídas.
 
 Escolha um valor que você possa gastar para aprender e revise o primeiro resultado concluído antes de deixar que as rodadas repetidas continuem. Mantenha um orçamento pessoal de custos; uma preferência de tempo de CoinJoin ou uma configuração de seleção de moedas não garante um limite para o custo total de todo o percurso.
 
@@ -98,10 +98,10 @@ Em um exemplo simplificado, suponha que o objetivo seja 5 e que a carteira tenha
 
 | Moeda | Valor | Pontuação local | Atinge o objetivo? |
 | --- | ---: | ---: | --- |
-| A | 1,000,000 satoshis | 5 | Sim |
-| B | 3,000,000 satoshis | 3 | Não |
+| A | 1 000 000 satoshis | 5 | Sim |
+| B | 3 000 000 satoshis | 3 | Não |
 
-Apenas 25% do valor atinge o objetivo. Para o progresso geral, esta versão pondera o progresso acima da pontuação 1: a moeda A contribui com 1,000,000 × 4 e a moeda B com 3,000,000 × 2, em relação a um máximo de 4,000,000 × 4. Isso resulta em 62.5%, exibido como o valor inteiro 62%. Portanto, ver porcentagens diferentes nessas duas visualizações não é, por si só, um erro.
+Apenas 25% do valor atinge o objetivo. Para o progresso geral, esta versão pondera o progresso acima da pontuação 1: a moeda A contribui com 1 000 000 × 4 e a moeda B com 3 000 000 × 2, em relação a um máximo de 4 000 000 × 4. Isso resulta em 62.5%, exibido como o valor inteiro 62%. Portanto, ver porcentagens diferentes nessas duas visualizações não é, por si só, um erro.
 
 A mensagem **Hurray! All your funds are private!** significa que a carteira considera os fundos privados segundo seu objetivo e sua contabilização atuais. Não significa que o histórico desapareceu, que você é anônimo na internet ou que um pagamento posterior não possa criar um vínculo.
 

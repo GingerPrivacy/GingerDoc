@@ -34,7 +34,7 @@ Não digite palavras de recuperação em um site para “ressincronizar” uma c
 
 Confira a conectividade, o relógio do computador, o espaço livre e o status de um nó completo configurado. Uma primeira varredura pode simplesmente precisar de tempo. Se o progresso nunca mudar, feche o Ginger normalmente e reabra uma vez. Registre o que acontece, em vez de reiniciar uma varredura repetidamente.
 
-**Awaiting connection** pode impedir CoinJoin e outros serviços mesmo quando a carteira tem histórico em cache. Considere um saldo sem conexão potencialmente incompleto. Mantenha Tor ativado durante a investigação. A conexão P2P e as estimativas de taxa RPC de um nó configurado são separadas; o funcionamento de uma não comprova o da outra.
+**Awaiting connection** pode impedir CoinJoin e outros serviços mesmo quando a carteira tem histórico em cache. Considere um saldo sem conexão potencialmente incompleto. Mantenha Tor ativado durante a investigação. A conexão P2P e as estimativas de taxas obtidas via RPC de um nó configurado são separadas; o funcionamento de uma não comprova o da outra.
 
 Se usar **Wallet Settings** → **Tools** → **Resync**, preserve os backups primeiro e espere uma nova varredura. Não apague `Wallets`, `WalletBackups` ou arquivos de 2FA apenas para remover uma mensagem de progresso.
 
@@ -44,7 +44,7 @@ Se usar **Wallet Settings** → **Tools** → **Resync**, preserve os backups pr
 
 | Mensagem ou condição | Ação provável |
 | --- | --- |
-| **Insufficient funds eligible for coinjoin** | Inspecione confirmações, tamanhos das moedas, taxas e exclusões; o saldo total, por si só, não estabelece a elegibilidade |
+| **Insufficient funds eligible for coinjoin** | Inspecione confirmações, valores das moedas, taxas e exclusões; o saldo total, por si só, não estabelece a elegibilidade |
 | **Only excluded funds are available** | Confira **Exclude Coins** se quiser que algumas moedas participem |
 | **Only immature funds are available** | Aguarde a maturidade exigida; saídas recém-mineradas têm regras especiais de gasto |
 | **Some funds are rejected from coinjoining** | Leia o motivo associado e os termos atuais do serviço; uma rejeição não transfere a propriedade dos seus fundos |
@@ -61,7 +61,7 @@ Os participantes de uma rodada podem não concluir suas etapas, ou uma moeda pod
 
 ## Problemas de pagamento ou taxas
 
-Quando as estimativas de taxas estiverem indisponíveis, espere, corrija a conexão com o provedor ou nó selecionado, ou use uma taxa escolhida manualmente que você compreenda. Garanta que o valor final mais as taxas caiba nos fundos disponíveis para gastar. Uma longa cadeia de transações não confirmadas pode exigir esperar as confirmações anteriores.
+Quando as estimativas de taxas estiverem indisponíveis, espere, corrija a conexão com o provedor ou nó selecionado, ou use uma taxa por byte virtual escolhida manualmente que você compreenda. Garanta que o valor final mais as taxas caiba nos fundos disponíveis para gastar. Uma longa cadeia de transações não confirmadas pode exigir esperar as confirmações anteriores.
 
 Use **Speed Up Transaction** ou **Cancel Transaction** somente quando o Ginger oferecer a opção e depois de conferir a taxa. Cancelar é uma tentativa de substituir um pagamento pendente, não uma reversão de pagamento confirmado. Após um resultado incerto de transmissão, confira o histórico antes de pagar duas vezes.
 
