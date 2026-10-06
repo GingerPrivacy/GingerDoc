@@ -1,0 +1,49 @@
+---
+import config from 'virtual:starlight/user-config'
+
+const { locale, id } = Astro.locals.starlightRoute
+const currentLocale = locale ?? 'root'
+const locales = Object.entries(config.locales ?? {}).map(([code, locale]) => ({ code, lang: (locale?.lang ?? code).toLowerCase() }))
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+---
+
+<script is:inline define:vars={{ currentLocale, locales, base, isNotFound: id === '404' }}>
+  (() => {
+    const preferenceKey = 'ginger-docs-language'
+
+    // Capture the choice before Starlight navigates, including English at the root.
+    document.addEventListener('change', (event) => {
+      const select = event.target
+      if (!(select instanceof HTMLSelectElement) || !select.closest('starlight-lang-select')) return
+      const path = new URL(select.value, location.href).pathname.slice(base.length)
+      const code = path.split('/')[1]
+      const choice = locales.find((locale) => locale.code === code) ?? locales.find((locale) => locale.code === 'root')
+      try { localStorage.setItem(preferenceKey, choice.code) } catch {}
+    }, { capture: true })
+
+    // A language in the URL is an explicit choice. Never redirect a 404 page.
+    if (currentLocale !== 'root' || isNotFound) return
+
+    let preference
+    try { preference = localStorage.getItem(preferenceKey) } catch {}
+    let choice = locales.find((locale) => locale.code === preference)
+
+    if (!choice) {
+      // Keep internal navigation in its current language, even if storage is blocked.
+      if (document.referrer && new URL(document.referrer).origin === location.origin) return
+      for (const language of navigator.languages?.length ? navigator.languages : [navigator.language]) {
+        const tag = language.toLowerCase()
+        const primary = tag.split('-')[0]
+        choice = locales.find((locale) => locale.lang === tag)
+          ?? locales.find((locale) => locale.lang === primary)
+          ?? locales.find((locale) => locale.lang.split('-')[0] === primary)
+        if (choice) break
+      }
+    }
+
+    if (!choice || choice.code === 'root') return
+    const url = new URL(location.href)
+    url.pathname = `${base}/${choice.code}${url.pathname.slice(base.length)}`
+    location.replace(url.href)
+  })()
+</script>
