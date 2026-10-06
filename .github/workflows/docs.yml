@@ -27,6 +27,9 @@ jobs:
       - name: Build Starlight site
         run: npm run build
 
+      - name: Verify search metadata and language links
+        run: python3 scripts/check-seo.py
+
       # create the CNAME file
       - name: Generate CNAME file
         run: echo "docs.gingerwallet.io" > dist/CNAME

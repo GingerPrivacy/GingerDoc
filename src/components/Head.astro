@@ -1,16 +1,24 @@
 ---
 import Default from '@astrojs/starlight/components/Head.astro'
 import BrowserLanguage from './BrowserLanguage.astro'
+import StructuredData from './StructuredData.astro'
 import { searchLabels } from '../search-labels'
 
-const { entry, lang } = Astro.locals.starlightRoute
+const { entry, lang, id, siteTitle, head } = Astro.locals.starlightRoute
+const isNotFound = id === '404'
+const isHome = entry.data.doc_id === 'manual.home'
+// A homepage title already contains the site name. Error pages have no translations.
+Astro.locals.starlightRoute.head = head
+  .filter(({ tag, attrs }) => !(isNotFound && tag === 'link' && attrs?.rel === 'alternate'))
+  .map((tag) => isHome && tag.tag === 'title' ? { ...tag, content: siteTitle } : tag)
 const level = entry.data.reader_level ?? 'beginner'
 const scope = level === 'advanced' ? 'advanced' : 'everyday'
 const labels = searchLabels(lang)
 ---
 
-<BrowserLanguage />
 <Default />
+<BrowserLanguage />
+{isNotFound ? <meta name="robots" content="noindex" /> : <StructuredData />}
 <meta name="ginger-guide-scope" content={scope} data-pagefind-filter="guide[content]" />
 <meta name="ginger-guide-level" content={labels.level[level]} data-pagefind-meta={`${labels.levelLabel}[content]`} />
 

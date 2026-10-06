@@ -1,0 +1,33 @@
+---
+const { entry, lang, siteTitle, head } = Astro.locals.starlightRoute
+const canonical = head.find(({ tag, attrs }) => tag === 'link' && attrs?.rel === 'canonical')?.attrs?.href
+const description = head.find(({ tag, attrs }) => tag === 'meta' && attrs?.name === 'description')?.attrs?.content
+const isHome = entry.data.doc_id === 'manual.home'
+const website = new URL(Astro.locals.starlightRoute.siteTitleHref, Astro.site)
+const data = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${website.href}#website`,
+      url: website.href,
+      name: siteTitle,
+      inLanguage: lang,
+    },
+    {
+      '@type': isHome ? 'WebPage' : 'TechArticle',
+      '@id': `${canonical}#${isHome ? 'webpage' : 'article'}`,
+      url: canonical,
+      name: entry.data.title,
+      ...(!isHome && { headline: entry.data.title, mainEntityOfPage: canonical }),
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${website.href}#website` },
+    },
+  ],
+}
+// Keep page copy as JSON data, including any literal HTML in a title or description.
+const json = JSON.stringify(data).replace(/</g, '\\u003c')
+---
+
+{canonical && <script is:inline type="application/ld+json" set:html={json} />}
