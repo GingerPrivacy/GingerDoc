@@ -36,6 +36,37 @@ never against `npm run dev`.
 Run `npx playwright install chromium` once before running the browser tests locally.
 Build the site before `npm run test:search`; the tests start a local preview server.
 
+## Search visibility
+
+Pages are generated as complete HTML, including their content, canonical URL,
+language alternates and structured data. Translations have their own URLs and
+normal links in the page footer, which also work without JavaScript. Browser
+language detection is a visitor convenience; recognized crawlers stay on the
+URL they requested. The 404 page and legacy redirects are marked `noindex` and
+excluded from the sitemap.
+
+Run `python scripts/check-seo.py` after building to verify every page's metadata,
+reciprocal language links, structured data and sitemap coverage. Deployment runs
+the same check before publishing. Browser tests verify language detection with
+search crawler user agents as well as ordinary browsers.
+
+The public [robots.txt](https://docs.gingerwallet.io/robots.txt) allows crawling
+and advertises the [sitemap](https://docs.gingerwallet.io/sitemap-index.xml).
+Submit that sitemap in Google Search Console and Bing Webmaster Tools for the
+documentation hostname, and use their indexing reports to check actual coverage.
+A successful build or an accessible sitemap does not confirm indexing.
+
+Cloudflare security rules also affect crawler access. Check its security events
+for denied Googlebot, Bingbot, OAI-SearchBot and other search crawler requests.
+OpenAI recommends allowing [OAI-SearchBot and its published IP ranges](https://developers.openai.com/api/docs/bots)
+for ChatGPT search. Search access and model-training access are separate choices;
+this project does not require granting new training permissions.
+
+[Google's AI search guidance](https://developers.google.com/search/docs/appearance/ai-features)
+uses the same crawlability and content requirements as regular search. It does
+not require `llms.txt` or special AI markup. Keep the visible guides accurate,
+link related answers and monitor indexing after content or hosting changes.
+
 ## Writing content
 
 Pages live in [`src/content/docs/`](src/content/docs/) as `.md` / `.mdx`. The file

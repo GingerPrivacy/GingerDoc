@@ -29,6 +29,8 @@ jobs:
           node scripts/check-translations.mjs
       - name: Build site and search index
         run: npm run build
+      - name: Check search metadata and language links
+        run: python3 scripts/check-seo.py
       - name: Check local links and heading anchors
         run: python3 scripts/check-doc-links.py
       - name: Install browser for search checks
