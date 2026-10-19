@@ -178,4 +178,4 @@ Use links from the [official Ginger repository](https://github.com/GingerPrivacy
 
 ## About this manual
 
-This English manual includes the updated workflows in [Ginger v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) and uses English interface labels. Translations may still describe an earlier release. Documentation and translations may contain errors. Ginger does not guarantee their accuracy; verify critical details in the application before proceeding. If you find an error, [report it in the documentation repository](https://github.com/GingerPrivacy/GingerDoc/issues) without including wallet secrets.
+This manual includes the updated workflows in [Ginger v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) and uses English interface labels. Documentation and translations may contain errors. Ginger does not guarantee their accuracy; verify critical details in the application before proceeding. If you find an error, [report it in the documentation repository](https://github.com/GingerPrivacy/GingerDoc/issues) without including wallet secrets.

@@ -3,7 +3,7 @@ doc_id: "settings-network.secret-hunt"
 title: "Secret Hunt in Ginger Wallet"
 description: "Trova i risultati degli eventi Secret Hunt di Ginger, controlla la partecipazione del portafoglio e comprendi le informazioni ricevute dal servizio dell'evento."
 lang: "it"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -19,7 +19,9 @@ next: false
 
 Apri il menu di un portafoglio software e scegli **Secret Hunt**. La finestra mostra i risultati degli eventi in un albero, comprese parole o frasi scoperte e un segreto aggiuntivo quando sono stati raccolti i segreti richiesti dall'evento. Espandi un evento per esaminarne le voci.
 
-Usa **Enable/disable the use of this wallet for Secret Hunt.** per controllare la partecipazione di quel portafoglio. Il valore predefinito della versione è attivo. Disattivarlo svuota l'albero visualizzato nella vista disabilitata e impedisce al processo di aggiornamento di selezionare quel portafoglio per i controlli di ammissibilità agli eventi. Non annulla CoinJoin, non elimina transazioni dalla blockchain e non cancella informazioni già inviate a un servizio.
+Usa **Enable/disable the use of this wallet for Secret Hunt.** per controllare la partecipazione di quel portafoglio. Nella v2.0.27, Secret Hunt è disattivato per impostazione predefinita nei nuovi portafogli: attivalo separatamente per ogni portafoglio con cui vuoi partecipare. I portafogli esistenti mantengono l'impostazione salvata durante l'aggiornamento: controlla quindi questo interruttore se usavi già Secret Hunt.
+
+Disattivarlo svuota l'albero visualizzato nella vista disabilitata e impedisce al processo di aggiornamento di selezionare quel portafoglio per i controlli di ammissibilità agli eventi. Non annulla CoinJoin, non elimina transazioni dalla blockchain e non cancella informazioni già inviate a un servizio.
 
 La voce non è offerta per portafogli in sola visualizzazione. Non è una funzione CoinJoin dei portafogli hardware e non richiede di inserire le parole di recupero nel sito di un evento.
 

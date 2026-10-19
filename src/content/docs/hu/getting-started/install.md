@@ -3,7 +3,7 @@ doc_id: "getting-started.install"
 title: "A Ginger Wallet telepítése"
 description: "Válaszd ki a megfelelő asztali Ginger Wallet-csomagot, ellenőrizd a kompatibilitást, és telepítsd a kiadott alkalmazást."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 sidebar:
   label: A Ginger telepítése
@@ -19,7 +19,7 @@ next:
 
 A Ginger Wallet egy asztali Bitcoin-pénztárca. Te kezeled a bitcoinjaid kulcsait, és a CoinJoinnal megnehezítheted a tranzakciók követését. Ez a kiadás nem kínál mobilpénztárcát, Lightning-pénztárcát vagy támogatást más kriptovalutákhoz.
 
-Ez az útmutató a 2.0.26 verzióról szól. A szoftvert [a Ginger hivatalos weboldaláról](https://gingerwallet.io/) vagy az ott hivatkozott [GitHub-kiadásból](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) szerezd be. Egy keresési hirdetés, privát üzenet vagy hasonló nevű mobilalkalmazás nem megbízható letöltési forrás.
+Ez az útmutató a 2.0.27 verzióról szól. A szoftvert [a Ginger hivatalos weboldaláról](https://gingerwallet.io/) vagy az ott hivatkozott [GitHub-kiadásból](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) szerezd be. Egy keresési hirdetés, privát üzenet vagy hasonló nevű mobilalkalmazás nem megbízható letöltési forrás.
 
 <span id="choose-a-download" data-ginger-heading="letöltési-csomag-kiválasztása" aria-hidden="true"></span>
 
@@ -27,11 +27,11 @@ Ez az útmutató a 2.0.26 verzióról szól. A szoftvert [a Ginger hivatalos web
 
 | Számítógép | A kiadás által támogatott rendszer | Letöltés |
 | --- | --- | --- |
-| Windows PC, x64 | Windows 10, 1607 vagy újabb verzió; Windows 11, 22000 vagy újabb build | `Ginger-2.0.26.msi` |
-| Apple silicon processzoros Mac | macOS 12 vagy újabb | `Ginger-2.0.26-arm64.dmg` |
-| Intel processzoros Mac | macOS 12 vagy újabb | `Ginger-2.0.26.dmg` |
-| Ubuntu vagy Debian, x64 | Ubuntu 22.04 vagy újabb; Debian 11 vagy újabb | `Ginger-2.0.26.deb` |
-| Más támogatott Linux, x64 | A kiadás Fedora 37 vagy újabb rendszert is felsorol | `Ginger-2.0.26.tar.gz` |
+| Windows PC, x64 | Windows 10, 1607 vagy újabb verzió; Windows 11, 22000 vagy újabb build | `Ginger-2.0.27.msi` |
+| Apple silicon processzoros Mac | macOS 12 vagy újabb | `Ginger-2.0.27-arm64.dmg` |
+| Intel processzoros Mac | macOS 12 vagy újabb | `Ginger-2.0.27.dmg` |
+| Ubuntu vagy Debian, x64 | Ubuntu 22.04 vagy újabb; Debian 11 vagy újabb | `Ginger-2.0.27.deb` |
+| Más támogatott Linux, x64 | A kiadás Fedora 37 vagy újabb rendszert is felsorol | `Ginger-2.0.27.tar.gz` |
 
 Macen az **About This Mac** mutatja a chipet vagy processzort. A kiadás `win-x64`, `linux-x64`, `macOS-x64` és `macOS-arm64` jelölésű ZIP-archívumokat is tartalmaz. Ebben a kiadásban nincs Windows ARM- vagy Linux ARM-csomag. Ne feltételezd, hogy a más processzorhoz készült archívum működni fog.
 
@@ -61,5 +61,7 @@ Linuxos eszközhozzáférési problémák esetén nézd meg a hardverpénztárca
 ## Frissítések és elérhetőség
 
 A [kiadások listája](https://github.com/GingerPrivacy/GingerWallet/releases) mutatja a közzétett verziókat és a változásaikat. A **Settings** → **General** alatt az **Auto download new version** szabályozza a frissítések letöltését. A frissítés letöltése nem ugyanaz, mint a telepítése; kövesd a frissítési értesítés utasításait, és hagyd a Gingert szabályosan bezáródni. Frissítés előtt legyen kéznél a helyreállítási mentésed. Az alkalmazás fájljai lecserélhetők a pénztárcaadatok szándékos törlése nélkül.
+
+A v2.0.26-ról frissítve a meglévő pénztárcák SegWit-alapértelmezéssel indulnak a fogadási címtípusnál, és megtartják mentett Secret Hunt-beállításukat. Az új pénztárcákban a Secret Huntot külön kell bekapcsolni. Ha engedélyezted a Ginger JSON-RPC-szerverét, frissítés előtt állíts be nem üres felhasználónevet és jelszót, különben a szerver nem indul el; maga a Ginger tovább működik. Indítási probléma esetén lásd az [RPC-beállításokat](/hu/help/troubleshooting/#json-rpc-does-not-start) és [a konfiguráció hibaelhárítását](/hu/help/troubleshooting/#startup-reports-an-invalid-configuration).
 
 Elfogadás előtt olvasd el a Gingerben megjelenő aktuális szolgáltatási feltételeket, beleértve a használati jogosultságra vonatkozó korlátozásokat. Az alkalmazás telepítése nem jelent jogosultságot minden kapcsolódó szolgáltatás használatára.

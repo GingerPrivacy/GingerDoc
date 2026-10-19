@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.send"
 title: "发送比特币与核对手续费"
-description: "准备 Ginger 付款，核对收款人和金额，了解手续费率及找零，并授权交易。"
+description: "准备单笔或批量比特币付款，核实每位收款人和最终金额，检查手续费与找零，并授权交易。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -26,6 +26,20 @@ Ginger 无法撤回已确认的比特币付款。确认前，通过可信渠道�
 
 发送全部可用资金时，手续费可能从收款人收到的金额中扣除。固定金额请求和 PayJoin 有不同限制。应在预览中检查实际收款金额，不要假设钱包余额能全部到达目的地址。
 
+<span id="pay-several-recipients-in-one-transaction" data-ginger-heading="在一笔交易中向多位收款人付款" aria-hidden="true"></span>
+
+## 在一笔交易中向多位收款人付款
+
+在发送编辑器中选择 **Pay to multiple recipients**，创建批量付款。第一笔付款会保留已输入的地址、金额和标签。
+
+1. 为每笔付款输入不同的比特币地址、金额和收款人标签。在此编辑器中使用普通地址；付款 URI 和 Payjoin 应使用单一收款人流程。固定金额的付款请求不能扩展为批量付款。
+2. 选择 **Add another payment** 添加更多行，或选择某笔付款旁的 **Delete** 将其移除。如果只剩一笔付款，编辑器会恢复为单一收款人布局，并保留该笔付款的详情。
+3. 决定谁承担矿工手续费。选中 **Subtract the transaction fee from the first payment** 时，第一位收款人收到的金额会少于输入金额，其他付款金额保持不变。取消选中时，钱包会在输入金额之外另付手续费。在批量付款中使用 **Max** 会启用手续费扣除，因此继续前请检查此选项。
+4. 选择 **Continue**。在预览中检查每个带编号的地址、收款人标签和最终金额，以及总手续费。尤其在扣除手续费时，确认第一位收款人仍会收到约定金额。
+5. 如需修改付款，可使用返回操作。已输入的行和手续费扣除选项会保留。选择 **Confirm** 并完成授权前，再次检查重新生成的预览和手续费。
+
+批量付款的所有收款人共用一笔公开交易，因此这些付款可以被关联起来。合并互不相关的付款前，请考虑这一点。收款人标签仍是本地钱包元数据，不会发送给收款人，也不会发布到区块链。
+
 <span id="check-the-fee-without-custom-settings" data-ginger-heading="不使用自定义设置检查手续费" aria-hidden="true"></span>
 
 ## 不使用自定义设置检查手续费
@@ -33,6 +47,8 @@ Ginger 无法撤回已确认的比特币付款。确认前，通过可信渠道�
 在预览中检查总手续费和预计确认偏好。手续费支付交易空间，并非简单按付款金额的百分比收取。时间估计可能变化，不是保证。
 
 使用自己理解的可用手续费估算。如果估算不可用，又不确定如何选择，先等待并调查，不要猜测很高的自定义手续费。
+
+如需在确认前仔细查看，请在预览中选择 **View transaction**。它会打开显示输入和输出的独立窗口。可用详情请参阅[检查交易](/zh-cn/payments/coin-control-history/#inspect-inputs-and-outputs)。
 
 <span id="the-leftover-money-is-change" data-ginger-heading="剩余资金是找零" aria-hidden="true"></span>
 

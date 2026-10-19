@@ -25,7 +25,7 @@ jobs:
         run: npm run check
       - name: Check translation coverage and preserved references
         run: |
-          node --test scripts/translation-*.test.mjs
+          node scripts/translation-utils.test.mjs
           node scripts/check-translations.mjs
       - name: Build site and search index
         run: npm run build

@@ -3,7 +3,7 @@ doc_id: "learn-coinjoin.trust-and-limits"
 title: "Miben bízol CoinJoin közben?"
 description: "Különítsd el a Bitcoin-kulcsok kezelését, a CoinJoin adatvédelmi feltételezéseit, a koordinátor elérhetőségét, a résztvevők függetlenségét és a szoftver ellenőrzését."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -27,6 +27,8 @@ Részvétel előtt azonosítsd a célodat: esetleg azt szeretnéd, hogy a címze
 | Milyen szoftvert futtatok? | A nyílt forráskód vizsgálható; a letöltés ellenőrzése segít megállapítani a megszerzett fájl eredetét és sértetlenségét. | Bizonyíték minden build hibátlanságára, a számítógép sértetlenségére vagy arra, hogy a távoli szolgáltatás pontosan a közzétett kódot futtatja |
 
 A [WabiSabi-tanulmány 7. szakasza](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3) külön kezeli az adatvédelmet, aktív támadásokat és a lopás megelőzését. Ez az útmutató e különbséget alkalmazza felhasználói döntésekre; nem egy telepített pénztárca vagy koordinátor biztonsági auditja.
+
+A v2.0.27-ben a Ginger az aláírás befejezése előtt ellenőrzi a javasolt tranzakció bemenetszámát és tényleges bányászati díjrátáját. Ellenőrzi a regisztrált saját bemenetek és az elvárt kimenetek meglétét is, a megismételt regisztrált saját bemeneteket pedig elutasítja. Sikertelen aláírási ellenőrzéskor egy ténylegesen szereplő bemenet aláírását tartja vissza, vagy nem küld aláírást, ha egyetlen saját bemenete sem maradt. A blame round ellenőrzései az előző tranzakció bemeneteire és a javasolt maximális összegre korlátozzák az újrapróbálkozást; a Ginger csak azokat a saját UTXO-it használja újra, amelyekhez már benyújtott aláírást. Ezek konkrét érvénytelen vagy következetlen tervezetek elleni ellenőrzések, nem a koordinátor tisztességének vagy a résztvevők függetlenségének garanciái. [A körök részletes leírása](/hu/coinjoin/round-details/) elmagyarázza, mit jelenthet a gyakorlatban az elutasítás vagy az újrapróbálkozás.
 
 <span id="consider-the-observer" data-ginger-heading="mérlegeld-a-megfigyelőt" aria-hidden="true"></span>
 

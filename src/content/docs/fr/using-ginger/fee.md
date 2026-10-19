@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.fees-and-change"
 title: "Frais de transaction, taux personnalisés et monnaie rendue"
-description: "Comprendre les taux de frais en satoshis par octet virtuel, la saisie manuelle des frais, les sorties de monnaie rendue et les suggestions de confidentialité qui modifient le montant dans Ginger."
+description: "Comprenez les taux de frais, les taux personnalisés à partir de 0.1 sat/vB, les limites de relais, la déduction des frais, les sorties de monnaie rendue et les suggestions de confidentialité de Ginger."
 lang: "fr"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -21,9 +21,19 @@ Pour les étapes d'un paiement ordinaire, commencez par [Envoyer des bitcoins](/
 
 ## Comprendre les frais
 
-Un taux de frais se mesure en satoshis par octet virtuel et s'affiche sous **Fee Rate (sat/vByte)**. Le total des frais de minage correspond au taux de frais multiplié par la taille virtuelle de la transaction. Il ne s'agit pas d'un pourcentage du montant du paiement. Dépenser de nombreuses petites pièces peut coûter plus cher que de dépenser une seule pièce plus importante de même valeur totale.
+Utilisez le réglage des frais dans l'aperçu pour modifier le délai de confirmation souhaité ou saisir un **Custom Fee Rate**. Ginger accepte des taux aussi bas que **0.1 sat/vB**, et ses estimations ainsi que son graphique des frais conservent les taux fractionnaires. Un délai estimé n'est pas une garantie : les nouvelles transactions se disputent l'espace disponible et les blocs arrivent à intervalles irréguliers.
+
+Le minimum de l'éditeur ne garantit pas qu'une transaction sera relayée ou acceptée dans le mempool d'un nœud. Les nœuds peuvent exiger un taux supérieur en raison de leur politique ou de l'état actuel de leur mempool. Lors de la diffusion aux pairs, Ginger ignore ceux dont le minimum annoncé dépasse le taux de frais de la transaction. Un taux personnalisé bas peut donc empêcher la diffusion ou laisser la transaction non confirmée ; examinez les conditions réseau et l'urgence du paiement avant de l'utiliser.
 
 Utilisez le réglage des frais dans l'aperçu pour modifier le délai de confirmation souhaité ou saisir un **Custom Fee Rate**. Un délai estimé n'est pas une garantie : les nouvelles transactions se disputent l'espace disponible et les blocs arrivent à intervalles irréguliers. Le champ de saisie manuelle de cette version refuse les taux inférieurs à 1 sat/vByte ; la politique des nœuds peut exiger un taux supérieur au minimum accepté par le champ.
+
+<span id="check-who-pays-the-fee" data-ginger-heading="vérifier-qui-paie-les-frais" aria-hidden="true"></span>
+
+## Vérifier qui paie les frais
+
+Dans un [paiement groupé](/fr/payments/send/#pay-several-recipients-in-one-transaction), **Subtract the transaction fee from the first payment** réduit uniquement le montant du premier destinataire. Les autres montants saisis restent inchangés. Si l'option est décochée, il faut suffisamment de fonds pour tous les montants de paiement plus les frais. Utiliser **Max** dans l'éditeur de paiements groupés active la déduction des frais.
+
+Vérifiez toujours les montants finaux dans l'aperçu, surtout après avoir changé le taux de frais. Si un destinataire doit recevoir un montant exact, déduire des frais de ce paiement peut rendre le montant payé insuffisant. L'aperçu indique séparément le montant final de chaque destinataire du paiement groupé.
 
 Lorsque les estimations automatiques sont indisponibles, Ginger peut tout de même proposer une saisie manuelle des frais. Si vous ne savez pas quel taux convient, il est préférable d'attendre le retour des estimations plutôt que de choisir au hasard un nombre très élevé. Les frais de transaction ordinaires et les frais de coordinateur CoinJoin sont distincts.
 

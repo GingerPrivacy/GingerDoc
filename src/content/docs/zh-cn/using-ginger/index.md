@@ -3,7 +3,7 @@ title: "使用 Ginger"
 description: "了解接收和发送比特币的常规步骤，再按需选择 Ginger 的可选功能。"
 doc_id: "payments.overview"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -16,7 +16,7 @@ next: false
 ## 进行普通付款
 
 1. [接收比特币](/zh-cn/payments/receive/)：创建新地址，添加标签，并核对入账交易。
-2. [发送比特币](/zh-cn/payments/send/)：输入目的地址和金额，确认前核对收款金额、找零和手续费。
+2. [发送比特币](/zh-cn/payments/send/)：输入目的地址和金额，确认前检查收款金额、找零和手续费。需要在一笔交易中支付多笔款项时，使用 **Pay to multiple recipients**，并在预览中核对每位收款人。
 3. 发送后检查钱包历史记录。若结果不确定，先查明发生了什么，再决定是否再次付款。
 
 <span id="choose-an-optional-feature" data-ginger-heading="选择可选功能" aria-hidden="true"></span>

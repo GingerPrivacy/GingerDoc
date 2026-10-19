@@ -3,7 +3,7 @@ doc_id: "help.faq"
 title: "Ginger-Wallet-FAQ: Hier beginnen"
 description: "Kurze Antworten zu fehlendem Guthaben, Backups, Wiederherstellung, CoinJoin-Warten und Gebühren, ausstehenden Zahlungen, Hardware und sicherem Support."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -34,7 +34,7 @@ Ginger ist eine Desktop-Anwendung für On-Chain-Bitcoin-Empfang und -Versand mit
 
 ### Gibt es eine offizielle mobile oder Web-Wallet?
 
-v2.0.26 liefert Desktop-Software für unterstützte Windows-, macOS- und Linux-Computer. Die Version hat keine Android-, iOS- oder Browser-Wallet, Lightning-Zahlungen oder andere Kryptowährungen. Beginne auf der [offiziellen Ginger-Website](https://gingerwallet.io/) und deren Veröffentlichungslinks; gib Wörter nicht bloß wegen des Ginger-Namens in Apps oder Websites ein.
+v2.0.27 liefert Desktop-Software für unterstützte Windows-, macOS- und Linux-Computer. Die Version hat keine Android-, iOS- oder Browser-Wallet, Lightning-Zahlungen oder andere Kryptowährungen. Beginne auf der [offiziellen Ginger-Website](https://gingerwallet.io/) und deren Veröffentlichungslinks; gib Wörter nicht bloß wegen des Ginger-Namens in Apps oder Websites ein.
 
 <span id="do-i-need-an-account-my-own-node-or-a-hardware-wallet" data-ginger-heading="brauche-ich-ein-konto-eigenen-node-oder-hardware" aria-hidden="true"></span>
 
@@ -202,6 +202,18 @@ Der normale manuelle Player kann die Starttaste verbergen, wenn das gesamte Guth
 
 ## Zahlungen und Hardware
 
+<span id="can-i-pay-several-recipients-in-one-transaction" data-ginger-heading="kann-ich-mehrere-empfänger-in-einer-transaktion-bezahlen" aria-hidden="true"></span>
+
+### Kann ich mehrere Empfänger in einer Transaktion bezahlen?
+
+Ja. Wähle in **Send** die Option **Pay to multiple recipients** und gib Adresse, Betrag und Bezeichnungen jedes Empfängers ein. Prüfe vor der Bestätigung alle endgültigen Empfängerbeträge und die Gesamtgebühr. Ziehst du die Gebühr von einer Zahlung ab, wird sie von der ersten Zahlung abgezogen. Sammelzahlungen verbinden die Ziele in einer öffentlichen Transaktion; siehe [an mehrere Empfänger senden](/de/payments/send/#pay-several-recipients-in-one-transaction).
+
+<span id="can-i-make-taproot-my-usual-receiving-address-type" data-ginger-heading="kann-ich-taproot-als-üblichen-empfangsadresstyp-festlegen" aria-hidden="true"></span>
+
+### Kann ich Taproot als üblichen Empfangsadresstyp festlegen?
+
+Öffne bei einer Wallet mit Taproot-Unterstützung in **Receive** das Dropdown neben **Generate** und wähle **Set as Default** neben Taproot. **Generate** und Enter folgen der gespeicherten Präferenz dieser Wallet. Bestehende Wallets beginnen mit SegWit. Prüfe zuerst die Adressunterstützung des Zahlers; siehe [Empfangsadresspräferenzen](/de/payments/receive/).
+
 <span id="why-is-a-payment-still-pending-after-the-estimated-time" data-ginger-heading="warum-ist-zahlung-nach-geschätzter-zeit-noch-ausstehend" aria-hidden="true"></span>
 
 ### Warum ist Zahlung nach geschätzter Zeit noch ausstehend?
@@ -252,4 +264,4 @@ Nutze [offizielle Repository-Links](https://github.com/GingerPrivacy/GingerWalle
 
 ## Über dieses Handbuch
 
-Dieses Handbuch beschreibt Ginger v2.0.26 und verwendet englische Oberflächenbezeichnungen. Dokumentation und Übersetzungen können Fehler enthalten; Ginger garantiert ihre Richtigkeit nicht. Prüfe kritische Details in der Anwendung vor Fortsetzung. [Melde Fehler im Dokumentationsrepository](https://github.com/GingerPrivacy/GingerDoc/issues) ohne Wallet-Geheimnisse.
+Dieses Handbuch enthält die aktualisierten Abläufe aus [Ginger v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) und verwendet englische Oberflächenbezeichnungen. Dokumentation und Übersetzungen können Fehler enthalten; Ginger garantiert ihre Richtigkeit nicht. Prüfe kritische Details in der Anwendung vor Fortsetzung. [Melde Fehler im Dokumentationsrepository](https://github.com/GingerPrivacy/GingerDoc/issues) ohne Wallet-Geheimnisse.

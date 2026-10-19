@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.send"
 title: "Bitcoin gönderin ve ücretleri gözden geçirin"
-description: "Bir Ginger ödemesi hazırlayın, alıcıyı ve tutarı doğrulayın, ücret oranlarını ve para üstünü anlayın ve işlemi yetkilendirin."
+description: "Tek veya toplu Bitcoin ödemeleri hazırlayın, her alıcıyı ve nihai tutarı doğrulayın, ücret ve para üstünü gözden geçirin ve işlemi yetkilendirin."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -26,6 +26,20 @@ Ginger onaylanmış Bitcoin ödemesini geri çağıramaz. Onaylamadan önce alı
 
 Mevcut fonların tamamını gönderirken ücret, alıcının alacağı tutardan düşülebilir. Sabit tutarlı istekler ve PayJoin farklı kısıtlamalara sahiptir. Cüzdan bakiyesinin tamamının hedefe ulaşabileceğini varsaymak yerine gerçek alıcı tutarını önizlemede kontrol edin.
 
+<span id="pay-several-recipients-in-one-transaction" data-ginger-heading="tek-bir-işlemde-birden-fazla-alıcıya-ödeme-yapın" aria-hidden="true"></span>
+
+## Tek bir işlemde birden fazla alıcıya ödeme yapın
+
+Toplu ödeme oluşturmak için gönderme düzenleyicisinde **Pay to multiple recipients** seçeneğini seçin. İlk ödeme, önceden girdiğiniz adresi, tutarı ve etiketleri korur.
+
+1. Her ödeme için farklı bir Bitcoin adresi, tutar ve alıcı etiketi girin. Bu düzenleyicide düz adresler kullanın; ödeme URI'leri ve Payjoin tek alıcılı süreçte kullanılır. Sabit tutarlı bir ödeme isteği toplu ödemeye genişletilemez.
+2. Daha fazla satır için **Add another payment**, bir ödemeyi kaldırmak için yanındaki **Delete** seçeneğini seçin. Yalnızca bir ödeme kalırsa düzenleyici tek alıcılı düzene döner ve o ödemenin ayrıntılarını korur.
+3. Madencilik ücretini kimin karşılayacağına karar verin. **Subtract the transaction fee from the first payment** seçiliyken ilk alıcı girilen tutardan daha az alır; diğer ödeme tutarları aynı kalır. Seçim kaldırıldığında cüzdanınız ücreti girilen tutarlara ek olarak öder. Toplu ödemede **Max** kullanmak ücret düşmeyi etkinleştirir; devam etmeden önce seçimi kontrol edin.
+4. **Continue** seçeneğini seçin. Önizlemede numaralandırılmış her adresi, alıcı etiketini ve nihai tutarı toplam ücretle birlikte inceleyin. Özellikle ücret düşülüyorsa ilk alıcının kararlaştırılan tutarı hâlâ aldığını doğrulayın.
+5. Gerekirse geri dönerek ödemeleri düzeltin. Girdiğiniz satırlar ve ücret düşme tercihiniz korunur. **Confirm** seçeneğini seçip yetkilendirmeyi tamamlamadan önce yeniden oluşturulan önizlemeyi ve ücreti tekrar inceleyin.
+
+Toplu ödemedeki tüm alıcılar tek bir herkese açık işlemi paylaşır; bu nedenle ödemeler birbiriyle ilişkilendirilebilir. İlişkisiz ödemeleri birleştirmeden önce bunu düşünün. Alıcı etiketleri yerel cüzdan üst verisi olarak kalır; alıcılara gönderilmez veya blok zincirinde yayınlanmaz.
+
 <span id="check-the-fee-without-custom-settings" data-ginger-heading="özel-ayar-kullanmadan-ücreti-kontrol-edin" aria-hidden="true"></span>
 
 ## Özel ayar kullanmadan ücreti kontrol edin
@@ -33,6 +47,8 @@ Mevcut fonların tamamını gönderirken ücret, alıcının alacağı tutardan 
 Önizlemede toplam ücreti ve tahmini onay tercihini gözden geçirin. Ücret işlem alanı için ödenir; yalnızca ödemenin bir yüzdesi değildir. Süre tahmini değişebilir ve garanti değildir.
 
 Anladığınız, mevcut bir ücret tahminini kullanın. Tahminler yoksa ve ne seçeceğinizden emin değilseniz çok yüksek bir özel ücreti tahmin etmek yerine bekleyip araştırın.
+
+Onaylamadan önce daha yakından incelemek için önizlemede **View transaction** seçeneğini seçin. Girdileri ve çıktıları gösteren ayrı bir pencere açılır. Kullanılabilir ayrıntılar için [işlem inceleme kılavuzuna](/tr/payments/coin-control-history/#inspect-inputs-and-outputs) bakın.
 
 <span id="the-leftover-money-is-change" data-ginger-heading="artan-para-para-üstüdür" aria-hidden="true"></span>
 

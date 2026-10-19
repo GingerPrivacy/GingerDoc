@@ -3,7 +3,7 @@ doc_id: "help.faq"
 title: "Ginger Wallet 常见问题：从这里开始"
 description: "查找资金缺失、备份、恢复、CoinJoin 等待和费用、待确认付款、硬件钱包及安全求助的简短回答。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -34,7 +34,7 @@ Ginger 是用于接收和发送比特币链上交易的桌面应用，带可选 
 
 ### 有官方手机或网页钱包吗？
 
-v2.0.26 提供受支持 Windows、macOS 和 Linux 电脑的桌面软件。不提供 Android、iOS 或浏览器钱包、闪电网络付款或其他加密货币。从 [Ginger 官方网站](https://gingerwallet.io/)及其发布链接开始；不要仅因应用或网站使用 Ginger 名称就输入助记词。
+v2.0.27 提供受支持 Windows、macOS 和 Linux 电脑的桌面软件。不提供 Android、iOS 或浏览器钱包、闪电网络付款或其他加密货币。从 [Ginger 官方网站](https://gingerwallet.io/)及其发布链接开始；不要仅因应用或网站使用 Ginger 名称就输入助记词。
 
 <span id="do-i-need-an-account-my-own-node-or-a-hardware-wallet" data-ginger-heading="需要账户自有节点或硬件钱包吗" aria-hidden="true"></span>
 
@@ -202,6 +202,18 @@ Ginger 内置 Tor 用于常规钱包连接；仅运行钱包不需要安装 Tor 
 
 ## 付款与硬件
 
+<span id="can-i-pay-several-recipients-in-one-transaction" data-ginger-heading="可以在一笔交易中向多个收款人付款吗" aria-hidden="true"></span>
+
+### 可以在一笔交易中向多个收款人付款吗？
+
+可以。在 **Send** 中选择 **Pay to multiple recipients**，输入每位收款人的地址、金额和标签。确认前，检查每位收款人的最终金额与总手续费。如果从付款中扣除手续费，会从第一笔付款中扣除。批量付款会将这些目的地址放入同一笔公开交易；参阅[向多位收款人发送](/zh-cn/payments/send/#pay-several-recipients-in-one-transaction)。
+
+<span id="can-i-make-taproot-my-usual-receiving-address-type" data-ginger-heading="可以把-taproot-设为常用的接收地址类型吗" aria-hidden="true"></span>
+
+### 可以把 Taproot 设为常用的接收地址类型吗？
+
+对于支持 Taproot 的钱包，在 **Receive** 中打开 **Generate** 旁的下拉菜单，选择 Taproot 旁的 **Set as Default**。**Generate** 和 Enter 会使用此钱包保存的偏好。现有钱包起初使用 SegWit。请先检查付款方是否支持该地址类型；参阅[接收地址偏好](/zh-cn/payments/receive/)。
+
 <span id="why-is-a-payment-still-pending-after-the-estimated-time" data-ginger-heading="超过预计时间为什么付款仍待确认" aria-hidden="true"></span>
 
 ### 超过预计时间，为什么付款仍待确认？
@@ -252,4 +264,4 @@ Ginger 可准备普通比特币付款，但不保证服务商接受或账户政�
 
 ## 关于本手册
 
-本手册译自描述 Ginger v2.0.26 的英文手册，并保留其英文界面标签。文档及翻译可能有误。Ginger 不保证准确性；继续前在应用中核实关键细节。发现错误时，[在文档仓库报告](https://github.com/GingerPrivacy/GingerDoc/issues)，不要提供钱包秘密。
+本手册包含 [Ginger v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) 更新后的操作流程，并使用英文界面标签。文档和翻译可能存在错误。Ginger 不保证其准确性；操作前请在应用中核实关键细节。如果发现错误，请[在文档仓库中报告](https://github.com/GingerPrivacy/GingerDoc/issues)，不要包含钱包机密。

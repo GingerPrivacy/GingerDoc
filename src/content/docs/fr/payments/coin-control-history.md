@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.coin-control-history"
 title: "Contrôle des pièces, historique et transactions bloquées"
-description: "Examinez les UTXO et l'historique des paiements Ginger, sélectionnez les pièces de façon délibérée et comprenez quand une accélération ou une annulation est possible."
+description: "Examinez les UTXO de Ginger, les entrées et sorties des transactions et l’historique des paiements ; choisissez délibérément les pièces et gérez les paiements non confirmés."
 lang: "fr"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -42,6 +42,20 @@ L'écran d'accueil du portefeuille affiche les réceptions, les envois et l'acti
 Utilisez **Copy Transaction ID** pour identifier une transaction précise. Gardez les identifiants de transaction privés lorsque c'est possible : en partager un peut révéler des adresses, des montants et des liens avec d'autres activités. Un explorateur public apprend également les recherches que vous effectuez. L'historique local de Ginger est le premier endroit où vérifier vos propres paiements.
 
 Vous pouvez examiner, trier et regrouper l'historique, et copier les identifiants de transaction. Cette version ne propose pas de commande de recherche de transactions ni d'exportation CSV dans cette procédure d'historique.
+
+<span id="inspect-inputs-and-outputs" data-ginger-heading="examiner-les-entrées-et-les-sorties" aria-hidden="true"></span>
+
+## Examiner les entrées et les sorties
+
+Choisissez **View transaction** dans l'aperçu d'un envoi ou dans les détails d'une transaction pour ouvrir la fenêtre de visualisation des transactions. Pour une entrée CoinJoin regroupée dans l'historique, développez le groupe et ouvrez les détails d'un CoinJoin individuel pour trouver la même action. La fenêtre s'ouvre séparément et peut être redimensionnée ; faites glisser ses séparateurs pour donner plus de place au diagramme, aux détails de la sélection ou au récapitulatif.
+
+Le côté gauche répertorie les entrées et le côté droit, les sorties. Faites défiler les transactions longues, puis sélectionnez une entrée ou une sortie pour consulter son montant, son estimation actuelle en monnaie fiduciaire, son adresse, son outpoint, son type de script, ses étiquettes et son score d'anonymat connu. L'appartenance est indiquée par **Own wallet**, **External** ou **Change**, selon le cas. Un outpoint identifie une sortie précise par l'identifiant de sa transaction et son index de sortie.
+
+Utilisez les boutons de copie pour copier l'identifiant de transaction, l'adresse ou l'outpoint de la pièce sélectionnée. Le récapitulatif indique les totaux des entrées et sorties, les frais de minage et leur taux, la taille virtuelle, la date et l'état de la transaction : aperçu, en attente ou confirmée. Consulter un aperçu ne le signe pas et ne le diffuse pas.
+
+Certaines informations sur les entrées externes ne sont pas connues du portefeuille. Un montant d'entrée inconnu peut aussi rendre inconnus le total des entrées et les frais. Un score d'anonymat n'est affiché que si Ginger connaît celui de cette pièce du portefeuille ; les nouvelles sorties d'un aperçu d'envoi n'ont pas encore de score. **Unknown** ou un tiret ne signifie pas un score nul. Les montants en monnaie fiduciaire utilisent le taux de change actuel, même lors de l'examen d'une ancienne transaction.
+
+**Discreet Mode** masque les données de la transaction et désactive les actions de copie de la fenêtre. Désactivez-le lorsque vous pouvez examiner les détails en privé. Ouvrir cette fenêtre locale n'exige pas de partager la transaction avec un explorateur public.
 
 <span id="speed-up-an-unconfirmed-transaction" data-ginger-heading="accélérer-une-transaction-non-confirmée" aria-hidden="true"></span>
 

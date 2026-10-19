@@ -1,9 +1,9 @@
 ---
 doc_id: "help.troubleshooting"
 title: "Ginger Wallet sorunlarını giderin"
-description: "Kurtarma verilerini koruyarak eksik bakiyeleri, bağlantı sorunlarını, CoinJoin bekleme durumlarını, 2FA hatalarını ve donanım sorunlarını teşhis edin."
+description: "Kurtarma verilerini koruyarak eksik bakiyeleri, bağlantı sorunlarını, yapılandırma ve RPC hatalarını, CoinJoin bekleme durumlarını, 2FA arızalarını ve donanım sorunlarını teşhis edin."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -38,6 +38,27 @@ Bağlantıyı, bilgisayar saatini, boş depolama alanını ve yapılandırılmı
 
 **Wallet Settings** → **Tools** → **Resync** kullanıyorsanız önce yedekleri koruyun ve başka tarama bekleyin. Yalnızca ilerleme mesajını temizlemek için `Wallets`, `WalletBackups` veya 2FA dosyalarını silmeyin.
 
+<span id="startup-reports-an-invalid-configuration" data-ginger-heading="başlatılırken-geçersiz-yapılandırma-bildiriliyor" aria-hidden="true"></span>
+
+## Başlatılırken geçersiz yapılandırma bildiriliyor
+
+v2.0.27'de Ginger, `Config.json` dosyasını yükleyemezse özgün dosyayı koruyarak başlatmayı durdurur. Hata, dosyanın yolunu belirtir. Mümkün olduğunda Ginger, varsayılan ayarlar şablonu olarak yanında ayrı bir `Config.Default.json` oluşturur; mevcut bir şablon da korunur. Bu hata uygulama ayarlarıyla ilgilidir ve tek başına cüzdanın veya anahtarlarının hasarlı olduğu anlamına gelmez.
+
+1. Dosyaları değiştirmeden önce Ginger'ı kapatın ve [veri klasörünü ve cüzdan yedeklerini](/tr/backup-recovery/backup-files/) koruyun. Özgün `Config.json` dosyasının ayrı bir kopyasını saklayın.
+2. Yapılandırmayı anlıyorsanız `Config.Default.json` ile karşılaştırıp geçersiz JSON'u veya ayar değerini düzeltin. Ginger şablonu yazamadıysa dosya bulunmayabilir.
+3. Bilerek varsayılan uygulama ayarlarıyla başlamak için özgün `Config.json` dosyasını örneğin `Config.before-repair.json` olarak yeniden adlandırın ve saklayın. Yeni bir `Config.json` oluşturmak için Ginger'ı yeniden başlatın.
+4. Normal kullanıma dönmeden önce ağ, Tor, tam düğüm ve diğer özel ayarlarınızı gözden geçirin. Bu ayar dosyasını yeniden adlandırmak unutulan bir parolayı kurtarmaz veya cüzdan yedeklerinin yerini tutmaz. `Wallets`, `WalletBackups` ve 2FA dosyalarını olduğu gibi koruyun.
+
+Windows başlangıç ayarları daha önce hataya neden olduysa v2.0.27 eksik başlangıç kayıt defteri girdisini işler. Güncellemeden sonra **Settings** → **General** → **Run Ginger when computer starts** ayarını kontrol edin.
+
+<span id="json-rpc-does-not-start" data-ginger-heading="json-rpc-başlamıyor" aria-hidden="true"></span>
+
+## JSON-RPC başlamıyor
+
+Bu kontrol, Ginger'ın cüzdan JSON-RPC sunucusunu açıkça etkinleştirdiyseniz geçerlidir. v2.0.27'de hem `JsonRpcUser` hem de `JsonRpcPassword` boş olmayan değerler içermelidir; yalnızca boşluk içeren değerler reddedilir. Bunlar olmadan RPC sunucusu başlamayı reddeder ve nedenini günlüğe yazar; cüzdan uygulaması ise çalışmaya devam eder.
+
+Ginger kapalıyken `Config.json` dosyasında her iki kimlik bilgisini ayarlayın ve bağlanan istemciyi bunları kullanacak şekilde yapılandırın. Sunucuya ihtiyacınız yoksa bunun yerine `JsonRpcServerEnabled` değerini `false` yapın. Kimlik bilgilerini paylaşılan günlüklerden ve destek taleplerinden uzak tutun. Bunlar Ginger cüzdanının RPC ayarlarıdır; Bitcoin Core düğümünün RPC kimlik bilgilerinden ve cüzdan parolasından ayrıdır.
+
 <span id="coinjoin-does-not-start" data-ginger-heading="coinjoin-başlamıyor" aria-hidden="true"></span>
 
 ## CoinJoin başlamıyor
@@ -56,6 +77,8 @@ Bağlantıyı, bilgisayar saatini, boş depolama alanını ve yapılandırılmı
 | Donanım kaynak cüzdanı | Otomatik CoinJoin imzalaması uygun yazılım cüzdanı gerektirir |
 
 Tur katılımcıları tamamlayamayabilir veya kesilen katılımdan sonra coin geçici olarak kullanılamaz olabilir. Tekrarlanan denemeler, içe aktarmalar veya koordinatör reddini aşma girişimleri onarım değildir. Beklemek veya resmî desteğe başvurmak için nedeni ve güncel durumu kullanın.
+
+Ginger'ın 2.0.27 sürümü, CoinJoin durdurulurken macOS'ta oluşan bir çökmeyi düzeltir. Ginger katılım sırasında kapanırsa yeniden açın, cüzdanın eşitlenmesini bekleyin ve işlemin başarısız olduğunu varsaymadan önce geçmişi inceleyin. Uygulamayı kapatmak zaten yayınlanmış bir işlemi geri almaz. Tekrarlanan hataları ve kurulu sürümü destek için kaydedin.
 
 <span id="payment-or-fee-problems" data-ginger-heading="ödeme-veya-ücret-sorunları" aria-hidden="true"></span>
 

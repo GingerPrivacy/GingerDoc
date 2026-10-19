@@ -3,7 +3,7 @@ doc_id: "settings-network.secret-hunt"
 title: "Secret Hunt dans Ginger Wallet"
 description: "Consultez les résultats des événements Secret Hunt de Ginger, contrôlez la participation du portefeuille et comprenez les informations reçues par le service d'événements."
 lang: "fr"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -19,7 +19,9 @@ next: false
 
 Ouvrez le menu d'un portefeuille logiciel et choisissez **Secret Hunt**. Le dialogue présente les résultats d'événements sous forme d'arborescence, notamment les mots ou phrases découverts et un secret supplémentaire lorsque les secrets requis par l'événement ont été collectés. Développez un événement pour examiner ses entrées.
 
-Utilisez **Enable/disable the use of this wallet for Secret Hunt.** pour contrôler la participation de ce portefeuille. Elle est activée par défaut dans la version publiée. La désactivation efface l'arborescence affichée pour la vue désactivée et empêche le mécanisme de mise à jour de sélectionner ce portefeuille pour les contrôles d'admissibilité aux événements. Elle n'annule pas CoinJoin, ne supprime pas les transactions de la blockchain et n'efface pas les informations déjà envoyées à un service.
+Utilisez **Enable/disable the use of this wallet for Secret Hunt.** pour contrôler la participation de ce portefeuille. Dans v2.0.27, Secret Hunt est désactivé par défaut pour les nouveaux portefeuilles : activez-le séparément pour chaque portefeuille que vous souhaitez faire participer. Les portefeuilles existants conservent leur réglage enregistré lors de la mise à niveau ; vérifiez donc cet interrupteur si vous utilisiez déjà Secret Hunt.
+
+La désactivation efface l'arborescence affichée pour la vue désactivée et empêche le mécanisme de mise à jour de sélectionner ce portefeuille pour les contrôles d'admissibilité aux événements. Elle n'annule pas CoinJoin, ne supprime pas les transactions de la blockchain et n'efface pas les informations déjà envoyées à un service.
 
 Cette entrée n'est pas proposée pour les portefeuilles en lecture seule. Ce n'est pas une fonction de CoinJoin pour portefeuille matériel, et elle n'exige pas de saisir des mots de récupération sur un site d'événement.
 

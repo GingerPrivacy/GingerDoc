@@ -1,9 +1,9 @@
 ---
 doc_id: "help.troubleshooting"
 title: "Ginger Wallet-hibaelhárítás"
-description: "Vizsgáld a hiányzó egyenleget, kapcsolati problémát, CoinJoin-várakozást, 2FA-hibát és hardvergondot a helyreállítási adatok megőrzésével."
+description: "Vizsgáld a hiányzó egyenleget, a kapcsolati, konfigurációs és RPC-hibákat, a CoinJoin várakozási állapotait, a 2FA- és hardvergondokat a helyreállítási adatok megőrzésével."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -38,6 +38,27 @@ Az **Awaiting connection** gyorsítótárazott előzmények mellett is megakadá
 
 A **Wallet Settings** → **Tools** → **Resync** előtt őrizd meg a mentéseket, és számíts új keresésre. Pusztán állapotüzenet eltüntetésére ne töröld a `Wallets`, `WalletBackups` vagy 2FA-fájlokat.
 
+<span id="startup-reports-an-invalid-configuration" data-ginger-heading="indításkor-hibás-konfigurációt-jelez" aria-hidden="true"></span>
+
+## Indításkor hibás konfigurációt jelez
+
+A v2.0.27-ben a Ginger leállítja az indulást, ha nem tudja betölteni a `Config.json` fájlt, és megőrzi az eredeti fájlt. A hibaüzenet megadja az útvonalát. Amikor lehetséges, a Ginger külön `Config.Default.json` fájlt hoz létre mellette az alapbeállítások mintájaként; a már meglévő mintafájlt is megőrzi. A hiba az alkalmazás beállításaira vonatkozik, és önmagában nem jelenti a pénztárca vagy kulcsai sérülését.
+
+1. Zárd be a Gingert, és fájlmódosítás előtt őrizd meg [az adatmappát és a pénztárcamentéseket](/hu/backup-recovery/backup-files/). Az eredeti `Config.json` fájlról is tarts külön másolatot.
+2. Ha érted a konfigurációt, hasonlítsd össze a `Config.Default.json` fájllal, és javítsd a hibás JSON-t vagy beállításértéket. A mintafájl hiányozhat, ha a Ginger nem tudta kiírni.
+3. Ha tudatosan az alkalmazás alapbeállításaival szeretnél indulni, nevezd át az eredeti `Config.json` fájlt például `Config.before-repair.json` névre, és őrizd meg. Új `Config.json` létrehozásához indítsd újra a Gingert.
+4. A szokásos használat folytatása előtt ellenőrizd a hálózati, Tor-, teljescsomópont- és más egyedi beállításokat. A beállításfájl átnevezése nem állít helyre elfelejtett jelmondatot, és nem helyettesíti a pénztárcamentést. A `Wallets`, `WalletBackups` és 2FA-fájlokat hagyd érintetlenül.
+
+Ha a Windows indítási beállításai korábban hibát okoztak, a v2.0.27 már kezeli a hiányzó automatikus indítási bejegyzést a rendszerleíró adatbázisban. Frissítés után ellenőrizd a **Settings** → **General** → **Run Ginger when computer starts** beállítást.
+
+<span id="json-rpc-does-not-start" data-ginger-heading="nem-indul-a-json-rpc" aria-hidden="true"></span>
+
+## Nem indul a JSON-RPC
+
+Ez az ellenőrzés akkor vonatkozik rád, ha külön bekapcsoltad a Ginger pénztárca-JSON-RPC-szerverét. A v2.0.27-ben a `JsonRpcUser` és a `JsonRpcPassword` egyaránt nem üres értéket igényel; a csak szóközökből vagy más térközkarakterekből álló értékeket a rendszer elutasítja. Ezek hiányában az RPC-szerver nem indul, és naplózza az okot, miközben a pénztárca-alkalmazás tovább működik.
+
+Bezárt Ginger mellett állítsd be mindkét hitelesítő adatot a `Config.json` fájlban, és állítsd be a kapcsolódó klienst is ezek használatára. Ha nincs szükséged a szerverre, helyette állítsd a `JsonRpcServerEnabled` értékét `false`-ra. A hitelesítő adatokat ne oszd meg naplóban vagy segítségkérésben. Ezek a Ginger pénztárca-RPC-beállításai; különböznek a Bitcoin Core csomópont RPC-hitelesítő adataitól és a pénztárca jelmondatától.
+
 <span id="coinjoin-does-not-start" data-ginger-heading="a-coinjoin-nem-indul" aria-hidden="true"></span>
 
 ## A CoinJoin nem indul
@@ -56,6 +77,8 @@ A **Wallet Settings** → **Tools** → **Resync** előtt őrizd meg a mentések
 | Hardveres forráspénztárca | Automatikus CoinJoin-aláíráshoz alkalmas szoftverpénztárca kell |
 
 Résztvevők nem fejezhetik be a kört, vagy megszakadt részvétel után UTXO átmenetileg elérhetetlenné válhat. Ismételt próbálkozás, import vagy a koordinátor elutasításának kijátszása nem javítás. Az ok és állapot alapján dönts várásról vagy hivatalos segítségkérésről.
+
+A 2.0.27 verzió javítja a CoinJoin leállításakor fellépő macOS-összeomlást. Ha a Ginger részvétel közben bezáródik, nyisd újra, várd meg a pénztárca szinkronizálását, és ellenőrizd az előzményeket, mielőtt sikertelennek tekinted a tranzakciót. Az alkalmazás bezárása nem fordít vissza már továbbított tranzakciót. A támogatásnak jegyezd fel az ismétlődő hibát és a telepített verziót.
 
 <span id="payment-or-fee-problems" data-ginger-heading="fizetési-vagy-díjproblémák" aria-hidden="true"></span>
 

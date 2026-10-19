@@ -3,7 +3,7 @@ doc_id: "help.faq"
 title: "Perguntas frequentes sobre o Ginger Wallet: comece aqui"
 description: "Respostas curtas sobre fundos ausentes, cópias de segurança, recuperação, espera e taxas do CoinJoin, pagamentos pendentes, carteiras de hardware e apoio seguro."
 lang: "pt-PT"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -34,7 +34,7 @@ O Ginger é um programa para computador que recebe e envia Bitcoin na cadeia de 
 
 ### Existe uma carteira oficial para telemóvel ou para a web?
 
-A versão v2.0.26 oferece software para computadores compatíveis com Windows, macOS e Linux. Ela não oferece carteira para Android, iOS ou navegador, pagamentos Lightning ou outras criptomoedas. Comece pelo [site oficial do Ginger](https://gingerwallet.io/) e pelas ligações de versões disponibilizadas nele; não introduza palavras de recuperação num programa ou site apenas porque ele usa o nome Ginger.
+A versão v2.0.27 oferece software para computadores compatíveis com Windows, macOS e Linux. Ela não oferece carteira para Android, iOS ou navegador, pagamentos Lightning ou outras criptomoedas. Comece pelo [site oficial do Ginger](https://gingerwallet.io/) e pelas ligações de versões disponibilizadas nele; não introduza palavras de recuperação num programa ou site apenas porque ele usa o nome Ginger.
 
 <span id="do-i-need-an-account-my-own-node-or-a-hardware-wallet" data-ginger-heading="preciso-de-uma-conta-do-meu-próprio-nó-ou-de-uma-carteira-de-hardware" aria-hidden="true"></span>
 
@@ -202,6 +202,18 @@ O painel de controlo manual comum pode ocultar o botão de início quando todos 
 
 ## Pagamentos e hardware
 
+<span id="can-i-pay-several-recipients-in-one-transaction" data-ginger-heading="posso-pagar-vários-destinatários-numa-transação" aria-hidden="true"></span>
+
+### Posso pagar vários destinatários numa transação?
+
+Sim. Em **Send**, escolha **Pay to multiple recipients** e insira o endereço, o valor e as etiquetas de cada destinatário. Confira cada valor final dos destinatários e a taxa total antes de confirmar. Se descontar a taxa de um pagamento, ela será retirada do primeiro pagamento. O pagamento em lote reúne os destinos numa transação pública; consulte [envio para vários destinatários](/pt-pt/payments/send/#pay-several-recipients-in-one-transaction).
+
+<span id="can-i-make-taproot-my-usual-receiving-address-type" data-ginger-heading="posso-usar-taproot-como-o-meu-tipo-habitual-de-endereço-de-receção" aria-hidden="true"></span>
+
+### Posso usar Taproot como o meu tipo habitual de endereço de receção?
+
+Numa carteira compatível com Taproot, abra o menu pendente ao lado de **Generate** em **Receive** e escolha **Set as Default** ao lado de Taproot. **Generate** e Enter seguem a preferência guardada dessa carteira. As carteiras existentes começam com SegWit. Verifique primeiro a compatibilidade de endereços do pagador; consulte [preferências de endereços de receção](/pt-pt/payments/receive/).
+
 <span id="why-is-a-payment-still-pending-after-the-estimated-time" data-ginger-heading="porque-é-que-um-pagamento-continua-pendente-depois-do-tempo-estimado" aria-hidden="true"></span>
 
 ### Porque é que um pagamento continua pendente depois do tempo estimado?
@@ -252,4 +264,4 @@ Use as ligações do [repositório oficial do Ginger](https://github.com/GingerP
 
 ## Sobre este manual
 
-O manual original em inglês descreve o Ginger v2.0.26 e usa os nomes em inglês da interface. A documentação e as traduções podem conter erros. O Ginger não garante sua precisão; verifique os detalhes críticos no programa antes de prosseguir. Se encontrar um erro, [relate-o no repositório da documentação](https://github.com/GingerPrivacy/GingerDoc/issues), sem incluir segredos da carteira.
+Este manual inclui os procedimentos atualizados do [Ginger v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) e usa os nomes em inglês da interface. A documentação e as traduções podem conter erros. O Ginger não garante sua precisão; verifique os detalhes críticos na aplicação antes de prosseguir. Se encontrar um erro, [relate-o no repositório da documentação](https://github.com/GingerPrivacy/GingerDoc/issues), sem incluir segredos da carteira.

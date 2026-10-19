@@ -3,7 +3,7 @@ doc_id: "payments.payjoin-message-signing"
 title: "PayJoin e firma dei messaggi"
 description: "Invia una richiesta di pagamento PayJoin, comprendi ciò che sa il destinatario, i tratti riconoscibili dei portafogli e il ripiego sul pagamento ordinario e firma un messaggio circoscritto sul controllo di un indirizzo."
 lang: "it"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -19,22 +19,34 @@ PayJoin e firma dei messaggi sono strumenti separati. PayJoin cambia il modo in 
 
 PayJoin è un pagamento collaborativo in cui chi riceve può contribuire con un input. Questo può indebolire l'ipotesi che tutti gli input di un pagamento dall'aspetto ordinario appartengano a un solo mittente. Il destinatario deve fornire un URI di pagamento Bitcoin compatibile contenente un endpoint PayJoin; un normale indirizzo da solo non lo abilita. Il protocollo è descritto nel [BIP78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
 
-1. Usa un portafoglio software con fondi spendibili. Questa versione rifiuta le richieste PayJoin per l'invio da portafogli hardware.
+1. Usa un portafoglio software con fondi spendibili. PayJoin supporta input e resto SegWit e Taproot del mittente. Questa versione rifiuta le richieste PayJoin per l'invio da portafogli hardware.
 2. Incolla l'URI di pagamento completo in **Send**, anziché copiarne solo l'indirizzo. Controlla destinazione e importo tramite lo stesso canale affidabile che useresti per qualsiasi pagamento.
-3. Controlla l'anteprima della transazione e l'indicatore PayJoin, poi autorizza il pagamento se importo e commissioni sono accettabili.
+3. Controlla l'anteprima della transazione e l'indicatore PayJoin, poi autorizza il pagamento se l'importo e le impostazioni delle commissioni sono accettabili. PayJoin è una procedura per un solo destinatario; non può essere combinato con un pagamento multiplo o con la detrazione della commissione dall'importo del destinatario.
 4. Controlla la transazione risultante nella cronologia.
 
 L'implementazione pubblicata può ripiegare sulla normale transazione di pagamento se la costruzione PayJoin fallisce. Pertanto, autorizzare questa procedura non garantisce che la transazione trasmessa sia un PayJoin. Non usarla quando il ripiego su un pagamento ordinario violerebbe i tuoi requisiti di privacy.
 
-Usa un endpoint HTTPS compatibile per mainnet. Nella v2.0.26 i controlli degli endpoint rifiutano gli endpoint onion mentre Tor è attivo; una richiesta solo onion non va considerata un percorso supportato. Mantieni Tor attivo e chiedi al destinatario un'alternativa compatibile, anziché disattivare la privacy di rete per forzare la richiesta.
+Su mainnet, un normale endpoint Internet deve usare HTTPS. Un endpoint `.onion` HTTP o HTTPS è supportato quando Tor è attivo e viene rifiutato quando Tor è disattivato. Gli altri schemi URL vengono rifiutati. Se l'endpoint non è supportato, Ginger ignora l'endpoint PayJoin: controlla quindi che l'anteprima identifichi ancora il pagamento come PayJoin prima di continuare.
 
 Questa guida riguarda l'invio di una richiesta fornita dal destinatario. La normale procedura **Receive** di Ginger non gestisce un server di ricezione PayJoin e questa versione non offre una procedura utente per configurarne uno.
+
+<span id="negotiated-outputs-and-fees" data-ginger-heading="output-e-commissioni-negoziati" aria-hidden="true"></span>
+
+## Output e commissioni negoziati
+
+La richiesta di pagamento può limitare la sostituzione degli output con `pjos=0`. Ginger inoltra questa limitazione al destinatario e rifiuta una proposta che sostituisce l'output di pagamento richiesto o ne riduce l'importo. Se la sostituzione è consentita, il destinatario può usare un output di ricezione diverso durante la negoziazione. L'input aggiunto dal destinatario può anche rendere l'output di ricezione on-chain maggiore dell'importo del tuo pagamento.
+
+Ginger comunica un contributo massimo aggiuntivo alla commissione di mining, calcolato automaticamente dalla tariffa originale. Rifiuta una proposta che impone al tuo portafoglio un contributo superiore al limite comunicato. Questo rifiuto ricorre al pagamento ordinario alternativo descritto sopra; non annulla necessariamente il pagamento.
+
+L'anteprima viene costruita prima della negoziazione PayJoin finale, che avviene dopo l'autorizzazione. La transazione negoziata può avere una commissione diversa da quella dell'anteprima originale. Ginger ricalcola le informazioni sulle commissioni della transazione completata dalla transazione finale, ma non mostra una seconda anteprima di conferma dopo la negoziazione. Controlla la transazione finale nella cronologia e non considerare l'indicatore PayJoin iniziale una prova che la negoziazione sia riuscita.
 
 <span id="what-the-recipient-and-an-observer-learn" data-ginger-heading="cosa-scoprono-il-destinatario-e-un-osservatore" aria-hidden="true"></span>
 
 ## Cosa scoprono il destinatario e un osservatore
 
 Il destinatario conosce già la richiesta di pagamento, il suo indirizzo di ricezione e l'importo previsto. Se la richiesta è associata a un ordine collegato alla tua identità, PayJoin non cancella quel collegamento. Durante la negoziazione, il servizio di ricezione vede anche la transazione di pagamento proposta, compresi gli input proposti dal mittente. Non va considerato un soggetto a cui il pagamento stesso sia nascosto.
+
+Prima di inviare la richiesta di negoziazione, Ginger rimuove i metadati sull'origine delle chiavi del portafoglio, inclusi i percorsi di derivazione Taproot e le chiavi pubbliche estese globali. Questo riduce le informazioni superflue sul portafoglio inviate al destinatario; input, output e importi della transazione proposta gli rimangono visibili.
 
 Un osservatore esterno vede la transazione infine pubblicata su Bitcoin. Un PayJoin riuscito può rendere inaffidabile la comune ipotesi che «tutti gli input appartengano al mittente». Questo beneficio dipende dalla transazione e dalle altre informazioni dell'osservatore; non garantisce che la transazione sia indistinguibile da ogni pagamento ordinario.
 

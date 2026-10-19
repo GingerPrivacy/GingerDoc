@@ -3,7 +3,7 @@ doc_id: "settings-network.preferences"
 title: "外观、语言与日常设置"
 description: "更改 Ginger 语言、显示格式、后台行为、浏览器偏好和隐蔽模式，并区分这些设置与钱包安全。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -17,7 +17,7 @@ next: false
 
 ## 语言与金额
 
-在 **Settings** → **Appearance** 中，**Language** 选择界面语言。2.0.26 版本提供英语、西班牙语、匈牙利语、法语、中文、德语、葡萄牙语、土耳其语和意大利语。按要求重启。本手册保留已发布的英文界面标签；翻译标签可能有所不同。
+在 **Settings** → **Appearance** 中，**Language** 用于选择界面语言。2.0.27 版本提供十一种语言：英语、西班牙语、匈牙利语、法语、中文、德语、葡萄牙语、土耳其语、意大利语、巴西葡萄牙语和俄语。两种葡萄牙语选项显示为 **Português** 和 **Português (Brasil)**；俄语显示为 **Русский**。如果出现重启提示，请按提示操作。本手册使用已发布版本的英文标签；翻译后的标签可能不同。
 
 **Dark mode** 更改外观。**Exchange currency** 更改参考法币显示；小数和分组分隔符、比特币小数分组及 **Fee display unit** 控制数字格式。这些不会改变实际 BTC 金额或网络交易手续费。在不熟悉的格式中输入金额前，阅读设置里的示例。
 
@@ -51,5 +51,7 @@ next: false
 ## 钱包信息与工具
 
 **Wallet Info** 可以显示账户和扩展公钥信息。扩展公钥不能直接花费币，但能透露许多相关地址。不要将它发布在公开求助中。
+
+每个钱包的默认接收地址类型在 **Receive** 中单独保存。支持 Taproot 时，可选择 SegWit 或 Taproot，作为 **Generate** 和 Enter 使用的默认类型。此偏好与整个应用的外观设置相互独立；控件与兼容性检查请参阅[接收地址](/zh-cn/payments/receive/)。
 
 在 **Wallet Settings** → **General** 中，使用名称控件重命名钱包。在 **Tools** 中，**Verify Recovery Words** 检查可访问软件钱包的备份，**Resync** 重建其视图，**Delete Wallet** 通过确认流程删除本地钱包。删除不会销毁比特币、撤销助记词或替代备份。移除本地访问前，保留有效恢复信息。

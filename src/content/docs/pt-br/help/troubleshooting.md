@@ -1,9 +1,9 @@
 ---
 doc_id: "help.troubleshooting"
 title: "Solução de problemas do Ginger Wallet"
-description: "Diagnostique saldos ausentes, problemas de conexão, estados de espera do CoinJoin, falhas de 2FA e problemas de hardware, preservando os dados de recuperação."
+description: "Diagnostique saldos ausentes, problemas de conexão, erros de configuração e RPC, estados de espera do CoinJoin, falhas de 2FA e problemas de hardware, preservando os dados de recuperação."
 lang: "pt-BR"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -38,6 +38,27 @@ Confira a conectividade, o relógio do computador, o espaço livre e o status de
 
 Se usar **Wallet Settings** → **Tools** → **Resync**, preserve os backups primeiro e espere uma nova varredura. Não apague `Wallets`, `WalletBackups` ou arquivos de 2FA apenas para remover uma mensagem de progresso.
 
+<span id="startup-reports-an-invalid-configuration" data-ginger-heading="a-inicialização-informa-uma-configuração-inválida" aria-hidden="true"></span>
+
+## A inicialização informa uma configuração inválida
+
+Na v2.0.27, o Ginger interrompe a inicialização se não conseguir carregar `Config.json`, preservando o arquivo original. O erro informa o caminho dele. Quando possível, o Ginger cria um `Config.Default.json` separado ao lado dele como modelo das configurações padrão; um modelo existente também é preservado. Esse erro diz respeito às configurações do aplicativo e, por si só, não significa que uma carteira ou suas chaves estejam danificadas.
+
+1. Feche o Ginger e preserve [a pasta de dados e os backups das carteiras](/pt-br/backup-recovery/backup-files/) antes de alterar arquivos. Mantenha uma cópia separada do `Config.json` original.
+2. Se entender a configuração, compare-a com `Config.Default.json` e corrija o JSON inválido ou o valor da configuração. O modelo pode estar ausente se o Ginger não tiver conseguido gravá-lo.
+3. Para iniciar deliberadamente com as configurações padrão do aplicativo, renomeie o `Config.json` original, por exemplo para `Config.before-repair.json`, e guarde-o. Reinicie o Ginger para gerar um novo `Config.json`.
+4. Confira suas configurações de rede, Tor, nó completo e outras personalizações antes de retomar o uso normal. Renomear esse arquivo de configurações não recupera uma frase-senha esquecida nem substitui os backups da carteira. Mantenha `Wallets`, `WalletBackups` e os arquivos de 2FA intactos.
+
+Se as configurações de inicialização do Windows causavam um erro, a v2.0.27 passa a lidar com a ausência de uma entrada de inicialização no Registro. Confira **Settings** → **General** → **Run Ginger when computer starts** após atualizar.
+
+<span id="json-rpc-does-not-start" data-ginger-heading="o-json-rpc-não-inicia" aria-hidden="true"></span>
+
+## O JSON-RPC não inicia
+
+Essa verificação se aplica se tiver ativado explicitamente o servidor JSON-RPC da carteira Ginger. Na v2.0.27, ele exige que `JsonRpcUser` e `JsonRpcPassword` contenham valores não vazios; valores compostos apenas por espaços são rejeitados. Sem eles, o servidor RPC se recusa a iniciar e registra o motivo, enquanto o aplicativo da carteira continua funcionando.
+
+Com o Ginger fechado, defina ambas as credenciais em `Config.json` e configure o cliente que se conecta para usá-las. Se não precisar do servidor, defina `JsonRpcServerEnabled` como `false`. Não inclua credenciais em logs compartilhados e solicitações de suporte. Essas são configurações RPC da carteira Ginger, separadas das credenciais RPC de um nó Bitcoin Core ou da frase-senha da carteira.
+
 <span id="coinjoin-does-not-start" data-ginger-heading="coinjoin-não-inicia" aria-hidden="true"></span>
 
 ## CoinJoin não inicia
@@ -56,6 +77,8 @@ Se usar **Wallet Settings** → **Tools** → **Resync**, preserve os backups pr
 | Carteira de hardware como origem | A assinatura automática CoinJoin exige uma carteira de software elegível |
 
 Os participantes de uma rodada podem não concluir suas etapas, ou uma moeda pode ficar temporariamente indisponível após uma participação interrompida. Repetir tentativas, importações ou esforços para contornar a rejeição de um coordenador não é uma correção. Use o motivo e o status atual para decidir se deve esperar ou contatar o suporte oficial.
+
+A versão 2.0.27 corrige um encerramento inesperado no macOS ao parar o CoinJoin. Se o Ginger fechar durante a participação, reabra-o, deixe a carteira sincronizar e inspecione o histórico antes de presumir que uma transação falhou. Fechar o aplicativo não reverte uma transação já transmitida. Registre qualquer erro recorrente e a versão instalada para o suporte.
 
 <span id="payment-or-fee-problems" data-ginger-heading="problemas-de-pagamento-ou-taxas" aria-hidden="true"></span>
 

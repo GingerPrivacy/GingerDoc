@@ -3,7 +3,7 @@ doc_id: "learn-coinjoin.trust-and-limits"
 title: "¿En qué confías cuando usas CoinJoin?"
 description: "Distingue el control de las claves de Bitcoin, los supuestos de privacidad de CoinJoin, la disponibilidad del coordinador, la independencia de los participantes y la verificación del software."
 lang: "es"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -27,6 +27,8 @@ Antes de participar, identifica tu objetivo: quizá quieras que un destinatario 
 | ¿Qué software estoy ejecutando? | El código abierto permite inspeccionar; verificar la descarga ayuda a establecer el origen y la integridad del archivo que obtuviste. | Una prueba de que todas las compilaciones estén libres de errores, que tu ordenador no esté comprometido o que un servicio remoto ejecute exactamente el código publicado |
 
 El [artículo WabiSabi, sección 7](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3) trata por separado la privacidad, los ataques activos y la prevención del robo. Esta guía aplica esa distinción a las decisiones del usuario; no es una auditoría de seguridad de un monedero o un coordinador instalados.
+
+En v2.0.27, Ginger comprueba el número de entradas y la tasa efectiva de comisión de minería de la transacción propuesta antes de completar la firma. También verifica que estén presentes sus entradas registradas y las salidas esperadas, y rechaza entradas registradas del monedero que estén duplicadas. Si fallan las comprobaciones de firma, retiene una firma de una entrada realmente presente en la transacción o no envía firmas si no queda ninguna de sus entradas. Las comprobaciones de las rondas de atribución de fallos restringen el reintento a las entradas y el importe máximo sugerido de la transacción anterior, y Ginger solo reutiliza sus monedas para las que se enviaron firmas. Son comprobaciones frente a propuestas concretas no válidas o incoherentes, no una garantía de honestidad del coordinador ni de independencia de los participantes. La [referencia de rondas](/es/coinjoin/round-details/) explica lo que una negativa o un reintento puede significar en la práctica.
 
 <span id="consider-the-observer" data-ginger-heading="considera-al-observador" aria-hidden="true"></span>
 

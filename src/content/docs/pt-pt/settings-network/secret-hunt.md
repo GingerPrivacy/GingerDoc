@@ -3,7 +3,7 @@ doc_id: "settings-network.secret-hunt"
 title: "Secret Hunt no Ginger Wallet"
 description: "Encontre os resultados dos eventos Secret Hunt do Ginger, controle a participação da carteira e compreenda as informações que o serviço de eventos recebe."
 lang: "pt-PT"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -19,7 +19,9 @@ next: false
 
 Abra o menu de uma carteira de software e escolha **Secret Hunt**. A caixa de diálogo mostra os resultados dos eventos numa árvore, incluindo palavras ou frases descobertas e um segredo adicional quando os segredos exigidos pelo evento foram recolhidos. Expanda um evento para inspecionar suas entradas.
 
-Use **Enable/disable the use of this wallet for Secret Hunt.** para controlar a participação dessa carteira. Na versão publicada, está ativado por predefinição. Desativá-lo limpa a árvore exibida na visão desativada e impede que o atualizador selecione essa carteira para as verificações de elegibilidade dos eventos. Isso não cancela CoinJoin, não exclui transações da cadeia de blocos nem apaga informações já enviadas a um serviço.
+Use **Enable/disable the use of this wallet for Secret Hunt.** para controlar a participação dessa carteira. Na v2.0.27, o Secret Hunt fica desativado por predefinição nas carteiras novas: ative-o separadamente para cada carteira com a qual quiser participar. As carteiras existentes mantêm a definição guardada ao atualizar; confira essa opção se já usava o Secret Hunt.
+
+Desativá-lo limpa a árvore exibida na vista desativada e impede que o atualizador selecione essa carteira para as verificações de elegibilidade dos eventos. Isso não cancela CoinJoin, não exclui transações da cadeia de blocos nem apaga informações já enviadas a um serviço.
 
 A opção não é oferecida para carteiras só de observação. Não é um recurso de CoinJoin de carteira de hardware e não exige inserir palavras de recuperação num site de evento.
 

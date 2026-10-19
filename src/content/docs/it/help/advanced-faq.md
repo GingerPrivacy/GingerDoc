@@ -3,7 +3,7 @@ doc_id: "help.advanced-faq"
 title: "Domande frequenti avanzate su Ginger Wallet"
 description: "Trova risposte relative alla versione pubblicata di Ginger su scansione di ripristino, metadati, xpub, controllo delle monete, avanzamento della privacy, costi CoinJoin completi, portafogli di destinazione e condivisione dei dati."
 lang: "it"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -108,7 +108,7 @@ Controlla sincronizzazione e soglia dust configurata prima di concludere che un 
 
 ### Posso impostare qualsiasi tariffa personalizzata o garantire un tempo di conferma?
 
-No. L'editor manuale delle commissioni pubblicato rifiuta tariffe sotto 1 sat/vByte e la politica di rete può richiedere più di quel minimo. Una tariffa personalizzata compete ancora con altre transazioni e non può riservare una scadenza di conferma. Controlla la commissione totale, non solo la tariffa, prima di confermare.
+No. L'editor manuale delle commissioni accetta tariffe fino a un minimo di **0.1 sat/vByte**. Una tariffa bassa è utile soltanto quando le condizioni di inoltro e della mempool lo consentono; il fatto che l'editor accetti una tariffa non garantisce che i peer inoltrino la transazione o che i miner la confermino. Una tariffa personalizzata non può riservare una scadenza di conferma. Controlla la commissione totale, non soltanto la tariffa, prima di confermare; consulta [le tariffe di commissione personalizzate](/it/using-ginger/fee/).
 
 <span id="coinjoin-costs-and-progress" data-ginger-heading="costi-coinjoin-e-avanzamento" aria-hidden="true"></span>
 

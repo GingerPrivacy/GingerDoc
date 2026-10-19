@@ -3,7 +3,7 @@ doc_id: "learn-coinjoin.trust-and-limits"
 title: "Di cosa ti fidi quando usi CoinJoin?"
 description: "Distingui il controllo delle chiavi Bitcoin, le ipotesi di privacy di CoinJoin, la disponibilità del coordinatore, l'indipendenza dei partecipanti e la verifica del software."
 lang: "it"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -27,6 +27,8 @@ Prima di partecipare, identifica l'obiettivo: forse vuoi far sapere meno degli a
 | Quale software sto eseguendo? | Il codice aperto consente l'ispezione; verificare il download aiuta a stabilire l'origine e l'integrità del file ottenuto. | La prova che ogni build sia priva di errori, che il computer non sia compromesso o che un servizio remoto esegua esattamente il codice pubblicato |
 
 L'[articolo WabiSabi, sezione 7](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3) tratta separatamente privacy, attacchi attivi e prevenzione del furto. Questa guida applica tale distinzione alle decisioni degli utenti; non è un audit di sicurezza di un portafoglio o coordinatore installato.
+
+Nella v2.0.27, Ginger controlla il numero di input della transazione proposta e la tariffa effettiva della commissione di mining prima di completare la firma. Verifica inoltre che siano presenti i propri input registrati e gli output attesi, e rifiuta input registrati dal portafoglio duplicati. Se i controlli di firma falliscono, non fornisce una firma per un input effettivamente presente nella transazione oppure non invia firme se non rimane nessuno dei propri input. I controlli sui blame round limitano il nuovo tentativo agli input e all'importo massimo suggerito della transazione precedente, e Ginger riutilizza soltanto le proprie monete per cui sono state inviate firme. Sono controlli contro specifiche proposte non valide o incoerenti, non una garanzia di onestà del coordinatore o di indipendenza dei partecipanti. Il [riferimento sui round](/it/coinjoin/round-details/) spiega cosa può significare in pratica un rifiuto o un nuovo tentativo.
 
 <span id="consider-the-observer" data-ginger-heading="considera-losservatore" aria-hidden="true"></span>
 

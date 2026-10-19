@@ -3,7 +3,7 @@ doc_id: "settings-network.secret-hunt"
 title: "Secret Hunt a Ginger Walletben"
 description: "Keresd meg a Ginger Secret Hunt-események eredményeit, szabályozd a pénztárca részvételét, és értsd meg az eseményszolgáltatásnak átadott adatokat."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -19,7 +19,9 @@ A **Secret Hunt** Ginger-funkció, amely alkalmas CoinJoin-tevékenységhez kapc
 
 Nyisd meg egy szoftverpénztárca menüjét, és válaszd a **Secret Hunt** lehetőséget. Az ablak fában mutatja az eseményeredményeket, például felfedezett szavakat vagy mondatokat és további titkot, ha az előírt titkokat összegyűjtötték. Bontsd ki az eseményt a bejegyzésekhez.
 
-Az **Enable/disable the use of this wallet for Secret Hunt.** vezérli az adott pénztárca részvételét. A kiadott alapértelmezés bekapcsolt. Kikapcsolása a kikapcsolt nézetben törli a kijelzett fát, és leállítja e pénztárca kiválasztását az eseményalkalmassági ellenőrzésekhez. Nem törli a CoinJoint, a blokklánctranzakciókat vagy a szolgáltatásnak már elküldött adatokat.
+Az **Enable/disable the use of this wallet for Secret Hunt.** vezérli az adott pénztárca részvételét. A v2.0.27-ben az új pénztárcákban a Secret Hunt alapértelmezetten ki van kapcsolva: külön kapcsold be minden pénztárcában, amellyel részt szeretnél venni. Frissítéskor a meglévő pénztárcák megtartják mentett beállításukat, ezért ha korábban használtad a Secret Huntot, ellenőrizd ezt a kapcsolót.
+
+Kikapcsolása a kikapcsolt nézetben törli a kijelzett fát, és leállítja e pénztárca kiválasztását az eseményalkalmassági ellenőrzésekhez. Nem szakítja meg a CoinJoint, nem törli a blokklánctranzakciókat vagy a szolgáltatásnak már elküldött adatokat.
 
 A menüpont nem elérhető csak megfigyelésre szolgáló pénztárcáknál. Nem hardverpénztárcás CoinJoin-funkció, és nem igényli helyreállító szavak megadását eseményweboldalon.
 

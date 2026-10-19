@@ -3,7 +3,7 @@ doc_id: "settings-network.secret-hunt"
 title: "Secret Hunt en Ginger Wallet"
 description: "Encuentra resultados de eventos Secret Hunt de Ginger, controla la participación del monedero y comprende qué información recibe el servicio del evento."
 lang: "es"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -19,7 +19,9 @@ next: false
 
 Abre el menú de un monedero de software y elige **Secret Hunt**. El diálogo muestra los resultados de los eventos en un árbol, incluidas las palabras o frases descubiertas y un secreto adicional cuando se han reunido los secretos requeridos del evento. Expande un evento para inspeccionar sus entradas.
 
-Usa **Enable/disable the use of this wallet for Secret Hunt.** para controlar la participación de ese monedero. El valor predeterminado de la versión publicada es activado. Desactivarlo vacía el árbol mostrado en la vista desactivada y evita que el actualizador seleccione ese monedero para las comprobaciones de admisibilidad de eventos. No cancela CoinJoin, borra transacciones de la cadena de bloques ni elimina información ya enviada a un servicio.
+Usa **Enable/disable the use of this wallet for Secret Hunt.** para controlar la participación de ese monedero. En v2.0.27, Secret Hunt está desactivado por defecto en los monederos nuevos: actívalo por separado para cada monedero que quieras que participe. Los monederos existentes conservan su ajuste guardado al actualizar, así que comprueba este interruptor si antes usabas Secret Hunt.
+
+Desactivarlo vacía el árbol mostrado en la vista desactivada y evita que el actualizador seleccione ese monedero para las comprobaciones de admisibilidad de eventos. No cancela CoinJoin, borra transacciones de la cadena de bloques ni elimina información ya enviada a un servicio.
 
 La entrada no se ofrece para monederos solo de observación. No es una función de CoinJoin de monederos de hardware y no requiere introducir palabras de recuperación en un sitio web de eventos.
 

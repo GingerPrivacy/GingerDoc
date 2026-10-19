@@ -1,9 +1,9 @@
 ---
 doc_id: "help.troubleshooting"
 title: "Ginger Wallet 故障排查"
-description: "在保留恢复数据的同时，诊断余额缺失、连接问题、CoinJoin 等待状态、2FA 失败及硬件问题。"
+description: "在保留恢复数据的同时，排查余额缺失、连接问题、配置与 RPC 错误、CoinJoin 等待状态、2FA 故障和硬件问题。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -38,6 +38,27 @@ next: false
 
 使用 **Wallet Settings** → **Tools** → **Resync** 时，先保留备份，并预期另一轮扫描。不要只为清除进度消息就删除 `Wallets`、`WalletBackups` 或 2FA 文件。
 
+<span id="startup-reports-an-invalid-configuration" data-ginger-heading="启动时报告配置无效" aria-hidden="true"></span>
+
+## 启动时报告配置无效
+
+在 v2.0.27 中，如果无法加载 `Config.json`，Ginger 会停止启动并保留原始文件。错误信息会给出文件路径。可能时，Ginger 会在旁边创建单独的 `Config.Default.json`，作为默认设置模板；已有的模板也会保留。此错误与应用设置有关，本身并不意味着钱包或其密钥已损坏。
+
+1. 修改文件前，关闭 Ginger 并保留[数据文件夹和钱包备份](/zh-cn/backup-recovery/backup-files/)。另行保存原始 `Config.json` 的副本。
+2. 如果你了解配置，请将其与 `Config.Default.json` 比较，修正无效的 JSON 或设置值。如果 Ginger 无法写入模板，该模板可能不存在。
+3. 如果决定改用默认应用设置启动，请将原始 `Config.json` 重命名，例如改为 `Config.before-repair.json`，并保留它。重新启动 Ginger，以生成新的 `Config.json`。
+4. 恢复正常使用前，检查网络、Tor、全节点及其他自定义设置。重命名此设置文件不能恢复遗忘的口令，也不能替代钱包备份。保持 `Wallets`、`WalletBackups` 和 2FA 文件完整。
+
+如果 Windows 启动设置以前曾导致错误，v2.0.27 已能处理缺失的启动注册表项。更新后检查 **Settings** → **General** → **Run Ginger when computer starts**。
+
+<span id="json-rpc-does-not-start" data-ginger-heading="json-rpc-无法启动" aria-hidden="true"></span>
+
+## JSON-RPC 无法启动
+
+此项检查适用于明确启用了 Ginger 钱包 JSON-RPC 服务器的情况。在 v2.0.27 中，`JsonRpcUser` 和 `JsonRpcPassword` 均必须包含非空值；只包含空白字符的值会被拒绝。缺少这些值时，RPC 服务器会拒绝启动并记录原因，而钱包应用会继续运行。
+
+在 Ginger 关闭时，于 `Config.json` 中设置这两项凭据，并配置连接客户端以使用它们。如果不需要服务器，可改为将 `JsonRpcServerEnabled` 设为 `false`。不要在共享日志或支持请求中包含凭据。这些是 Ginger 钱包的 RPC 设置，与 Bitcoin Core 节点的 RPC 凭据和钱包口令分别独立。
+
 <span id="coinjoin-does-not-start" data-ginger-heading="coinjoin-不开始" aria-hidden="true"></span>
 
 ## CoinJoin 不开始
@@ -56,6 +77,8 @@ next: false
 | 源钱包是硬件钱包 | 自动 CoinJoin 签名需要符合条件的软件钱包 |
 
 参与者可能未完成步骤，或币因中断参与而暂不可用。反复重试、导入或试图绕过协调器拒绝，不是修复。根据原因和当前状态，决定等待还是联系官方支持。
+
+2.0.27 版本修复了 macOS 上停止 CoinJoin 时的崩溃。如果 Ginger 在参与期间关闭，请重新打开，等待钱包同步，然后检查历史，再判断交易是否失败。关闭应用不会撤销已经广播的交易。记录反复出现的错误和已安装版本，以便寻求支持。
 
 <span id="payment-or-fee-problems" data-ginger-heading="付款或手续费问题" aria-hidden="true"></span>
 

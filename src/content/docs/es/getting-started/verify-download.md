@@ -3,7 +3,7 @@ doc_id: "getting-started.verify-download"
 title: "Verifica una descarga de Ginger Wallet"
 description: "Comprueba la firma de una versión de Ginger Wallet y la huella de la clave de firma antes de instalar la aplicación."
 lang: "es"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 sidebar:
   label: Verifica una descarga
@@ -22,7 +22,7 @@ Una firma separada ayuda a establecer que el archivo descargado fue firmado por 
 
 ## Reúne los archivos correspondientes
 
-Desde [la versión v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26), descarga el instalador o archivo y el archivo del mismo nombre seguido de `.asc`. Guárdalos en una carpeta. Por ejemplo, la pareja de Windows es `Ginger-2.0.26.msi` y `Ginger-2.0.26.msi.asc`. Una firma para un DMG, ZIP u otra versión no verifica ese MSI.
+Desde [la versión v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27), descarga el instalador o archivo y el archivo del mismo nombre seguido de `.asc`. Guárdalos en una carpeta. Por ejemplo, la pareja de Windows es `Ginger-2.0.27.msi` y `Ginger-2.0.27.msi.asc`. Una firma para un DMG, ZIP u otra versión no verifica ese MSI.
 
 Obtén la clave pública de firma mediante el enlace PGP de [la web oficial](https://gingerwallet.io/). Guárdala como `PGP.txt`. Utiliza una aplicación OpenPGP de confianza, como GnuPG, para inspeccionarla e importarla. Si no tienes GnuPG, obténlo de [su página oficial de descargas](https://gnupg.org/download/).
 
@@ -52,7 +52,7 @@ Compara la huella completa, no solo un ID corto de clave o el nombre mostrado. S
 Para el instalador Windows, ejecuta:
 
 ```sh
-gpg --verify Ginger-2.0.26.msi.asc Ginger-2.0.26.msi
+gpg --verify Ginger-2.0.27.msi.asc Ginger-2.0.27.msi
 ```
 
 Para otra plataforma, sustituye ambos nombres exactos. Una verificación satisfactoria debe identificar una firma correcta de la clave prevista. GnuPG también puede advertir que la clave no está certificada por una firma de confianza: esto se refiere a cómo autenticaste la clave y no debe confundirse con una firma de archivo incorrecta.
@@ -66,5 +66,7 @@ Si el resultado indica **BAD signature**, falta la clave, la huella difiere o no
 Comparar una suma de verificación puede detectar un error de descarga. Una suma obtenida de una página no fiable no autentica software, porque un atacante puede sustituir tanto la descarga como su suma. La versión también proporciona material de sumas de verificación; el procedimiento de firma separada anterior basta para verificar un paquete seleccionado.
 
 La firma de código Windows y la firma o notarización macOS aportan comprobaciones adicionales de plataforma. Complementan la verificación de la versión descargada; no sustituyen la protección de tus palabras de recuperación ni la revisión de transacciones.
+
+Para comprobar por separado que los archivos de la aplicación se pueden reconstruir desde el código fuente, sigue la [guía de compilación reproducible de esta versión](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.27/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md). Usa la etiqueta exacta de la versión y la cadena de herramientas indicada en el paquete. Compara los archivos portables extraídos como describe la guía; los metadatos del archivo y la firma pueden cambiar los bytes del paquete. No se espera que un MSI firmado de Windows o un DMG firmado de macOS tenga el mismo hash de archivo que una compilación local sin firmar.
 
 Tras verificar correctamente, vuelve a [Instala la aplicación](/es/getting-started/install/#install-the-application).

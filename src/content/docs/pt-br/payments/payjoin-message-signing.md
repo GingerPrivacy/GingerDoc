@@ -3,7 +3,7 @@ doc_id: "payments.payjoin-message-signing"
 title: "PayJoin e assinatura de mensagens"
 description: "Envie uma solicitação de pagamento PayJoin, entenda o conhecimento do destinatário, os padrões identificadores das carteiras e o fallback e assine uma mensagem de escopo restrito sobre o controle de um endereço."
 lang: "pt-BR"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -19,22 +19,34 @@ PayJoin e assinatura de mensagens são ferramentas separadas. O PayJoin altera a
 
 PayJoin é um pagamento colaborativo em que o recebedor pode contribuir com uma entrada. Isso pode enfraquecer a suposição de que todas as entradas de um pagamento com aparência normal pertencem a um único remetente. O recebedor deve fornecer uma URI de pagamento Bitcoin compatível que contenha um endpoint PayJoin; um endereço normal, por si só, não o ativa. O protocolo é descrito na [BIP78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
 
-1. Use uma carteira de software com fundos gastáveis. Esta versão rejeita solicitações PayJoin para envios de carteiras de hardware.
+1. Use uma carteira de software com fundos gastáveis. O PayJoin aceita entradas e troco SegWit e Taproot do remetente. Esta versão rejeita solicitações PayJoin para envios de carteiras de hardware.
 2. Cole a URI de pagamento completa em **Send**, em vez de copiar apenas seu endereço. Confira o destino e o valor pelo mesmo canal confiável que usaria para qualquer pagamento.
-3. Confira a prévia da transação e o indicador de PayJoin e autorize o pagamento se o valor e as taxas forem aceitáveis.
+3. Confira a prévia da transação e o indicador de PayJoin e autorize o pagamento se o valor e as configurações de taxas forem aceitáveis. O PayJoin é um procedimento para um único destinatário; não pode ser combinado com um pagamento em lote ou com o desconto da taxa do valor do destinatário.
 4. Confira a transação resultante no histórico.
 
 A implementação desta versão pode recorrer à transação de pagamento normal se a construção de PayJoin falhar. Portanto, autorizar esse processo não garante que a transação transmitida seja um PayJoin. Não o use quando o fallback para pagamento normal violar sua exigência de privacidade.
 
-Use um endpoint HTTPS compatível para a mainnet. Na v2.0.26, as verificações de endpoint rejeitam endpoints onion enquanto o Tor está ativado; uma solicitação que ofereça apenas onion não deve ser tratada como um caminho compatível. Mantenha o Tor ativado e peça ao destinatário uma alternativa compatível, em vez de desativar a privacidade de rede para forçar a solicitação.
+Na mainnet, um endpoint comum da internet deve usar HTTPS. Um endpoint `.onion` com HTTP ou HTTPS é aceito quando o Tor está ativado e rejeitado quando o Tor está desativado. Outros esquemas de URL são rejeitados. Se o endpoint não for compatível, o Ginger ignora o endpoint PayJoin; portanto, confira se a prévia ainda identifica o pagamento como PayJoin antes de continuar.
 
 Este guia aborda o envio de uma solicitação fornecida pelo destinatário. O processo normal de **Receive** do Ginger não opera um servidor de recebimento PayJoin, e esta versão não fornece um procedimento de configuração de um para o usuário.
+
+<span id="negotiated-outputs-and-fees" data-ginger-heading="saídas-e-taxas-negociadas" aria-hidden="true"></span>
+
+## Saídas e taxas negociadas
+
+A solicitação de pagamento pode restringir a substituição de saídas com `pjos=0`. O Ginger encaminha essa restrição ao destinatário e rejeita uma proposta que substitua a saída de pagamento solicitada ou reduza seu valor. Se a substituição for permitida, o destinatário pode usar uma saída de recebimento diferente durante a negociação. A entrada acrescentada pelo destinatário também pode tornar a saída de recebimento on-chain maior que o valor do seu pagamento.
+
+O Ginger informa uma contribuição adicional máxima para a taxa de mineração, calculada automaticamente a partir da taxa por byte virtual original. Ele rejeita uma proposta que faça sua carteira contribuir acima desse limite informado. Essa rejeição usa a alternativa de pagamento comum descrita acima; ela não necessariamente cancela o pagamento.
+
+A prévia é construída antes da negociação final do PayJoin, que ocorre após a autorização. A transação negociada pode ter uma taxa diferente da prévia original. O Ginger recalcula as informações de taxas da transação concluída a partir da transação final, mas não mostra uma segunda prévia de confirmação após a negociação. Confira a transação final no histórico e não trate o indicador inicial de PayJoin como prova de que a negociação foi bem-sucedida.
 
 <span id="what-the-recipient-and-an-observer-learn" data-ginger-heading="o-que-o-destinatário-e-um-observador-descobrem" aria-hidden="true"></span>
 
 ## O que o destinatário e um observador descobrem
 
 O destinatário já conhece a solicitação de pagamento, seu endereço de recebimento e o valor pretendido. Se a solicitação estiver vinculada a um pedido identificado, o PayJoin não apaga essa identidade. Durante a negociação, o serviço de recebimento também vê a transação de pagamento proposta, incluindo as entradas propostas pelo remetente. Não deve ser tratado como alguém de quem o próprio pagamento esteja oculto.
+
+Antes de enviar a solicitação de negociação, o Ginger remove os metadados de origem das chaves da carteira, incluindo caminhos de derivação Taproot e chaves públicas estendidas globais. Isso reduz as informações desnecessárias sobre a carteira enviadas ao destinatário; as entradas, saídas e valores da transação proposta continuam visíveis para ele.
 
 Um observador externo vê a transação eventualmente publicada no Bitcoin. Um PayJoin bem-sucedido pode tornar a suposição usual de que “todas as entradas pertencem ao remetente” pouco confiável. Esse benefício depende da transação e das outras informações que o observador possui; não garante que a transação seja indistinguível de todo pagamento normal.
 

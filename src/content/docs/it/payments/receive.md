@@ -3,7 +3,7 @@ doc_id: "payments.receive"
 title: "Ricevi bitcoin e gestisci gli indirizzi"
 description: "Genera un indirizzo di ricezione Ginger, scegli SegWit o Taproot dove supportato, assegna etichette ai pagamenti e controlla le conferme."
 lang: "it"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -19,11 +19,19 @@ Usa un nuovo indirizzo di ricezione per ogni pagamento. L'indirizzo indica a chi
 
 1. Apri il portafoglio previsto e attendi che il ripristino o la sincronizzazione terminino.
 2. Scegli **Receive**. Aggiungi un'etichetta che descriva chi paga o lo scopo, come «Fattura di giugno». Usa dettagli sufficienti a riconoscerla in seguito senza registrare dati personali superflui.
-3. Scegli **Generate**. L'azione normale crea un indirizzo SegWit nativo. Se il portafoglio supporta Taproot, l'azione alternativa offre **Taproot**, indicato con **TR**; usalo solo quando chi paga supporta quel tipo di indirizzo.
+3. Scegli **Generate**, oppure premi **Enter**, per creare un indirizzo usando il tipo predefinito salvato per questo portafoglio. Se il portafoglio supporta Taproot, il menu a discesa offre anche **Generate SegWit** e **Generate Taproot**, così puoi scegliere il tipo per questa richiesta. Usa Taproot soltanto quando chi paga lo supporta.
 4. Copia l'indirizzo o condividi il codice QR di ricezione. Per un portafoglio hardware, usa **Show on the hardware wallet** e confronta l'intero indirizzo sul dispositivo prima di darlo a chi paga.
 5. Controlla la destinazione dopo averla incollata in un'altra applicazione. Un malware degli appunti può sostituire un indirizzo anche quando il QR originale o la schermata del portafoglio erano corretti.
 
 Sulla mainnet Bitcoin, gli indirizzi di ricezione SegWit nativi iniziano normalmente con `bc1q`; gli indirizzi Taproot iniziano con `bc1p`. Gli indirizzi delle reti di test sono diversi. Se un servizio rifiuta un indirizzo Bitcoin supportato, verifica con quel servizio il supporto della rete e del tipo di indirizzo anziché alterare i caratteri dell'indirizzo.
+
+<span id="set-the-default-address-type" data-ginger-heading="imposta-il-tipo-di-indirizzo-predefinito" aria-hidden="true"></span>
+
+## Imposta il tipo di indirizzo predefinito
+
+In un portafoglio che supporta Taproot, apri il menu a discesa accanto a **Generate** e scegli **Set as Default** accanto a SegWit o Taproot. Il tipo selezionato è contrassegnato come **Default** e viene salvato per questo portafoglio. Gli usi successivi di **Generate** e **Enter** lo seguiranno; un altro portafoglio può avere una preferenza diversa.
+
+Scegliere **Generate SegWit** o **Generate Taproot** nel menu a discesa genera direttamente quel tipo senza cambiare il valore predefinito salvato. I portafogli esistenti iniziano con SegWit dopo l'aggiornamento. Cambiare la preferenza influisce sulla generazione degli indirizzi futuri; gli indirizzi già generati possono ancora ricevere pagamenti.
 
 <span id="labels-and-unused-addresses" data-ginger-heading="etichette-e-indirizzi-inutilizzati" aria-hidden="true"></span>
 

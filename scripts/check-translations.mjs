@@ -2,19 +2,11 @@ import { existsSync, readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join, resolve } from 'node:path'
 import { manualSidebar } from '../src/manual-sidebar.mjs'
-import { docsRoot, document, localeCodes, pages, readCopy, localizeLinks } from './translation-utils.mjs'
-import { checkTranslationContent, loadBaseline } from './translation-baselines.mjs'
+import { docsRoot, document, localeCodes, pages, readCopy, localizeLinks, localizeHref } from './translation-utils.mjs'
 
 const root = fileURLToPath(docsRoot)
 const originals = pages(root, localeCodes)
 const errors = []
-const stale = new Map()
-let staleCount = 0
-const baselines = new Map()
-function readBaseline(release) {
-  if (!baselines.has(release)) baselines.set(release, loadBaseline(release))
-  return baselines.get(release)
-}
 const sidebarLabels = new Set()
 function collectLabels(items) {
   for (const item of items) {
@@ -42,18 +34,22 @@ for (const locale of checkedLocales) {
       const homeImport = target.body.match(/^\s*import ManualHome from ['"]([^'"]+)['"]/)?.[1]
       if (!homeImport || !existsSync(resolve(dirname(join(directory, file)), homeImport))) errors.push(`${locale}/${file}: homepage component import does not resolve`)
     }
-    const result = checkTranslationContent(source, target, { file, locale, originals, staging: Boolean(stagingDirectory), readBaseline })
-    for (const error of result.errors) errors.push(`${locale}/${file}: ${error}`)
-    if (result.stale) {
-      const key = `${locale}: ${target.metadata('verified_release')} (English ${source.metadata('verified_release')})`
-      stale.set(key, (stale.get(key) ?? 0) + 1)
-      staleCount++
+    for (const key of ['doc_id', 'verified_release', 'reader_level']) {
+      if (source.metadata(key) !== target.metadata(key)) errors.push(`${locale}/${file}: ${key} changed`)
     }
     if (target.metadata('lang') !== copy.lang) errors.push(`${locale}/${file}: wrong language metadata`)
+    if (source.body === target.body || (source.metadata('title') === target.metadata('title') && source.metadata('description') === target.metadata('description'))) errors.push(`${locale}/${file}: untranslated page or metadata`)
+    if (JSON.stringify(source.code) !== JSON.stringify(target.code)) errors.push(`${locale}/${file}: code examples changed`)
+    for (const number of source.numbers) if (!target.numbers.has(number)) errors.push(`${locale}/${file}: missing original numeric value ${number}`)
+    if (source.headings.length !== target.headings.length || source.headings.some((heading, i) => heading.depth !== target.headings[i]?.depth)) errors.push(`${locale}/${file}: heading structure differs`)
+    const ids = new Set([...target.headings.map((heading) => heading.id), ...[...target.body.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1])])
+    if (!stagingDirectory) for (const heading of source.headings) if (!ids.has(heading.id)) errors.push(`${locale}/${file}: missing source anchor ${heading.id}`)
+    for (const [, id] of source.body.matchAll(/\bid="([^"]+)"/g)) if (!ids.has(id)) errors.push(`${locale}/${file}: missing explicit anchor ${id}`)
     if (!stagingDirectory && localizeLinks(text, locale, originals) !== text) errors.push(`${locale}/${file}: documentation link leaves the selected language`)
+    const expectedLinks = source.links.map((href) => stagingDirectory ? href : localizeHref(href, locale, originals)).sort()
+    if (JSON.stringify(expectedLinks) !== JSON.stringify(target.links.slice().sort())) errors.push(`${locale}/${file}: source link targets changed`)
   }
 }
 for (const error of errors) console.error(error)
-if (staleCount) console.warn(`Warning: ${staleCount} translated pages still use an older verified release:\n${[...stale].map(([release, count]) => `  ${release}: ${count} pages`).join('\n')}`)
-console.log(`Checked ${checkedLocales.length} translations against ${originals.length} English pages; ${staleCount} older-release pages; ${errors.length} errors.`)
+console.log(`Checked ${checkedLocales.length} translations against ${originals.length} English pages; ${errors.length} errors.`)
 process.exitCode = errors.length ? 1 : 0

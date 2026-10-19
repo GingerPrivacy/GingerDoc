@@ -3,7 +3,7 @@ title: "Usar Ginger"
 description: "Encuentra los pasos habituales para recibir y enviar bitcoin y después elige las funciones opcionales de Ginger según las necesites."
 doc_id: "payments.overview"
 lang: "es"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -16,7 +16,7 @@ Empieza con un monedero del que tengas una copia de seguridad y deja que termine
 ## Haz un pago normal
 
 1. [Recibe bitcoin](/es/payments/receive/): crea una dirección nueva, etiquétala y comprueba la transacción entrante.
-2. [Envía bitcoin](/es/payments/send/): introduce el destino y el importe y después revisa el importe del destinatario, el cambio y la comisión antes de confirmar.
+2. [Envía bitcoin](/es/payments/send/): introduce el destino y el importe y después revisa el importe del destinatario, el cambio y la comisión antes de confirmar. Usa **Pay to multiple recipients** cuando necesites varios pagos en una transacción y comprueba cada destinatario en la vista previa.
 3. Comprueba el historial del monedero después de enviar. Si el resultado es incierto, determina qué ocurrió antes de pagar otra vez.
 
 <span id="choose-an-optional-feature" data-ginger-heading="elige-una-función-opcional" aria-hidden="true"></span>

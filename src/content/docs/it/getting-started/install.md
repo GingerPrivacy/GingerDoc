@@ -3,7 +3,7 @@ doc_id: "getting-started.install"
 title: "Installa Ginger Wallet"
 description: "Scegli il download desktop di Ginger Wallet adatto, controlla la compatibilità e installa l'applicazione pubblicata."
 lang: "it"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 sidebar:
   label: Installa Ginger
@@ -19,7 +19,7 @@ next:
 
 Ginger Wallet è un portafoglio Bitcoin per computer. Tu possiedi le chiavi dei tuoi bitcoin e puoi usare CoinJoin per rendere più difficile tracciare le transazioni. Questa versione non offre un portafoglio mobile, un portafoglio Lightning o il supporto per altre criptovalute.
 
-Questa guida riguarda la versione 2.0.26. Ottieni il software dal [sito ufficiale di Ginger](https://gingerwallet.io/) o dalla [versione su GitHub](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) a cui rimanda. Una pubblicità nei risultati di ricerca, un messaggio privato o un'app mobile dal nome simile non sono fonti affidabili per il download.
+Questa guida riguarda la versione 2.0.27. Ottieni il software dal [sito ufficiale di Ginger](https://gingerwallet.io/) o dalla [versione su GitHub](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) a cui rimanda. Una pubblicità nei risultati di ricerca, un messaggio privato o un'app mobile dal nome simile non sono fonti affidabili per il download.
 
 <span id="choose-a-download" data-ginger-heading="scegli-un-download" aria-hidden="true"></span>
 
@@ -27,11 +27,11 @@ Questa guida riguarda la versione 2.0.26. Ottieni il software dal [sito ufficial
 
 | Computer | Sistema supportato per questa versione | Download |
 | --- | --- | --- |
-| PC Windows, x64 | Windows 10, versione 1607 o successiva; Windows 11, build 22000 o successiva | `Ginger-2.0.26.msi` |
-| Mac con chip Apple | macOS 12 o successivo | `Ginger-2.0.26-arm64.dmg` |
-| Mac con processore Intel | macOS 12 o successivo | `Ginger-2.0.26.dmg` |
-| Ubuntu o Debian, x64 | Ubuntu 22.04 o successivo; Debian 11 o successivo | `Ginger-2.0.26.deb` |
-| Altri sistemi Linux supportati, x64 | La versione elenca anche Fedora 37 o successivo | `Ginger-2.0.26.tar.gz` |
+| PC Windows, x64 | Windows 10, versione 1607 o successiva; Windows 11, build 22000 o successiva | `Ginger-2.0.27.msi` |
+| Mac con chip Apple | macOS 12 o successivo | `Ginger-2.0.27-arm64.dmg` |
+| Mac con processore Intel | macOS 12 o successivo | `Ginger-2.0.27.dmg` |
+| Ubuntu o Debian, x64 | Ubuntu 22.04 o successivo; Debian 11 o successivo | `Ginger-2.0.27.deb` |
+| Altri sistemi Linux supportati, x64 | La versione elenca anche Fedora 37 o successivo | `Ginger-2.0.27.tar.gz` |
 
 Su un Mac, **About This Mac** identifica il chip o il processore. La versione contiene anche archivi ZIP denominati `win-x64`, `linux-x64`, `macOS-x64` e `macOS-arm64`. Non ci sono pacchetti per Windows ARM o Linux ARM in questa versione. Non presumere che un archivio per un altro processore funzioni.
 
@@ -61,5 +61,7 @@ Per problemi di accesso ai dispositivi su Linux, consulta le istruzioni del prod
 ## Aggiornamenti e disponibilità
 
 L'[elenco delle versioni](https://github.com/GingerPrivacy/GingerWallet/releases) mostra le versioni pubblicate e le relative modifiche. In **Settings** → **General**, **Auto download new version** controlla il download degli aggiornamenti. Scaricare un aggiornamento è diverso da installarlo; segui la richiesta di aggiornamento e lascia che Ginger si chiuda normalmente. Tieni disponibile il backup per il ripristino prima di aggiornare. I file dell'applicazione possono essere sostituiti senza eliminare intenzionalmente i dati del portafoglio.
+
+Passando dalla v2.0.26, i portafogli esistenti iniziano con SegWit come tipo di ricezione predefinito e mantengono l'impostazione Secret Hunt salvata. Nei nuovi portafogli Secret Hunt richiede l'attivazione esplicita. Se hai attivato il server JSON-RPC di Ginger, configura nome utente e password non vuoti prima dell'aggiornamento, altrimenti il server non si avvia; Ginger continua comunque a funzionare. Consulta [le impostazioni RPC](/it/help/troubleshooting/#json-rpc-does-not-start) e [la risoluzione dei problemi di configurazione](/it/help/troubleshooting/#startup-reports-an-invalid-configuration) se incontri uno di questi problemi di avvio.
 
 Leggi i termini di servizio attuali presentati da Ginger prima di accettarli, comprese eventuali restrizioni di ammissibilità. Installare l'applicazione non significa essere ammessi a usare ogni servizio collegato.

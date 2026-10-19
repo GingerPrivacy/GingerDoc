@@ -3,7 +3,7 @@ doc_id: "payments.receive"
 title: "Bitcoin empfangen und Adressen verwalten"
 description: "Erzeuge eine Ginger-Empfangsadresse, wähle soweit unterstützt SegWit oder Taproot, beschrifte Zahlungen und prüfe Bestätigungen."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -19,11 +19,19 @@ Verwende für jede Zahlung eine neue Empfangsadresse. Sie sagt dem Zahler, wohin
 
 1. Öffne die gewünschte Wallet und warte auf den Abschluss von Wiederherstellung oder Synchronisierung.
 2. Wähle **Receive**. Füge eine Bezeichnung für Zahler oder Zweck hinzu, etwa „Juni-Rechnung“. Verwende genug Details zur späteren Wiedererkennung, ohne unnötige personenbezogene Daten zu erfassen.
-3. Wähle **Generate**. Die normale Aktion erzeugt eine native SegWit-Adresse. Unterstützt die Wallet Taproot, bietet die alternative Aktion **Taproot**, angezeigt mit **TR**; nutze sie nur, wenn der Zahler diesen Adresstyp unterstützt.
+3. Wähle **Generate** oder drücke **Enter**, um eine Adresse mit dem gespeicherten Standardtyp dieser Wallet zu erstellen. Unterstützt die Wallet Taproot, bietet das Dropdown außerdem **Generate SegWit** und **Generate Taproot**, damit du den Typ für diese Anfrage wählen kannst. Verwende Taproot nur, wenn der Zahler es unterstützt.
 4. Kopiere die Adresse oder teile den Empfangs-QR-Code. Nutze bei Hardware-Wallets **Show on the hardware wallet** und vergleiche die vollständige Adresse auf dem Gerät mit der in Ginger angezeigten Adresse, bevor du sie weitergibst.
 5. Prüfe das Ziel nach dem Einfügen in eine andere Anwendung. Zwischenablage-Schadsoftware kann eine Adresse ersetzen, auch wenn ursprünglicher QR-Code und Wallet-Anzeige korrekt waren.
 
 Im Bitcoin-Mainnet beginnen native SegWit-Adressen normalerweise mit `bc1q`, Taproot-Adressen mit `bc1p`. Testnetz-Adressen unterscheiden sich. Lehnt ein Dienst eine unterstützte Bitcoin-Adresse ab, kläre Netzwerk- und Adresstypunterstützung mit ihm, statt Zeichen der Adresse zu verändern.
+
+<span id="set-the-default-address-type" data-ginger-heading="den-standardadresstyp-festlegen" aria-hidden="true"></span>
+
+## Den Standardadresstyp festlegen
+
+Öffne bei einer Wallet mit Taproot-Unterstützung das Dropdown neben **Generate** und wähle **Set as Default** neben SegWit oder Taproot. Der gewählte Typ trägt die Markierung **Default** und wird für diese Wallet gespeichert. Künftige Verwendungen von **Generate** und **Enter** folgen ihm; eine andere Wallet kann eine andere Präferenz haben.
+
+Die Wahl von **Generate SegWit** oder **Generate Taproot** im Dropdown erzeugt direkt diesen Typ, ohne den gespeicherten Standard zu ändern. Bestehende Wallets beginnen nach dem Upgrade mit SegWit. Die Präferenz betrifft künftig erzeugte Adressen; bereits erzeugte Adressen können weiterhin Zahlungen empfangen.
 
 <span id="labels-and-unused-addresses" data-ginger-heading="bezeichnungen-und-ungenutzte-adressen" aria-hidden="true"></span>
 

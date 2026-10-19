@@ -3,7 +3,7 @@ doc_id: "settings-network.preferences"
 title: "Aparência, idioma e definições do dia a dia"
 description: "Altere o idioma do Ginger, os formatos de exibição, o comportamento em segundo plano, as preferências de navegador e o modo discreto sem confundi-los com a segurança da carteira."
 lang: "pt-PT"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -17,7 +17,7 @@ Use **Settings** para as preferências de todo o programa e **Wallet Settings** 
 
 ## Idioma e valores
 
-Em **Settings** → **Appearance**, **Language** seleciona o idioma da interface. A versão 2.0.26 oferece inglês, espanhol, húngaro, francês, chinês, alemão, português, turco e italiano. Siga qualquer solicitação de reinicialização. Este manual mantém as etiquetas em inglês da versão publicada; as etiquetas traduzidas podem ser diferentes.
+Em **Settings** → **Appearance**, **Language** seleciona o idioma da interface. A versão 2.0.27 oferece onze idiomas: inglês, espanhol, húngaro, francês, chinês, alemão, português, turco, italiano, português brasileiro e russo. As duas opções de português aparecem como **Português** e **Português (Brasil)**; o russo aparece como **Русский**. Siga qualquer solicitação de reinício. Este manual mantém as etiquetas em inglês da versão publicada; as etiquetas traduzidas podem ser diferentes.
 
 **Dark mode** altera a aparência. **Exchange currency** altera a moeda fiduciária de referência exibida, enquanto os separadores decimais e de grupos, o agrupamento de frações de bitcoin e **Fee display unit** controlam a apresentação dos números. Isso não altera o valor subjacente em BTC nem a taxa de transação da rede. Leia os exemplos nas definições antes de inserir um valor num formato desconhecido.
 
@@ -51,5 +51,7 @@ Páginas externas usam o próprio comportamento de rede e privacidade do navegad
 ## Informações e ferramentas da carteira
 
 **Wallet Info** pode exibir informações de conta e de chave pública estendida. Uma chave pública estendida não pode gastar moedas diretamente, mas pode revelar muitos endereços relacionados. Não a publique numa solicitação pública de apoio.
+
+O tipo predefinido de endereço de receção é guardado para cada carteira em **Receive**. Quando Taproot é compatível, é possível escolher SegWit ou Taproot como o tipo predefinido usado por **Generate** e Enter. Essa preferência é separada das definições de aparência da aplicação; consulte [endereços de receção](/pt-pt/payments/receive/) para os controlos e as verificações de compatibilidade.
 
 Em **Wallet Settings** → **General**, use o controlo de nome para renomear a carteira. Em **Tools**, **Verify Recovery Words** verifica a cópia de segurança de uma carteira de software acessível, **Resync** reconstrói sua visão e **Delete Wallet** remove uma carteira local por meio do processo de confirmação. A exclusão não destrói os bitcoins, não revoga as palavras de recuperação nem substitui uma cópia de segurança. Mantenha informações de recuperação funcionais antes de remover o acesso local.

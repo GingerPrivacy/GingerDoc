@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.fees-and-change"
 title: "Tranzakciós díjak, egyedi díjráták és visszajáró"
-description: "Ismerd meg a virtuális bájtonkénti satoshiban megadott díjrátákat, a kézi díjmegadást, a visszajárókimeneteket és az összeget módosító adatvédelmi javaslatokat a Gingerben."
+description: "Ismerd meg a díjrátákat, a 0.1 sat/vB-ig megadható egyedi értékeket, a továbbítás korlátait, a díjlevonást, a visszajárót és az adatvédelmi javaslatokat a Gingerben."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -23,9 +23,19 @@ A szokásos fizetési lépésekhez kezdd a [Bitcoin küldése](/hu/payments/send
 
 A díjráta virtuális bájtonkénti satoshiban mért érték, amely **Fee Rate (sat/vByte)** néven jelenik meg. A teljes bányászati díj a díjráta és a tranzakció virtuális méretének szorzata. Nem a fizetési összeg százaléka. Sok kis UTXO elköltése többe kerülhet, mint egy ugyanakkora összértékű, nagyobb UTXO elköltése.
 
-Az előnézet díjvezérlőjével módosíthatod a kívánt visszaigazolási beállítást, vagy megadhatsz **Custom Fee Rate** értéket. A becsült idő nem garancia: az új tranzakciók versengenek a helyért, a blokkok pedig szabálytalan időközönként érkeznek. A kiadott kézi beviteli vezérlő elutasítja az 1 sat/vByte alatti értékeket; a csomópont szabályzata a szerkesztő minimumánál többet is igényelhet.
+Az előnézet díjvezérlőjével módosíthatod a kívánt visszaigazolási beállítást, vagy megadhatsz **Custom Fee Rate** értéket. A Ginger **0.1 sat/vB** értékig fogad el díjrátát, és a becslések, valamint a díjgrafikon is megőrzik a törtértékeket. A becsült idő nem garancia: az új tranzakciók versengenek a helyért, a blokkok pedig szabálytalan időközönként érkeznek.
+
+A szerkesztő minimuma nem garantálja, hogy a tranzakciót továbbítják vagy befogadják egy csomópont mempooljába. A csomópontok szabályzatuk vagy az aktuális mempoolhelyzet miatt magasabb díjrátát is követelhetnek. A hálózati továbbításkor a Ginger kihagyja azokat a társcsomópontokat, amelyek meghirdetett minimuma magasabb a tranzakció díjrátájánál. Az alacsony egyedi díjráta ezért sikertelen továbbításhoz vagy visszaigazolatlanul maradó tranzakcióhoz vezethet; használata előtt mérlegeld a hálózati helyzetet és a fizetés sürgősségét.
 
 Ha az automatikus becslések nem érhetők el, a Ginger akkor is kínálhat kézi díjmegadást. Ha bizonytalan vagy a megfelelő díjrátában, jobb megvárni a becslések visszatérését, mint találomra nagyon magas számot megadni. A szokásos tranzakciós díjak és a CoinJoin koordinátori díjai külön költségek.
+
+<span id="check-who-pays-the-fee" data-ginger-heading="ellenőrizd-ki-fizeti-a-díjat" aria-hidden="true"></span>
+
+## Ellenőrizd, ki fizeti a díjat
+
+[Többcímzettes fizetésnél](/hu/payments/send/#pay-several-recipients-in-one-transaction) a **Subtract the transaction fee from the first payment** csak az első címzett összegét csökkenti. A többi megadott összeg változatlan marad. Ha nincs bejelölve, az összes fizetésen felül a díjra is elegendő pénzre van szükséged. A **Max** használata a többcímzettes szerkesztőben bekapcsolja a díjlevonást.
+
+Mindig ellenőrizd az előnézet végső összegeit, különösen a díjráta módosítása után. Ha a címzettnek pontos összeget kell kapnia, a díj levonása az adott fizetésből alulfizetést okozhat. Az előnézet minden címzett végső összegét külön felsorolja.
 
 <span id="change-is-still-your-bitcoin" data-ginger-heading="a-visszajáró-továbbra-is-a-te-bitcoinod" aria-hidden="true"></span>
 

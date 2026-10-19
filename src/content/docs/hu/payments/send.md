@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.send"
 title: "Bitcoin küldése és a díjak ellenőrzése"
-description: "Készíts elő egy Ginger-fizetést, ellenőrizd a címzettet és az összeget, értsd meg a díjrátát és a visszajárót, majd hagyd jóvá a tranzakciót."
+description: "Készíts elő egy- vagy többcímzettes Bitcoin-fizetést, ellenőrizd minden címzett végső összegét, a díjat és a visszajárót, majd hagyd jóvá a tranzakciót."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -26,6 +26,20 @@ A Ginger nem tud visszavonni egy visszaigazolt Bitcoin-fizetést. Jóváhagyás 
 
 A teljes elérhető összeg küldésekor a díj levonódhat a címzettnek érkező összegből. A rögzített összegű kérésekre és a PayJoinra eltérő korlátok vonatkoznak. Az előnézetben ellenőrizd a címzett tényleges összegét, ne feltételezd, hogy a teljes pénztárcaegyenleg megérkezhet a célhoz.
 
+<span id="pay-several-recipients-in-one-transaction" data-ginger-heading="több-címzett-kifizetése-egy-tranzakcióban" aria-hidden="true"></span>
+
+## Több címzett kifizetése egy tranzakcióban
+
+A küldési szerkesztőben válaszd a **Pay to multiple recipients** lehetőséget a többcímzettes fizetéshez. Az első fizetés megtartja a már megadott címet, összeget és címkéket.
+
+1. Minden fizetéshez különböző Bitcoin-címet, összeget és címzettcímkét adj meg. Ebben a szerkesztőben egyszerű címeket használj; a fizetési URI-k és a Payjoin az egycímzettes folyamathoz tartoznak. A rögzített összegű fizetési kérés nem bővíthető többcímzettes fizetéssé.
+2. További sorokhoz válaszd az **Add another payment** lehetőséget, egy fizetés eltávolításához pedig a mellette lévő **Delete** műveletet. Ha csak egy fizetés marad, a szerkesztő visszatér az egycímzettes elrendezéshez, és megtartja annak adatait.
+3. Döntsd el, ki viseli a bányászati díjat. A **Subtract the transaction fee from the first payment** bejelölésekor az első címzett a megadottnál kevesebbet kap, a többi fizetés összege változatlan marad. Ha nincs bejelölve, a pénztárcád a megadott összegeken felül fizeti a díjat. A **Max** használata többcímzettes fizetésnél bekapcsolja a díjlevonást, ezért folytatás előtt ellenőrizd ezt a választást.
+4. Válaszd a **Continue** lehetőséget. Az előnézetben nézd át minden sorszámozott címet, címzettcímkét és végső összeget, valamint a teljes díjat. Különösen ellenőrizd, hogy díjlevonás esetén az első címzett továbbra is a megállapodott összeget kapja-e.
+5. Szükség esetén lépj vissza a fizetések javításához. A megadott sorok és a díjlevonás választása megmaradnak. A **Confirm** kiválasztása és a jóváhagyás befejezése előtt ismét nézd át az újonnan összeállított előnézetet és a díjat.
+
+A többcímzettes fizetés minden címzettje ugyanabban a nyilvános tranzakcióban szerepel, így a fizetések összekapcsolhatók. Ezt mérlegeld egymástól független fizetések összevonása előtt. A címzettcímkék helyi pénztárca-metaadatok maradnak; nem kerülnek a címzettekhez vagy a blokkláncra.
+
 <span id="check-the-fee-without-custom-settings" data-ginger-heading="a-díj-ellenőrzése-egyedi-beállítások-nélkül" aria-hidden="true"></span>
 
 ## A díj ellenőrzése egyedi beállítások nélkül
@@ -33,6 +47,8 @@ A teljes elérhető összeg küldésekor a díj levonódhat a címzettnek érkez
 Nézd át az előnézetben a teljes díjat és a becsült visszaigazolási beállítást. A díj a tranzakció által elfoglalt helyért fizetett összeg; nem egyszerűen a fizetés százaléka. Az időbecslés változhat, és nem garancia.
 
 Olyan elérhető díjbecslést használj, amelyet értesz. Ha nincsenek becslések, és bizonytalan vagy a választásban, várj és vizsgálódj ahelyett, hogy találomra nagyon magas egyedi díjat adnál meg.
+
+Jóváhagyás előtt az előnézet **View transaction** műveletével részletesebben is megvizsgálhatod a tranzakciót. Külön ablakban mutatja a bemeneteket és kimeneteket. Az elérhető adatokhoz lásd [a tranzakció vizsgálatát](/hu/payments/coin-control-history/#inspect-inputs-and-outputs).
 
 <span id="the-leftover-money-is-change" data-ginger-heading="a-megmaradó-pénz-a-visszajáró" aria-hidden="true"></span>
 

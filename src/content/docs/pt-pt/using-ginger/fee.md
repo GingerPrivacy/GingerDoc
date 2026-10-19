@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.fees-and-change"
 title: "Taxas de transação, taxas por byte virtual personalizadas e troco"
-description: "Compreenda as taxas em satoshis por byte virtual, a inserção manual de taxas, as saídas de troco e as sugestões de privacidade que alteram o valor no Ginger."
+description: "Entenda taxas por byte virtual, taxas personalizadas a partir de 0.1 sat/vB, limites de retransmissão, desconto de taxas, saídas de troco e sugestões de privacidade no Ginger."
 lang: "pt-PT"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -23,9 +23,19 @@ Para as etapas de um pagamento comum, comece por [Enviar bitcoin](/pt-pt/payment
 
 A taxa por unidade de tamanho é medida em satoshis por byte virtual e aparece como **Fee Rate (sat/vByte)**. A taxa total de mineração é essa taxa multiplicada pelo tamanho virtual da transação. Ela não é uma percentagem do valor do pagamento. Gastar várias moedas pequenas pode custar mais do que gastar uma única moeda maior com o mesmo valor total.
 
-Use o controlo de taxa da pré-visualização para alterar a preferência de confirmação desejada ou inserir uma **Custom Fee Rate**. O prazo estimado não é uma garantia: novas transações disputam espaço e os blocos chegam em intervalos irregulares. O controlo de inserção manual desta versão rejeita taxas abaixo de 1 sat/vByte; a política do nó pode exigir mais do que o mínimo permitido pelo campo.
+Use o controlo de taxa da pré-visualização para alterar a preferência de confirmação desejada ou inserir uma **Custom Fee Rate**. O Ginger aceita taxas por byte virtual a partir de **0.1 sat/vB**, e suas estimativas e gráfico de taxas preservam valores fracionários. O prazo estimado não é uma garantia: novas transações disputam espaço e os blocos chegam em intervalos irregulares.
+
+O mínimo do editor não garante que uma transação seja retransmitida ou aceite na mempool de um nó. Os nós podem exigir uma taxa por byte virtual maior por causa da sua política ou das condições atuais da mempool. Ao transmitir aos pares, o Ginger ignora aqueles cujo mínimo anunciado supera a taxa por byte virtual da transação. Assim, uma taxa personalizada baixa pode impedir a transmissão ou deixar a transação sem confirmação; avalie as condições da rede e a urgência do pagamento antes de usá-la.
 
 Quando as estimativas automáticas não estão disponíveis, o Ginger ainda pode oferecer a inserção manual de uma taxa por byte virtual. Se não tem certeza de qual taxa por byte virtual usar, é preferível esperar as estimativas voltarem a funcionar a arriscar um número muito alto. As taxas de transações comuns e as taxas do coordenador de CoinJoin são distintas.
+
+<span id="check-who-pays-the-fee" data-ginger-heading="confira-quem-paga-a-taxa" aria-hidden="true"></span>
+
+## Confira quem paga a taxa
+
+Num [pagamento em lote](/pt-pt/payments/send/#pay-several-recipients-in-one-transaction), **Subtract the transaction fee from the first payment** reduz apenas o valor do primeiro destinatário. Os demais valores inseridos permanecem inalterados. Se a opção estiver desmarcada, é preciso ter fundos suficientes para todos os valores dos pagamentos mais a taxa. Usar **Max** no editor de lotes ativa o desconto da taxa.
+
+Confira sempre os valores finais na pré-visualização, especialmente após alterar a taxa por byte virtual. Se um destinatário precisar receber um valor exato, descontar a taxa desse pagamento pode fazer com que receba menos que o solicitado. A pré-visualização lista separadamente o valor final de cada destinatário do lote.
 
 <span id="change-is-still-your-bitcoin" data-ginger-heading="o-troco-continua-a-ser-o-seu-bitcoin" aria-hidden="true"></span>
 

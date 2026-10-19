@@ -3,7 +3,7 @@ doc_id: "help.advanced-faq"
 title: "Haladó Ginger Wallet GYIK"
 description: "Kiadott Ginger-válaszok a helyreállítási keresésről, metaadatokról, xpubról, UTXO-kiválasztásról, adatvédelmi előrehaladásról, teljes CoinJoin-költségről, célpénztárcáról és adatmegosztásról."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -108,7 +108,7 @@ Elveszett kis kimenet feltételezése előtt nézd a szinkronizálást és pork�
 
 ### Beállíthatok bármilyen díjrátát vagy garantálhatok visszaigazolási időt?
 
-Nem. A kiadott kézi díjszerkesztő elutasítja az 1 sat/vByte alatti értéket, a hálózati szabályzat pedig ennél többet is követelhet. Egyedi díjráta is más tranzakciókkal verseng, és nem foglalhat visszaigazolási határidőt. Jóváhagyás előtt a teljes díjat nézd, ne csak a díjrátát.
+Nem. A kézi díjszerkesztő **0.1 sat/vByte** értékig fogad el díjrátát. Alacsony díjrátát csak akkor érdemes használni, ha a továbbítási és mempoolfeltételek lehetővé teszik; a szerkesztő általi elfogadás nem garantálja, hogy a társcsomópontok továbbítják a tranzakciót vagy a bányászok visszaigazolják. Egyedi díjrátával sem foglalhatsz visszaigazolási határidőt. Jóváhagyás előtt a teljes díjat nézd, ne csak a díjrátát; lásd az [egyedi díjrátákat](/hu/using-ginger/fee/).
 
 <span id="coinjoin-costs-and-progress" data-ginger-heading="coinjoin-költségek-és-előrehaladás" aria-hidden="true"></span>
 

@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.fees-and-change"
 title: "交易手续费、自定义费率与找零"
-description: "了解 Ginger 中按每字节聪数表示的手续费率、手动费率输入、找零输出和调整金额的隐私建议。"
+description: "了解 Ginger 的手续费率、低至 0.1 sat/vB 的自定义费率、转发限制、手续费扣除、找零输出和隐私建议。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -23,9 +23,19 @@ next: false
 
 手续费率以每虚拟字节的聪数计量，显示为 **Fee Rate (sat/vByte)**。总矿工手续费等于费率乘以交易虚拟大小，不是付款金额的百分比。花费多个小额币，可能比花费一个总价值相同的大额币更贵。
 
-使用预览中的手续费控件更改期望确认偏好，或输入 **Custom Fee Rate**。预计时间不是保证：新交易竞争区块空间，区块也以不规则间隔产生。已发布的手动输入控件拒绝低于 1 sat/vByte 的费率；节点策略可能要求高于输入控件最低值的费率。
+使用预览中的手续费控件，更改期望的确认偏好或输入 **Custom Fee Rate**。Ginger 接受低至 **0.1 sat/vB** 的费率，估算与手续费图表也会保留小数费率。预计时间不是保证：新交易会竞争空间，区块到达的间隔也不规则。
+
+编辑器的最低值不保证交易会被转发或被节点的内存池接收。节点可能因其策略或当前内存池情况而要求更高费率。向对等节点广播时，Ginger 会跳过所公布最低费率高于交易费率的节点。因此，低自定义费率可能导致广播失败或交易持续未确认；使用前，请考虑网络情况和付款的紧迫性。
 
 自动估算不可用时，Ginger 仍可能提供手动输入手续费率。如果不确定合适的费率，等待估算恢复比猜测一个很高的数值更好。普通交易手续费和 CoinJoin 协调器费用是两类不同费用。
+
+<span id="check-who-pays-the-fee" data-ginger-heading="检查谁支付手续费" aria-hidden="true"></span>
+
+## 检查谁支付手续费
+
+在[批量付款](/zh-cn/payments/send/#pay-several-recipients-in-one-transaction)中，**Subtract the transaction fee from the first payment** 只会减少第一位收款人的金额。其他输入的付款金额保持不变。取消选中时，你需要足够资金支付全部付款金额加手续费。在批量付款编辑器中使用 **Max** 会启用手续费扣除。
+
+始终检查预览中的最终金额，尤其是在更改费率之后。如果收款人必须收到准确金额，从该笔付款中扣除手续费可能导致少付。预览会分别列出批量付款中每位收款人的最终金额。
 
 <span id="change-is-still-your-bitcoin" data-ginger-heading="找零仍然是你的比特币" aria-hidden="true"></span>
 

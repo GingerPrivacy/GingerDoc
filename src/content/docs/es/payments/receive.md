@@ -3,7 +3,7 @@ doc_id: "payments.receive"
 title: "Recibe bitcoin y gestiona direcciones"
 description: "Genera una dirección de recepción Ginger, elige SegWit o Taproot cuando sea compatible, etiqueta los pagos y comprueba las confirmaciones."
 lang: "es"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -19,11 +19,19 @@ Utiliza una dirección de recepción nueva para cada pago. La dirección indica 
 
 1. Abre el monedero previsto y espera a que termine la recuperación o sincronización.
 2. Elige **Receive**. Añade una etiqueta que describa el pagador o propósito, como «Factura de junio». Usa detalle suficiente para reconocerla después sin registrar datos personales innecesarios.
-3. Elige **Generate**. La acción normal crea una dirección SegWit nativa. Si el monedero admite Taproot, la acción alternativa ofrece **Taproot**, mostrado como **TR**; utilízalo solo cuando el pagador admita ese tipo.
+3. Elige **Generate** o pulsa **Enter** para crear una dirección con el tipo predeterminado guardado de este monedero. Si el monedero admite Taproot, el desplegable también ofrece **Generate SegWit** y **Generate Taproot**, para elegir un tipo para esta solicitud. Usa Taproot solo cuando el pagador lo admita.
 4. Copia la dirección o comparte el QR de recepción. Para un monedero de hardware, utiliza **Show on the hardware wallet** y compara la dirección completa en el dispositivo antes de entregarla al pagador.
 5. Comprueba el destino después de pegarlo en otra aplicación. Un malware del portapapeles puede sustituirlo aunque el QR o pantalla original fueran correctos.
 
 En mainnet Bitcoin, las direcciones SegWit nativas normalmente empiezan por `bc1q`; las Taproot por `bc1p`. Las de redes de prueba son diferentes. Si un servicio rechaza una dirección Bitcoin admitida, comprueba con él su compatibilidad de red y tipo en vez de modificar caracteres.
+
+<span id="set-the-default-address-type" data-ginger-heading="establecer-el-tipo-de-dirección-predeterminado" aria-hidden="true"></span>
+
+## Establecer el tipo de dirección predeterminado
+
+En un monedero compatible con Taproot, abre el desplegable junto a **Generate** y elige **Set as Default** junto a SegWit o Taproot. El tipo seleccionado se marca como **Default** y se guarda para este monedero. Los usos posteriores de **Generate** y **Enter** lo siguen; otro monedero puede tener una preferencia distinta.
+
+Elegir **Generate SegWit** o **Generate Taproot** en el desplegable genera directamente ese tipo sin cambiar el predeterminado guardado. Los monederos existentes empiezan con SegWit al actualizar. El cambio afecta a las direcciones que se generen en el futuro; las direcciones ya generadas pueden seguir recibiendo pagos.
 
 <span id="labels-and-unused-addresses" data-ginger-heading="etiquetas-y-direcciones-sin-usar" aria-hidden="true"></span>
 

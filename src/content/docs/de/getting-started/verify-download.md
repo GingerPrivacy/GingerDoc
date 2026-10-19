@@ -3,7 +3,7 @@ doc_id: "getting-started.verify-download"
 title: "Einen Ginger-Wallet-Download prüfen"
 description: "Prüfe die Signatur einer Ginger-Wallet-Veröffentlichung und den Fingerabdruck des Signierschlüssels vor der Installation."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 sidebar:
   label: Einen Download prüfen
@@ -22,7 +22,7 @@ Eine separate Signatur hilft festzustellen, dass deine heruntergeladene Datei vo
 
 ## Die passenden Dateien beschaffen
 
-Lade von der [Veröffentlichung v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) deinen Installer oder dein Archiv sowie die gleichnamige Datei mit zusätzlichem `.asc` herunter. Bewahre beide in einem Ordner auf. Unter Windows sind das beispielsweise `Ginger-2.0.26.msi` und `Ginger-2.0.26.msi.asc`. Eine Signatur für ein DMG, ZIP oder eine andere Version prüft diese MSI nicht.
+Lade von der [Veröffentlichung v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) deinen Installer oder dein Archiv sowie die gleichnamige Datei mit zusätzlichem `.asc` herunter. Bewahre beide in einem Ordner auf. Unter Windows sind das beispielsweise `Ginger-2.0.27.msi` und `Ginger-2.0.27.msi.asc`. Eine Signatur für ein DMG, ZIP oder eine andere Version prüft diese MSI nicht.
 
 Beziehe den öffentlichen Signierschlüssel über den PGP-Link auf der [offiziellen Website](https://gingerwallet.io/). Speichere ihn als `PGP.txt`. Verwende eine vertrauenswürdige OpenPGP-Anwendung wie GnuPG zum Prüfen und Importieren. Falls GnuPG fehlt, beziehe es von der [offiziellen GnuPG-Downloadseite](https://gnupg.org/download/).
 
@@ -52,7 +52,7 @@ Vergleiche den vollständigen Fingerabdruck, nicht nur eine kurze Schlüssel-ID 
 Führe für den Windows-Installer Folgendes aus:
 
 ```sh
-gpg --verify Ginger-2.0.26.msi.asc Ginger-2.0.26.msi
+gpg --verify Ginger-2.0.27.msi.asc Ginger-2.0.27.msi
 ```
 
 Ersetze für andere Plattformen beide Dateinamen exakt. Eine erfolgreiche Prüfung sollte eine gültige Signatur des vorgesehenen Schlüssels melden. GnuPG kann zusätzlich warnen, dass der Schlüssel nicht durch eine vertrauenswürdige Signatur zertifiziert ist: Das betrifft deine Authentifizierung des Schlüssels und darf nicht mit einer ungültigen Dateisignatur verwechselt werden.
@@ -66,5 +66,7 @@ Wenn das Ergebnis **BAD signature** meldet, der Schlüssel fehlt, der Fingerabdr
 Ein Prüfsummenvergleich kann Downloadfehler erkennen. Eine Prüfsumme von einer nicht vertrauenswürdigen Seite kann Software nicht authentifizieren, weil ein Angreifer Download und Prüfsumme ersetzen kann. Die Veröffentlichung liefert auch Prüfsummendaten; das obige Verfahren mit der passenden separaten Signatur genügt zur Prüfung eines ausgewählten Pakets.
 
 Windows-Codesignierung sowie macOS-Signierung oder Notarisierung bieten zusätzliche Plattformprüfungen. Sie ergänzen die Prüfung der heruntergeladenen Veröffentlichung; sie ersetzen weder den Schutz deiner Wiederherstellungswörter noch die Transaktionsprüfung.
+
+Um separat zu prüfen, ob sich die Anwendungsdateien aus dem Quellcode reproduzieren lassen, folge der [Reproduzierbarkeitsanleitung dieser Veröffentlichung](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.27/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md). Verwende exakt den Release-Tag und die im Paket angegebene Toolchain. Vergleiche die extrahierten portablen Anwendungsdateien wie dort beschrieben; Archivmetadaten und Signaturen können die Paketbytes verändern. Eine signierte Windows-MSI oder macOS-DMG hat daher erwartungsgemäß nicht denselben Dateihash wie ein unsignierter lokaler Build.
 
 Kehre nach erfolgreicher Prüfung zu [Die Anwendung installieren](/de/getting-started/install/#install-the-application) zurück.

@@ -3,7 +3,7 @@ doc_id: "settings-network.preferences"
 title: "Görünüm, dil ve günlük ayarlar"
 description: "Ginger dilini, görüntüleme biçimlerini, arka plan davranışını, tarayıcı tercihlerini ve gizli görüntüleme modunu cüzdan güvenliğiyle karıştırmadan değiştirin."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -17,7 +17,7 @@ Uygulama genelindeki tercihler için **Settings**, seçili cüzdanın adı, Coin
 
 ## Dil ve tutarlar
 
-**Settings** → **Appearance** bölümünde **Language** arayüz dilini seçer. 2.0.26 sürümü İngilizce, İspanyolca, Macarca, Fransızca, Çince, Almanca, Portekizce, Türkçe ve İtalyanca sunar. Yeniden başlatma istemlerini izleyin. Bu kılavuz, yayımlanan İngilizce arayüz etiketlerini korur; çevrilmiş etiketler farklı olabilir.
+**Settings** → **Appearance** altında **Language**, arayüz dilini seçer. 2.0.27 sürümü on bir dil sunar: İngilizce, İspanyolca, Macarca, Fransızca, Çince, Almanca, Portekizce, Türkçe, İtalyanca, Brezilya Portekizcesi ve Rusça. İki Portekizce seçeneği **Português** ve **Português (Brasil)** olarak; Rusça ise **Русский** olarak görünür. Yeniden başlatma istemi çıkarsa uygulayın. Bu kılavuz, yayınlanan sürümün İngilizce etiketlerini kullanır; çevrilmiş etiketler farklı olabilir.
 
 **Dark mode** görünümü değiştirir. **Exchange currency** referans itibari para görüntüsünü değiştirir; ondalık ve grup ayırıcıları, Bitcoin kesir gruplaması ve **Fee display unit** sayı sunumunu kontrol eder. Bunlar alttaki BTC tutarını veya ağın işlem ücretini değiştirmez. Bilmediğiniz biçimde tutar girmeden önce ayarlardaki örnekleri okuyun.
 
@@ -49,5 +49,7 @@ Harici sayfalar seçili tarayıcının kendi ağ ve gizlilik davranışını kul
 ## Cüzdan bilgileri ve araçlar
 
 **Wallet Info** hesap ve genişletilmiş açık anahtar bilgisini gösterebilir. Genişletilmiş açık anahtar doğrudan coin harcayamaz, ancak birçok ilişkili adresi açıklayabilir. Halka açık destek isteğinde paylaşmayın.
+
+Varsayılan alma adresi türü **Receive** bölümünde her cüzdan için ayrı kaydedilir. Taproot desteklendiğinde **Generate** ve Enter tarafından kullanılan varsayılan olarak SegWit veya Taproot'u seçebilirsiniz. Bu tercih, uygulama genelindeki görünüm ayarlarından ayrıdır; kontroller ve uyumluluk denetimleri için [alma adreslerine](/tr/payments/receive/) bakın.
 
 **Wallet Settings** → **General** altında ad kontrolünü cüzdanı yeniden adlandırmak için kullanın. **Tools** altında **Verify Recovery Words** erişilebilir yazılım cüzdanının yedeğini kontrol eder, **Resync** görünümünü yeniden oluşturur, **Delete Wallet** onay süreciyle yerel cüzdanı kaldırır. Silmek bitcoini yok etmez, kurtarma kelimelerini iptal etmez veya yedeğin yerini almaz. Yerel erişimi kaldırmadan önce çalışan kurtarma bilgilerini saklayın.

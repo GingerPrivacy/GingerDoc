@@ -3,7 +3,7 @@ doc_id: "settings-network.preferences"
 title: "Apariencia, idioma y ajustes cotidianos"
 description: "Cambia el idioma, los formatos de visualización, el comportamiento en segundo plano, las preferencias de navegador y el modo discreto de Ginger sin confundirlos con la seguridad del monedero."
 lang: "es"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -17,7 +17,7 @@ Usa **Settings** para las preferencias de toda la aplicación y **Wallet Setting
 
 ## Idioma e importes
 
-En **Settings** → **Appearance**, **Language** selecciona el idioma de la interfaz. La versión 2.0.26 ofrece inglés, español, húngaro, francés, chino, alemán, portugués, turco e italiano. Sigue cualquier indicación de reinicio. Este manual en inglés usa las etiquetas inglesas publicadas; las etiquetas traducidas pueden diferir.
+En **Settings** → **Appearance**, **Language** selecciona el idioma de la interfaz. La versión 2.0.27 ofrece once idiomas: inglés, español, húngaro, francés, chino, alemán, portugués, turco, italiano, portugués de Brasil y ruso. Las dos opciones de portugués aparecen como **Português** y **Português (Brasil)**; el ruso aparece como **Русский**. Sigue cualquier indicación de reinicio. Este manual usa las etiquetas inglesas publicadas; las etiquetas traducidas pueden diferir.
 
 **Dark mode** cambia la apariencia. **Exchange currency** cambia la visualización de referencia en moneda fiduciaria, mientras que los separadores decimales y de grupos, la agrupación de fracciones de Bitcoin y **Fee display unit** controlan la presentación numérica. Estos ajustes no cambian el importe subyacente en BTC ni la comisión de transacción de la red. Lee los ejemplos de los ajustes antes de introducir un importe con un formato desconocido.
 
@@ -49,5 +49,7 @@ Las páginas externas usan el comportamiento de red y privacidad del navegador s
 ## Información y herramientas de monedero
 
 **Wallet Info** puede mostrar información de cuenta y de claves públicas extendidas. Una clave pública extendida no puede gastar monedas directamente, pero puede revelar muchas direcciones relacionadas. No la publiques en una solicitud pública de soporte.
+
+El tipo predeterminado de dirección de recepción se guarda por monedero en **Receive**. Cuando se admite Taproot, puedes elegir SegWit o Taproot como tipo predeterminado para **Generate** y Enter. Esta preferencia es independiente de los ajustes de apariencia de toda la aplicación; consulta las [direcciones de recepción](/es/payments/receive/) para conocer los controles y las comprobaciones de compatibilidad.
 
 En **Wallet Settings** → **General**, usa el control de nombre para cambiar el nombre del monedero. En **Tools**, **Verify Recovery Words** comprueba la copia de un monedero de software accesible, **Resync** reconstruye su vista y **Delete Wallet** elimina un monedero local mediante su proceso de confirmación. Eliminarlo no destruye el bitcoin, revoca las palabras de recuperación ni sustituye una copia de seguridad. Conserva información de recuperación funcional antes de eliminar el acceso local.

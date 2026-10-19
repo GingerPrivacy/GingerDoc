@@ -3,7 +3,7 @@ doc_id: "learn-coinjoin.trust-and-limits"
 title: "Worauf vertraust du bei CoinJoin?"
 description: "Unterscheide Bitcoin-Schlüsselkontrolle, Privatsphäreannahmen, Koordinatorverfügbarkeit, unabhängige Teilnehmer und Softwareprüfung."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -27,6 +27,8 @@ Bestimme vor Teilnahme dein Ziel: Vielleicht soll ein Empfänger weniger über a
 | Welche Software läuft? | Quelloffenheit ermöglicht Prüfung; Downloadprüfung hilft Herkunft und Unverändertheit der Datei festzustellen. | Fehlerfreiheit jedes Builds, nicht kompromittierter Computer oder exakte Ausführung veröffentlichten Codes beim Dienst |
 
 Die [WabiSabi-Veröffentlichung, Abschnitt 7](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3) behandelt Privatsphäre, aktive Angriffe und Diebstahlverhinderung getrennt. Diese Anleitung überträgt das auf Nutzerentscheidungen; sie ist kein Sicherheitsaudit einer installierten Wallet oder eines Koordinators.
+
+In v2.0.27 prüft Ginger vor Abschluss des Signierens die Inputzahl und die effektive Mining-Gebührenrate der vorgeschlagenen Transaktion. Es prüft außerdem, ob die registrierten Inputs und erwarteten Outputs enthalten sind, und lehnt doppelte registrierte Wallet-Inputs ab. Scheitern Signierprüfungen, hält es eine Signatur für einen tatsächlich enthaltenen Input zurück oder sendet keine Signaturen, falls keiner seiner Inputs übrig ist. Blame-Runden-Prüfungen beschränken den Wiederholungsversuch auf die Inputs und den vorgeschlagenen Maximalbetrag der vorherigen Transaktion; Ginger verwendet nur eigene Coins erneut, für die Signaturen übermittelt wurden. Diese Prüfungen richten sich gegen bestimmte ungültige oder widersprüchliche Vorschläge und garantieren weder die Ehrlichkeit des Koordinators noch die Unabhängigkeit der Teilnehmer. Die [Rundenreferenz](/de/coinjoin/round-details/) erklärt die praktische Bedeutung einer Ablehnung oder Wiederholung.
 
 <span id="consider-the-observer" data-ginger-heading="den-beobachter-berücksichtigen" aria-hidden="true"></span>
 

@@ -3,7 +3,7 @@ doc_id: "settings-network.secret-hunt"
 title: "Ginger Wallet 的 Secret Hunt"
 description: "查找 Ginger Secret Hunt 活动结果，控制钱包参与，并了解活动服务收到的信息。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -19,7 +19,9 @@ next: false
 
 打开软件钱包菜单，选择 **Secret Hunt**。对话框以树状列表显示活动结果，包括发现的词或句子，以及收集齐活动所需秘密后出现的额外秘密。展开活动查看条目。
 
-使用 **Enable/disable the use of this wallet for Secret Hunt.** 控制该钱包是否参与。已发布版本默认启用。关闭后，停用视图中的树状显示会清空，更新器也不再选择该钱包进行活动资格检查。它不会取消 CoinJoin、删除区块链交易或抹去已发送给服务的信息。
+使用 **Enable/disable the use of this wallet for Secret Hunt.** 控制此钱包的参与状态。在 v2.0.27 中，新钱包默认禁用 Secret Hunt；请为每个希望参与的钱包单独启用。现有钱包升级时会保留已保存的设置，因此，如果以前使用过 Secret Hunt，请检查此开关。
+
+关闭后，禁用视图中显示的树会被清空，更新器也不再选择此钱包进行活动资格检查。这不会取消 CoinJoin、删除区块链交易，或抹去已发送给服务的信息。
 
 仅观察钱包不提供此入口。它不是硬件钱包的 CoinJoin 功能，也不要求在活动网站输入助记词。
 
