@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.coin-control-history"
 title: "Coin Control, History, and Stuck Transactions"
-description: "Inspect Ginger UTXOs and payment history, select coins deliberately, and understand when speeding up or cancelling is possible."
+description: "Inspect Ginger UTXOs, transaction inputs and outputs, and payment history; select coins deliberately and handle unconfirmed payments."
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -36,6 +36,18 @@ The wallet home screen shows incoming, outgoing, and CoinJoin activity. Expand g
 Use **Copy Transaction ID** when you need to identify a specific transaction. Keep transaction IDs private where possible: sharing one can disclose addresses, amounts, and links to other activity. A public explorer also learns the queries you make. Ginger's local history is the first place to check your own payments.
 
 You can inspect, sort and group history, and copy transaction IDs. This release does not offer a transaction-search or CSV-export control in this history workflow.
+
+## Inspect inputs and outputs
+
+Choose **View transaction** from a send preview or a transaction's details to open the transaction viewer. For a grouped CoinJoin history item, expand the group and open an individual CoinJoin's details to find the same action. The viewer opens in a separate window that you can resize; drag its dividers to give the diagram, selection details, or summary more space.
+
+The left side lists inputs and the right side lists outputs. Scroll to inspect longer transactions, then select an input or output to see its amount, current fiat estimate, address, outpoint, script type, labels, and known anonymity score. Ownership is shown as **Own wallet**, **External**, or **Change** where applicable. An outpoint identifies a particular output by its transaction ID and output index.
+
+Use the copy buttons to copy the transaction ID or the selected coin's address or outpoint. The summary shows input and output totals, the mining fee and fee rate, virtual size, date, and whether the transaction is a preview, pending, or confirmed. Viewing a preview does not sign or broadcast it.
+
+Some information about external inputs is unavailable to the wallet. An unknown input amount can also make the input total and fee unknown. An anonymity score is shown only when Ginger has a known score for that wallet coin; new outputs in a send preview have no score yet. **Unknown** or a dash is not a score of zero. Fiat amounts use the current exchange rate, including when you inspect an older transaction.
+
+**Discreet Mode** hides the transaction data and disables the viewer's copy actions. Turn it off when you are ready to inspect the details privately. Opening this local viewer does not require sharing the transaction with a public explorer.
 
 ## Speed up an unconfirmed transaction
 

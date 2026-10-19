@@ -3,7 +3,7 @@ doc_id: "payments.receive"
 title: "Receive Bitcoin and Manage Addresses"
 description: "Generate a Ginger receiving address, choose SegWit or Taproot where supported, label payments, and check confirmations."
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -17,11 +17,17 @@ Use a fresh receiving address for each payment. The address tells a payer where 
 
 1. Open the intended wallet and wait for recovery or synchronization to finish.
 2. Choose **Receive**. Add a label describing the payer or purpose, such as “June invoice.” Use enough detail to recognize it later without recording unnecessary personal data.
-3. Choose **Generate**. The normal action creates a native SegWit address. If the wallet supports Taproot, the alternative action offers **Taproot**, shown with **TR**; use it only when the payer supports that address type.
+3. Choose **Generate**, or press **Enter**, to create an address using this wallet's saved default type. If the wallet supports Taproot, the dropdown also offers **Generate SegWit** and **Generate Taproot**, so you can choose a type for this request. Use Taproot only when the payer supports it.
 4. Copy the address or share the receiving QR code. For a hardware wallet, use **Show on the hardware wallet** and compare the complete address on the device before giving it to the payer.
 5. Check the destination after pasting it into another application. Clipboard malware can substitute an address even when the original QR or wallet display was correct.
 
 On Bitcoin mainnet, native SegWit receiving addresses normally begin with `bc1q`; Taproot addresses begin with `bc1p`. Test-network addresses differ. If a service rejects a supported Bitcoin address, check its network and address-type support with that service rather than altering characters in the address.
+
+## Set the default address type
+
+In a wallet that supports Taproot, open the dropdown beside **Generate** and choose **Set as Default** beside SegWit or Taproot. The selected type is marked **Default** and is saved for this wallet. Future uses of **Generate** and **Enter** follow it; another wallet can have a different preference.
+
+Choosing **Generate SegWit** or **Generate Taproot** in the dropdown generates that type directly without changing the saved default. Existing wallets start with SegWit when upgraded. Changing the preference affects future address generation; previously generated addresses can still receive payments.
 
 ## Labels and unused addresses
 

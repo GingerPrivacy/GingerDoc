@@ -3,7 +3,7 @@ title: "Using Ginger"
 description: "Find the ordinary steps for receiving and sending bitcoin, then choose optional Ginger features as you need them."
 doc_id: "payments.overview"
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -14,7 +14,7 @@ Start with a backed-up wallet and let synchronization finish before relying on i
 ## Make an ordinary payment
 
 1. [Receive bitcoin](/payments/receive/): create a fresh address, label it and check the incoming transaction.
-2. [Send bitcoin](/payments/send/): enter the destination and amount, then review the recipient amount, change and fee before confirming.
+2. [Send bitcoin](/payments/send/): enter the destination and amount, then review the recipient amount, change and fee before confirming. Use **Pay to multiple recipients** when you need several payments in one transaction, and check every recipient in the preview.
 3. Check the wallet's history after sending. If the result is uncertain, establish what happened before paying again.
 
 ## Choose an optional feature

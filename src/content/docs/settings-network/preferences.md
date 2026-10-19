@@ -3,7 +3,7 @@ doc_id: "settings-network.preferences"
 title: "Appearance, Language, and Everyday Settings"
 description: "Change Ginger language, display formats, background behavior, browser preferences, and discreet mode without confusing them with wallet security."
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -15,7 +15,7 @@ Use **Settings** for application-wide preferences and **Wallet Settings** for th
 
 ## Language and amounts
 
-In **Settings** → **Appearance**, **Language** selects the interface language. Version 2.0.26 offers English, Spanish, Hungarian, French, Chinese, German, Portuguese, Turkish, and Italian. Follow any restart prompt. This English manual uses the released English labels; translated labels may differ.
+In **Settings** → **Appearance**, **Language** selects the interface language. Version 2.0.27 offers eleven languages: English, Spanish, Hungarian, French, Chinese, German, Portuguese, Turkish, Italian, Brazilian Portuguese, and Russian. The two Portuguese choices appear as **Português** and **Português (Brasil)**; Russian appears as **Русский**. Follow any restart prompt. This English manual uses the released English labels; translated labels may differ.
 
 **Dark mode** changes appearance. **Exchange currency** changes the reference fiat display, while decimal and group separators, Bitcoin fraction grouping, and **Fee display unit** control number presentation. These do not change the underlying BTC amount or the network's transaction fee. Read the examples in the settings before entering an amount in an unfamiliar format.
 
@@ -43,5 +43,7 @@ External pages use the selected browser's own network and privacy behavior. A bu
 ## Wallet information and tools
 
 **Wallet Info** can display account and extended public-key information. An extended public key cannot directly spend coins, but can reveal many related addresses. Do not post it in a public support request.
+
+The default receiving address type is saved for each wallet in **Receive**. Where Taproot is supported, you can choose SegWit or Taproot as the default used by **Generate** and Enter. This preference is separate from application-wide appearance settings; see [receiving addresses](/payments/receive/) for the controls and compatibility checks.
 
 Under **Wallet Settings** → **General**, use the name control to rename the wallet. Under **Tools**, **Verify Recovery Words** checks an accessible software wallet's backup, **Resync** rebuilds its view, and **Delete Wallet** removes a local wallet through its confirmation flow. Deletion does not destroy the bitcoin, revoke recovery words, or replace a backup. Keep working recovery information before removing local access.

@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.fees-and-change"
 title: "Transaction Fees, Custom Rates and Change"
-description: "Understand satoshi-per-byte fee rates, manual fee entry, change outputs and amount-changing privacy suggestions in Ginger."
+description: "Understand fee rates, custom rates down to 0.1 sat/vB, relay limits, fee deduction, change outputs and privacy suggestions in Ginger."
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -21,9 +21,17 @@ For the ordinary payment steps, start with [Send Bitcoin](/payments/send/). This
 
 A fee rate is measured in satoshis per virtual byte, shown as **Fee Rate (sat/vByte)**. The total mining fee is the fee rate multiplied by the transaction's virtual size. It is not a percentage of the payment amount. Spending many small coins can cost more than spending one larger coin of the same total value.
 
-Use the preview's fee control to change the desired confirmation preference or enter a **Custom Fee Rate**. An estimated time is not a guarantee: new transactions compete for space and blocks arrive at irregular intervals. The released manual-entry control rejects rates below 1 sat/vByte; node policy can require more than the editor's minimum.
+Use the preview's fee control to change the desired confirmation preference or enter a **Custom Fee Rate**. Ginger accepts rates down to **0.1 sat/vB**, and its estimates and fee chart retain fractional rates. An estimated time is not a guarantee: new transactions compete for space and blocks arrive at irregular intervals.
+
+The editor's minimum does not guarantee that a transaction will be relayed or accepted into a node's mempool. Nodes can require a higher rate because of their policy or current mempool conditions. When broadcasting to peers, Ginger skips peers whose advertised minimum is above the transaction's fee rate. A low custom rate may therefore fail to broadcast or remain unconfirmed; review the network conditions and the payment's urgency before using it.
 
 When automatic estimates are unavailable, Ginger can still offer manual fee entry. If you are unsure what rate is appropriate, waiting for estimates to recover is preferable to guessing a very high number. Ordinary transaction fees and CoinJoin coordinator fees are separate.
+
+## Check who pays the fee
+
+In a [batch payment](/payments/send/#pay-several-recipients-in-one-transaction), **Subtract the transaction fee from the first payment** reduces only the first recipient's amount. The other entered payment amounts stay unchanged. If the option is cleared, you need enough funds for all payment amounts plus the fee. Using **Max** in the batch editor enables fee subtraction.
+
+Always check the final amounts in the preview, especially after changing the fee rate. If a recipient must receive an exact amount, deducting a fee from that payment can underpay the request. The preview lists each batch recipient's final amount separately.
 
 ## Change is still your bitcoin
 
