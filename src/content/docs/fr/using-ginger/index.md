@@ -3,7 +3,7 @@ title: "Utiliser Ginger"
 description: "Trouver les étapes ordinaires de réception et d'envoi, puis choisir les fonctions facultatives selon vos besoins."
 doc_id: "payments.overview"
 lang: fr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -16,7 +16,7 @@ Commencez par un portefeuille sauvegardé et laissez finir la synchronisation av
 ## Effectuer un paiement ordinaire
 
 1. [Recevoir du bitcoin](/fr/payments/receive/) : créez une nouvelle adresse, étiquetez-la et vérifiez la transaction entrante.
-2. [Envoyer du bitcoin](/fr/payments/send/) : saisissez destination et montant, puis vérifiez le montant reçu par le destinataire, la monnaie rendue et les frais avant confirmation.
+2. [Envoyer du bitcoin](/fr/payments/send/) : saisissez destination et montant, puis vérifiez le montant reçu par le destinataire, la monnaie rendue et les frais avant confirmation. Utilisez **Pay to multiple recipients** pour effectuer plusieurs paiements dans une seule transaction et vérifiez chaque destinataire dans l’aperçu.
 3. Vérifiez l'historique après envoi. Si le résultat est incertain, établissez ce qui s'est passé avant de payer à nouveau.
 
 <span id="choose-an-optional-feature" data-ginger-heading="choisir-une-fonction-facultative" aria-hidden="true"></span>

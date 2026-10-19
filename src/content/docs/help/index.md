@@ -3,7 +3,7 @@ doc_id: "help.faq"
 title: "Ginger Wallet FAQ: Start Here"
 description: "Get short answers about missing funds, backups, recovery, CoinJoin waiting and fees, pending payments, hardware wallets and safe support."
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -28,7 +28,7 @@ Ginger is a desktop application for receiving and sending on-chain Bitcoin, with
 
 ### Is there an official mobile or web wallet?
 
-The v2.0.26 release provides desktop software for supported Windows, macOS and Linux computers. It does not provide an Android, iOS or browser wallet, Lightning payments, or other cryptocurrencies. Start at the [official Ginger website](https://gingerwallet.io/) and its release links; do not enter recovery words in an app or website merely because it uses the Ginger name.
+The v2.0.27 release provides desktop software for supported Windows, macOS and Linux computers. It does not provide an Android, iOS or browser wallet, Lightning payments, or other cryptocurrencies. Start at the [official Ginger website](https://gingerwallet.io/) and its release links; do not enter recovery words in an app or website merely because it uses the Ginger name.
 
 ### Do I need an account, my own node or a hardware wallet?
 
@@ -138,6 +138,14 @@ The ordinary manual player can hide play when all funds meet the wallet's privac
 
 ## Payments and hardware
 
+### Can I pay several recipients in one transaction?
+
+Yes. In **Send**, choose **Pay to multiple recipients** and enter each recipient's address, amount and labels. Review every final recipient amount and the total fee before confirming. If you subtract the fee from a payment, it comes from the first payment. Batching puts the destinations together in one public transaction; see [sending to several recipients](/payments/send/#pay-several-recipients-in-one-transaction).
+
+### Can I make Taproot my usual receiving address type?
+
+For a wallet that supports Taproot, open the dropdown beside **Generate** in **Receive** and choose **Set as Default** beside Taproot. **Generate** and Enter follow that wallet's saved preference. Existing wallets start with SegWit. Check the payer's address support first; see [receiving address preferences](/payments/receive/).
+
 ### Why is a payment still pending after the estimated time?
 
 The estimate is not a deadline: competing transactions and irregular block arrival affect confirmation. Inspect history; if Ginger offers **Speed Up Transaction**, review the additional fee before using it. A connection error or a delay is not a reason to send a second payment to the recipient.
@@ -170,4 +178,4 @@ Use links from the [official Ginger repository](https://github.com/GingerPrivacy
 
 ## About this manual
 
-This English manual describes Ginger v2.0.26 and uses its English interface labels. Documentation and translations may contain errors. Ginger does not guarantee their accuracy; verify critical details in the application before proceeding. If you find an error, [report it in the documentation repository](https://github.com/GingerPrivacy/GingerDoc/issues) without including wallet secrets.
+This manual includes the updated workflows in [Ginger v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) and uses English interface labels. Documentation and translations may contain errors. Ginger does not guarantee their accuracy; verify critical details in the application before proceeding. If you find an error, [report it in the documentation repository](https://github.com/GingerPrivacy/GingerDoc/issues) without including wallet secrets.

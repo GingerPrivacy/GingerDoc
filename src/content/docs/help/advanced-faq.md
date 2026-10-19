@@ -3,7 +3,7 @@ doc_id: "help.advanced-faq"
 title: "Advanced Ginger Wallet FAQ"
 description: "Find released Ginger answers about recovery scanning, wallet metadata, xpubs, coin control, privacy progress, full CoinJoin costs, output wallets and data sharing."
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -76,7 +76,7 @@ Check synchronization and the configured dust threshold before concluding that a
 
 ### Can I set any custom fee rate or guarantee a confirmation time?
 
-No. The released manual fee editor rejects rates below 1 sat/vByte, and network policy can require more than that minimum. A custom rate still competes with other transactions and cannot reserve a confirmation deadline. Review the total fee, not only the rate, before confirming.
+No. The manual fee editor accepts rates down to **0.1 sat/vByte**. A low rate is useful only when relay and mempool conditions allow it; the editor accepting a rate does not guarantee that peers relay the transaction or that miners confirm it. A custom rate cannot reserve a confirmation deadline. Review the total fee, not only the rate, before confirming; see [custom fee rates](/using-ginger/fee/).
 
 ## CoinJoin costs and progress
 

@@ -1,9 +1,9 @@
 ---
 doc_id: "help.troubleshooting"
 title: "Troubleshoot Ginger Wallet"
-description: "Diagnose missing balances, connection problems, CoinJoin waiting states, 2FA failures, and hardware issues while preserving recovery data."
+description: "Diagnose missing balances, connection problems, configuration and RPC errors, CoinJoin waiting states, 2FA failures, and hardware issues while preserving recovery data."
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -34,6 +34,23 @@ Check connectivity, the computer clock, free storage, and the status of a config
 
 If you use **Wallet Settings** → **Tools** → **Resync**, preserve backups first and expect another scan. Do not delete `Wallets`, `WalletBackups`, or 2FA files merely to clear a progress message.
 
+## Startup reports an invalid configuration
+
+In v2.0.27, Ginger stops startup if it cannot load `Config.json`, preserving the original file. The error gives its path. When possible, Ginger creates a separate `Config.Default.json` beside it as a default-settings template; an existing template is preserved too. This error concerns application settings and does not by itself mean that a wallet or its keys are damaged.
+
+1. Close Ginger and preserve [the data folder and wallet backups](/backup-recovery/backup-files/) before changing files. Keep a separate copy of the original `Config.json`.
+2. If you understand the configuration, compare it with `Config.Default.json` and correct the invalid JSON or setting value. The template may be absent if Ginger could not write it.
+3. To deliberately start with default application settings instead, rename the original `Config.json`, for example to `Config.before-repair.json`, and keep it. Restart Ginger to generate a new `Config.json`.
+4. Review your network, Tor, full-node and other custom settings before resuming normal use. Renaming this settings file does not recover a forgotten passphrase or replace wallet backups. Keep `Wallets`, `WalletBackups` and 2FA files intact.
+
+If Windows startup settings previously caused an error, v2.0.27 handles a missing startup registry entry. Check **Settings** → **General** → **Run Ginger when computer starts** after updating.
+
+## JSON-RPC does not start
+
+This check applies if you explicitly enabled Ginger's wallet JSON-RPC server. In v2.0.27 it requires both `JsonRpcUser` and `JsonRpcPassword` to contain non-empty values; whitespace-only values are rejected. Without them, the RPC server refuses to start and logs the reason while the wallet application continues running.
+
+With Ginger closed, set both credentials in `Config.json` and configure the connecting client to use them. If you do not need the server, set `JsonRpcServerEnabled` to `false` instead. Keep credentials out of shared logs and support requests. These are Ginger wallet RPC settings, separate from a Bitcoin Core node's RPC credentials or the wallet passphrase.
+
 ## CoinJoin does not start
 
 | Message or condition | Likely action |
@@ -50,6 +67,8 @@ If you use **Wallet Settings** → **Tools** → **Resync**, preserve backups fi
 | Hardware source wallet | Automatic CoinJoin signing requires an eligible software wallet |
 
 Round participants can fail to finish, or a coin can become temporarily unavailable after interrupted participation. Repeated retries, imports, or attempts to evade a coordinator's rejection are not a repair. Use the reason and current status to decide whether to wait or contact official support.
+
+Version 2.0.27 fixes a macOS crash when stopping CoinJoin. If Ginger closes during participation, reopen it, let the wallet synchronize, and inspect history before assuming that a transaction failed. Closing the application does not reverse a transaction already broadcast. Record any recurring error and the installed version for support.
 
 ## Payment or fee problems
 

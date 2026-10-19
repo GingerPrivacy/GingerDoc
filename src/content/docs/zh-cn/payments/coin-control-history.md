@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.coin-control-history"
 title: "币控制、历史记录与卡住的交易"
-description: "查看 Ginger UTXO 和付款历史，有目的地选币，并了解何时能够加速或取消交易。"
+description: "检查 Ginger UTXO、交易输入与输出及付款历史；有意识地选择币，并处理未确认付款。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -42,6 +42,20 @@ next: false
 需要标识具体交易时，使用 **Copy Transaction ID**。尽可能保密交易 ID：分享它可能披露地址、金额及与其他活动的关联。公开区块浏览器也会知道你的查询。Ginger 本地历史应是检查自己付款的首选位置。
 
 可以查看、排序和分组历史，并复制交易 ID。本版本在该历史流程中没有交易搜索或 CSV 导出控件。
+
+<span id="inspect-inputs-and-outputs" data-ginger-heading="检查输入和输出" aria-hidden="true"></span>
+
+## 检查输入和输出
+
+在发送预览或交易详情中选择 **View transaction**，打开交易查看器。对于历史中分组显示的 CoinJoin 条目，展开分组，再打开单个 CoinJoin 的详情，即可找到同一操作。查看器会在可调整大小的独立窗口中打开；拖动分隔线，可为图示、所选项目详情或摘要分配更多空间。
+
+左侧列出输入，右侧列出输出。滚动查看较长的交易，再选择一个输入或输出，即可查看其金额、当前法币估值、地址、outpoint、脚本类型、标签和已知匿名分数。在适用时，归属显示为 **Own wallet**、**External** 或 **Change**。Outpoint 通过交易 ID 和输出索引标识某个具体输出。
+
+使用复制按钮，可复制交易 ID，或所选币的地址、outpoint。摘要显示输入和输出总额、矿工手续费和费率、虚拟大小、日期，以及交易处于预览、待确认还是已确认状态。查看预览不会签名或广播交易。
+
+钱包无法获得外部输入的部分信息。某个输入金额未知，也可能导致输入总额和手续费未知。只有在 Ginger 知道该钱包币的匿名分数时才会显示；发送预览中的新输出还没有分数。**Unknown** 或短横线并不表示分数为零。法币金额使用当前汇率，查看旧交易时也一样。
+
+**Discreet Mode** 会隐藏交易数据，并禁用查看器的复制操作。准备好在私下检查详情时，请关闭此模式。打开本地查看器不需要将交易分享给公共区块浏览器。
 
 <span id="speed-up-an-unconfirmed-transaction" data-ginger-heading="加速未确认交易" aria-hidden="true"></span>
 

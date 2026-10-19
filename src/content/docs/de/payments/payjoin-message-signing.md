@@ -3,7 +3,7 @@ doc_id: "payments.payjoin-message-signing"
 title: "PayJoin und Nachrichtensignierung"
 description: "Sende eine PayJoin-Zahlungsanforderung, verstehe Empfängerwissen, Wallet-Fingerabdrücke und Rückfall und signiere eine klar begrenzte Erklärung zur Adresskontrolle."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -19,22 +19,34 @@ PayJoin und Nachrichtensignierung sind getrennte Werkzeuge. PayJoin verändert d
 
 PayJoin ist eine gemeinsame Zahlung, bei der der Empfänger einen Input beitragen kann. Das kann die Annahme schwächen, alle Inputs einer gewöhnlich wirkenden Zahlung gehörten einem Sender. Der Empfänger muss einen kompatiblen Bitcoin-Zahlungs-URI mit PayJoin-Endpunkt bereitstellen; eine Adresse allein reicht nicht. Das Protokoll beschreibt [BIP78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
 
-1. Nutze eine Software-Wallet mit ausgebbarem Guthaben. Diese Version lehnt PayJoin-Anforderungen beim Senden aus Hardware-Wallets ab.
+1. Nutze eine Software-Wallet mit ausgebbarem Guthaben. PayJoin unterstützt SegWit- und Taproot-Inputs sowie Wechselgeld des Senders. Diese Version lehnt PayJoin-Anforderungen beim Senden mit Hardware-Wallet ab.
 2. Füge den vollständigen Zahlungs-URI unter **Send** ein, statt nur die Adresse zu kopieren. Prüfe Ziel und Betrag über denselben vertrauenswürdigen Kanal wie jede Zahlung.
-3. Prüfe Vorschau und PayJoin-Anzeige und autorisiere bei akzeptablem Betrag und Gebühren.
+3. Prüfe Vorschau und PayJoin-Anzeige und autorisiere bei akzeptablem Betrag und Gebühreneinstellungen. PayJoin ist ein Ablauf für einen einzelnen Empfänger und lässt sich weder mit Sammelzahlungen noch mit Gebührenabzug vom Empfängerbetrag kombinieren.
 4. Prüfe die resultierende Transaktion im Verlauf.
 
 Die veröffentlichte Implementierung kann bei fehlgeschlagenem PayJoin-Aufbau auf eine normale Zahlung zurückfallen. Eine Autorisierung garantiert daher keinen veröffentlichten PayJoin. Nutze den Ablauf nicht, wenn ein solcher Rückfall deine Privatsphäreanforderung verletzen würde.
 
-Nutze im Mainnet einen kompatiblen HTTPS-Endpunkt. In v2.0.26 lehnen Endpunktprüfungen Onion-Endpunkte bei aktiviertem Tor ab; eine reine Onion-Anforderung ist kein unterstützter Weg. Lass Tor aktiv und bitte den Empfänger um eine kompatible Alternative, statt den Netzwerkschutz zum Erzwingen der Anfrage zu deaktivieren.
+Im Mainnet muss ein gewöhnlicher Internet-Endpunkt HTTPS verwenden. Ein HTTP- oder HTTPS-`.onion`-Endpunkt wird bei aktiviertem Tor unterstützt und bei deaktiviertem Tor abgelehnt. Andere URL-Schemata werden abgelehnt. Wird der Endpunkt nicht unterstützt, ignoriert Ginger den PayJoin-Endpunkt; prüfe deshalb vor dem Fortfahren, ob die Vorschau die Zahlung weiterhin als PayJoin ausweist.
 
 Diese Anleitung behandelt vom Empfänger bereitgestellte Anforderungen. Gingers normales **Receive** betreibt keinen PayJoin-Empfangsserver; diese Version bietet dafür keinen Einrichtungsablauf.
+
+<span id="negotiated-outputs-and-fees" data-ginger-heading="ausgehandelte-outputs-und-gebühren" aria-hidden="true"></span>
+
+## Ausgehandelte Outputs und Gebühren
+
+Die Zahlungsanforderung kann mit `pjos=0` den Austausch von Outputs einschränken. Ginger leitet diese Einschränkung an den Empfänger weiter und lehnt Vorschläge ab, die den angeforderten Zahlungsoutput ersetzen oder dessen Betrag senken. Ist der Austausch erlaubt, kann der Empfänger während der Aushandlung einen anderen Empfangsoutput verwenden. Der vom Empfänger beigesteuerte Input kann außerdem den On-Chain-Empfangsoutput größer als deinen Zahlungsbetrag machen.
+
+Ginger kündigt einen maximalen zusätzlichen Mining-Gebührenbeitrag an, den es automatisch aus der ursprünglichen Gebührenrate berechnet. Es lehnt Vorschläge ab, bei denen deine Wallet mehr als diese angekündigte Grenze beiträgt. Diese Ablehnung nutzt den oben beschriebenen Rückfall auf eine gewöhnliche Zahlung; sie bricht die Zahlung nicht zwangsläufig ab.
+
+Die Vorschau wird vor der abschließenden PayJoin-Aushandlung erstellt, die nach der Autorisierung stattfindet. Die ausgehandelte Transaktion kann eine andere Gebühr als die ursprüngliche Vorschau haben. Ginger berechnet die Gebühreninformationen der abgeschlossenen Transaktion aus der endgültigen Transaktion neu, zeigt nach der Aushandlung aber keine zweite Bestätigungsvorschau. Prüfe die endgültige Transaktion im Verlauf und betrachte die anfängliche PayJoin-Anzeige nicht als Beweis einer erfolgreichen Aushandlung.
 
 <span id="what-the-recipient-and-an-observer-learn" data-ginger-heading="was-empfänger-und-beobachter-erfahren" aria-hidden="true"></span>
 
 ## Was Empfänger und Beobachter erfahren
 
 Der Empfänger kennt Zahlungsanforderung, Empfangsadresse und vorgesehenen Betrag bereits. Ist die Anfrage mit einer identifizierten Bestellung verbunden, löscht PayJoin diese Identität nicht. Bei der Aushandlung sieht der Empfangsdienst außerdem den Zahlungsvorschlag einschließlich vorgeschlagener Sender-Inputs. Betrachte ihn nicht als jemanden, vor dem die Zahlung selbst verborgen ist.
+
+Vor dem Senden der Aushandlungsanfrage entfernt Ginger Metadaten zur Herkunft von Wallet-Schlüsseln, einschließlich Taproot-Ableitungspfaden und globaler erweiterter öffentlicher Schlüssel. Das verringert unnötige Wallet-Informationen für den Empfänger; Inputs, Outputs und Beträge der vorgeschlagenen Transaktion bleiben für ihn sichtbar.
 
 Externe Beobachter sehen die letztlich auf Bitcoin veröffentlichte Transaktion. Ein erfolgreicher PayJoin kann die übliche Annahme „alle Inputs gehören dem Sender“ unzuverlässig machen. Der Nutzen hängt von Transaktion und zusätzlichen Informationen ab; er garantiert keine Ununterscheidbarkeit von jeder normalen Zahlung.
 

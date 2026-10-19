@@ -3,7 +3,7 @@ doc_id: "payments.receive"
 title: "Bitcoin fogadása és címek kezelése"
 description: "Hozz létre Ginger-fogadási címet, válassz SegWit vagy Taproot típust, ahol támogatott, címkézd a fizetéseket, és ellenőrizd a visszaigazolásokat."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -19,11 +19,19 @@ Minden fizetéshez használj új fogadási címet. A cím megmondja a fizetőnek
 
 1. Nyisd meg a kívánt pénztárcát, és várd meg a helyreállítás vagy szinkronizálás végét.
 2. Válaszd a **Receive** lehetőséget. Adj meg a fizetőt vagy célt leíró címkét, például „Júniusi számla”. Legyen elég részletes a későbbi felismeréshez, de ne rögzíts szükségtelen személyes adatokat.
-3. Válaszd a **Generate** lehetőséget. A szokásos művelet natív SegWit-címet hoz létre. Ha a pénztárca támogatja a Taprootot, az alternatív művelet **Taproot** lehetőséget kínál **TR** jelöléssel; ezt csak akkor használd, ha a fizető támogatja ezt a címtípust.
+3. Válaszd a **Generate** lehetőséget, vagy nyomj **Enter** billentyűt az adott pénztárcában mentett alapértelmezett típusú cím létrehozásához. Ha a pénztárca támogatja a Taprootot, a legördülő menü **Generate SegWit** és **Generate Taproot** műveleteket is kínál, így ehhez a kéréshez külön típust választhatsz. Taprootot csak akkor használj, ha a fizető támogatja.
 4. Másold a címet, vagy oszd meg a fogadási QR-kódot. Hardverpénztárcánál használd a **Show on the hardware wallet** lehetőséget, és az eszközön hasonlítsd össze a teljes címet, mielőtt átadod a fizetőnek.
 5. Más alkalmazásba illesztés után ellenőrizd a célt. A vágólapot figyelő kártevő akkor is lecserélheti a címet, ha az eredeti QR-kód vagy a pénztárca kijelzése helyes volt.
 
 A Bitcoin mainneten a natív SegWit-fogadási címek rendszerint `bc1q`, a Taproot-címek `bc1p` kezdetűek. A teszthálózati címek eltérnek. Ha egy szolgáltatás elutasít egy támogatott Bitcoin-címet, a hálózati és címtípus-támogatását ellenőrizd a szolgáltatónál, ne változtasd meg a cím karaktereit.
+
+<span id="set-the-default-address-type" data-ginger-heading="az-alapértelmezett-címtípus-beállítása" aria-hidden="true"></span>
+
+## Az alapértelmezett címtípus beállítása
+
+Taprootot támogató pénztárcában nyisd meg a **Generate** melletti legördülő menüt, és válaszd a SegWit vagy Taproot melletti **Set as Default** lehetőséget. A kiválasztott típust **Default** jelölés mutatja, és a beállítás az adott pénztárcában mentődik. A **Generate** és az **Enter** később ezt követi; másik pénztárcának eltérő beállítása lehet.
+
+A legördülő menü **Generate SegWit** vagy **Generate Taproot** művelete közvetlenül a választott típust hozza létre a mentett alapértelmezés módosítása nélkül. Frissítéskor a meglévő pénztárcák SegWit-alapértelmezéssel indulnak. A beállítás a későbbi címgenerálást érinti; a korábban létrehozott címek továbbra is fogadhatnak fizetést.
 
 <span id="labels-and-unused-addresses" data-ginger-heading="címkék-és-nem-használt-címek" aria-hidden="true"></span>
 

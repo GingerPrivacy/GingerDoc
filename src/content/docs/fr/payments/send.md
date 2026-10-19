@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.send"
 title: "Envoyer des bitcoins et vérifier les frais"
-description: "Préparez un paiement Ginger, vérifiez le destinataire et le montant, comprenez les taux de frais et la monnaie rendue, puis autorisez la transaction."
+description: "Préparez des paiements Bitcoin individuels ou groupés, vérifiez chaque destinataire et montant final, examinez les frais et la monnaie rendue, puis autorisez la transaction."
 lang: "fr"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -26,6 +26,20 @@ Ginger ne peut pas annuler un paiement Bitcoin confirmé. Avant de confirmer, v�
 
 L'envoi de tous les fonds disponibles peut déduire les frais du montant reçu par le destinataire. Les demandes à montant fixe et PayJoin ont des contraintes différentes. L'aperçu est l'endroit où vérifier le montant réellement reçu, plutôt que de supposer que tout le solde du portefeuille arrivera à destination.
 
+<span id="pay-several-recipients-in-one-transaction" data-ginger-heading="payer-plusieurs-destinataires-dans-une-transaction" aria-hidden="true"></span>
+
+## Payer plusieurs destinataires dans une transaction
+
+Choisissez **Pay to multiple recipients** dans l'éditeur d'envoi pour créer un paiement groupé. Le premier paiement conserve l'adresse, le montant et les étiquettes déjà saisis.
+
+1. Saisissez une adresse Bitcoin différente, un montant et une étiquette de destinataire pour chaque paiement. Utilisez des adresses simples dans cet éditeur ; les URI de paiement et Payjoin relèvent de la procédure à destinataire unique. Une demande de paiement à montant fixe ne peut pas être étendue en paiement groupé.
+2. Choisissez **Add another payment** pour ajouter des lignes, ou **Delete** à côté d'un paiement pour le supprimer. S'il ne reste qu'un paiement, l'éditeur revient à la disposition à destinataire unique et conserve les détails de ce paiement.
+3. Décidez qui supporte les frais de minage. Lorsque **Subtract the transaction fee from the first payment** est sélectionné, le premier destinataire reçoit moins que le montant saisi, tandis que les autres montants restent inchangés. Si l'option est décochée, votre portefeuille paie les frais en plus des montants saisis. Utiliser **Max** dans un paiement groupé active la déduction des frais ; vérifiez ce choix avant de continuer.
+4. Choisissez **Continue**. Examinez chaque adresse numérotée, étiquette de destinataire et montant final dans l'aperçu, ainsi que les frais totaux. Vérifiez en particulier que le premier destinataire reçoit toujours le montant convenu si les frais sont déduits.
+5. Revenez en arrière pour corriger les paiements si nécessaire. Les lignes saisies et votre choix de déduction des frais sont conservés. Vérifiez à nouveau l'aperçu reconstruit et les frais avant de choisir **Confirm** et d'achever l'autorisation.
+
+Tous les destinataires d'un paiement groupé partagent une transaction publique, ce qui permet de relier les paiements entre eux. Tenez-en compte avant de regrouper des paiements sans rapport. Les étiquettes de destinataires restent des métadonnées locales du portefeuille ; elles ne sont ni envoyées aux destinataires ni publiées sur la blockchain.
+
 <span id="check-the-fee-without-custom-settings" data-ginger-heading="vérifier-les-frais-sans-réglages-personnalisés" aria-hidden="true"></span>
 
 ## Vérifier les frais sans réglages personnalisés
@@ -33,6 +47,8 @@ L'envoi de tous les fonds disponibles peut déduire les frais du montant reçu p
 Examinez les frais totaux et la préférence de confirmation estimée dans l'aperçu. Les frais paient l'espace occupé par la transaction ; ils ne sont pas simplement un pourcentage du paiement. L'estimation du délai peut changer et n'est pas une garantie.
 
 Utilisez une estimation de frais disponible que vous comprenez. Si aucune estimation n'est disponible et que vous ne savez pas quoi choisir, attendez et renseignez-vous plutôt que de deviner un montant de frais personnalisés très élevé.
+
+Pour examiner les détails avant de confirmer, choisissez **View transaction** dans l'aperçu. Une fenêtre distincte affiche les entrées et les sorties. Consultez [l'examen d'une transaction](/fr/payments/coin-control-history/#inspect-inputs-and-outputs) pour connaître les détails disponibles.
 
 <span id="the-leftover-money-is-change" data-ginger-heading="largent-restant-est-la-monnaie-rendue" aria-hidden="true"></span>
 

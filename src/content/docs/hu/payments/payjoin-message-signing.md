@@ -3,7 +3,7 @@ doc_id: "payments.payjoin-message-signing"
 title: "PayJoin és üzenetaláírás"
 description: "Küldj PayJoin-fizetési kérést, értsd meg a címzett ismereteit, a pénztárcaujjlenyomatot és a visszaállást, és írj alá szűk célú címrendelkezési üzenetet."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -19,22 +19,34 @@ A PayJoin és üzenetaláírás külön eszközök. A PayJoin a fizetési tranza
 
 A PayJoin közös fizetés, amelyhez a címzett is hozzájárulhat bemenettel. Ez gyengítheti azt a feltételezést, hogy egy szokásosnak tűnő fizetés minden bemenete egyetlen küldőé. A címzettnek PayJoin-végpontot tartalmazó kompatibilis Bitcoin-fizetési URI-t kell adnia; önmagában egy cím nem kapcsolja be. A protokollt a [BIP78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki) írja le.
 
-1. Elkölthető pénzzel rendelkező szoftverpénztárcát használj. E kiadás hardverpénztárcás küldésnél elutasítja a PayJoin-kéréseket.
+1. Elkölthető pénzzel rendelkező szoftverpénztárcát használj. A PayJoin támogatja a küldő SegWit- és Taproot-bemeneteit és visszajáróját. E kiadás hardverpénztárcás küldésnél elutasítja a PayJoin-kéréseket.
 2. A teljes fizetési URI-t illeszd a **Send** lehetőségbe, ne csak a címet másold. A célt és összeget ugyanazon megbízható csatornán ellenőrizd, mint bármely fizetést.
-3. Nézd át az előnézetet és PayJoin-jelzőt, majd elfogadható összeg és díj esetén hagyd jóvá.
+3. Nézd át az előnézetet és a PayJoin-jelzőt, majd elfogadható összeg és díjbeállítás esetén hagyd jóvá a fizetést. A PayJoin egycímzettes folyamat; nem kombinálható többcímzettes fizetéssel vagy a díj címzett összegéből történő levonásával.
 4. Az eredményül kapott tranzakciót ellenőrizd az előzményekben.
 
 A kiadott megvalósítás szokásos fizetési tranzakcióra állhat vissza, ha a PayJoin-felépítés sikertelen. E folyamat jóváhagyása ezért nem garantálja a továbbított tranzakció PayJoin-jellegét. Ne használd, ha a szokásos fizetésre visszaállás sértené az adatvédelmi követelményedet.
 
-Mainnethez kompatibilis HTTPS-végpontot használj. A v2.0.26 végpontellenőrzései bekapcsolt Tor mellett elutasítják az onion-végpontokat; a csak onionos kérés nem támogatott út. Hagyd bekapcsolva a Tort, és kérj kompatibilis alternatívát a címzettől a hálózati adatvédelem kikapcsolása helyett.
+Mainneten a szokásos internetes végpontnak HTTPS-t kell használnia. A HTTP- vagy HTTPS-alapú `.onion` végpont bekapcsolt Tor mellett támogatott, kikapcsolt Tor mellett elutasított. Más URL-sémák nem támogatottak. Nem támogatott végpont esetén a Ginger figyelmen kívül hagyja a PayJoin-végpontot, ezért folytatás előtt ellenőrizd, hogy az előnézet továbbra is PayJoinként jelöli-e a fizetést.
 
 Ez az útmutató címzettől kapott kérés küldéséről szól. A Ginger szokásos **Receive** folyamata nem üzemeltet PayJoin-fogadószervert, és e kiadás nem kínál felhasználói beállítást ilyenhez.
+
+<span id="negotiated-outputs-and-fees" data-ginger-heading="egyeztetett-kimenetek-és-díjak" aria-hidden="true"></span>
+
+## Egyeztetett kimenetek és díjak
+
+A fizetési kérés a `pjos=0` értékkel korlátozhatja a kimenet helyettesítését. A Ginger továbbítja ezt a korlátozást a fogadónak, és elutasítja azt a tervezetet, amely lecseréli a kért fizetési kimenetet vagy csökkenti annak összegét. Ha a helyettesítés engedélyezett, a fogadó másik fogadási kimenetet használhat az egyeztetés során. A fogadó által hozzáadott bemenet miatt a blokkláncon szereplő fogadási kimenet nagyobb is lehet a fizetésed összegénél.
+
+A Ginger meghirdeti a bányászati díjhoz vállalt maximális többlethozzájárulását, amelyet automatikusan az eredeti díjrátából számít. Elutasítja a tervezetet, ha az a meghirdetett korlátnál nagyobb hozzájárulást kér a pénztárcádtól. Ez az elutasítás a fent leírt szokásos fizetésre való visszaállást használja; nem feltétlenül törli a fizetést.
+
+Az előnézet a végső PayJoin-egyeztetés előtt készül, az egyeztetésre pedig jóváhagyás után kerül sor. Az egyeztetett tranzakció díja eltérhet az eredeti előnézetétől. A Ginger a végső tranzakcióból újraszámítja a kész tranzakció díjadatait, de az egyeztetés után nem mutat második jóváhagyási előnézetet. Ellenőrizd a végső tranzakciót az előzményekben, és a kezdeti PayJoin-jelzőt ne tekintsd a sikeres egyeztetés bizonyítékának.
 
 <span id="what-the-recipient-and-an-observer-learn" data-ginger-heading="mit-tud-meg-a-címzett-és-egy-megfigyelő" aria-hidden="true"></span>
 
 ## Mit tud meg a címzett és egy megfigyelő?
 
 A címzett már ismeri a fizetési kérést, fogadási címét és a szándékolt összeget. Azonosított rendeléshez kapcsolt kérésnél a PayJoin nem törli az identitást. Egyeztetéskor a fogadó szolgáltatás látja a javasolt tranzakciót is, a küldő javasolt bemeneteivel. Nem tekinthető olyan félnek, aki elől maga a fizetés rejtett.
+
+Az egyeztetési kérés elküldése előtt a Ginger eltávolítja a pénztárca kulcseredetre vonatkozó metaadatait, köztük a Taproot-származtatási útvonalakat és a globális kiterjesztett nyilvános kulcsokat. Ez csökkenti a fogadóhoz kerülő szükségtelen pénztárcaadatokat; a javasolt tranzakció bemenetei, kimenetei és összegei továbbra is láthatók számára.
 
 A külső megfigyelő a Bitcoinon végül közzétett tranzakciót látja. A sikeres PayJoin megbízhatatlanná teheti a szokásos „minden bemenet a küldőé” feltételezést. Az előny a tranzakciótól és a megfigyelő más ismereteitől függ; nem garantálja, hogy a tranzakció minden szokásos fizetéstől megkülönböztethetetlen.
 

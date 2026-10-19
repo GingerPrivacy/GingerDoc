@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.coin-control-history"
 title: "Controllo delle monete, cronologia e transazioni bloccate"
-description: "Esamina gli UTXO e la cronologia dei pagamenti di Ginger, seleziona consapevolmente le monete e comprendi quando è possibile accelerare o annullare."
+description: "Esamina UTXO, input e output delle transazioni e cronologia dei pagamenti di Ginger; scegli deliberatamente le monete e gestisci i pagamenti non confermati."
 lang: "it"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -42,6 +42,20 @@ La schermata principale del portafoglio mostra attività in entrata, in uscita e
 Usa **Copy Transaction ID** quando devi identificare una transazione specifica. Mantieni privati gli ID delle transazioni quando possibile: condividerne uno può rivelare indirizzi, importi e collegamenti ad altre attività. Un esploratore pubblico scopre anche le ricerche che fai. La cronologia locale di Ginger è il primo posto in cui controllare i tuoi pagamenti.
 
 Puoi esaminare, ordinare e raggruppare la cronologia e copiare gli ID delle transazioni. Questa versione non offre un comando di ricerca delle transazioni o di esportazione CSV in questa procedura della cronologia.
+
+<span id="inspect-inputs-and-outputs" data-ginger-heading="esamina-input-e-output" aria-hidden="true"></span>
+
+## Esamina input e output
+
+Scegli **View transaction** da un'anteprima di invio o dai dettagli di una transazione per aprire il visualizzatore di transazioni. Per una voce CoinJoin raggruppata nella cronologia, espandi il gruppo e apri i dettagli di un singolo CoinJoin per trovare la stessa azione. Il visualizzatore si apre in una finestra separata ridimensionabile; trascina i separatori per dare più spazio al diagramma, ai dettagli della selezione o al riepilogo.
+
+Il lato sinistro elenca gli input e quello destro gli output. Scorri per esaminare le transazioni più lunghe, poi seleziona un input o un output per vederne importo, stima fiat attuale, indirizzo, outpoint, tipo di script, etichette e punteggio di anonimato noto. La proprietà viene indicata come **Own wallet**, **External** o **Change**, dove applicabile. Un outpoint identifica un output specifico tramite l'ID della transazione e l'indice dell'output.
+
+Usa i pulsanti di copia per copiare l'ID della transazione oppure l'indirizzo o l'outpoint della moneta selezionata. Il riepilogo mostra i totali degli input e degli output, la commissione di mining e la sua tariffa, la dimensione virtuale, la data e se la transazione è un'anteprima, in attesa o confermata. Visualizzare un'anteprima non la firma né la trasmette.
+
+Alcune informazioni sugli input esterni non sono disponibili al portafoglio. Un importo di input sconosciuto può rendere sconosciuti anche il totale degli input e la commissione. Il punteggio di anonimato viene mostrato soltanto quando Ginger ne conosce uno per quella moneta del portafoglio; i nuovi output di un'anteprima di invio non hanno ancora un punteggio. **Unknown** o un trattino non equivalgono a un punteggio pari a zero. Gli importi fiat usano il tasso di cambio attuale, anche quando esamini una transazione più vecchia.
+
+**Discreet Mode** nasconde i dati della transazione e disabilita le azioni di copia del visualizzatore. Disattivalo quando puoi esaminare i dettagli in privato. Aprire questo visualizzatore locale non richiede di condividere la transazione con un explorer pubblico.
 
 <span id="speed-up-an-unconfirmed-transaction" data-ginger-heading="accelera-una-transazione-non-confermata" aria-hidden="true"></span>
 

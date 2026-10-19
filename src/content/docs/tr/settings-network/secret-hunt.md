@@ -3,7 +3,7 @@ doc_id: "settings-network.secret-hunt"
 title: "Ginger Wallet’ta Secret Hunt"
 description: "Ginger Secret Hunt etkinlik sonuçlarını bulun, cüzdan katılımını kontrol edin ve etkinlik hizmetinin aldığı bilgileri anlayın."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -19,7 +19,9 @@ next: false
 
 Yazılım cüzdanının menüsünü açıp **Secret Hunt** seçeneğini seçin. Pencere etkinlik sonuçlarını ağaç biçiminde gösterir; keşfedilen kelimeler veya cümleler ve etkinliğin gereken sırları toplandığında ek sır içerir. Kayıtları incelemek için etkinliği genişletin.
 
-O cüzdanın katılımını kontrol etmek için **Enable/disable the use of this wallet for Secret Hunt.** kullanın. Yayımlanan varsayılan açıktır. Kapatmak, devre dışı görünüm için gösterilen ağacı temizler ve güncelleyicinin etkinlik uygunluk kontrollerinde o cüzdanı seçmesini durdurur. CoinJoin’i iptal etmez, blok zinciri işlemlerini silmez veya hizmete zaten gönderilen bilgiyi yok etmez.
+Bu cüzdanın katılımını kontrol etmek için **Enable/disable the use of this wallet for Secret Hunt.** seçeneğini kullanın. v2.0.27'de Secret Hunt yeni cüzdanlar için varsayılan olarak devre dışıdır: katılmasını istediğiniz her cüzdanda ayrıca etkinleştirin. Mevcut cüzdanlar yükseltme sırasında kayıtlı ayarlarını korur; daha önce Secret Hunt kullandıysanız bu anahtarı kontrol edin.
+
+Kapatmak, devre dışı görünümde gösterilen ağacı temizler ve güncelleyicinin etkinlik uygunluğu kontrolleri için bu cüzdanı seçmesini durdurur. CoinJoin'i iptal etmez, blok zinciri işlemlerini silmez veya bir hizmete önceden gönderilen bilgileri kaldırmaz.
 
 Seçenek yalnızca izleme cüzdanlarında sunulmaz. Donanım cüzdanı CoinJoin özelliği değildir ve etkinlik sitesine kurtarma kelimeleri girmeyi gerektirmez.
 

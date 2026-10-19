@@ -3,7 +3,7 @@ doc_id: "payments.receive"
 title: "Recevoir des bitcoins et gérer les adresses"
 description: "Générez une adresse de réception Ginger, choisissez SegWit ou Taproot lorsque cela est pris en charge, ajoutez des étiquettes aux paiements et vérifiez les confirmations."
 lang: "fr"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -19,11 +19,19 @@ Utilisez une nouvelle adresse de réception pour chaque paiement. L'adresse indi
 
 1. Ouvrez le portefeuille souhaité et attendez la fin de la récupération ou de la synchronisation.
 2. Choisissez **Receive**. Ajoutez une étiquette décrivant le payeur ou l'objet du paiement, par exemple « Facture de juin ». Donnez assez de détails pour le reconnaître plus tard, sans enregistrer de données personnelles inutiles.
-3. Choisissez **Generate**. L'action normale crée une adresse SegWit native. Si le portefeuille prend en charge Taproot, l'action alternative propose **Taproot**, indiqué par **TR** ; utilisez-la uniquement si le payeur accepte ce type d'adresse.
+3. Choisissez **Generate** ou appuyez sur **Enter** pour créer une adresse avec le type par défaut enregistré de ce portefeuille. Si le portefeuille prend en charge Taproot, le menu déroulant propose aussi **Generate SegWit** et **Generate Taproot**, pour choisir un type pour cette demande. N’utilisez Taproot que si le payeur le prend en charge.
 4. Copiez l'adresse ou partagez le code QR de réception. Avec un portefeuille matériel, utilisez **Show on the hardware wallet** et comparez l'adresse complète sur l'appareil avant de la communiquer au payeur.
 5. Vérifiez la destination après l'avoir collée dans une autre application. Un logiciel malveillant ciblant le presse-papiers peut remplacer une adresse même si le code QR d'origine ou l'affichage du portefeuille était correct.
 
 Sur le réseau principal Bitcoin, les adresses de réception SegWit natives commencent normalement par `bc1q` ; les adresses Taproot commencent par `bc1p`. Les adresses des réseaux de test sont différentes. Si un service refuse une adresse Bitcoin prise en charge, vérifiez auprès de ce service le réseau et les types d'adresses qu'il accepte, au lieu de modifier les caractères de l'adresse.
+
+<span id="set-the-default-address-type" data-ginger-heading="définir-le-type-dadresse-par-défaut" aria-hidden="true"></span>
+
+## Définir le type d'adresse par défaut
+
+Dans un portefeuille prenant en charge Taproot, ouvrez le menu déroulant à côté de **Generate**, puis choisissez **Set as Default** à côté de SegWit ou Taproot. Le type sélectionné porte la mention **Default** et est enregistré pour ce portefeuille. Les utilisations ultérieures de **Generate** et **Enter** le suivent ; un autre portefeuille peut avoir une préférence différente.
+
+Choisir **Generate SegWit** ou **Generate Taproot** dans le menu déroulant génère directement ce type sans modifier le type par défaut enregistré. Les portefeuilles existants commencent avec SegWit lors de la mise à niveau. Ce changement concerne les futures adresses générées ; les adresses déjà générées peuvent toujours recevoir des paiements.
 
 <span id="labels-and-unused-addresses" data-ginger-heading="étiquettes-et-adresses-inutilisées" aria-hidden="true"></span>
 

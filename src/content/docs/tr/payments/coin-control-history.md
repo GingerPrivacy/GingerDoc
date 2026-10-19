@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.coin-control-history"
 title: "Coin kontrolü, geçmiş ve takılan işlemler"
-description: "Ginger UTXO’larını ve ödeme geçmişini inceleyin, coinleri bilinçli seçin ve ne zaman hızlandırma veya iptalin mümkün olduğunu anlayın."
+description: "Ginger UTXO'larını, işlem girdi ve çıktılarını ve ödeme geçmişini inceleyin; coinleri bilinçli seçin ve onaylanmamış ödemeleri yönetin."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -42,6 +42,20 @@ Cüzdan ana ekranı gelen, giden ve CoinJoin faaliyetlerini gösterir. Tek tek t
 Belirli bir işlemi tanımlamak gerektiğinde **Copy Transaction ID** kullanın. Mümkün olduğunca işlem kimliklerini gizli tutun: birini paylaşmak adresleri, tutarları ve diğer faaliyetlerle bağlantıları açıklayabilir. Halka açık blok gezgini yaptığınız sorguları da öğrenir. Kendi ödemelerinizi kontrol edeceğiniz ilk yer Ginger’ın yerel geçmişidir.
 
 Geçmişi inceleyebilir, sıralayıp gruplayabilir ve işlem kimliklerini kopyalayabilirsiniz. Bu sürüm bu geçmiş sürecinde işlem arama veya CSV dışa aktarma kontrolü sunmaz.
+
+<span id="inspect-inputs-and-outputs" data-ginger-heading="girdileri-ve-çıktıları-inceleyin" aria-hidden="true"></span>
+
+## Girdileri ve çıktıları inceleyin
+
+İşlem görüntüleyicisini açmak için gönderme önizlemesinde veya işlem ayrıntılarında **View transaction** seçeneğini seçin. Gruplandırılmış bir CoinJoin geçmiş kaydında grubu genişletip tek bir CoinJoin'in ayrıntılarını açarak aynı eylemi bulabilirsiniz. Görüntüleyici, boyutunu değiştirebileceğiniz ayrı bir pencerede açılır; diyagrama, seçim ayrıntılarına veya özete daha fazla yer ayırmak için ayırıcıları sürükleyin.
+
+Sol taraf girdileri, sağ taraf çıktıları listeler. Uzun işlemleri incelemek için kaydırın; ardından tutarı, güncel itibari para tahminini, adresi, outpoint'i, betik türünü, etiketleri ve bilinen anonimlik puanını görmek için bir girdi veya çıktı seçin. Sahiplik uygun olduğunda **Own wallet**, **External** veya **Change** olarak gösterilir. Outpoint, işlem kimliği ve çıktı diziniyle belirli bir çıktıyı tanımlar.
+
+İşlem kimliğini veya seçilen coinin adresini ya da outpoint'ini kopyalamak için kopyalama düğmelerini kullanın. Özet; girdi ve çıktı toplamlarını, madencilik ücretini ve ücret oranını, sanal boyutu, tarihi ve işlemin önizleme, bekleyen veya onaylanmış durumda olduğunu gösterir. Önizlemeyi görüntülemek işlemi imzalamaz veya yayınlamaz.
+
+Haricî girdilerle ilgili bazı bilgiler cüzdanda bulunmaz. Bilinmeyen bir girdi tutarı, girdi toplamını ve ücreti de bilinmez hâle getirebilir. Anonimlik puanı yalnızca Ginger bu cüzdan coini için bir puan biliyorsa gösterilir; gönderme önizlemesindeki yeni çıktıların henüz puanı yoktur. **Unknown** veya bir tire sıfır puan anlamına gelmez. İtibari para tutarları eski bir işlemi incelerken de güncel döviz kurunu kullanır.
+
+**Discreet Mode**, işlem verilerini gizler ve görüntüleyicinin kopyalama eylemlerini devre dışı bırakır. Ayrıntıları özel olarak incelemeye hazır olduğunuzda kapatın. Bu yerel görüntüleyiciyi açmak işlemi herkese açık bir blok gezginiyle paylaşmayı gerektirmez.
 
 <span id="speed-up-an-unconfirmed-transaction" data-ginger-heading="onaylanmamış-bir-işlemi-hızlandırın" aria-hidden="true"></span>
 

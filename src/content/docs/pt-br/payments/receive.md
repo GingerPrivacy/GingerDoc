@@ -3,7 +3,7 @@ doc_id: "payments.receive"
 title: "Receba bitcoin e gerencie endereços"
 description: "Gere um endereço de recebimento no Ginger, escolha SegWit ou Taproot quando houver suporte, rotule pagamentos e confira as confirmações."
 lang: "pt-BR"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -19,11 +19,19 @@ Use um endereço de recebimento novo para cada pagamento. O endereço informa ao
 
 1. Abra a carteira pretendida e aguarde o término da recuperação ou sincronização.
 2. Escolha **Receive**. Adicione um rótulo que descreva o pagador ou a finalidade, como “Fatura de junho”. Use detalhes suficientes para reconhecê-lo depois, sem registrar dados pessoais desnecessários.
-3. Escolha **Generate**. A ação normal cria um endereço SegWit nativo. Se a carteira oferecer suporte a Taproot, a ação alternativa oferece **Taproot**, indicado por **TR**; use-o apenas quando o pagador aceitar esse tipo de endereço.
+3. Escolha **Generate**, ou pressione **Enter**, para criar um endereço com o tipo padrão salvo desta carteira. Se a carteira aceitar Taproot, o menu suspenso também oferece **Generate SegWit** e **Generate Taproot**, para escolher um tipo para essa solicitação. Use Taproot apenas quando o pagador aceitar esse tipo.
 4. Copie o endereço ou compartilhe o código QR de recebimento. Para uma carteira de hardware, use **Show on the hardware wallet** e compare o endereço completo no dispositivo antes de fornecê-lo ao pagador.
 5. Confira o destino após colá-lo em outro aplicativo. Um malware que afeta a área de transferência pode substituir um endereço mesmo quando o QR original ou a exibição da carteira estava correto.
 
 Na mainnet do Bitcoin, endereços de recebimento SegWit nativos normalmente começam com `bc1q`; endereços Taproot começam com `bc1p`. Os endereços das redes de teste são diferentes. Se um serviço rejeitar um endereço Bitcoin compatível, confira com esse serviço a rede e os tipos de endereço aceitos, em vez de alterar caracteres do endereço.
+
+<span id="set-the-default-address-type" data-ginger-heading="defina-o-tipo-padrão-de-endereço" aria-hidden="true"></span>
+
+## Defina o tipo padrão de endereço
+
+Em uma carteira compatível com Taproot, abra o menu suspenso ao lado de **Generate** e escolha **Set as Default** ao lado de SegWit ou Taproot. O tipo selecionado é marcado como **Default** e salvo para essa carteira. Os próximos usos de **Generate** e **Enter** seguem essa preferência; outra carteira pode ter uma preferência diferente.
+
+Escolher **Generate SegWit** ou **Generate Taproot** no menu suspenso gera esse tipo diretamente sem alterar o padrão salvo. As carteiras existentes começam com SegWit ao atualizar. Alterar a preferência afeta a geração futura de endereços; endereços gerados anteriormente ainda podem receber pagamentos.
 
 <span id="labels-and-unused-addresses" data-ginger-heading="rótulos-e-endereços-não-utilizados" aria-hidden="true"></span>
 

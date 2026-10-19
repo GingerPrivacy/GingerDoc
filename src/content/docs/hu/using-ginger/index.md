@@ -3,7 +3,7 @@ title: "A Ginger használata"
 description: "Ismerd meg a bitcoin fogadásának és küldésének szokásos lépéseit, majd igény szerint válassz a Ginger további funkciói közül."
 doc_id: "payments.overview"
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -16,7 +16,7 @@ Mentett pénztárcával kezdj, és várd meg a szinkronizálás végét, mielőt
 ## Szokásos fizetés végrehajtása
 
 1. [Bitcoin fogadása](/hu/payments/receive/): hozz létre új címet, címkézd, és ellenőrizd a bejövő tranzakciót.
-2. [Bitcoin küldése](/hu/payments/send/): add meg a célt és az összeget, majd jóváhagyás előtt ellenőrizd a címzettnek érkező összeget, a visszajárót és a díjat.
+2. [Bitcoin küldése](/hu/payments/send/): add meg a célt és az összeget, majd jóváhagyás előtt ellenőrizd a címzettnek érkező összeget, a visszajárót és a díjat. Több fizetés egy tranzakcióba foglalásához válaszd a **Pay to multiple recipients** lehetőséget, és az előnézetben ellenőrizz minden címzettet.
 3. Küldés után nézd meg a pénztárca előzményeit. Ha bizonytalan az eredmény, állapítsd meg, mi történt, mielőtt újra fizetsz.
 
 <span id="choose-an-optional-feature" data-ginger-heading="választható-funkció-kiválasztása" aria-hidden="true"></span>

@@ -3,7 +3,7 @@ doc_id: "getting-started.verify-download"
 title: "Verifica un download di Ginger Wallet"
 description: "Controlla la firma di una versione di Ginger Wallet e l'impronta della chiave di firma prima di installare l'applicazione."
 lang: "it"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 sidebar:
   label: Verifica un download
@@ -22,7 +22,7 @@ Una firma separata aiuta a stabilire che il file scaricato sia stato firmato dal
 
 ## Raccogli i file corrispondenti
 
-Dalla [versione v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26), scarica il programma di installazione o l'archivio e il file con lo stesso nome seguito da `.asc`. Conservali nella stessa cartella. Per esempio, la coppia Windows è `Ginger-2.0.26.msi` e `Ginger-2.0.26.msi.asc`. Una firma per un DMG, uno ZIP o un'altra versione non verifica quell'MSI.
+Dalla [versione v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27), scarica il programma di installazione o l'archivio e il file con lo stesso nome seguito da `.asc`. Conservali nella stessa cartella. Per esempio, la coppia Windows è `Ginger-2.0.27.msi` e `Ginger-2.0.27.msi.asc`. Una firma per un DMG, uno ZIP o un'altra versione non verifica quell'MSI.
 
 Ottieni la chiave pubblica di firma dal collegamento PGP sul [sito ufficiale](https://gingerwallet.io/). Salva la chiave come `PGP.txt`. Usa un'applicazione OpenPGP affidabile, come GnuPG, per esaminarla e importarla. Se GnuPG non è installato, ottienilo dalla [pagina ufficiale di download di GnuPG](https://gnupg.org/download/).
 
@@ -52,7 +52,7 @@ Confronta l'intera impronta, non solo un ID breve della chiave o il nome visuali
 Per il programma di installazione Windows, esegui:
 
 ```sh
-gpg --verify Ginger-2.0.26.msi.asc Ginger-2.0.26.msi
+gpg --verify Ginger-2.0.27.msi.asc Ginger-2.0.27.msi
 ```
 
 Per un'altra piattaforma, sostituisci entrambi i nomi esatti dei file. Una verifica riuscita dovrebbe indicare una firma valida della chiave prevista. GnuPG può anche avvisare che la chiave non è certificata da una firma affidabile: riguarda il modo in cui hai autenticato la chiave e non va confuso con una firma del file non valida.
@@ -66,5 +66,7 @@ Se il risultato indica **BAD signature**, la chiave manca, l'impronta differisce
 Un confronto dei checksum può rilevare un errore di download. Un checksum preso da una pagina non affidabile non può autenticare il software, perché un aggressore può sostituire sia il download sia il suo checksum. La versione fornisce anche materiale relativo ai checksum; la procedura con firma separata descritta sopra è sufficiente per verificare un singolo pacchetto scelto.
 
 La firma del codice su Windows e la firma o autenticazione notarile su macOS forniscono ulteriori controlli della piattaforma. Completano la verifica della versione scaricata; non sostituiscono la necessità di proteggere le parole di recupero e controllare le transazioni.
+
+Per verificare separatamente che il contenuto dell'applicazione possa essere ricompilato dai sorgenti, segui la [guida alle build riproducibili della versione](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.27/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md). Usa il tag esatto della versione e la toolchain registrata nel pacchetto. Confronta i contenuti portabili estratti come descritto nella guida; i metadati degli archivi e la firma possono cambiare i byte dei pacchetti. Non ci si aspetta che un MSI Windows o un DMG macOS firmato abbia lo stesso hash di una build locale non firmata.
 
 Dopo una verifica riuscita, torna a [Installa l'applicazione](/it/getting-started/install/#install-the-application).

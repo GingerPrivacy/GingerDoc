@@ -3,7 +3,7 @@ doc_id: "learn-coinjoin.trust-and-limits"
 title: "À quoi faites-vous confiance avec CoinJoin ?"
 description: "Distinguer le contrôle des clés Bitcoin, les hypothèses de confidentialité CoinJoin, la disponibilité du coordinateur, l'indépendance des participants et la vérification du logiciel."
 lang: fr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -27,6 +27,8 @@ Avant de participer, définissez l'objectif : qu'un destinataire sache moins sur
 | Quel logiciel est-ce que j'utilise ? | L'open source permet l'inspection ; vérifier le téléchargement aide à établir origine et intégrité du fichier obtenu. | Preuve que chaque compilation est sans bugs, que l'ordinateur n'est pas compromis ou qu'un service distant exécute exactement le code publié |
 
 L'[article WabiSabi, section 7](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3) distingue confidentialité, attaques actives et prévention du vol. Ce guide applique cette distinction aux décisions utilisateur ; ce n'est pas un audit de sécurité du portefeuille ou coordinateur installé.
+
+Dans v2.0.27, Ginger vérifie le nombre d'entrées et le taux effectif des frais de minage de la transaction proposée avant d'achever la signature. Il vérifie aussi la présence de ses entrées enregistrées et des sorties attendues, et rejette les entrées enregistrées du portefeuille présentes en double. Si les contrôles de signature échouent, il retient la signature d'une entrée réellement présente dans la transaction, ou n'envoie aucune signature si aucune de ses entrées ne reste. Les contrôles des tours de reprise limitent la nouvelle tentative aux entrées et au montant maximal suggéré de la transaction précédente, et Ginger ne réutilise que ses pièces pour lesquelles des signatures ont été transmises. Ces contrôles visent des propositions précises invalides ou incohérentes ; ils ne garantissent ni l'honnêteté du coordinateur ni l'indépendance des participants. La [référence sur les tours](/fr/coinjoin/round-details/) explique la signification pratique d'un refus ou d'une nouvelle tentative.
 
 <span id="consider-the-observer" data-ginger-heading="considérer-lobservateur" aria-hidden="true"></span>
 

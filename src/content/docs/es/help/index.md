@@ -3,7 +3,7 @@ doc_id: "help.faq"
 title: "Preguntas frecuentes de Ginger Wallet: empieza aquí"
 description: "Encuentra respuestas breves sobre fondos ausentes, copias de seguridad, recuperación, espera y comisiones de CoinJoin, pagos pendientes, monederos de hardware y soporte seguro."
 lang: "es"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -34,7 +34,7 @@ Ginger es una aplicación de escritorio para recibir y enviar Bitcoin en cadena,
 
 ### ¿Existe un monedero móvil o web oficial?
 
-La versión v2.0.26 proporciona software de escritorio para ordenadores compatibles con Windows, macOS y Linux. No proporciona un monedero Android, iOS o de navegador, pagos Lightning ni otras criptomonedas. Empieza por el [sitio web oficial de Ginger](https://gingerwallet.io/) y sus enlaces de versiones; no introduzcas palabras de recuperación en una aplicación o sitio web solo porque use el nombre Ginger.
+La versión v2.0.27 proporciona software de escritorio para ordenadores compatibles con Windows, macOS y Linux. No proporciona un monedero Android, iOS o de navegador, pagos Lightning ni otras criptomonedas. Empieza por el [sitio web oficial de Ginger](https://gingerwallet.io/) y sus enlaces de versiones; no introduzcas palabras de recuperación en una aplicación o sitio web solo porque use el nombre Ginger.
 
 <span id="do-i-need-an-account-my-own-node-or-a-hardware-wallet" data-ginger-heading="necesito-una-cuenta-un-nodo-propio-o-un-monedero-de-hardware" aria-hidden="true"></span>
 
@@ -202,6 +202,18 @@ El panel de control manual habitual puede ocultar el botón de inicio cuando tod
 
 ## Pagos y dispositivos de hardware
 
+<span id="can-i-pay-several-recipients-in-one-transaction" data-ginger-heading="puedo-pagar-a-varios-destinatarios-en-una-transacción" aria-hidden="true"></span>
+
+### ¿Puedo pagar a varios destinatarios en una transacción?
+
+Sí. En **Send**, elige **Pay to multiple recipients** e introduce la dirección, el importe y las etiquetas de cada destinatario. Revisa todos los importes finales de los destinatarios y la comisión total antes de confirmar. Si descuentas la comisión de un pago, se descuenta del primero. Los pagos por lotes reúnen los destinos en una transacción pública; consulta [cómo enviar a varios destinatarios](/es/payments/send/#pay-several-recipients-in-one-transaction).
+
+<span id="can-i-make-taproot-my-usual-receiving-address-type" data-ginger-heading="puedo-establecer-taproot-como-mi-tipo-habitual-de-dirección-de-recepción" aria-hidden="true"></span>
+
+### ¿Puedo establecer Taproot como mi tipo habitual de dirección de recepción?
+
+En un monedero compatible con Taproot, abre el desplegable junto a **Generate** en **Receive** y elige **Set as Default** junto a Taproot. **Generate** y Enter siguen la preferencia guardada de ese monedero. Los monederos existentes empiezan con SegWit. Comprueba primero la compatibilidad del pagador con el tipo de dirección; consulta las [preferencias de direcciones de recepción](/es/payments/receive/).
+
 <span id="why-is-a-payment-still-pending-after-the-estimated-time" data-ginger-heading="por-qué-un-pago-sigue-pendiente-después-del-tiempo-estimado" aria-hidden="true"></span>
 
 ### ¿Por qué un pago sigue pendiente después del tiempo estimado?
@@ -252,4 +264,4 @@ Usa los enlaces del [repositorio oficial de Ginger](https://github.com/GingerPri
 
 ## Acerca de este manual
 
-Este manual en inglés describe Ginger v2.0.26 y usa las etiquetas de su interfaz en inglés. La documentación y las traducciones pueden contener errores. Ginger no garantiza su exactitud; verifica los detalles críticos en la aplicación antes de continuar. Si encuentras un error, [comunícalo en el repositorio de documentación](https://github.com/GingerPrivacy/GingerDoc/issues) sin incluir secretos de monedero.
+Este manual incluye los procedimientos actualizados de [Ginger v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) y usa las etiquetas de la interfaz en inglés. La documentación y las traducciones pueden contener errores. Ginger no garantiza su exactitud; verifica los detalles críticos en la aplicación antes de continuar. Si encuentras un error, [comunícalo en el repositorio de documentación](https://github.com/GingerPrivacy/GingerDoc/issues) sin incluir secretos de monedero.

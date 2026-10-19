@@ -3,7 +3,7 @@ doc_id: "getting-started.install"
 title: "安装 Ginger Wallet"
 description: "选择合适的 Ginger Wallet 桌面版下载文件，检查兼容性，并安装已发布的应用。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 sidebar:
   label: 安装 Ginger
@@ -19,7 +19,7 @@ next:
 
 Ginger Wallet 是桌面版比特币钱包。你持有比特币的密钥，并可使用 CoinJoin 增加交易追踪难度。本版本不提供手机钱包、闪电网络钱包或其他加密货币支持。
 
-本指南适用于 2.0.26 版本。通过 [Ginger 官方网站](https://gingerwallet.io/)或其链接的 [GitHub 发布页](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26)获取软件。搜索广告、私信或名称相近的手机应用都不是可靠的下载来源。
+本指南适用于 2.0.27 版本。通过 [Ginger 官方网站](https://gingerwallet.io/)或其链接的 [GitHub 发布页](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27)获取软件。搜索广告、私信或名称相近的手机应用都不是可靠的下载来源。
 
 <span id="choose-a-download" data-ginger-heading="选择下载文件" aria-hidden="true"></span>
 
@@ -27,11 +27,11 @@ Ginger Wallet 是桌面版比特币钱包。你持有比特币的密钥，并可
 
 | 电脑 | 本版本支持的系统 | 下载文件 |
 | --- | --- | --- |
-| Windows PC，x64 | Windows 10，1607 或更新版本；Windows 11，22000 或更新内部版本 | `Ginger-2.0.26.msi` |
-| 配备 Apple 芯片的 Mac | macOS 12 或更新版本 | `Ginger-2.0.26-arm64.dmg` |
-| 配备 Intel 处理器的 Mac | macOS 12 或更新版本 | `Ginger-2.0.26.dmg` |
-| Ubuntu 或 Debian，x64 | Ubuntu 22.04 或更新版本；Debian 11 或更新版本 | `Ginger-2.0.26.deb` |
-| 其他受支持的 Linux，x64 | 发布页还列出 Fedora 37 或更新版本 | `Ginger-2.0.26.tar.gz` |
+| Windows PC，x64 | Windows 10，1607 或更新版本；Windows 11，22000 或更新内部版本 | `Ginger-2.0.27.msi` |
+| 配备 Apple 芯片的 Mac | macOS 12 或更新版本 | `Ginger-2.0.27-arm64.dmg` |
+| 配备 Intel 处理器的 Mac | macOS 12 或更新版本 | `Ginger-2.0.27.dmg` |
+| Ubuntu 或 Debian，x64 | Ubuntu 22.04 或更新版本；Debian 11 或更新版本 | `Ginger-2.0.27.deb` |
+| 其他受支持的 Linux，x64 | 发布页还列出 Fedora 37 或更新版本 | `Ginger-2.0.27.tar.gz` |
 
 在 Mac 上，**About This Mac** 会显示芯片或处理器。发布页还包含标为 `win-x64`、`linux-x64`、`macOS-x64` 和 `macOS-arm64` 的 ZIP 压缩包。本版本没有 Windows ARM 或 Linux ARM 安装包。不要认为其他处理器的压缩包一定能用。
 
@@ -61,5 +61,7 @@ Linux 设备访问出现问题时，参阅硬件钱包厂商的 USB 权限说明
 ## 更新与服务可用性
 
 [发布列表](https://github.com/GingerPrivacy/GingerWallet/releases)列出了已发布版本及其变更。在 **Settings** → **General** 中，**Auto download new version** 控制更新下载。下载更新与安装更新不同；按照更新提示操作，并允许 Ginger 正常退出。更新前确保恢复备份可用。替换应用文件无需刻意删除钱包数据。
+
+从 v2.0.26 升级时，现有钱包默认以 SegWit 作为接收地址类型，并保留已保存的 Secret Hunt 设置。新钱包需要主动启用 Secret Hunt。如果启用了 Ginger 的 JSON-RPC 服务器，请在升级前设置非空的用户名和密码，否则该服务器无法启动；Ginger 本身会继续运行。如果遇到这些启动问题，请参阅 [RPC 设置](/zh-cn/help/troubleshooting/#json-rpc-does-not-start)和[配置故障排查](/zh-cn/help/troubleshooting/#startup-reports-an-invalid-configuration)。
 
 接受服务条款之前，阅读 Ginger 展示的当前条款，包括任何使用资格限制。安装应用不代表你有资格使用所有接入的服务。

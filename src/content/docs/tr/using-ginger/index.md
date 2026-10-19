@@ -3,7 +3,7 @@ title: "Ginger kullanımı"
 description: "Bitcoin almak ve göndermek için normal adımları bulun, ardından ihtiyacınız olduğunda isteğe bağlı Ginger özelliklerini seçin."
 doc_id: "payments.overview"
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -16,7 +16,7 @@ Yedeklenmiş bir cüzdanla başlayın ve bakiyesine güvenmeden önce eşitlemen
 ## Normal bir ödeme yapın
 
 1. [Bitcoin alın](/tr/payments/receive/): yeni bir adres oluşturun, etiketleyin ve gelen işlemi kontrol edin.
-2. [Bitcoin gönderin](/tr/payments/send/): hedefi ve tutarı girin, ardından onaylamadan önce alıcı tutarını, para üstünü ve ücreti inceleyin.
+2. [Bitcoin gönderin](/tr/payments/send/): hedefi ve tutarı girin; ardından onaylamadan önce alıcı tutarını, para üstünü ve ücreti inceleyin. Tek işlemde birden fazla ödeme gerektiğinde **Pay to multiple recipients** seçeneğini kullanın ve önizlemede her alıcıyı kontrol edin.
 3. Gönderdikten sonra cüzdan geçmişini kontrol edin. Sonuç belirsizse yeniden ödeme yapmadan önce ne olduğunu belirleyin.
 
 <span id="choose-an-optional-feature" data-ginger-heading="i̇steğe-bağlı-özellik-seçin" aria-hidden="true"></span>

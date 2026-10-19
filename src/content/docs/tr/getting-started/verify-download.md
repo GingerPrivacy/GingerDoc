@@ -3,7 +3,7 @@ doc_id: "getting-started.verify-download"
 title: "İndirilen Ginger Wallet dosyasını doğrulayın"
 description: "Uygulamayı kurmadan önce Ginger Wallet sürüm imzasını ve imzalama anahtarının parmak izini kontrol edin."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 sidebar:
   label: "İndirilen dosyayı doğrulayın"
@@ -22,7 +22,7 @@ Ayrık bir imza, indirdiğiniz dosyanın belirli bir imzalama anahtarının sahi
 
 ## Eşleşen dosyaları toplayın
 
-[v2.0.26 sürümünden](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) kurucunuzu veya arşivinizi ve aynı adın sonuna `.asc` eklenmiş dosyayı indirin. Bir klasörde tutun. Örneğin Windows çifti `Ginger-2.0.26.msi` ve `Ginger-2.0.26.msi.asc` dosyalarıdır. DMG, ZIP veya başka bir sürümün imzası bu MSI dosyasını doğrulamaz.
+[v2.0.27 sürümünden](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) kurucunuzu veya arşivinizi ve aynı adın sonuna `.asc` eklenmiş dosyayı indirin. Bir klasörde tutun. Örneğin Windows çifti `Ginger-2.0.27.msi` ve `Ginger-2.0.27.msi.asc` dosyalarıdır. DMG, ZIP veya başka bir sürümün imzası bu MSI dosyasını doğrulamaz.
 
 Açık imzalama anahtarını [resmî web sitesindeki](https://gingerwallet.io/) PGP bağlantısından edinin. Anahtarı `PGP.txt` olarak kaydedin. İnceleyip içe aktarmak için GnuPG gibi güvenilir bir OpenPGP uygulaması kullanın. GnuPG kurulu değilse [GnuPG’nin resmî indirme sayfasından](https://gnupg.org/download/) edinin.
 
@@ -52,7 +52,7 @@ Yalnızca kısa bir anahtar kimliğini veya görünen adı değil, parmak izinin
 Windows kurucusu için şunu çalıştırın:
 
 ```sh
-gpg --verify Ginger-2.0.26.msi.asc Ginger-2.0.26.msi
+gpg --verify Ginger-2.0.27.msi.asc Ginger-2.0.27.msi
 ```
 
 Başka bir platform için iki dosya adını da tam olarak değiştirin. Başarılı doğrulama, amaçlanan anahtardan geçerli bir imza belirlemelidir. GnuPG ayrıca anahtarın güvenilir bir imzayla onaylanmadığını belirten bir uyarı gösterebilir: bu, anahtarın kimliğini nasıl doğruladığınızla ilgilidir ve bozuk bir dosya imzasıyla karıştırılmamalıdır.
@@ -66,5 +66,7 @@ Sonuç **BAD signature** diyorsa, anahtar eksikse, parmak izi farklıysa veya do
 Sağlama toplamı karşılaştırması bir indirme hatasını tespit edebilir. Güvenilmeyen bir sayfadan alınan sağlama toplamı yazılımın gerçekliğini doğrulayamaz; saldırgan hem indirmeyi hem sağlama toplamını değiştirebilir. Sürüm ayrıca sağlama toplamı verileri de sağlar; yukarıdaki eşleşen ayrık imza yöntemi seçilen tek bir paketi doğrulamak için yeterlidir.
 
 Windows kod imzalama ve macOS imzalama veya noter onayı ek platform kontrolleri sağlar. İndirilen sürümün doğrulanmasını tamamlarlar; kurtarma kelimelerinizi koruma ve işlemleri gözden geçirme gereğinin yerini almazlar.
+
+Uygulama içeriğinin kaynak koddan yeniden üretilebildiğini ayrıca kontrol etmek için [bu sürümün yeniden üretilebilir derleme kılavuzunu](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.27/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md) izleyin. Pakette kaydedilen sürüm etiketini ve araç zincirini aynen kullanın. Kılavuzun açıkladığı gibi ayıklanan taşınabilir paket içeriklerini karşılaştırın; arşiv üst verileri ve imzalama paket baytlarını değiştirebilir. İmzalı bir Windows MSI veya macOS DMG dosyasının, imzasız bir yerel derlemeyle aynı dosya özetine sahip olması beklenmez.
 
 Doğrulama başarılı olduktan sonra [Uygulamayı kurun](/tr/getting-started/install/#install-the-application) bölümüne dönün.

@@ -3,7 +3,7 @@ doc_id: "learn-coinjoin.trust-and-limits"
 title: "CoinJoin 时你信任什么？"
 description: "区分比特币密钥控制、CoinJoin 隐私假设、协调器可用性、参与者独立性与软件验证。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -27,6 +27,8 @@ next: false
 | 正在运行什么软件？ | 开源允许审查；下载验证帮助确认文件来源和完整性。 | 每个构建无缺陷、电脑未被入侵，或远程服务完全运行公布代码的证明 |
 
 [WabiSabi 论文第 7 节](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3)分别讨论隐私、主动攻击和防盗。本指南将此区别应用于用户决定；不是对已安装钱包或协调器的安全审计。
+
+在 v2.0.27 中，Ginger 会在完成签名前检查提议交易的输入数量与实际矿工手续费率。它也会检查其已注册输入和预期输出是否存在，并拒绝重复的已注册钱包输入。签名检查失败时，它会保留交易中实际存在的一个输入的签名，不予提交；如果已没有自己的输入，则不发送任何签名。归责轮次检查将重试限制在上一笔交易的输入和建议金额上限范围内，Ginger 也只会再次使用已提交过签名的自有币。这些检查针对特定的无效或不一致提议，并不保证协调者诚实或参与者彼此独立。[轮次参考](/zh-cn/coinjoin/round-details/)说明拒绝或重试在实际使用中可能意味着什么。
 
 <span id="consider-the-observer" data-ginger-heading="考虑观察者" aria-hidden="true"></span>
 

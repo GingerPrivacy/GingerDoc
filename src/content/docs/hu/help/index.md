@@ -3,7 +3,7 @@ doc_id: "help.faq"
 title: "Ginger Wallet GYIK: kezdd itt"
 description: "Rövid válaszok hiányzó pénzről, mentésről, helyreállításról, CoinJoin-várakozásról és díjakról, függő fizetésről, hardverpénztárcáról és biztonságos segítségkérésről."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -34,7 +34,7 @@ A Ginger asztali alkalmazás blokkláncos Bitcoin fogadására és küldésére,
 
 ### Van hivatalos mobil- vagy webes pénztárca?
 
-A v2.0.26 kiadás támogatott Windows-, macOS- és Linux-gépekhez ad asztali szoftvert. Nem kínál Android-, iOS- vagy böngészős pénztárcát, Lightning-fizetést vagy más kriptovalutát. A [hivatalos Ginger-weboldalról](https://gingerwallet.io/) és kiadási hivatkozásairól indulj; ne adj szavakat alkalmazásnak vagy weboldalnak pusztán a Ginger név miatt.
+A v2.0.27 kiadás támogatott Windows-, macOS- és Linux-gépekhez ad asztali szoftvert. Nem kínál Android-, iOS- vagy böngészős pénztárcát, Lightning-fizetést vagy más kriptovalutát. A [hivatalos Ginger-weboldalról](https://gingerwallet.io/) és kiadási hivatkozásairól indulj; ne adj szavakat alkalmazásnak vagy weboldalnak pusztán a Ginger név miatt.
 
 <span id="do-i-need-an-account-my-own-node-or-a-hardware-wallet" data-ginger-heading="kell-fiók-saját-csomópont-vagy-hardverpénztárca" aria-hidden="true"></span>
 
@@ -202,6 +202,18 @@ A szokásos kézi vezérlőpanel elrejtheti az indítást, ha minden pénz telje
 
 ## Fizetések és hardver
 
+<span id="can-i-pay-several-recipients-in-one-transaction" data-ginger-heading="fizethetek-több-címzettnek-egy-tranzakcióban" aria-hidden="true"></span>
+
+### Fizethetek több címzettnek egy tranzakcióban?
+
+Igen. A **Send** alatt válaszd a **Pay to multiple recipients** lehetőséget, majd add meg minden címzett címét, összegét és címkéit. Jóváhagyás előtt ellenőrizd minden címzett végső összegét és a teljes díjat. Ha a díjat egy fizetésből vonod le, az az első fizetést csökkenti. A több címzett egyetlen nyilvános tranzakcióban szerepel; lásd [a többcímzettes küldést](/hu/payments/send/#pay-several-recipients-in-one-transaction).
+
+<span id="can-i-make-taproot-my-usual-receiving-address-type" data-ginger-heading="beállíthatom-a-taprootot-a-szokásos-fogadási-címtípusomnak" aria-hidden="true"></span>
+
+### Beállíthatom a Taprootot a szokásos fogadási címtípusomnak?
+
+Taprootot támogató pénztárcában a **Receive** alatt nyisd meg a **Generate** melletti legördülő menüt, és válaszd a Taproot melletti **Set as Default** lehetőséget. A **Generate** és az Enter az adott pénztárca mentett beállítását követi. A meglévő pénztárcák SegWit-alapértelmezéssel indulnak. Előbb ellenőrizd a fizető címtípus-támogatását; lásd [a fogadási cím beállításait](/hu/payments/receive/).
+
 <span id="why-is-a-payment-still-pending-after-the-estimated-time" data-ginger-heading="miért-függő-a-fizetés-a-becsült-idő-után-is" aria-hidden="true"></span>
 
 ### Miért függő a fizetés a becsült idő után is?
@@ -252,4 +264,4 @@ Használd a [hivatalos Ginger-repository](https://github.com/GingerPrivacy/Ginge
 
 ## A kézikönyvről
 
-Az angol kézikönyv a Ginger v2.0.26-ot írja le, és angol felületfeliratokat használ. A dokumentáció és fordításai hibákat tartalmazhatnak. A Ginger nem garantálja a pontosságukat; folytatás előtt az alkalmazásban ellenőrizd a kritikus részleteket. Ha hibát találsz, [jelentsd a dokumentáció repositoryjában](https://github.com/GingerPrivacy/GingerDoc/issues) pénztárcatitkok nélkül.
+Ez a kézikönyv tartalmazza a [Ginger v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) frissített folyamatait, és az angol felület feliratait használja. A dokumentáció és fordításai hibákat tartalmazhatnak. A Ginger nem garantálja a pontosságukat; folytatás előtt az alkalmazásban ellenőrizd a kritikus részleteket. Ha hibát találsz, [jelentsd a dokumentáció repositoryjában](https://github.com/GingerPrivacy/GingerDoc/issues) pénztárcatitkok nélkül.

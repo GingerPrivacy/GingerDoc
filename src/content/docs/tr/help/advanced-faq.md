@@ -3,7 +3,7 @@ doc_id: "help.advanced-faq"
 title: "İleri düzey Ginger Wallet SSS"
 description: "Kurtarma taraması, cüzdan üst verileri, xpub’ler, coin kontrolü, gizlilik ilerlemesi, tam CoinJoin maliyetleri, çıktı cüzdanları ve veri paylaşımı hakkında yayımlanan Ginger yanıtlarını bulun."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -108,7 +108,7 @@ Küçük çıktının kaybolduğu sonucuna varmadan önce eşitlemeyi ve ayarlı
 
 ### Herhangi bir özel ücret oranı belirleyebilir veya onay süresini garanti edebilir miyim?
 
-Hayır. Yayımlanan elle ücret düzenleyicisi 1 sat/vByte altını reddeder; ağ politikası bu minimumdan fazlasını gerektirebilir. Özel oran yine diğer işlemlerle yarışır ve onay son tarihini rezerve edemez. Onaylamadan önce yalnızca oranı değil, toplam ücreti inceleyin.
+Hayır. Elle ücret düzenleyicisi **0.1 sat/vByte** düzeyine kadar oran kabul eder. Düşük bir oran yalnızca iletim ve mempool koşulları elverdiğinde işe yarar; düzenleyicinin oranı kabul etmesi eşlerin işlemi ileteceğini veya madencilerin onaylayacağını garanti etmez. Özel bir oran onay için son tarih ayıramaz. Onaylamadan önce yalnızca oranı değil toplam ücreti de inceleyin; bkz. [özel ücret oranları](/tr/using-ginger/fee/).
 
 <span id="coinjoin-costs-and-progress" data-ginger-heading="coinjoin-maliyetleri-ve-ilerlemesi" aria-hidden="true"></span>
 

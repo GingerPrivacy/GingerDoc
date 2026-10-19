@@ -3,7 +3,7 @@ doc_id: "getting-started.verify-download"
 title: "Vérifier un téléchargement Ginger Wallet"
 description: "Vérifier la signature d'une version Ginger Wallet et l'empreinte de sa clé de signature avant l'installation."
 lang: fr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 sidebar:
   label: Vérifier un téléchargement
@@ -22,7 +22,7 @@ Une signature détachée aide à établir que le fichier téléchargé a été s
 
 ## Rassembler les fichiers correspondants
 
-Depuis [la version v2.0.26](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26), téléchargez votre installateur ou archive ainsi que le fichier portant le même nom suivi de `.asc`. Gardez-les dans un même dossier. Par exemple, sous Windows : `Ginger-2.0.26.msi` et `Ginger-2.0.26.msi.asc`. Une signature pour un DMG, ZIP ou une autre version ne vérifie pas ce MSI.
+Depuis [la version v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27), téléchargez votre installateur ou archive ainsi que le fichier portant le même nom suivi de `.asc`. Gardez-les dans un même dossier. Par exemple, sous Windows : `Ginger-2.0.27.msi` et `Ginger-2.0.27.msi.asc`. Une signature pour un DMG, ZIP ou une autre version ne vérifie pas ce MSI.
 
 Obtenez la clé publique via le lien PGP du [site officiel](https://gingerwallet.io/). Enregistrez-la sous `PGP.txt`. Utilisez une application OpenPGP fiable, comme GnuPG, pour l'examiner et l'importer. Si GnuPG manque, obtenez-le sur [sa page officielle](https://gnupg.org/download/).
 
@@ -52,7 +52,7 @@ Comparez l'empreinte entière, pas seulement un identifiant court ou le nom affi
 Pour l'installateur Windows, exécutez :
 
 ```sh
-gpg --verify Ginger-2.0.26.msi.asc Ginger-2.0.26.msi
+gpg --verify Ginger-2.0.27.msi.asc Ginger-2.0.27.msi
 ```
 
 Pour une autre plateforme, remplacez les deux noms exacts. Une vérification réussie doit indiquer une bonne signature de la clé voulue. GnuPG peut aussi avertir que la clé n'est pas certifiée par une signature fiable : cela concerne votre authentification de la clé et ne doit pas être confondu avec une mauvaise signature du fichier.
@@ -66,5 +66,7 @@ Si le résultat indique **BAD signature**, si la clé manque, si l'empreinte dif
 Comparer une somme de contrôle peut détecter une erreur de téléchargement. Une somme provenant d'une page non fiable ne peut pas authentifier un logiciel : un attaquant peut remplacer le fichier et sa somme. La version fournit aussi des informations de sommes de contrôle ; la procédure de signature détachée ci-dessus suffit à vérifier un paquet choisi.
 
 La signature de code Windows et la signature ou notarisation macOS ajoutent des contrôles de plateforme. Elles complètent la vérification de la version téléchargée ; elles ne remplacent pas la protection de vos mots et la vérification des transactions.
+
+Pour vérifier séparément que les fichiers de l'application peuvent être reconstruits à partir du code source, suivez le [guide de compilation reproductible de cette version](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.27/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md). Utilisez exactement le tag de version et la chaîne d'outils indiqués dans le paquet. Comparez les fichiers portables extraits comme le décrit le guide ; les métadonnées d'archive et les signatures peuvent modifier les octets des paquets. Un MSI Windows ou un DMG macOS signé n'est pas censé avoir la même empreinte de fichier qu'une compilation locale non signée.
 
 Après une vérification réussie, revenez à [Installer l'application](/fr/getting-started/install/#install-the-application).

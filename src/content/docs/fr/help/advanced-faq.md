@@ -3,7 +3,7 @@ doc_id: "help.advanced-faq"
 title: "FAQ avancée de Ginger Wallet"
 description: "Trouver les réponses de la version publiée sur récupération, métadonnées, xpubs, sélection des pièces, progression, coûts complets CoinJoin, destinations et partage des données."
 lang: fr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -32,7 +32,7 @@ La phrase secrète d'origine participe à la dérivation des clés, et une autre
 
 ### Quand dois-je augmenter la limite d'adresses inutilisées de récupération ?
 
-Envisagez-le si vous avez des preuves de nombreuses adresses inutilisées avant une adresse payée, par exemple des adresses générées dans une autre application. **Advanced Recovery Options** → **Minimum Gap Limit:** étend l'analyse et peut augmenter le travail et sa durée ; l'écran de récupération v2.0.26 commence à 114. Cela ne corrige ni des mots erronés, ni une phrase secrète incorrecte, ni un compte incompatible.
+Envisagez-le si vous avez des preuves de nombreuses adresses inutilisées avant une adresse payée, par exemple des adresses générées dans une autre application. **Advanced Recovery Options** → **Minimum Gap Limit:** étend l'analyse et peut augmenter le travail et sa durée ; l'écran de récupération v2.0.27 commence à 114. Cela ne corrige ni des mots erronés, ni une phrase secrète incorrecte, ni un compte incompatible.
 
 <span id="why-did-labels-or-privacy-information-change-after-recovery" data-ginger-heading="pourquoi-les-étiquettes-ou-les-informations-de-confidentialité-ont-elles-changé-après-récupération-" aria-hidden="true"></span>
 
@@ -108,7 +108,7 @@ Vérifiez la synchronisation et le seuil de poussière configuré avant de concl
 
 ### Puis-je définir n'importe quel taux ou garantir un délai de confirmation ?
 
-Non. L'éditeur manuel de cette version rejette les taux inférieurs à 1 sat/vByte, et la politique réseau peut exiger davantage. Un taux personnalisé reste en concurrence avec les autres transactions et ne réserve pas une échéance. Vérifiez les frais totaux, pas seulement le taux, avant de confirmer.
+Non. L'éditeur manuel de frais accepte des taux aussi bas que **0.1 sat/vByte**. Un taux bas n'est utile que si les conditions de relais et du mempool le permettent ; l'acceptation d'un taux par l'éditeur ne garantit ni le relais de la transaction par les pairs ni sa confirmation par les mineurs. Un taux personnalisé ne peut pas réserver une échéance de confirmation. Vérifiez les frais totaux, pas seulement le taux, avant de confirmer ; consultez les [taux de frais personnalisés](/fr/using-ginger/fee/).
 
 <span id="coinjoin-costs-and-progress" data-ginger-heading="coûts-coinjoin-et-progression" aria-hidden="true"></span>
 

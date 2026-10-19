@@ -3,7 +3,7 @@ doc_id: "help.advanced-faq"
 title: "Erweiterte Ginger-Wallet-FAQ"
 description: "Finde Antworten zu Wiederherstellungssuche, Wallet-Metadaten, xpubs, Coin-Kontrolle, Privatsphäre-Fortschritt, gesamten CoinJoin-Kosten, Output-Wallets und Informationsweitergabe."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -32,7 +32,7 @@ Die ursprüngliche Passphrase wirkt bei der Schlüsselableitung mit; eine andere
 
 ### Wann sollte ich das Gap Limit erhöhen?
 
-Erwäge es bei Belegen vieler ungenutzter Adressen vor einer Adresse mit Zahlungseingang, etwa aus einer anderen Anwendung. **Advanced Recovery Options** → **Minimum Gap Limit:** erweitert die Suche und kann Aufwand und Dauer erhöhen; v2.0.26 beginnt den Wiederherstellungsbildschirm mit 114. Es repariert weder falsche Wörter noch falsche Passphrasen oder inkompatible Konten.
+Erwäge es bei Belegen vieler ungenutzter Adressen vor einer Adresse mit Zahlungseingang, etwa aus einer anderen Anwendung. **Advanced Recovery Options** → **Minimum Gap Limit:** erweitert die Suche und kann Aufwand und Dauer erhöhen; v2.0.27 beginnt den Wiederherstellungsbildschirm mit 114. Es repariert weder falsche Wörter noch falsche Passphrasen oder inkompatible Konten.
 
 <span id="why-did-labels-or-privacy-information-change-after-recovery" data-ginger-heading="warum-änderten-sich-bezeichnungen-oder-privatsphäredaten-nach-wiederherstellung" aria-hidden="true"></span>
 
@@ -108,7 +108,7 @@ Prüfe Synchronisierung und Dust-Schwelle vor Verlustannahmen. **Exclude Coins**
 
 ### Kann ich beliebige Gebührenraten oder garantierte Bestätigungszeiten wählen?
 
-Nein. Der veröffentlichte Editor lehnt unter 1 sat/vByte ab; Netzwerkregeln können mehr erfordern. Eigene Raten konkurrieren weiterhin und reservieren keine Frist. Prüfe vor Bestätigung die Gesamtgebühr, nicht nur die Rate.
+Nein. Der manuelle Gebühreneditor akzeptiert Raten bis hinunter zu **0.1 sat/vByte**. Eine niedrige Rate ist nur sinnvoll, wenn Weiterleitungs- und Mempool-Bedingungen sie zulassen; die Annahme im Editor garantiert weder die Weiterleitung durch Peers noch die Bestätigung durch Miner. Eine eigene Rate reserviert keine Bestätigungsfrist. Prüfe vor der Bestätigung die Gesamtgebühr, nicht nur die Rate; siehe [eigene Gebührenraten](/de/using-ginger/fee/).
 
 <span id="coinjoin-costs-and-progress" data-ginger-heading="coinjoin-kosten-und-fortschritt" aria-hidden="true"></span>
 

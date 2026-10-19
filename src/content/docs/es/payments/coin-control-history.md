@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.coin-control-history"
 title: "Control de monedas, historial y transacciones atascadas"
-description: "Inspecciona las UTXO y el historial de pagos de Ginger, selecciona monedas deliberadamente y comprende cuándo es posible acelerar o cancelar una transacción."
+description: "Inspecciona las UTXO de Ginger, las entradas y salidas de las transacciones y el historial de pagos; selecciona monedas deliberadamente y gestiona pagos sin confirmar."
 lang: "es"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -42,6 +42,20 @@ La pantalla principal del monedero muestra la actividad entrante, saliente y de 
 Usa **Copy Transaction ID** cuando necesites identificar una transacción concreta. Mantén los identificadores de transacción privados siempre que sea posible: compartir uno puede revelar direcciones, importes y vínculos con otras actividades. Un explorador público también conoce las consultas que haces. El historial local de Ginger es el primer lugar donde comprobar tus propios pagos.
 
 Puedes inspeccionar, ordenar y agrupar el historial y copiar identificadores de transacción. Esta versión no ofrece un control de búsqueda de transacciones ni de exportación CSV en este procedimiento de historial.
+
+<span id="inspect-inputs-and-outputs" data-ginger-heading="inspeccionar-entradas-y-salidas" aria-hidden="true"></span>
+
+## Inspeccionar entradas y salidas
+
+Elige **View transaction** desde una vista previa de envío o desde los detalles de una transacción para abrir el visor de transacciones. En una entrada agrupada de CoinJoin del historial, despliega el grupo y abre los detalles de un CoinJoin individual para encontrar la misma acción. El visor se abre en una ventana independiente que puedes redimensionar; arrastra sus separadores para dar más espacio al diagrama, a los detalles de la selección o al resumen.
+
+El lado izquierdo muestra las entradas y el derecho, las salidas. Desplázate para inspeccionar transacciones más largas y selecciona una entrada o salida para ver su importe, estimación fiat actual, dirección, outpoint, tipo de script, etiquetas y puntuación de anonimato conocida. La pertenencia aparece como **Own wallet**, **External** o **Change**, según corresponda. Un outpoint identifica una salida concreta mediante su identificador de transacción y su índice de salida.
+
+Usa los botones de copia para copiar el identificador de la transacción o la dirección o el outpoint de la moneda seleccionada. El resumen muestra los totales de entradas y salidas, la comisión de minería y su tasa, el tamaño virtual, la fecha y si la transacción es una vista previa, está pendiente o está confirmada. Consultar una vista previa no la firma ni la difunde.
+
+El monedero no dispone de cierta información sobre las entradas externas. Un importe de entrada desconocido también puede dejar desconocidos el total de entradas y la comisión. Solo se muestra una puntuación de anonimato cuando Ginger conoce la puntuación de esa moneda del monedero; las salidas nuevas de una vista previa de envío aún no tienen puntuación. **Unknown** o un guion no significa una puntuación de cero. Los importes fiat usan el tipo de cambio actual, incluso cuando inspeccionas una transacción antigua.
+
+**Discreet Mode** oculta los datos de la transacción y desactiva las acciones de copia del visor. Desactívalo cuando puedas inspeccionar los detalles en privado. Abrir este visor local no requiere compartir la transacción con un explorador público.
 
 <span id="speed-up-an-unconfirmed-transaction" data-ginger-heading="acelera-una-transacción-sin-confirmar" aria-hidden="true"></span>
 

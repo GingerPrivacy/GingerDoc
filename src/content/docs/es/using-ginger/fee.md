@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.fees-and-change"
 title: "Comisiones de transacción, tasas personalizadas y cambio"
-description: "Comprende las tasas de comisión en satoshis por byte, la introducción manual de comisiones, las salidas de cambio y las sugerencias de privacidad que modifican importes en Ginger."
+description: "Comprende las tasas de comisión, las tasas personalizadas desde 0.1 sat/vB, los límites de retransmisión, el descuento de comisiones, las salidas de cambio y las sugerencias de privacidad de Ginger."
 lang: "es"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -21,9 +21,19 @@ Para los pasos habituales de pago, empieza por [Envía bitcoin](/es/payments/sen
 
 ## Comprende la comisión
 
-Una tasa de comisión se mide en satoshis por byte virtual y se muestra como **Fee Rate (sat/vByte)**. La comisión total de minería es la tasa de comisión multiplicada por el tamaño virtual de la transacción. No es un porcentaje del importe del pago. Gastar muchas monedas pequeñas puede costar más que gastar una moneda mayor del mismo valor total.
+Usa el control de comisiones de la vista previa para cambiar la preferencia de confirmación deseada o introducir una **Custom Fee Rate**. Ginger acepta tasas desde **0.1 sat/vB**, y sus estimaciones y gráfico de comisiones conservan las tasas fraccionarias. Un tiempo estimado no es una garantía: las nuevas transacciones compiten por espacio y los bloques llegan a intervalos irregulares.
+
+El mínimo del editor no garantiza que una transacción se retransmita ni se acepte en el mempool de un nodo. Los nodos pueden exigir una tasa mayor debido a su política o a las condiciones actuales del mempool. Al difundir a los pares, Ginger omite aquellos cuyo mínimo anunciado supera la tasa de comisión de la transacción. Por tanto, una tasa personalizada baja puede impedir la difusión o dejar la transacción sin confirmar; revisa las condiciones de red y la urgencia del pago antes de usarla.
 
 Usa el control de comisiones de la vista previa para cambiar la preferencia de confirmación deseada o introducir una **Custom Fee Rate**. Un tiempo estimado no es una garantía: las nuevas transacciones compiten por espacio y los bloques llegan a intervalos irregulares. El control de introducción manual de la versión publicada rechaza tasas inferiores a 1 sat/vByte; la política de los nodos puede exigir más que el mínimo del editor.
+
+<span id="check-who-pays-the-fee" data-ginger-heading="comprobar-quién-paga-la-comisión" aria-hidden="true"></span>
+
+## Comprobar quién paga la comisión
+
+En un [pago por lotes](/es/payments/send/#pay-several-recipients-in-one-transaction), **Subtract the transaction fee from the first payment** reduce únicamente el importe del primer destinatario. Los demás importes introducidos permanecen iguales. Si la opción está desmarcada, necesitas fondos suficientes para todos los importes más la comisión. Usar **Max** en el editor por lotes activa el descuento de comisiones.
+
+Comprueba siempre los importes finales en la vista previa, sobre todo después de cambiar la tasa de comisión. Si un destinatario debe recibir un importe exacto, descontar la comisión de ese pago puede dejar la solicitud insuficientemente pagada. La vista previa enumera por separado el importe final de cada destinatario del lote.
 
 Cuando las estimaciones automáticas no estén disponibles, Ginger todavía puede ofrecer la introducción manual de comisiones. Si no sabes qué tasa es adecuada, es preferible esperar a que se recuperen las estimaciones que adivinar un número muy alto. Las comisiones de transacciones normales y las del coordinador de CoinJoin son independientes.
 

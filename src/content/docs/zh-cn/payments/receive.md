@@ -3,7 +3,7 @@ doc_id: "payments.receive"
 title: "接收比特币与管理地址"
 description: "生成 Ginger 收款地址，在支持时选择 SegWit 或 Taproot，为付款添加标签，并检查确认。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -19,11 +19,19 @@ next: false
 
 1. 打开目标钱包，等待恢复或同步完成。
 2. 选择 **Receive**。添加描述付款人或用途的标签，例如“六月账单”。提供足以日后辨认的细节，但不要记录不必要的个人数据。
-3. 选择 **Generate**。常规操作创建原生 SegWit 地址。如果钱包支持 Taproot，另一个操作提供 **Taproot**，以 **TR** 显示；仅在付款人支持该地址类型时使用。
+3. 选择 **Generate**，或按 **Enter**，使用此钱包保存的默认类型创建地址。如果钱包支持 Taproot，下拉菜单还提供 **Generate SegWit** 和 **Generate Taproot**，以便为本次请求选择类型。只有付款方支持时才使用 Taproot。
 4. 复制地址或分享收款二维码。使用硬件钱包时，选择 **Show on the hardware wallet**，在提供给付款人前，比对设备上的完整地址。
 5. 将地址粘贴到其他应用后核对目的地址。即使原始二维码或钱包显示正确，剪贴板恶意软件仍可能替换地址。
 
 在比特币主网上，原生 SegWit 收款地址通常以 `bc1q` 开头；Taproot 地址以 `bc1p` 开头。测试网络地址不同。如果服务拒绝受支持的比特币地址，向该服务检查网络及地址类型支持，不要修改地址中的字符。
+
+<span id="set-the-default-address-type" data-ginger-heading="设置默认地址类型" aria-hidden="true"></span>
+
+## 设置默认地址类型
+
+在支持 Taproot 的钱包中，打开 **Generate** 旁的下拉菜单，选择 SegWit 或 Taproot 旁的 **Set as Default**。所选类型会标记为 **Default**，并为此钱包保存。之后使用 **Generate** 和 **Enter** 都会遵循此设置；另一个钱包可以有不同偏好。
+
+在下拉菜单中选择 **Generate SegWit** 或 **Generate Taproot**，会直接生成该类型地址，而不改变保存的默认值。现有钱包升级后起初使用 SegWit。更改偏好只影响之后生成的地址；先前生成的地址仍然可以收款。
 
 <span id="labels-and-unused-addresses" data-ginger-heading="标签与未使用地址" aria-hidden="true"></span>
 

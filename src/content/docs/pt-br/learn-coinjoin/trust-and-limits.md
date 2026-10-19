@@ -3,7 +3,7 @@ doc_id: "learn-coinjoin.trust-and-limits"
 title: "Em que você confia ao participar de CoinJoin?"
 description: "Diferencie o controle das chaves Bitcoin, as premissas de privacidade do CoinJoin, a disponibilidade do coordenador, a independência dos participantes e a verificação do software."
 lang: "pt-BR"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -27,6 +27,8 @@ Antes de participar, identifique seu objetivo: talvez você queira que um destin
 | Qual software estou executando? | O código aberto permite a inspeção; verificar o download ajuda a estabelecer a origem e a integridade do arquivo obtido. | Prova de que toda compilação é livre de bugs, de que seu computador não está comprometido ou de que um serviço remoto executa exatamente o código publicado |
 
 O [artigo sobre WabiSabi, seção 7](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3) trata separadamente a privacidade, os ataques ativos e a prevenção de roubo. Este guia aplica essa distinção às decisões do usuário; ele não é uma auditoria de segurança de uma carteira ou coordenador instalados.
+
+Na v2.0.27, o Ginger verifica a contagem de entradas e a taxa de mineração por byte virtual efetiva da transação proposta antes de concluir a assinatura. Ele também verifica a presença das suas entradas registradas e saídas esperadas e rejeita entradas registradas pela carteira que estejam duplicadas. Quando as verificações de assinatura falham, ele retém uma assinatura de uma entrada efetivamente presente na transação ou não envia assinaturas se nenhuma das suas entradas permanecer. As verificações das rodadas de responsabilização restringem a nova tentativa às entradas e ao valor máximo sugerido da transação anterior, e o Ginger só reutiliza suas moedas para as quais foram enviadas assinaturas. São verificações contra propostas específicas inválidas ou inconsistentes, não uma garantia de honestidade do coordenador ou independência dos participantes. A [referência sobre rodadas](/pt-br/coinjoin/round-details/) explica o que uma recusa ou nova tentativa pode significar na prática.
 
 <span id="consider-the-observer" data-ginger-heading="considere-o-observador" aria-hidden="true"></span>
 

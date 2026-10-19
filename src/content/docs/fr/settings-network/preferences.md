@@ -3,7 +3,7 @@ doc_id: "settings-network.preferences"
 title: "Apparence, langue et réglages du quotidien"
 description: "Modifiez la langue de Ginger, les formats d'affichage, le fonctionnement en arrière-plan, les préférences de navigateur et le mode discret sans les confondre avec la sécurité du portefeuille."
 lang: "fr"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -17,7 +17,7 @@ Utilisez **Settings** pour les préférences communes à toute l'application et 
 
 ## Langue et montants
 
-Dans **Settings** → **Appearance**, **Language** sélectionne la langue de l'interface. La version 2.0.26 propose l'anglais, l'espagnol, le hongrois, le français, le chinois, l'allemand, le portugais, le turc et l'italien. Suivez toute demande de redémarrage. Ce manuel conserve les libellés anglais de la version publiée ; les libellés traduits peuvent être différents.
+Dans **Settings** → **Appearance**, **Language** sélectionne la langue de l'interface. La version 2.0.27 propose onze langues : anglais, espagnol, hongrois, français, chinois, allemand, portugais, turc, italien, portugais du Brésil et russe. Les deux choix portugais apparaissent sous les noms **Português** et **Português (Brasil)** ; le russe apparaît sous **Русский**. Suivez toute demande de redémarrage. Ce manuel conserve les libellés anglais de la version publiée ; les libellés traduits peuvent être différents.
 
 **Dark mode** change l'apparence. **Exchange currency** modifie la monnaie fiduciaire de référence affichée, tandis que les séparateurs décimaux et de groupes, le regroupement des fractions de bitcoin et **Fee display unit** contrôlent la présentation des nombres. Ces réglages ne modifient ni le montant sous-jacent en BTC ni les frais de transaction du réseau. Lisez les exemples des réglages avant de saisir un montant dans un format qui ne vous est pas familier.
 
@@ -51,5 +51,7 @@ Les pages externes utilisent le comportement réseau et de confidentialité du n
 ## Informations et outils du portefeuille
 
 **Wallet Info** peut afficher les informations de compte et de clé publique étendue. Une clé publique étendue ne permet pas de dépenser directement les pièces, mais peut révéler de nombreuses adresses liées. Ne la publiez pas dans une demande de support publique.
+
+Le type d'adresse de réception par défaut est enregistré pour chaque portefeuille dans **Receive**. Lorsque Taproot est pris en charge, vous pouvez choisir SegWit ou Taproot comme type par défaut utilisé par **Generate** et Enter. Cette préférence est distincte des réglages d'apparence de l'application ; consultez les [adresses de réception](/fr/payments/receive/) pour connaître les commandes et les contrôles de compatibilité.
 
 Sous **Wallet Settings** → **General**, utilisez la commande de nom pour renommer le portefeuille. Sous **Tools**, **Verify Recovery Words** vérifie la sauvegarde d'un portefeuille logiciel accessible, **Resync** reconstruit sa vue et **Delete Wallet** supprime un portefeuille local via sa procédure de confirmation. La suppression ne détruit pas les bitcoins, ne révoque pas les mots de récupération et ne remplace pas une sauvegarde. Conservez des informations de récupération fonctionnelles avant de supprimer l'accès local.

@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.coin-control-history"
 title: "Coin-Kontrolle, Verlauf und festhängende Transaktionen"
-description: "Prüfe Ginger-UTXOs und Zahlungsverlauf, wähle Coins bewusst und verstehe Möglichkeiten zur Beschleunigung oder Stornierung."
+description: "Prüfe Ginger-UTXOs, Transaktionsinputs und -outputs sowie den Zahlungsverlauf, wähle Coins bewusst und bearbeite unbestätigte Zahlungen."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -42,6 +42,20 @@ Die Wallet-Startseite zeigt eingehende, ausgehende und CoinJoin-Aktivitäten. Er
 Nutze **Copy Transaction ID**, um eine bestimmte Transaktion zu identifizieren. Halte IDs möglichst privat: Teilen kann Adressen, Beträge und Aktivitätsverknüpfungen offenlegen. Ein öffentlicher Explorer erfährt außerdem deine Abfragen. Prüfe eigene Zahlungen zuerst in Gingers lokalem Verlauf.
 
 Du kannst den Verlauf prüfen, sortieren, gruppieren und IDs kopieren. Diese Version bietet in diesem Ablauf keine Transaktionssuche oder CSV-Exportsteuerung.
+
+<span id="inspect-inputs-and-outputs" data-ginger-heading="inputs-und-outputs-untersuchen" aria-hidden="true"></span>
+
+## Inputs und Outputs untersuchen
+
+Wähle **View transaction** in einer Sendevorschau oder den Details einer Transaktion, um den Transaktionsbetrachter zu öffnen. Klappe bei einem gruppierten CoinJoin-Verlaufseintrag die Gruppe auf und öffne die Details eines einzelnen CoinJoins, um dieselbe Aktion zu finden. Der Betrachter öffnet sich in einem separaten Fenster, dessen Größe du ändern kannst; ziehe die Trennlinien, um Diagramm, Auswahldetails oder Übersicht mehr Platz zu geben.
+
+Links stehen die Inputs, rechts die Outputs. Scrolle durch längere Transaktionen und wähle einen Input oder Output, um Betrag, aktuelle Fiat-Schätzung, Adresse, Outpoint, Skripttyp, Bezeichnungen und bekannten Anonymitäts-Score zu sehen. Die Eigentumszuordnung erscheint gegebenenfalls als **Own wallet**, **External** oder **Change**. Ein Outpoint bezeichnet einen bestimmten Output durch Transaktions-ID und Outputindex.
+
+Kopiere mit den Kopiertasten die Transaktions-ID oder Adresse bzw. Outpoint des ausgewählten Coins. Die Übersicht zeigt Input- und Outputsummen, Mining-Gebühr und Gebührenrate, virtuelle Größe, Datum und den Status als Vorschau, ausstehende oder bestätigte Transaktion. Das Betrachten einer Vorschau signiert oder veröffentlicht sie nicht.
+
+Einige Informationen über externe Inputs sind der Wallet nicht bekannt. Ein unbekannter Inputbetrag kann auch die Inputsumme und Gebühr unbekannt machen. Ein Anonymitäts-Score erscheint nur, wenn Ginger einen bekannten Score für diesen Wallet-Coin hat; neue Outputs in einer Sendevorschau haben noch keinen Score. **Unknown** oder ein Strich bedeutet keinen Score von null. Fiatbeträge verwenden den aktuellen Wechselkurs, auch beim Betrachten älterer Transaktionen.
+
+**Discreet Mode** verbirgt die Transaktionsdaten und deaktiviert die Kopieraktionen des Betrachters. Schalte ihn aus, wenn du die Details ungestört prüfen kannst. Das Öffnen dieses lokalen Betrachters erfordert keine Weitergabe der Transaktion an einen öffentlichen Explorer.
 
 <span id="speed-up-an-unconfirmed-transaction" data-ginger-heading="eine-unbestätigte-transaktion-beschleunigen" aria-hidden="true"></span>
 

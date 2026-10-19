@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.coin-control-history"
 title: "Controle de moedas, histórico e transações paradas"
-description: "Inspecione os UTXOs e o histórico de pagamentos do Ginger, selecione moedas de forma deliberada e entenda quando é possível acelerar ou cancelar."
+description: "Inspecione UTXOs do Ginger, entradas e saídas das transações e histórico de pagamentos; selecione moedas deliberadamente e gerencie pagamentos não confirmados."
 lang: "pt-BR"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -42,6 +42,20 @@ A tela inicial da carteira mostra recebimentos, envios e atividade de CoinJoin. 
 Use **Copy Transaction ID** quando precisar identificar uma transação específica. Mantenha os identificadores de transação privados quando possível: compartilhar um deles pode revelar endereços, valores e vínculos com outras atividades. Um explorador público também fica sabendo as consultas que você faz. O histórico local do Ginger é o primeiro lugar para conferir seus próprios pagamentos.
 
 Você pode inspecionar, ordenar e agrupar o histórico e copiar identificadores de transação. Esta versão não oferece um controle de busca de transações ou exportação CSV neste processo de histórico.
+
+<span id="inspect-inputs-and-outputs" data-ginger-heading="inspecione-entradas-e-saídas" aria-hidden="true"></span>
+
+## Inspecione entradas e saídas
+
+Escolha **View transaction** em uma prévia de envio ou nos detalhes de uma transação para abrir o visualizador de transações. Para um item agrupado de CoinJoin no histórico, expanda o grupo e abra os detalhes de um CoinJoin individual para encontrar a mesma ação. O visualizador abre em uma janela separada que pode ser redimensionada; arraste os divisores para dar mais espaço ao diagrama, aos detalhes da seleção ou ao resumo.
+
+O lado esquerdo lista as entradas e o direito lista as saídas. Role para inspecionar transações maiores e selecione uma entrada ou saída para ver seu valor, estimativa atual em moeda fiduciária, endereço, outpoint, tipo de script, rótulos e pontuação de anonimato conhecida. A propriedade é indicada como **Own wallet**, **External** ou **Change**, conforme aplicável. Um outpoint identifica uma saída específica pelo ID da transação e pelo índice da saída.
+
+Use os botões de cópia para copiar o ID da transação ou o endereço ou outpoint da moeda selecionada. O resumo mostra os totais de entradas e saídas, a taxa de mineração e a taxa por byte virtual, o tamanho virtual, a data e se a transação é uma prévia, está pendente ou confirmada. Visualizar uma prévia não assina nem transmite a transação.
+
+Algumas informações sobre entradas externas não estão disponíveis para a carteira. Um valor de entrada desconhecido também pode tornar desconhecidos o total das entradas e a taxa. Uma pontuação de anonimato só é mostrada quando o Ginger conhece a pontuação dessa moeda da carteira; as saídas novas de uma prévia de envio ainda não têm pontuação. **Unknown** ou um traço não representa uma pontuação zero. Os valores em moeda fiduciária usam a taxa de câmbio atual, inclusive ao inspecionar uma transação antiga.
+
+**Discreet Mode** oculta os dados da transação e desativa as ações de cópia do visualizador. Desative-o quando puder inspecionar os detalhes com privacidade. Abrir esse visualizador local não exige compartilhar a transação com um explorador público.
 
 <span id="speed-up-an-unconfirmed-transaction" data-ginger-heading="acelere-uma-transação-não-confirmada" aria-hidden="true"></span>
 

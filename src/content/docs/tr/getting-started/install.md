@@ -3,7 +3,7 @@ doc_id: "getting-started.install"
 title: "Ginger Wallet kurulumu"
 description: "Doğru Ginger Wallet masaüstü indirmesini seçin, uyumluluğu kontrol edin ve yayımlanan uygulamayı kurun."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 sidebar:
   label: "Ginger kurulumu"
@@ -19,7 +19,7 @@ next:
 
 Ginger Wallet bir masaüstü Bitcoin cüzdanıdır. Bitcoinlerinizin anahtarlarını siz tutarsınız ve işlem takibini zorlaştırmak için CoinJoin kullanabilirsiniz. Bu sürüm bir mobil cüzdan, Lightning cüzdanı veya diğer kripto paralar için destek sunmaz.
 
-Bu rehber 2.0.26 sürümünü kapsar. Yazılımı [resmî Ginger web sitesi](https://gingerwallet.io/) veya oradan bağlantı verilen [GitHub sürümü](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26) üzerinden edinin. Arama reklamı, özel mesaj veya benzer adlı bir mobil uygulama güvenilir bir indirme kaynağı değildir.
+Bu rehber 2.0.27 sürümünü kapsar. Yazılımı [resmî Ginger web sitesi](https://gingerwallet.io/) veya oradan bağlantı verilen [GitHub sürümü](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) üzerinden edinin. Arama reklamı, özel mesaj veya benzer adlı bir mobil uygulama güvenilir bir indirme kaynağı değildir.
 
 <span id="choose-a-download" data-ginger-heading="i̇ndirilecek-dosyayı-seçin" aria-hidden="true"></span>
 
@@ -27,11 +27,11 @@ Bu rehber 2.0.26 sürümünü kapsar. Yazılımı [resmî Ginger web sitesi](htt
 
 | Bilgisayar | Bu sürüm için desteklenen sistem | İndirilecek dosya |
 | --- | --- | --- |
-| Windows PC, x64 | Windows 10, sürüm 1607 veya üzeri; Windows 11, derleme 22000 veya üzeri | `Ginger-2.0.26.msi` |
-| Apple silicon kullanan Mac | macOS 12 veya üzeri | `Ginger-2.0.26-arm64.dmg` |
-| Intel işlemcili Mac | macOS 12 veya üzeri | `Ginger-2.0.26.dmg` |
-| Ubuntu veya Debian, x64 | Ubuntu 22.04 veya üzeri; Debian 11 veya üzeri | `Ginger-2.0.26.deb` |
-| Desteklenen diğer Linux sistemleri, x64 | Sürüm ayrıca Fedora 37 veya üzerini listeler | `Ginger-2.0.26.tar.gz` |
+| Windows PC, x64 | Windows 10, sürüm 1607 veya üzeri; Windows 11, derleme 22000 veya üzeri | `Ginger-2.0.27.msi` |
+| Apple silicon kullanan Mac | macOS 12 veya üzeri | `Ginger-2.0.27-arm64.dmg` |
+| Intel işlemcili Mac | macOS 12 veya üzeri | `Ginger-2.0.27.dmg` |
+| Ubuntu veya Debian, x64 | Ubuntu 22.04 veya üzeri; Debian 11 veya üzeri | `Ginger-2.0.27.deb` |
+| Desteklenen diğer Linux sistemleri, x64 | Sürüm ayrıca Fedora 37 veya üzerini listeler | `Ginger-2.0.27.tar.gz` |
 
 Mac’te **About This Mac**, yongayı veya işlemciyi belirtir. Sürüm ayrıca `win-x64`, `linux-x64`, `macOS-x64` ve `macOS-arm64` etiketli ZIP arşivleri içerir. Bu sürümde Windows ARM veya Linux ARM paketi yoktur. Başka bir işlemci için hazırlanmış arşivin çalışacağını varsaymayın.
 
@@ -61,5 +61,7 @@ Linux’ta cihaza erişim sorunları için donanım cüzdanı üreticinizin USB 
 ## Güncellemeler ve kullanılabilirlik
 
 [Sürüm listesi](https://github.com/GingerPrivacy/GingerWallet/releases) yayımlanan sürümleri ve değişikliklerini gösterir. **Settings** → **General** bölümündeki **Auto download new version**, güncellemelerin indirilmesini kontrol eder. Bir güncellemeyi indirmek ve kurmak farklıdır; güncelleme istemini izleyin ve Ginger’ın normal biçimde kapanmasına izin verin. Güncellemeden önce kurtarma yedeğinizi erişilebilir tutun. Uygulama dosyaları, cüzdan verileriniz kasıtlı olarak silinmeden değiştirilebilir.
+
+v2.0.26'dan yükseltirken mevcut cüzdanlar varsayılan alma türü olarak SegWit ile başlar ve kayıtlı Secret Hunt ayarlarını korur. Yeni cüzdanlarda Secret Hunt isteğe bağlı olarak etkinleştirilir. Ginger'ın JSON-RPC sunucusunu etkinleştirdiyseniz yükseltmeden önce boş olmayan bir kullanıcı adı ve parola yapılandırın; aksi hâlde bu sunucu başlamaz, ancak Ginger çalışmaya devam eder. Bu başlatma sorunlarından biriyle karşılaşırsanız [RPC ayarlarına](/tr/help/troubleshooting/#json-rpc-does-not-start) ve [yapılandırma sorunlarını gidermeye](/tr/help/troubleshooting/#startup-reports-an-invalid-configuration) bakın.
 
 Ginger’ın sunduğu güncel hizmet koşullarını, uygunluk kısıtlamaları dahil, kabul etmeden önce okuyun. Uygulamayı kurmak, bağlantılı her hizmeti kullanmaya uygun olduğunuz anlamına gelmez.

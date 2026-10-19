@@ -3,7 +3,7 @@ doc_id: "help.advanced-faq"
 title: "Perguntas frequentes avançadas sobre o Ginger Wallet"
 description: "Respostas da versão lançada do Ginger sobre varredura de recuperação, metadados da carteira, xpubs, controle de moedas, progresso de privacidade, custos completos de CoinJoin, carteiras de destino e compartilhamento de dados."
 lang: "pt-BR"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -108,7 +108,7 @@ Confira a sincronização e o limite de poeira configurado antes de concluir que
 
 ### Posso definir qualquer taxa por byte virtual personalizada ou garantir um tempo de confirmação?
 
-Não. O editor manual de taxas desta versão rejeita valores abaixo de 1 sat/vByte, e a política da rede pode exigir mais que esse mínimo. Uma taxa por byte virtual personalizada ainda compete com outras transações e não pode reservar um prazo de confirmação. Confira a taxa total, não apenas a taxa por byte virtual, antes de confirmar.
+Não. O editor manual de taxas aceita taxas por byte virtual a partir de **0.1 sat/vByte**. Uma taxa baixa só é útil quando as condições de retransmissão e da mempool permitem; o fato de o editor aceitar uma taxa não garante que os pares retransmitam a transação ou que os mineradores a confirmem. Uma taxa por byte virtual personalizada não pode reservar um prazo de confirmação. Confira a taxa total, não apenas a taxa por byte virtual, antes de confirmar; consulte [taxas por byte virtual personalizadas](/pt-br/using-ginger/fee/).
 
 <span id="coinjoin-costs-and-progress" data-ginger-heading="custos-e-progresso-do-coinjoin" aria-hidden="true"></span>
 

@@ -3,7 +3,7 @@ doc_id: "payments.receive"
 title: "Bitcoin alın ve adresleri yönetin"
 description: "Bir Ginger alım adresi oluşturun, desteklendiğinde SegWit veya Taproot seçin, ödemeleri etiketleyin ve onayları kontrol edin."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -19,11 +19,19 @@ Her ödeme için yeni bir alım adresi kullanın. Adres, ödeme yapana bitcoini 
 
 1. Amaçladığınız cüzdanı açın ve kurtarmanın veya eşitlemenin bitmesini bekleyin.
 2. **Receive** seçeneğini seçin. “Haziran faturası” gibi, ödeme yapanı veya amacı açıklayan bir etiket ekleyin. Gereksiz kişisel verileri kaydetmeden daha sonra tanımaya yetecek ayrıntı kullanın.
-3. **Generate** seçeneğini seçin. Normal eylem yerel SegWit adresi oluşturur. Cüzdan Taproot’u destekliyorsa alternatif eylem, **TR** ile gösterilen **Taproot** seçeneğini sunar; yalnızca ödeme yapan bu adres türünü destekliyorsa kullanın.
+3. Bu cüzdanın kayıtlı varsayılan türünü kullanarak adres oluşturmak için **Generate** seçeneğini seçin veya **Enter** tuşuna basın. Cüzdan Taproot'u destekliyorsa açılır menü **Generate SegWit** ve **Generate Taproot** seçeneklerini de sunar; böylece bu istek için tür seçebilirsiniz. Taproot'u yalnızca ödeme yapan destekliyorsa kullanın.
 4. Adresi kopyalayın veya alım QR kodunu paylaşın. Donanım cüzdanında **Show on the hardware wallet** seçeneğini kullanın ve ödeme yapana vermeden önce cihazdaki adresin tamamını karşılaştırın.
 5. Başka bir uygulamaya yapıştırdıktan sonra hedefi kontrol edin. Pano kötü amaçlı yazılımları, asıl QR veya cüzdan ekranı doğru olsa bile adresi değiştirebilir.
 
 Bitcoin ana ağında yerel SegWit alım adresleri normalde `bc1q` ile, Taproot adresleri ise `bc1p` ile başlar. Test ağı adresleri farklıdır. Bir hizmet desteklenen Bitcoin adresini reddederse adresin karakterlerini değiştirmek yerine o hizmetin ağ ve adres türü desteğini kontrol edin.
+
+<span id="set-the-default-address-type" data-ginger-heading="varsayılan-adres-türünü-ayarlayın" aria-hidden="true"></span>
+
+## Varsayılan adres türünü ayarlayın
+
+Taproot'u destekleyen bir cüzdanda **Generate** yanındaki açılır menüyü açın ve SegWit veya Taproot yanındaki **Set as Default** seçeneğini seçin. Seçilen tür **Default** olarak işaretlenir ve bu cüzdan için kaydedilir. Sonraki **Generate** ve **Enter** kullanımları bu tercihi izler; başka bir cüzdanın tercihi farklı olabilir.
+
+Açılır menüden **Generate SegWit** veya **Generate Taproot** seçmek, kayıtlı varsayılanı değiştirmeden doğrudan o türde adres oluşturur. Mevcut cüzdanlar yükseltildiğinde SegWit ile başlar. Tercihi değiştirmek gelecekteki adres oluşturmayı etkiler; önceden oluşturulan adresler ödeme almaya devam edebilir.
 
 <span id="labels-and-unused-addresses" data-ginger-heading="etiketler-ve-kullanılmamış-adresler" aria-hidden="true"></span>
 

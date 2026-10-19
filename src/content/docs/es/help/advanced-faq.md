@@ -3,7 +3,7 @@ doc_id: "help.advanced-faq"
 title: "Preguntas frecuentes avanzadas de Ginger Wallet"
 description: "Encuentra respuestas de la versión publicada de Ginger sobre escaneo de recuperación, metadatos, xpub, control de monedas, progreso de privacidad, coste completo CoinJoin, monederos de salida y compartición de datos."
 lang: "es"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -32,7 +32,7 @@ La frase de contraseña original interviene en la derivación de las claves, y o
 
 ### ¿Cuándo debo aumentar el límite de direcciones sin usar de la recuperación?
 
-Considéralo cuando tengas pruebas de muchas direcciones sin usar antes de una dirección que recibió un pago, por ejemplo direcciones generadas en otra aplicación. **Advanced Recovery Options** → **Minimum Gap Limit:** amplía el escaneo y puede aumentar su trabajo y duración; en v2.0.26 la pantalla de recuperación comienza con 114. No corrige palabras erróneas, una frase de contraseña equivocada ni una cuenta incompatible.
+Considéralo cuando tengas pruebas de muchas direcciones sin usar antes de una dirección que recibió un pago, por ejemplo direcciones generadas en otra aplicación. **Advanced Recovery Options** → **Minimum Gap Limit:** amplía el escaneo y puede aumentar su trabajo y duración; en v2.0.27 la pantalla de recuperación comienza con 114. No corrige palabras erróneas, una frase de contraseña equivocada ni una cuenta incompatible.
 
 <span id="why-did-labels-or-privacy-information-change-after-recovery" data-ginger-heading="por-qué-cambiaron-las-etiquetas-o-la-información-de-privacidad-después-de-recuperar" aria-hidden="true"></span>
 
@@ -108,7 +108,7 @@ Comprueba la sincronización y el umbral de polvo configurado antes de concluir 
 
 ### ¿Puedo fijar cualquier tasa personalizada o garantizar un tiempo de confirmación?
 
-No. El editor manual publicado rechaza tasas inferiores a 1 sat/vByte, y la política de red puede exigir más que ese mínimo. Una tasa personalizada sigue compitiendo con otras transacciones y no puede reservar un plazo de confirmación. Revisa la comisión total, no solo la tasa, antes de confirmar.
+No. El editor manual de comisiones acepta tasas desde **0.1 sat/vByte**. Una tasa baja solo resulta útil cuando las condiciones de retransmisión y del mempool la permiten; que el editor acepte una tasa no garantiza que los pares retransmitan la transacción ni que los mineros la confirmen. Una tasa personalizada no puede reservar un plazo de confirmación. Revisa la comisión total, no solo la tasa, antes de confirmar; consulta las [tasas de comisión personalizadas](/es/using-ginger/fee/).
 
 <span id="coinjoin-costs-and-progress" data-ginger-heading="costes-y-progreso-de-coinjoin" aria-hidden="true"></span>
 

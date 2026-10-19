@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.coin-control-history"
 title: "UTXO-kiválasztás, előzmények és elakadt tranzakciók"
-description: "Vizsgáld meg a Ginger UTXO-it és fizetési előzményeit, válassz tudatosan, és értsd meg, mikor lehetséges gyorsítás vagy visszavonási kísérlet."
+description: "Vizsgáld meg a Ginger UTXO-it, a tranzakciók bemeneteit és kimeneteit, valamint az előzményeket; válassz tudatosan UTXO-kat, és kezeld a még nem visszaigazolt fizetéseket."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -42,6 +42,20 @@ A pénztárca főképernyője bejövő, kimenő és CoinJoin-tevékenységet mut
 Konkrét tranzakció azonosításához használd a **Copy Transaction ID** lehetőséget. Lehetőség szerint tartsd bizalmasan a tranzakcióazonosítókat: megosztásuk címeket, összegeket és más tevékenységi kapcsolatokat fedhet fel. A nyilvános blokkláncböngésző megtudja a lekérdezéseidet is. Saját fizetéseid első ellenőrzési helye a Ginger helyi előzménye.
 
 Vizsgálhatod, rendezheted és csoportosíthatod az előzményeket, és másolhatsz azonosítókat. Ebben a kiadásban e folyamat nem kínál tranzakciókeresőt vagy CSV-exportvezérlőt.
+
+<span id="inspect-inputs-and-outputs" data-ginger-heading="bemenetek-és-kimenetek-vizsgálata" aria-hidden="true"></span>
+
+## Bemenetek és kimenetek vizsgálata
+
+A tranzakciónézet megnyitásához válaszd a **View transaction** lehetőséget a küldési előnézetben vagy egy tranzakció részleteinél. Csoportos CoinJoin-bejegyzésnél bontsd ki a csoportot, majd nyisd meg egy adott CoinJoin részleteit ugyanennek a műveletnek az eléréséhez. A nézet külön, átméretezhető ablakban nyílik meg; az elválasztók húzásával több helyet adhatsz az ábrának, a kiválasztott elem adatainak vagy az összesítésnek.
+
+A bal oldalon a bemenetek, a jobb oldalon a kimenetek szerepelnek. Hosszabb tranzakcióknál görgess, majd válassz ki egy bemenetet vagy kimenetet az összeg, az aktuális fiatbecslés, a cím, az outpoint, a szkripttípus, a címkék és az ismert anonimitási pontszám megtekintéséhez. A tulajdonosi besorolást adott esetben az **Own wallet**, **External** vagy **Change** jelzi. Az outpoint egy konkrét kimenetet azonosít a tranzakcióazonosító és a kimenet indexe alapján.
+
+A másolásgombokkal kimásolhatod a tranzakcióazonosítót vagy a kiválasztott UTXO címét és outpointját. Az összesítésben a bemenetek és kimenetek összértéke, a bányászati díj és díjráta, a virtuális méret, a dátum, valamint az látható, hogy előnézetről, függő vagy visszaigazolt tranzakcióról van-e szó. Az előnézet megtekintése nem írja alá és nem továbbítja a tranzakciót.
+
+A külső bemenetek egyes adatai nem érhetők el a pénztárcának. Ismeretlen bemeneti összeg esetén a bemenetek összértéke és a díj is ismeretlen lehet. Anonimitási pontszám csak akkor jelenik meg, ha a Ginger ismeri azt az adott pénztárca-UTXO-hoz; a küldési előnézet új kimeneteinek még nincs pontszámuk. Az **Unknown** vagy a gondolatjel nem nulla pontszámot jelent. A fiatösszegek az aktuális árfolyamot használják régebbi tranzakció megtekintésekor is.
+
+A **Discreet Mode** elrejti a tranzakció adatait, és letiltja a nézet másolási műveleteit. Akkor kapcsold ki, amikor illetéktelenek nem láthatják az adatokat. A helyi nézet megnyitásához nem kell nyilvános blokkláncböngészővel megosztanod a tranzakciót.
 
 <span id="speed-up-an-unconfirmed-transaction" data-ginger-heading="még-nem-visszaigazolt-tranzakció-gyorsítása" aria-hidden="true"></span>
 

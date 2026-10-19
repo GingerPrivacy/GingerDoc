@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.send"
 title: "Send Bitcoin and Review Fees"
-description: "Prepare a Ginger payment, verify the recipient and amount, understand fee rates and change, and authorize the transaction."
+description: "Prepare single or batch Bitcoin payments, verify each recipient and final amount, review fees and change, and authorize the transaction."
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -24,11 +24,25 @@ A confirmed Bitcoin payment cannot be recalled by Ginger. Before confirming, che
 
 Sending all available funds can deduct the fee from what the recipient receives. Fixed-amount requests and PayJoin have different constraints. The preview is the place to check the actual recipient amount rather than assuming that the wallet balance can all arrive at the destination.
 
+## Pay several recipients in one transaction
+
+Choose **Pay to multiple recipients** in the send editor to create a batch payment. The first payment keeps the address, amount, and labels you have already entered.
+
+1. Enter a different Bitcoin address, amount, and recipient label for each payment. Use plain addresses in this editor; payment URIs and Payjoin belong in the single-recipient workflow. A fixed-amount payment request cannot be extended into a batch.
+2. Choose **Add another payment** for more rows, or **Delete** beside a payment to remove it. If only one payment remains, the editor returns to the single-recipient layout and keeps that payment's details.
+3. Decide who bears the mining fee. With **Subtract the transaction fee from the first payment** selected, the first recipient receives less than the amount entered, while the other payment amounts stay unchanged. With it cleared, your wallet pays the fee in addition to the entered amounts. Using **Max** in a batch enables fee subtraction, so check the choice before continuing.
+4. Choose **Continue**. Review every numbered address, recipient label, and final amount in the preview, along with the total fee. In particular, verify that the first recipient still receives the agreed amount if the fee is deducted.
+5. Use the back action to correct the payments if needed. Your entered rows and fee-subtraction choice are retained. Review the newly built preview and fee again before choosing **Confirm** and completing authorization.
+
+All recipients in a batch share one public transaction, so the payments can be linked to each other. Consider this before combining unrelated payments. Recipient labels remain local wallet metadata; they are not sent to the recipients or published on the blockchain.
+
 ## Check the fee without custom settings
 
 Review the total fee and estimated confirmation preference in the preview. A fee pays for transaction space; it is not simply a percentage of the payment. The time estimate can change and is not a guarantee.
 
 Use an available fee estimate you understand. If estimates are unavailable and you are unsure what to choose, wait and investigate instead of guessing a very high custom fee.
+
+For a closer look before confirming, choose **View transaction** in the preview. It opens a separate window showing the inputs and outputs. See [inspecting a transaction](/payments/coin-control-history/#inspect-inputs-and-outputs) for the available details.
 
 ## The leftover money is change
 

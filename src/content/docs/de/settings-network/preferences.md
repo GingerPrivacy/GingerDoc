@@ -3,7 +3,7 @@ doc_id: "settings-network.preferences"
 title: "Darstellung, Sprache und Alltagseinstellungen"
 description: "Ändere Ginger-Sprache, Anzeigeformate, Hintergrundverhalten, Browserpräferenzen und diskreten Modus, ohne sie mit Wallet-Sicherheit zu verwechseln."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -17,7 +17,7 @@ Nutze **Settings** für anwendungsweite Einstellungen und **Wallet Settings** f�
 
 ## Sprache und Beträge
 
-Unter **Settings** → **Appearance** wählt **Language** die Oberflächensprache. Version 2.0.26 bietet Englisch, Spanisch, Ungarisch, Französisch, Chinesisch, Deutsch, Portugiesisch, Türkisch und Italienisch. Folge etwaigen Neustartabfragen. Dieses Handbuch verwendet die veröffentlichten englischen Bedienelementnamen; übersetzte Bezeichnungen können abweichen.
+Unter **Settings** → **Appearance** wählt **Language** die Oberflächensprache. Version 2.0.27 bietet elf Sprachen: Englisch, Spanisch, Ungarisch, Französisch, Chinesisch, Deutsch, Portugiesisch, Türkisch, Italienisch, brasilianisches Portugiesisch und Russisch. Die beiden portugiesischen Optionen heißen **Português** und **Português (Brasil)**, Russisch erscheint als **Русский**. Folge etwaigen Neustartabfragen. Dieses Handbuch verwendet die veröffentlichten englischen Bedienelementnamen; übersetzte Bezeichnungen können abweichen.
 
 **Dark mode** ändert die Darstellung. **Exchange currency** ändert die Fiat-Referenzanzeige; Dezimal- und Gruppentrennzeichen, Bitcoin-Nachkommastellengruppierung und **Fee display unit** steuern Zahlenformate. Sie ändern weder den BTC-Betrag noch die Netzwerkgebühr. Lies Einstellungsbeispiele vor Eingabe in einem unbekannten Format.
 
@@ -51,5 +51,7 @@ Externe Seiten nutzen das eigene Netzwerk- und Privatsphäreverhalten des Browse
 ## Wallet-Informationen und Werkzeuge
 
 **Wallet Info** kann Konto- und erweiterte öffentliche Schlüsselinformationen anzeigen. Ein erweiterter öffentlicher Schlüssel kann nicht direkt ausgeben, aber viele zugehörige Adressen offenlegen. Veröffentliche ihn nicht in Supportanfragen.
+
+Der Standardtyp für Empfangsadressen wird in **Receive** pro Wallet gespeichert. Bei Taproot-Unterstützung kannst du SegWit oder Taproot als Standard für **Generate** und Enter wählen. Diese Präferenz ist unabhängig von anwendungsweiten Darstellungseinstellungen; die Anleitung zu [Empfangsadressen](/de/payments/receive/) beschreibt Bedienelemente und Kompatibilitätsprüfungen.
 
 Unter **Wallet Settings** → **General** benennt die Namenssteuerung die Wallet um. Unter **Tools** prüft **Verify Recovery Words** ein zugängliches Software-Wallet-Backup, **Resync** baut die Ansicht neu auf und **Delete Wallet** entfernt nach Bestätigung eine lokale Wallet. Löschen zerstört weder Bitcoin noch widerruft es Wörter oder ersetzt ein Backup. Halte funktionierende Wiederherstellungsdaten bereit, bevor du lokalen Zugriff entfernst.

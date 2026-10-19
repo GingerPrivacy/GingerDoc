@@ -3,7 +3,7 @@ doc_id: "settings-network.secret-hunt"
 title: "Secret Hunt in Ginger Wallet"
 description: "Finde Secret-Hunt-Ereignisergebnisse, steuere die Wallet-Teilnahme und verstehe die an den Ereignisdienst übermittelten Informationen."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -19,7 +19,9 @@ next: false
 
 Wähle **Secret Hunt** im Menü einer Software-Wallet. Der Dialog zeigt Ergebnisse in einer Baumansicht einschließlich entdeckter Wörter oder Sätze und eines zusätzlichen Geheimnisses nach Sammlung der erforderlichen Geheimnisse. Erweitere ein Ereignis, um Einträge zu prüfen.
 
-Nutze **Enable/disable the use of this wallet for Secret Hunt.** zur Steuerung dieser Wallet. Standardmäßig ist es in dieser Version aktiviert. Ausschalten leert den angezeigten Baum der deaktivierten Ansicht und verhindert die Auswahl dieser Wallet durch den Updater für Teilnahmeberechtigungsprüfungen. Es storniert weder CoinJoin noch löscht es Blockchain-Transaktionen oder bereits übermittelte Informationen.
+Nutze **Enable/disable the use of this wallet for Secret Hunt.** zur Steuerung der Teilnahme dieser Wallet. In v2.0.27 ist Secret Hunt bei neuen Wallets standardmäßig deaktiviert: Aktiviere es separat für jede Wallet, die teilnehmen soll. Bestehende Wallets behalten beim Upgrade ihre gespeicherte Einstellung; prüfe diesen Schalter, wenn du Secret Hunt zuvor genutzt hast.
+
+Ausschalten leert den angezeigten Baum der deaktivierten Ansicht und verhindert die Auswahl dieser Wallet durch den Updater für Teilnahmeberechtigungsprüfungen. Es storniert weder CoinJoin noch löscht es Blockchain-Transaktionen oder bereits übermittelte Informationen.
 
 Für beobachtende Wallets wird der Eintrag nicht angeboten. Er ist keine Hardware-Wallet-CoinJoin-Funktion und verlangt keine Wiederherstellungswörter auf einer Ereigniswebsite.
 

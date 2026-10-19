@@ -3,7 +3,7 @@ doc_id: "getting-started.verify-download"
 title: "验证 Ginger Wallet 下载文件"
 description: "在安装应用之前，检查 Ginger Wallet 发布文件的签名和签名密钥指纹。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 sidebar:
   label: 验证下载文件
@@ -22,7 +22,7 @@ next: false
 
 ## 收集配套文件
 
-从 [v2.0.26 发布页](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26)下载安装程序或压缩包，以及在相同文件名后附加 `.asc` 的文件。将两者放在同一文件夹。例如，Windows 对应文件为 `Ginger-2.0.26.msi` 和 `Ginger-2.0.26.msi.asc`。DMG、ZIP 或其他版本的签名不能用于验证该 MSI。
+从 [v2.0.27 发布页](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27)下载安装程序或压缩包，以及在相同文件名后附加 `.asc` 的文件。将两者放在同一文件夹。例如，Windows 对应文件为 `Ginger-2.0.27.msi` 和 `Ginger-2.0.27.msi.asc`。DMG、ZIP 或其他版本的签名不能用于验证该 MSI。
 
 通过[官方网站](https://gingerwallet.io/)上的 PGP 链接获取公开签名密钥，并保存为 `PGP.txt`。使用可信的 OpenPGP 应用，例如 GnuPG，检查并导入它。如果尚未安装 GnuPG，通过 [GnuPG 官方下载页面](https://gnupg.org/download/)获取。
 
@@ -52,7 +52,7 @@ gpg --import PGP.txt
 对于 Windows 安装程序，运行：
 
 ```sh
-gpg --verify Ginger-2.0.26.msi.asc Ginger-2.0.26.msi
+gpg --verify Ginger-2.0.27.msi.asc Ginger-2.0.27.msi
 ```
 
 其他平台请将两个文件名都替换为准确名称。验证成功应显示来自目标密钥的有效签名。GnuPG 也可能警告该密钥未获得可信签名的认证：这涉及你如何验证密钥身份，不能与文件签名无效混为一谈。
@@ -66,5 +66,7 @@ gpg --verify Ginger-2.0.26.msi.asc Ginger-2.0.26.msi
 比较校验和可以检测下载错误。从不可信页面获取的校验和不能验证软件的真实性，因为攻击者可以同时替换下载文件和校验和。发布页也提供校验和资料；验证单个所选安装包时，上述对应的分离式签名流程已经足够。
 
 Windows 代码签名和 macOS 签名或公证提供额外的平台检查。它们补充下载文件的验证，但不能替代保护助记词和核对交易。
+
+若要另行检查能否从源代码重新构建应用程序内容，请按照[此版本的可复现构建指南](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.27/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md)操作。使用软件包中记录的准确发布标签和工具链。按照指南比较解压后的便携版应用内容；归档元数据和签名可能改变软件包的字节。因此，签名后的 Windows MSI 或 macOS DMG 文件哈希不应被预期为与未签名的本地构建相同。
 
 验证成功后，返回[安装应用](/zh-cn/getting-started/install/#install-the-application)。

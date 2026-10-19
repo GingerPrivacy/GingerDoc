@@ -3,7 +3,7 @@ doc_id: "learn-coinjoin.trust-and-limits"
 title: "CoinJoin yaparken neye güvenirsiniz?"
 description: "Bitcoin anahtarlarının kontrolünü, CoinJoin gizlilik varsayımlarını, koordinatör kullanılabilirliğini, katılımcı bağımsızlığını ve yazılım doğrulamasını ayırt edin."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -27,6 +27,8 @@ Katılmadan önce amacınızı belirleyin: belki alıcının diğer ödemelerini
 | Hangi yazılımı çalıştırıyorum? | Açık kaynak incelemeye izin verir; indirme doğrulaması edinilen dosyanın kökenini ve bütünlüğünü belirlemeye yardımcı olur. | Her derlemenin hatasız, bilgisayarın ele geçirilmemiş veya uzak hizmetin tam yayımlanan kodu çalıştırdığının kanıtı |
 
 [WabiSabi makalesi, bölüm 7](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3), gizliliği, etkin saldırıları ve hırsızlık önlemeyi ayrı ele alır. Bu rehber ayrımı kullanıcı kararlarına uygular; kurulu cüzdan veya koordinatörün güvenlik denetimi değildir.
+
+v2.0.27'de Ginger, imzalamayı tamamlamadan önce önerilen işlemin girdi sayısını ve fiilî madencilik ücreti oranını kontrol eder. Kaydettiği girdilerin ve beklenen çıktıların mevcut olduğunu da denetler ve yinelenen kayıtlı cüzdan girdilerini reddeder. İmzalama kontrolleri başarısız olduğunda işlemde gerçekten bulunan bir girdinin imzasını vermez; kendi girdilerinden hiçbiri kalmamışsa hiçbir imza göndermez. Blame turu kontrolleri yeniden denemeyi önceki işlemin girdileri ve önerilen en yüksek tutarla sınırlar; Ginger yalnızca imzaları gönderilmiş olan kendi coinlerini yeniden kullanır. Bunlar belirli geçersiz veya tutarsız önerilere yönelik kontrollerdir; koordinatörün dürüstlüğünü veya katılımcıların bağımsızlığını garanti etmez. [Tur başvurusu](/tr/coinjoin/round-details/), bir ret veya yeniden denemenin uygulamada ne anlama gelebileceğini açıklar.
 
 <span id="consider-the-observer" data-ginger-heading="gözlemciyi-düşünün" aria-hidden="true"></span>
 

@@ -3,7 +3,7 @@ title: "Usare Ginger"
 description: "Trova i passaggi ordinari per ricevere e inviare bitcoin, poi scegli le funzioni facoltative di Ginger quando ti servono."
 doc_id: "payments.overview"
 lang: "it"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -16,7 +16,7 @@ Inizia con un portafoglio di cui hai creato il backup e lascia terminare la sinc
 ## Effettua un pagamento ordinario
 
 1. [Ricevi bitcoin](/it/payments/receive/): crea un nuovo indirizzo, assegnagli un'etichetta e controlla la transazione in entrata.
-2. [Invia bitcoin](/it/payments/send/): inserisci destinazione e importo, poi controlla l'importo del destinatario, il resto e la commissione prima di confermare.
+2. [Invia bitcoin](/it/payments/send/): inserisci destinazione e importo, poi controlla l'importo del destinatario, il resto e la commissione prima di confermare. Usa **Pay to multiple recipients** quando ti servono più pagamenti in una sola transazione e controlla ogni destinatario nell'anteprima.
 3. Controlla la cronologia del portafoglio dopo l'invio. Se il risultato è incerto, accerta cosa sia successo prima di pagare di nuovo.
 
 <span id="choose-an-optional-feature" data-ginger-heading="scegli-una-funzione-facoltativa" aria-hidden="true"></span>

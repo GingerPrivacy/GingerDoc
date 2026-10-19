@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.send"
 title: "Bitcoin senden und Gebühren prüfen"
-description: "Bereite eine Ginger-Zahlung vor, prüfe Empfänger und Betrag, verstehe Gebührenraten und Wechselgeld und autorisiere die Transaktion."
+description: "Bereite einzelne oder gebündelte Bitcoin-Zahlungen vor, prüfe jeden Empfänger und endgültigen Betrag, kontrolliere Gebühren und Wechselgeld und autorisiere die Transaktion."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -26,6 +26,20 @@ Ginger kann eine bestätigte Bitcoin-Zahlung nicht zurückrufen. Prüfe vor der 
 
 Beim Senden des gesamten verfügbaren Guthabens kann die Gebühr vom Empfängerbetrag abgezogen werden. Festbetragsanfragen und PayJoin haben andere Einschränkungen. Prüfe den tatsächlichen Empfängerbetrag in der Vorschau, statt anzunehmen, der gesamte Kontostand komme an.
 
+<span id="pay-several-recipients-in-one-transaction" data-ginger-heading="mehrere-empfänger-in-einer-transaktion-bezahlen" aria-hidden="true"></span>
+
+## Mehrere Empfänger in einer Transaktion bezahlen
+
+Wähle im Sendeeditor **Pay to multiple recipients**, um eine Sammelzahlung zu erstellen. Die erste Zahlung behält die bereits eingegebene Adresse, den Betrag und die Bezeichnungen.
+
+1. Gib für jede Zahlung eine andere Bitcoin-Adresse, einen Betrag und eine Empfängerbezeichnung ein. Verwende hier reine Adressen; Zahlungs-URIs und Payjoin gehören zum Ablauf für einen einzelnen Empfänger. Eine Zahlungsanforderung mit festem Betrag lässt sich nicht zu einer Sammelzahlung erweitern.
+2. Wähle **Add another payment** für weitere Zeilen oder **Delete** neben einer Zahlung, um sie zu entfernen. Bleibt nur eine Zahlung übrig, kehrt der Editor zur Einzelansicht zurück und behält deren Details.
+3. Entscheide, wer die Mining-Gebühr trägt. Mit **Subtract the transaction fee from the first payment** erhält der erste Empfänger weniger als den eingegebenen Betrag; die anderen Zahlungsbeträge bleiben unverändert. Ist die Option ausgeschaltet, zahlt deine Wallet die Gebühr zusätzlich zu den eingegebenen Beträgen. **Max** aktiviert bei einer Sammelzahlung den Gebührenabzug; prüfe diese Auswahl vor dem Fortfahren.
+4. Wähle **Continue**. Prüfe in der Vorschau jede nummerierte Adresse, Empfängerbezeichnung und den endgültigen Betrag sowie die Gesamtgebühr. Achte insbesondere darauf, dass der erste Empfänger bei Gebührenabzug weiterhin den vereinbarten Betrag erhält.
+5. Gehe bei Bedarf zurück, um die Zahlungen zu korrigieren. Eingegebene Zeilen und die Auswahl zum Gebührenabzug bleiben erhalten. Prüfe die neu erstellte Vorschau und Gebühr erneut, bevor du **Confirm** wählst und die Autorisierung abschließt.
+
+Alle Empfänger einer Sammelzahlung teilen eine öffentliche Transaktion, wodurch sich die Zahlungen miteinander verknüpfen lassen. Bedenke das vor dem Zusammenfassen unabhängiger Zahlungen. Empfängerbezeichnungen bleiben lokale Wallet-Metadaten; sie werden weder an Empfänger gesendet noch in der Blockchain veröffentlicht.
+
 <span id="check-the-fee-without-custom-settings" data-ginger-heading="gebühren-ohne-eigene-einstellungen-prüfen" aria-hidden="true"></span>
 
 ## Gebühren ohne eigene Einstellungen prüfen
@@ -33,6 +47,8 @@ Beim Senden des gesamten verfügbaren Guthabens kann die Gebühr vom Empfängerb
 Prüfe Gesamtgebühr und geschätzte Bestätigungspräferenz in der Vorschau. Eine Gebühr bezahlt Transaktionsplatz; sie ist kein einfacher Prozentsatz der Zahlung. Die Zeitschätzung kann sich ändern und ist keine Garantie.
 
 Nutze eine verfügbare Gebührenschätzung, die du verstehst. Fehlen Schätzungen und bist du unsicher, warte und untersuche die Ursache, statt eine sehr hohe eigene Gebühr zu raten.
+
+Wähle vor der Bestätigung **View transaction** in der Vorschau, um genauer hinzusehen. Ein separates Fenster zeigt Inputs und Outputs. Die Anleitung zum [Untersuchen einer Transaktion](/de/payments/coin-control-history/#inspect-inputs-and-outputs) beschreibt die verfügbaren Details.
 
 <span id="the-leftover-money-is-change" data-ginger-heading="der-restbetrag-ist-wechselgeld" aria-hidden="true"></span>
 

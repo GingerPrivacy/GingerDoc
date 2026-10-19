@@ -3,7 +3,7 @@ doc_id: "help.faq"
 title: "Ginger Wallet SSS: buradan başlayın"
 description: "Eksik fonlar, yedekler, kurtarma, CoinJoin beklemesi ve ücretleri, bekleyen ödemeler, donanım cüzdanları ve güvenli destek hakkında kısa yanıtlar alın."
 lang: tr
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -34,7 +34,7 @@ Ginger, isteğe bağlı CoinJoin gizlilik özellikleriyle zincir üstü Bitcoin 
 
 ### Resmî mobil veya web cüzdanı var mı?
 
-v2.0.26 sürümü desteklenen Windows, macOS ve Linux bilgisayarları için masaüstü yazılım sağlar. Android, iOS veya tarayıcı cüzdanı, Lightning ödemeleri veya diğer kripto paraları sağlamaz. [Resmî Ginger sitesi](https://gingerwallet.io/) ve sürüm bağlantılarıyla başlayın; sırf Ginger adını kullanıyor diye uygulama veya web sitesine kurtarma kelimeleri girmeyin.
+v2.0.27 sürümü desteklenen Windows, macOS ve Linux bilgisayarları için masaüstü yazılım sağlar. Android, iOS veya tarayıcı cüzdanı, Lightning ödemeleri veya diğer kripto paraları sağlamaz. [Resmî Ginger sitesi](https://gingerwallet.io/) ve sürüm bağlantılarıyla başlayın; sırf Ginger adını kullanıyor diye uygulama veya web sitesine kurtarma kelimeleri girmeyin.
 
 <span id="do-i-need-an-account-my-own-node-or-a-hardware-wallet" data-ginger-heading="hesap-kendi-düğümüm-veya-donanım-cüzdanı-gerekir-mi" aria-hidden="true"></span>
 
@@ -202,6 +202,18 @@ Normal elle kontrol paneli tüm fonlar cüzdanın gizlilik hedefini karşıladı
 
 ## Ödemeler ve donanım
 
+<span id="can-i-pay-several-recipients-in-one-transaction" data-ginger-heading="tek-bir-işlemde-birden-fazla-alıcıya-ödeme-yapabilir-miyim" aria-hidden="true"></span>
+
+### Tek bir işlemde birden fazla alıcıya ödeme yapabilir miyim?
+
+Evet. **Send** bölümünde **Pay to multiple recipients** seçeneğini seçin ve her alıcının adresini, tutarını ve etiketlerini girin. Onaylamadan önce her alıcının nihai tutarını ve toplam ücreti inceleyin. Ücreti bir ödemeden düşerseniz ilk ödemeden alınır. Toplu ödeme hedefleri tek bir herkese açık işlemde bir araya getirir; bkz. [birden fazla alıcıya gönderme](/tr/payments/send/#pay-several-recipients-in-one-transaction).
+
+<span id="can-i-make-taproot-my-usual-receiving-address-type" data-ginger-heading="taprootu-her-zamanki-alma-adresi-türüm-yapabilir-miyim" aria-hidden="true"></span>
+
+### Taproot'u her zamanki alma adresi türüm yapabilir miyim?
+
+Taproot'u destekleyen bir cüzdanda **Receive** bölümündeki **Generate** yanındaki açılır menüyü açın ve Taproot yanındaki **Set as Default** seçeneğini seçin. **Generate** ve Enter bu cüzdanın kayıtlı tercihini kullanır. Mevcut cüzdanlar SegWit ile başlar. Önce ödeme yapanın adres desteğini kontrol edin; bkz. [alma adresi tercihleri](/tr/payments/receive/).
+
 <span id="why-is-a-payment-still-pending-after-the-estimated-time" data-ginger-heading="ödeme-tahmini-süreden-sonra-neden-hâlâ-bekliyor" aria-hidden="true"></span>
 
 ### Ödeme tahmini süreden sonra neden hâlâ bekliyor?
@@ -252,4 +264,4 @@ Ginger normal Bitcoin ödemesi hazırlayabilir; sağlayıcının kabulünü veya
 
 ## Bu kılavuz hakkında
 
-Bu kılavuz Ginger v2.0.26’yı anlatır ve İngilizce arayüz etiketlerini kullanır. Belgeler ve çeviriler hata içerebilir. Ginger doğruluklarını garanti etmez; devam etmeden önce kritik ayrıntıları uygulamada doğrulayın. Hata bulursanız cüzdan sırlarını eklemeden [belge deposunda bildirin](https://github.com/GingerPrivacy/GingerDoc/issues).
+Bu kılavuz, [Ginger v2.0.27](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27) sürümündeki güncellenmiş kullanım adımlarını içerir ve İngilizce arayüz etiketlerini kullanır. Belgeler ve çeviriler hata içerebilir. Ginger bunların doğruluğunu garanti etmez; devam etmeden önce kritik ayrıntıları uygulamada doğrulayın. Bir hata bulursanız cüzdan sırlarını eklemeden [belge deposunda bildirin](https://github.com/GingerPrivacy/GingerDoc/issues).

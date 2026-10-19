@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.fees-and-change"
 title: "Transaktionsgebühren, eigene Raten und Wechselgeld"
-description: "Verstehe Satoshi-pro-Byte-Gebührenraten, manuelle Gebühren, Wechselgeld-Outputs und betragsändernde Privatsphäreempfehlungen."
+description: "Verstehe Gebührenraten, eigene Raten bis hinunter zu 0.1 sat/vB, Weiterleitungsgrenzen, Gebührenabzug, Wechselgeld-Outputs und Privatsphäreempfehlungen in Ginger."
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -21,9 +21,19 @@ Beginne für normale Schritte mit [Bitcoin senden](/de/payments/send/). Diese Re
 
 ## Die Gebühr verstehen
 
-Gebührenraten werden in Satoshis pro virtuellem Byte als **Fee Rate (sat/vByte)** angezeigt. Die gesamte Mining-Gebühr ist Rate mal virtuelle Transaktionsgröße, kein Prozentsatz des Zahlungsbetrags. Viele kleine Coins auszugeben kann teurer sein als ein großer Coin gleichen Gesamtwerts.
+Ändere über die Gebührensteuerung der Vorschau die gewünschte Bestätigungspräferenz oder gib **Custom Fee Rate** ein. Ginger akzeptiert Raten bis hinunter zu **0.1 sat/vB**; Schätzungen und Gebührendiagramm behalten Nachkommastellen bei. Zeitschätzungen garantieren nichts: Neue Transaktionen konkurrieren um Platz, Blöcke entstehen unregelmäßig.
+
+Das Minimum des Editors garantiert keine Weiterleitung oder Aufnahme in den Mempool eines Nodes. Nodes können wegen ihrer Richtlinien oder aktueller Mempool-Bedingungen höhere Raten verlangen. Bei der Veröffentlichung an Peers überspringt Ginger diejenigen, deren angekündigtes Minimum die Gebührenrate der Transaktion übersteigt. Eine niedrige eigene Rate kann daher die Veröffentlichung scheitern lassen oder unbestätigt bleiben; prüfe Netzwerkbedingungen und Dringlichkeit der Zahlung vor ihrer Verwendung.
 
 Ändere über die Gebührensteuerung der Vorschau die gewünschte Bestätigungspräferenz oder gib **Custom Fee Rate** ein. Zeitschätzungen garantieren nichts: Neue Transaktionen konkurrieren um Platz, Blöcke entstehen unregelmäßig. Die manuelle Eingabe dieser Version lehnt Raten unter 1 sat/vByte ab; Node-Richtlinien können mehr verlangen als dieses Minimum.
+
+<span id="check-who-pays-the-fee" data-ginger-heading="prüfen-wer-die-gebühr-trägt" aria-hidden="true"></span>
+
+## Prüfen, wer die Gebühr trägt
+
+Bei einer [Sammelzahlung](/de/payments/send/#pay-several-recipients-in-one-transaction) verringert **Subtract the transaction fee from the first payment** nur den Betrag des ersten Empfängers. Die anderen eingegebenen Zahlungsbeträge bleiben unverändert. Ist die Option ausgeschaltet, brauchst du genügend Guthaben für alle Zahlungsbeträge plus Gebühr. **Max** im Sammeleditor aktiviert den Gebührenabzug.
+
+Prüfe immer die endgültigen Beträge in der Vorschau, insbesondere nach einer Änderung der Gebührenrate. Muss ein Empfänger einen exakten Betrag erhalten, kann ein Gebührenabzug dazu führen, dass er zu wenig erhält. Die Vorschau führt den endgültigen Betrag jedes Sammelempfängers separat auf.
 
 Ohne automatische Schätzungen kann Ginger manuelle Eingabe anbieten. Bist du unsicher, warte eher auf wiederhergestellte Schätzungen, als eine sehr hohe Zahl zu raten. Normale Transaktionsgebühren und CoinJoin-Koordinatorgebühren sind getrennt.
 

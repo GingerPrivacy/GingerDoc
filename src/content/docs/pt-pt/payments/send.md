@@ -1,9 +1,9 @@
 ---
 doc_id: "payments.send"
 title: "Envie bitcoin e confira as taxas"
-description: "Prepare um pagamento no Ginger, verifique o destinatário e o valor, compreenda as taxas por byte virtual e o troco e autorize a transação."
+description: "Prepare pagamentos Bitcoin individuais ou em lote, verifique cada destinatário e valor final, confira taxas e troco e autorize a transação."
 lang: "pt-PT"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -26,6 +26,20 @@ O Ginger não pode desfazer um pagamento Bitcoin confirmado. Antes de confirmar,
 
 Enviar todos os fundos disponíveis pode descontar a taxa do valor recebido pelo destinatário. Solicitações de valor fixo e PayJoin têm restrições diferentes. A pré-visualização é o lugar para conferir o valor efetivo do destinatário, em vez de presumir que todo o saldo da carteira chegará ao destino.
 
+<span id="pay-several-recipients-in-one-transaction" data-ginger-heading="pague-vários-destinatários-numa-transação" aria-hidden="true"></span>
+
+## Pague vários destinatários numa transação
+
+Escolha **Pay to multiple recipients** no editor de envio para criar um pagamento em lote. O primeiro pagamento mantém o endereço, o valor e as etiquetas que já foram inseridos.
+
+1. Insira um endereço Bitcoin diferente, um valor e uma etiqueta do destinatário para cada pagamento. Use endereços simples nesse editor; URIs de pagamento e Payjoin pertencem ao procedimento para um único destinatário. Uma solicitação de pagamento de valor fixo não pode ser ampliada para um lote.
+2. Escolha **Add another payment** para adicionar linhas ou **Delete** ao lado de um pagamento para removê-lo. Se restar apenas um pagamento, o editor volta à apresentação para um único destinatário e mantém os detalhes desse pagamento.
+3. Decida quem paga a taxa de mineração. Com **Subtract the transaction fee from the first payment** selecionado, o primeiro destinatário recebe menos que o valor inserido, enquanto os demais valores permanecem inalterados. Com a opção desmarcada, sua carteira paga a taxa além dos valores inseridos. Usar **Max** num lote ativa o desconto da taxa; confira a escolha antes de continuar.
+4. Escolha **Continue**. Confira cada endereço numerado, etiqueta do destinatário e valor final na pré-visualização, junto com a taxa total. Em particular, verifique se o primeiro destinatário ainda recebe o valor combinado quando a taxa é descontada.
+5. Use a ação de voltar para corrigir os pagamentos, se necessário. As linhas inseridas e a escolha de descontar a taxa são mantidas. Confira novamente a pré-visualização reconstruída e a taxa antes de escolher **Confirm** e concluir a autorização.
+
+Todos os destinatários de um lote partilham uma transação pública, portanto os pagamentos podem ser associados entre si. Considere isso antes de combinar pagamentos não relacionados. As etiquetas dos destinatários permanecem como metadados locais da carteira; não são enviadas aos destinatários nem publicadas na cadeia de blocos.
+
 <span id="check-the-fee-without-custom-settings" data-ginger-heading="confira-a-taxa-sem-definições-personalizadas" aria-hidden="true"></span>
 
 ## Confira a taxa sem definições personalizadas
@@ -33,6 +47,8 @@ Enviar todos os fundos disponíveis pode descontar a taxa do valor recebido pelo
 Confira a taxa total e a preferência estimada de confirmação na pré-visualização. Uma taxa paga pelo espaço da transação; não é simplesmente uma percentagem do pagamento. A estimativa de tempo pode mudar e não é uma garantia.
 
 Use uma estimativa de taxa disponível que compreenda. Se as estimativas não estiverem disponíveis e não souber o que escolher, aguarde e investigue em vez de adivinhar uma taxa personalizada muito alta.
+
+Para examinar com mais atenção antes de confirmar, escolha **View transaction** na pré-visualização. Uma janela separada mostra as entradas e saídas. Consulte [inspeção de uma transação](/pt-pt/payments/coin-control-history/#inspect-inputs-and-outputs) para os detalhes disponíveis.
 
 <span id="the-leftover-money-is-change" data-ginger-heading="o-dinheiro-que-sobra-é-troco" aria-hidden="true"></span>
 

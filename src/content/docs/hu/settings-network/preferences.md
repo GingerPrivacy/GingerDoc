@@ -3,7 +3,7 @@ doc_id: "settings-network.preferences"
 title: "Megjelenés, nyelv és mindennapi beállítások"
 description: "Módosítsd a Ginger nyelvét, kijelzési formátumait, háttérműködését, böngészőjét és diszkrét módját a pénztárcabiztonsággal való összekeverés nélkül."
 lang: "hu"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "everyday"
 prev: false
 next: false
@@ -17,7 +17,7 @@ Az alkalmazásszintű beállításokhoz használd a **Settings**, a kiválasztot
 
 ## Nyelv és összegek
 
-A **Settings** → **Appearance** alatt a **Language** választja a felület nyelvét. A 2.0.26 verzió angol, spanyol, magyar, francia, kínai, német, portugál, török és olasz nyelvet kínál. Kövesd az esetleges újraindítási kérést. Az angol kézikönyv a kiadott angol feliratokat használja; a lefordított feliratok eltérhetnek.
+A **Settings** → **Appearance** alatt a **Language** választja a felület nyelvét. A 2.0.27 verzió tizenegy nyelvet kínál: angol, spanyol, magyar, francia, kínai, német, portugál, török, olasz, brazíliai portugál és orosz. A két portugál változat **Português** és **Português (Brasil)** néven, az orosz **Русский** néven jelenik meg. Kövesd az esetleges újraindítási kérést. Ez a kézikönyv a kiadott angol feliratokat használja; a lefordított feliratok eltérhetnek.
 
 A **Dark mode** a megjelenést módosítja. Az **Exchange currency** a referencia fiatkijelzést, míg a tizedes- és csoportelválasztók, Bitcoin-törtértékek csoportosítása és **Fee display unit** a számok megjelenítését szabályozzák. Nem módosítják a mögöttes BTC-összeget vagy a hálózati tranzakciós díjat. Ismeretlen formátumú összeg megadása előtt olvasd el a beállítások példáit.
 
@@ -49,5 +49,7 @@ A külső oldalak a kiválasztott böngésző saját hálózati és adatvédelmi
 ## Pénztárcaadatok és eszközök
 
 A **Wallet Info** fiók- és kiterjesztett nyilvánoskulcs-adatokat jeleníthet meg. A kiterjesztett nyilvános kulcs közvetlenül nem költhet UTXO-kat, de sok kapcsolódó címet fedhet fel. Ne tedd közzé nyilvános segítségkérésben.
+
+Az alapértelmezett fogadási címtípus pénztárcánként mentődik a **Receive** alatt. Ahol a Taproot támogatott, SegWitet vagy Taprootot választhatsz a **Generate** és az Enter által használt alapértelmezésnek. Ez a beállítás elkülönül az alkalmazásszintű megjelenítési beállításoktól; a vezérlőkhöz és kompatibilitási ellenőrzésekhez lásd [a fogadási címeket](/hu/payments/receive/).
 
 A **Wallet Settings** → **General** alatt a névvezérlővel nevezheted át a pénztárcát. A **Tools** alatt a **Verify Recovery Words** egy hozzáférhető szoftverpénztárca mentését ellenőrzi, a **Resync** újraépíti az adatnézetét, a **Delete Wallet** pedig jóváhagyási folyamatával eltávolít helyi pénztárcát. A törlés nem semmisíti meg a bitcoint, nem vonja vissza a helyreállító szavakat, és nem helyettesít mentést. A helyi hozzáférés eltávolítása előtt őrizz működő helyreállítási adatokat.

@@ -3,7 +3,7 @@ doc_id: "getting-started.verify-download"
 title: "Verify a Ginger Wallet Download"
 description: "Check a Ginger Wallet release signature and signing-key fingerprint before installing the application."
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 sidebar:
   label: Verify a download
@@ -20,7 +20,7 @@ A detached signature helps establish that the file you downloaded was signed by 
 
 ## Collect the matching files
 
-From the [v2.0.26 release](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.26), download your installer or archive and the file with the same name followed by `.asc`. Keep them in one folder. For example, the Windows pair is `Ginger-2.0.26.msi` and `Ginger-2.0.26.msi.asc`. A signature for a DMG, ZIP, or different version does not verify that MSI.
+From the [v2.0.27 release](https://github.com/GingerPrivacy/GingerWallet/releases/tag/v2.0.27), download your installer or archive and the file with the same name followed by `.asc`. Keep them in one folder. For example, the Windows pair is `Ginger-2.0.27.msi` and `Ginger-2.0.27.msi.asc`. A signature for a DMG, ZIP, or different version does not verify that MSI.
 
 Obtain the public signing key through the PGP link on the [official website](https://gingerwallet.io/). Save the key as `PGP.txt`. Use a trusted OpenPGP application, such as GnuPG, to inspect and import it. If GnuPG is not installed, obtain it from [GnuPG's official download page](https://gnupg.org/download/).
 
@@ -46,7 +46,7 @@ Compare the complete fingerprint, not only a short key ID or the displayed name.
 For the Windows installer, run:
 
 ```sh
-gpg --verify Ginger-2.0.26.msi.asc Ginger-2.0.26.msi
+gpg --verify Ginger-2.0.27.msi.asc Ginger-2.0.27.msi
 ```
 
 For another platform, substitute both exact filenames. A successful verification should identify a good signature from the intended key. GnuPG can also warn that the key is not certified by a trusted signature: this concerns how you authenticated the key, and must not be confused with a bad file signature.
@@ -58,5 +58,7 @@ If the result says **BAD signature**, the key is missing, the fingerprint differ
 A checksum comparison can detect a download error. A checksum taken from an untrusted page cannot authenticate software, because an attacker can replace both the download and its checksum. The release also supplies checksum material; the matching detached signature procedure above is sufficient for verifying one selected package.
 
 Windows code signing and macOS signing or notarization provide additional platform checks. They complement verification of the downloaded release; they do not replace the need to protect your recovery words and review transactions.
+
+For a separate check that the application payload can be rebuilt from source, follow the [released reproducible-build guide](https://github.com/GingerPrivacy/GingerWallet/blob/v2.0.27/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md). Use the exact release tag and toolchain recorded in the package. Compare extracted portable payloads as the guide describes; archive metadata and signing can change package bytes. A signed Windows MSI or macOS DMG is not expected to have the same file hash as an unsigned local build.
 
 After successful verification, return to [Install the application](/getting-started/install/#install-the-application).

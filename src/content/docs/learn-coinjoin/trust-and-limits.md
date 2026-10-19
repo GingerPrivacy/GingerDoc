@@ -3,7 +3,7 @@ doc_id: "learn-coinjoin.trust-and-limits"
 title: "What Do You Trust When You CoinJoin?"
 description: "Distinguish control of Bitcoin keys, CoinJoin privacy assumptions, coordinator availability, participant independence, and software verification."
 lang: "en-US"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -25,6 +25,8 @@ Before participating, identify your objective: perhaps you want a recipient to l
 | Which software am I running? | Open source permits inspection; download verification helps establish the origin and integrity of the file you obtained. | Proof that every build is bug-free, your computer is uncompromised or a remote service runs exactly the published code |
 
 The [WabiSabi paper, section 7](https://cryptoeconomicsystems.pubpub.org/pub/ficsor-wabisabi-coordinated/release/3) treats privacy, active attacks and theft prevention separately. This guide applies that distinction to user decisions; it is not a security audit of an installed wallet or coordinator.
+
+In v2.0.27, Ginger checks the proposed transaction's input count and effective mining fee rate before completing signing. It also checks that its registered inputs and expected outputs are present, and rejects duplicated registered wallet inputs. When signing checks fail, it withholds a signature for an input actually present in the transaction, or sends no signatures if none of its inputs remain. Blame-round checks constrain the retry to the previous transaction's inputs and maximum suggested amount, and Ginger only reuses its coins for which signatures were submitted. These are checks against specific invalid or inconsistent proposals, not a guarantee of coordinator honesty or participant independence. The [round reference](/coinjoin/round-details/) explains what a refusal or retry can mean in practice.
 
 ## Consider the observer
 

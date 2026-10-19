@@ -3,7 +3,7 @@ doc_id: "help.advanced-faq"
 title: "Ginger Wallet 进阶常见问题"
 description: "查找已发布 Ginger 关于恢复扫描、钱包元数据、xpub、币控制、隐私进展、完整 CoinJoin 成本、输出钱包和数据分享的回答。"
 lang: "zh-CN"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "advanced"
 prev: false
 next: false
@@ -108,7 +108,7 @@ next: false
 
 ### 可以设置任意自定义费率或保证确认时间吗？
 
-不可以。已发布手动编辑器拒绝低于 1 sat/vByte 的费率，网络策略可能要求高于最低值。自定义费率仍与其他交易竞争，不能预留确认期限。确认前检查总手续费，不只费率。
+不能。手动手续费编辑器接受低至 **0.1 sat/vByte** 的费率。只有在转发与内存池条件允许时，低费率才有用；编辑器接受某个费率，并不保证对等节点会转发交易或矿工会确认交易。自定义费率不能预定确认期限。确认前，请检查总手续费，而不只是费率；参阅[自定义手续费率](/zh-cn/using-ginger/fee/)。
 
 <span id="coinjoin-costs-and-progress" data-ginger-heading="coinjoin-成本与进展" aria-hidden="true"></span>
 

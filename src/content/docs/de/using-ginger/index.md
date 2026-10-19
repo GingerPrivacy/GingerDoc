@@ -3,7 +3,7 @@ title: "Ginger verwenden"
 description: "Finde die normalen Schritte zum Empfangen und Senden von Bitcoin und wähle optionale Ginger-Funktionen nach Bedarf."
 doc_id: "payments.overview"
 lang: "de"
-verified_release: "v2.0.26"
+verified_release: "v2.0.27"
 reader_level: "beginner"
 prev: false
 next: false
@@ -16,7 +16,7 @@ Beginne mit einer gesicherten Wallet und lass die Synchronisierung abschließen,
 ## Eine normale Zahlung vornehmen
 
 1. [Bitcoin empfangen](/de/payments/receive/): Neue Adresse erstellen, beschriften und eingehende Transaktion prüfen.
-2. [Bitcoin senden](/de/payments/send/): Ziel und Betrag eingeben, dann vor Bestätigung Empfängerbetrag, Wechselgeld und Gebühr prüfen.
+2. [Bitcoin senden](/de/payments/send/): Ziel und Betrag eingeben, dann vor Bestätigung Empfängerbetrag, Wechselgeld und Gebühr prüfen. Nutze **Pay to multiple recipients** für mehrere Zahlungen in einer Transaktion und prüfe jeden Empfänger in der Vorschau.
 3. Prüfe nach dem Senden den Wallet-Verlauf. Kläre ein unsicheres Ergebnis, bevor du erneut zahlst.
 
 <span id="choose-an-optional-feature" data-ginger-heading="eine-optionale-funktion-wählen" aria-hidden="true"></span>
