@@ -50,6 +50,7 @@ export default defineConfig({
         Search: './src/components/Search.astro',
         Hero: './src/components/Hero.astro',
         SocialIcons: './src/components/SocialIcons.astro',
+        MarkdownContent: './src/components/MarkdownContent.astro',
       },
 
       social: [

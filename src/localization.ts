@@ -4,6 +4,10 @@ interface LocaleCopy {
   title: string
   header: Record<string, string>
   sidebar: Record<string, string>
+  translationNotice: {
+    message: string
+    linkLabel: string
+  }
   search: {
     levelLabel: string
     scope: string

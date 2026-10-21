@@ -21,6 +21,9 @@ const checkedLocales = stagingLocale ? [stagingLocale] : localeCodes
 for (const locale of checkedLocales) {
   const directory = stagingDirectory ?? join(root, locale)
   const copy = stagingDirectory ? JSON.parse(readFileSync(join(directory, 'locale.json'), 'utf8')) : readCopy(locale)
+  for (const key of ['message', 'linkLabel']) {
+    if (typeof copy.translationNotice?.[key] !== 'string' || !copy.translationNotice[key].trim()) errors.push(`${locale}: missing translation notice ${key}`)
+  }
   for (const label of sidebarLabels) {
     if (typeof copy.sidebar?.[label] !== 'string' || !copy.sidebar[label].trim()) errors.push(`${locale}: missing sidebar translation for ${label}`)
   }

@@ -9,6 +9,10 @@
     "Ginger Wallet website": "Ginger Wallet website"
   },
   "sidebar": {},
+  "translationNotice": {
+    "message": "This page was translated from English using AI and may contain errors.",
+    "linkLabel": "Read the English original"
+  },
   "search": {
     "levelLabel": "Level",
     "scope": "Search in",

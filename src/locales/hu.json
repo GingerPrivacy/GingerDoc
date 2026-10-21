@@ -28,6 +28,10 @@
     "Understanding CoinJoin": "A CoinJoin megértése",
     "Self-custody": "Saját kulcskezelés"
   },
+  "translationNotice": {
+    "message": "Ez az oldal az angol eredeti AI-val készült fordítása, és hibákat tartalmazhat.",
+    "linkLabel": "Az angol eredeti elolvasása"
+  },
   "search": {
     "levelLabel": "Nehézségi szint",
     "scope": "Keresés itt",

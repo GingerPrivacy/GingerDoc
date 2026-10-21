@@ -2,6 +2,10 @@
   "label": "Español",
   "lang": "es",
   "title": "Documentación de GingerWallet",
+  "translationNotice": {
+    "message": "Esta página se ha traducido del inglés con IA y puede contener errores.",
+    "linkLabel": "Leer el original en inglés"
+  },
   "header": {
     "Getting Started": "Primeros pasos",
     "Why Ginger?": "¿Por qué Ginger?",
