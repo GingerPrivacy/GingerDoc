@@ -1,0 +1,30 @@
+---
+import { copyForLanguage } from '../localization'
+
+const { head, id, isFallback, lang } = Astro.locals.starlightRoute
+const english = head.find(({ tag, attrs }) => tag === 'link' && attrs?.rel === 'alternate'
+  && /^en(?:-|$)/i.test(String(attrs.hreflang)))?.attrs?.href
+const originalHref = typeof english === 'string' ? new URL(english, Astro.url).pathname : undefined
+const showNotice = !/^en(?:-|$)/i.test(lang) && id !== '404' && !isFallback && originalHref
+const copy = copyForLanguage(lang).translationNotice
+---
+
+{showNotice && <aside class="ginger-translation-notice" data-pagefind-ignore>
+  <p>{copy.message} <a href={originalHref} hreflang="en" data-ginger-locale="root">{copy.linkLabel}</a></p>
+</aside>}
+
+<style>
+  .ginger-translation-notice {
+    padding: .875rem 1rem;
+    border-inline-start: .2rem solid var(--sl-color-accent);
+    border-radius: .25rem;
+    background: var(--sl-color-accent-low);
+    color: var(--sl-color-text);
+    font-size: var(--sl-text-sm);
+    line-height: 1.6;
+  }
+  p { margin: 0; }
+  a { color: inherit; font-weight: 600; text-decoration: underline; text-underline-offset: .15em; }
+  a:hover { color: var(--sl-color-text-accent); }
+  a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: .1rem; }
+</style>

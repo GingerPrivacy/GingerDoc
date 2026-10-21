@@ -2,6 +2,10 @@
   "label": "Türkçe",
   "lang": "tr",
   "title": "GingerWallet belgeleri",
+  "translationNotice": {
+    "message": "Bu sayfa yapay zekâ kullanılarak İngilizceden çevrilmiştir ve hatalar içerebilir.",
+    "linkLabel": "İngilizce aslını okuyun"
+  },
   "header": {
     "Getting Started": "Başlangıç",
     "Why Ginger?": "Neden Ginger?",

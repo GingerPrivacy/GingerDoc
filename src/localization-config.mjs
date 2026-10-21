@@ -1,6 +1,6 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 
-/** @typedef {{label: string, lang: string, title: string, header: Record<string, string>, sidebar: Record<string, string>, search: {levelLabel: string, scope: string, everyday: string, advanced: string, all: string, hint: string, loading: string, error: string, retry: string, level: Record<'beginner'|'everyday'|'advanced', string>}}} LocaleCopy */
+/** @typedef {{label: string, lang: string, title: string, header: Record<string, string>, sidebar: Record<string, string>, translationNotice: {message: string, linkLabel: string}, search: {levelLabel: string, scope: string, everyday: string, advanced: string, all: string, hint: string, loading: string, error: string, retry: string, level: Record<'beginner'|'everyday'|'advanced', string>}}} LocaleCopy */
 
 const directory = new URL('./locales/', import.meta.url)
 /** @type {Record<string, LocaleCopy>} */
